@@ -1,0 +1,278 @@
+// https://www.terraform.io/docs/providers/azuread/d/users.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Ignore missing users and return users that were found. The data source will still fail if no users are found
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#ignore_missing DataAzureadUsers#ignore_missing}
+  */
+  readonly ignoreMissing?: boolean | cdktf.IResolvable;
+  /**
+  * The email aliases of the users
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#mail_nicknames DataAzureadUsers#mail_nicknames}
+  */
+  readonly mailNicknames?: string[];
+  /**
+  * The object IDs of the users
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#object_ids DataAzureadUsers#object_ids}
+  */
+  readonly objectIds?: string[];
+  /**
+  * Fetch all users with no filter and return all that were found. The data source will still fail if no users are found.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#return_all DataAzureadUsers#return_all}
+  */
+  readonly returnAll?: boolean | cdktf.IResolvable;
+  /**
+  * The user principal names (UPNs) of the users
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#user_principal_names DataAzureadUsers#user_principal_names}
+  */
+  readonly userPrincipalNames?: string[];
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#timeouts DataAzureadUsers#timeouts}
+  */
+  readonly timeouts?: DataAzureadUsersTimeouts;
+}
+export class DataAzureadUsersUsers extends cdktf.ComplexComputedList {
+
+  // account_enabled - computed: true, optional: false, required: false
+  public get accountEnabled() {
+    return this.getBooleanAttribute('account_enabled');
+  }
+
+  // display_name - computed: true, optional: false, required: false
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+
+  // mail - computed: true, optional: false, required: false
+  public get mail() {
+    return this.getStringAttribute('mail');
+  }
+
+  // mail_nickname - computed: true, optional: false, required: false
+  public get mailNickname() {
+    return this.getStringAttribute('mail_nickname');
+  }
+
+  // object_id - computed: true, optional: false, required: false
+  public get objectId() {
+    return this.getStringAttribute('object_id');
+  }
+
+  // onpremises_immutable_id - computed: true, optional: false, required: false
+  public get onpremisesImmutableId() {
+    return this.getStringAttribute('onpremises_immutable_id');
+  }
+
+  // onpremises_sam_account_name - computed: true, optional: false, required: false
+  public get onpremisesSamAccountName() {
+    return this.getStringAttribute('onpremises_sam_account_name');
+  }
+
+  // onpremises_user_principal_name - computed: true, optional: false, required: false
+  public get onpremisesUserPrincipalName() {
+    return this.getStringAttribute('onpremises_user_principal_name');
+  }
+
+  // usage_location - computed: true, optional: false, required: false
+  public get usageLocation() {
+    return this.getStringAttribute('usage_location');
+  }
+
+  // user_principal_name - computed: true, optional: false, required: false
+  public get userPrincipalName() {
+    return this.getStringAttribute('user_principal_name');
+  }
+}
+export interface DataAzureadUsersTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#read DataAzureadUsers#read}
+  */
+  readonly read?: string;
+}
+
+function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/users.html azuread_users}
+*/
+export class DataAzureadUsers extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "azuread_users";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/users.html azuread_users} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAzureadUsersConfig = {}
+  */
+  public constructor(scope: Construct, id: string, config: DataAzureadUsersConfig = {}) {
+    super(scope, id, {
+      terraformResourceType: 'azuread_users',
+      terraformGeneratorMetadata: {
+        providerName: 'azuread'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._ignoreMissing = config.ignoreMissing;
+    this._mailNicknames = config.mailNicknames;
+    this._objectIds = config.objectIds;
+    this._returnAll = config.returnAll;
+    this._userPrincipalNames = config.userPrincipalNames;
+    this._timeouts = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ignore_missing - computed: false, optional: true, required: false
+  private _ignoreMissing?: boolean | cdktf.IResolvable;
+  public get ignoreMissing() {
+    return this.getBooleanAttribute('ignore_missing');
+  }
+  public set ignoreMissing(value: boolean | cdktf.IResolvable ) {
+    this._ignoreMissing = value;
+  }
+  public resetIgnoreMissing() {
+    this._ignoreMissing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreMissingInput() {
+    return this._ignoreMissing
+  }
+
+  // mail_nicknames - computed: true, optional: true, required: false
+  private _mailNicknames?: string[];
+  public get mailNicknames() {
+    return this.getListAttribute('mail_nicknames');
+  }
+  public set mailNicknames(value: string[]) {
+    this._mailNicknames = value;
+  }
+  public resetMailNicknames() {
+    this._mailNicknames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mailNicknamesInput() {
+    return this._mailNicknames
+  }
+
+  // object_ids - computed: true, optional: true, required: false
+  private _objectIds?: string[];
+  public get objectIds() {
+    return this.getListAttribute('object_ids');
+  }
+  public set objectIds(value: string[]) {
+    this._objectIds = value;
+  }
+  public resetObjectIds() {
+    this._objectIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectIdsInput() {
+    return this._objectIds
+  }
+
+  // return_all - computed: false, optional: true, required: false
+  private _returnAll?: boolean | cdktf.IResolvable;
+  public get returnAll() {
+    return this.getBooleanAttribute('return_all');
+  }
+  public set returnAll(value: boolean | cdktf.IResolvable ) {
+    this._returnAll = value;
+  }
+  public resetReturnAll() {
+    this._returnAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get returnAllInput() {
+    return this._returnAll
+  }
+
+  // user_principal_names - computed: true, optional: true, required: false
+  private _userPrincipalNames?: string[];
+  public get userPrincipalNames() {
+    return this.getListAttribute('user_principal_names');
+  }
+  public set userPrincipalNames(value: string[]) {
+    this._userPrincipalNames = value;
+  }
+  public resetUserPrincipalNames() {
+    this._userPrincipalNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userPrincipalNamesInput() {
+    return this._userPrincipalNames
+  }
+
+  // users - computed: true, optional: false, required: false
+  public users(index: string) {
+    return new DataAzureadUsersUsers(this, 'users', index);
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: DataAzureadUsersTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: DataAzureadUsersTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),
+      mail_nicknames: cdktf.listMapper(cdktf.stringToTerraform)(this._mailNicknames),
+      object_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._objectIds),
+      return_all: cdktf.booleanToTerraform(this._returnAll),
+      user_principal_names: cdktf.listMapper(cdktf.stringToTerraform)(this._userPrincipalNames),
+      timeouts: dataAzureadUsersTimeoutsToTerraform(this._timeouts),
+    };
+  }
+}
