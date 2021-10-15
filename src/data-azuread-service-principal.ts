@@ -64,6 +64,28 @@ export class DataAzureadServicePrincipalAppRoles extends cdktf.ComplexComputedLi
     return this.getStringAttribute('value');
   }
 }
+export class DataAzureadServicePrincipalFeatureTags extends cdktf.ComplexComputedList {
+
+  // custom_single_sign_on - computed: true, optional: false, required: false
+  public get customSingleSignOn() {
+    return this.getBooleanAttribute('custom_single_sign_on');
+  }
+
+  // enterprise - computed: true, optional: false, required: false
+  public get enterprise() {
+    return this.getBooleanAttribute('enterprise');
+  }
+
+  // gallery - computed: true, optional: false, required: false
+  public get gallery() {
+    return this.getBooleanAttribute('gallery');
+  }
+
+  // hide - computed: true, optional: false, required: false
+  public get hide() {
+    return this.getBooleanAttribute('hide');
+  }
+}
 export class DataAzureadServicePrincipalFeatures extends cdktf.ComplexComputedList {
 
   // custom_single_sign_on_app - computed: true, optional: false, required: false
@@ -257,6 +279,11 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName
+  }
+
+  // feature_tags - computed: true, optional: false, required: false
+  public featureTags(index: string) {
+    return new DataAzureadServicePrincipalFeatureTags(this, 'feature_tags', index);
   }
 
   // features - computed: true, optional: false, required: false

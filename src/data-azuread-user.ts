@@ -119,6 +119,11 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
     return this.getStringAttribute('consent_provided_for_minor');
   }
 
+  // cost_center - computed: true, optional: false, required: false
+  public get costCenter() {
+    return this.getStringAttribute('cost_center');
+  }
+
   // country - computed: true, optional: false, required: false
   public get country() {
     return this.getStringAttribute('country');
@@ -139,9 +144,19 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
     return this.getStringAttribute('display_name');
   }
 
+  // division - computed: true, optional: false, required: false
+  public get division() {
+    return this.getStringAttribute('division');
+  }
+
   // employee_id - computed: true, optional: false, required: false
   public get employeeId() {
     return this.getStringAttribute('employee_id');
+  }
+
+  // employee_type - computed: true, optional: false, required: false
+  public get employeeType() {
+    return this.getStringAttribute('employee_type');
   }
 
   // external_user_state - computed: true, optional: false, required: false
@@ -193,6 +208,11 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get mailNicknameInput() {
     return this._mailNickname
+  }
+
+  // manager_id - computed: true, optional: false, required: false
+  public get managerId() {
+    return this.getStringAttribute('manager_id');
   }
 
   // mobile_phone - computed: true, optional: false, required: false

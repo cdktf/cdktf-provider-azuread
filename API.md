@@ -88,6 +88,12 @@ public resetDeviceOnlyAuthEnabled()
 public resetFallbackPublicClientEnabled()
 ```
 
+##### `resetFeatureTags` <a name="@cdktf/provider-azuread.Application.resetFeatureTags"></a>
+
+```typescript
+public resetFeatureTags()
+```
+
 ##### `resetGroupMembershipClaims` <a name="@cdktf/provider-azuread.Application.resetGroupMembershipClaims"></a>
 
 ```typescript
@@ -170,6 +176,12 @@ public resetSinglePageApplication()
 
 ```typescript
 public resetSupportUrl()
+```
+
+##### `resetTags` <a name="@cdktf/provider-azuread.Application.resetTags"></a>
+
+```typescript
+public resetTags()
 ```
 
 ##### `resetTemplateId` <a name="@cdktf/provider-azuread.Application.resetTemplateId"></a>
@@ -306,6 +318,16 @@ public readonly fallbackPublicClientEnabledInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `featureTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.featureTagsInput"></a>
+
+```typescript
+public readonly featureTagsInput: ApplicationFeatureTags[];
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
 
 ---
 
@@ -449,6 +471,16 @@ public readonly supportUrlInput: string;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `templateIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.templateIdInput"></a>
 
 ```typescript
@@ -536,6 +568,16 @@ public readonly fallbackPublicClientEnabled: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.featureTags"></a>
+
+```typescript
+public readonly featureTags: ApplicationFeatureTags[];
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
 
 ---
 
@@ -676,6 +718,16 @@ public readonly supportUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* `string`[]
 
 ---
 
@@ -2235,6 +2287,18 @@ public appRoles(index: string)
 
 ---
 
+##### `featureTags` <a name="@cdktf/provider-azuread.DataAzureadApplication.featureTags"></a>
+
+```typescript
+public featureTags(index: string)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
+
+- *Type:* `string`
+
+---
+
 ##### `oauth2PermissionScopeIds` <a name="@cdktf/provider-azuread.DataAzureadApplication.oauth2PermissionScopeIds"></a>
 
 ```typescript
@@ -2471,6 +2535,16 @@ public readonly supportUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* `string`[]
 
 ---
 
@@ -3647,6 +3721,12 @@ Must be unique amongst siblings in the same scope
 public resetDisplayNames()
 ```
 
+##### `resetMailEnabled` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetMailEnabled"></a>
+
+```typescript
+public resetMailEnabled()
+```
+
 ##### `resetObjectIds` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetObjectIds"></a>
 
 ```typescript
@@ -3657,6 +3737,12 @@ public resetObjectIds()
 
 ```typescript
 public resetReturnAll()
+```
+
+##### `resetSecurityEnabled` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetSecurityEnabled"></a>
+
+```typescript
+public resetSecurityEnabled()
 ```
 
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetTimeouts"></a>
@@ -3688,6 +3774,16 @@ public readonly displayNamesInput: string[];
 
 ---
 
+##### `mailEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.mailEnabledInput"></a>
+
+```typescript
+public readonly mailEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `objectIdsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.objectIdsInput"></a>
 
 ```typescript
@@ -3702,6 +3798,16 @@ public readonly objectIdsInput: string[];
 
 ```typescript
 public readonly returnAllInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `securityEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.securityEnabledInput"></a>
+
+```typescript
+public readonly securityEnabledInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -3728,6 +3834,16 @@ public readonly displayNames: string[];
 
 ---
 
+##### `mailEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.mailEnabled"></a>
+
+```typescript
+public readonly mailEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `objectIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.objectIds"></a>
 
 ```typescript
@@ -3742,6 +3858,16 @@ public readonly objectIds: string[];
 
 ```typescript
 public readonly returnAll: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `securityEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.securityEnabled"></a>
+
+```typescript
+public readonly securityEnabled: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -3832,6 +3958,18 @@ public appRoles(index: string)
 
 ```typescript
 public features(index: string)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.index"></a>
+
+- *Type:* `string`
+
+---
+
+##### `featureTags` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.featureTags"></a>
+
+```typescript
+public featureTags(index: string)
 ```
 
 ###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.index"></a>
@@ -4523,6 +4661,16 @@ public readonly consentProvidedForMinor: string;
 
 ---
 
+##### `costCenter`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.costCenter"></a>
+
+```typescript
+public readonly costCenter: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `country`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.country"></a>
 
 ```typescript
@@ -4563,10 +4711,30 @@ public readonly displayName: string;
 
 ---
 
+##### `division`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.division"></a>
+
+```typescript
+public readonly division: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `employeeId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.employeeId"></a>
 
 ```typescript
 public readonly employeeId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `employeeType`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.employeeType"></a>
+
+```typescript
+public readonly employeeType: string;
 ```
 
 - *Type:* `string`
@@ -4637,6 +4805,16 @@ public readonly jobTitle: string;
 
 ```typescript
 public readonly mail: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `managerId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.managerId"></a>
+
+```typescript
+public readonly managerId: string;
 ```
 
 - *Type:* `string`
@@ -6596,6 +6774,12 @@ public resetDescription()
 public resetFeatures()
 ```
 
+##### `resetFeatureTags` <a name="@cdktf/provider-azuread.ServicePrincipal.resetFeatureTags"></a>
+
+```typescript
+public resetFeatureTags()
+```
+
 ##### `resetLoginUrl` <a name="@cdktf/provider-azuread.ServicePrincipal.resetLoginUrl"></a>
 
 ```typescript
@@ -6823,6 +7007,16 @@ public readonly featuresInput: ServicePrincipalFeatures[];
 
 ---
 
+##### `featureTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTagsInput"></a>
+
+```typescript
+public readonly featureTagsInput: ServicePrincipalFeatureTags[];
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
+
+---
+
 ##### `loginUrlInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.loginUrlInput"></a>
 
 ```typescript
@@ -6970,6 +7164,16 @@ public readonly features: ServicePrincipalFeatures[];
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
+
+---
+
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTags"></a>
+
+```typescript
+public readonly featureTags: ServicePrincipalFeatureTags[];
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
 
 ---
 
@@ -7607,6 +7811,12 @@ public resetCompanyName()
 public resetConsentProvidedForMinor()
 ```
 
+##### `resetCostCenter` <a name="@cdktf/provider-azuread.User.resetCostCenter"></a>
+
+```typescript
+public resetCostCenter()
+```
+
 ##### `resetCountry` <a name="@cdktf/provider-azuread.User.resetCountry"></a>
 
 ```typescript
@@ -7631,10 +7841,22 @@ public resetDisablePasswordExpiration()
 public resetDisableStrongPassword()
 ```
 
+##### `resetDivision` <a name="@cdktf/provider-azuread.User.resetDivision"></a>
+
+```typescript
+public resetDivision()
+```
+
 ##### `resetEmployeeId` <a name="@cdktf/provider-azuread.User.resetEmployeeId"></a>
 
 ```typescript
 public resetEmployeeId()
+```
+
+##### `resetEmployeeType` <a name="@cdktf/provider-azuread.User.resetEmployeeType"></a>
+
+```typescript
+public resetEmployeeType()
 ```
 
 ##### `resetFaxNumber` <a name="@cdktf/provider-azuread.User.resetFaxNumber"></a>
@@ -7671,6 +7893,12 @@ public resetMail()
 
 ```typescript
 public resetMailNickname()
+```
+
+##### `resetManagerId` <a name="@cdktf/provider-azuread.User.resetManagerId"></a>
+
+```typescript
+public resetManagerId()
 ```
 
 ##### `resetMobilePhone` <a name="@cdktf/provider-azuread.User.resetMobilePhone"></a>
@@ -7974,6 +8202,16 @@ public readonly consentProvidedForMinorInput: string;
 
 ---
 
+##### `costCenterInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.costCenterInput"></a>
+
+```typescript
+public readonly costCenterInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `countryInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.countryInput"></a>
 
 ```typescript
@@ -8014,10 +8252,30 @@ public readonly disableStrongPasswordInput: boolean | IResolvable;
 
 ---
 
+##### `divisionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.divisionInput"></a>
+
+```typescript
+public readonly divisionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `employeeIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.employeeIdInput"></a>
 
 ```typescript
 public readonly employeeIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `employeeTypeInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.employeeTypeInput"></a>
+
+```typescript
+public readonly employeeTypeInput: string;
 ```
 
 - *Type:* `string`
@@ -8078,6 +8336,16 @@ public readonly mailInput: string;
 
 ```typescript
 public readonly mailNicknameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `managerIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.managerIdInput"></a>
+
+```typescript
+public readonly managerIdInput: string;
 ```
 
 - *Type:* `string`
@@ -8274,6 +8542,16 @@ public readonly consentProvidedForMinor: string;
 
 ---
 
+##### `costCenter`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.costCenter"></a>
+
+```typescript
+public readonly costCenter: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `country`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.country"></a>
 
 ```typescript
@@ -8324,10 +8602,30 @@ public readonly displayName: string;
 
 ---
 
+##### `division`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.division"></a>
+
+```typescript
+public readonly division: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `employeeId`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.employeeId"></a>
 
 ```typescript
 public readonly employeeId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `employeeType`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.employeeType"></a>
+
+```typescript
+public readonly employeeType: string;
 ```
 
 - *Type:* `string`
@@ -8388,6 +8686,16 @@ public readonly mail: string;
 
 ```typescript
 public readonly mailNickname: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `managerId`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.managerId"></a>
+
+```typescript
+public readonly managerId: string;
 ```
 
 - *Type:* `string`
@@ -9184,6 +9492,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `featureTags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.featureTags"></a>
+
+```typescript
+public readonly featureTags: ApplicationFeatureTags[];
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
+
+feature_tags block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#feature_tags Application#feature_tags}
+
+---
+
 ##### `groupMembershipClaims`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.groupMembershipClaims"></a>
 
 ```typescript
@@ -9380,6 +9702,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* `string`[]
+
+A set of tags to apply to the application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#tags Application#tags}
+
+---
+
 ##### `templateId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.templateId"></a>
 
 ```typescript
@@ -9433,6 +9769,72 @@ public readonly web: ApplicationWeb[];
 web block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#web Application#web}
+
+---
+
+### ApplicationFeatureTags <a name="@cdktf/provider-azuread.ApplicationFeatureTags"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ApplicationFeatureTags } from '@cdktf/provider-azuread'
+
+const applicationFeatureTags: ApplicationFeatureTags = { ... }
+```
+
+##### `customSingleSignOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTags.property.customSingleSignOn"></a>
+
+```typescript
+public readonly customSingleSignOn: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this application represents a custom SAML application for linked service principals.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#custom_single_sign_on Application#custom_single_sign_on}
+
+---
+
+##### `enterprise`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTags.property.enterprise"></a>
+
+```typescript
+public readonly enterprise: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this application represents an Enterprise Application for linked service principals.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enterprise Application#enterprise}
+
+---
+
+##### `gallery`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTags.property.gallery"></a>
+
+```typescript
+public readonly gallery: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this application represents a gallery application for linked service principals.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#gallery Application#gallery}
+
+---
+
+##### `hide`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTags.property.hide"></a>
+
+```typescript
+public readonly hide: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this application is invisible to users in My Apps and Office 365 Launcher.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#hide Application#hide}
 
 ---
 
@@ -12066,6 +12468,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `mailEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.mailEnabled"></a>
+
+```typescript
+public readonly mailEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether the groups are mail-enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#mail_enabled DataAzureadGroups#mail_enabled}
+
+---
+
 ##### `objectIds`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.objectIds"></a>
 
 ```typescript
@@ -12091,6 +12507,20 @@ public readonly returnAll: boolean | IResolvable;
 Retrieve all groups with no filter.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#return_all DataAzureadGroups#return_all}
+
+---
+
+##### `securityEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.securityEnabled"></a>
+
+```typescript
+public readonly securityEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether the groups are security-enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#security_enabled DataAzureadGroups#security_enabled}
 
 ---
 
@@ -14352,6 +14782,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `featureTags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.featureTags"></a>
+
+```typescript
+public readonly featureTags: ServicePrincipalFeatureTags[];
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
+
+feature_tags block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#feature_tags ServicePrincipal#feature_tags}
+
+---
+
 ##### `loginUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.loginUrl"></a>
 
 ```typescript
@@ -14547,6 +14991,72 @@ public readonly visibleToUsers: boolean | IResolvable;
 Whether this app is visible to users in My Apps and Office 365 Launcher.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#visible_to_users ServicePrincipal#visible_to_users}
+
+---
+
+### ServicePrincipalFeatureTags <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTags"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ServicePrincipalFeatureTags } from '@cdktf/provider-azuread'
+
+const servicePrincipalFeatureTags: ServicePrincipalFeatureTags = { ... }
+```
+
+##### `customSingleSignOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTags.property.customSingleSignOn"></a>
+
+```typescript
+public readonly customSingleSignOn: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this service principal represents a custom SAML application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
+
+---
+
+##### `enterprise`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTags.property.enterprise"></a>
+
+```typescript
+public readonly enterprise: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this service principal represents an Enterprise Application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#enterprise ServicePrincipal#enterprise}
+
+---
+
+##### `gallery`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTags.property.gallery"></a>
+
+```typescript
+public readonly gallery: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this service principal represents a gallery application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#gallery ServicePrincipal#gallery}
+
+---
+
+##### `hide`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTags.property.hide"></a>
+
+```typescript
+public readonly hide: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether this app is invisible to users in My Apps and Office 365 Launcher.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#hide ServicePrincipal#hide}
 
 ---
 
@@ -14948,6 +15458,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `costCenter`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.costCenter"></a>
+
+```typescript
+public readonly costCenter: string;
+```
+
+- *Type:* `string`
+
+The cost center associated with the user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#cost_center User#cost_center}
+
+---
+
 ##### `country`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.country"></a>
 
 ```typescript
@@ -15004,6 +15528,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `division`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.division"></a>
+
+```typescript
+public readonly division: string;
+```
+
+- *Type:* `string`
+
+The name of the division in which the user works.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#division User#division}
+
+---
+
 ##### `employeeId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.employeeId"></a>
 
 ```typescript
@@ -15015,6 +15553,20 @@ public readonly employeeId: string;
 The employee identifier assigned to the user by the organisation.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#employee_id User#employee_id}
+
+---
+
+##### `employeeType`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.employeeType"></a>
+
+```typescript
+public readonly employeeType: string;
+```
+
+- *Type:* `string`
+
+Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#employee_type User#employee_type}
 
 ---
 
@@ -15101,6 +15653,20 @@ public readonly mailNickname: string;
 The mail alias for the user. Defaults to the user name part of the user principal name (UPN).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#mail_nickname User#mail_nickname}
+
+---
+
+##### `managerId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.managerId"></a>
+
+```typescript
+public readonly managerId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the user's manager.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#manager_id User#manager_id}
 
 ---
 
@@ -15629,6 +16195,79 @@ public readonly value: string;
 ```
 
 - *Type:* `string`
+
+---
+
+
+### DataAzureadApplicationFeatureTags <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationFeatureTags } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationFeatureTags(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.customSingleSignOn"></a>
+
+```typescript
+public readonly customSingleSignOn: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.enterprise"></a>
+
+```typescript
+public readonly enterprise: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.gallery"></a>
+
+```typescript
+public readonly gallery: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.hide"></a>
+
+```typescript
+public readonly hide: any;
+```
+
+- *Type:* `any`
 
 ---
 
@@ -16505,6 +17144,79 @@ public readonly galleryApplication: any;
 
 ```typescript
 public readonly visibleToUsers: any;
+```
+
+- *Type:* `any`
+
+---
+
+
+### DataAzureadServicePrincipalFeatureTags <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalFeatureTags } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalFeatureTags(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.customSingleSignOn"></a>
+
+```typescript
+public readonly customSingleSignOn: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.enterprise"></a>
+
+```typescript
+public readonly enterprise: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.gallery"></a>
+
+```typescript
+public readonly gallery: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.hide"></a>
+
+```typescript
+public readonly hide: any;
 ```
 
 - *Type:* `any`
