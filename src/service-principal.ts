@@ -80,6 +80,12 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   */
   readonly useExisting?: boolean | cdktf.IResolvable;
   /**
+  * feature_tags block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#feature_tags ServicePrincipal#feature_tags}
+  */
+  readonly featureTags?: ServicePrincipalFeatureTags[];
+  /**
   * features block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#features ServicePrincipal#features}
@@ -172,6 +178,43 @@ export class ServicePrincipalOauth2PermissionScopes extends cdktf.ComplexCompute
     return this.getStringAttribute('value');
   }
 }
+export interface ServicePrincipalFeatureTags {
+  /**
+  * Whether this service principal represents a custom SAML application
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
+  */
+  readonly customSingleSignOn?: boolean | cdktf.IResolvable;
+  /**
+  * Whether this service principal represents an Enterprise Application
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#enterprise ServicePrincipal#enterprise}
+  */
+  readonly enterprise?: boolean | cdktf.IResolvable;
+  /**
+  * Whether this service principal represents a gallery application
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#gallery ServicePrincipal#gallery}
+  */
+  readonly gallery?: boolean | cdktf.IResolvable;
+  /**
+  * Whether this app is invisible to users in My Apps and Office 365 Launcher
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#hide ServicePrincipal#hide}
+  */
+  readonly hide?: boolean | cdktf.IResolvable;
+}
+
+function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipalFeatureTags): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    custom_single_sign_on: cdktf.booleanToTerraform(struct!.customSingleSignOn),
+    enterprise: cdktf.booleanToTerraform(struct!.enterprise),
+    gallery: cdktf.booleanToTerraform(struct!.gallery),
+    hide: cdktf.booleanToTerraform(struct!.hide),
+  }
+}
+
 export interface ServicePrincipalFeatures {
   /**
   * Whether this service principal represents a custom SAML application
@@ -299,6 +342,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     this._preferredSingleSignOnMode = config.preferredSingleSignOnMode;
     this._tags = config.tags;
     this._useExisting = config.useExisting;
+    this._featureTags = config.featureTags;
     this._features = config.features;
     this._samlSingleSignOn = config.samlSingleSignOn;
     this._timeouts = config.timeouts;
@@ -572,6 +616,22 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     return this._useExisting
   }
 
+  // feature_tags - computed: false, optional: true, required: false
+  private _featureTags?: ServicePrincipalFeatureTags[];
+  public get featureTags() {
+    return this.interpolationForAttribute('feature_tags') as any;
+  }
+  public set featureTags(value: ServicePrincipalFeatureTags[] ) {
+    this._featureTags = value;
+  }
+  public resetFeatureTags() {
+    this._featureTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featureTagsInput() {
+    return this._featureTags
+  }
+
   // features - computed: false, optional: true, required: false
   private _features?: ServicePrincipalFeatures[];
   public get features() {
@@ -638,6 +698,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       preferred_single_sign_on_mode: cdktf.stringToTerraform(this._preferredSingleSignOnMode),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       use_existing: cdktf.booleanToTerraform(this._useExisting),
+      feature_tags: cdktf.listMapper(servicePrincipalFeatureTagsToTerraform)(this._featureTags),
       features: cdktf.listMapper(servicePrincipalFeaturesToTerraform)(this._features),
       saml_single_sign_on: cdktf.listMapper(servicePrincipalSamlSingleSignOnToTerraform)(this._samlSingleSignOn),
       timeouts: servicePrincipalTimeoutsToTerraform(this._timeouts),

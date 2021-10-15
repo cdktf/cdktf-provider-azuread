@@ -44,6 +44,12 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly consentProvidedForMinor?: string;
   /**
+  * The cost center associated with the user.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#cost_center User#cost_center}
+  */
+  readonly costCenter?: string;
+  /**
   * The country/region in which the user is located, e.g. `US` or `UK`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#country User#country}
@@ -74,11 +80,23 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly displayName: string;
   /**
+  * The name of the division in which the user works.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#division User#division}
+  */
+  readonly division?: string;
+  /**
   * The employee identifier assigned to the user by the organisation
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#employee_id User#employee_id}
   */
   readonly employeeId?: string;
+  /**
+  * Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#employee_type User#employee_type}
+  */
+  readonly employeeType?: string;
   /**
   * The fax number of the user
   * 
@@ -115,6 +133,12 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#mail_nickname User#mail_nickname}
   */
   readonly mailNickname?: string;
+  /**
+  * The object ID of the user's manager
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#manager_id User#manager_id}
+  */
+  readonly managerId?: string;
   /**
   * The primary cellular telephone number for the user
   * 
@@ -268,18 +292,22 @@ export class User extends cdktf.TerraformResource {
     this._city = config.city;
     this._companyName = config.companyName;
     this._consentProvidedForMinor = config.consentProvidedForMinor;
+    this._costCenter = config.costCenter;
     this._country = config.country;
     this._department = config.department;
     this._disablePasswordExpiration = config.disablePasswordExpiration;
     this._disableStrongPassword = config.disableStrongPassword;
     this._displayName = config.displayName;
+    this._division = config.division;
     this._employeeId = config.employeeId;
+    this._employeeType = config.employeeType;
     this._faxNumber = config.faxNumber;
     this._forcePasswordChange = config.forcePasswordChange;
     this._givenName = config.givenName;
     this._jobTitle = config.jobTitle;
     this._mail = config.mail;
     this._mailNickname = config.mailNickname;
+    this._managerId = config.managerId;
     this._mobilePhone = config.mobilePhone;
     this._officeLocation = config.officeLocation;
     this._onpremisesImmutableId = config.onpremisesImmutableId;
@@ -401,6 +429,22 @@ export class User extends cdktf.TerraformResource {
     return this._consentProvidedForMinor
   }
 
+  // cost_center - computed: false, optional: true, required: false
+  private _costCenter?: string;
+  public get costCenter() {
+    return this.getStringAttribute('cost_center');
+  }
+  public set costCenter(value: string ) {
+    this._costCenter = value;
+  }
+  public resetCostCenter() {
+    this._costCenter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCenterInput() {
+    return this._costCenter
+  }
+
   // country - computed: false, optional: true, required: false
   private _country?: string;
   public get country() {
@@ -483,6 +527,22 @@ export class User extends cdktf.TerraformResource {
     return this._displayName
   }
 
+  // division - computed: false, optional: true, required: false
+  private _division?: string;
+  public get division() {
+    return this.getStringAttribute('division');
+  }
+  public set division(value: string ) {
+    this._division = value;
+  }
+  public resetDivision() {
+    this._division = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get divisionInput() {
+    return this._division
+  }
+
   // employee_id - computed: false, optional: true, required: false
   private _employeeId?: string;
   public get employeeId() {
@@ -497,6 +557,22 @@ export class User extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get employeeIdInput() {
     return this._employeeId
+  }
+
+  // employee_type - computed: false, optional: true, required: false
+  private _employeeType?: string;
+  public get employeeType() {
+    return this.getStringAttribute('employee_type');
+  }
+  public set employeeType(value: string ) {
+    this._employeeType = value;
+  }
+  public resetEmployeeType() {
+    this._employeeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get employeeTypeInput() {
+    return this._employeeType
   }
 
   // external_user_state - computed: true, optional: false, required: false
@@ -608,6 +684,22 @@ export class User extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get mailNicknameInput() {
     return this._mailNickname
+  }
+
+  // manager_id - computed: false, optional: true, required: false
+  private _managerId?: string;
+  public get managerId() {
+    return this.getStringAttribute('manager_id');
+  }
+  public set managerId(value: string ) {
+    this._managerId = value;
+  }
+  public resetManagerId() {
+    this._managerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managerIdInput() {
+    return this._managerId
   }
 
   // mobile_phone - computed: false, optional: true, required: false
@@ -888,18 +980,22 @@ export class User extends cdktf.TerraformResource {
       city: cdktf.stringToTerraform(this._city),
       company_name: cdktf.stringToTerraform(this._companyName),
       consent_provided_for_minor: cdktf.stringToTerraform(this._consentProvidedForMinor),
+      cost_center: cdktf.stringToTerraform(this._costCenter),
       country: cdktf.stringToTerraform(this._country),
       department: cdktf.stringToTerraform(this._department),
       disable_password_expiration: cdktf.booleanToTerraform(this._disablePasswordExpiration),
       disable_strong_password: cdktf.booleanToTerraform(this._disableStrongPassword),
       display_name: cdktf.stringToTerraform(this._displayName),
+      division: cdktf.stringToTerraform(this._division),
       employee_id: cdktf.stringToTerraform(this._employeeId),
+      employee_type: cdktf.stringToTerraform(this._employeeType),
       fax_number: cdktf.stringToTerraform(this._faxNumber),
       force_password_change: cdktf.booleanToTerraform(this._forcePasswordChange),
       given_name: cdktf.stringToTerraform(this._givenName),
       job_title: cdktf.stringToTerraform(this._jobTitle),
       mail: cdktf.stringToTerraform(this._mail),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
+      manager_id: cdktf.stringToTerraform(this._managerId),
       mobile_phone: cdktf.stringToTerraform(this._mobilePhone),
       office_location: cdktf.stringToTerraform(this._officeLocation),
       onpremises_immutable_id: cdktf.stringToTerraform(this._onpremisesImmutableId),

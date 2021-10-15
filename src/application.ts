@@ -86,6 +86,12 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly supportUrl?: string;
   /**
+  * A set of tags to apply to the application
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#tags Application#tags}
+  */
+  readonly tags?: string[];
+  /**
   * Unique ID of the application template from which this application is created
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#template_id Application#template_id}
@@ -109,6 +115,12 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#app_role Application#app_role}
   */
   readonly appRole?: ApplicationAppRole[];
+  /**
+  * feature_tags block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#feature_tags Application#feature_tags}
+  */
+  readonly featureTags?: ApplicationFeatureTags[];
   /**
   * optional_claims block
   * 
@@ -296,6 +308,43 @@ function applicationAppRoleToTerraform(struct?: ApplicationAppRole): any {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     id: cdktf.stringToTerraform(struct!.id),
     value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface ApplicationFeatureTags {
+  /**
+  * Whether this application represents a custom SAML application for linked service principals
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#custom_single_sign_on Application#custom_single_sign_on}
+  */
+  readonly customSingleSignOn?: boolean | cdktf.IResolvable;
+  /**
+  * Whether this application represents an Enterprise Application for linked service principals
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enterprise Application#enterprise}
+  */
+  readonly enterprise?: boolean | cdktf.IResolvable;
+  /**
+  * Whether this application represents a gallery application for linked service principals
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#gallery Application#gallery}
+  */
+  readonly gallery?: boolean | cdktf.IResolvable;
+  /**
+  * Whether this application is invisible to users in My Apps and Office 365 Launcher
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#hide Application#hide}
+  */
+  readonly hide?: boolean | cdktf.IResolvable;
+}
+
+function applicationFeatureTagsToTerraform(struct?: ApplicationFeatureTags): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    custom_single_sign_on: cdktf.booleanToTerraform(struct!.customSingleSignOn),
+    enterprise: cdktf.booleanToTerraform(struct!.enterprise),
+    gallery: cdktf.booleanToTerraform(struct!.gallery),
+    hide: cdktf.booleanToTerraform(struct!.hide),
   }
 }
 
@@ -647,10 +696,12 @@ export class Application extends cdktf.TerraformResource {
     this._privacyStatementUrl = config.privacyStatementUrl;
     this._signInAudience = config.signInAudience;
     this._supportUrl = config.supportUrl;
+    this._tags = config.tags;
     this._templateId = config.templateId;
     this._termsOfServiceUrl = config.termsOfServiceUrl;
     this._api = config.api;
     this._appRole = config.appRole;
+    this._featureTags = config.featureTags;
     this._optionalClaims = config.optionalClaims;
     this._publicClient = config.publicClient;
     this._requiredResourceAccess = config.requiredResourceAccess;
@@ -908,6 +959,22 @@ export class Application extends cdktf.TerraformResource {
     return this._supportUrl
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: string[];
+  public get tags() {
+    return this.getListAttribute('tags');
+  }
+  public set tags(value: string[]) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // template_id - computed: true, optional: true, required: false
   private _templateId?: string;
   public get templateId() {
@@ -970,6 +1037,22 @@ export class Application extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get appRoleInput() {
     return this._appRole
+  }
+
+  // feature_tags - computed: false, optional: true, required: false
+  private _featureTags?: ApplicationFeatureTags[];
+  public get featureTags() {
+    return this.interpolationForAttribute('feature_tags') as any;
+  }
+  public set featureTags(value: ApplicationFeatureTags[] ) {
+    this._featureTags = value;
+  }
+  public resetFeatureTags() {
+    this._featureTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featureTagsInput() {
+    return this._featureTags
   }
 
   // optional_claims - computed: false, optional: true, required: false
@@ -1087,10 +1170,12 @@ export class Application extends cdktf.TerraformResource {
       privacy_statement_url: cdktf.stringToTerraform(this._privacyStatementUrl),
       sign_in_audience: cdktf.stringToTerraform(this._signInAudience),
       support_url: cdktf.stringToTerraform(this._supportUrl),
+      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       template_id: cdktf.stringToTerraform(this._templateId),
       terms_of_service_url: cdktf.stringToTerraform(this._termsOfServiceUrl),
       api: cdktf.listMapper(applicationApiToTerraform)(this._api),
       app_role: cdktf.listMapper(applicationAppRoleToTerraform)(this._appRole),
+      feature_tags: cdktf.listMapper(applicationFeatureTagsToTerraform)(this._featureTags),
       optional_claims: cdktf.listMapper(applicationOptionalClaimsToTerraform)(this._optionalClaims),
       public_client: cdktf.listMapper(applicationPublicClientToTerraform)(this._publicClient),
       required_resource_access: cdktf.listMapper(applicationRequiredResourceAccessToTerraform)(this._requiredResourceAccess),

@@ -128,6 +128,28 @@ export class DataAzureadApplicationAppRoles extends cdktf.ComplexComputedList {
     return this.getStringAttribute('value');
   }
 }
+export class DataAzureadApplicationFeatureTags extends cdktf.ComplexComputedList {
+
+  // custom_single_sign_on - computed: true, optional: false, required: false
+  public get customSingleSignOn() {
+    return this.getBooleanAttribute('custom_single_sign_on');
+  }
+
+  // enterprise - computed: true, optional: false, required: false
+  public get enterprise() {
+    return this.getBooleanAttribute('enterprise');
+  }
+
+  // gallery - computed: true, optional: false, required: false
+  public get gallery() {
+    return this.getBooleanAttribute('gallery');
+  }
+
+  // hide - computed: true, optional: false, required: false
+  public get hide() {
+    return this.getBooleanAttribute('hide');
+  }
+}
 export class DataAzureadApplicationOptionalClaimsAccessToken extends cdktf.ComplexComputedList {
 
   // additional_properties - computed: true, optional: false, required: false
@@ -402,6 +424,11 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('fallback_public_client_enabled');
   }
 
+  // feature_tags - computed: true, optional: false, required: false
+  public featureTags(index: string) {
+    return new DataAzureadApplicationFeatureTags(this, 'feature_tags', index);
+  }
+
   // group_membership_claims - computed: true, optional: false, required: false
   public get groupMembershipClaims() {
     return this.getListAttribute('group_membership_claims');
@@ -496,6 +523,11 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   // support_url - computed: true, optional: false, required: false
   public get supportUrl() {
     return this.getStringAttribute('support_url');
+  }
+
+  // tags - computed: true, optional: false, required: false
+  public get tags() {
+    return this.getListAttribute('tags');
   }
 
   // terms_of_service_url - computed: true, optional: false, required: false
