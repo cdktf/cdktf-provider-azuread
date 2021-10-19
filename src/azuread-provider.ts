@@ -137,11 +137,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   // ==========
 
   // client_certificate - computed: false, optional: true, required: false
-  private _clientCertificate?: string;
+  private _clientCertificate?: string | undefined; 
   public get clientCertificate() {
     return this._clientCertificate;
   }
-  public set clientCertificate(value: string  | undefined) {
+  public set clientCertificate(value: string | undefined| undefined) {
     this._clientCertificate = value;
   }
   public resetClientCertificate() {
@@ -153,11 +153,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // client_certificate_password - computed: false, optional: true, required: false
-  private _clientCertificatePassword?: string;
+  private _clientCertificatePassword?: string | undefined; 
   public get clientCertificatePassword() {
     return this._clientCertificatePassword;
   }
-  public set clientCertificatePassword(value: string  | undefined) {
+  public set clientCertificatePassword(value: string | undefined| undefined) {
     this._clientCertificatePassword = value;
   }
   public resetClientCertificatePassword() {
@@ -169,11 +169,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // client_certificate_path - computed: false, optional: true, required: false
-  private _clientCertificatePath?: string;
+  private _clientCertificatePath?: string | undefined; 
   public get clientCertificatePath() {
     return this._clientCertificatePath;
   }
-  public set clientCertificatePath(value: string  | undefined) {
+  public set clientCertificatePath(value: string | undefined| undefined) {
     this._clientCertificatePath = value;
   }
   public resetClientCertificatePath() {
@@ -185,11 +185,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // client_id - computed: false, optional: true, required: false
-  private _clientId?: string;
+  private _clientId?: string | undefined; 
   public get clientId() {
     return this._clientId;
   }
-  public set clientId(value: string  | undefined) {
+  public set clientId(value: string | undefined| undefined) {
     this._clientId = value;
   }
   public resetClientId() {
@@ -201,11 +201,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // client_secret - computed: false, optional: true, required: false
-  private _clientSecret?: string;
+  private _clientSecret?: string | undefined; 
   public get clientSecret() {
     return this._clientSecret;
   }
-  public set clientSecret(value: string  | undefined) {
+  public set clientSecret(value: string | undefined| undefined) {
     this._clientSecret = value;
   }
   public resetClientSecret() {
@@ -217,11 +217,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // disable_terraform_partner_id - computed: false, optional: true, required: false
-  private _disableTerraformPartnerId?: boolean | cdktf.IResolvable;
+  private _disableTerraformPartnerId?: boolean | cdktf.IResolvable | undefined; 
   public get disableTerraformPartnerId() {
     return this._disableTerraformPartnerId;
   }
-  public set disableTerraformPartnerId(value: boolean | cdktf.IResolvable  | undefined) {
+  public set disableTerraformPartnerId(value: boolean | cdktf.IResolvable | undefined| undefined) {
     this._disableTerraformPartnerId = value;
   }
   public resetDisableTerraformPartnerId() {
@@ -233,11 +233,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // environment - computed: false, optional: true, required: false
-  private _environment?: string;
+  private _environment?: string | undefined; 
   public get environment() {
     return this._environment;
   }
-  public set environment(value: string  | undefined) {
+  public set environment(value: string | undefined| undefined) {
     this._environment = value;
   }
   public resetEnvironment() {
@@ -249,11 +249,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // msi_endpoint - computed: false, optional: true, required: false
-  private _msiEndpoint?: string;
+  private _msiEndpoint?: string | undefined; 
   public get msiEndpoint() {
     return this._msiEndpoint;
   }
-  public set msiEndpoint(value: string  | undefined) {
+  public set msiEndpoint(value: string | undefined| undefined) {
     this._msiEndpoint = value;
   }
   public resetMsiEndpoint() {
@@ -265,11 +265,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // partner_id - computed: false, optional: true, required: false
-  private _partnerId?: string;
+  private _partnerId?: string | undefined; 
   public get partnerId() {
     return this._partnerId;
   }
-  public set partnerId(value: string  | undefined) {
+  public set partnerId(value: string | undefined| undefined) {
     this._partnerId = value;
   }
   public resetPartnerId() {
@@ -281,11 +281,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // tenant_id - computed: false, optional: true, required: false
-  private _tenantId?: string;
+  private _tenantId?: string | undefined; 
   public get tenantId() {
     return this._tenantId;
   }
-  public set tenantId(value: string  | undefined) {
+  public set tenantId(value: string | undefined| undefined) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -297,11 +297,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // use_cli - computed: false, optional: true, required: false
-  private _useCli?: boolean | cdktf.IResolvable;
+  private _useCli?: boolean | cdktf.IResolvable | undefined; 
   public get useCli() {
     return this._useCli;
   }
-  public set useCli(value: boolean | cdktf.IResolvable  | undefined) {
+  public set useCli(value: boolean | cdktf.IResolvable | undefined| undefined) {
     this._useCli = value;
   }
   public resetUseCli() {
@@ -313,11 +313,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // use_msi - computed: false, optional: true, required: false
-  private _useMsi?: boolean | cdktf.IResolvable;
+  private _useMsi?: boolean | cdktf.IResolvable | undefined; 
   public get useMsi() {
     return this._useMsi;
   }
-  public set useMsi(value: boolean | cdktf.IResolvable  | undefined) {
+  public set useMsi(value: boolean | cdktf.IResolvable | undefined| undefined) {
     this._useMsi = value;
   }
   public resetUseMsi() {
@@ -329,11 +329,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string;
+  private _alias?: string | undefined; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string  | undefined) {
+  public set alias(value: string | undefined| undefined) {
     this._alias = value;
   }
   public resetAlias() {

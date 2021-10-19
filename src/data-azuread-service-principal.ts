@@ -51,7 +51,7 @@ export class DataAzureadServicePrincipalAppRoles extends cdktf.ComplexComputedLi
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled') as any;
   }
 
   // id - computed: true, optional: false, required: false
@@ -68,44 +68,44 @@ export class DataAzureadServicePrincipalFeatureTags extends cdktf.ComplexCompute
 
   // custom_single_sign_on - computed: true, optional: false, required: false
   public get customSingleSignOn() {
-    return this.getBooleanAttribute('custom_single_sign_on');
+    return this.getBooleanAttribute('custom_single_sign_on') as any;
   }
 
   // enterprise - computed: true, optional: false, required: false
   public get enterprise() {
-    return this.getBooleanAttribute('enterprise');
+    return this.getBooleanAttribute('enterprise') as any;
   }
 
   // gallery - computed: true, optional: false, required: false
   public get gallery() {
-    return this.getBooleanAttribute('gallery');
+    return this.getBooleanAttribute('gallery') as any;
   }
 
   // hide - computed: true, optional: false, required: false
   public get hide() {
-    return this.getBooleanAttribute('hide');
+    return this.getBooleanAttribute('hide') as any;
   }
 }
 export class DataAzureadServicePrincipalFeatures extends cdktf.ComplexComputedList {
 
   // custom_single_sign_on_app - computed: true, optional: false, required: false
   public get customSingleSignOnApp() {
-    return this.getBooleanAttribute('custom_single_sign_on_app');
+    return this.getBooleanAttribute('custom_single_sign_on_app') as any;
   }
 
   // enterprise_application - computed: true, optional: false, required: false
   public get enterpriseApplication() {
-    return this.getBooleanAttribute('enterprise_application');
+    return this.getBooleanAttribute('enterprise_application') as any;
   }
 
   // gallery_application - computed: true, optional: false, required: false
   public get galleryApplication() {
-    return this.getBooleanAttribute('gallery_application');
+    return this.getBooleanAttribute('gallery_application') as any;
   }
 
   // visible_to_users - computed: true, optional: false, required: false
   public get visibleToUsers() {
-    return this.getBooleanAttribute('visible_to_users');
+    return this.getBooleanAttribute('visible_to_users') as any;
   }
 }
 export class DataAzureadServicePrincipalOauth2PermissionScopes extends cdktf.ComplexComputedList {
@@ -122,7 +122,7 @@ export class DataAzureadServicePrincipalOauth2PermissionScopes extends cdktf.Com
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled') as any;
   }
 
   // id - computed: true, optional: false, required: false
@@ -164,13 +164,42 @@ export interface DataAzureadServicePrincipalTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadServicePrincipalTimeoutsToTerraform(struct?: DataAzureadServicePrincipalTimeouts): any {
+function dataAzureadServicePrincipalTimeoutsToTerraform(struct?: DataAzureadServicePrincipalTimeoutsOutputReference | DataAzureadServicePrincipalTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
 }
 
+export class DataAzureadServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html azuread_service_principal}
@@ -216,7 +245,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
 
   // account_enabled - computed: true, optional: false, required: false
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled');
+    return this.getBooleanAttribute('account_enabled') as any;
   }
 
   // alternative_names - computed: true, optional: false, required: false
@@ -226,7 +255,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
 
   // app_role_assignment_required - computed: true, optional: false, required: false
   public get appRoleAssignmentRequired() {
-    return this.getBooleanAttribute('app_role_assignment_required');
+    return this.getBooleanAttribute('app_role_assignment_required') as any;
   }
 
   // app_role_ids - computed: true, optional: false, required: false
@@ -240,11 +269,11 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // application_id - computed: true, optional: true, required: false
-  private _applicationId?: string;
+  private _applicationId?: string | undefined; 
   public get applicationId() {
     return this.getStringAttribute('application_id');
   }
-  public set applicationId(value: string) {
+  public set applicationId(value: string | undefined) {
     this._applicationId = value;
   }
   public resetApplicationId() {
@@ -266,11 +295,11 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // display_name - computed: true, optional: true, required: false
-  private _displayName?: string;
+  private _displayName?: string | undefined; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
-  public set displayName(value: string) {
+  public set displayName(value: string | undefined) {
     this._displayName = value;
   }
   public resetDisplayName() {
@@ -332,11 +361,11 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // object_id - computed: true, optional: true, required: false
-  private _objectId?: string;
+  private _objectId?: string | undefined; 
   public get objectId() {
     return this.getStringAttribute('object_id');
   }
-  public set objectId(value: string) {
+  public set objectId(value: string | undefined) {
     this._objectId = value;
   }
   public resetObjectId() {
@@ -388,11 +417,12 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadServicePrincipalTimeouts;
+  private _timeouts?: DataAzureadServicePrincipalTimeouts | undefined; 
+  private __timeoutsOutput = new DataAzureadServicePrincipalTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: DataAzureadServicePrincipalTimeouts ) {
+  public putTimeouts(value: DataAzureadServicePrincipalTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {

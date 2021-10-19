@@ -48,7 +48,7 @@ export class DataAzureadUsersUsers extends cdktf.ComplexComputedList {
 
   // account_enabled - computed: true, optional: false, required: false
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled');
+    return this.getBooleanAttribute('account_enabled') as any;
   }
 
   // display_name - computed: true, optional: false, required: false
@@ -103,13 +103,42 @@ export interface DataAzureadUsersTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeouts): any {
+function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeoutsOutputReference | DataAzureadUsersTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
 }
 
+export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/d/users.html azuread_users}
@@ -161,11 +190,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // ignore_missing - computed: false, optional: true, required: false
-  private _ignoreMissing?: boolean | cdktf.IResolvable;
+  private _ignoreMissing?: boolean | cdktf.IResolvable | undefined; 
   public get ignoreMissing() {
-    return this.getBooleanAttribute('ignore_missing');
+    return this.getBooleanAttribute('ignore_missing') as any;
   }
-  public set ignoreMissing(value: boolean | cdktf.IResolvable ) {
+  public set ignoreMissing(value: boolean | cdktf.IResolvable | undefined) {
     this._ignoreMissing = value;
   }
   public resetIgnoreMissing() {
@@ -177,11 +206,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // mail_nicknames - computed: true, optional: true, required: false
-  private _mailNicknames?: string[];
+  private _mailNicknames?: string[] | undefined; 
   public get mailNicknames() {
     return this.getListAttribute('mail_nicknames');
   }
-  public set mailNicknames(value: string[]) {
+  public set mailNicknames(value: string[] | undefined) {
     this._mailNicknames = value;
   }
   public resetMailNicknames() {
@@ -193,11 +222,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // object_ids - computed: true, optional: true, required: false
-  private _objectIds?: string[];
+  private _objectIds?: string[] | undefined; 
   public get objectIds() {
     return this.getListAttribute('object_ids');
   }
-  public set objectIds(value: string[]) {
+  public set objectIds(value: string[] | undefined) {
     this._objectIds = value;
   }
   public resetObjectIds() {
@@ -209,11 +238,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // return_all - computed: false, optional: true, required: false
-  private _returnAll?: boolean | cdktf.IResolvable;
+  private _returnAll?: boolean | cdktf.IResolvable | undefined; 
   public get returnAll() {
-    return this.getBooleanAttribute('return_all');
+    return this.getBooleanAttribute('return_all') as any;
   }
-  public set returnAll(value: boolean | cdktf.IResolvable ) {
+  public set returnAll(value: boolean | cdktf.IResolvable | undefined) {
     this._returnAll = value;
   }
   public resetReturnAll() {
@@ -225,11 +254,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // user_principal_names - computed: true, optional: true, required: false
-  private _userPrincipalNames?: string[];
+  private _userPrincipalNames?: string[] | undefined; 
   public get userPrincipalNames() {
     return this.getListAttribute('user_principal_names');
   }
-  public set userPrincipalNames(value: string[]) {
+  public set userPrincipalNames(value: string[] | undefined) {
     this._userPrincipalNames = value;
   }
   public resetUserPrincipalNames() {
@@ -246,11 +275,12 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadUsersTimeouts;
+  private _timeouts?: DataAzureadUsersTimeouts | undefined; 
+  private __timeoutsOutput = new DataAzureadUsersTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: DataAzureadUsersTimeouts ) {
+  public putTimeouts(value: DataAzureadUsersTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {

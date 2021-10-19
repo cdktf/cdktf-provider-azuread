@@ -36,7 +36,7 @@ export interface InvitationConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#message Invitation#message}
   */
-  readonly message?: InvitationMessage[];
+  readonly message?: InvitationMessage;
   /**
   * timeouts block
   * 
@@ -65,8 +65,11 @@ export interface InvitationMessage {
   readonly language?: string;
 }
 
-function invitationMessageToTerraform(struct?: InvitationMessage): any {
+function invitationMessageToTerraform(struct?: InvitationMessageOutputReference | InvitationMessage): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     additional_recipients: cdktf.listMapper(cdktf.stringToTerraform)(struct!.additionalRecipients),
     body: cdktf.stringToTerraform(struct!.body),
@@ -74,6 +77,64 @@ function invitationMessageToTerraform(struct?: InvitationMessage): any {
   }
 }
 
+export class InvitationMessageOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // additional_recipients - computed: false, optional: true, required: false
+  private _additionalRecipients?: string[] | undefined; 
+  public get additionalRecipients() {
+    return this.getListAttribute('additional_recipients');
+  }
+  public set additionalRecipients(value: string[] | undefined) {
+    this._additionalRecipients = value;
+  }
+  public resetAdditionalRecipients() {
+    this._additionalRecipients = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalRecipientsInput() {
+    return this._additionalRecipients
+  }
+
+  // body - computed: false, optional: true, required: false
+  private _body?: string | undefined; 
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+  public set body(value: string | undefined) {
+    this._body = value;
+  }
+  public resetBody() {
+    this._body = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body
+  }
+
+  // language - computed: false, optional: true, required: false
+  private _language?: string | undefined; 
+  public get language() {
+    return this.getStringAttribute('language');
+  }
+  public set language(value: string | undefined) {
+    this._language = value;
+  }
+  public resetLanguage() {
+    this._language = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageInput() {
+    return this._language
+  }
+}
 export interface InvitationTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#create Invitation#create}
@@ -93,8 +154,11 @@ export interface InvitationTimeouts {
   readonly update?: string;
 }
 
-function invitationTimeoutsToTerraform(struct?: InvitationTimeouts): any {
+function invitationTimeoutsToTerraform(struct?: InvitationTimeoutsOutputReference | InvitationTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
@@ -103,6 +167,80 @@ function invitationTimeoutsToTerraform(struct?: InvitationTimeouts): any {
   }
 }
 
+export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string | undefined; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string | undefined) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string | undefined; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string | undefined) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string | undefined; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string | undefined) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html azuread_invitation}
@@ -159,7 +297,7 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // redirect_url - computed: false, optional: false, required: true
-  private _redirectUrl: string;
+  private _redirectUrl?: string; 
   public get redirectUrl() {
     return this.getStringAttribute('redirect_url');
   }
@@ -172,11 +310,11 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // user_display_name - computed: false, optional: true, required: false
-  private _userDisplayName?: string;
+  private _userDisplayName?: string | undefined; 
   public get userDisplayName() {
     return this.getStringAttribute('user_display_name');
   }
-  public set userDisplayName(value: string ) {
+  public set userDisplayName(value: string | undefined) {
     this._userDisplayName = value;
   }
   public resetUserDisplayName() {
@@ -188,7 +326,7 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // user_email_address - computed: false, optional: false, required: true
-  private _userEmailAddress: string;
+  private _userEmailAddress?: string; 
   public get userEmailAddress() {
     return this.getStringAttribute('user_email_address');
   }
@@ -206,11 +344,11 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // user_type - computed: false, optional: true, required: false
-  private _userType?: string;
+  private _userType?: string | undefined; 
   public get userType() {
     return this.getStringAttribute('user_type');
   }
-  public set userType(value: string ) {
+  public set userType(value: string | undefined) {
     this._userType = value;
   }
   public resetUserType() {
@@ -222,11 +360,12 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // message - computed: false, optional: true, required: false
-  private _message?: InvitationMessage[];
+  private _message?: InvitationMessage | undefined; 
+  private __messageOutput = new InvitationMessageOutputReference(this as any, "message", true);
   public get message() {
-    return this.interpolationForAttribute('message') as any;
+    return this.__messageOutput;
   }
-  public set message(value: InvitationMessage[] ) {
+  public putMessage(value: InvitationMessage | undefined) {
     this._message = value;
   }
   public resetMessage() {
@@ -238,11 +377,12 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: InvitationTimeouts;
+  private _timeouts?: InvitationTimeouts | undefined; 
+  private __timeoutsOutput = new InvitationTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: InvitationTimeouts ) {
+  public putTimeouts(value: InvitationTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {
@@ -263,7 +403,7 @@ export class Invitation extends cdktf.TerraformResource {
       user_display_name: cdktf.stringToTerraform(this._userDisplayName),
       user_email_address: cdktf.stringToTerraform(this._userEmailAddress),
       user_type: cdktf.stringToTerraform(this._userType),
-      message: cdktf.listMapper(invitationMessageToTerraform)(this._message),
+      message: invitationMessageToTerraform(this._message),
       timeouts: invitationTimeoutsToTerraform(this._timeouts),
     };
   }

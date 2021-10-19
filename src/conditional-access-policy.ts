@@ -20,19 +20,19 @@ export interface ConditionalAccessPolicyConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#conditions ConditionalAccessPolicy#conditions}
   */
-  readonly conditions: ConditionalAccessPolicyConditions[];
+  readonly conditions: ConditionalAccessPolicyConditions;
   /**
   * grant_controls block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#grant_controls ConditionalAccessPolicy#grant_controls}
   */
-  readonly grantControls: ConditionalAccessPolicyGrantControls[];
+  readonly grantControls: ConditionalAccessPolicyGrantControls;
   /**
   * session_controls block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#session_controls ConditionalAccessPolicy#session_controls}
   */
-  readonly sessionControls?: ConditionalAccessPolicySessionControls[];
+  readonly sessionControls?: ConditionalAccessPolicySessionControls;
   /**
   * timeouts block
   * 
@@ -55,8 +55,11 @@ export interface ConditionalAccessPolicyConditionsApplications {
   readonly includedUserActions?: string[];
 }
 
-function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?: ConditionalAccessPolicyConditionsApplications): any {
+function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsOutputReference | ConditionalAccessPolicyConditionsApplications): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     excluded_applications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedApplications),
     included_applications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedApplications),
@@ -64,6 +67,61 @@ function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?: Condi
   }
 }
 
+export class ConditionalAccessPolicyConditionsApplicationsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // excluded_applications - computed: false, optional: true, required: false
+  private _excludedApplications?: string[] | undefined; 
+  public get excludedApplications() {
+    return this.getListAttribute('excluded_applications');
+  }
+  public set excludedApplications(value: string[] | undefined) {
+    this._excludedApplications = value;
+  }
+  public resetExcludedApplications() {
+    this._excludedApplications = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedApplicationsInput() {
+    return this._excludedApplications
+  }
+
+  // included_applications - computed: false, optional: false, required: true
+  private _includedApplications?: string[]; 
+  public get includedApplications() {
+    return this.getListAttribute('included_applications');
+  }
+  public set includedApplications(value: string[]) {
+    this._includedApplications = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedApplicationsInput() {
+    return this._includedApplications
+  }
+
+  // included_user_actions - computed: false, optional: true, required: false
+  private _includedUserActions?: string[] | undefined; 
+  public get includedUserActions() {
+    return this.getListAttribute('included_user_actions');
+  }
+  public set includedUserActions(value: string[] | undefined) {
+    this._includedUserActions = value;
+  }
+  public resetIncludedUserActions() {
+    this._includedUserActions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedUserActionsInput() {
+    return this._includedUserActions
+  }
+}
 export interface ConditionalAccessPolicyConditionsLocations {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_locations ConditionalAccessPolicy#excluded_locations}
@@ -75,14 +133,56 @@ export interface ConditionalAccessPolicyConditionsLocations {
   readonly includedLocations: string[];
 }
 
-function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: ConditionalAccessPolicyConditionsLocations): any {
+function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: ConditionalAccessPolicyConditionsLocationsOutputReference | ConditionalAccessPolicyConditionsLocations): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     excluded_locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedLocations),
     included_locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedLocations),
   }
 }
 
+export class ConditionalAccessPolicyConditionsLocationsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // excluded_locations - computed: false, optional: true, required: false
+  private _excludedLocations?: string[] | undefined; 
+  public get excludedLocations() {
+    return this.getListAttribute('excluded_locations');
+  }
+  public set excludedLocations(value: string[] | undefined) {
+    this._excludedLocations = value;
+  }
+  public resetExcludedLocations() {
+    this._excludedLocations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedLocationsInput() {
+    return this._excludedLocations
+  }
+
+  // included_locations - computed: false, optional: false, required: true
+  private _includedLocations?: string[]; 
+  public get includedLocations() {
+    return this.getListAttribute('included_locations');
+  }
+  public set includedLocations(value: string[]) {
+    this._includedLocations = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedLocationsInput() {
+    return this._includedLocations
+  }
+}
 export interface ConditionalAccessPolicyConditionsPlatforms {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_platforms ConditionalAccessPolicy#excluded_platforms}
@@ -94,14 +194,56 @@ export interface ConditionalAccessPolicyConditionsPlatforms {
   readonly includedPlatforms: string[];
 }
 
-function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: ConditionalAccessPolicyConditionsPlatforms): any {
+function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: ConditionalAccessPolicyConditionsPlatformsOutputReference | ConditionalAccessPolicyConditionsPlatforms): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     excluded_platforms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedPlatforms),
     included_platforms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedPlatforms),
   }
 }
 
+export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // excluded_platforms - computed: false, optional: true, required: false
+  private _excludedPlatforms?: string[] | undefined; 
+  public get excludedPlatforms() {
+    return this.getListAttribute('excluded_platforms');
+  }
+  public set excludedPlatforms(value: string[] | undefined) {
+    this._excludedPlatforms = value;
+  }
+  public resetExcludedPlatforms() {
+    this._excludedPlatforms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedPlatformsInput() {
+    return this._excludedPlatforms
+  }
+
+  // included_platforms - computed: false, optional: false, required: true
+  private _includedPlatforms?: string[]; 
+  public get includedPlatforms() {
+    return this.getListAttribute('included_platforms');
+  }
+  public set includedPlatforms(value: string[]) {
+    this._includedPlatforms = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedPlatformsInput() {
+    return this._includedPlatforms
+  }
+}
 export interface ConditionalAccessPolicyConditionsUsers {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_groups ConditionalAccessPolicy#excluded_groups}
@@ -129,8 +271,11 @@ export interface ConditionalAccessPolicyConditionsUsers {
   readonly includedUsers?: string[];
 }
 
-function conditionalAccessPolicyConditionsUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsers): any {
+function conditionalAccessPolicyConditionsUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersOutputReference | ConditionalAccessPolicyConditionsUsers): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     excluded_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedGroups),
     excluded_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedRoles),
@@ -141,6 +286,112 @@ function conditionalAccessPolicyConditionsUsersToTerraform(struct?: ConditionalA
   }
 }
 
+export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // excluded_groups - computed: false, optional: true, required: false
+  private _excludedGroups?: string[] | undefined; 
+  public get excludedGroups() {
+    return this.getListAttribute('excluded_groups');
+  }
+  public set excludedGroups(value: string[] | undefined) {
+    this._excludedGroups = value;
+  }
+  public resetExcludedGroups() {
+    this._excludedGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedGroupsInput() {
+    return this._excludedGroups
+  }
+
+  // excluded_roles - computed: false, optional: true, required: false
+  private _excludedRoles?: string[] | undefined; 
+  public get excludedRoles() {
+    return this.getListAttribute('excluded_roles');
+  }
+  public set excludedRoles(value: string[] | undefined) {
+    this._excludedRoles = value;
+  }
+  public resetExcludedRoles() {
+    this._excludedRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedRolesInput() {
+    return this._excludedRoles
+  }
+
+  // excluded_users - computed: false, optional: true, required: false
+  private _excludedUsers?: string[] | undefined; 
+  public get excludedUsers() {
+    return this.getListAttribute('excluded_users');
+  }
+  public set excludedUsers(value: string[] | undefined) {
+    this._excludedUsers = value;
+  }
+  public resetExcludedUsers() {
+    this._excludedUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedUsersInput() {
+    return this._excludedUsers
+  }
+
+  // included_groups - computed: false, optional: true, required: false
+  private _includedGroups?: string[] | undefined; 
+  public get includedGroups() {
+    return this.getListAttribute('included_groups');
+  }
+  public set includedGroups(value: string[] | undefined) {
+    this._includedGroups = value;
+  }
+  public resetIncludedGroups() {
+    this._includedGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedGroupsInput() {
+    return this._includedGroups
+  }
+
+  // included_roles - computed: false, optional: true, required: false
+  private _includedRoles?: string[] | undefined; 
+  public get includedRoles() {
+    return this.getListAttribute('included_roles');
+  }
+  public set includedRoles(value: string[] | undefined) {
+    this._includedRoles = value;
+  }
+  public resetIncludedRoles() {
+    this._includedRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedRolesInput() {
+    return this._includedRoles
+  }
+
+  // included_users - computed: false, optional: true, required: false
+  private _includedUsers?: string[] | undefined; 
+  public get includedUsers() {
+    return this.getListAttribute('included_users');
+  }
+  public set includedUsers(value: string[] | undefined) {
+    this._includedUsers = value;
+  }
+  public resetIncludedUsers() {
+    this._includedUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedUsersInput() {
+    return this._includedUsers
+  }
+}
 export interface ConditionalAccessPolicyConditions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#client_app_types ConditionalAccessPolicy#client_app_types}
@@ -159,40 +410,154 @@ export interface ConditionalAccessPolicyConditions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#applications ConditionalAccessPolicy#applications}
   */
-  readonly applications: ConditionalAccessPolicyConditionsApplications[];
+  readonly applications: ConditionalAccessPolicyConditionsApplications;
   /**
   * locations block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#locations ConditionalAccessPolicy#locations}
   */
-  readonly locations: ConditionalAccessPolicyConditionsLocations[];
+  readonly locations: ConditionalAccessPolicyConditionsLocations;
   /**
   * platforms block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#platforms ConditionalAccessPolicy#platforms}
   */
-  readonly platforms: ConditionalAccessPolicyConditionsPlatforms[];
+  readonly platforms: ConditionalAccessPolicyConditionsPlatforms;
   /**
   * users block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#users ConditionalAccessPolicy#users}
   */
-  readonly users: ConditionalAccessPolicyConditionsUsers[];
+  readonly users: ConditionalAccessPolicyConditionsUsers;
 }
 
-function conditionalAccessPolicyConditionsToTerraform(struct?: ConditionalAccessPolicyConditions): any {
+function conditionalAccessPolicyConditionsToTerraform(struct?: ConditionalAccessPolicyConditionsOutputReference | ConditionalAccessPolicyConditions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     client_app_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.clientAppTypes),
     sign_in_risk_levels: cdktf.listMapper(cdktf.stringToTerraform)(struct!.signInRiskLevels),
     user_risk_levels: cdktf.listMapper(cdktf.stringToTerraform)(struct!.userRiskLevels),
-    applications: cdktf.listMapper(conditionalAccessPolicyConditionsApplicationsToTerraform)(struct!.applications),
-    locations: cdktf.listMapper(conditionalAccessPolicyConditionsLocationsToTerraform)(struct!.locations),
-    platforms: cdktf.listMapper(conditionalAccessPolicyConditionsPlatformsToTerraform)(struct!.platforms),
-    users: cdktf.listMapper(conditionalAccessPolicyConditionsUsersToTerraform)(struct!.users),
+    applications: conditionalAccessPolicyConditionsApplicationsToTerraform(struct!.applications),
+    locations: conditionalAccessPolicyConditionsLocationsToTerraform(struct!.locations),
+    platforms: conditionalAccessPolicyConditionsPlatformsToTerraform(struct!.platforms),
+    users: conditionalAccessPolicyConditionsUsersToTerraform(struct!.users),
   }
 }
 
+export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // client_app_types - computed: false, optional: false, required: true
+  private _clientAppTypes?: string[]; 
+  public get clientAppTypes() {
+    return this.getListAttribute('client_app_types');
+  }
+  public set clientAppTypes(value: string[]) {
+    this._clientAppTypes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientAppTypesInput() {
+    return this._clientAppTypes
+  }
+
+  // sign_in_risk_levels - computed: false, optional: true, required: false
+  private _signInRiskLevels?: string[] | undefined; 
+  public get signInRiskLevels() {
+    return this.getListAttribute('sign_in_risk_levels');
+  }
+  public set signInRiskLevels(value: string[] | undefined) {
+    this._signInRiskLevels = value;
+  }
+  public resetSignInRiskLevels() {
+    this._signInRiskLevels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signInRiskLevelsInput() {
+    return this._signInRiskLevels
+  }
+
+  // user_risk_levels - computed: false, optional: true, required: false
+  private _userRiskLevels?: string[] | undefined; 
+  public get userRiskLevels() {
+    return this.getListAttribute('user_risk_levels');
+  }
+  public set userRiskLevels(value: string[] | undefined) {
+    this._userRiskLevels = value;
+  }
+  public resetUserRiskLevels() {
+    this._userRiskLevels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userRiskLevelsInput() {
+    return this._userRiskLevels
+  }
+
+  // applications - computed: false, optional: false, required: true
+  private _applications?: ConditionalAccessPolicyConditionsApplications; 
+  private __applicationsOutput = new ConditionalAccessPolicyConditionsApplicationsOutputReference(this as any, "applications", true);
+  public get applications() {
+    return this.__applicationsOutput;
+  }
+  public putApplications(value: ConditionalAccessPolicyConditionsApplications) {
+    this._applications = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationsInput() {
+    return this._applications
+  }
+
+  // locations - computed: false, optional: false, required: true
+  private _locations?: ConditionalAccessPolicyConditionsLocations; 
+  private __locationsOutput = new ConditionalAccessPolicyConditionsLocationsOutputReference(this as any, "locations", true);
+  public get locations() {
+    return this.__locationsOutput;
+  }
+  public putLocations(value: ConditionalAccessPolicyConditionsLocations) {
+    this._locations = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationsInput() {
+    return this._locations
+  }
+
+  // platforms - computed: false, optional: false, required: true
+  private _platforms?: ConditionalAccessPolicyConditionsPlatforms; 
+  private __platformsOutput = new ConditionalAccessPolicyConditionsPlatformsOutputReference(this as any, "platforms", true);
+  public get platforms() {
+    return this.__platformsOutput;
+  }
+  public putPlatforms(value: ConditionalAccessPolicyConditionsPlatforms) {
+    this._platforms = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get platformsInput() {
+    return this._platforms
+  }
+
+  // users - computed: false, optional: false, required: true
+  private _users?: ConditionalAccessPolicyConditionsUsers; 
+  private __usersOutput = new ConditionalAccessPolicyConditionsUsersOutputReference(this as any, "users", true);
+  public get users() {
+    return this.__usersOutput;
+  }
+  public putUsers(value: ConditionalAccessPolicyConditionsUsers) {
+    this._users = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users
+  }
+}
 export interface ConditionalAccessPolicyGrantControls {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#built_in_controls ConditionalAccessPolicy#built_in_controls}
@@ -212,8 +577,11 @@ export interface ConditionalAccessPolicyGrantControls {
   readonly termsOfUse?: string[];
 }
 
-function conditionalAccessPolicyGrantControlsToTerraform(struct?: ConditionalAccessPolicyGrantControls): any {
+function conditionalAccessPolicyGrantControlsToTerraform(struct?: ConditionalAccessPolicyGrantControlsOutputReference | ConditionalAccessPolicyGrantControls): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     built_in_controls: cdktf.listMapper(cdktf.stringToTerraform)(struct!.builtInControls),
     custom_authentication_factors: cdktf.listMapper(cdktf.stringToTerraform)(struct!.customAuthenticationFactors),
@@ -222,6 +590,74 @@ function conditionalAccessPolicyGrantControlsToTerraform(struct?: ConditionalAcc
   }
 }
 
+export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // built_in_controls - computed: false, optional: false, required: true
+  private _builtInControls?: string[]; 
+  public get builtInControls() {
+    return this.getListAttribute('built_in_controls');
+  }
+  public set builtInControls(value: string[]) {
+    this._builtInControls = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get builtInControlsInput() {
+    return this._builtInControls
+  }
+
+  // custom_authentication_factors - computed: false, optional: true, required: false
+  private _customAuthenticationFactors?: string[] | undefined; 
+  public get customAuthenticationFactors() {
+    return this.getListAttribute('custom_authentication_factors');
+  }
+  public set customAuthenticationFactors(value: string[] | undefined) {
+    this._customAuthenticationFactors = value;
+  }
+  public resetCustomAuthenticationFactors() {
+    this._customAuthenticationFactors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customAuthenticationFactorsInput() {
+    return this._customAuthenticationFactors
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator
+  }
+
+  // terms_of_use - computed: false, optional: true, required: false
+  private _termsOfUse?: string[] | undefined; 
+  public get termsOfUse() {
+    return this.getListAttribute('terms_of_use');
+  }
+  public set termsOfUse(value: string[] | undefined) {
+    this._termsOfUse = value;
+  }
+  public resetTermsOfUse() {
+    this._termsOfUse = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get termsOfUseInput() {
+    return this._termsOfUse
+  }
+}
 export interface ConditionalAccessPolicySessionControls {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#application_enforced_restrictions_enabled ConditionalAccessPolicy#application_enforced_restrictions_enabled}
@@ -241,8 +677,11 @@ export interface ConditionalAccessPolicySessionControls {
   readonly signInFrequencyPeriod?: string;
 }
 
-function conditionalAccessPolicySessionControlsToTerraform(struct?: ConditionalAccessPolicySessionControls): any {
+function conditionalAccessPolicySessionControlsToTerraform(struct?: ConditionalAccessPolicySessionControlsOutputReference | ConditionalAccessPolicySessionControls): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     application_enforced_restrictions_enabled: cdktf.booleanToTerraform(struct!.applicationEnforcedRestrictionsEnabled),
     cloud_app_security_policy: cdktf.stringToTerraform(struct!.cloudAppSecurityPolicy),
@@ -251,6 +690,80 @@ function conditionalAccessPolicySessionControlsToTerraform(struct?: ConditionalA
   }
 }
 
+export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // application_enforced_restrictions_enabled - computed: false, optional: true, required: false
+  private _applicationEnforcedRestrictionsEnabled?: boolean | cdktf.IResolvable | undefined; 
+  public get applicationEnforcedRestrictionsEnabled() {
+    return this.getBooleanAttribute('application_enforced_restrictions_enabled') as any;
+  }
+  public set applicationEnforcedRestrictionsEnabled(value: boolean | cdktf.IResolvable | undefined) {
+    this._applicationEnforcedRestrictionsEnabled = value;
+  }
+  public resetApplicationEnforcedRestrictionsEnabled() {
+    this._applicationEnforcedRestrictionsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationEnforcedRestrictionsEnabledInput() {
+    return this._applicationEnforcedRestrictionsEnabled
+  }
+
+  // cloud_app_security_policy - computed: false, optional: true, required: false
+  private _cloudAppSecurityPolicy?: string | undefined; 
+  public get cloudAppSecurityPolicy() {
+    return this.getStringAttribute('cloud_app_security_policy');
+  }
+  public set cloudAppSecurityPolicy(value: string | undefined) {
+    this._cloudAppSecurityPolicy = value;
+  }
+  public resetCloudAppSecurityPolicy() {
+    this._cloudAppSecurityPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudAppSecurityPolicyInput() {
+    return this._cloudAppSecurityPolicy
+  }
+
+  // sign_in_frequency - computed: false, optional: true, required: false
+  private _signInFrequency?: number | undefined; 
+  public get signInFrequency() {
+    return this.getNumberAttribute('sign_in_frequency');
+  }
+  public set signInFrequency(value: number | undefined) {
+    this._signInFrequency = value;
+  }
+  public resetSignInFrequency() {
+    this._signInFrequency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signInFrequencyInput() {
+    return this._signInFrequency
+  }
+
+  // sign_in_frequency_period - computed: false, optional: true, required: false
+  private _signInFrequencyPeriod?: string | undefined; 
+  public get signInFrequencyPeriod() {
+    return this.getStringAttribute('sign_in_frequency_period');
+  }
+  public set signInFrequencyPeriod(value: string | undefined) {
+    this._signInFrequencyPeriod = value;
+  }
+  public resetSignInFrequencyPeriod() {
+    this._signInFrequencyPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signInFrequencyPeriodInput() {
+    return this._signInFrequencyPeriod
+  }
+}
 export interface ConditionalAccessPolicyTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#create ConditionalAccessPolicy#create}
@@ -270,8 +783,11 @@ export interface ConditionalAccessPolicyTimeouts {
   readonly update?: string;
 }
 
-function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPolicyTimeouts): any {
+function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPolicyTimeoutsOutputReference | ConditionalAccessPolicyTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
@@ -280,6 +796,80 @@ function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPo
   }
 }
 
+export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string | undefined; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string | undefined) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string | undefined; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string | undefined) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string | undefined; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string | undefined) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html azuread_conditional_access_policy}
@@ -326,7 +916,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   // ==========
 
   // display_name - computed: false, optional: false, required: true
-  private _displayName: string;
+  private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
@@ -344,7 +934,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // state - computed: false, optional: false, required: true
-  private _state: string;
+  private _state?: string; 
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -357,11 +947,12 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // conditions - computed: false, optional: false, required: true
-  private _conditions: ConditionalAccessPolicyConditions[];
+  private _conditions?: ConditionalAccessPolicyConditions; 
+  private __conditionsOutput = new ConditionalAccessPolicyConditionsOutputReference(this as any, "conditions", true);
   public get conditions() {
-    return this.interpolationForAttribute('conditions') as any;
+    return this.__conditionsOutput;
   }
-  public set conditions(value: ConditionalAccessPolicyConditions[]) {
+  public putConditions(value: ConditionalAccessPolicyConditions) {
     this._conditions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -370,11 +961,12 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // grant_controls - computed: false, optional: false, required: true
-  private _grantControls: ConditionalAccessPolicyGrantControls[];
+  private _grantControls?: ConditionalAccessPolicyGrantControls; 
+  private __grantControlsOutput = new ConditionalAccessPolicyGrantControlsOutputReference(this as any, "grant_controls", true);
   public get grantControls() {
-    return this.interpolationForAttribute('grant_controls') as any;
+    return this.__grantControlsOutput;
   }
-  public set grantControls(value: ConditionalAccessPolicyGrantControls[]) {
+  public putGrantControls(value: ConditionalAccessPolicyGrantControls) {
     this._grantControls = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -383,11 +975,12 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // session_controls - computed: false, optional: true, required: false
-  private _sessionControls?: ConditionalAccessPolicySessionControls[];
+  private _sessionControls?: ConditionalAccessPolicySessionControls | undefined; 
+  private __sessionControlsOutput = new ConditionalAccessPolicySessionControlsOutputReference(this as any, "session_controls", true);
   public get sessionControls() {
-    return this.interpolationForAttribute('session_controls') as any;
+    return this.__sessionControlsOutput;
   }
-  public set sessionControls(value: ConditionalAccessPolicySessionControls[] ) {
+  public putSessionControls(value: ConditionalAccessPolicySessionControls | undefined) {
     this._sessionControls = value;
   }
   public resetSessionControls() {
@@ -399,11 +992,12 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ConditionalAccessPolicyTimeouts;
+  private _timeouts?: ConditionalAccessPolicyTimeouts | undefined; 
+  private __timeoutsOutput = new ConditionalAccessPolicyTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: ConditionalAccessPolicyTimeouts ) {
+  public putTimeouts(value: ConditionalAccessPolicyTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {
@@ -422,9 +1016,9 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
     return {
       display_name: cdktf.stringToTerraform(this._displayName),
       state: cdktf.stringToTerraform(this._state),
-      conditions: cdktf.listMapper(conditionalAccessPolicyConditionsToTerraform)(this._conditions),
-      grant_controls: cdktf.listMapper(conditionalAccessPolicyGrantControlsToTerraform)(this._grantControls),
-      session_controls: cdktf.listMapper(conditionalAccessPolicySessionControlsToTerraform)(this._sessionControls),
+      conditions: conditionalAccessPolicyConditionsToTerraform(this._conditions),
+      grant_controls: conditionalAccessPolicyGrantControlsToTerraform(this._grantControls),
+      session_controls: conditionalAccessPolicySessionControlsToTerraform(this._sessionControls),
       timeouts: conditionalAccessPolicyTimeoutsToTerraform(this._timeouts),
     };
   }

@@ -243,8 +243,11 @@ export interface UserTimeouts {
   readonly update?: string;
 }
 
-function userTimeoutsToTerraform(struct?: UserTimeouts): any {
+function userTimeoutsToTerraform(struct?: UserTimeoutsOutputReference | UserTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
@@ -253,6 +256,80 @@ function userTimeoutsToTerraform(struct?: UserTimeouts): any {
   }
 }
 
+export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string | undefined; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string | undefined) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string | undefined; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string | undefined) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string | undefined; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string | undefined) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/r/user.html azuread_user}
@@ -334,11 +411,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // account_enabled - computed: false, optional: true, required: false
-  private _accountEnabled?: boolean | cdktf.IResolvable;
+  private _accountEnabled?: boolean | cdktf.IResolvable | undefined; 
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled');
+    return this.getBooleanAttribute('account_enabled') as any;
   }
-  public set accountEnabled(value: boolean | cdktf.IResolvable ) {
+  public set accountEnabled(value: boolean | cdktf.IResolvable | undefined) {
     this._accountEnabled = value;
   }
   public resetAccountEnabled() {
@@ -350,11 +427,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // age_group - computed: false, optional: true, required: false
-  private _ageGroup?: string;
+  private _ageGroup?: string | undefined; 
   public get ageGroup() {
     return this.getStringAttribute('age_group');
   }
-  public set ageGroup(value: string ) {
+  public set ageGroup(value: string | undefined) {
     this._ageGroup = value;
   }
   public resetAgeGroup() {
@@ -366,11 +443,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // business_phones - computed: true, optional: true, required: false
-  private _businessPhones?: string[];
+  private _businessPhones?: string[] | undefined; 
   public get businessPhones() {
     return this.getListAttribute('business_phones');
   }
-  public set businessPhones(value: string[]) {
+  public set businessPhones(value: string[] | undefined) {
     this._businessPhones = value;
   }
   public resetBusinessPhones() {
@@ -382,11 +459,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // city - computed: false, optional: true, required: false
-  private _city?: string;
+  private _city?: string | undefined; 
   public get city() {
     return this.getStringAttribute('city');
   }
-  public set city(value: string ) {
+  public set city(value: string | undefined) {
     this._city = value;
   }
   public resetCity() {
@@ -398,11 +475,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // company_name - computed: false, optional: true, required: false
-  private _companyName?: string;
+  private _companyName?: string | undefined; 
   public get companyName() {
     return this.getStringAttribute('company_name');
   }
-  public set companyName(value: string ) {
+  public set companyName(value: string | undefined) {
     this._companyName = value;
   }
   public resetCompanyName() {
@@ -414,11 +491,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // consent_provided_for_minor - computed: false, optional: true, required: false
-  private _consentProvidedForMinor?: string;
+  private _consentProvidedForMinor?: string | undefined; 
   public get consentProvidedForMinor() {
     return this.getStringAttribute('consent_provided_for_minor');
   }
-  public set consentProvidedForMinor(value: string ) {
+  public set consentProvidedForMinor(value: string | undefined) {
     this._consentProvidedForMinor = value;
   }
   public resetConsentProvidedForMinor() {
@@ -430,11 +507,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // cost_center - computed: false, optional: true, required: false
-  private _costCenter?: string;
+  private _costCenter?: string | undefined; 
   public get costCenter() {
     return this.getStringAttribute('cost_center');
   }
-  public set costCenter(value: string ) {
+  public set costCenter(value: string | undefined) {
     this._costCenter = value;
   }
   public resetCostCenter() {
@@ -446,11 +523,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // country - computed: false, optional: true, required: false
-  private _country?: string;
+  private _country?: string | undefined; 
   public get country() {
     return this.getStringAttribute('country');
   }
-  public set country(value: string ) {
+  public set country(value: string | undefined) {
     this._country = value;
   }
   public resetCountry() {
@@ -467,11 +544,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // department - computed: false, optional: true, required: false
-  private _department?: string;
+  private _department?: string | undefined; 
   public get department() {
     return this.getStringAttribute('department');
   }
-  public set department(value: string ) {
+  public set department(value: string | undefined) {
     this._department = value;
   }
   public resetDepartment() {
@@ -483,11 +560,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // disable_password_expiration - computed: false, optional: true, required: false
-  private _disablePasswordExpiration?: boolean | cdktf.IResolvable;
+  private _disablePasswordExpiration?: boolean | cdktf.IResolvable | undefined; 
   public get disablePasswordExpiration() {
-    return this.getBooleanAttribute('disable_password_expiration');
+    return this.getBooleanAttribute('disable_password_expiration') as any;
   }
-  public set disablePasswordExpiration(value: boolean | cdktf.IResolvable ) {
+  public set disablePasswordExpiration(value: boolean | cdktf.IResolvable | undefined) {
     this._disablePasswordExpiration = value;
   }
   public resetDisablePasswordExpiration() {
@@ -499,11 +576,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // disable_strong_password - computed: false, optional: true, required: false
-  private _disableStrongPassword?: boolean | cdktf.IResolvable;
+  private _disableStrongPassword?: boolean | cdktf.IResolvable | undefined; 
   public get disableStrongPassword() {
-    return this.getBooleanAttribute('disable_strong_password');
+    return this.getBooleanAttribute('disable_strong_password') as any;
   }
-  public set disableStrongPassword(value: boolean | cdktf.IResolvable ) {
+  public set disableStrongPassword(value: boolean | cdktf.IResolvable | undefined) {
     this._disableStrongPassword = value;
   }
   public resetDisableStrongPassword() {
@@ -515,7 +592,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // display_name - computed: false, optional: false, required: true
-  private _displayName: string;
+  private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
@@ -528,11 +605,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // division - computed: false, optional: true, required: false
-  private _division?: string;
+  private _division?: string | undefined; 
   public get division() {
     return this.getStringAttribute('division');
   }
-  public set division(value: string ) {
+  public set division(value: string | undefined) {
     this._division = value;
   }
   public resetDivision() {
@@ -544,11 +621,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // employee_id - computed: false, optional: true, required: false
-  private _employeeId?: string;
+  private _employeeId?: string | undefined; 
   public get employeeId() {
     return this.getStringAttribute('employee_id');
   }
-  public set employeeId(value: string ) {
+  public set employeeId(value: string | undefined) {
     this._employeeId = value;
   }
   public resetEmployeeId() {
@@ -560,11 +637,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // employee_type - computed: false, optional: true, required: false
-  private _employeeType?: string;
+  private _employeeType?: string | undefined; 
   public get employeeType() {
     return this.getStringAttribute('employee_type');
   }
-  public set employeeType(value: string ) {
+  public set employeeType(value: string | undefined) {
     this._employeeType = value;
   }
   public resetEmployeeType() {
@@ -581,11 +658,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // fax_number - computed: false, optional: true, required: false
-  private _faxNumber?: string;
+  private _faxNumber?: string | undefined; 
   public get faxNumber() {
     return this.getStringAttribute('fax_number');
   }
-  public set faxNumber(value: string ) {
+  public set faxNumber(value: string | undefined) {
     this._faxNumber = value;
   }
   public resetFaxNumber() {
@@ -597,11 +674,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // force_password_change - computed: false, optional: true, required: false
-  private _forcePasswordChange?: boolean | cdktf.IResolvable;
+  private _forcePasswordChange?: boolean | cdktf.IResolvable | undefined; 
   public get forcePasswordChange() {
-    return this.getBooleanAttribute('force_password_change');
+    return this.getBooleanAttribute('force_password_change') as any;
   }
-  public set forcePasswordChange(value: boolean | cdktf.IResolvable ) {
+  public set forcePasswordChange(value: boolean | cdktf.IResolvable | undefined) {
     this._forcePasswordChange = value;
   }
   public resetForcePasswordChange() {
@@ -613,11 +690,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // given_name - computed: false, optional: true, required: false
-  private _givenName?: string;
+  private _givenName?: string | undefined; 
   public get givenName() {
     return this.getStringAttribute('given_name');
   }
-  public set givenName(value: string ) {
+  public set givenName(value: string | undefined) {
     this._givenName = value;
   }
   public resetGivenName() {
@@ -639,11 +716,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // job_title - computed: false, optional: true, required: false
-  private _jobTitle?: string;
+  private _jobTitle?: string | undefined; 
   public get jobTitle() {
     return this.getStringAttribute('job_title');
   }
-  public set jobTitle(value: string ) {
+  public set jobTitle(value: string | undefined) {
     this._jobTitle = value;
   }
   public resetJobTitle() {
@@ -655,11 +732,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // mail - computed: true, optional: true, required: false
-  private _mail?: string;
+  private _mail?: string | undefined; 
   public get mail() {
     return this.getStringAttribute('mail');
   }
-  public set mail(value: string) {
+  public set mail(value: string | undefined) {
     this._mail = value;
   }
   public resetMail() {
@@ -671,11 +748,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // mail_nickname - computed: true, optional: true, required: false
-  private _mailNickname?: string;
+  private _mailNickname?: string | undefined; 
   public get mailNickname() {
     return this.getStringAttribute('mail_nickname');
   }
-  public set mailNickname(value: string) {
+  public set mailNickname(value: string | undefined) {
     this._mailNickname = value;
   }
   public resetMailNickname() {
@@ -687,11 +764,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // manager_id - computed: false, optional: true, required: false
-  private _managerId?: string;
+  private _managerId?: string | undefined; 
   public get managerId() {
     return this.getStringAttribute('manager_id');
   }
-  public set managerId(value: string ) {
+  public set managerId(value: string | undefined) {
     this._managerId = value;
   }
   public resetManagerId() {
@@ -703,11 +780,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // mobile_phone - computed: false, optional: true, required: false
-  private _mobilePhone?: string;
+  private _mobilePhone?: string | undefined; 
   public get mobilePhone() {
     return this.getStringAttribute('mobile_phone');
   }
-  public set mobilePhone(value: string ) {
+  public set mobilePhone(value: string | undefined) {
     this._mobilePhone = value;
   }
   public resetMobilePhone() {
@@ -724,11 +801,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // office_location - computed: false, optional: true, required: false
-  private _officeLocation?: string;
+  private _officeLocation?: string | undefined; 
   public get officeLocation() {
     return this.getStringAttribute('office_location');
   }
-  public set officeLocation(value: string ) {
+  public set officeLocation(value: string | undefined) {
     this._officeLocation = value;
   }
   public resetOfficeLocation() {
@@ -750,11 +827,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // onpremises_immutable_id - computed: true, optional: true, required: false
-  private _onpremisesImmutableId?: string;
+  private _onpremisesImmutableId?: string | undefined; 
   public get onpremisesImmutableId() {
     return this.getStringAttribute('onpremises_immutable_id');
   }
-  public set onpremisesImmutableId(value: string) {
+  public set onpremisesImmutableId(value: string | undefined) {
     this._onpremisesImmutableId = value;
   }
   public resetOnpremisesImmutableId() {
@@ -777,7 +854,7 @@ export class User extends cdktf.TerraformResource {
 
   // onpremises_sync_enabled - computed: true, optional: false, required: false
   public get onpremisesSyncEnabled() {
-    return this.getBooleanAttribute('onpremises_sync_enabled');
+    return this.getBooleanAttribute('onpremises_sync_enabled') as any;
   }
 
   // onpremises_user_principal_name - computed: true, optional: false, required: false
@@ -786,11 +863,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // other_mails - computed: false, optional: true, required: false
-  private _otherMails?: string[];
+  private _otherMails?: string[] | undefined; 
   public get otherMails() {
     return this.getListAttribute('other_mails');
   }
-  public set otherMails(value: string[] ) {
+  public set otherMails(value: string[] | undefined) {
     this._otherMails = value;
   }
   public resetOtherMails() {
@@ -802,11 +879,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // password - computed: true, optional: true, required: false
-  private _password?: string;
+  private _password?: string | undefined; 
   public get password() {
     return this.getStringAttribute('password');
   }
-  public set password(value: string) {
+  public set password(value: string | undefined) {
     this._password = value;
   }
   public resetPassword() {
@@ -818,11 +895,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // postal_code - computed: false, optional: true, required: false
-  private _postalCode?: string;
+  private _postalCode?: string | undefined; 
   public get postalCode() {
     return this.getStringAttribute('postal_code');
   }
-  public set postalCode(value: string ) {
+  public set postalCode(value: string | undefined) {
     this._postalCode = value;
   }
   public resetPostalCode() {
@@ -834,11 +911,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // preferred_language - computed: false, optional: true, required: false
-  private _preferredLanguage?: string;
+  private _preferredLanguage?: string | undefined; 
   public get preferredLanguage() {
     return this.getStringAttribute('preferred_language');
   }
-  public set preferredLanguage(value: string ) {
+  public set preferredLanguage(value: string | undefined) {
     this._preferredLanguage = value;
   }
   public resetPreferredLanguage() {
@@ -855,11 +932,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // show_in_address_list - computed: false, optional: true, required: false
-  private _showInAddressList?: boolean | cdktf.IResolvable;
+  private _showInAddressList?: boolean | cdktf.IResolvable | undefined; 
   public get showInAddressList() {
-    return this.getBooleanAttribute('show_in_address_list');
+    return this.getBooleanAttribute('show_in_address_list') as any;
   }
-  public set showInAddressList(value: boolean | cdktf.IResolvable ) {
+  public set showInAddressList(value: boolean | cdktf.IResolvable | undefined) {
     this._showInAddressList = value;
   }
   public resetShowInAddressList() {
@@ -871,11 +948,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // state - computed: false, optional: true, required: false
-  private _state?: string;
+  private _state?: string | undefined; 
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string ) {
+  public set state(value: string | undefined) {
     this._state = value;
   }
   public resetState() {
@@ -887,11 +964,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // street_address - computed: false, optional: true, required: false
-  private _streetAddress?: string;
+  private _streetAddress?: string | undefined; 
   public get streetAddress() {
     return this.getStringAttribute('street_address');
   }
-  public set streetAddress(value: string ) {
+  public set streetAddress(value: string | undefined) {
     this._streetAddress = value;
   }
   public resetStreetAddress() {
@@ -903,11 +980,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // surname - computed: false, optional: true, required: false
-  private _surname?: string;
+  private _surname?: string | undefined; 
   public get surname() {
     return this.getStringAttribute('surname');
   }
-  public set surname(value: string ) {
+  public set surname(value: string | undefined) {
     this._surname = value;
   }
   public resetSurname() {
@@ -919,11 +996,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // usage_location - computed: false, optional: true, required: false
-  private _usageLocation?: string;
+  private _usageLocation?: string | undefined; 
   public get usageLocation() {
     return this.getStringAttribute('usage_location');
   }
-  public set usageLocation(value: string ) {
+  public set usageLocation(value: string | undefined) {
     this._usageLocation = value;
   }
   public resetUsageLocation() {
@@ -935,7 +1012,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // user_principal_name - computed: false, optional: false, required: true
-  private _userPrincipalName: string;
+  private _userPrincipalName?: string; 
   public get userPrincipalName() {
     return this.getStringAttribute('user_principal_name');
   }
@@ -953,11 +1030,12 @@ export class User extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: UserTimeouts;
+  private _timeouts?: UserTimeouts | undefined; 
+  private __timeoutsOutput = new UserTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: UserTimeouts ) {
+  public putTimeouts(value: UserTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {

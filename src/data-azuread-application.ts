@@ -46,7 +46,7 @@ export class DataAzureadApplicationApiOauth2PermissionScopes extends cdktf.Compl
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled') as any;
   }
 
   // id - computed: true, optional: false, required: false
@@ -83,11 +83,12 @@ export class DataAzureadApplicationApi extends cdktf.ComplexComputedList {
 
   // mapped_claims_enabled - computed: true, optional: false, required: false
   public get mappedClaimsEnabled() {
-    return this.getBooleanAttribute('mapped_claims_enabled');
+    return this.getBooleanAttribute('mapped_claims_enabled') as any;
   }
 
   // oauth2_permission_scopes - computed: true, optional: false, required: false
   public get oauth2PermissionScopes() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('oauth2_permission_scopes') as any;
   }
 
@@ -115,7 +116,7 @@ export class DataAzureadApplicationAppRoles extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled') as any;
   }
 
   // id - computed: true, optional: false, required: false
@@ -132,22 +133,22 @@ export class DataAzureadApplicationFeatureTags extends cdktf.ComplexComputedList
 
   // custom_single_sign_on - computed: true, optional: false, required: false
   public get customSingleSignOn() {
-    return this.getBooleanAttribute('custom_single_sign_on');
+    return this.getBooleanAttribute('custom_single_sign_on') as any;
   }
 
   // enterprise - computed: true, optional: false, required: false
   public get enterprise() {
-    return this.getBooleanAttribute('enterprise');
+    return this.getBooleanAttribute('enterprise') as any;
   }
 
   // gallery - computed: true, optional: false, required: false
   public get gallery() {
-    return this.getBooleanAttribute('gallery');
+    return this.getBooleanAttribute('gallery') as any;
   }
 
   // hide - computed: true, optional: false, required: false
   public get hide() {
-    return this.getBooleanAttribute('hide');
+    return this.getBooleanAttribute('hide') as any;
   }
 }
 export class DataAzureadApplicationOptionalClaimsAccessToken extends cdktf.ComplexComputedList {
@@ -159,7 +160,7 @@ export class DataAzureadApplicationOptionalClaimsAccessToken extends cdktf.Compl
 
   // essential - computed: true, optional: false, required: false
   public get essential() {
-    return this.getBooleanAttribute('essential');
+    return this.getBooleanAttribute('essential') as any;
   }
 
   // name - computed: true, optional: false, required: false
@@ -181,7 +182,7 @@ export class DataAzureadApplicationOptionalClaimsIdToken extends cdktf.ComplexCo
 
   // essential - computed: true, optional: false, required: false
   public get essential() {
-    return this.getBooleanAttribute('essential');
+    return this.getBooleanAttribute('essential') as any;
   }
 
   // name - computed: true, optional: false, required: false
@@ -203,7 +204,7 @@ export class DataAzureadApplicationOptionalClaimsSaml2Token extends cdktf.Comple
 
   // essential - computed: true, optional: false, required: false
   public get essential() {
-    return this.getBooleanAttribute('essential');
+    return this.getBooleanAttribute('essential') as any;
   }
 
   // name - computed: true, optional: false, required: false
@@ -220,16 +221,19 @@ export class DataAzureadApplicationOptionalClaims extends cdktf.ComplexComputedL
 
   // access_token - computed: true, optional: false, required: false
   public get accessToken() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('access_token') as any;
   }
 
   // id_token - computed: true, optional: false, required: false
   public get idToken() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('id_token') as any;
   }
 
   // saml2_token - computed: true, optional: false, required: false
   public get saml2Token() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('saml2_token') as any;
   }
 }
@@ -256,6 +260,7 @@ export class DataAzureadApplicationRequiredResourceAccess extends cdktf.ComplexC
 
   // resource_access - computed: true, optional: false, required: false
   public get resourceAccess() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('resource_access') as any;
   }
 
@@ -275,12 +280,12 @@ export class DataAzureadApplicationWebImplicitGrant extends cdktf.ComplexCompute
 
   // access_token_issuance_enabled - computed: true, optional: false, required: false
   public get accessTokenIssuanceEnabled() {
-    return this.getBooleanAttribute('access_token_issuance_enabled');
+    return this.getBooleanAttribute('access_token_issuance_enabled') as any;
   }
 
   // id_token_issuance_enabled - computed: true, optional: false, required: false
   public get idTokenIssuanceEnabled() {
-    return this.getBooleanAttribute('id_token_issuance_enabled');
+    return this.getBooleanAttribute('id_token_issuance_enabled') as any;
   }
 }
 export class DataAzureadApplicationWeb extends cdktf.ComplexComputedList {
@@ -292,6 +297,7 @@ export class DataAzureadApplicationWeb extends cdktf.ComplexComputedList {
 
   // implicit_grant - computed: true, optional: false, required: false
   public get implicitGrant() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('implicit_grant') as any;
   }
 
@@ -312,13 +318,42 @@ export interface DataAzureadApplicationTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadApplicationTimeoutsToTerraform(struct?: DataAzureadApplicationTimeouts): any {
+function dataAzureadApplicationTimeoutsToTerraform(struct?: DataAzureadApplicationTimeoutsOutputReference | DataAzureadApplicationTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
 }
 
+export class DataAzureadApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application.html azuread_application}
@@ -378,11 +413,11 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   }
 
   // application_id - computed: true, optional: true, required: false
-  private _applicationId?: string;
+  private _applicationId?: string | undefined; 
   public get applicationId() {
     return this.getStringAttribute('application_id');
   }
-  public set applicationId(value: string) {
+  public set applicationId(value: string | undefined) {
     this._applicationId = value;
   }
   public resetApplicationId() {
@@ -395,7 +430,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // device_only_auth_enabled - computed: true, optional: false, required: false
   public get deviceOnlyAuthEnabled() {
-    return this.getBooleanAttribute('device_only_auth_enabled');
+    return this.getBooleanAttribute('device_only_auth_enabled') as any;
   }
 
   // disabled_by_microsoft - computed: true, optional: false, required: false
@@ -404,11 +439,11 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   }
 
   // display_name - computed: true, optional: true, required: false
-  private _displayName?: string;
+  private _displayName?: string | undefined; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
-  public set displayName(value: string) {
+  public set displayName(value: string | undefined) {
     this._displayName = value;
   }
   public resetDisplayName() {
@@ -421,7 +456,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // fallback_public_client_enabled - computed: true, optional: false, required: false
   public get fallbackPublicClientEnabled() {
-    return this.getBooleanAttribute('fallback_public_client_enabled');
+    return this.getBooleanAttribute('fallback_public_client_enabled') as any;
   }
 
   // feature_tags - computed: true, optional: false, required: false
@@ -461,15 +496,15 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // oauth2_post_response_required - computed: true, optional: false, required: false
   public get oauth2PostResponseRequired() {
-    return this.getBooleanAttribute('oauth2_post_response_required');
+    return this.getBooleanAttribute('oauth2_post_response_required') as any;
   }
 
   // object_id - computed: true, optional: true, required: false
-  private _objectId?: string;
+  private _objectId?: string | undefined; 
   public get objectId() {
     return this.getStringAttribute('object_id');
   }
-  public set objectId(value: string) {
+  public set objectId(value: string | undefined) {
     this._objectId = value;
   }
   public resetObjectId() {
@@ -541,11 +576,12 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadApplicationTimeouts;
+  private _timeouts?: DataAzureadApplicationTimeouts | undefined; 
+  private __timeoutsOutput = new DataAzureadApplicationTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: DataAzureadApplicationTimeouts ) {
+  public putTimeouts(value: DataAzureadApplicationTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {
