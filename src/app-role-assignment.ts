@@ -47,8 +47,11 @@ export interface AppRoleAssignmentTimeouts {
   readonly read?: string;
 }
 
-function appRoleAssignmentTimeoutsToTerraform(struct?: AppRoleAssignmentTimeouts): any {
+function appRoleAssignmentTimeoutsToTerraform(struct?: AppRoleAssignmentTimeoutsOutputReference | AppRoleAssignmentTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
@@ -56,6 +59,64 @@ function appRoleAssignmentTimeoutsToTerraform(struct?: AppRoleAssignmentTimeouts
   }
 }
 
+export class AppRoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string | undefined; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string | undefined) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string | undefined; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string | undefined) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html azuread_app_role_assignment}
@@ -100,7 +161,7 @@ export class AppRoleAssignment extends cdktf.TerraformResource {
   // ==========
 
   // app_role_id - computed: false, optional: false, required: true
-  private _appRoleId: string;
+  private _appRoleId?: string; 
   public get appRoleId() {
     return this.getStringAttribute('app_role_id');
   }
@@ -123,7 +184,7 @@ export class AppRoleAssignment extends cdktf.TerraformResource {
   }
 
   // principal_object_id - computed: false, optional: false, required: true
-  private _principalObjectId: string;
+  private _principalObjectId?: string; 
   public get principalObjectId() {
     return this.getStringAttribute('principal_object_id');
   }
@@ -146,7 +207,7 @@ export class AppRoleAssignment extends cdktf.TerraformResource {
   }
 
   // resource_object_id - computed: false, optional: false, required: true
-  private _resourceObjectId: string;
+  private _resourceObjectId?: string; 
   public get resourceObjectId() {
     return this.getStringAttribute('resource_object_id');
   }
@@ -159,11 +220,12 @@ export class AppRoleAssignment extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: AppRoleAssignmentTimeouts;
+  private _timeouts?: AppRoleAssignmentTimeouts | undefined; 
+  private __timeoutsOutput = new AppRoleAssignmentTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: AppRoleAssignmentTimeouts ) {
+  public putTimeouts(value: AppRoleAssignmentTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {

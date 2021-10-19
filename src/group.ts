@@ -117,8 +117,11 @@ export interface GroupTimeouts {
   readonly update?: string;
 }
 
-function groupTimeoutsToTerraform(struct?: GroupTimeouts): any {
+function groupTimeoutsToTerraform(struct?: GroupTimeoutsOutputReference | GroupTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
@@ -127,6 +130,80 @@ function groupTimeoutsToTerraform(struct?: GroupTimeouts): any {
   }
 }
 
+export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string | undefined; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string | undefined) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string | undefined; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string | undefined) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string | undefined; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string | undefined) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string | undefined; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string | undefined) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group.html azuread_group}
@@ -182,11 +259,11 @@ export class Group extends cdktf.TerraformResource {
   // ==========
 
   // assignable_to_role - computed: false, optional: true, required: false
-  private _assignableToRole?: boolean | cdktf.IResolvable;
+  private _assignableToRole?: boolean | cdktf.IResolvable | undefined; 
   public get assignableToRole() {
-    return this.getBooleanAttribute('assignable_to_role');
+    return this.getBooleanAttribute('assignable_to_role') as any;
   }
-  public set assignableToRole(value: boolean | cdktf.IResolvable ) {
+  public set assignableToRole(value: boolean | cdktf.IResolvable | undefined) {
     this._assignableToRole = value;
   }
   public resetAssignableToRole() {
@@ -198,11 +275,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // behaviors - computed: false, optional: true, required: false
-  private _behaviors?: string[];
+  private _behaviors?: string[] | undefined; 
   public get behaviors() {
     return this.getListAttribute('behaviors');
   }
-  public set behaviors(value: string[] ) {
+  public set behaviors(value: string[] | undefined) {
     this._behaviors = value;
   }
   public resetBehaviors() {
@@ -214,11 +291,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -230,7 +307,7 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // display_name - computed: false, optional: false, required: true
-  private _displayName: string;
+  private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
@@ -253,11 +330,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // mail_enabled - computed: false, optional: true, required: false
-  private _mailEnabled?: boolean | cdktf.IResolvable;
+  private _mailEnabled?: boolean | cdktf.IResolvable | undefined; 
   public get mailEnabled() {
-    return this.getBooleanAttribute('mail_enabled');
+    return this.getBooleanAttribute('mail_enabled') as any;
   }
-  public set mailEnabled(value: boolean | cdktf.IResolvable ) {
+  public set mailEnabled(value: boolean | cdktf.IResolvable | undefined) {
     this._mailEnabled = value;
   }
   public resetMailEnabled() {
@@ -269,11 +346,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // mail_nickname - computed: true, optional: true, required: false
-  private _mailNickname?: string;
+  private _mailNickname?: string | undefined; 
   public get mailNickname() {
     return this.getStringAttribute('mail_nickname');
   }
-  public set mailNickname(value: string) {
+  public set mailNickname(value: string | undefined) {
     this._mailNickname = value;
   }
   public resetMailNickname() {
@@ -285,11 +362,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // members - computed: true, optional: true, required: false
-  private _members?: string[];
+  private _members?: string[] | undefined; 
   public get members() {
     return this.getListAttribute('members');
   }
-  public set members(value: string[]) {
+  public set members(value: string[] | undefined) {
     this._members = value;
   }
   public resetMembers() {
@@ -327,15 +404,15 @@ export class Group extends cdktf.TerraformResource {
 
   // onpremises_sync_enabled - computed: true, optional: false, required: false
   public get onpremisesSyncEnabled() {
-    return this.getBooleanAttribute('onpremises_sync_enabled');
+    return this.getBooleanAttribute('onpremises_sync_enabled') as any;
   }
 
   // owners - computed: true, optional: true, required: false
-  private _owners?: string[];
+  private _owners?: string[] | undefined; 
   public get owners() {
     return this.getListAttribute('owners');
   }
-  public set owners(value: string[]) {
+  public set owners(value: string[] | undefined) {
     this._owners = value;
   }
   public resetOwners() {
@@ -352,11 +429,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // prevent_duplicate_names - computed: false, optional: true, required: false
-  private _preventDuplicateNames?: boolean | cdktf.IResolvable;
+  private _preventDuplicateNames?: boolean | cdktf.IResolvable | undefined; 
   public get preventDuplicateNames() {
-    return this.getBooleanAttribute('prevent_duplicate_names');
+    return this.getBooleanAttribute('prevent_duplicate_names') as any;
   }
-  public set preventDuplicateNames(value: boolean | cdktf.IResolvable ) {
+  public set preventDuplicateNames(value: boolean | cdktf.IResolvable | undefined) {
     this._preventDuplicateNames = value;
   }
   public resetPreventDuplicateNames() {
@@ -368,11 +445,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // provisioning_options - computed: false, optional: true, required: false
-  private _provisioningOptions?: string[];
+  private _provisioningOptions?: string[] | undefined; 
   public get provisioningOptions() {
     return this.getListAttribute('provisioning_options');
   }
-  public set provisioningOptions(value: string[] ) {
+  public set provisioningOptions(value: string[] | undefined) {
     this._provisioningOptions = value;
   }
   public resetProvisioningOptions() {
@@ -389,11 +466,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // security_enabled - computed: false, optional: true, required: false
-  private _securityEnabled?: boolean | cdktf.IResolvable;
+  private _securityEnabled?: boolean | cdktf.IResolvable | undefined; 
   public get securityEnabled() {
-    return this.getBooleanAttribute('security_enabled');
+    return this.getBooleanAttribute('security_enabled') as any;
   }
-  public set securityEnabled(value: boolean | cdktf.IResolvable ) {
+  public set securityEnabled(value: boolean | cdktf.IResolvable | undefined) {
     this._securityEnabled = value;
   }
   public resetSecurityEnabled() {
@@ -405,11 +482,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // theme - computed: false, optional: true, required: false
-  private _theme?: string;
+  private _theme?: string | undefined; 
   public get theme() {
     return this.getStringAttribute('theme');
   }
-  public set theme(value: string ) {
+  public set theme(value: string | undefined) {
     this._theme = value;
   }
   public resetTheme() {
@@ -421,11 +498,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // types - computed: false, optional: true, required: false
-  private _types?: string[];
+  private _types?: string[] | undefined; 
   public get types() {
     return this.getListAttribute('types');
   }
-  public set types(value: string[] ) {
+  public set types(value: string[] | undefined) {
     this._types = value;
   }
   public resetTypes() {
@@ -437,11 +514,11 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // visibility - computed: true, optional: true, required: false
-  private _visibility?: string;
+  private _visibility?: string | undefined; 
   public get visibility() {
     return this.getStringAttribute('visibility');
   }
-  public set visibility(value: string) {
+  public set visibility(value: string | undefined) {
     this._visibility = value;
   }
   public resetVisibility() {
@@ -453,11 +530,12 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: GroupTimeouts;
+  private _timeouts?: GroupTimeouts | undefined; 
+  private __timeoutsOutput = new GroupTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this.__timeoutsOutput;
   }
-  public set timeouts(value: GroupTimeouts ) {
+  public putTimeouts(value: GroupTimeouts | undefined) {
     this._timeouts = value;
   }
   public resetTimeouts() {
