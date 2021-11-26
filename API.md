@@ -2,6 +2,386 @@
 
 ## Constructs <a name="Constructs"></a>
 
+### AdministrativeUnit <a name="@cdktf/provider-azuread.AdministrativeUnit"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html azuread_administrative_unit}.
+
+#### Initializers <a name="@cdktf/provider-azuread.AdministrativeUnit.Initializer"></a>
+
+```typescript
+import { AdministrativeUnit } from '@cdktf/provider-azuread'
+
+new AdministrativeUnit(scope: Construct, id: string, config: AdministrativeUnitConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitConfig`](#@cdktf/provider-azuread.AdministrativeUnitConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putTimeouts` <a name="@cdktf/provider-azuread.AdministrativeUnit.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value?: AdministrativeUnitTimeouts)
+```
+
+###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
+
+---
+
+##### `resetDescription` <a name="@cdktf/provider-azuread.AdministrativeUnit.resetDescription"></a>
+
+```typescript
+public resetDescription()
+```
+
+##### `resetHiddenMembershipEnabled` <a name="@cdktf/provider-azuread.AdministrativeUnit.resetHiddenMembershipEnabled"></a>
+
+```typescript
+public resetHiddenMembershipEnabled()
+```
+
+##### `resetMembers` <a name="@cdktf/provider-azuread.AdministrativeUnit.resetMembers"></a>
+
+```typescript
+public resetMembers()
+```
+
+##### `resetPreventDuplicateNames` <a name="@cdktf/provider-azuread.AdministrativeUnit.resetPreventDuplicateNames"></a>
+
+```typescript
+public resetPreventDuplicateNames()
+```
+
+##### `resetTimeouts` <a name="@cdktf/provider-azuread.AdministrativeUnit.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.objectId"></a>
+
+```typescript
+public readonly objectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: AdministrativeUnitTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference`](#@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference)
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.displayNameInput"></a>
+
+```typescript
+public readonly displayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `hiddenMembershipEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.hiddenMembershipEnabledInput"></a>
+
+```typescript
+public readonly hiddenMembershipEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `membersInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.membersInput"></a>
+
+```typescript
+public readonly membersInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `preventDuplicateNamesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.preventDuplicateNamesInput"></a>
+
+```typescript
+public readonly preventDuplicateNamesInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: AdministrativeUnitTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `hiddenMembershipEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.hiddenMembershipEnabled"></a>
+
+```typescript
+public readonly hiddenMembershipEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `members`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.members"></a>
+
+```typescript
+public readonly members: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `preventDuplicateNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.preventDuplicateNames"></a>
+
+```typescript
+public readonly preventDuplicateNames: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.AdministrativeUnit.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### AdministrativeUnitMember <a name="@cdktf/provider-azuread.AdministrativeUnitMember"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html azuread_administrative_unit_member}.
+
+#### Initializers <a name="@cdktf/provider-azuread.AdministrativeUnitMember.Initializer"></a>
+
+```typescript
+import { AdministrativeUnitMember } from '@cdktf/provider-azuread'
+
+new AdministrativeUnitMember(scope: Construct, id: string, config?: AdministrativeUnitMemberConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberConfig`](#@cdktf/provider-azuread.AdministrativeUnitMemberConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putTimeouts` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value?: AdministrativeUnitMemberTimeouts)
+```
+
+###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
+
+---
+
+##### `resetAdministrativeUnitObjectId` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.resetAdministrativeUnitObjectId"></a>
+
+```typescript
+public resetAdministrativeUnitObjectId()
+```
+
+##### `resetMemberObjectId` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.resetMemberObjectId"></a>
+
+```typescript
+public resetMemberObjectId()
+```
+
+##### `resetTimeouts` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: AdministrativeUnitMemberTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference)
+
+---
+
+##### `administrativeUnitObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.administrativeUnitObjectIdInput"></a>
+
+```typescript
+public readonly administrativeUnitObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.memberObjectIdInput"></a>
+
+```typescript
+public readonly memberObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: AdministrativeUnitMemberTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
+
+---
+
+##### `administrativeUnitObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.administrativeUnitObjectId"></a>
+
+```typescript
+public readonly administrativeUnitObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.memberObjectId"></a>
+
+```typescript
+public readonly memberObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### Application <a name="@cdktf/provider-azuread.Application"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application.html azuread_application}.
@@ -2376,6 +2756,185 @@ public readonly state: string;
 #### Constants <a name="Constants"></a>
 
 ##### `tfResourceType` <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### DataAzureadAdministrativeUnit <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html azuread_administrative_unit}.
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.Initializer"></a>
+
+```typescript
+import { DataAzureadAdministrativeUnit } from '@cdktf/provider-azuread'
+
+new DataAzureadAdministrativeUnit(scope: Construct, id: string, config?: DataAzureadAdministrativeUnitConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value?: DataAzureadAdministrativeUnitTimeouts)
+```
+
+###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
+
+---
+
+##### `resetDisplayName` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.resetDisplayName"></a>
+
+```typescript
+public resetDisplayName()
+```
+
+##### `resetObjectId` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.resetObjectId"></a>
+
+```typescript
+public resetObjectId()
+```
+
+##### `resetTimeouts` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `members`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.members"></a>
+
+```typescript
+public readonly members: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DataAzureadAdministrativeUnitTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference)
+
+---
+
+##### `visibility`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.visibility"></a>
+
+```typescript
+public readonly visibility: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.displayNameInput"></a>
+
+```typescript
+public readonly displayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `objectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.objectIdInput"></a>
+
+```typescript
+public readonly objectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: DataAzureadAdministrativeUnitTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
+
+---
+
+##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.objectId"></a>
+
+```typescript
+public readonly objectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.tfResourceType"></a>
 
 - *Type:* `string`
 
@@ -8000,6 +8559,189 @@ public readonly type: string;
 
 ---
 
+### ServicePrincipalDelegatedPermissionGrant <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html azuread_service_principal_delegated_permission_grant}.
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.Initializer"></a>
+
+```typescript
+import { ServicePrincipalDelegatedPermissionGrant } from '@cdktf/provider-azuread'
+
+new ServicePrincipalDelegatedPermissionGrant(scope: Construct, id: string, config: ServicePrincipalDelegatedPermissionGrantConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value?: ServicePrincipalDelegatedPermissionGrantTimeouts)
+```
+
+###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
+
+---
+
+##### `resetTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+##### `resetUserObjectId` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.resetUserObjectId"></a>
+
+```typescript
+public resetUserObjectId()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference)
+
+---
+
+##### `claimValuesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.claimValuesInput"></a>
+
+```typescript
+public readonly claimValuesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `resourceServicePrincipalObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.resourceServicePrincipalObjectIdInput"></a>
+
+```typescript
+public readonly resourceServicePrincipalObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `servicePrincipalObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.servicePrincipalObjectIdInput"></a>
+
+```typescript
+public readonly servicePrincipalObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: ServicePrincipalDelegatedPermissionGrantTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
+
+---
+
+##### `userObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.userObjectIdInput"></a>
+
+```typescript
+public readonly userObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `claimValues`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.claimValues"></a>
+
+```typescript
+public readonly claimValues: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `resourceServicePrincipalObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.resourceServicePrincipalObjectId"></a>
+
+```typescript
+public readonly resourceServicePrincipalObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `servicePrincipalObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.servicePrincipalObjectId"></a>
+
+```typescript
+public readonly servicePrincipalObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.userObjectId"></a>
+
+```typescript
+public readonly userObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### ServicePrincipalPassword <a name="@cdktf/provider-azuread.ServicePrincipalPassword"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html azuread_service_principal_password}.
@@ -9319,6 +10061,350 @@ public readonly usageLocation: string;
 ---
 
 ## Structs <a name="Structs"></a>
+
+### AdministrativeUnitConfig <a name="@cdktf/provider-azuread.AdministrativeUnitConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { AdministrativeUnitConfig } from '@cdktf/provider-azuread'
+
+const administrativeUnitConfig: AdministrativeUnitConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+The display name for the administrative unit.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#display_name AdministrativeUnit#display_name}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+The description for the administrative unit.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#description AdministrativeUnit#description}
+
+---
+
+##### `hiddenMembershipEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.hiddenMembershipEnabled"></a>
+
+```typescript
+public readonly hiddenMembershipEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Whether the administrative unit and its members are hidden or publicly viewable in the directory.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
+
+---
+
+##### `members`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.members"></a>
+
+```typescript
+public readonly members: string[];
+```
+
+- *Type:* `string`[]
+
+A set of object IDs of members who should be present in this administrative unit.
+
+Supported object types are Users or Groups
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#members AdministrativeUnit#members}
+
+---
+
+##### `preventDuplicateNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.preventDuplicateNames"></a>
+
+```typescript
+public readonly preventDuplicateNames: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+If `true`, will return an error if an existing administrative unit is found with the same name.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: AdministrativeUnitTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#timeouts AdministrativeUnit#timeouts}
+
+---
+
+### AdministrativeUnitMemberConfig <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { AdministrativeUnitMemberConfig } from '@cdktf/provider-azuread'
+
+const administrativeUnitMemberConfig: AdministrativeUnitMemberConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `administrativeUnitObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.administrativeUnitObjectId"></a>
+
+```typescript
+public readonly administrativeUnitObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the administrative unit.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
+
+---
+
+##### `memberObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.memberObjectId"></a>
+
+```typescript
+public readonly memberObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the member.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#member_object_id AdministrativeUnitMember#member_object_id}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: AdministrativeUnitMemberTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#timeouts AdministrativeUnitMember#timeouts}
+
+---
+
+### AdministrativeUnitMemberTimeouts <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { AdministrativeUnitMemberTimeouts } from '@cdktf/provider-azuread'
+
+const administrativeUnitMemberTimeouts: AdministrativeUnitMemberTimeouts = { ... }
+```
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#create AdministrativeUnitMember#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#delete AdministrativeUnitMember#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#read AdministrativeUnitMember#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#update AdministrativeUnitMember#update}.
+
+---
+
+### AdministrativeUnitTimeouts <a name="@cdktf/provider-azuread.AdministrativeUnitTimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { AdministrativeUnitTimeouts } from '@cdktf/provider-azuread'
+
+const administrativeUnitTimeouts: AdministrativeUnitTimeouts = { ... }
+```
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#create AdministrativeUnit#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#delete AdministrativeUnit#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#read AdministrativeUnit#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#update AdministrativeUnit#update}.
+
+---
 
 ### ApplicationApi <a name="@cdktf/provider-azuread.ApplicationApi"></a>
 
@@ -11490,7 +12576,7 @@ public readonly environment: string;
 
 The cloud environment which should be used.
 
-Possible values are: `global` (also `public`), `usgovernmentl4` (also `usgovernment`), `usgovernmentl5` (also `dod`), `germany` (also `german`), and `china`. Defaults to `global`
+Possible values are: `global` (also `public`), `usgovernmentl4` (also `usgovernment`), `usgovernmentl5` (also `dod`), and `china`. Defaults to `global`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#environment AzureadProvider#environment}
 
@@ -11644,6 +12730,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `devices`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions.property.devices"></a>
+
+```typescript
+public readonly devices: ConditionalAccessPolicyConditionsDevices;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices)
+
+devices block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#devices ConditionalAccessPolicy#devices}
+
+---
+
 ##### `signInRiskLevels`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions.property.signInRiskLevels"></a>
 
 ```typescript
@@ -11711,6 +12811,64 @@ public readonly includedUserActions: string[];
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_user_actions ConditionalAccessPolicy#included_user_actions}.
+
+---
+
+### ConditionalAccessPolicyConditionsDevices <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ConditionalAccessPolicyConditionsDevices } from '@cdktf/provider-azuread'
+
+const conditionalAccessPolicyConditionsDevices: ConditionalAccessPolicyConditionsDevices = { ... }
+```
+
+##### `filter`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices.property.filter"></a>
+
+```typescript
+public readonly filter: ConditionalAccessPolicyConditionsDevicesFilter;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter)
+
+filter block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#filter ConditionalAccessPolicy#filter}
+
+---
+
+### ConditionalAccessPolicyConditionsDevicesFilter <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ConditionalAccessPolicyConditionsDevicesFilter } from '@cdktf/provider-azuread'
+
+const conditionalAccessPolicyConditionsDevicesFilter: ConditionalAccessPolicyConditionsDevicesFilter = { ... }
+```
+
+##### `mode`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#mode ConditionalAccessPolicy#mode}.
+
+---
+
+##### `rule`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter.property.rule"></a>
+
+```typescript
+public readonly rule: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#rule ConditionalAccessPolicy#rule}.
 
 ---
 
@@ -12165,6 +13323,156 @@ public readonly update: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#update ConditionalAccessPolicy#update}.
+
+---
+
+### DataAzureadAdministrativeUnitConfig <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadAdministrativeUnitConfig } from '@cdktf/provider-azuread'
+
+const dataAzureadAdministrativeUnitConfig: DataAzureadAdministrativeUnitConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+The display name for the administrative unit.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#display_name DataAzureadAdministrativeUnit#display_name}
+
+---
+
+##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.objectId"></a>
+
+```typescript
+public readonly objectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the administrative unit.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#object_id DataAzureadAdministrativeUnit#object_id}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DataAzureadAdministrativeUnitTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#timeouts DataAzureadAdministrativeUnit#timeouts}
+
+---
+
+### DataAzureadAdministrativeUnitTimeouts <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadAdministrativeUnitTimeouts } from '@cdktf/provider-azuread'
+
+const dataAzureadAdministrativeUnitTimeouts: DataAzureadAdministrativeUnitTimeouts = { ... }
+```
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#create DataAzureadAdministrativeUnit#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#delete DataAzureadAdministrativeUnit#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#read DataAzureadAdministrativeUnit#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#update DataAzureadAdministrativeUnit#update}.
 
 ---
 
@@ -15396,6 +16704,184 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+### ServicePrincipalDelegatedPermissionGrantConfig <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ServicePrincipalDelegatedPermissionGrantConfig } from '@cdktf/provider-azuread'
+
+const servicePrincipalDelegatedPermissionGrantConfig: ServicePrincipalDelegatedPermissionGrantConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `claimValues`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.claimValues"></a>
+
+```typescript
+public readonly claimValues: string[];
+```
+
+- *Type:* `string`[]
+
+A set of claim values for delegated permission scopes which should be included in access tokens for the resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#claim_values ServicePrincipalDelegatedPermissionGrant#claim_values}
+
+---
+
+##### `resourceServicePrincipalObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.resourceServicePrincipalObjectId"></a>
+
+```typescript
+public readonly resourceServicePrincipalObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the service principal representing the resource to be accessed.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#resource_service_principal_object_id ServicePrincipalDelegatedPermissionGrant#resource_service_principal_object_id}
+
+---
+
+##### `servicePrincipalObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.servicePrincipalObjectId"></a>
+
+```typescript
+public readonly servicePrincipalObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the service principal for which this delegated permission grant should be created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#service_principal_object_id ServicePrincipalDelegatedPermissionGrant#service_principal_object_id}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: ServicePrincipalDelegatedPermissionGrantTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#timeouts ServicePrincipalDelegatedPermissionGrant#timeouts}
+
+---
+
+##### `userObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.userObjectId"></a>
+
+```typescript
+public readonly userObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the user on behalf of whom the service principal is authorized to access the resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#user_object_id ServicePrincipalDelegatedPermissionGrant#user_object_id}
+
+---
+
+### ServicePrincipalDelegatedPermissionGrantTimeouts <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ServicePrincipalDelegatedPermissionGrantTimeouts } from '@cdktf/provider-azuread'
+
+const servicePrincipalDelegatedPermissionGrantTimeouts: ServicePrincipalDelegatedPermissionGrantTimeouts = { ... }
+```
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#create ServicePrincipalDelegatedPermissionGrant#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#delete ServicePrincipalDelegatedPermissionGrant#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#read ServicePrincipalDelegatedPermissionGrant#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#update ServicePrincipalDelegatedPermissionGrant#update}.
+
+---
+
 ### ServicePrincipalFeatures <a name="@cdktf/provider-azuread.ServicePrincipalFeatures"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -16387,6 +17873,294 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ---
 
 ## Classes <a name="Classes"></a>
+
+### AdministrativeUnitMemberTimeoutsOutputReference <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { AdministrativeUnitMemberTimeoutsOutputReference } from '@cdktf/provider-azuread'
+
+new AdministrativeUnitMemberTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCreate` <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+##### `resetDelete` <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete()
+```
+
+##### `resetRead` <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead()
+```
+
+##### `resetUpdate` <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+---
+
+
+### AdministrativeUnitTimeoutsOutputReference <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { AdministrativeUnitTimeoutsOutputReference } from '@cdktf/provider-azuread'
+
+new AdministrativeUnitTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCreate` <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+##### `resetDelete` <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete()
+```
+
+##### `resetRead` <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead()
+```
+
+##### `resetUpdate` <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+---
+
 
 ### ApplicationApiOutputReference <a name="@cdktf/provider-azuread.ApplicationApiOutputReference"></a>
 
@@ -17836,6 +19610,163 @@ public readonly includedUserActions: string[];
 ---
 
 
+### ConditionalAccessPolicyConditionsDevicesFilterOutputReference <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.Initializer"></a>
+
+```typescript
+import { ConditionalAccessPolicyConditionsDevicesFilterOutputReference } from '@cdktf/provider-azuread'
+
+new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `modeInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.property.modeInput"></a>
+
+```typescript
+public readonly modeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `ruleInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.property.ruleInput"></a>
+
+```typescript
+public readonly ruleInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `mode`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `rule`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.property.rule"></a>
+
+```typescript
+public readonly rule: string;
+```
+
+- *Type:* `string`
+
+---
+
+
+### ConditionalAccessPolicyConditionsDevicesOutputReference <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.Initializer"></a>
+
+```typescript
+import { ConditionalAccessPolicyConditionsDevicesOutputReference } from '@cdktf/provider-azuread'
+
+new ConditionalAccessPolicyConditionsDevicesOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putFilter` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.putFilter"></a>
+
+```typescript
+public putFilter(value?: ConditionalAccessPolicyConditionsDevicesFilter)
+```
+
+###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter)
+
+---
+
+##### `resetFilter` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.resetFilter"></a>
+
+```typescript
+public resetFilter()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `filter`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.property.filter"></a>
+
+```typescript
+public readonly filter: ConditionalAccessPolicyConditionsDevicesFilterOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference)
+
+---
+
+##### `filterInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.property.filterInput"></a>
+
+```typescript
+public readonly filterInput: ConditionalAccessPolicyConditionsDevicesFilter;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter)
+
+---
+
+
 ### ConditionalAccessPolicyConditionsLocationsOutputReference <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference"></a>
 
 #### Initializers <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.Initializer"></a>
@@ -17970,6 +19901,18 @@ public putApplications(value: ConditionalAccessPolicyConditionsApplications)
 
 ---
 
+##### `putDevices` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.putDevices"></a>
+
+```typescript
+public putDevices(value?: ConditionalAccessPolicyConditionsDevices)
+```
+
+###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices)
+
+---
+
 ##### `putLocations` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.putLocations"></a>
 
 ```typescript
@@ -18006,6 +19949,12 @@ public putUsers(value: ConditionalAccessPolicyConditionsUsers)
 
 ---
 
+##### `resetDevices` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.resetDevices"></a>
+
+```typescript
+public resetDevices()
+```
+
 ##### `resetSignInRiskLevels` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.resetSignInRiskLevels"></a>
 
 ```typescript
@@ -18028,6 +19977,16 @@ public readonly applications: ConditionalAccessPolicyConditionsApplicationsOutpu
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference)
+
+---
+
+##### `devices`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.property.devices"></a>
+
+```typescript
+public readonly devices: ConditionalAccessPolicyConditionsDevicesOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference)
 
 ---
 
@@ -18078,6 +20037,16 @@ public readonly clientAppTypesInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `devicesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.property.devicesInput"></a>
+
+```typescript
+public readonly devicesInput: ConditionalAccessPolicyConditionsDevices;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices)
 
 ---
 
@@ -18854,6 +20823,150 @@ public readonly read: string;
 ---
 
 ##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+---
+
+
+### DataAzureadAdministrativeUnitTimeoutsOutputReference <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadAdministrativeUnitTimeoutsOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadAdministrativeUnitTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCreate` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+##### `resetDelete` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete()
+```
+
+##### `resetRead` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead()
+```
+
+##### `resetUpdate` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -22707,6 +24820,150 @@ public readonly read: string;
 ---
 
 ##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+---
+
+
+### ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference } from '@cdktf/provider-azuread'
+
+new ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCreate` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+##### `resetDelete` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete()
+```
+
+##### `resetRead` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead()
+```
+
+##### `resetUpdate` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
