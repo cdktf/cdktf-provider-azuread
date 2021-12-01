@@ -45,7 +45,7 @@ export interface DirectoryRoleMemberTimeouts {
   readonly update?: string;
 }
 
-function directoryRoleMemberTimeoutsToTerraform(struct?: DirectoryRoleMemberTimeoutsOutputReference | DirectoryRoleMemberTimeouts): any {
+export function directoryRoleMemberTimeoutsToTerraform(struct?: DirectoryRoleMemberTimeoutsOutputReference | DirectoryRoleMemberTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -68,12 +68,49 @@ export class DirectoryRoleMemberTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DirectoryRoleMemberTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DirectoryRoleMemberTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -81,15 +118,15 @@ export class DirectoryRoleMemberTimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -97,15 +134,15 @@ export class DirectoryRoleMemberTimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -113,15 +150,15 @@ export class DirectoryRoleMemberTimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -129,7 +166,7 @@ export class DirectoryRoleMemberTimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -167,7 +204,7 @@ export class DirectoryRoleMember extends cdktf.TerraformResource {
     });
     this._memberObjectId = config.memberObjectId;
     this._roleObjectId = config.roleObjectId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -180,11 +217,11 @@ export class DirectoryRoleMember extends cdktf.TerraformResource {
   }
 
   // member_object_id - computed: false, optional: true, required: false
-  private _memberObjectId?: string | undefined; 
+  private _memberObjectId?: string; 
   public get memberObjectId() {
     return this.getStringAttribute('member_object_id');
   }
-  public set memberObjectId(value: string | undefined) {
+  public set memberObjectId(value: string) {
     this._memberObjectId = value;
   }
   public resetMemberObjectId() {
@@ -192,15 +229,15 @@ export class DirectoryRoleMember extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get memberObjectIdInput() {
-    return this._memberObjectId
+    return this._memberObjectId;
   }
 
   // role_object_id - computed: false, optional: true, required: false
-  private _roleObjectId?: string | undefined; 
+  private _roleObjectId?: string; 
   public get roleObjectId() {
     return this.getStringAttribute('role_object_id');
   }
-  public set roleObjectId(value: string | undefined) {
+  public set roleObjectId(value: string) {
     this._roleObjectId = value;
   }
   public resetRoleObjectId() {
@@ -208,24 +245,23 @@ export class DirectoryRoleMember extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleObjectIdInput() {
-    return this._roleObjectId
+    return this._roleObjectId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DirectoryRoleMemberTimeouts | undefined; 
-  private __timeoutsOutput = new DirectoryRoleMemberTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DirectoryRoleMemberTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DirectoryRoleMemberTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DirectoryRoleMemberTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -236,7 +272,7 @@ export class DirectoryRoleMember extends cdktf.TerraformResource {
     return {
       member_object_id: cdktf.stringToTerraform(this._memberObjectId),
       role_object_id: cdktf.stringToTerraform(this._roleObjectId),
-      timeouts: directoryRoleMemberTimeoutsToTerraform(this._timeouts),
+      timeouts: directoryRoleMemberTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

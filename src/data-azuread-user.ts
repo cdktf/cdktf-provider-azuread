@@ -39,7 +39,7 @@ export interface DataAzureadUserTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadUserTimeoutsToTerraform(struct?: DataAzureadUserTimeoutsOutputReference | DataAzureadUserTimeouts): any {
+export function dataAzureadUserTimeoutsToTerraform(struct?: DataAzureadUserTimeoutsOutputReference | DataAzureadUserTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -59,12 +59,31 @@ export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DataAzureadUserTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadUserTimeouts | undefined) {
+    if (value === undefined) {
+      this._read = undefined;
+    }
+    else {
+      this._read = value.read;
+    }
+  }
+
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -72,7 +91,7 @@ export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 }
 
@@ -111,7 +130,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
     this._mailNickname = config.mailNickname;
     this._objectId = config.objectId;
     this._userPrincipalName = config.userPrincipalName;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -224,11 +243,11 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
 
   // mail_nickname - computed: true, optional: true, required: false
-  private _mailNickname?: string | undefined; 
+  private _mailNickname?: string; 
   public get mailNickname() {
     return this.getStringAttribute('mail_nickname');
   }
-  public set mailNickname(value: string | undefined) {
+  public set mailNickname(value: string) {
     this._mailNickname = value;
   }
   public resetMailNickname() {
@@ -236,7 +255,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get mailNicknameInput() {
-    return this._mailNickname
+    return this._mailNickname;
   }
 
   // manager_id - computed: true, optional: false, required: false
@@ -250,11 +269,11 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
 
   // object_id - computed: true, optional: true, required: false
-  private _objectId?: string | undefined; 
+  private _objectId?: string; 
   public get objectId() {
     return this.getStringAttribute('object_id');
   }
-  public set objectId(value: string | undefined) {
+  public set objectId(value: string) {
     this._objectId = value;
   }
   public resetObjectId() {
@@ -262,7 +281,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get objectIdInput() {
-    return this._objectId
+    return this._objectId;
   }
 
   // office_location - computed: true, optional: false, required: false
@@ -351,11 +370,11 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
 
   // user_principal_name - computed: true, optional: true, required: false
-  private _userPrincipalName?: string | undefined; 
+  private _userPrincipalName?: string; 
   public get userPrincipalName() {
     return this.getStringAttribute('user_principal_name');
   }
-  public set userPrincipalName(value: string | undefined) {
+  public set userPrincipalName(value: string) {
     this._userPrincipalName = value;
   }
   public resetUserPrincipalName() {
@@ -363,7 +382,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get userPrincipalNameInput() {
-    return this._userPrincipalName
+    return this._userPrincipalName;
   }
 
   // user_type - computed: true, optional: false, required: false
@@ -372,20 +391,19 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadUserTimeouts | undefined; 
-  private __timeoutsOutput = new DataAzureadUserTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadUserTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DataAzureadUserTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DataAzureadUserTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -397,7 +415,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       object_id: cdktf.stringToTerraform(this._objectId),
       user_principal_name: cdktf.stringToTerraform(this._userPrincipalName),
-      timeouts: dataAzureadUserTimeoutsToTerraform(this._timeouts),
+      timeouts: dataAzureadUserTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

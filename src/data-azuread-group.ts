@@ -45,7 +45,7 @@ export interface DataAzureadGroupTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadGroupTimeoutsToTerraform(struct?: DataAzureadGroupTimeoutsOutputReference | DataAzureadGroupTimeouts): any {
+export function dataAzureadGroupTimeoutsToTerraform(struct?: DataAzureadGroupTimeoutsOutputReference | DataAzureadGroupTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,12 +65,31 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DataAzureadGroupTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadGroupTimeouts | undefined) {
+    if (value === undefined) {
+      this._read = undefined;
+    }
+    else {
+      this._read = value.read;
+    }
+  }
+
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -78,7 +97,7 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 }
 
@@ -118,7 +137,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     this._mailEnabled = config.mailEnabled;
     this._objectId = config.objectId;
     this._securityEnabled = config.securityEnabled;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -141,11 +160,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // display_name - computed: true, optional: true, required: false
-  private _displayName?: string | undefined; 
+  private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
-  public set displayName(value: string | undefined) {
+  public set displayName(value: string) {
     this._displayName = value;
   }
   public resetDisplayName() {
@@ -153,7 +172,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
-    return this._displayName
+    return this._displayName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -167,11 +186,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // mail_enabled - computed: true, optional: true, required: false
-  private _mailEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _mailEnabled?: boolean | cdktf.IResolvable; 
   public get mailEnabled() {
     return this.getBooleanAttribute('mail_enabled') as any;
   }
-  public set mailEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set mailEnabled(value: boolean | cdktf.IResolvable) {
     this._mailEnabled = value;
   }
   public resetMailEnabled() {
@@ -179,7 +198,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get mailEnabledInput() {
-    return this._mailEnabled
+    return this._mailEnabled;
   }
 
   // mail_nickname - computed: true, optional: false, required: false
@@ -193,11 +212,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // object_id - computed: true, optional: true, required: false
-  private _objectId?: string | undefined; 
+  private _objectId?: string; 
   public get objectId() {
     return this.getStringAttribute('object_id');
   }
-  public set objectId(value: string | undefined) {
+  public set objectId(value: string) {
     this._objectId = value;
   }
   public resetObjectId() {
@@ -205,7 +224,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get objectIdInput() {
-    return this._objectId
+    return this._objectId;
   }
 
   // onpremises_domain_name - computed: true, optional: false, required: false
@@ -254,11 +273,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // security_enabled - computed: true, optional: true, required: false
-  private _securityEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _securityEnabled?: boolean | cdktf.IResolvable; 
   public get securityEnabled() {
     return this.getBooleanAttribute('security_enabled') as any;
   }
-  public set securityEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set securityEnabled(value: boolean | cdktf.IResolvable) {
     this._securityEnabled = value;
   }
   public resetSecurityEnabled() {
@@ -266,7 +285,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityEnabledInput() {
-    return this._securityEnabled
+    return this._securityEnabled;
   }
 
   // theme - computed: true, optional: false, required: false
@@ -285,20 +304,19 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadGroupTimeouts | undefined; 
-  private __timeoutsOutput = new DataAzureadGroupTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadGroupTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DataAzureadGroupTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DataAzureadGroupTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -311,7 +329,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       object_id: cdktf.stringToTerraform(this._objectId),
       security_enabled: cdktf.booleanToTerraform(this._securityEnabled),
-      timeouts: dataAzureadGroupTimeoutsToTerraform(this._timeouts),
+      timeouts: dataAzureadGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

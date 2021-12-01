@@ -164,7 +164,7 @@ export interface DataAzureadServicePrincipalTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadServicePrincipalTimeoutsToTerraform(struct?: DataAzureadServicePrincipalTimeoutsOutputReference | DataAzureadServicePrincipalTimeouts): any {
+export function dataAzureadServicePrincipalTimeoutsToTerraform(struct?: DataAzureadServicePrincipalTimeoutsOutputReference | DataAzureadServicePrincipalTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -184,12 +184,31 @@ export class DataAzureadServicePrincipalTimeoutsOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DataAzureadServicePrincipalTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadServicePrincipalTimeouts | undefined) {
+    if (value === undefined) {
+      this._read = undefined;
+    }
+    else {
+      this._read = value.read;
+    }
+  }
+
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -197,7 +216,7 @@ export class DataAzureadServicePrincipalTimeoutsOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 }
 
@@ -236,7 +255,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
     this._applicationId = config.applicationId;
     this._displayName = config.displayName;
     this._objectId = config.objectId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -269,11 +288,11 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // application_id - computed: true, optional: true, required: false
-  private _applicationId?: string | undefined; 
+  private _applicationId?: string; 
   public get applicationId() {
     return this.getStringAttribute('application_id');
   }
-  public set applicationId(value: string | undefined) {
+  public set applicationId(value: string) {
     this._applicationId = value;
   }
   public resetApplicationId() {
@@ -281,7 +300,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get applicationIdInput() {
-    return this._applicationId
+    return this._applicationId;
   }
 
   // application_tenant_id - computed: true, optional: false, required: false
@@ -295,11 +314,11 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // display_name - computed: true, optional: true, required: false
-  private _displayName?: string | undefined; 
+  private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
-  public set displayName(value: string | undefined) {
+  public set displayName(value: string) {
     this._displayName = value;
   }
   public resetDisplayName() {
@@ -307,7 +326,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
-    return this._displayName
+    return this._displayName;
   }
 
   // feature_tags - computed: true, optional: false, required: false
@@ -361,11 +380,11 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // object_id - computed: true, optional: true, required: false
-  private _objectId?: string | undefined; 
+  private _objectId?: string; 
   public get objectId() {
     return this.getStringAttribute('object_id');
   }
-  public set objectId(value: string | undefined) {
+  public set objectId(value: string) {
     this._objectId = value;
   }
   public resetObjectId() {
@@ -373,7 +392,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get objectIdInput() {
-    return this._objectId
+    return this._objectId;
   }
 
   // preferred_single_sign_on_mode - computed: true, optional: false, required: false
@@ -417,20 +436,19 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadServicePrincipalTimeouts | undefined; 
-  private __timeoutsOutput = new DataAzureadServicePrincipalTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadServicePrincipalTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DataAzureadServicePrincipalTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DataAzureadServicePrincipalTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -442,7 +460,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
       application_id: cdktf.stringToTerraform(this._applicationId),
       display_name: cdktf.stringToTerraform(this._displayName),
       object_id: cdktf.stringToTerraform(this._objectId),
-      timeouts: dataAzureadServicePrincipalTimeoutsToTerraform(this._timeouts),
+      timeouts: dataAzureadServicePrincipalTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
