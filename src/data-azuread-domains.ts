@@ -99,7 +99,7 @@ export interface DataAzureadDomainsTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadDomainsTimeoutsToTerraform(struct?: DataAzureadDomainsTimeoutsOutputReference | DataAzureadDomainsTimeouts): any {
+export function dataAzureadDomainsTimeoutsToTerraform(struct?: DataAzureadDomainsTimeoutsOutputReference | DataAzureadDomainsTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -119,12 +119,31 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DataAzureadDomainsTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadDomainsTimeouts | undefined) {
+    if (value === undefined) {
+      this._read = undefined;
+    }
+    else {
+      this._read = value.read;
+    }
+  }
+
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -132,7 +151,7 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 }
 
@@ -174,7 +193,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
     this._onlyInitial = config.onlyInitial;
     this._onlyRoot = config.onlyRoot;
     this._supportsServices = config.supportsServices;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -182,11 +201,11 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // ==========
 
   // admin_managed - computed: false, optional: true, required: false
-  private _adminManaged?: boolean | cdktf.IResolvable | undefined; 
+  private _adminManaged?: boolean | cdktf.IResolvable; 
   public get adminManaged() {
     return this.getBooleanAttribute('admin_managed') as any;
   }
-  public set adminManaged(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminManaged(value: boolean | cdktf.IResolvable) {
     this._adminManaged = value;
   }
   public resetAdminManaged() {
@@ -194,7 +213,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminManagedInput() {
-    return this._adminManaged
+    return this._adminManaged;
   }
 
   // domains - computed: true, optional: false, required: false
@@ -208,11 +227,11 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // include_unverified - computed: false, optional: true, required: false
-  private _includeUnverified?: boolean | cdktf.IResolvable | undefined; 
+  private _includeUnverified?: boolean | cdktf.IResolvable; 
   public get includeUnverified() {
     return this.getBooleanAttribute('include_unverified') as any;
   }
-  public set includeUnverified(value: boolean | cdktf.IResolvable | undefined) {
+  public set includeUnverified(value: boolean | cdktf.IResolvable) {
     this._includeUnverified = value;
   }
   public resetIncludeUnverified() {
@@ -220,15 +239,15 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get includeUnverifiedInput() {
-    return this._includeUnverified
+    return this._includeUnverified;
   }
 
   // only_default - computed: false, optional: true, required: false
-  private _onlyDefault?: boolean | cdktf.IResolvable | undefined; 
+  private _onlyDefault?: boolean | cdktf.IResolvable; 
   public get onlyDefault() {
     return this.getBooleanAttribute('only_default') as any;
   }
-  public set onlyDefault(value: boolean | cdktf.IResolvable | undefined) {
+  public set onlyDefault(value: boolean | cdktf.IResolvable) {
     this._onlyDefault = value;
   }
   public resetOnlyDefault() {
@@ -236,15 +255,15 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get onlyDefaultInput() {
-    return this._onlyDefault
+    return this._onlyDefault;
   }
 
   // only_initial - computed: false, optional: true, required: false
-  private _onlyInitial?: boolean | cdktf.IResolvable | undefined; 
+  private _onlyInitial?: boolean | cdktf.IResolvable; 
   public get onlyInitial() {
     return this.getBooleanAttribute('only_initial') as any;
   }
-  public set onlyInitial(value: boolean | cdktf.IResolvable | undefined) {
+  public set onlyInitial(value: boolean | cdktf.IResolvable) {
     this._onlyInitial = value;
   }
   public resetOnlyInitial() {
@@ -252,15 +271,15 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get onlyInitialInput() {
-    return this._onlyInitial
+    return this._onlyInitial;
   }
 
   // only_root - computed: false, optional: true, required: false
-  private _onlyRoot?: boolean | cdktf.IResolvable | undefined; 
+  private _onlyRoot?: boolean | cdktf.IResolvable; 
   public get onlyRoot() {
     return this.getBooleanAttribute('only_root') as any;
   }
-  public set onlyRoot(value: boolean | cdktf.IResolvable | undefined) {
+  public set onlyRoot(value: boolean | cdktf.IResolvable) {
     this._onlyRoot = value;
   }
   public resetOnlyRoot() {
@@ -268,15 +287,15 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get onlyRootInput() {
-    return this._onlyRoot
+    return this._onlyRoot;
   }
 
   // supports_services - computed: false, optional: true, required: false
-  private _supportsServices?: string[] | undefined; 
+  private _supportsServices?: string[]; 
   public get supportsServices() {
     return this.getListAttribute('supports_services');
   }
-  public set supportsServices(value: string[] | undefined) {
+  public set supportsServices(value: string[]) {
     this._supportsServices = value;
   }
   public resetSupportsServices() {
@@ -284,24 +303,23 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get supportsServicesInput() {
-    return this._supportsServices
+    return this._supportsServices;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadDomainsTimeouts | undefined; 
-  private __timeoutsOutput = new DataAzureadDomainsTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadDomainsTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DataAzureadDomainsTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DataAzureadDomainsTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -316,7 +334,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
       only_initial: cdktf.booleanToTerraform(this._onlyInitial),
       only_root: cdktf.booleanToTerraform(this._onlyRoot),
       supports_services: cdktf.listMapper(cdktf.stringToTerraform)(this._supportsServices),
-      timeouts: dataAzureadDomainsTimeoutsToTerraform(this._timeouts),
+      timeouts: dataAzureadDomainsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

@@ -209,7 +209,7 @@ export interface ApplicationApiOauth2PermissionScope {
   readonly value?: string;
 }
 
-function applicationApiOauth2PermissionScopeToTerraform(struct?: ApplicationApiOauth2PermissionScope): any {
+export function applicationApiOauth2PermissionScopeToTerraform(struct?: ApplicationApiOauth2PermissionScope): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -253,7 +253,7 @@ export interface ApplicationApi {
   readonly oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[];
 }
 
-function applicationApiToTerraform(struct?: ApplicationApiOutputReference | ApplicationApi): any {
+export function applicationApiToTerraform(struct?: ApplicationApiOutputReference | ApplicationApi): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -276,12 +276,49 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ApplicationApi | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._knownClientApplications) {
+      hasAnyValues = true;
+      internalValueResult.knownClientApplications = this._knownClientApplications;
+    }
+    if (this._mappedClaimsEnabled) {
+      hasAnyValues = true;
+      internalValueResult.mappedClaimsEnabled = this._mappedClaimsEnabled;
+    }
+    if (this._requestedAccessTokenVersion) {
+      hasAnyValues = true;
+      internalValueResult.requestedAccessTokenVersion = this._requestedAccessTokenVersion;
+    }
+    if (this._oauth2PermissionScope) {
+      hasAnyValues = true;
+      internalValueResult.oauth2PermissionScope = this._oauth2PermissionScope;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationApi | undefined) {
+    if (value === undefined) {
+      this._knownClientApplications = undefined;
+      this._mappedClaimsEnabled = undefined;
+      this._requestedAccessTokenVersion = undefined;
+      this._oauth2PermissionScope = undefined;
+    }
+    else {
+      this._knownClientApplications = value.knownClientApplications;
+      this._mappedClaimsEnabled = value.mappedClaimsEnabled;
+      this._requestedAccessTokenVersion = value.requestedAccessTokenVersion;
+      this._oauth2PermissionScope = value.oauth2PermissionScope;
+    }
+  }
+
   // known_client_applications - computed: false, optional: true, required: false
-  private _knownClientApplications?: string[] | undefined; 
+  private _knownClientApplications?: string[]; 
   public get knownClientApplications() {
     return this.getListAttribute('known_client_applications');
   }
-  public set knownClientApplications(value: string[] | undefined) {
+  public set knownClientApplications(value: string[]) {
     this._knownClientApplications = value;
   }
   public resetKnownClientApplications() {
@@ -289,15 +326,15 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get knownClientApplicationsInput() {
-    return this._knownClientApplications
+    return this._knownClientApplications;
   }
 
   // mapped_claims_enabled - computed: false, optional: true, required: false
-  private _mappedClaimsEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _mappedClaimsEnabled?: boolean | cdktf.IResolvable; 
   public get mappedClaimsEnabled() {
     return this.getBooleanAttribute('mapped_claims_enabled') as any;
   }
-  public set mappedClaimsEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set mappedClaimsEnabled(value: boolean | cdktf.IResolvable) {
     this._mappedClaimsEnabled = value;
   }
   public resetMappedClaimsEnabled() {
@@ -305,15 +342,15 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get mappedClaimsEnabledInput() {
-    return this._mappedClaimsEnabled
+    return this._mappedClaimsEnabled;
   }
 
   // requested_access_token_version - computed: false, optional: true, required: false
-  private _requestedAccessTokenVersion?: number | undefined; 
+  private _requestedAccessTokenVersion?: number; 
   public get requestedAccessTokenVersion() {
     return this.getNumberAttribute('requested_access_token_version');
   }
-  public set requestedAccessTokenVersion(value: number | undefined) {
+  public set requestedAccessTokenVersion(value: number) {
     this._requestedAccessTokenVersion = value;
   }
   public resetRequestedAccessTokenVersion() {
@@ -321,16 +358,16 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get requestedAccessTokenVersionInput() {
-    return this._requestedAccessTokenVersion
+    return this._requestedAccessTokenVersion;
   }
 
   // oauth2_permission_scope - computed: false, optional: true, required: false
-  private _oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[] | undefined; 
+  private _oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[]; 
   public get oauth2PermissionScope() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('oauth2_permission_scope') as any;
   }
-  public set oauth2PermissionScope(value: ApplicationApiOauth2PermissionScope[] | undefined) {
+  public set oauth2PermissionScope(value: ApplicationApiOauth2PermissionScope[]) {
     this._oauth2PermissionScope = value;
   }
   public resetOauth2PermissionScope() {
@@ -338,7 +375,7 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get oauth2PermissionScopeInput() {
-    return this._oauth2PermissionScope
+    return this._oauth2PermissionScope;
   }
 }
 export interface ApplicationAppRole {
@@ -380,7 +417,7 @@ export interface ApplicationAppRole {
   readonly value?: string;
 }
 
-function applicationAppRoleToTerraform(struct?: ApplicationAppRole): any {
+export function applicationAppRoleToTerraform(struct?: ApplicationAppRole): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -422,7 +459,7 @@ export interface ApplicationFeatureTags {
   readonly hide?: boolean | cdktf.IResolvable;
 }
 
-function applicationFeatureTagsToTerraform(struct?: ApplicationFeatureTags): any {
+export function applicationFeatureTagsToTerraform(struct?: ApplicationFeatureTags): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -462,7 +499,7 @@ export interface ApplicationOptionalClaimsAccessToken {
   readonly source?: string;
 }
 
-function applicationOptionalClaimsAccessTokenToTerraform(struct?: ApplicationOptionalClaimsAccessToken): any {
+export function applicationOptionalClaimsAccessTokenToTerraform(struct?: ApplicationOptionalClaimsAccessToken): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -502,7 +539,7 @@ export interface ApplicationOptionalClaimsIdToken {
   readonly source?: string;
 }
 
-function applicationOptionalClaimsIdTokenToTerraform(struct?: ApplicationOptionalClaimsIdToken): any {
+export function applicationOptionalClaimsIdTokenToTerraform(struct?: ApplicationOptionalClaimsIdToken): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -542,7 +579,7 @@ export interface ApplicationOptionalClaimsSaml2Token {
   readonly source?: string;
 }
 
-function applicationOptionalClaimsSaml2TokenToTerraform(struct?: ApplicationOptionalClaimsSaml2Token): any {
+export function applicationOptionalClaimsSaml2TokenToTerraform(struct?: ApplicationOptionalClaimsSaml2Token): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -576,7 +613,7 @@ export interface ApplicationOptionalClaims {
   readonly saml2Token?: ApplicationOptionalClaimsSaml2Token[];
 }
 
-function applicationOptionalClaimsToTerraform(struct?: ApplicationOptionalClaimsOutputReference | ApplicationOptionalClaims): any {
+export function applicationOptionalClaimsToTerraform(struct?: ApplicationOptionalClaimsOutputReference | ApplicationOptionalClaims): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -598,13 +635,44 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ApplicationOptionalClaims | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._accessToken) {
+      hasAnyValues = true;
+      internalValueResult.accessToken = this._accessToken;
+    }
+    if (this._idToken) {
+      hasAnyValues = true;
+      internalValueResult.idToken = this._idToken;
+    }
+    if (this._saml2Token) {
+      hasAnyValues = true;
+      internalValueResult.saml2Token = this._saml2Token;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationOptionalClaims | undefined) {
+    if (value === undefined) {
+      this._accessToken = undefined;
+      this._idToken = undefined;
+      this._saml2Token = undefined;
+    }
+    else {
+      this._accessToken = value.accessToken;
+      this._idToken = value.idToken;
+      this._saml2Token = value.saml2Token;
+    }
+  }
+
   // access_token - computed: false, optional: true, required: false
-  private _accessToken?: ApplicationOptionalClaimsAccessToken[] | undefined; 
+  private _accessToken?: ApplicationOptionalClaimsAccessToken[]; 
   public get accessToken() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('access_token') as any;
   }
-  public set accessToken(value: ApplicationOptionalClaimsAccessToken[] | undefined) {
+  public set accessToken(value: ApplicationOptionalClaimsAccessToken[]) {
     this._accessToken = value;
   }
   public resetAccessToken() {
@@ -612,16 +680,16 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get accessTokenInput() {
-    return this._accessToken
+    return this._accessToken;
   }
 
   // id_token - computed: false, optional: true, required: false
-  private _idToken?: ApplicationOptionalClaimsIdToken[] | undefined; 
+  private _idToken?: ApplicationOptionalClaimsIdToken[]; 
   public get idToken() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('id_token') as any;
   }
-  public set idToken(value: ApplicationOptionalClaimsIdToken[] | undefined) {
+  public set idToken(value: ApplicationOptionalClaimsIdToken[]) {
     this._idToken = value;
   }
   public resetIdToken() {
@@ -629,16 +697,16 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get idTokenInput() {
-    return this._idToken
+    return this._idToken;
   }
 
   // saml2_token - computed: false, optional: true, required: false
-  private _saml2Token?: ApplicationOptionalClaimsSaml2Token[] | undefined; 
+  private _saml2Token?: ApplicationOptionalClaimsSaml2Token[]; 
   public get saml2Token() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('saml2_token') as any;
   }
-  public set saml2Token(value: ApplicationOptionalClaimsSaml2Token[] | undefined) {
+  public set saml2Token(value: ApplicationOptionalClaimsSaml2Token[]) {
     this._saml2Token = value;
   }
   public resetSaml2Token() {
@@ -646,7 +714,7 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get saml2TokenInput() {
-    return this._saml2Token
+    return this._saml2Token;
   }
 }
 export interface ApplicationPublicClient {
@@ -658,7 +726,7 @@ export interface ApplicationPublicClient {
   readonly redirectUris?: string[];
 }
 
-function applicationPublicClientToTerraform(struct?: ApplicationPublicClientOutputReference | ApplicationPublicClient): any {
+export function applicationPublicClientToTerraform(struct?: ApplicationPublicClientOutputReference | ApplicationPublicClient): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -678,12 +746,31 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ApplicationPublicClient | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._redirectUris) {
+      hasAnyValues = true;
+      internalValueResult.redirectUris = this._redirectUris;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationPublicClient | undefined) {
+    if (value === undefined) {
+      this._redirectUris = undefined;
+    }
+    else {
+      this._redirectUris = value.redirectUris;
+    }
+  }
+
   // redirect_uris - computed: false, optional: true, required: false
-  private _redirectUris?: string[] | undefined; 
+  private _redirectUris?: string[]; 
   public get redirectUris() {
     return this.getListAttribute('redirect_uris');
   }
-  public set redirectUris(value: string[] | undefined) {
+  public set redirectUris(value: string[]) {
     this._redirectUris = value;
   }
   public resetRedirectUris() {
@@ -691,7 +778,7 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get redirectUrisInput() {
-    return this._redirectUris
+    return this._redirectUris;
   }
 }
 export interface ApplicationRequiredResourceAccessResourceAccess {
@@ -705,7 +792,7 @@ export interface ApplicationRequiredResourceAccessResourceAccess {
   readonly type: string;
 }
 
-function applicationRequiredResourceAccessResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccessResourceAccess): any {
+export function applicationRequiredResourceAccessResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccessResourceAccess): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -729,7 +816,7 @@ export interface ApplicationRequiredResourceAccess {
   readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccess[];
 }
 
-function applicationRequiredResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccess): any {
+export function applicationRequiredResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccess): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -749,7 +836,7 @@ export interface ApplicationSinglePageApplication {
   readonly redirectUris?: string[];
 }
 
-function applicationSinglePageApplicationToTerraform(struct?: ApplicationSinglePageApplicationOutputReference | ApplicationSinglePageApplication): any {
+export function applicationSinglePageApplicationToTerraform(struct?: ApplicationSinglePageApplicationOutputReference | ApplicationSinglePageApplication): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -769,12 +856,31 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ApplicationSinglePageApplication | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._redirectUris) {
+      hasAnyValues = true;
+      internalValueResult.redirectUris = this._redirectUris;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationSinglePageApplication | undefined) {
+    if (value === undefined) {
+      this._redirectUris = undefined;
+    }
+    else {
+      this._redirectUris = value.redirectUris;
+    }
+  }
+
   // redirect_uris - computed: false, optional: true, required: false
-  private _redirectUris?: string[] | undefined; 
+  private _redirectUris?: string[]; 
   public get redirectUris() {
     return this.getListAttribute('redirect_uris');
   }
-  public set redirectUris(value: string[] | undefined) {
+  public set redirectUris(value: string[]) {
     this._redirectUris = value;
   }
   public resetRedirectUris() {
@@ -782,7 +888,7 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
   }
   // Temporarily expose input value. Use with caution.
   public get redirectUrisInput() {
-    return this._redirectUris
+    return this._redirectUris;
   }
 }
 export interface ApplicationTimeouts {
@@ -804,7 +910,7 @@ export interface ApplicationTimeouts {
   readonly update?: string;
 }
 
-function applicationTimeoutsToTerraform(struct?: ApplicationTimeoutsOutputReference | ApplicationTimeouts): any {
+export function applicationTimeoutsToTerraform(struct?: ApplicationTimeoutsOutputReference | ApplicationTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -827,12 +933,49 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ApplicationTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -840,15 +983,15 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -856,15 +999,15 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -872,15 +1015,15 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -888,7 +1031,7 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 export interface ApplicationWebImplicitGrant {
@@ -906,7 +1049,7 @@ export interface ApplicationWebImplicitGrant {
   readonly idTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
 }
 
-function applicationWebImplicitGrantToTerraform(struct?: ApplicationWebImplicitGrantOutputReference | ApplicationWebImplicitGrant): any {
+export function applicationWebImplicitGrantToTerraform(struct?: ApplicationWebImplicitGrantOutputReference | ApplicationWebImplicitGrant): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -927,12 +1070,37 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ApplicationWebImplicitGrant | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._accessTokenIssuanceEnabled) {
+      hasAnyValues = true;
+      internalValueResult.accessTokenIssuanceEnabled = this._accessTokenIssuanceEnabled;
+    }
+    if (this._idTokenIssuanceEnabled) {
+      hasAnyValues = true;
+      internalValueResult.idTokenIssuanceEnabled = this._idTokenIssuanceEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationWebImplicitGrant | undefined) {
+    if (value === undefined) {
+      this._accessTokenIssuanceEnabled = undefined;
+      this._idTokenIssuanceEnabled = undefined;
+    }
+    else {
+      this._accessTokenIssuanceEnabled = value.accessTokenIssuanceEnabled;
+      this._idTokenIssuanceEnabled = value.idTokenIssuanceEnabled;
+    }
+  }
+
   // access_token_issuance_enabled - computed: false, optional: true, required: false
-  private _accessTokenIssuanceEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _accessTokenIssuanceEnabled?: boolean | cdktf.IResolvable; 
   public get accessTokenIssuanceEnabled() {
     return this.getBooleanAttribute('access_token_issuance_enabled') as any;
   }
-  public set accessTokenIssuanceEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set accessTokenIssuanceEnabled(value: boolean | cdktf.IResolvable) {
     this._accessTokenIssuanceEnabled = value;
   }
   public resetAccessTokenIssuanceEnabled() {
@@ -940,15 +1108,15 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get accessTokenIssuanceEnabledInput() {
-    return this._accessTokenIssuanceEnabled
+    return this._accessTokenIssuanceEnabled;
   }
 
   // id_token_issuance_enabled - computed: false, optional: true, required: false
-  private _idTokenIssuanceEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _idTokenIssuanceEnabled?: boolean | cdktf.IResolvable; 
   public get idTokenIssuanceEnabled() {
     return this.getBooleanAttribute('id_token_issuance_enabled') as any;
   }
-  public set idTokenIssuanceEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set idTokenIssuanceEnabled(value: boolean | cdktf.IResolvable) {
     this._idTokenIssuanceEnabled = value;
   }
   public resetIdTokenIssuanceEnabled() {
@@ -956,7 +1124,7 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get idTokenIssuanceEnabledInput() {
-    return this._idTokenIssuanceEnabled
+    return this._idTokenIssuanceEnabled;
   }
 }
 export interface ApplicationWeb {
@@ -986,7 +1154,7 @@ export interface ApplicationWeb {
   readonly implicitGrant?: ApplicationWebImplicitGrant;
 }
 
-function applicationWebToTerraform(struct?: ApplicationWebOutputReference | ApplicationWeb): any {
+export function applicationWebToTerraform(struct?: ApplicationWebOutputReference | ApplicationWeb): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1009,12 +1177,49 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ApplicationWeb | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._homepageUrl) {
+      hasAnyValues = true;
+      internalValueResult.homepageUrl = this._homepageUrl;
+    }
+    if (this._logoutUrl) {
+      hasAnyValues = true;
+      internalValueResult.logoutUrl = this._logoutUrl;
+    }
+    if (this._redirectUris) {
+      hasAnyValues = true;
+      internalValueResult.redirectUris = this._redirectUris;
+    }
+    if (this._implicitGrant) {
+      hasAnyValues = true;
+      internalValueResult.implicitGrant = this._implicitGrant?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationWeb | undefined) {
+    if (value === undefined) {
+      this._homepageUrl = undefined;
+      this._logoutUrl = undefined;
+      this._redirectUris = undefined;
+      this._implicitGrant.internalValue = undefined;
+    }
+    else {
+      this._homepageUrl = value.homepageUrl;
+      this._logoutUrl = value.logoutUrl;
+      this._redirectUris = value.redirectUris;
+      this._implicitGrant.internalValue = value.implicitGrant;
+    }
+  }
+
   // homepage_url - computed: false, optional: true, required: false
-  private _homepageUrl?: string | undefined; 
+  private _homepageUrl?: string; 
   public get homepageUrl() {
     return this.getStringAttribute('homepage_url');
   }
-  public set homepageUrl(value: string | undefined) {
+  public set homepageUrl(value: string) {
     this._homepageUrl = value;
   }
   public resetHomepageUrl() {
@@ -1022,15 +1227,15 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get homepageUrlInput() {
-    return this._homepageUrl
+    return this._homepageUrl;
   }
 
   // logout_url - computed: false, optional: true, required: false
-  private _logoutUrl?: string | undefined; 
+  private _logoutUrl?: string; 
   public get logoutUrl() {
     return this.getStringAttribute('logout_url');
   }
-  public set logoutUrl(value: string | undefined) {
+  public set logoutUrl(value: string) {
     this._logoutUrl = value;
   }
   public resetLogoutUrl() {
@@ -1038,15 +1243,15 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get logoutUrlInput() {
-    return this._logoutUrl
+    return this._logoutUrl;
   }
 
   // redirect_uris - computed: false, optional: true, required: false
-  private _redirectUris?: string[] | undefined; 
+  private _redirectUris?: string[]; 
   public get redirectUris() {
     return this.getListAttribute('redirect_uris');
   }
-  public set redirectUris(value: string[] | undefined) {
+  public set redirectUris(value: string[]) {
     this._redirectUris = value;
   }
   public resetRedirectUris() {
@@ -1054,24 +1259,23 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get redirectUrisInput() {
-    return this._redirectUris
+    return this._redirectUris;
   }
 
   // implicit_grant - computed: false, optional: true, required: false
-  private _implicitGrant?: ApplicationWebImplicitGrant | undefined; 
-  private __implicitGrantOutput = new ApplicationWebImplicitGrantOutputReference(this as any, "implicit_grant", true);
+  private _implicitGrant = new ApplicationWebImplicitGrantOutputReference(this as any, "implicit_grant", true);
   public get implicitGrant() {
-    return this.__implicitGrantOutput;
+    return this._implicitGrant;
   }
-  public putImplicitGrant(value: ApplicationWebImplicitGrant | undefined) {
-    this._implicitGrant = value;
+  public putImplicitGrant(value: ApplicationWebImplicitGrant) {
+    this._implicitGrant.internalValue = value;
   }
   public resetImplicitGrant() {
-    this._implicitGrant = undefined;
+    this._implicitGrant.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get implicitGrantInput() {
-    return this._implicitGrant
+    return this._implicitGrant.internalValue;
   }
 }
 
@@ -1123,15 +1327,15 @@ export class Application extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._templateId = config.templateId;
     this._termsOfServiceUrl = config.termsOfServiceUrl;
-    this._api = config.api;
+    this._api.internalValue = config.api;
     this._appRole = config.appRole;
     this._featureTags = config.featureTags;
-    this._optionalClaims = config.optionalClaims;
-    this._publicClient = config.publicClient;
+    this._optionalClaims.internalValue = config.optionalClaims;
+    this._publicClient.internalValue = config.publicClient;
     this._requiredResourceAccess = config.requiredResourceAccess;
-    this._singlePageApplication = config.singlePageApplication;
-    this._timeouts = config.timeouts;
-    this._web = config.web;
+    this._singlePageApplication.internalValue = config.singlePageApplication;
+    this._timeouts.internalValue = config.timeouts;
+    this._web.internalValue = config.web;
   }
 
   // ==========
@@ -1149,11 +1353,11 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // device_only_auth_enabled - computed: false, optional: true, required: false
-  private _deviceOnlyAuthEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _deviceOnlyAuthEnabled?: boolean | cdktf.IResolvable; 
   public get deviceOnlyAuthEnabled() {
     return this.getBooleanAttribute('device_only_auth_enabled') as any;
   }
-  public set deviceOnlyAuthEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set deviceOnlyAuthEnabled(value: boolean | cdktf.IResolvable) {
     this._deviceOnlyAuthEnabled = value;
   }
   public resetDeviceOnlyAuthEnabled() {
@@ -1161,7 +1365,7 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get deviceOnlyAuthEnabledInput() {
-    return this._deviceOnlyAuthEnabled
+    return this._deviceOnlyAuthEnabled;
   }
 
   // disabled_by_microsoft - computed: true, optional: false, required: false
@@ -1179,15 +1383,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
-    return this._displayName
+    return this._displayName;
   }
 
   // fallback_public_client_enabled - computed: false, optional: true, required: false
-  private _fallbackPublicClientEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _fallbackPublicClientEnabled?: boolean | cdktf.IResolvable; 
   public get fallbackPublicClientEnabled() {
     return this.getBooleanAttribute('fallback_public_client_enabled') as any;
   }
-  public set fallbackPublicClientEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set fallbackPublicClientEnabled(value: boolean | cdktf.IResolvable) {
     this._fallbackPublicClientEnabled = value;
   }
   public resetFallbackPublicClientEnabled() {
@@ -1195,15 +1399,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fallbackPublicClientEnabledInput() {
-    return this._fallbackPublicClientEnabled
+    return this._fallbackPublicClientEnabled;
   }
 
   // group_membership_claims - computed: false, optional: true, required: false
-  private _groupMembershipClaims?: string[] | undefined; 
+  private _groupMembershipClaims?: string[]; 
   public get groupMembershipClaims() {
     return this.getListAttribute('group_membership_claims');
   }
-  public set groupMembershipClaims(value: string[] | undefined) {
+  public set groupMembershipClaims(value: string[]) {
     this._groupMembershipClaims = value;
   }
   public resetGroupMembershipClaims() {
@@ -1211,7 +1415,7 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get groupMembershipClaimsInput() {
-    return this._groupMembershipClaims
+    return this._groupMembershipClaims;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1220,11 +1424,11 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // identifier_uris - computed: false, optional: true, required: false
-  private _identifierUris?: string[] | undefined; 
+  private _identifierUris?: string[]; 
   public get identifierUris() {
     return this.getListAttribute('identifier_uris');
   }
-  public set identifierUris(value: string[] | undefined) {
+  public set identifierUris(value: string[]) {
     this._identifierUris = value;
   }
   public resetIdentifierUris() {
@@ -1232,15 +1436,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get identifierUrisInput() {
-    return this._identifierUris
+    return this._identifierUris;
   }
 
   // logo_image - computed: false, optional: true, required: false
-  private _logoImage?: string | undefined; 
+  private _logoImage?: string; 
   public get logoImage() {
     return this.getStringAttribute('logo_image');
   }
-  public set logoImage(value: string | undefined) {
+  public set logoImage(value: string) {
     this._logoImage = value;
   }
   public resetLogoImage() {
@@ -1248,7 +1452,7 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get logoImageInput() {
-    return this._logoImage
+    return this._logoImage;
   }
 
   // logo_url - computed: true, optional: false, required: false
@@ -1257,11 +1461,11 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // marketing_url - computed: false, optional: true, required: false
-  private _marketingUrl?: string | undefined; 
+  private _marketingUrl?: string; 
   public get marketingUrl() {
     return this.getStringAttribute('marketing_url');
   }
-  public set marketingUrl(value: string | undefined) {
+  public set marketingUrl(value: string) {
     this._marketingUrl = value;
   }
   public resetMarketingUrl() {
@@ -1269,7 +1473,7 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get marketingUrlInput() {
-    return this._marketingUrl
+    return this._marketingUrl;
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
@@ -1278,11 +1482,11 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // oauth2_post_response_required - computed: false, optional: true, required: false
-  private _oauth2PostResponseRequired?: boolean | cdktf.IResolvable | undefined; 
+  private _oauth2PostResponseRequired?: boolean | cdktf.IResolvable; 
   public get oauth2PostResponseRequired() {
     return this.getBooleanAttribute('oauth2_post_response_required') as any;
   }
-  public set oauth2PostResponseRequired(value: boolean | cdktf.IResolvable | undefined) {
+  public set oauth2PostResponseRequired(value: boolean | cdktf.IResolvable) {
     this._oauth2PostResponseRequired = value;
   }
   public resetOauth2PostResponseRequired() {
@@ -1290,7 +1494,7 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get oauth2PostResponseRequiredInput() {
-    return this._oauth2PostResponseRequired
+    return this._oauth2PostResponseRequired;
   }
 
   // object_id - computed: true, optional: false, required: false
@@ -1299,11 +1503,11 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // owners - computed: false, optional: true, required: false
-  private _owners?: string[] | undefined; 
+  private _owners?: string[]; 
   public get owners() {
     return this.getListAttribute('owners');
   }
-  public set owners(value: string[] | undefined) {
+  public set owners(value: string[]) {
     this._owners = value;
   }
   public resetOwners() {
@@ -1311,15 +1515,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownersInput() {
-    return this._owners
+    return this._owners;
   }
 
   // prevent_duplicate_names - computed: false, optional: true, required: false
-  private _preventDuplicateNames?: boolean | cdktf.IResolvable | undefined; 
+  private _preventDuplicateNames?: boolean | cdktf.IResolvable; 
   public get preventDuplicateNames() {
     return this.getBooleanAttribute('prevent_duplicate_names') as any;
   }
-  public set preventDuplicateNames(value: boolean | cdktf.IResolvable | undefined) {
+  public set preventDuplicateNames(value: boolean | cdktf.IResolvable) {
     this._preventDuplicateNames = value;
   }
   public resetPreventDuplicateNames() {
@@ -1327,15 +1531,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get preventDuplicateNamesInput() {
-    return this._preventDuplicateNames
+    return this._preventDuplicateNames;
   }
 
   // privacy_statement_url - computed: false, optional: true, required: false
-  private _privacyStatementUrl?: string | undefined; 
+  private _privacyStatementUrl?: string; 
   public get privacyStatementUrl() {
     return this.getStringAttribute('privacy_statement_url');
   }
-  public set privacyStatementUrl(value: string | undefined) {
+  public set privacyStatementUrl(value: string) {
     this._privacyStatementUrl = value;
   }
   public resetPrivacyStatementUrl() {
@@ -1343,7 +1547,7 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get privacyStatementUrlInput() {
-    return this._privacyStatementUrl
+    return this._privacyStatementUrl;
   }
 
   // publisher_domain - computed: true, optional: false, required: false
@@ -1352,11 +1556,11 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // sign_in_audience - computed: false, optional: true, required: false
-  private _signInAudience?: string | undefined; 
+  private _signInAudience?: string; 
   public get signInAudience() {
     return this.getStringAttribute('sign_in_audience');
   }
-  public set signInAudience(value: string | undefined) {
+  public set signInAudience(value: string) {
     this._signInAudience = value;
   }
   public resetSignInAudience() {
@@ -1364,15 +1568,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get signInAudienceInput() {
-    return this._signInAudience
+    return this._signInAudience;
   }
 
   // support_url - computed: false, optional: true, required: false
-  private _supportUrl?: string | undefined; 
+  private _supportUrl?: string; 
   public get supportUrl() {
     return this.getStringAttribute('support_url');
   }
-  public set supportUrl(value: string | undefined) {
+  public set supportUrl(value: string) {
     this._supportUrl = value;
   }
   public resetSupportUrl() {
@@ -1380,15 +1584,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get supportUrlInput() {
-    return this._supportUrl
+    return this._supportUrl;
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: string[] | undefined; 
+  private _tags?: string[]; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] | undefined) {
+  public set tags(value: string[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -1396,15 +1600,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // template_id - computed: true, optional: true, required: false
-  private _templateId?: string | undefined; 
+  private _templateId?: string; 
   public get templateId() {
     return this.getStringAttribute('template_id');
   }
-  public set templateId(value: string | undefined) {
+  public set templateId(value: string) {
     this._templateId = value;
   }
   public resetTemplateId() {
@@ -1412,15 +1616,15 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get templateIdInput() {
-    return this._templateId
+    return this._templateId;
   }
 
   // terms_of_service_url - computed: false, optional: true, required: false
-  private _termsOfServiceUrl?: string | undefined; 
+  private _termsOfServiceUrl?: string; 
   public get termsOfServiceUrl() {
     return this.getStringAttribute('terms_of_service_url');
   }
-  public set termsOfServiceUrl(value: string | undefined) {
+  public set termsOfServiceUrl(value: string) {
     this._termsOfServiceUrl = value;
   }
   public resetTermsOfServiceUrl() {
@@ -1428,33 +1632,32 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get termsOfServiceUrlInput() {
-    return this._termsOfServiceUrl
+    return this._termsOfServiceUrl;
   }
 
   // api - computed: false, optional: true, required: false
-  private _api?: ApplicationApi | undefined; 
-  private __apiOutput = new ApplicationApiOutputReference(this as any, "api", true);
+  private _api = new ApplicationApiOutputReference(this as any, "api", true);
   public get api() {
-    return this.__apiOutput;
+    return this._api;
   }
-  public putApi(value: ApplicationApi | undefined) {
-    this._api = value;
+  public putApi(value: ApplicationApi) {
+    this._api.internalValue = value;
   }
   public resetApi() {
-    this._api = undefined;
+    this._api.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get apiInput() {
-    return this._api
+    return this._api.internalValue;
   }
 
   // app_role - computed: false, optional: true, required: false
-  private _appRole?: ApplicationAppRole[] | undefined; 
+  private _appRole?: ApplicationAppRole[]; 
   public get appRole() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('app_role') as any;
   }
-  public set appRole(value: ApplicationAppRole[] | undefined) {
+  public set appRole(value: ApplicationAppRole[]) {
     this._appRole = value;
   }
   public resetAppRole() {
@@ -1462,16 +1665,16 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get appRoleInput() {
-    return this._appRole
+    return this._appRole;
   }
 
   // feature_tags - computed: false, optional: true, required: false
-  private _featureTags?: ApplicationFeatureTags[] | undefined; 
+  private _featureTags?: ApplicationFeatureTags[]; 
   public get featureTags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('feature_tags') as any;
   }
-  public set featureTags(value: ApplicationFeatureTags[] | undefined) {
+  public set featureTags(value: ApplicationFeatureTags[]) {
     this._featureTags = value;
   }
   public resetFeatureTags() {
@@ -1479,50 +1682,48 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get featureTagsInput() {
-    return this._featureTags
+    return this._featureTags;
   }
 
   // optional_claims - computed: false, optional: true, required: false
-  private _optionalClaims?: ApplicationOptionalClaims | undefined; 
-  private __optionalClaimsOutput = new ApplicationOptionalClaimsOutputReference(this as any, "optional_claims", true);
+  private _optionalClaims = new ApplicationOptionalClaimsOutputReference(this as any, "optional_claims", true);
   public get optionalClaims() {
-    return this.__optionalClaimsOutput;
+    return this._optionalClaims;
   }
-  public putOptionalClaims(value: ApplicationOptionalClaims | undefined) {
-    this._optionalClaims = value;
+  public putOptionalClaims(value: ApplicationOptionalClaims) {
+    this._optionalClaims.internalValue = value;
   }
   public resetOptionalClaims() {
-    this._optionalClaims = undefined;
+    this._optionalClaims.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get optionalClaimsInput() {
-    return this._optionalClaims
+    return this._optionalClaims.internalValue;
   }
 
   // public_client - computed: false, optional: true, required: false
-  private _publicClient?: ApplicationPublicClient | undefined; 
-  private __publicClientOutput = new ApplicationPublicClientOutputReference(this as any, "public_client", true);
+  private _publicClient = new ApplicationPublicClientOutputReference(this as any, "public_client", true);
   public get publicClient() {
-    return this.__publicClientOutput;
+    return this._publicClient;
   }
-  public putPublicClient(value: ApplicationPublicClient | undefined) {
-    this._publicClient = value;
+  public putPublicClient(value: ApplicationPublicClient) {
+    this._publicClient.internalValue = value;
   }
   public resetPublicClient() {
-    this._publicClient = undefined;
+    this._publicClient.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get publicClientInput() {
-    return this._publicClient
+    return this._publicClient.internalValue;
   }
 
   // required_resource_access - computed: false, optional: true, required: false
-  private _requiredResourceAccess?: ApplicationRequiredResourceAccess[] | undefined; 
+  private _requiredResourceAccess?: ApplicationRequiredResourceAccess[]; 
   public get requiredResourceAccess() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('required_resource_access') as any;
   }
-  public set requiredResourceAccess(value: ApplicationRequiredResourceAccess[] | undefined) {
+  public set requiredResourceAccess(value: ApplicationRequiredResourceAccess[]) {
     this._requiredResourceAccess = value;
   }
   public resetRequiredResourceAccess() {
@@ -1530,58 +1731,55 @@ export class Application extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get requiredResourceAccessInput() {
-    return this._requiredResourceAccess
+    return this._requiredResourceAccess;
   }
 
   // single_page_application - computed: false, optional: true, required: false
-  private _singlePageApplication?: ApplicationSinglePageApplication | undefined; 
-  private __singlePageApplicationOutput = new ApplicationSinglePageApplicationOutputReference(this as any, "single_page_application", true);
+  private _singlePageApplication = new ApplicationSinglePageApplicationOutputReference(this as any, "single_page_application", true);
   public get singlePageApplication() {
-    return this.__singlePageApplicationOutput;
+    return this._singlePageApplication;
   }
-  public putSinglePageApplication(value: ApplicationSinglePageApplication | undefined) {
-    this._singlePageApplication = value;
+  public putSinglePageApplication(value: ApplicationSinglePageApplication) {
+    this._singlePageApplication.internalValue = value;
   }
   public resetSinglePageApplication() {
-    this._singlePageApplication = undefined;
+    this._singlePageApplication.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get singlePageApplicationInput() {
-    return this._singlePageApplication
+    return this._singlePageApplication.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ApplicationTimeouts | undefined; 
-  private __timeoutsOutput = new ApplicationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ApplicationTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ApplicationTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ApplicationTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // web - computed: false, optional: true, required: false
-  private _web?: ApplicationWeb | undefined; 
-  private __webOutput = new ApplicationWebOutputReference(this as any, "web", true);
+  private _web = new ApplicationWebOutputReference(this as any, "web", true);
   public get web() {
-    return this.__webOutput;
+    return this._web;
   }
-  public putWeb(value: ApplicationWeb | undefined) {
-    this._web = value;
+  public putWeb(value: ApplicationWeb) {
+    this._web.internalValue = value;
   }
   public resetWeb() {
-    this._web = undefined;
+    this._web.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get webInput() {
-    return this._web
+    return this._web.internalValue;
   }
 
   // =========
@@ -1606,15 +1804,15 @@ export class Application extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       template_id: cdktf.stringToTerraform(this._templateId),
       terms_of_service_url: cdktf.stringToTerraform(this._termsOfServiceUrl),
-      api: applicationApiToTerraform(this._api),
+      api: applicationApiToTerraform(this._api.internalValue),
       app_role: cdktf.listMapper(applicationAppRoleToTerraform)(this._appRole),
       feature_tags: cdktf.listMapper(applicationFeatureTagsToTerraform)(this._featureTags),
-      optional_claims: applicationOptionalClaimsToTerraform(this._optionalClaims),
-      public_client: applicationPublicClientToTerraform(this._publicClient),
+      optional_claims: applicationOptionalClaimsToTerraform(this._optionalClaims.internalValue),
+      public_client: applicationPublicClientToTerraform(this._publicClient.internalValue),
       required_resource_access: cdktf.listMapper(applicationRequiredResourceAccessToTerraform)(this._requiredResourceAccess),
-      single_page_application: applicationSinglePageApplicationToTerraform(this._singlePageApplication),
-      timeouts: applicationTimeoutsToTerraform(this._timeouts),
-      web: applicationWebToTerraform(this._web),
+      single_page_application: applicationSinglePageApplicationToTerraform(this._singlePageApplication.internalValue),
+      timeouts: applicationTimeoutsToTerraform(this._timeouts.internalValue),
+      web: applicationWebToTerraform(this._web.internalValue),
     };
   }
 }

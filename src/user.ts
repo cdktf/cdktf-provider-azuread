@@ -243,7 +243,7 @@ export interface UserTimeouts {
   readonly update?: string;
 }
 
-function userTimeoutsToTerraform(struct?: UserTimeoutsOutputReference | UserTimeouts): any {
+export function userTimeoutsToTerraform(struct?: UserTimeoutsOutputReference | UserTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -266,12 +266,49 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): UserTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: UserTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -279,15 +316,15 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -295,15 +332,15 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -311,15 +348,15 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -327,7 +364,7 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -398,7 +435,7 @@ export class User extends cdktf.TerraformResource {
     this._surname = config.surname;
     this._usageLocation = config.usageLocation;
     this._userPrincipalName = config.userPrincipalName;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -411,11 +448,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // account_enabled - computed: false, optional: true, required: false
-  private _accountEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _accountEnabled?: boolean | cdktf.IResolvable; 
   public get accountEnabled() {
     return this.getBooleanAttribute('account_enabled') as any;
   }
-  public set accountEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set accountEnabled(value: boolean | cdktf.IResolvable) {
     this._accountEnabled = value;
   }
   public resetAccountEnabled() {
@@ -423,15 +460,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountEnabledInput() {
-    return this._accountEnabled
+    return this._accountEnabled;
   }
 
   // age_group - computed: false, optional: true, required: false
-  private _ageGroup?: string | undefined; 
+  private _ageGroup?: string; 
   public get ageGroup() {
     return this.getStringAttribute('age_group');
   }
-  public set ageGroup(value: string | undefined) {
+  public set ageGroup(value: string) {
     this._ageGroup = value;
   }
   public resetAgeGroup() {
@@ -439,15 +476,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ageGroupInput() {
-    return this._ageGroup
+    return this._ageGroup;
   }
 
   // business_phones - computed: true, optional: true, required: false
-  private _businessPhones?: string[] | undefined; 
+  private _businessPhones?: string[]; 
   public get businessPhones() {
     return this.getListAttribute('business_phones');
   }
-  public set businessPhones(value: string[] | undefined) {
+  public set businessPhones(value: string[]) {
     this._businessPhones = value;
   }
   public resetBusinessPhones() {
@@ -455,15 +492,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get businessPhonesInput() {
-    return this._businessPhones
+    return this._businessPhones;
   }
 
   // city - computed: false, optional: true, required: false
-  private _city?: string | undefined; 
+  private _city?: string; 
   public get city() {
     return this.getStringAttribute('city');
   }
-  public set city(value: string | undefined) {
+  public set city(value: string) {
     this._city = value;
   }
   public resetCity() {
@@ -471,15 +508,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get cityInput() {
-    return this._city
+    return this._city;
   }
 
   // company_name - computed: false, optional: true, required: false
-  private _companyName?: string | undefined; 
+  private _companyName?: string; 
   public get companyName() {
     return this.getStringAttribute('company_name');
   }
-  public set companyName(value: string | undefined) {
+  public set companyName(value: string) {
     this._companyName = value;
   }
   public resetCompanyName() {
@@ -487,15 +524,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get companyNameInput() {
-    return this._companyName
+    return this._companyName;
   }
 
   // consent_provided_for_minor - computed: false, optional: true, required: false
-  private _consentProvidedForMinor?: string | undefined; 
+  private _consentProvidedForMinor?: string; 
   public get consentProvidedForMinor() {
     return this.getStringAttribute('consent_provided_for_minor');
   }
-  public set consentProvidedForMinor(value: string | undefined) {
+  public set consentProvidedForMinor(value: string) {
     this._consentProvidedForMinor = value;
   }
   public resetConsentProvidedForMinor() {
@@ -503,15 +540,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get consentProvidedForMinorInput() {
-    return this._consentProvidedForMinor
+    return this._consentProvidedForMinor;
   }
 
   // cost_center - computed: false, optional: true, required: false
-  private _costCenter?: string | undefined; 
+  private _costCenter?: string; 
   public get costCenter() {
     return this.getStringAttribute('cost_center');
   }
-  public set costCenter(value: string | undefined) {
+  public set costCenter(value: string) {
     this._costCenter = value;
   }
   public resetCostCenter() {
@@ -519,15 +556,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get costCenterInput() {
-    return this._costCenter
+    return this._costCenter;
   }
 
   // country - computed: false, optional: true, required: false
-  private _country?: string | undefined; 
+  private _country?: string; 
   public get country() {
     return this.getStringAttribute('country');
   }
-  public set country(value: string | undefined) {
+  public set country(value: string) {
     this._country = value;
   }
   public resetCountry() {
@@ -535,7 +572,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get countryInput() {
-    return this._country
+    return this._country;
   }
 
   // creation_type - computed: true, optional: false, required: false
@@ -544,11 +581,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // department - computed: false, optional: true, required: false
-  private _department?: string | undefined; 
+  private _department?: string; 
   public get department() {
     return this.getStringAttribute('department');
   }
-  public set department(value: string | undefined) {
+  public set department(value: string) {
     this._department = value;
   }
   public resetDepartment() {
@@ -556,15 +593,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get departmentInput() {
-    return this._department
+    return this._department;
   }
 
   // disable_password_expiration - computed: false, optional: true, required: false
-  private _disablePasswordExpiration?: boolean | cdktf.IResolvable | undefined; 
+  private _disablePasswordExpiration?: boolean | cdktf.IResolvable; 
   public get disablePasswordExpiration() {
     return this.getBooleanAttribute('disable_password_expiration') as any;
   }
-  public set disablePasswordExpiration(value: boolean | cdktf.IResolvable | undefined) {
+  public set disablePasswordExpiration(value: boolean | cdktf.IResolvable) {
     this._disablePasswordExpiration = value;
   }
   public resetDisablePasswordExpiration() {
@@ -572,15 +609,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get disablePasswordExpirationInput() {
-    return this._disablePasswordExpiration
+    return this._disablePasswordExpiration;
   }
 
   // disable_strong_password - computed: false, optional: true, required: false
-  private _disableStrongPassword?: boolean | cdktf.IResolvable | undefined; 
+  private _disableStrongPassword?: boolean | cdktf.IResolvable; 
   public get disableStrongPassword() {
     return this.getBooleanAttribute('disable_strong_password') as any;
   }
-  public set disableStrongPassword(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableStrongPassword(value: boolean | cdktf.IResolvable) {
     this._disableStrongPassword = value;
   }
   public resetDisableStrongPassword() {
@@ -588,7 +625,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get disableStrongPasswordInput() {
-    return this._disableStrongPassword
+    return this._disableStrongPassword;
   }
 
   // display_name - computed: false, optional: false, required: true
@@ -601,15 +638,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
-    return this._displayName
+    return this._displayName;
   }
 
   // division - computed: false, optional: true, required: false
-  private _division?: string | undefined; 
+  private _division?: string; 
   public get division() {
     return this.getStringAttribute('division');
   }
-  public set division(value: string | undefined) {
+  public set division(value: string) {
     this._division = value;
   }
   public resetDivision() {
@@ -617,15 +654,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get divisionInput() {
-    return this._division
+    return this._division;
   }
 
   // employee_id - computed: false, optional: true, required: false
-  private _employeeId?: string | undefined; 
+  private _employeeId?: string; 
   public get employeeId() {
     return this.getStringAttribute('employee_id');
   }
-  public set employeeId(value: string | undefined) {
+  public set employeeId(value: string) {
     this._employeeId = value;
   }
   public resetEmployeeId() {
@@ -633,15 +670,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get employeeIdInput() {
-    return this._employeeId
+    return this._employeeId;
   }
 
   // employee_type - computed: false, optional: true, required: false
-  private _employeeType?: string | undefined; 
+  private _employeeType?: string; 
   public get employeeType() {
     return this.getStringAttribute('employee_type');
   }
-  public set employeeType(value: string | undefined) {
+  public set employeeType(value: string) {
     this._employeeType = value;
   }
   public resetEmployeeType() {
@@ -649,7 +686,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get employeeTypeInput() {
-    return this._employeeType
+    return this._employeeType;
   }
 
   // external_user_state - computed: true, optional: false, required: false
@@ -658,11 +695,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // fax_number - computed: false, optional: true, required: false
-  private _faxNumber?: string | undefined; 
+  private _faxNumber?: string; 
   public get faxNumber() {
     return this.getStringAttribute('fax_number');
   }
-  public set faxNumber(value: string | undefined) {
+  public set faxNumber(value: string) {
     this._faxNumber = value;
   }
   public resetFaxNumber() {
@@ -670,15 +707,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get faxNumberInput() {
-    return this._faxNumber
+    return this._faxNumber;
   }
 
   // force_password_change - computed: false, optional: true, required: false
-  private _forcePasswordChange?: boolean | cdktf.IResolvable | undefined; 
+  private _forcePasswordChange?: boolean | cdktf.IResolvable; 
   public get forcePasswordChange() {
     return this.getBooleanAttribute('force_password_change') as any;
   }
-  public set forcePasswordChange(value: boolean | cdktf.IResolvable | undefined) {
+  public set forcePasswordChange(value: boolean | cdktf.IResolvable) {
     this._forcePasswordChange = value;
   }
   public resetForcePasswordChange() {
@@ -686,15 +723,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get forcePasswordChangeInput() {
-    return this._forcePasswordChange
+    return this._forcePasswordChange;
   }
 
   // given_name - computed: false, optional: true, required: false
-  private _givenName?: string | undefined; 
+  private _givenName?: string; 
   public get givenName() {
     return this.getStringAttribute('given_name');
   }
-  public set givenName(value: string | undefined) {
+  public set givenName(value: string) {
     this._givenName = value;
   }
   public resetGivenName() {
@@ -702,7 +739,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get givenNameInput() {
-    return this._givenName
+    return this._givenName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -716,11 +753,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // job_title - computed: false, optional: true, required: false
-  private _jobTitle?: string | undefined; 
+  private _jobTitle?: string; 
   public get jobTitle() {
     return this.getStringAttribute('job_title');
   }
-  public set jobTitle(value: string | undefined) {
+  public set jobTitle(value: string) {
     this._jobTitle = value;
   }
   public resetJobTitle() {
@@ -728,15 +765,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get jobTitleInput() {
-    return this._jobTitle
+    return this._jobTitle;
   }
 
   // mail - computed: true, optional: true, required: false
-  private _mail?: string | undefined; 
+  private _mail?: string; 
   public get mail() {
     return this.getStringAttribute('mail');
   }
-  public set mail(value: string | undefined) {
+  public set mail(value: string) {
     this._mail = value;
   }
   public resetMail() {
@@ -744,15 +781,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get mailInput() {
-    return this._mail
+    return this._mail;
   }
 
   // mail_nickname - computed: true, optional: true, required: false
-  private _mailNickname?: string | undefined; 
+  private _mailNickname?: string; 
   public get mailNickname() {
     return this.getStringAttribute('mail_nickname');
   }
-  public set mailNickname(value: string | undefined) {
+  public set mailNickname(value: string) {
     this._mailNickname = value;
   }
   public resetMailNickname() {
@@ -760,15 +797,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get mailNicknameInput() {
-    return this._mailNickname
+    return this._mailNickname;
   }
 
   // manager_id - computed: false, optional: true, required: false
-  private _managerId?: string | undefined; 
+  private _managerId?: string; 
   public get managerId() {
     return this.getStringAttribute('manager_id');
   }
-  public set managerId(value: string | undefined) {
+  public set managerId(value: string) {
     this._managerId = value;
   }
   public resetManagerId() {
@@ -776,15 +813,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get managerIdInput() {
-    return this._managerId
+    return this._managerId;
   }
 
   // mobile_phone - computed: false, optional: true, required: false
-  private _mobilePhone?: string | undefined; 
+  private _mobilePhone?: string; 
   public get mobilePhone() {
     return this.getStringAttribute('mobile_phone');
   }
-  public set mobilePhone(value: string | undefined) {
+  public set mobilePhone(value: string) {
     this._mobilePhone = value;
   }
   public resetMobilePhone() {
@@ -792,7 +829,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get mobilePhoneInput() {
-    return this._mobilePhone
+    return this._mobilePhone;
   }
 
   // object_id - computed: true, optional: false, required: false
@@ -801,11 +838,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // office_location - computed: false, optional: true, required: false
-  private _officeLocation?: string | undefined; 
+  private _officeLocation?: string; 
   public get officeLocation() {
     return this.getStringAttribute('office_location');
   }
-  public set officeLocation(value: string | undefined) {
+  public set officeLocation(value: string) {
     this._officeLocation = value;
   }
   public resetOfficeLocation() {
@@ -813,7 +850,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get officeLocationInput() {
-    return this._officeLocation
+    return this._officeLocation;
   }
 
   // onpremises_distinguished_name - computed: true, optional: false, required: false
@@ -827,11 +864,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // onpremises_immutable_id - computed: true, optional: true, required: false
-  private _onpremisesImmutableId?: string | undefined; 
+  private _onpremisesImmutableId?: string; 
   public get onpremisesImmutableId() {
     return this.getStringAttribute('onpremises_immutable_id');
   }
-  public set onpremisesImmutableId(value: string | undefined) {
+  public set onpremisesImmutableId(value: string) {
     this._onpremisesImmutableId = value;
   }
   public resetOnpremisesImmutableId() {
@@ -839,7 +876,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get onpremisesImmutableIdInput() {
-    return this._onpremisesImmutableId
+    return this._onpremisesImmutableId;
   }
 
   // onpremises_sam_account_name - computed: true, optional: false, required: false
@@ -863,11 +900,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // other_mails - computed: false, optional: true, required: false
-  private _otherMails?: string[] | undefined; 
+  private _otherMails?: string[]; 
   public get otherMails() {
     return this.getListAttribute('other_mails');
   }
-  public set otherMails(value: string[] | undefined) {
+  public set otherMails(value: string[]) {
     this._otherMails = value;
   }
   public resetOtherMails() {
@@ -875,15 +912,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get otherMailsInput() {
-    return this._otherMails
+    return this._otherMails;
   }
 
   // password - computed: true, optional: true, required: false
-  private _password?: string | undefined; 
+  private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
   }
-  public set password(value: string | undefined) {
+  public set password(value: string) {
     this._password = value;
   }
   public resetPassword() {
@@ -891,15 +928,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // postal_code - computed: false, optional: true, required: false
-  private _postalCode?: string | undefined; 
+  private _postalCode?: string; 
   public get postalCode() {
     return this.getStringAttribute('postal_code');
   }
-  public set postalCode(value: string | undefined) {
+  public set postalCode(value: string) {
     this._postalCode = value;
   }
   public resetPostalCode() {
@@ -907,15 +944,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get postalCodeInput() {
-    return this._postalCode
+    return this._postalCode;
   }
 
   // preferred_language - computed: false, optional: true, required: false
-  private _preferredLanguage?: string | undefined; 
+  private _preferredLanguage?: string; 
   public get preferredLanguage() {
     return this.getStringAttribute('preferred_language');
   }
-  public set preferredLanguage(value: string | undefined) {
+  public set preferredLanguage(value: string) {
     this._preferredLanguage = value;
   }
   public resetPreferredLanguage() {
@@ -923,7 +960,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get preferredLanguageInput() {
-    return this._preferredLanguage
+    return this._preferredLanguage;
   }
 
   // proxy_addresses - computed: true, optional: false, required: false
@@ -932,11 +969,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // show_in_address_list - computed: false, optional: true, required: false
-  private _showInAddressList?: boolean | cdktf.IResolvable | undefined; 
+  private _showInAddressList?: boolean | cdktf.IResolvable; 
   public get showInAddressList() {
     return this.getBooleanAttribute('show_in_address_list') as any;
   }
-  public set showInAddressList(value: boolean | cdktf.IResolvable | undefined) {
+  public set showInAddressList(value: boolean | cdktf.IResolvable) {
     this._showInAddressList = value;
   }
   public resetShowInAddressList() {
@@ -944,15 +981,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get showInAddressListInput() {
-    return this._showInAddressList
+    return this._showInAddressList;
   }
 
   // state - computed: false, optional: true, required: false
-  private _state?: string | undefined; 
+  private _state?: string; 
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
   }
   public resetState() {
@@ -960,15 +997,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get stateInput() {
-    return this._state
+    return this._state;
   }
 
   // street_address - computed: false, optional: true, required: false
-  private _streetAddress?: string | undefined; 
+  private _streetAddress?: string; 
   public get streetAddress() {
     return this.getStringAttribute('street_address');
   }
-  public set streetAddress(value: string | undefined) {
+  public set streetAddress(value: string) {
     this._streetAddress = value;
   }
   public resetStreetAddress() {
@@ -976,15 +1013,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get streetAddressInput() {
-    return this._streetAddress
+    return this._streetAddress;
   }
 
   // surname - computed: false, optional: true, required: false
-  private _surname?: string | undefined; 
+  private _surname?: string; 
   public get surname() {
     return this.getStringAttribute('surname');
   }
-  public set surname(value: string | undefined) {
+  public set surname(value: string) {
     this._surname = value;
   }
   public resetSurname() {
@@ -992,15 +1029,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get surnameInput() {
-    return this._surname
+    return this._surname;
   }
 
   // usage_location - computed: false, optional: true, required: false
-  private _usageLocation?: string | undefined; 
+  private _usageLocation?: string; 
   public get usageLocation() {
     return this.getStringAttribute('usage_location');
   }
-  public set usageLocation(value: string | undefined) {
+  public set usageLocation(value: string) {
     this._usageLocation = value;
   }
   public resetUsageLocation() {
@@ -1008,7 +1045,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get usageLocationInput() {
-    return this._usageLocation
+    return this._usageLocation;
   }
 
   // user_principal_name - computed: false, optional: false, required: true
@@ -1021,7 +1058,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userPrincipalNameInput() {
-    return this._userPrincipalName
+    return this._userPrincipalName;
   }
 
   // user_type - computed: true, optional: false, required: false
@@ -1030,20 +1067,19 @@ export class User extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: UserTimeouts | undefined; 
-  private __timeoutsOutput = new UserTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new UserTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: UserTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: UserTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -1087,7 +1123,7 @@ export class User extends cdktf.TerraformResource {
       surname: cdktf.stringToTerraform(this._surname),
       usage_location: cdktf.stringToTerraform(this._usageLocation),
       user_principal_name: cdktf.stringToTerraform(this._userPrincipalName),
-      timeouts: userTimeoutsToTerraform(this._timeouts),
+      timeouts: userTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

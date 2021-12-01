@@ -41,7 +41,7 @@ export interface NamedLocationCountry {
   readonly includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable;
 }
 
-function namedLocationCountryToTerraform(struct?: NamedLocationCountryOutputReference | NamedLocationCountry): any {
+export function namedLocationCountryToTerraform(struct?: NamedLocationCountryOutputReference | NamedLocationCountry): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -62,6 +62,31 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NamedLocationCountry | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._countriesAndRegions) {
+      hasAnyValues = true;
+      internalValueResult.countriesAndRegions = this._countriesAndRegions;
+    }
+    if (this._includeUnknownCountriesAndRegions) {
+      hasAnyValues = true;
+      internalValueResult.includeUnknownCountriesAndRegions = this._includeUnknownCountriesAndRegions;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NamedLocationCountry | undefined) {
+    if (value === undefined) {
+      this._countriesAndRegions = undefined;
+      this._includeUnknownCountriesAndRegions = undefined;
+    }
+    else {
+      this._countriesAndRegions = value.countriesAndRegions;
+      this._includeUnknownCountriesAndRegions = value.includeUnknownCountriesAndRegions;
+    }
+  }
+
   // countries_and_regions - computed: false, optional: false, required: true
   private _countriesAndRegions?: string[]; 
   public get countriesAndRegions() {
@@ -72,15 +97,15 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get countriesAndRegionsInput() {
-    return this._countriesAndRegions
+    return this._countriesAndRegions;
   }
 
   // include_unknown_countries_and_regions - computed: false, optional: true, required: false
-  private _includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable | undefined; 
+  private _includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable; 
   public get includeUnknownCountriesAndRegions() {
     return this.getBooleanAttribute('include_unknown_countries_and_regions') as any;
   }
-  public set includeUnknownCountriesAndRegions(value: boolean | cdktf.IResolvable | undefined) {
+  public set includeUnknownCountriesAndRegions(value: boolean | cdktf.IResolvable) {
     this._includeUnknownCountriesAndRegions = value;
   }
   public resetIncludeUnknownCountriesAndRegions() {
@@ -88,7 +113,7 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get includeUnknownCountriesAndRegionsInput() {
-    return this._includeUnknownCountriesAndRegions
+    return this._includeUnknownCountriesAndRegions;
   }
 }
 export interface NamedLocationIp {
@@ -102,7 +127,7 @@ export interface NamedLocationIp {
   readonly trusted?: boolean | cdktf.IResolvable;
 }
 
-function namedLocationIpToTerraform(struct?: NamedLocationIpOutputReference | NamedLocationIp): any {
+export function namedLocationIpToTerraform(struct?: NamedLocationIpOutputReference | NamedLocationIp): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -123,6 +148,31 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NamedLocationIp | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._ipRanges) {
+      hasAnyValues = true;
+      internalValueResult.ipRanges = this._ipRanges;
+    }
+    if (this._trusted) {
+      hasAnyValues = true;
+      internalValueResult.trusted = this._trusted;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NamedLocationIp | undefined) {
+    if (value === undefined) {
+      this._ipRanges = undefined;
+      this._trusted = undefined;
+    }
+    else {
+      this._ipRanges = value.ipRanges;
+      this._trusted = value.trusted;
+    }
+  }
+
   // ip_ranges - computed: false, optional: false, required: true
   private _ipRanges?: string[]; 
   public get ipRanges() {
@@ -133,15 +183,15 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get ipRangesInput() {
-    return this._ipRanges
+    return this._ipRanges;
   }
 
   // trusted - computed: false, optional: true, required: false
-  private _trusted?: boolean | cdktf.IResolvable | undefined; 
+  private _trusted?: boolean | cdktf.IResolvable; 
   public get trusted() {
     return this.getBooleanAttribute('trusted') as any;
   }
-  public set trusted(value: boolean | cdktf.IResolvable | undefined) {
+  public set trusted(value: boolean | cdktf.IResolvable) {
     this._trusted = value;
   }
   public resetTrusted() {
@@ -149,7 +199,7 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get trustedInput() {
-    return this._trusted
+    return this._trusted;
   }
 }
 export interface NamedLocationTimeouts {
@@ -171,7 +221,7 @@ export interface NamedLocationTimeouts {
   readonly update?: string;
 }
 
-function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeoutsOutputReference | NamedLocationTimeouts): any {
+export function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeoutsOutputReference | NamedLocationTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -194,12 +244,49 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NamedLocationTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NamedLocationTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -207,15 +294,15 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -223,15 +310,15 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -239,15 +326,15 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -255,7 +342,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -292,9 +379,9 @@ export class NamedLocation extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._displayName = config.displayName;
-    this._country = config.country;
-    this._ip = config.ip;
-    this._timeouts = config.timeouts;
+    this._country.internalValue = config.country;
+    this._ip.internalValue = config.ip;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -311,7 +398,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
-    return this._displayName
+    return this._displayName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -320,54 +407,51 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
 
   // country - computed: false, optional: true, required: false
-  private _country?: NamedLocationCountry | undefined; 
-  private __countryOutput = new NamedLocationCountryOutputReference(this as any, "country", true);
+  private _country = new NamedLocationCountryOutputReference(this as any, "country", true);
   public get country() {
-    return this.__countryOutput;
+    return this._country;
   }
-  public putCountry(value: NamedLocationCountry | undefined) {
-    this._country = value;
+  public putCountry(value: NamedLocationCountry) {
+    this._country.internalValue = value;
   }
   public resetCountry() {
-    this._country = undefined;
+    this._country.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get countryInput() {
-    return this._country
+    return this._country.internalValue;
   }
 
   // ip - computed: false, optional: true, required: false
-  private _ip?: NamedLocationIp | undefined; 
-  private __ipOutput = new NamedLocationIpOutputReference(this as any, "ip", true);
+  private _ip = new NamedLocationIpOutputReference(this as any, "ip", true);
   public get ip() {
-    return this.__ipOutput;
+    return this._ip;
   }
-  public putIp(value: NamedLocationIp | undefined) {
-    this._ip = value;
+  public putIp(value: NamedLocationIp) {
+    this._ip.internalValue = value;
   }
   public resetIp() {
-    this._ip = undefined;
+    this._ip.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipInput() {
-    return this._ip
+    return this._ip.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: NamedLocationTimeouts | undefined; 
-  private __timeoutsOutput = new NamedLocationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NamedLocationTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: NamedLocationTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: NamedLocationTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -377,9 +461,9 @@ export class NamedLocation extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       display_name: cdktf.stringToTerraform(this._displayName),
-      country: namedLocationCountryToTerraform(this._country),
-      ip: namedLocationIpToTerraform(this._ip),
-      timeouts: namedLocationTimeoutsToTerraform(this._timeouts),
+      country: namedLocationCountryToTerraform(this._country.internalValue),
+      ip: namedLocationIpToTerraform(this._ip.internalValue),
+      timeouts: namedLocationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

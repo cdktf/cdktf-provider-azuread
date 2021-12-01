@@ -205,7 +205,7 @@ export interface ServicePrincipalFeatureTags {
   readonly hide?: boolean | cdktf.IResolvable;
 }
 
-function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipalFeatureTags): any {
+export function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipalFeatureTags): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -245,7 +245,7 @@ export interface ServicePrincipalFeatures {
   readonly visibleToUsers?: boolean | cdktf.IResolvable;
 }
 
-function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFeatures): any {
+export function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFeatures): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -267,7 +267,7 @@ export interface ServicePrincipalSamlSingleSignOn {
   readonly relayState?: string;
 }
 
-function servicePrincipalSamlSingleSignOnToTerraform(struct?: ServicePrincipalSamlSingleSignOnOutputReference | ServicePrincipalSamlSingleSignOn): any {
+export function servicePrincipalSamlSingleSignOnToTerraform(struct?: ServicePrincipalSamlSingleSignOnOutputReference | ServicePrincipalSamlSingleSignOn): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -287,12 +287,31 @@ export class ServicePrincipalSamlSingleSignOnOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServicePrincipalSamlSingleSignOn | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._relayState) {
+      hasAnyValues = true;
+      internalValueResult.relayState = this._relayState;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalSamlSingleSignOn | undefined) {
+    if (value === undefined) {
+      this._relayState = undefined;
+    }
+    else {
+      this._relayState = value.relayState;
+    }
+  }
+
   // relay_state - computed: false, optional: true, required: false
-  private _relayState?: string | undefined; 
+  private _relayState?: string; 
   public get relayState() {
     return this.getStringAttribute('relay_state');
   }
-  public set relayState(value: string | undefined) {
+  public set relayState(value: string) {
     this._relayState = value;
   }
   public resetRelayState() {
@@ -300,7 +319,7 @@ export class ServicePrincipalSamlSingleSignOnOutputReference extends cdktf.Compl
   }
   // Temporarily expose input value. Use with caution.
   public get relayStateInput() {
-    return this._relayState
+    return this._relayState;
   }
 }
 export interface ServicePrincipalTimeouts {
@@ -322,7 +341,7 @@ export interface ServicePrincipalTimeouts {
   readonly update?: string;
 }
 
-function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTimeoutsOutputReference | ServicePrincipalTimeouts): any {
+export function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTimeoutsOutputReference | ServicePrincipalTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -345,12 +364,49 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServicePrincipalTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -358,15 +414,15 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -374,15 +430,15 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -390,15 +446,15 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -406,7 +462,7 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -456,8 +512,8 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     this._useExisting = config.useExisting;
     this._featureTags = config.featureTags;
     this._features = config.features;
-    this._samlSingleSignOn = config.samlSingleSignOn;
-    this._timeouts = config.timeouts;
+    this._samlSingleSignOn.internalValue = config.samlSingleSignOn;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -465,11 +521,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // ==========
 
   // account_enabled - computed: false, optional: true, required: false
-  private _accountEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _accountEnabled?: boolean | cdktf.IResolvable; 
   public get accountEnabled() {
     return this.getBooleanAttribute('account_enabled') as any;
   }
-  public set accountEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set accountEnabled(value: boolean | cdktf.IResolvable) {
     this._accountEnabled = value;
   }
   public resetAccountEnabled() {
@@ -477,15 +533,15 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountEnabledInput() {
-    return this._accountEnabled
+    return this._accountEnabled;
   }
 
   // alternative_names - computed: false, optional: true, required: false
-  private _alternativeNames?: string[] | undefined; 
+  private _alternativeNames?: string[]; 
   public get alternativeNames() {
     return this.getListAttribute('alternative_names');
   }
-  public set alternativeNames(value: string[] | undefined) {
+  public set alternativeNames(value: string[]) {
     this._alternativeNames = value;
   }
   public resetAlternativeNames() {
@@ -493,15 +549,15 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alternativeNamesInput() {
-    return this._alternativeNames
+    return this._alternativeNames;
   }
 
   // app_role_assignment_required - computed: false, optional: true, required: false
-  private _appRoleAssignmentRequired?: boolean | cdktf.IResolvable | undefined; 
+  private _appRoleAssignmentRequired?: boolean | cdktf.IResolvable; 
   public get appRoleAssignmentRequired() {
     return this.getBooleanAttribute('app_role_assignment_required') as any;
   }
-  public set appRoleAssignmentRequired(value: boolean | cdktf.IResolvable | undefined) {
+  public set appRoleAssignmentRequired(value: boolean | cdktf.IResolvable) {
     this._appRoleAssignmentRequired = value;
   }
   public resetAppRoleAssignmentRequired() {
@@ -509,7 +565,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get appRoleAssignmentRequiredInput() {
-    return this._appRoleAssignmentRequired
+    return this._appRoleAssignmentRequired;
   }
 
   // app_role_ids - computed: true, optional: false, required: false
@@ -532,7 +588,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get applicationIdInput() {
-    return this._applicationId
+    return this._applicationId;
   }
 
   // application_tenant_id - computed: true, optional: false, required: false
@@ -541,11 +597,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -553,7 +609,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // display_name - computed: true, optional: false, required: false
@@ -572,11 +628,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // login_url - computed: false, optional: true, required: false
-  private _loginUrl?: string | undefined; 
+  private _loginUrl?: string; 
   public get loginUrl() {
     return this.getStringAttribute('login_url');
   }
-  public set loginUrl(value: string | undefined) {
+  public set loginUrl(value: string) {
     this._loginUrl = value;
   }
   public resetLoginUrl() {
@@ -584,7 +640,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get loginUrlInput() {
-    return this._loginUrl
+    return this._loginUrl;
   }
 
   // logout_url - computed: true, optional: false, required: false
@@ -593,11 +649,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // notes - computed: false, optional: true, required: false
-  private _notes?: string | undefined; 
+  private _notes?: string; 
   public get notes() {
     return this.getStringAttribute('notes');
   }
-  public set notes(value: string | undefined) {
+  public set notes(value: string) {
     this._notes = value;
   }
   public resetNotes() {
@@ -605,15 +661,15 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get notesInput() {
-    return this._notes
+    return this._notes;
   }
 
   // notification_email_addresses - computed: false, optional: true, required: false
-  private _notificationEmailAddresses?: string[] | undefined; 
+  private _notificationEmailAddresses?: string[]; 
   public get notificationEmailAddresses() {
     return this.getListAttribute('notification_email_addresses');
   }
-  public set notificationEmailAddresses(value: string[] | undefined) {
+  public set notificationEmailAddresses(value: string[]) {
     this._notificationEmailAddresses = value;
   }
   public resetNotificationEmailAddresses() {
@@ -621,7 +677,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get notificationEmailAddressesInput() {
-    return this._notificationEmailAddresses
+    return this._notificationEmailAddresses;
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
@@ -640,11 +696,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // owners - computed: false, optional: true, required: false
-  private _owners?: string[] | undefined; 
+  private _owners?: string[]; 
   public get owners() {
     return this.getListAttribute('owners');
   }
-  public set owners(value: string[] | undefined) {
+  public set owners(value: string[]) {
     this._owners = value;
   }
   public resetOwners() {
@@ -652,15 +708,15 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownersInput() {
-    return this._owners
+    return this._owners;
   }
 
   // preferred_single_sign_on_mode - computed: false, optional: true, required: false
-  private _preferredSingleSignOnMode?: string | undefined; 
+  private _preferredSingleSignOnMode?: string; 
   public get preferredSingleSignOnMode() {
     return this.getStringAttribute('preferred_single_sign_on_mode');
   }
-  public set preferredSingleSignOnMode(value: string | undefined) {
+  public set preferredSingleSignOnMode(value: string) {
     this._preferredSingleSignOnMode = value;
   }
   public resetPreferredSingleSignOnMode() {
@@ -668,7 +724,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get preferredSingleSignOnModeInput() {
-    return this._preferredSingleSignOnMode
+    return this._preferredSingleSignOnMode;
   }
 
   // redirect_uris - computed: true, optional: false, required: false
@@ -692,11 +748,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: string[] | undefined; 
+  private _tags?: string[]; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] | undefined) {
+  public set tags(value: string[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -704,7 +760,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // type - computed: true, optional: false, required: false
@@ -713,11 +769,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // use_existing - computed: false, optional: true, required: false
-  private _useExisting?: boolean | cdktf.IResolvable | undefined; 
+  private _useExisting?: boolean | cdktf.IResolvable; 
   public get useExisting() {
     return this.getBooleanAttribute('use_existing') as any;
   }
-  public set useExisting(value: boolean | cdktf.IResolvable | undefined) {
+  public set useExisting(value: boolean | cdktf.IResolvable) {
     this._useExisting = value;
   }
   public resetUseExisting() {
@@ -725,16 +781,16 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get useExistingInput() {
-    return this._useExisting
+    return this._useExisting;
   }
 
   // feature_tags - computed: false, optional: true, required: false
-  private _featureTags?: ServicePrincipalFeatureTags[] | undefined; 
+  private _featureTags?: ServicePrincipalFeatureTags[]; 
   public get featureTags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('feature_tags') as any;
   }
-  public set featureTags(value: ServicePrincipalFeatureTags[] | undefined) {
+  public set featureTags(value: ServicePrincipalFeatureTags[]) {
     this._featureTags = value;
   }
   public resetFeatureTags() {
@@ -742,16 +798,16 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get featureTagsInput() {
-    return this._featureTags
+    return this._featureTags;
   }
 
   // features - computed: false, optional: true, required: false
-  private _features?: ServicePrincipalFeatures[] | undefined; 
+  private _features?: ServicePrincipalFeatures[]; 
   public get features() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('features') as any;
   }
-  public set features(value: ServicePrincipalFeatures[] | undefined) {
+  public set features(value: ServicePrincipalFeatures[]) {
     this._features = value;
   }
   public resetFeatures() {
@@ -759,41 +815,39 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get featuresInput() {
-    return this._features
+    return this._features;
   }
 
   // saml_single_sign_on - computed: false, optional: true, required: false
-  private _samlSingleSignOn?: ServicePrincipalSamlSingleSignOn | undefined; 
-  private __samlSingleSignOnOutput = new ServicePrincipalSamlSingleSignOnOutputReference(this as any, "saml_single_sign_on", true);
+  private _samlSingleSignOn = new ServicePrincipalSamlSingleSignOnOutputReference(this as any, "saml_single_sign_on", true);
   public get samlSingleSignOn() {
-    return this.__samlSingleSignOnOutput;
+    return this._samlSingleSignOn;
   }
-  public putSamlSingleSignOn(value: ServicePrincipalSamlSingleSignOn | undefined) {
-    this._samlSingleSignOn = value;
+  public putSamlSingleSignOn(value: ServicePrincipalSamlSingleSignOn) {
+    this._samlSingleSignOn.internalValue = value;
   }
   public resetSamlSingleSignOn() {
-    this._samlSingleSignOn = undefined;
+    this._samlSingleSignOn.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get samlSingleSignOnInput() {
-    return this._samlSingleSignOn
+    return this._samlSingleSignOn.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ServicePrincipalTimeouts | undefined; 
-  private __timeoutsOutput = new ServicePrincipalTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ServicePrincipalTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ServicePrincipalTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ServicePrincipalTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -816,8 +870,8 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       use_existing: cdktf.booleanToTerraform(this._useExisting),
       feature_tags: cdktf.listMapper(servicePrincipalFeatureTagsToTerraform)(this._featureTags),
       features: cdktf.listMapper(servicePrincipalFeaturesToTerraform)(this._features),
-      saml_single_sign_on: servicePrincipalSamlSingleSignOnToTerraform(this._samlSingleSignOn),
-      timeouts: servicePrincipalTimeoutsToTerraform(this._timeouts),
+      saml_single_sign_on: servicePrincipalSamlSingleSignOnToTerraform(this._samlSingleSignOn.internalValue),
+      timeouts: servicePrincipalTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

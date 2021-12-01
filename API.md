@@ -43,10 +43,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.AdministrativeUnit.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: AdministrativeUnitTimeouts)
+public putTimeouts(value: AdministrativeUnitTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
 
@@ -175,6 +175,16 @@ public readonly timeoutsInput: AdministrativeUnitTimeouts;
 
 ---
 
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.displayName"></a>
 
 ```typescript
@@ -185,17 +195,7 @@ public readonly displayName: string;
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.description"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `hiddenMembershipEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.hiddenMembershipEnabled"></a>
+##### `hiddenMembershipEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.hiddenMembershipEnabled"></a>
 
 ```typescript
 public readonly hiddenMembershipEnabled: boolean | IResolvable;
@@ -205,7 +205,7 @@ public readonly hiddenMembershipEnabled: boolean | IResolvable;
 
 ---
 
-##### `members`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.members"></a>
+##### `members`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.members"></a>
 
 ```typescript
 public readonly members: string[];
@@ -215,7 +215,7 @@ public readonly members: string[];
 
 ---
 
-##### `preventDuplicateNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.preventDuplicateNames"></a>
+##### `preventDuplicateNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.preventDuplicateNames"></a>
 
 ```typescript
 public readonly preventDuplicateNames: boolean | IResolvable;
@@ -274,10 +274,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: AdministrativeUnitMemberTimeouts)
+public putTimeouts(value: AdministrativeUnitMemberTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
 
@@ -354,7 +354,7 @@ public readonly timeoutsInput: AdministrativeUnitMemberTimeouts;
 
 ---
 
-##### `administrativeUnitObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.administrativeUnitObjectId"></a>
+##### `administrativeUnitObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.administrativeUnitObjectId"></a>
 
 ```typescript
 public readonly administrativeUnitObjectId: string;
@@ -364,7 +364,7 @@ public readonly administrativeUnitObjectId: string;
 
 ---
 
-##### `memberObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.memberObjectId"></a>
+##### `memberObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.memberObjectId"></a>
 
 ```typescript
 public readonly memberObjectId: string;
@@ -447,10 +447,10 @@ public oauth2PermissionScopeIds(key: string)
 ##### `putApi` <a name="@cdktf/provider-azuread.Application.putApi"></a>
 
 ```typescript
-public putApi(value?: ApplicationApi)
+public putApi(value: ApplicationApi)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationApi`](#@cdktf/provider-azuread.ApplicationApi)
 
@@ -459,10 +459,10 @@ public putApi(value?: ApplicationApi)
 ##### `putOptionalClaims` <a name="@cdktf/provider-azuread.Application.putOptionalClaims"></a>
 
 ```typescript
-public putOptionalClaims(value?: ApplicationOptionalClaims)
+public putOptionalClaims(value: ApplicationOptionalClaims)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaims`](#@cdktf/provider-azuread.ApplicationOptionalClaims)
 
@@ -471,10 +471,10 @@ public putOptionalClaims(value?: ApplicationOptionalClaims)
 ##### `putPublicClient` <a name="@cdktf/provider-azuread.Application.putPublicClient"></a>
 
 ```typescript
-public putPublicClient(value?: ApplicationPublicClient)
+public putPublicClient(value: ApplicationPublicClient)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationPublicClient`](#@cdktf/provider-azuread.ApplicationPublicClient)
 
@@ -483,10 +483,10 @@ public putPublicClient(value?: ApplicationPublicClient)
 ##### `putSinglePageApplication` <a name="@cdktf/provider-azuread.Application.putSinglePageApplication"></a>
 
 ```typescript
-public putSinglePageApplication(value?: ApplicationSinglePageApplication)
+public putSinglePageApplication(value: ApplicationSinglePageApplication)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationSinglePageApplication`](#@cdktf/provider-azuread.ApplicationSinglePageApplication)
 
@@ -495,10 +495,10 @@ public putSinglePageApplication(value?: ApplicationSinglePageApplication)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.Application.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ApplicationTimeouts)
+public putTimeouts(value: ApplicationTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationTimeouts`](#@cdktf/provider-azuread.ApplicationTimeouts)
 
@@ -507,10 +507,10 @@ public putTimeouts(value?: ApplicationTimeouts)
 ##### `putWeb` <a name="@cdktf/provider-azuread.Application.putWeb"></a>
 
 ```typescript
-public putWeb(value?: ApplicationWeb)
+public putWeb(value: ApplicationWeb)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationWeb`](#@cdktf/provider-azuread.ApplicationWeb)
 
@@ -1033,6 +1033,26 @@ public readonly webInput: ApplicationWeb;
 
 ---
 
+##### `appRole`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.appRole"></a>
+
+```typescript
+public readonly appRole: ApplicationAppRole[];
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
+
+---
+
+##### `deviceOnlyAuthEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.deviceOnlyAuthEnabled"></a>
+
+```typescript
+public readonly deviceOnlyAuthEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.displayName"></a>
 
 ```typescript
@@ -1043,27 +1063,7 @@ public readonly displayName: string;
 
 ---
 
-##### `appRole`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.appRole"></a>
-
-```typescript
-public readonly appRole: ApplicationAppRole[];
-```
-
-- *Type:* [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
-
----
-
-##### `deviceOnlyAuthEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.deviceOnlyAuthEnabled"></a>
-
-```typescript
-public readonly deviceOnlyAuthEnabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `fallbackPublicClientEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.fallbackPublicClientEnabled"></a>
+##### `fallbackPublicClientEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.fallbackPublicClientEnabled"></a>
 
 ```typescript
 public readonly fallbackPublicClientEnabled: boolean | IResolvable;
@@ -1073,7 +1073,7 @@ public readonly fallbackPublicClientEnabled: boolean | IResolvable;
 
 ---
 
-##### `featureTags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.featureTags"></a>
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.featureTags"></a>
 
 ```typescript
 public readonly featureTags: ApplicationFeatureTags[];
@@ -1083,7 +1083,7 @@ public readonly featureTags: ApplicationFeatureTags[];
 
 ---
 
-##### `groupMembershipClaims`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.groupMembershipClaims"></a>
+##### `groupMembershipClaims`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.groupMembershipClaims"></a>
 
 ```typescript
 public readonly groupMembershipClaims: string[];
@@ -1093,7 +1093,7 @@ public readonly groupMembershipClaims: string[];
 
 ---
 
-##### `identifierUris`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.identifierUris"></a>
+##### `identifierUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.identifierUris"></a>
 
 ```typescript
 public readonly identifierUris: string[];
@@ -1103,7 +1103,7 @@ public readonly identifierUris: string[];
 
 ---
 
-##### `logoImage`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.logoImage"></a>
+##### `logoImage`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.logoImage"></a>
 
 ```typescript
 public readonly logoImage: string;
@@ -1113,7 +1113,7 @@ public readonly logoImage: string;
 
 ---
 
-##### `marketingUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.marketingUrl"></a>
+##### `marketingUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.marketingUrl"></a>
 
 ```typescript
 public readonly marketingUrl: string;
@@ -1123,7 +1123,7 @@ public readonly marketingUrl: string;
 
 ---
 
-##### `oauth2PostResponseRequired`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.oauth2PostResponseRequired"></a>
+##### `oauth2PostResponseRequired`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.oauth2PostResponseRequired"></a>
 
 ```typescript
 public readonly oauth2PostResponseRequired: boolean | IResolvable;
@@ -1133,7 +1133,7 @@ public readonly oauth2PostResponseRequired: boolean | IResolvable;
 
 ---
 
-##### `owners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.owners"></a>
+##### `owners`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.owners"></a>
 
 ```typescript
 public readonly owners: string[];
@@ -1143,7 +1143,7 @@ public readonly owners: string[];
 
 ---
 
-##### `preventDuplicateNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.preventDuplicateNames"></a>
+##### `preventDuplicateNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.preventDuplicateNames"></a>
 
 ```typescript
 public readonly preventDuplicateNames: boolean | IResolvable;
@@ -1153,7 +1153,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 ---
 
-##### `privacyStatementUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.privacyStatementUrl"></a>
+##### `privacyStatementUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.privacyStatementUrl"></a>
 
 ```typescript
 public readonly privacyStatementUrl: string;
@@ -1163,7 +1163,7 @@ public readonly privacyStatementUrl: string;
 
 ---
 
-##### `requiredResourceAccess`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.requiredResourceAccess"></a>
+##### `requiredResourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.requiredResourceAccess"></a>
 
 ```typescript
 public readonly requiredResourceAccess: ApplicationRequiredResourceAccess[];
@@ -1173,7 +1173,7 @@ public readonly requiredResourceAccess: ApplicationRequiredResourceAccess[];
 
 ---
 
-##### `signInAudience`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.signInAudience"></a>
+##### `signInAudience`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.signInAudience"></a>
 
 ```typescript
 public readonly signInAudience: string;
@@ -1183,7 +1183,7 @@ public readonly signInAudience: string;
 
 ---
 
-##### `supportUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.supportUrl"></a>
+##### `supportUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.supportUrl"></a>
 
 ```typescript
 public readonly supportUrl: string;
@@ -1193,7 +1193,7 @@ public readonly supportUrl: string;
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.tags"></a>
 
 ```typescript
 public readonly tags: string[];
@@ -1203,7 +1203,7 @@ public readonly tags: string[];
 
 ---
 
-##### `templateId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.templateId"></a>
+##### `templateId`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.templateId"></a>
 
 ```typescript
 public readonly templateId: string;
@@ -1213,7 +1213,7 @@ public readonly templateId: string;
 
 ---
 
-##### `termsOfServiceUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.termsOfServiceUrl"></a>
+##### `termsOfServiceUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.termsOfServiceUrl"></a>
 
 ```typescript
 public readonly termsOfServiceUrl: string;
@@ -1272,10 +1272,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ApplicationCertificate.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ApplicationCertificateTimeouts)
+public putTimeouts(value: ApplicationCertificateTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationCertificateTimeouts`](#@cdktf/provider-azuread.ApplicationCertificateTimeouts)
 
@@ -1446,17 +1446,7 @@ public readonly applicationObjectId: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.value"></a>
-
-```typescript
-public readonly value: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `encoding`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.encoding"></a>
+##### `encoding`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.encoding"></a>
 
 ```typescript
 public readonly encoding: string;
@@ -1466,7 +1456,7 @@ public readonly encoding: string;
 
 ---
 
-##### `endDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.endDate"></a>
+##### `endDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.endDate"></a>
 
 ```typescript
 public readonly endDate: string;
@@ -1476,7 +1466,7 @@ public readonly endDate: string;
 
 ---
 
-##### `endDateRelative`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.endDateRelative"></a>
+##### `endDateRelative`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.endDateRelative"></a>
 
 ```typescript
 public readonly endDateRelative: string;
@@ -1486,7 +1476,7 @@ public readonly endDateRelative: string;
 
 ---
 
-##### `keyId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.keyId"></a>
+##### `keyId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.keyId"></a>
 
 ```typescript
 public readonly keyId: string;
@@ -1496,7 +1486,7 @@ public readonly keyId: string;
 
 ---
 
-##### `startDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.startDate"></a>
+##### `startDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.startDate"></a>
 
 ```typescript
 public readonly startDate: string;
@@ -1506,10 +1496,20 @@ public readonly startDate: string;
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.type"></a>
 
 ```typescript
 public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.value"></a>
+
+```typescript
+public readonly value: string;
 ```
 
 - *Type:* `string`
@@ -1565,10 +1565,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ApplicationPassword.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ApplicationPasswordTimeouts)
+public putTimeouts(value: ApplicationPasswordTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationPasswordTimeouts`](#@cdktf/provider-azuread.ApplicationPasswordTimeouts)
 
@@ -1733,7 +1733,7 @@ public readonly applicationObjectId: string;
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -1743,7 +1743,7 @@ public readonly displayName: string;
 
 ---
 
-##### `endDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.endDate"></a>
+##### `endDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.endDate"></a>
 
 ```typescript
 public readonly endDate: string;
@@ -1753,7 +1753,7 @@ public readonly endDate: string;
 
 ---
 
-##### `endDateRelative`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.endDateRelative"></a>
+##### `endDateRelative`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.endDateRelative"></a>
 
 ```typescript
 public readonly endDateRelative: string;
@@ -1763,7 +1763,7 @@ public readonly endDateRelative: string;
 
 ---
 
-##### `rotateWhenChanged`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.rotateWhenChanged"></a>
+##### `rotateWhenChanged`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.rotateWhenChanged"></a>
 
 ```typescript
 public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
@@ -1773,7 +1773,7 @@ public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
 
 ---
 
-##### `startDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.startDate"></a>
+##### `startDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.startDate"></a>
 
 ```typescript
 public readonly startDate: string;
@@ -1832,10 +1832,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ApplicationPreAuthorizedTimeouts)
+public putTimeouts(value: ApplicationPreAuthorizedTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts`](#@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts)
 
@@ -1989,10 +1989,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.AppRoleAssignment.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: AppRoleAssignmentTimeouts)
+public putTimeouts(value: AppRoleAssignmentTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.AppRoleAssignmentTimeouts`](#@cdktf/provider-azuread.AppRoleAssignmentTimeouts)
 
@@ -2587,10 +2587,10 @@ public putGrantControls(value: ConditionalAccessPolicyGrantControls)
 ##### `putSessionControls` <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.putSessionControls"></a>
 
 ```typescript
-public putSessionControls(value?: ConditionalAccessPolicySessionControls)
+public putSessionControls(value: ConditionalAccessPolicySessionControls)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicySessionControls`](#@cdktf/provider-azuread.ConditionalAccessPolicySessionControls)
 
@@ -2599,10 +2599,10 @@ public putSessionControls(value?: ConditionalAccessPolicySessionControls)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ConditionalAccessPolicyTimeouts)
+public putTimeouts(value: ConditionalAccessPolicyTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts`](#@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts)
 
@@ -2802,10 +2802,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadAdministrativeUnitTimeouts)
+public putTimeouts(value: DataAzureadAdministrativeUnitTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
 
@@ -2912,7 +2912,7 @@ public readonly timeoutsInput: DataAzureadAdministrativeUnitTimeouts;
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -2922,7 +2922,7 @@ public readonly displayName: string;
 
 ---
 
-##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -3065,10 +3065,10 @@ public publicClient(index: string)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadApplication.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadApplicationTimeouts)
+public putTimeouts(value: DataAzureadApplicationTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTimeouts)
 
@@ -3347,7 +3347,7 @@ public readonly timeoutsInput: DataAzureadApplicationTimeouts;
 
 ---
 
-##### `applicationId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.applicationId"></a>
+##### `applicationId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.applicationId"></a>
 
 ```typescript
 public readonly applicationId: string;
@@ -3357,7 +3357,7 @@ public readonly applicationId: string;
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -3367,7 +3367,7 @@ public readonly displayName: string;
 
 ---
 
-##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -3426,10 +3426,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadApplicationPublishedAppIdsTimeouts)
+public putTimeouts(value: DataAzureadApplicationPublishedAppIdsTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts)
 
@@ -3535,10 +3535,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadApplicationTemplateTimeouts)
+public putTimeouts(value: DataAzureadApplicationTemplateTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts)
 
@@ -3675,7 +3675,7 @@ public readonly timeoutsInput: DataAzureadApplicationTemplateTimeouts;
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -3685,7 +3685,7 @@ public readonly displayName: string;
 
 ---
 
-##### `templateId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.templateId"></a>
+##### `templateId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.templateId"></a>
 
 ```typescript
 public readonly templateId: string;
@@ -3744,10 +3744,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadClientConfig.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadClientConfigTimeouts)
+public putTimeouts(value: DataAzureadClientConfigTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfig.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfig.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadClientConfigTimeouts`](#@cdktf/provider-azuread.DataAzureadClientConfigTimeouts)
 
@@ -3883,10 +3883,10 @@ public domains(index: string)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadDomains.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadDomainsTimeouts)
+public putTimeouts(value: DataAzureadDomainsTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadDomainsTimeouts`](#@cdktf/provider-azuread.DataAzureadDomainsTimeouts)
 
@@ -4027,7 +4027,7 @@ public readonly timeoutsInput: DataAzureadDomainsTimeouts;
 
 ---
 
-##### `adminManaged`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.adminManaged"></a>
+##### `adminManaged`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.adminManaged"></a>
 
 ```typescript
 public readonly adminManaged: boolean | IResolvable;
@@ -4037,7 +4037,7 @@ public readonly adminManaged: boolean | IResolvable;
 
 ---
 
-##### `includeUnverified`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.includeUnverified"></a>
+##### `includeUnverified`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.includeUnverified"></a>
 
 ```typescript
 public readonly includeUnverified: boolean | IResolvable;
@@ -4047,7 +4047,7 @@ public readonly includeUnverified: boolean | IResolvable;
 
 ---
 
-##### `onlyDefault`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.onlyDefault"></a>
+##### `onlyDefault`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.onlyDefault"></a>
 
 ```typescript
 public readonly onlyDefault: boolean | IResolvable;
@@ -4057,7 +4057,7 @@ public readonly onlyDefault: boolean | IResolvable;
 
 ---
 
-##### `onlyInitial`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.onlyInitial"></a>
+##### `onlyInitial`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.onlyInitial"></a>
 
 ```typescript
 public readonly onlyInitial: boolean | IResolvable;
@@ -4067,7 +4067,7 @@ public readonly onlyInitial: boolean | IResolvable;
 
 ---
 
-##### `onlyRoot`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.onlyRoot"></a>
+##### `onlyRoot`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.onlyRoot"></a>
 
 ```typescript
 public readonly onlyRoot: boolean | IResolvable;
@@ -4077,7 +4077,7 @@ public readonly onlyRoot: boolean | IResolvable;
 
 ---
 
-##### `supportsServices`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.supportsServices"></a>
+##### `supportsServices`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.supportsServices"></a>
 
 ```typescript
 public readonly supportsServices: string[];
@@ -4136,10 +4136,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadGroup.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadGroupTimeouts)
+public putTimeouts(value: DataAzureadGroupTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadGroupTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupTimeouts)
 
@@ -4428,7 +4428,7 @@ public readonly timeoutsInput: DataAzureadGroupTimeouts;
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -4438,7 +4438,7 @@ public readonly displayName: string;
 
 ---
 
-##### `mailEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.mailEnabled"></a>
+##### `mailEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.mailEnabled"></a>
 
 ```typescript
 public readonly mailEnabled: boolean | IResolvable;
@@ -4448,7 +4448,7 @@ public readonly mailEnabled: boolean | IResolvable;
 
 ---
 
-##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -4458,7 +4458,7 @@ public readonly objectId: string;
 
 ---
 
-##### `securityEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.securityEnabled"></a>
+##### `securityEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.securityEnabled"></a>
 
 ```typescript
 public readonly securityEnabled: boolean | IResolvable;
@@ -4517,10 +4517,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadGroups.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadGroupsTimeouts)
+public putTimeouts(value: DataAzureadGroupsTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadGroupsTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupsTimeouts)
 
@@ -4645,7 +4645,7 @@ public readonly timeoutsInput: DataAzureadGroupsTimeouts;
 
 ---
 
-##### `displayNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.displayNames"></a>
+##### `displayNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.displayNames"></a>
 
 ```typescript
 public readonly displayNames: string[];
@@ -4655,7 +4655,7 @@ public readonly displayNames: string[];
 
 ---
 
-##### `mailEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.mailEnabled"></a>
+##### `mailEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.mailEnabled"></a>
 
 ```typescript
 public readonly mailEnabled: boolean | IResolvable;
@@ -4665,7 +4665,7 @@ public readonly mailEnabled: boolean | IResolvable;
 
 ---
 
-##### `objectIds`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.objectIds"></a>
+##### `objectIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.objectIds"></a>
 
 ```typescript
 public readonly objectIds: string[];
@@ -4675,7 +4675,7 @@ public readonly objectIds: string[];
 
 ---
 
-##### `returnAll`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.returnAll"></a>
+##### `returnAll`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.returnAll"></a>
 
 ```typescript
 public readonly returnAll: boolean | IResolvable;
@@ -4685,7 +4685,7 @@ public readonly returnAll: boolean | IResolvable;
 
 ---
 
-##### `securityEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.securityEnabled"></a>
+##### `securityEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.securityEnabled"></a>
 
 ```typescript
 public readonly securityEnabled: boolean | IResolvable;
@@ -4816,10 +4816,10 @@ public oauth2PermissionScopes(index: string)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadServicePrincipalTimeouts)
+public putTimeouts(value: DataAzureadServicePrincipalTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts)
 
@@ -5094,7 +5094,7 @@ public readonly timeoutsInput: DataAzureadServicePrincipalTimeouts;
 
 ---
 
-##### `applicationId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.applicationId"></a>
+##### `applicationId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.applicationId"></a>
 
 ```typescript
 public readonly applicationId: string;
@@ -5104,7 +5104,7 @@ public readonly applicationId: string;
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -5114,7 +5114,7 @@ public readonly displayName: string;
 
 ---
 
-##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -5173,10 +5173,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadServicePrincipalsTimeouts)
+public putTimeouts(value: DataAzureadServicePrincipalsTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts)
 
@@ -5313,7 +5313,7 @@ public readonly timeoutsInput: DataAzureadServicePrincipalsTimeouts;
 
 ---
 
-##### `applicationIds`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.applicationIds"></a>
+##### `applicationIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.applicationIds"></a>
 
 ```typescript
 public readonly applicationIds: string[];
@@ -5323,7 +5323,7 @@ public readonly applicationIds: string[];
 
 ---
 
-##### `displayNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.displayNames"></a>
+##### `displayNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.displayNames"></a>
 
 ```typescript
 public readonly displayNames: string[];
@@ -5333,7 +5333,7 @@ public readonly displayNames: string[];
 
 ---
 
-##### `ignoreMissing`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.ignoreMissing"></a>
+##### `ignoreMissing`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.ignoreMissing"></a>
 
 ```typescript
 public readonly ignoreMissing: boolean | IResolvable;
@@ -5343,7 +5343,7 @@ public readonly ignoreMissing: boolean | IResolvable;
 
 ---
 
-##### `objectIds`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.objectIds"></a>
+##### `objectIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.objectIds"></a>
 
 ```typescript
 public readonly objectIds: string[];
@@ -5353,7 +5353,7 @@ public readonly objectIds: string[];
 
 ---
 
-##### `returnAll`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.returnAll"></a>
+##### `returnAll`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.returnAll"></a>
 
 ```typescript
 public readonly returnAll: boolean | IResolvable;
@@ -5412,10 +5412,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadUser.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadUserTimeouts)
+public putTimeouts(value: DataAzureadUserTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
 
@@ -5908,7 +5908,7 @@ public readonly userPrincipalNameInput: string;
 
 ---
 
-##### `mailNickname`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.mailNickname"></a>
+##### `mailNickname`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.mailNickname"></a>
 
 ```typescript
 public readonly mailNickname: string;
@@ -5918,7 +5918,7 @@ public readonly mailNickname: string;
 
 ---
 
-##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -5928,7 +5928,7 @@ public readonly objectId: string;
 
 ---
 
-##### `userPrincipalName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.userPrincipalName"></a>
+##### `userPrincipalName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.userPrincipalName"></a>
 
 ```typescript
 public readonly userPrincipalName: string;
@@ -5987,10 +5987,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadUsers.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DataAzureadUsersTimeouts)
+public putTimeouts(value: DataAzureadUsersTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadUsersTimeouts`](#@cdktf/provider-azuread.DataAzureadUsersTimeouts)
 
@@ -6127,7 +6127,7 @@ public readonly userPrincipalNamesInput: string[];
 
 ---
 
-##### `ignoreMissing`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.ignoreMissing"></a>
+##### `ignoreMissing`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.ignoreMissing"></a>
 
 ```typescript
 public readonly ignoreMissing: boolean | IResolvable;
@@ -6137,7 +6137,7 @@ public readonly ignoreMissing: boolean | IResolvable;
 
 ---
 
-##### `mailNicknames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.mailNicknames"></a>
+##### `mailNicknames`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.mailNicknames"></a>
 
 ```typescript
 public readonly mailNicknames: string[];
@@ -6147,7 +6147,7 @@ public readonly mailNicknames: string[];
 
 ---
 
-##### `objectIds`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.objectIds"></a>
+##### `objectIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.objectIds"></a>
 
 ```typescript
 public readonly objectIds: string[];
@@ -6157,7 +6157,7 @@ public readonly objectIds: string[];
 
 ---
 
-##### `returnAll`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.returnAll"></a>
+##### `returnAll`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.returnAll"></a>
 
 ```typescript
 public readonly returnAll: boolean | IResolvable;
@@ -6167,7 +6167,7 @@ public readonly returnAll: boolean | IResolvable;
 
 ---
 
-##### `userPrincipalNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.userPrincipalNames"></a>
+##### `userPrincipalNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.userPrincipalNames"></a>
 
 ```typescript
 public readonly userPrincipalNames: string[];
@@ -6226,10 +6226,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DirectoryRole.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DirectoryRoleTimeouts)
+public putTimeouts(value: DirectoryRoleTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRole.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRole.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DirectoryRoleTimeouts`](#@cdktf/provider-azuread.DirectoryRoleTimeouts)
 
@@ -6326,7 +6326,7 @@ public readonly timeoutsInput: DirectoryRoleTimeouts;
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -6336,7 +6336,7 @@ public readonly displayName: string;
 
 ---
 
-##### `templateId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.templateId"></a>
+##### `templateId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.templateId"></a>
 
 ```typescript
 public readonly templateId: string;
@@ -6395,10 +6395,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DirectoryRoleMember.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: DirectoryRoleMemberTimeouts)
+public putTimeouts(value: DirectoryRoleMemberTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DirectoryRoleMemberTimeouts`](#@cdktf/provider-azuread.DirectoryRoleMemberTimeouts)
 
@@ -6475,7 +6475,7 @@ public readonly timeoutsInput: DirectoryRoleMemberTimeouts;
 
 ---
 
-##### `memberObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.memberObjectId"></a>
+##### `memberObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.memberObjectId"></a>
 
 ```typescript
 public readonly memberObjectId: string;
@@ -6485,7 +6485,7 @@ public readonly memberObjectId: string;
 
 ---
 
-##### `roleObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.roleObjectId"></a>
+##### `roleObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.roleObjectId"></a>
 
 ```typescript
 public readonly roleObjectId: string;
@@ -6544,10 +6544,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.Group.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: GroupTimeouts)
+public putTimeouts(value: GroupTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.GroupTimeouts`](#@cdktf/provider-azuread.GroupTimeouts)
 
@@ -6900,6 +6900,36 @@ public readonly visibilityInput: string;
 
 ---
 
+##### `assignableToRole`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.assignableToRole"></a>
+
+```typescript
+public readonly assignableToRole: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `behaviors`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.behaviors"></a>
+
+```typescript
+public readonly behaviors: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.displayName"></a>
 
 ```typescript
@@ -6910,37 +6940,7 @@ public readonly displayName: string;
 
 ---
 
-##### `assignableToRole`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.assignableToRole"></a>
-
-```typescript
-public readonly assignableToRole: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `behaviors`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.behaviors"></a>
-
-```typescript
-public readonly behaviors: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.description"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `mailEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.mailEnabled"></a>
+##### `mailEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.mailEnabled"></a>
 
 ```typescript
 public readonly mailEnabled: boolean | IResolvable;
@@ -6950,7 +6950,7 @@ public readonly mailEnabled: boolean | IResolvable;
 
 ---
 
-##### `mailNickname`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.mailNickname"></a>
+##### `mailNickname`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.mailNickname"></a>
 
 ```typescript
 public readonly mailNickname: string;
@@ -6960,7 +6960,7 @@ public readonly mailNickname: string;
 
 ---
 
-##### `members`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.members"></a>
+##### `members`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.members"></a>
 
 ```typescript
 public readonly members: string[];
@@ -6970,7 +6970,7 @@ public readonly members: string[];
 
 ---
 
-##### `owners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.owners"></a>
+##### `owners`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.owners"></a>
 
 ```typescript
 public readonly owners: string[];
@@ -6980,7 +6980,7 @@ public readonly owners: string[];
 
 ---
 
-##### `preventDuplicateNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.preventDuplicateNames"></a>
+##### `preventDuplicateNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.preventDuplicateNames"></a>
 
 ```typescript
 public readonly preventDuplicateNames: boolean | IResolvable;
@@ -6990,7 +6990,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 ---
 
-##### `provisioningOptions`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.provisioningOptions"></a>
+##### `provisioningOptions`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.provisioningOptions"></a>
 
 ```typescript
 public readonly provisioningOptions: string[];
@@ -7000,7 +7000,7 @@ public readonly provisioningOptions: string[];
 
 ---
 
-##### `securityEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.securityEnabled"></a>
+##### `securityEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.securityEnabled"></a>
 
 ```typescript
 public readonly securityEnabled: boolean | IResolvable;
@@ -7010,7 +7010,7 @@ public readonly securityEnabled: boolean | IResolvable;
 
 ---
 
-##### `theme`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.theme"></a>
+##### `theme`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.theme"></a>
 
 ```typescript
 public readonly theme: string;
@@ -7020,7 +7020,7 @@ public readonly theme: string;
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.types"></a>
+##### `types`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.types"></a>
 
 ```typescript
 public readonly types: string[];
@@ -7030,7 +7030,7 @@ public readonly types: string[];
 
 ---
 
-##### `visibility`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.visibility"></a>
+##### `visibility`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.visibility"></a>
 
 ```typescript
 public readonly visibility: string;
@@ -7089,10 +7089,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.GroupMember.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: GroupMemberTimeouts)
+public putTimeouts(value: GroupMemberTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMember.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMember.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.GroupMemberTimeouts`](#@cdktf/provider-azuread.GroupMemberTimeouts)
 
@@ -7226,10 +7226,10 @@ Must be unique amongst siblings in the same scope
 ##### `putMessage` <a name="@cdktf/provider-azuread.Invitation.putMessage"></a>
 
 ```typescript
-public putMessage(value?: InvitationMessage)
+public putMessage(value: InvitationMessage)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Invitation.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.InvitationMessage`](#@cdktf/provider-azuread.InvitationMessage)
 
@@ -7238,10 +7238,10 @@ public putMessage(value?: InvitationMessage)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.Invitation.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: InvitationTimeouts)
+public putTimeouts(value: InvitationTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Invitation.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.InvitationTimeouts`](#@cdktf/provider-azuread.InvitationTimeouts)
 
@@ -7394,6 +7394,16 @@ public readonly redirectUrl: string;
 
 ---
 
+##### `userDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.property.userDisplayName"></a>
+
+```typescript
+public readonly userDisplayName: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `userEmailAddress`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.property.userEmailAddress"></a>
 
 ```typescript
@@ -7404,17 +7414,7 @@ public readonly userEmailAddress: string;
 
 ---
 
-##### `userDisplayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Invitation.property.userDisplayName"></a>
-
-```typescript
-public readonly userDisplayName: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `userType`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Invitation.property.userType"></a>
+##### `userType`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.property.userType"></a>
 
 ```typescript
 public readonly userType: string;
@@ -7473,10 +7473,10 @@ Must be unique amongst siblings in the same scope
 ##### `putCountry` <a name="@cdktf/provider-azuread.NamedLocation.putCountry"></a>
 
 ```typescript
-public putCountry(value?: NamedLocationCountry)
+public putCountry(value: NamedLocationCountry)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocation.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocation.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.NamedLocationCountry`](#@cdktf/provider-azuread.NamedLocationCountry)
 
@@ -7485,10 +7485,10 @@ public putCountry(value?: NamedLocationCountry)
 ##### `putIp` <a name="@cdktf/provider-azuread.NamedLocation.putIp"></a>
 
 ```typescript
-public putIp(value?: NamedLocationIp)
+public putIp(value: NamedLocationIp)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocation.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocation.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.NamedLocationIp`](#@cdktf/provider-azuread.NamedLocationIp)
 
@@ -7497,10 +7497,10 @@ public putIp(value?: NamedLocationIp)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.NamedLocation.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: NamedLocationTimeouts)
+public putTimeouts(value: NamedLocationTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocation.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocation.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.NamedLocationTimeouts`](#@cdktf/provider-azuread.NamedLocationTimeouts)
 
@@ -7714,10 +7714,10 @@ public oauth2PermissionScopes(index: string)
 ##### `putSamlSingleSignOn` <a name="@cdktf/provider-azuread.ServicePrincipal.putSamlSingleSignOn"></a>
 
 ```typescript
-public putSamlSingleSignOn(value?: ServicePrincipalSamlSingleSignOn)
+public putSamlSingleSignOn(value: ServicePrincipalSamlSingleSignOn)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOn`](#@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOn)
 
@@ -7726,10 +7726,10 @@ public putSamlSingleSignOn(value?: ServicePrincipalSamlSingleSignOn)
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipal.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ServicePrincipalTimeouts)
+public putTimeouts(value: ServicePrincipalTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ServicePrincipalTimeouts`](#@cdktf/provider-azuread.ServicePrincipalTimeouts)
 
@@ -8118,6 +8118,26 @@ public readonly useExistingInput: boolean | IResolvable;
 
 ---
 
+##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.accountEnabled"></a>
+
+```typescript
+public readonly accountEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `alternativeNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.alternativeNames"></a>
+
+```typescript
+public readonly alternativeNames: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `applicationId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.applicationId"></a>
 
 ```typescript
@@ -8128,27 +8148,7 @@ public readonly applicationId: string;
 
 ---
 
-##### `accountEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.accountEnabled"></a>
-
-```typescript
-public readonly accountEnabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `alternativeNames`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.alternativeNames"></a>
-
-```typescript
-public readonly alternativeNames: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `appRoleAssignmentRequired`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.appRoleAssignmentRequired"></a>
+##### `appRoleAssignmentRequired`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.appRoleAssignmentRequired"></a>
 
 ```typescript
 public readonly appRoleAssignmentRequired: boolean | IResolvable;
@@ -8158,7 +8158,7 @@ public readonly appRoleAssignmentRequired: boolean | IResolvable;
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.description"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -8168,7 +8168,7 @@ public readonly description: string;
 
 ---
 
-##### `features`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.features"></a>
+##### `features`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.features"></a>
 
 ```typescript
 public readonly features: ServicePrincipalFeatures[];
@@ -8178,7 +8178,7 @@ public readonly features: ServicePrincipalFeatures[];
 
 ---
 
-##### `featureTags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTags"></a>
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTags"></a>
 
 ```typescript
 public readonly featureTags: ServicePrincipalFeatureTags[];
@@ -8188,7 +8188,7 @@ public readonly featureTags: ServicePrincipalFeatureTags[];
 
 ---
 
-##### `loginUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.loginUrl"></a>
+##### `loginUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.loginUrl"></a>
 
 ```typescript
 public readonly loginUrl: string;
@@ -8198,7 +8198,7 @@ public readonly loginUrl: string;
 
 ---
 
-##### `notes`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.notes"></a>
+##### `notes`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.notes"></a>
 
 ```typescript
 public readonly notes: string;
@@ -8208,7 +8208,7 @@ public readonly notes: string;
 
 ---
 
-##### `notificationEmailAddresses`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.notificationEmailAddresses"></a>
+##### `notificationEmailAddresses`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.notificationEmailAddresses"></a>
 
 ```typescript
 public readonly notificationEmailAddresses: string[];
@@ -8218,7 +8218,7 @@ public readonly notificationEmailAddresses: string[];
 
 ---
 
-##### `owners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.owners"></a>
+##### `owners`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.owners"></a>
 
 ```typescript
 public readonly owners: string[];
@@ -8228,7 +8228,7 @@ public readonly owners: string[];
 
 ---
 
-##### `preferredSingleSignOnMode`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.preferredSingleSignOnMode"></a>
+##### `preferredSingleSignOnMode`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.preferredSingleSignOnMode"></a>
 
 ```typescript
 public readonly preferredSingleSignOnMode: string;
@@ -8238,7 +8238,7 @@ public readonly preferredSingleSignOnMode: string;
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.tags"></a>
 
 ```typescript
 public readonly tags: string[];
@@ -8248,7 +8248,7 @@ public readonly tags: string[];
 
 ---
 
-##### `useExisting`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.useExisting"></a>
+##### `useExisting`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.useExisting"></a>
 
 ```typescript
 public readonly useExisting: boolean | IResolvable;
@@ -8307,10 +8307,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ServicePrincipalCertificateTimeouts)
+public putTimeouts(value: ServicePrincipalCertificateTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts`](#@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts)
 
@@ -8471,6 +8471,46 @@ public readonly valueInput: string;
 
 ---
 
+##### `encoding`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.encoding"></a>
+
+```typescript
+public readonly encoding: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.endDate"></a>
+
+```typescript
+public readonly endDate: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endDateRelative`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.endDateRelative"></a>
+
+```typescript
+public readonly endDateRelative: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `keyId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.keyId"></a>
+
+```typescript
+public readonly keyId: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `servicePrincipalId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.servicePrincipalId"></a>
 
 ```typescript
@@ -8481,57 +8521,7 @@ public readonly servicePrincipalId: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.value"></a>
-
-```typescript
-public readonly value: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `encoding`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.encoding"></a>
-
-```typescript
-public readonly encoding: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `endDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.endDate"></a>
-
-```typescript
-public readonly endDate: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `endDateRelative`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.endDateRelative"></a>
-
-```typescript
-public readonly endDateRelative: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `keyId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.keyId"></a>
-
-```typescript
-public readonly keyId: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `startDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.startDate"></a>
+##### `startDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.startDate"></a>
 
 ```typescript
 public readonly startDate: string;
@@ -8541,10 +8531,20 @@ public readonly startDate: string;
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.type"></a>
 
 ```typescript
 public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.value"></a>
+
+```typescript
+public readonly value: string;
 ```
 
 - *Type:* `string`
@@ -8600,10 +8600,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ServicePrincipalDelegatedPermissionGrantTimeouts)
+public putTimeouts(value: ServicePrincipalDelegatedPermissionGrantTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
 
@@ -8724,7 +8724,7 @@ public readonly servicePrincipalObjectId: string;
 
 ---
 
-##### `userObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.userObjectId"></a>
+##### `userObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.userObjectId"></a>
 
 ```typescript
 public readonly userObjectId: string;
@@ -8783,10 +8783,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: ServicePrincipalPasswordTimeouts)
+public putTimeouts(value: ServicePrincipalPasswordTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts`](#@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts)
 
@@ -8907,6 +8907,16 @@ public readonly timeoutsInput: ServicePrincipalPasswordTimeouts;
 
 ---
 
+##### `rotateWhenChanged`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.rotateWhenChanged"></a>
+
+```typescript
+public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+
+---
+
 ##### `servicePrincipalId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.servicePrincipalId"></a>
 
 ```typescript
@@ -8914,16 +8924,6 @@ public readonly servicePrincipalId: string;
 ```
 
 - *Type:* `string`
-
----
-
-##### `rotateWhenChanged`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.rotateWhenChanged"></a>
-
-```typescript
-public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -8976,10 +8976,10 @@ Must be unique amongst siblings in the same scope
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.User.putTimeouts"></a>
 
 ```typescript
-public putTimeouts(value?: UserTimeouts)
+public putTimeouts(value: UserTimeouts)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.UserTimeouts`](#@cdktf/provider-azuread.UserTimeouts)
 
@@ -9702,6 +9702,116 @@ public readonly userPrincipalNameInput: string;
 
 ---
 
+##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.accountEnabled"></a>
+
+```typescript
+public readonly accountEnabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `ageGroup`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.ageGroup"></a>
+
+```typescript
+public readonly ageGroup: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `businessPhones`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.businessPhones"></a>
+
+```typescript
+public readonly businessPhones: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `city`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.city"></a>
+
+```typescript
+public readonly city: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `companyName`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.companyName"></a>
+
+```typescript
+public readonly companyName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `consentProvidedForMinor`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.consentProvidedForMinor"></a>
+
+```typescript
+public readonly consentProvidedForMinor: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `costCenter`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.costCenter"></a>
+
+```typescript
+public readonly costCenter: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `country`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.country"></a>
+
+```typescript
+public readonly country: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `department`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.department"></a>
+
+```typescript
+public readonly department: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `disablePasswordExpiration`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.disablePasswordExpiration"></a>
+
+```typescript
+public readonly disablePasswordExpiration: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `disableStrongPassword`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.disableStrongPassword"></a>
+
+```typescript
+public readonly disableStrongPassword: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.displayName"></a>
 
 ```typescript
@@ -9712,127 +9822,7 @@ public readonly displayName: string;
 
 ---
 
-##### `userPrincipalName`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.userPrincipalName"></a>
-
-```typescript
-public readonly userPrincipalName: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `accountEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.accountEnabled"></a>
-
-```typescript
-public readonly accountEnabled: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `ageGroup`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.ageGroup"></a>
-
-```typescript
-public readonly ageGroup: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `businessPhones`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.businessPhones"></a>
-
-```typescript
-public readonly businessPhones: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `city`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.city"></a>
-
-```typescript
-public readonly city: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `companyName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.companyName"></a>
-
-```typescript
-public readonly companyName: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `consentProvidedForMinor`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.consentProvidedForMinor"></a>
-
-```typescript
-public readonly consentProvidedForMinor: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `costCenter`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.costCenter"></a>
-
-```typescript
-public readonly costCenter: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `country`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.country"></a>
-
-```typescript
-public readonly country: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `department`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.department"></a>
-
-```typescript
-public readonly department: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `disablePasswordExpiration`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.disablePasswordExpiration"></a>
-
-```typescript
-public readonly disablePasswordExpiration: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `disableStrongPassword`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.disableStrongPassword"></a>
-
-```typescript
-public readonly disableStrongPassword: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `division`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.division"></a>
+##### `division`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.division"></a>
 
 ```typescript
 public readonly division: string;
@@ -9842,7 +9832,7 @@ public readonly division: string;
 
 ---
 
-##### `employeeId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.employeeId"></a>
+##### `employeeId`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.employeeId"></a>
 
 ```typescript
 public readonly employeeId: string;
@@ -9852,7 +9842,7 @@ public readonly employeeId: string;
 
 ---
 
-##### `employeeType`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.employeeType"></a>
+##### `employeeType`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.employeeType"></a>
 
 ```typescript
 public readonly employeeType: string;
@@ -9862,7 +9852,7 @@ public readonly employeeType: string;
 
 ---
 
-##### `faxNumber`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.faxNumber"></a>
+##### `faxNumber`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.faxNumber"></a>
 
 ```typescript
 public readonly faxNumber: string;
@@ -9872,7 +9862,7 @@ public readonly faxNumber: string;
 
 ---
 
-##### `forcePasswordChange`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.forcePasswordChange"></a>
+##### `forcePasswordChange`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.forcePasswordChange"></a>
 
 ```typescript
 public readonly forcePasswordChange: boolean | IResolvable;
@@ -9882,7 +9872,7 @@ public readonly forcePasswordChange: boolean | IResolvable;
 
 ---
 
-##### `givenName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.givenName"></a>
+##### `givenName`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.givenName"></a>
 
 ```typescript
 public readonly givenName: string;
@@ -9892,7 +9882,7 @@ public readonly givenName: string;
 
 ---
 
-##### `jobTitle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.jobTitle"></a>
+##### `jobTitle`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.jobTitle"></a>
 
 ```typescript
 public readonly jobTitle: string;
@@ -9902,7 +9892,7 @@ public readonly jobTitle: string;
 
 ---
 
-##### `mail`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.mail"></a>
+##### `mail`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.mail"></a>
 
 ```typescript
 public readonly mail: string;
@@ -9912,7 +9902,7 @@ public readonly mail: string;
 
 ---
 
-##### `mailNickname`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.mailNickname"></a>
+##### `mailNickname`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.mailNickname"></a>
 
 ```typescript
 public readonly mailNickname: string;
@@ -9922,7 +9912,7 @@ public readonly mailNickname: string;
 
 ---
 
-##### `managerId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.managerId"></a>
+##### `managerId`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.managerId"></a>
 
 ```typescript
 public readonly managerId: string;
@@ -9932,7 +9922,7 @@ public readonly managerId: string;
 
 ---
 
-##### `mobilePhone`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.mobilePhone"></a>
+##### `mobilePhone`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.mobilePhone"></a>
 
 ```typescript
 public readonly mobilePhone: string;
@@ -9942,7 +9932,7 @@ public readonly mobilePhone: string;
 
 ---
 
-##### `officeLocation`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.officeLocation"></a>
+##### `officeLocation`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.officeLocation"></a>
 
 ```typescript
 public readonly officeLocation: string;
@@ -9952,7 +9942,7 @@ public readonly officeLocation: string;
 
 ---
 
-##### `onpremisesImmutableId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.onpremisesImmutableId"></a>
+##### `onpremisesImmutableId`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.onpremisesImmutableId"></a>
 
 ```typescript
 public readonly onpremisesImmutableId: string;
@@ -9962,7 +9952,7 @@ public readonly onpremisesImmutableId: string;
 
 ---
 
-##### `otherMails`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.otherMails"></a>
+##### `otherMails`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.otherMails"></a>
 
 ```typescript
 public readonly otherMails: string[];
@@ -9972,7 +9962,7 @@ public readonly otherMails: string[];
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.password"></a>
+##### `password`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -9982,7 +9972,7 @@ public readonly password: string;
 
 ---
 
-##### `postalCode`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.postalCode"></a>
+##### `postalCode`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.postalCode"></a>
 
 ```typescript
 public readonly postalCode: string;
@@ -9992,7 +9982,7 @@ public readonly postalCode: string;
 
 ---
 
-##### `preferredLanguage`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.preferredLanguage"></a>
+##### `preferredLanguage`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.preferredLanguage"></a>
 
 ```typescript
 public readonly preferredLanguage: string;
@@ -10002,7 +9992,7 @@ public readonly preferredLanguage: string;
 
 ---
 
-##### `showInAddressList`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.showInAddressList"></a>
+##### `showInAddressList`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.showInAddressList"></a>
 
 ```typescript
 public readonly showInAddressList: boolean | IResolvable;
@@ -10012,7 +10002,7 @@ public readonly showInAddressList: boolean | IResolvable;
 
 ---
 
-##### `state`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.state"></a>
+##### `state`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.state"></a>
 
 ```typescript
 public readonly state: string;
@@ -10022,7 +10012,7 @@ public readonly state: string;
 
 ---
 
-##### `streetAddress`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.streetAddress"></a>
+##### `streetAddress`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.streetAddress"></a>
 
 ```typescript
 public readonly streetAddress: string;
@@ -10032,7 +10022,7 @@ public readonly streetAddress: string;
 
 ---
 
-##### `surname`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.surname"></a>
+##### `surname`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.surname"></a>
 
 ```typescript
 public readonly surname: string;
@@ -10042,10 +10032,20 @@ public readonly surname: string;
 
 ---
 
-##### `usageLocation`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.usageLocation"></a>
+##### `usageLocation`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.usageLocation"></a>
 
 ```typescript
 public readonly usageLocation: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userPrincipalName`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.userPrincipalName"></a>
+
+```typescript
+public readonly userPrincipalName: string;
 ```
 
 - *Type:* `string`
@@ -17977,7 +17977,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -17987,7 +17987,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -17997,7 +17997,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -18007,13 +18007,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: AdministrativeUnitMemberTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
 
 ---
 
@@ -18121,7 +18131,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -18131,7 +18141,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -18141,7 +18151,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -18151,13 +18161,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: AdministrativeUnitTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
 
 ---
 
@@ -18265,7 +18285,7 @@ public readonly requestedAccessTokenVersionInput: number;
 
 ---
 
-##### `knownClientApplications`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.knownClientApplications"></a>
+##### `knownClientApplications`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.knownClientApplications"></a>
 
 ```typescript
 public readonly knownClientApplications: string[];
@@ -18275,7 +18295,7 @@ public readonly knownClientApplications: string[];
 
 ---
 
-##### `mappedClaimsEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.mappedClaimsEnabled"></a>
+##### `mappedClaimsEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.mappedClaimsEnabled"></a>
 
 ```typescript
 public readonly mappedClaimsEnabled: boolean | IResolvable;
@@ -18285,7 +18305,7 @@ public readonly mappedClaimsEnabled: boolean | IResolvable;
 
 ---
 
-##### `oauth2PermissionScope`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.oauth2PermissionScope"></a>
+##### `oauth2PermissionScope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.oauth2PermissionScope"></a>
 
 ```typescript
 public readonly oauth2PermissionScope: ApplicationApiOauth2PermissionScope[];
@@ -18295,13 +18315,23 @@ public readonly oauth2PermissionScope: ApplicationApiOauth2PermissionScope[];
 
 ---
 
-##### `requestedAccessTokenVersion`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.requestedAccessTokenVersion"></a>
+##### `requestedAccessTokenVersion`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.requestedAccessTokenVersion"></a>
 
 ```typescript
 public readonly requestedAccessTokenVersion: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationApi;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationApi`](#@cdktf/provider-azuread.ApplicationApi)
 
 ---
 
@@ -18409,7 +18439,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -18419,7 +18449,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -18429,7 +18459,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -18439,13 +18469,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationCertificateTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationCertificateTimeouts`](#@cdktf/provider-azuread.ApplicationCertificateTimeouts)
 
 ---
 
@@ -18537,7 +18577,7 @@ public readonly saml2TokenInput: ApplicationOptionalClaimsSaml2Token[];
 
 ---
 
-##### `accessToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.accessToken"></a>
+##### `accessToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.accessToken"></a>
 
 ```typescript
 public readonly accessToken: ApplicationOptionalClaimsAccessToken[];
@@ -18547,7 +18587,7 @@ public readonly accessToken: ApplicationOptionalClaimsAccessToken[];
 
 ---
 
-##### `idToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.idToken"></a>
+##### `idToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.idToken"></a>
 
 ```typescript
 public readonly idToken: ApplicationOptionalClaimsIdToken[];
@@ -18557,13 +18597,23 @@ public readonly idToken: ApplicationOptionalClaimsIdToken[];
 
 ---
 
-##### `saml2Token`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.saml2Token"></a>
+##### `saml2Token`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.saml2Token"></a>
 
 ```typescript
 public readonly saml2Token: ApplicationOptionalClaimsSaml2Token[];
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationOptionalClaims;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaims`](#@cdktf/provider-azuread.ApplicationOptionalClaims)
 
 ---
 
@@ -18671,7 +18721,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -18681,7 +18731,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -18691,7 +18741,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -18701,13 +18751,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationPasswordTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationPasswordTimeouts`](#@cdktf/provider-azuread.ApplicationPasswordTimeouts)
 
 ---
 
@@ -18815,7 +18875,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -18825,7 +18885,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -18835,7 +18895,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -18845,13 +18905,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationPreAuthorizedTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts`](#@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts)
 
 ---
 
@@ -18911,13 +18981,23 @@ public readonly redirectUrisInput: string[];
 
 ---
 
-##### `redirectUris`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPublicClientOutputReference.property.redirectUris"></a>
+##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPublicClientOutputReference.property.redirectUris"></a>
 
 ```typescript
 public readonly redirectUris: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPublicClientOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationPublicClient;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationPublicClient`](#@cdktf/provider-azuread.ApplicationPublicClient)
 
 ---
 
@@ -18977,13 +19057,23 @@ public readonly redirectUrisInput: string[];
 
 ---
 
-##### `redirectUris`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationSinglePageApplicationOutputReference.property.redirectUris"></a>
+##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationSinglePageApplicationOutputReference.property.redirectUris"></a>
 
 ```typescript
 public readonly redirectUris: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationSinglePageApplicationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationSinglePageApplication;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationSinglePageApplication`](#@cdktf/provider-azuread.ApplicationSinglePageApplication)
 
 ---
 
@@ -19091,7 +19181,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -19101,7 +19191,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -19111,7 +19201,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -19121,13 +19211,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationTimeouts`](#@cdktf/provider-azuread.ApplicationTimeouts)
 
 ---
 
@@ -19203,7 +19303,7 @@ public readonly idTokenIssuanceEnabledInput: boolean | IResolvable;
 
 ---
 
-##### `accessTokenIssuanceEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabled"></a>
+##### `accessTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly accessTokenIssuanceEnabled: boolean | IResolvable;
@@ -19213,13 +19313,23 @@ public readonly accessTokenIssuanceEnabled: boolean | IResolvable;
 
 ---
 
-##### `idTokenIssuanceEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabled"></a>
+##### `idTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly idTokenIssuanceEnabled: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationWebImplicitGrant;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationWebImplicitGrant`](#@cdktf/provider-azuread.ApplicationWebImplicitGrant)
 
 ---
 
@@ -19263,10 +19373,10 @@ True if this is a block, false if it's a list.
 ##### `putImplicitGrant` <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.putImplicitGrant"></a>
 
 ```typescript
-public putImplicitGrant(value?: ApplicationWebImplicitGrant)
+public putImplicitGrant(value: ApplicationWebImplicitGrant)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationWebImplicitGrant`](#@cdktf/provider-azuread.ApplicationWebImplicitGrant)
 
@@ -19349,7 +19459,7 @@ public readonly redirectUrisInput: string[];
 
 ---
 
-##### `homepageUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.property.homepageUrl"></a>
+##### `homepageUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.property.homepageUrl"></a>
 
 ```typescript
 public readonly homepageUrl: string;
@@ -19359,7 +19469,7 @@ public readonly homepageUrl: string;
 
 ---
 
-##### `logoutUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.property.logoutUrl"></a>
+##### `logoutUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.property.logoutUrl"></a>
 
 ```typescript
 public readonly logoutUrl: string;
@@ -19369,13 +19479,23 @@ public readonly logoutUrl: string;
 
 ---
 
-##### `redirectUris`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.property.redirectUris"></a>
+##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.property.redirectUris"></a>
 
 ```typescript
 public readonly redirectUris: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationWeb;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationWeb`](#@cdktf/provider-azuread.ApplicationWeb)
 
 ---
 
@@ -19467,7 +19587,7 @@ public readonly readInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -19477,7 +19597,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -19487,13 +19607,23 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: AppRoleAssignmentTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.AppRoleAssignmentTimeouts`](#@cdktf/provider-azuread.AppRoleAssignmentTimeouts)
 
 ---
 
@@ -19579,6 +19709,16 @@ public readonly includedUserActionsInput: string[];
 
 ---
 
+##### `excludedApplications`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.property.excludedApplications"></a>
+
+```typescript
+public readonly excludedApplications: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `includedApplications`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.property.includedApplications"></a>
 
 ```typescript
@@ -19589,23 +19729,23 @@ public readonly includedApplications: string[];
 
 ---
 
-##### `excludedApplications`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.property.excludedApplications"></a>
-
-```typescript
-public readonly excludedApplications: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `includedUserActions`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.property.includedUserActions"></a>
+##### `includedUserActions`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.property.includedUserActions"></a>
 
 ```typescript
 public readonly includedUserActions: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicyConditionsApplications;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplications`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplications)
 
 ---
 
@@ -19688,6 +19828,16 @@ public readonly rule: string;
 
 ---
 
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicyConditionsDevicesFilter;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter)
+
+---
+
 
 ### ConditionalAccessPolicyConditionsDevicesOutputReference <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference"></a>
 
@@ -19728,10 +19878,10 @@ True if this is a block, false if it's a list.
 ##### `putFilter` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.putFilter"></a>
 
 ```typescript
-public putFilter(value?: ConditionalAccessPolicyConditionsDevicesFilter)
+public putFilter(value: ConditionalAccessPolicyConditionsDevicesFilter)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter)
 
@@ -19763,6 +19913,16 @@ public readonly filterInput: ConditionalAccessPolicyConditionsDevicesFilter;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilter)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicyConditionsDevices;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices)
 
 ---
 
@@ -19832,6 +19992,16 @@ public readonly includedLocationsInput: string[];
 
 ---
 
+##### `excludedLocations`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.property.excludedLocations"></a>
+
+```typescript
+public readonly excludedLocations: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `includedLocations`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.property.includedLocations"></a>
 
 ```typescript
@@ -19842,13 +20012,13 @@ public readonly includedLocations: string[];
 
 ---
 
-##### `excludedLocations`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.property.excludedLocations"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly excludedLocations: string[];
+public readonly internalValue: ConditionalAccessPolicyConditionsLocations;
 ```
 
-- *Type:* `string`[]
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocations`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocations)
 
 ---
 
@@ -19904,10 +20074,10 @@ public putApplications(value: ConditionalAccessPolicyConditionsApplications)
 ##### `putDevices` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.putDevices"></a>
 
 ```typescript
-public putDevices(value?: ConditionalAccessPolicyConditionsDevices)
+public putDevices(value: ConditionalAccessPolicyConditionsDevices)
 ```
 
-###### `value`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevices)
 
@@ -20110,7 +20280,7 @@ public readonly clientAppTypes: string[];
 
 ---
 
-##### `signInRiskLevels`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.property.signInRiskLevels"></a>
+##### `signInRiskLevels`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.property.signInRiskLevels"></a>
 
 ```typescript
 public readonly signInRiskLevels: string[];
@@ -20120,13 +20290,23 @@ public readonly signInRiskLevels: string[];
 
 ---
 
-##### `userRiskLevels`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.property.userRiskLevels"></a>
+##### `userRiskLevels`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.property.userRiskLevels"></a>
 
 ```typescript
 public readonly userRiskLevels: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicyConditions;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditions`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditions)
 
 ---
 
@@ -20196,6 +20376,16 @@ public readonly includedPlatformsInput: string[];
 
 ---
 
+##### `excludedPlatforms`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatformsOutputReference.property.excludedPlatforms"></a>
+
+```typescript
+public readonly excludedPlatforms: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `includedPlatforms`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatformsOutputReference.property.includedPlatforms"></a>
 
 ```typescript
@@ -20206,13 +20396,13 @@ public readonly includedPlatforms: string[];
 
 ---
 
-##### `excludedPlatforms`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatformsOutputReference.property.excludedPlatforms"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatformsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly excludedPlatforms: string[];
+public readonly internalValue: ConditionalAccessPolicyConditionsPlatforms;
 ```
 
-- *Type:* `string`[]
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatforms`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatforms)
 
 ---
 
@@ -20352,7 +20542,7 @@ public readonly includedUsersInput: string[];
 
 ---
 
-##### `excludedGroups`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.excludedGroups"></a>
+##### `excludedGroups`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.excludedGroups"></a>
 
 ```typescript
 public readonly excludedGroups: string[];
@@ -20362,7 +20552,7 @@ public readonly excludedGroups: string[];
 
 ---
 
-##### `excludedRoles`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.excludedRoles"></a>
+##### `excludedRoles`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.excludedRoles"></a>
 
 ```typescript
 public readonly excludedRoles: string[];
@@ -20372,7 +20562,7 @@ public readonly excludedRoles: string[];
 
 ---
 
-##### `excludedUsers`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.excludedUsers"></a>
+##### `excludedUsers`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.excludedUsers"></a>
 
 ```typescript
 public readonly excludedUsers: string[];
@@ -20382,7 +20572,7 @@ public readonly excludedUsers: string[];
 
 ---
 
-##### `includedGroups`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.includedGroups"></a>
+##### `includedGroups`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.includedGroups"></a>
 
 ```typescript
 public readonly includedGroups: string[];
@@ -20392,7 +20582,7 @@ public readonly includedGroups: string[];
 
 ---
 
-##### `includedRoles`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.includedRoles"></a>
+##### `includedRoles`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.includedRoles"></a>
 
 ```typescript
 public readonly includedRoles: string[];
@@ -20402,13 +20592,23 @@ public readonly includedRoles: string[];
 
 ---
 
-##### `includedUsers`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.includedUsers"></a>
+##### `includedUsers`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.includedUsers"></a>
 
 ```typescript
 public readonly includedUsers: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicyConditionsUsers;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsers`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsers)
 
 ---
 
@@ -20514,6 +20714,16 @@ public readonly builtInControls: string[];
 
 ---
 
+##### `customAuthenticationFactors`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.property.customAuthenticationFactors"></a>
+
+```typescript
+public readonly customAuthenticationFactors: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
 ##### `operator`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.property.operator"></a>
 
 ```typescript
@@ -20524,23 +20734,23 @@ public readonly operator: string;
 
 ---
 
-##### `customAuthenticationFactors`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.property.customAuthenticationFactors"></a>
-
-```typescript
-public readonly customAuthenticationFactors: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-##### `termsOfUse`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.property.termsOfUse"></a>
+##### `termsOfUse`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.property.termsOfUse"></a>
 
 ```typescript
 public readonly termsOfUse: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicyGrantControls;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyGrantControls`](#@cdktf/provider-azuread.ConditionalAccessPolicyGrantControls)
 
 ---
 
@@ -20648,7 +20858,7 @@ public readonly signInFrequencyPeriodInput: string;
 
 ---
 
-##### `applicationEnforcedRestrictionsEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.applicationEnforcedRestrictionsEnabled"></a>
+##### `applicationEnforcedRestrictionsEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.applicationEnforcedRestrictionsEnabled"></a>
 
 ```typescript
 public readonly applicationEnforcedRestrictionsEnabled: boolean | IResolvable;
@@ -20658,7 +20868,7 @@ public readonly applicationEnforcedRestrictionsEnabled: boolean | IResolvable;
 
 ---
 
-##### `cloudAppSecurityPolicy`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.cloudAppSecurityPolicy"></a>
+##### `cloudAppSecurityPolicy`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.cloudAppSecurityPolicy"></a>
 
 ```typescript
 public readonly cloudAppSecurityPolicy: string;
@@ -20668,7 +20878,7 @@ public readonly cloudAppSecurityPolicy: string;
 
 ---
 
-##### `signInFrequency`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.signInFrequency"></a>
+##### `signInFrequency`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.signInFrequency"></a>
 
 ```typescript
 public readonly signInFrequency: number;
@@ -20678,13 +20888,23 @@ public readonly signInFrequency: number;
 
 ---
 
-##### `signInFrequencyPeriod`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.signInFrequencyPeriod"></a>
+##### `signInFrequencyPeriod`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.signInFrequencyPeriod"></a>
 
 ```typescript
 public readonly signInFrequencyPeriod: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicySessionControls;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicySessionControls`](#@cdktf/provider-azuread.ConditionalAccessPolicySessionControls)
 
 ---
 
@@ -20792,7 +21012,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -20802,7 +21022,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -20812,7 +21032,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -20822,13 +21042,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ConditionalAccessPolicyTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts`](#@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts)
 
 ---
 
@@ -20936,7 +21166,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -20946,7 +21176,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -20956,7 +21186,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -20966,13 +21196,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadAdministrativeUnitTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
 
 ---
 
@@ -21709,13 +21949,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationPublishedAppIdsTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts)
 
 ---
 
@@ -21924,13 +22174,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationTemplateTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts)
 
 ---
 
@@ -21990,13 +22250,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTimeouts)
 
 ---
 
@@ -22182,13 +22452,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadClientConfigTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadClientConfigTimeouts`](#@cdktf/provider-azuread.DataAzureadClientConfigTimeouts)
 
 ---
 
@@ -22361,13 +22641,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadDomainsTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadDomainsTimeouts`](#@cdktf/provider-azuread.DataAzureadDomainsTimeouts)
 
 ---
 
@@ -22427,13 +22717,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadGroupsTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupsTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupsTimeouts)
 
 ---
 
@@ -22493,13 +22793,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadGroupTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupTimeouts)
 
 ---
 
@@ -23097,13 +23407,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadServicePrincipalsTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts)
 
 ---
 
@@ -23163,13 +23483,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadServicePrincipalTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts)
 
 ---
 
@@ -23229,13 +23559,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadUsersTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadUsersTimeouts`](#@cdktf/provider-azuread.DataAzureadUsersTimeouts)
 
 ---
 
@@ -23428,13 +23768,23 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUserTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadUserTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
 
 ---
 
@@ -23542,7 +23892,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -23552,7 +23902,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -23562,7 +23912,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -23572,13 +23922,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DirectoryRoleMemberTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DirectoryRoleMemberTimeouts`](#@cdktf/provider-azuread.DirectoryRoleMemberTimeouts)
 
 ---
 
@@ -23686,7 +24046,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -23696,7 +24056,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -23706,7 +24066,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -23716,13 +24076,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DirectoryRoleTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DirectoryRoleTimeouts`](#@cdktf/provider-azuread.DirectoryRoleTimeouts)
 
 ---
 
@@ -23830,7 +24200,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -23840,7 +24210,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -23850,7 +24220,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -23860,13 +24230,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GroupMemberTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.GroupMemberTimeouts`](#@cdktf/provider-azuread.GroupMemberTimeouts)
 
 ---
 
@@ -23974,7 +24354,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -23984,7 +24364,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -23994,7 +24374,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -24004,13 +24384,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GroupTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.GroupTimeouts`](#@cdktf/provider-azuread.GroupTimeouts)
 
 ---
 
@@ -24102,7 +24492,7 @@ public readonly languageInput: string;
 
 ---
 
-##### `additionalRecipients`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.property.additionalRecipients"></a>
+##### `additionalRecipients`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.property.additionalRecipients"></a>
 
 ```typescript
 public readonly additionalRecipients: string[];
@@ -24112,7 +24502,7 @@ public readonly additionalRecipients: string[];
 
 ---
 
-##### `body`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.property.body"></a>
+##### `body`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.property.body"></a>
 
 ```typescript
 public readonly body: string;
@@ -24122,13 +24512,23 @@ public readonly body: string;
 
 ---
 
-##### `language`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.property.language"></a>
+##### `language`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.property.language"></a>
 
 ```typescript
 public readonly language: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: InvitationMessage;
+```
+
+- *Type:* [`@cdktf/provider-azuread.InvitationMessage`](#@cdktf/provider-azuread.InvitationMessage)
 
 ---
 
@@ -24236,7 +24636,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -24246,7 +24646,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -24256,7 +24656,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -24266,13 +24666,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: InvitationTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.InvitationTimeouts`](#@cdktf/provider-azuread.InvitationTimeouts)
 
 ---
 
@@ -24352,13 +24762,23 @@ public readonly countriesAndRegions: string[];
 
 ---
 
-##### `includeUnknownCountriesAndRegions`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationCountryOutputReference.property.includeUnknownCountriesAndRegions"></a>
+##### `includeUnknownCountriesAndRegions`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationCountryOutputReference.property.includeUnknownCountriesAndRegions"></a>
 
 ```typescript
 public readonly includeUnknownCountriesAndRegions: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationCountryOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: NamedLocationCountry;
+```
+
+- *Type:* [`@cdktf/provider-azuread.NamedLocationCountry`](#@cdktf/provider-azuread.NamedLocationCountry)
 
 ---
 
@@ -24438,13 +24858,23 @@ public readonly ipRanges: string[];
 
 ---
 
-##### `trusted`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationIpOutputReference.property.trusted"></a>
+##### `trusted`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationIpOutputReference.property.trusted"></a>
 
 ```typescript
 public readonly trusted: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationIpOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: NamedLocationIp;
+```
+
+- *Type:* [`@cdktf/provider-azuread.NamedLocationIp`](#@cdktf/provider-azuread.NamedLocationIp)
 
 ---
 
@@ -24552,7 +24982,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -24562,7 +24992,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -24572,7 +25002,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -24582,13 +25012,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: NamedLocationTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.NamedLocationTimeouts`](#@cdktf/provider-azuread.NamedLocationTimeouts)
 
 ---
 
@@ -24789,7 +25229,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -24799,7 +25239,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -24809,7 +25249,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -24819,13 +25259,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServicePrincipalCertificateTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts`](#@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts)
 
 ---
 
@@ -24933,7 +25383,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -24943,7 +25393,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -24953,7 +25403,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -24963,13 +25413,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServicePrincipalDelegatedPermissionGrantTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
 
 ---
 
@@ -25190,7 +25650,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -25200,7 +25660,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -25210,7 +25670,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -25220,13 +25680,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServicePrincipalPasswordTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts`](#@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts)
 
 ---
 
@@ -25286,13 +25756,23 @@ public readonly relayStateInput: string;
 
 ---
 
-##### `relayState`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOnOutputReference.property.relayState"></a>
+##### `relayState`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOnOutputReference.property.relayState"></a>
 
 ```typescript
 public readonly relayState: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOnOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServicePrincipalSamlSingleSignOn;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOn`](#@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOn)
 
 ---
 
@@ -25400,7 +25880,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -25410,7 +25890,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -25420,7 +25900,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -25430,13 +25910,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServicePrincipalTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalTimeouts`](#@cdktf/provider-azuread.ServicePrincipalTimeouts)
 
 ---
 
@@ -25544,7 +26034,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -25554,7 +26044,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -25564,7 +26054,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -25574,13 +26064,23 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: UserTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.UserTimeouts`](#@cdktf/provider-azuread.UserTimeouts)
 
 ---
 

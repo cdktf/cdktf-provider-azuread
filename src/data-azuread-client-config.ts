@@ -21,7 +21,7 @@ export interface DataAzureadClientConfigTimeouts {
   readonly read?: string;
 }
 
-function dataAzureadClientConfigTimeoutsToTerraform(struct?: DataAzureadClientConfigTimeoutsOutputReference | DataAzureadClientConfigTimeouts): any {
+export function dataAzureadClientConfigTimeoutsToTerraform(struct?: DataAzureadClientConfigTimeoutsOutputReference | DataAzureadClientConfigTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -41,12 +41,31 @@ export class DataAzureadClientConfigTimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DataAzureadClientConfigTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._read) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadClientConfigTimeouts | undefined) {
+    if (value === undefined) {
+      this._read = undefined;
+    }
+    else {
+      this._read = value.read;
+    }
+  }
+
   // read - computed: false, optional: true, required: false
-  private _read?: string | undefined; 
+  private _read?: string; 
   public get read() {
     return this.getStringAttribute('read');
   }
-  public set read(value: string | undefined) {
+  public set read(value: string) {
     this._read = value;
   }
   public resetRead() {
@@ -54,7 +73,7 @@ export class DataAzureadClientConfigTimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
-    return this._read
+    return this._read;
   }
 }
 
@@ -90,7 +109,7 @@ export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -118,20 +137,19 @@ export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DataAzureadClientConfigTimeouts | undefined; 
-  private __timeoutsOutput = new DataAzureadClientConfigTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadClientConfigTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DataAzureadClientConfigTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DataAzureadClientConfigTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -140,7 +158,7 @@ export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      timeouts: dataAzureadClientConfigTimeoutsToTerraform(this._timeouts),
+      timeouts: dataAzureadClientConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
