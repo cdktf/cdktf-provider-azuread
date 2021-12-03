@@ -1062,6 +1062,10 @@ export interface ConditionalAccessPolicySessionControls {
   */
   readonly cloudAppSecurityPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#persistent_browser_mode ConditionalAccessPolicy#persistent_browser_mode}
+  */
+  readonly persistentBrowserMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#sign_in_frequency ConditionalAccessPolicy#sign_in_frequency}
   */
   readonly signInFrequency?: number;
@@ -1079,6 +1083,7 @@ export function conditionalAccessPolicySessionControlsToTerraform(struct?: Condi
   return {
     application_enforced_restrictions_enabled: cdktf.booleanToTerraform(struct!.applicationEnforcedRestrictionsEnabled),
     cloud_app_security_policy: cdktf.stringToTerraform(struct!.cloudAppSecurityPolicy),
+    persistent_browser_mode: cdktf.stringToTerraform(struct!.persistentBrowserMode),
     sign_in_frequency: cdktf.numberToTerraform(struct!.signInFrequency),
     sign_in_frequency_period: cdktf.stringToTerraform(struct!.signInFrequencyPeriod),
   }
@@ -1105,6 +1110,10 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.cloudAppSecurityPolicy = this._cloudAppSecurityPolicy;
     }
+    if (this._persistentBrowserMode) {
+      hasAnyValues = true;
+      internalValueResult.persistentBrowserMode = this._persistentBrowserMode;
+    }
     if (this._signInFrequency) {
       hasAnyValues = true;
       internalValueResult.signInFrequency = this._signInFrequency;
@@ -1120,12 +1129,14 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
     if (value === undefined) {
       this._applicationEnforcedRestrictionsEnabled = undefined;
       this._cloudAppSecurityPolicy = undefined;
+      this._persistentBrowserMode = undefined;
       this._signInFrequency = undefined;
       this._signInFrequencyPeriod = undefined;
     }
     else {
       this._applicationEnforcedRestrictionsEnabled = value.applicationEnforcedRestrictionsEnabled;
       this._cloudAppSecurityPolicy = value.cloudAppSecurityPolicy;
+      this._persistentBrowserMode = value.persistentBrowserMode;
       this._signInFrequency = value.signInFrequency;
       this._signInFrequencyPeriod = value.signInFrequencyPeriod;
     }
@@ -1161,6 +1172,22 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get cloudAppSecurityPolicyInput() {
     return this._cloudAppSecurityPolicy;
+  }
+
+  // persistent_browser_mode - computed: false, optional: true, required: false
+  private _persistentBrowserMode?: string; 
+  public get persistentBrowserMode() {
+    return this.getStringAttribute('persistent_browser_mode');
+  }
+  public set persistentBrowserMode(value: string) {
+    this._persistentBrowserMode = value;
+  }
+  public resetPersistentBrowserMode() {
+    this._persistentBrowserMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get persistentBrowserModeInput() {
+    return this._persistentBrowserMode;
   }
 
   // sign_in_frequency - computed: false, optional: true, required: false
