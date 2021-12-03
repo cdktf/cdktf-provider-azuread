@@ -13244,6 +13244,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `persistentBrowserMode`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControls.property.persistentBrowserMode"></a>
+
+```typescript
+public readonly persistentBrowserMode: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#persistent_browser_mode ConditionalAccessPolicy#persistent_browser_mode}.
+
+---
+
 ##### `signInFrequency`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControls.property.signInFrequency"></a>
 
 ```typescript
@@ -20803,6 +20815,12 @@ public resetApplicationEnforcedRestrictionsEnabled()
 public resetCloudAppSecurityPolicy()
 ```
 
+##### `resetPersistentBrowserMode` <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.resetPersistentBrowserMode"></a>
+
+```typescript
+public resetPersistentBrowserMode()
+```
+
 ##### `resetSignInFrequency` <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.resetSignInFrequency"></a>
 
 ```typescript
@@ -20832,6 +20850,16 @@ public readonly applicationEnforcedRestrictionsEnabledInput: boolean | IResolvab
 
 ```typescript
 public readonly cloudAppSecurityPolicyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `persistentBrowserModeInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.persistentBrowserModeInput"></a>
+
+```typescript
+public readonly persistentBrowserModeInput: string;
 ```
 
 - *Type:* `string`
@@ -20872,6 +20900,16 @@ public readonly applicationEnforcedRestrictionsEnabled: boolean | IResolvable;
 
 ```typescript
 public readonly cloudAppSecurityPolicy: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `persistentBrowserMode`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.property.persistentBrowserMode"></a>
+
+```typescript
+public readonly persistentBrowserMode: string;
 ```
 
 - *Type:* `string`
