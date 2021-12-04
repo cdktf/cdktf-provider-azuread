@@ -78,6 +78,8 @@ export function invitationMessageToTerraform(struct?: InvitationMessageOutputRef
 }
 
 export class InvitationMessageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -88,7 +90,7 @@ export class InvitationMessageOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): InvitationMessage | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._additionalRecipients) {
       hasAnyValues = true;
@@ -107,11 +109,13 @@ export class InvitationMessageOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: InvitationMessage | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._additionalRecipients = undefined;
       this._body = undefined;
       this._language = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._additionalRecipients = value.additionalRecipients;
       this._body = value.body;
       this._language = value.language;
@@ -199,6 +203,8 @@ export function invitationTimeoutsToTerraform(struct?: InvitationTimeoutsOutputR
 }
 
 export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -209,7 +215,7 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): InvitationTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -232,12 +238,14 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: InvitationTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;

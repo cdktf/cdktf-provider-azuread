@@ -119,6 +119,8 @@ export function dataAzureadServicePrincipalsTimeoutsToTerraform(struct?: DataAzu
 }
 
 export class DataAzureadServicePrincipalsTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -129,7 +131,7 @@ export class DataAzureadServicePrincipalsTimeoutsOutputReference extends cdktf.C
   }
 
   public get internalValue(): DataAzureadServicePrincipalsTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._read) {
       hasAnyValues = true;
@@ -140,9 +142,11 @@ export class DataAzureadServicePrincipalsTimeoutsOutputReference extends cdktf.C
 
   public set internalValue(value: DataAzureadServicePrincipalsTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._read = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._read = value.read;
     }
   }
