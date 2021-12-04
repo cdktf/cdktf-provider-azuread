@@ -267,6 +267,8 @@ export function applicationApiToTerraform(struct?: ApplicationApiOutputReference
 }
 
 export class ApplicationApiOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -277,7 +279,7 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ApplicationApi | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._knownClientApplications) {
       hasAnyValues = true;
@@ -300,12 +302,14 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ApplicationApi | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._knownClientApplications = undefined;
       this._mappedClaimsEnabled = undefined;
       this._requestedAccessTokenVersion = undefined;
       this._oauth2PermissionScope = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._knownClientApplications = value.knownClientApplications;
       this._mappedClaimsEnabled = value.mappedClaimsEnabled;
       this._requestedAccessTokenVersion = value.requestedAccessTokenVersion;
@@ -626,6 +630,8 @@ export function applicationOptionalClaimsToTerraform(struct?: ApplicationOptiona
 }
 
 export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -636,7 +642,7 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): ApplicationOptionalClaims | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessToken) {
       hasAnyValues = true;
@@ -655,11 +661,13 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: ApplicationOptionalClaims | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessToken = undefined;
       this._idToken = undefined;
       this._saml2Token = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessToken = value.accessToken;
       this._idToken = value.idToken;
       this._saml2Token = value.saml2Token;
@@ -737,6 +745,8 @@ export function applicationPublicClientToTerraform(struct?: ApplicationPublicCli
 }
 
 export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -747,7 +757,7 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): ApplicationPublicClient | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._redirectUris) {
       hasAnyValues = true;
@@ -758,9 +768,11 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: ApplicationPublicClient | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._redirectUris = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._redirectUris = value.redirectUris;
     }
   }
@@ -847,6 +859,8 @@ export function applicationSinglePageApplicationToTerraform(struct?: Application
 }
 
 export class ApplicationSinglePageApplicationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -857,7 +871,7 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): ApplicationSinglePageApplication | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._redirectUris) {
       hasAnyValues = true;
@@ -868,9 +882,11 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
 
   public set internalValue(value: ApplicationSinglePageApplication | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._redirectUris = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._redirectUris = value.redirectUris;
     }
   }
@@ -924,6 +940,8 @@ export function applicationTimeoutsToTerraform(struct?: ApplicationTimeoutsOutpu
 }
 
 export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -934,7 +952,7 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ApplicationTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -957,12 +975,14 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ApplicationTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -1061,6 +1081,8 @@ export function applicationWebImplicitGrantToTerraform(struct?: ApplicationWebIm
 }
 
 export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1071,7 +1093,7 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): ApplicationWebImplicitGrant | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._accessTokenIssuanceEnabled) {
       hasAnyValues = true;
@@ -1086,10 +1108,12 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: ApplicationWebImplicitGrant | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._accessTokenIssuanceEnabled = undefined;
       this._idTokenIssuanceEnabled = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._accessTokenIssuanceEnabled = value.accessTokenIssuanceEnabled;
       this._idTokenIssuanceEnabled = value.idTokenIssuanceEnabled;
     }
@@ -1168,6 +1192,8 @@ export function applicationWebToTerraform(struct?: ApplicationWebOutputReference
 }
 
 export class ApplicationWebOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1178,7 +1204,7 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ApplicationWeb | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._homepageUrl) {
       hasAnyValues = true;
@@ -1192,7 +1218,7 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.redirectUris = this._redirectUris;
     }
-    if (this._implicitGrant) {
+    if (this._implicitGrant?.internalValue) {
       hasAnyValues = true;
       internalValueResult.implicitGrant = this._implicitGrant?.internalValue;
     }
@@ -1201,12 +1227,14 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ApplicationWeb | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._homepageUrl = undefined;
       this._logoutUrl = undefined;
       this._redirectUris = undefined;
       this._implicitGrant.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._homepageUrl = value.homepageUrl;
       this._logoutUrl = value.logoutUrl;
       this._redirectUris = value.redirectUris;

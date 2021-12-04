@@ -68,6 +68,8 @@ export function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?
 }
 
 export class ConditionalAccessPolicyConditionsApplicationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -78,7 +80,7 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsApplications | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedApplications) {
       hasAnyValues = true;
@@ -97,11 +99,13 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
 
   public set internalValue(value: ConditionalAccessPolicyConditionsApplications | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._excludedApplications = undefined;
       this._includedApplications = undefined;
       this._includedUserActions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._excludedApplications = value.excludedApplications;
       this._includedApplications = value.includedApplications;
       this._includedUserActions = value.includedUserActions;
@@ -176,6 +180,8 @@ export function conditionalAccessPolicyConditionsDevicesFilterToTerraform(struct
 }
 
 export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -186,7 +192,7 @@ export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference exten
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsDevicesFilter | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._mode) {
       hasAnyValues = true;
@@ -201,10 +207,12 @@ export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference exten
 
   public set internalValue(value: ConditionalAccessPolicyConditionsDevicesFilter | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._mode = undefined;
       this._rule = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._mode = value.mode;
       this._rule = value.rule;
     }
@@ -256,6 +264,8 @@ export function conditionalAccessPolicyConditionsDevicesToTerraform(struct?: Con
 }
 
 export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -266,9 +276,9 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsDevices | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filter) {
+    if (this._filter?.internalValue) {
       hasAnyValues = true;
       internalValueResult.filter = this._filter?.internalValue;
     }
@@ -277,9 +287,11 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
 
   public set internalValue(value: ConditionalAccessPolicyConditionsDevices | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._filter.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._filter.internalValue = value.filter;
     }
   }
@@ -323,6 +335,8 @@ export function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: C
 }
 
 export class ConditionalAccessPolicyConditionsLocationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -333,7 +347,7 @@ export class ConditionalAccessPolicyConditionsLocationsOutputReference extends c
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsLocations | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedLocations) {
       hasAnyValues = true;
@@ -348,10 +362,12 @@ export class ConditionalAccessPolicyConditionsLocationsOutputReference extends c
 
   public set internalValue(value: ConditionalAccessPolicyConditionsLocations | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._excludedLocations = undefined;
       this._includedLocations = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._excludedLocations = value.excludedLocations;
       this._includedLocations = value.includedLocations;
     }
@@ -409,6 +425,8 @@ export function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: C
 }
 
 export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -419,7 +437,7 @@ export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends c
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsPlatforms | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedPlatforms) {
       hasAnyValues = true;
@@ -434,10 +452,12 @@ export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends c
 
   public set internalValue(value: ConditionalAccessPolicyConditionsPlatforms | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._excludedPlatforms = undefined;
       this._includedPlatforms = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._excludedPlatforms = value.excludedPlatforms;
       this._includedPlatforms = value.includedPlatforms;
     }
@@ -515,6 +535,8 @@ export function conditionalAccessPolicyConditionsUsersToTerraform(struct?: Condi
 }
 
 export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -525,7 +547,7 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsUsers | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._excludedGroups) {
       hasAnyValues = true;
@@ -556,6 +578,7 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
 
   public set internalValue(value: ConditionalAccessPolicyConditionsUsers | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._excludedGroups = undefined;
       this._excludedRoles = undefined;
       this._excludedUsers = undefined;
@@ -564,6 +587,7 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
       this._includedUsers = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._excludedGroups = value.excludedGroups;
       this._excludedRoles = value.excludedRoles;
       this._excludedUsers = value.excludedUsers;
@@ -732,6 +756,8 @@ export function conditionalAccessPolicyConditionsToTerraform(struct?: Conditiona
 }
 
 export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -742,7 +768,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): ConditionalAccessPolicyConditions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientAppTypes) {
       hasAnyValues = true;
@@ -756,23 +782,23 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.userRiskLevels = this._userRiskLevels;
     }
-    if (this._applications) {
+    if (this._applications?.internalValue) {
       hasAnyValues = true;
       internalValueResult.applications = this._applications?.internalValue;
     }
-    if (this._devices) {
+    if (this._devices?.internalValue) {
       hasAnyValues = true;
       internalValueResult.devices = this._devices?.internalValue;
     }
-    if (this._locations) {
+    if (this._locations?.internalValue) {
       hasAnyValues = true;
       internalValueResult.locations = this._locations?.internalValue;
     }
-    if (this._platforms) {
+    if (this._platforms?.internalValue) {
       hasAnyValues = true;
       internalValueResult.platforms = this._platforms?.internalValue;
     }
-    if (this._users) {
+    if (this._users?.internalValue) {
       hasAnyValues = true;
       internalValueResult.users = this._users?.internalValue;
     }
@@ -781,6 +807,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
 
   public set internalValue(value: ConditionalAccessPolicyConditions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._clientAppTypes = undefined;
       this._signInRiskLevels = undefined;
       this._userRiskLevels = undefined;
@@ -791,6 +818,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
       this._users.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._clientAppTypes = value.clientAppTypes;
       this._signInRiskLevels = value.signInRiskLevels;
       this._userRiskLevels = value.userRiskLevels;
@@ -948,6 +976,8 @@ export function conditionalAccessPolicyGrantControlsToTerraform(struct?: Conditi
 }
 
 export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -958,7 +988,7 @@ export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.C
   }
 
   public get internalValue(): ConditionalAccessPolicyGrantControls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._builtInControls) {
       hasAnyValues = true;
@@ -981,12 +1011,14 @@ export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.C
 
   public set internalValue(value: ConditionalAccessPolicyGrantControls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._builtInControls = undefined;
       this._customAuthenticationFactors = undefined;
       this._operator = undefined;
       this._termsOfUse = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._builtInControls = value.builtInControls;
       this._customAuthenticationFactors = value.customAuthenticationFactors;
       this._operator = value.operator;
@@ -1090,6 +1122,8 @@ export function conditionalAccessPolicySessionControlsToTerraform(struct?: Condi
 }
 
 export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1100,7 +1134,7 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   }
 
   public get internalValue(): ConditionalAccessPolicySessionControls | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._applicationEnforcedRestrictionsEnabled) {
       hasAnyValues = true;
@@ -1127,6 +1161,7 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
 
   public set internalValue(value: ConditionalAccessPolicySessionControls | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._applicationEnforcedRestrictionsEnabled = undefined;
       this._cloudAppSecurityPolicy = undefined;
       this._persistentBrowserMode = undefined;
@@ -1134,6 +1169,7 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
       this._signInFrequencyPeriod = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._applicationEnforcedRestrictionsEnabled = value.applicationEnforcedRestrictionsEnabled;
       this._cloudAppSecurityPolicy = value.cloudAppSecurityPolicy;
       this._persistentBrowserMode = value.persistentBrowserMode;
@@ -1255,6 +1291,8 @@ export function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalA
 }
 
 export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1265,7 +1303,7 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): ConditionalAccessPolicyTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -1288,12 +1326,14 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
 
   public set internalValue(value: ConditionalAccessPolicyTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;

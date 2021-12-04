@@ -62,6 +62,8 @@ export function dataAzureadGroupsTimeoutsToTerraform(struct?: DataAzureadGroupsT
 }
 
 export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -72,7 +74,7 @@ export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): DataAzureadGroupsTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._read) {
       hasAnyValues = true;
@@ -83,9 +85,11 @@ export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: DataAzureadGroupsTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._read = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._read = value.read;
     }
   }

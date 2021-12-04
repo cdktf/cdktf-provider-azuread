@@ -53,6 +53,8 @@ export function namedLocationCountryToTerraform(struct?: NamedLocationCountryOut
 }
 
 export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): NamedLocationCountry | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._countriesAndRegions) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: NamedLocationCountry | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._countriesAndRegions = undefined;
       this._includeUnknownCountriesAndRegions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._countriesAndRegions = value.countriesAndRegions;
       this._includeUnknownCountriesAndRegions = value.includeUnknownCountriesAndRegions;
     }
@@ -139,6 +143,8 @@ export function namedLocationIpToTerraform(struct?: NamedLocationIpOutputReferen
 }
 
 export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -149,7 +155,7 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): NamedLocationIp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ipRanges) {
       hasAnyValues = true;
@@ -164,10 +170,12 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: NamedLocationIp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ipRanges = undefined;
       this._trusted = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ipRanges = value.ipRanges;
       this._trusted = value.trusted;
     }
@@ -235,6 +243,8 @@ export function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeoutsO
 }
 
 export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -245,7 +255,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): NamedLocationTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -268,12 +278,14 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: NamedLocationTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
