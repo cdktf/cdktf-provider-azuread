@@ -58,7 +58,7 @@ export class DataAzureadApplicationTemplateTimeoutsOutputReference extends cdktf
   public get internalValue(): DataAzureadApplicationTemplateTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._read) {
+    if (this._read !== undefined) {
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }

@@ -92,15 +92,15 @@ export class InvitationMessageOutputReference extends cdktf.ComplexObject {
   public get internalValue(): InvitationMessage | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._additionalRecipients) {
+    if (this._additionalRecipients !== undefined) {
       hasAnyValues = true;
       internalValueResult.additionalRecipients = this._additionalRecipients;
     }
-    if (this._body) {
+    if (this._body !== undefined) {
       hasAnyValues = true;
       internalValueResult.body = this._body;
     }
-    if (this._language) {
+    if (this._language !== undefined) {
       hasAnyValues = true;
       internalValueResult.language = this._language;
     }
@@ -217,19 +217,19 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): InvitationTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._read) {
+    if (this._read !== undefined) {
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }

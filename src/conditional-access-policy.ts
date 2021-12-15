@@ -82,15 +82,15 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
   public get internalValue(): ConditionalAccessPolicyConditionsApplications | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._excludedApplications) {
+    if (this._excludedApplications !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludedApplications = this._excludedApplications;
     }
-    if (this._includedApplications) {
+    if (this._includedApplications !== undefined) {
       hasAnyValues = true;
       internalValueResult.includedApplications = this._includedApplications;
     }
-    if (this._includedUserActions) {
+    if (this._includedUserActions !== undefined) {
       hasAnyValues = true;
       internalValueResult.includedUserActions = this._includedUserActions;
     }
@@ -194,11 +194,11 @@ export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference exten
   public get internalValue(): ConditionalAccessPolicyConditionsDevicesFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._mode) {
+    if (this._mode !== undefined) {
       hasAnyValues = true;
       internalValueResult.mode = this._mode;
     }
-    if (this._rule) {
+    if (this._rule !== undefined) {
       hasAnyValues = true;
       internalValueResult.rule = this._rule;
     }
@@ -278,7 +278,7 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
   public get internalValue(): ConditionalAccessPolicyConditionsDevices | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filter?.internalValue) {
+    if (this._filter?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.filter = this._filter?.internalValue;
     }
@@ -349,11 +349,11 @@ export class ConditionalAccessPolicyConditionsLocationsOutputReference extends c
   public get internalValue(): ConditionalAccessPolicyConditionsLocations | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._excludedLocations) {
+    if (this._excludedLocations !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludedLocations = this._excludedLocations;
     }
-    if (this._includedLocations) {
+    if (this._includedLocations !== undefined) {
       hasAnyValues = true;
       internalValueResult.includedLocations = this._includedLocations;
     }
@@ -439,11 +439,11 @@ export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends c
   public get internalValue(): ConditionalAccessPolicyConditionsPlatforms | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._excludedPlatforms) {
+    if (this._excludedPlatforms !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludedPlatforms = this._excludedPlatforms;
     }
-    if (this._includedPlatforms) {
+    if (this._includedPlatforms !== undefined) {
       hasAnyValues = true;
       internalValueResult.includedPlatforms = this._includedPlatforms;
     }
@@ -549,27 +549,27 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
   public get internalValue(): ConditionalAccessPolicyConditionsUsers | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._excludedGroups) {
+    if (this._excludedGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludedGroups = this._excludedGroups;
     }
-    if (this._excludedRoles) {
+    if (this._excludedRoles !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludedRoles = this._excludedRoles;
     }
-    if (this._excludedUsers) {
+    if (this._excludedUsers !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludedUsers = this._excludedUsers;
     }
-    if (this._includedGroups) {
+    if (this._includedGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.includedGroups = this._includedGroups;
     }
-    if (this._includedRoles) {
+    if (this._includedRoles !== undefined) {
       hasAnyValues = true;
       internalValueResult.includedRoles = this._includedRoles;
     }
-    if (this._includedUsers) {
+    if (this._includedUsers !== undefined) {
       hasAnyValues = true;
       internalValueResult.includedUsers = this._includedUsers;
     }
@@ -770,35 +770,35 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   public get internalValue(): ConditionalAccessPolicyConditions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientAppTypes) {
+    if (this._clientAppTypes !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientAppTypes = this._clientAppTypes;
     }
-    if (this._signInRiskLevels) {
+    if (this._signInRiskLevels !== undefined) {
       hasAnyValues = true;
       internalValueResult.signInRiskLevels = this._signInRiskLevels;
     }
-    if (this._userRiskLevels) {
+    if (this._userRiskLevels !== undefined) {
       hasAnyValues = true;
       internalValueResult.userRiskLevels = this._userRiskLevels;
     }
-    if (this._applications?.internalValue) {
+    if (this._applications?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.applications = this._applications?.internalValue;
     }
-    if (this._devices?.internalValue) {
+    if (this._devices?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.devices = this._devices?.internalValue;
     }
-    if (this._locations?.internalValue) {
+    if (this._locations?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.locations = this._locations?.internalValue;
     }
-    if (this._platforms?.internalValue) {
+    if (this._platforms?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.platforms = this._platforms?.internalValue;
     }
-    if (this._users?.internalValue) {
+    if (this._users?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.users = this._users?.internalValue;
     }
@@ -990,19 +990,19 @@ export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.C
   public get internalValue(): ConditionalAccessPolicyGrantControls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._builtInControls) {
+    if (this._builtInControls !== undefined) {
       hasAnyValues = true;
       internalValueResult.builtInControls = this._builtInControls;
     }
-    if (this._customAuthenticationFactors) {
+    if (this._customAuthenticationFactors !== undefined) {
       hasAnyValues = true;
       internalValueResult.customAuthenticationFactors = this._customAuthenticationFactors;
     }
-    if (this._operator) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._termsOfUse) {
+    if (this._termsOfUse !== undefined) {
       hasAnyValues = true;
       internalValueResult.termsOfUse = this._termsOfUse;
     }
@@ -1136,23 +1136,23 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   public get internalValue(): ConditionalAccessPolicySessionControls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._applicationEnforcedRestrictionsEnabled) {
+    if (this._applicationEnforcedRestrictionsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.applicationEnforcedRestrictionsEnabled = this._applicationEnforcedRestrictionsEnabled;
     }
-    if (this._cloudAppSecurityPolicy) {
+    if (this._cloudAppSecurityPolicy !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudAppSecurityPolicy = this._cloudAppSecurityPolicy;
     }
-    if (this._persistentBrowserMode) {
+    if (this._persistentBrowserMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.persistentBrowserMode = this._persistentBrowserMode;
     }
-    if (this._signInFrequency) {
+    if (this._signInFrequency !== undefined) {
       hasAnyValues = true;
       internalValueResult.signInFrequency = this._signInFrequency;
     }
-    if (this._signInFrequencyPeriod) {
+    if (this._signInFrequencyPeriod !== undefined) {
       hasAnyValues = true;
       internalValueResult.signInFrequencyPeriod = this._signInFrequencyPeriod;
     }
@@ -1305,19 +1305,19 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
   public get internalValue(): ConditionalAccessPolicyTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._read) {
+    if (this._read !== undefined) {
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
