@@ -124,7 +124,7 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
   public get internalValue(): DataAzureadDomainsTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._read) {
+    if (this._read !== undefined) {
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }

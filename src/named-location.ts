@@ -67,11 +67,11 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   public get internalValue(): NamedLocationCountry | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._countriesAndRegions) {
+    if (this._countriesAndRegions !== undefined) {
       hasAnyValues = true;
       internalValueResult.countriesAndRegions = this._countriesAndRegions;
     }
-    if (this._includeUnknownCountriesAndRegions) {
+    if (this._includeUnknownCountriesAndRegions !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeUnknownCountriesAndRegions = this._includeUnknownCountriesAndRegions;
     }
@@ -157,11 +157,11 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   public get internalValue(): NamedLocationIp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ipRanges) {
+    if (this._ipRanges !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipRanges = this._ipRanges;
     }
-    if (this._trusted) {
+    if (this._trusted !== undefined) {
       hasAnyValues = true;
       internalValueResult.trusted = this._trusted;
     }
@@ -257,19 +257,19 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): NamedLocationTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._read) {
+    if (this._read !== undefined) {
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }

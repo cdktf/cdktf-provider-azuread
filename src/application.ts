@@ -281,19 +281,19 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   public get internalValue(): ApplicationApi | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._knownClientApplications) {
+    if (this._knownClientApplications !== undefined) {
       hasAnyValues = true;
       internalValueResult.knownClientApplications = this._knownClientApplications;
     }
-    if (this._mappedClaimsEnabled) {
+    if (this._mappedClaimsEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.mappedClaimsEnabled = this._mappedClaimsEnabled;
     }
-    if (this._requestedAccessTokenVersion) {
+    if (this._requestedAccessTokenVersion !== undefined) {
       hasAnyValues = true;
       internalValueResult.requestedAccessTokenVersion = this._requestedAccessTokenVersion;
     }
-    if (this._oauth2PermissionScope) {
+    if (this._oauth2PermissionScope !== undefined) {
       hasAnyValues = true;
       internalValueResult.oauth2PermissionScope = this._oauth2PermissionScope;
     }
@@ -644,15 +644,15 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   public get internalValue(): ApplicationOptionalClaims | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessToken) {
+    if (this._accessToken !== undefined) {
       hasAnyValues = true;
       internalValueResult.accessToken = this._accessToken;
     }
-    if (this._idToken) {
+    if (this._idToken !== undefined) {
       hasAnyValues = true;
       internalValueResult.idToken = this._idToken;
     }
-    if (this._saml2Token) {
+    if (this._saml2Token !== undefined) {
       hasAnyValues = true;
       internalValueResult.saml2Token = this._saml2Token;
     }
@@ -759,7 +759,7 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
   public get internalValue(): ApplicationPublicClient | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._redirectUris) {
+    if (this._redirectUris !== undefined) {
       hasAnyValues = true;
       internalValueResult.redirectUris = this._redirectUris;
     }
@@ -873,7 +873,7 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
   public get internalValue(): ApplicationSinglePageApplication | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._redirectUris) {
+    if (this._redirectUris !== undefined) {
       hasAnyValues = true;
       internalValueResult.redirectUris = this._redirectUris;
     }
@@ -954,19 +954,19 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): ApplicationTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._read) {
+    if (this._read !== undefined) {
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -1095,11 +1095,11 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   public get internalValue(): ApplicationWebImplicitGrant | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessTokenIssuanceEnabled) {
+    if (this._accessTokenIssuanceEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.accessTokenIssuanceEnabled = this._accessTokenIssuanceEnabled;
     }
-    if (this._idTokenIssuanceEnabled) {
+    if (this._idTokenIssuanceEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.idTokenIssuanceEnabled = this._idTokenIssuanceEnabled;
     }
@@ -1206,19 +1206,19 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   public get internalValue(): ApplicationWeb | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._homepageUrl) {
+    if (this._homepageUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.homepageUrl = this._homepageUrl;
     }
-    if (this._logoutUrl) {
+    if (this._logoutUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.logoutUrl = this._logoutUrl;
     }
-    if (this._redirectUris) {
+    if (this._redirectUris !== undefined) {
       hasAnyValues = true;
       internalValueResult.redirectUris = this._redirectUris;
     }
-    if (this._implicitGrant?.internalValue) {
+    if (this._implicitGrant?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.implicitGrant = this._implicitGrant?.internalValue;
     }
