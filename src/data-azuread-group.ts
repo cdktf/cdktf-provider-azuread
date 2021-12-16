@@ -38,6 +38,18 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: DataAzureadGroupTimeouts;
 }
+export class DataAzureadGroupDynamicMembership extends cdktf.ComplexComputedList {
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled') as any;
+  }
+
+  // rule - computed: true, optional: false, required: false
+  public get rule() {
+    return this.getStringAttribute('rule');
+  }
+}
 export interface DataAzureadGroupTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#read DataAzureadGroup#read}
@@ -177,6 +189,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // dynamic_membership - computed: true, optional: false, required: false
+  public dynamicMembership(index: string) {
+    return new DataAzureadGroupDynamicMembership(this, 'dynamic_membership', index);
   }
 
   // id - computed: true, optional: true, required: false
