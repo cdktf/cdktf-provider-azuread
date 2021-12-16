@@ -4133,6 +4133,18 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `dynamicMembership` <a name="@cdktf/provider-azuread.DataAzureadGroup.dynamicMembership"></a>
+
+```typescript
+public dynamicMembership(index: string)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.parameter.index"></a>
+
+- *Type:* `string`
+
+---
+
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadGroup.putTimeouts"></a>
 
 ```typescript
@@ -6541,6 +6553,18 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `putDynamicMembership` <a name="@cdktf/provider-azuread.Group.putDynamicMembership"></a>
+
+```typescript
+public putDynamicMembership(value: GroupDynamicMembership)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.GroupDynamicMembership`](#@cdktf/provider-azuread.GroupDynamicMembership)
+
+---
+
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.Group.putTimeouts"></a>
 
 ```typescript
@@ -6569,6 +6593,12 @@ public resetBehaviors()
 
 ```typescript
 public resetDescription()
+```
+
+##### `resetDynamicMembership` <a name="@cdktf/provider-azuread.Group.resetDynamicMembership"></a>
+
+```typescript
+public resetDynamicMembership()
 ```
 
 ##### `resetMailEnabled` <a name="@cdktf/provider-azuread.Group.resetMailEnabled"></a>
@@ -6639,6 +6669,16 @@ public resetVisibility()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `dynamicMembership`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.dynamicMembership"></a>
+
+```typescript
+public readonly dynamicMembership: GroupDynamicMembershipOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.GroupDynamicMembershipOutputReference`](#@cdktf/provider-azuread.GroupDynamicMembershipOutputReference)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.id"></a>
 
@@ -6787,6 +6827,16 @@ public readonly displayNameInput: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `dynamicMembershipInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.dynamicMembershipInput"></a>
+
+```typescript
+public readonly dynamicMembershipInput: GroupDynamicMembership;
+```
+
+- *Type:* [`@cdktf/provider-azuread.GroupDynamicMembership`](#@cdktf/provider-azuread.GroupDynamicMembership)
 
 ---
 
@@ -15354,6 +15404,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `dynamicMembership`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.dynamicMembership"></a>
+
+```typescript
+public readonly dynamicMembership: GroupDynamicMembership;
+```
+
+- *Type:* [`@cdktf/provider-azuread.GroupDynamicMembership`](#@cdktf/provider-azuread.GroupDynamicMembership)
+
+dynamic_membership block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#dynamic_membership Group#dynamic_membership}
+
+---
+
 ##### `mailEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.mailEnabled"></a>
 
 ```typescript
@@ -15496,7 +15560,7 @@ public readonly types: string[];
 
 A set of group types to configure for the group.
 
-The only supported type is `Unified`, which specifies a Microsoft 365 group. Required when `mail_enabled` is true
+`Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#types Group#types}
 
@@ -15513,6 +15577,42 @@ public readonly visibility: string;
 Specifies the group join policy and group content visibility.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#visibility Group#visibility}
+
+---
+
+### GroupDynamicMembership <a name="@cdktf/provider-azuread.GroupDynamicMembership"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { GroupDynamicMembership } from '@cdktf/provider-azuread'
+
+const groupDynamicMembership: GroupDynamicMembership = { ... }
+```
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembership.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#enabled Group#enabled}.
+
+---
+
+##### `rule`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembership.property.rule"></a>
+
+```typescript
+public readonly rule: string;
+```
+
+- *Type:* `string`
+
+Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#rule Group#rule}
 
 ---
 
@@ -22700,6 +22800,59 @@ public readonly internalValue: DataAzureadDomainsTimeouts;
 ---
 
 
+### DataAzureadGroupDynamicMembership <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.Initializer"></a>
+
+```typescript
+import { DataAzureadGroupDynamicMembership } from '@cdktf/provider-azuread'
+
+new DataAzureadGroupDynamicMembership(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.property.enabled"></a>
+
+```typescript
+public readonly enabled: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `rule`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.property.rule"></a>
+
+```typescript
+public readonly rule: string;
+```
+
+- *Type:* `string`
+
+---
+
+
 ### DataAzureadGroupsTimeoutsOutputReference <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference"></a>
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.Initializer"></a>
@@ -24131,6 +24284,95 @@ public readonly internalValue: DirectoryRoleTimeouts;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DirectoryRoleTimeouts`](#@cdktf/provider-azuread.DirectoryRoleTimeouts)
+
+---
+
+
+### GroupDynamicMembershipOutputReference <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.Initializer"></a>
+
+```typescript
+import { GroupDynamicMembershipOutputReference } from '@cdktf/provider-azuread'
+
+new GroupDynamicMembershipOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `enabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `ruleInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.property.ruleInput"></a>
+
+```typescript
+public readonly ruleInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `rule`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.property.rule"></a>
+
+```typescript
+public readonly rule: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GroupDynamicMembership;
+```
+
+- *Type:* [`@cdktf/provider-azuread.GroupDynamicMembership`](#@cdktf/provider-azuread.GroupDynamicMembership)
 
 ---
 

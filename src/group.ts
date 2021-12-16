@@ -80,7 +80,7 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly theme?: string;
   /**
-  * A set of group types to configure for the group. The only supported type is `Unified`, which specifies a Microsoft 365 group. Required when `mail_enabled` is true
+  * A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#types Group#types}
   */
@@ -92,11 +92,106 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly visibility?: string;
   /**
+  * dynamic_membership block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#dynamic_membership Group#dynamic_membership}
+  */
+  readonly dynamicMembership?: GroupDynamicMembership;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#timeouts Group#timeouts}
   */
   readonly timeouts?: GroupTimeouts;
+}
+export interface GroupDynamicMembership {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#enabled Group#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#rule Group#rule}
+  */
+  readonly rule: string;
+}
+
+export function groupDynamicMembershipToTerraform(struct?: GroupDynamicMembershipOutputReference | GroupDynamicMembership): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    rule: cdktf.stringToTerraform(struct!.rule),
+  }
+}
+
+export class GroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): GroupDynamicMembership | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._rule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GroupDynamicMembership | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._rule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._rule = value.rule;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled') as any;
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // rule - computed: false, optional: false, required: true
+  private _rule?: string; 
+  public get rule() {
+    return this.getStringAttribute('rule');
+  }
+  public set rule(value: string) {
+    this._rule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule;
+  }
 }
 export interface GroupTimeouts {
   /**
@@ -292,6 +387,7 @@ export class Group extends cdktf.TerraformResource {
     this._theme = config.theme;
     this._types = config.types;
     this._visibility = config.visibility;
+    this._dynamicMembership.internalValue = config.dynamicMembership;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -570,6 +666,22 @@ export class Group extends cdktf.TerraformResource {
     return this._visibility;
   }
 
+  // dynamic_membership - computed: false, optional: true, required: false
+  private _dynamicMembership = new GroupDynamicMembershipOutputReference(this as any, "dynamic_membership", true);
+  public get dynamicMembership() {
+    return this._dynamicMembership;
+  }
+  public putDynamicMembership(value: GroupDynamicMembership) {
+    this._dynamicMembership.internalValue = value;
+  }
+  public resetDynamicMembership() {
+    this._dynamicMembership.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamicMembershipInput() {
+    return this._dynamicMembership.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GroupTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
@@ -606,6 +718,7 @@ export class Group extends cdktf.TerraformResource {
       theme: cdktf.stringToTerraform(this._theme),
       types: cdktf.listMapper(cdktf.stringToTerraform)(this._types),
       visibility: cdktf.stringToTerraform(this._visibility),
+      dynamic_membership: groupDynamicMembershipToTerraform(this._dynamicMembership.internalValue),
       timeouts: groupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
