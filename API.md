@@ -1524,6 +1524,239 @@ public readonly value: string;
 
 ---
 
+### ApplicationFederatedIdentityCredential <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html azuread_application_federated_identity_credential}.
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.Initializer"></a>
+
+```typescript
+import { ApplicationFederatedIdentityCredential } from '@cdktf/provider-azuread'
+
+new ApplicationFederatedIdentityCredential(scope: Construct, id: string, config: ApplicationFederatedIdentityCredentialConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putTimeouts` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: ApplicationFederatedIdentityCredentialTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
+
+---
+
+##### `resetDescription` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.resetDescription"></a>
+
+```typescript
+public resetDescription()
+```
+
+##### `resetTimeouts` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `credentialId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.credentialId"></a>
+
+```typescript
+public readonly credentialId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: ApplicationFederatedIdentityCredentialTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference)
+
+---
+
+##### `applicationObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.applicationObjectIdInput"></a>
+
+```typescript
+public readonly applicationObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `audiencesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.audiencesInput"></a>
+
+```typescript
+public readonly audiencesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.displayNameInput"></a>
+
+```typescript
+public readonly displayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `issuerInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.issuerInput"></a>
+
+```typescript
+public readonly issuerInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `subjectInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.subjectInput"></a>
+
+```typescript
+public readonly subjectInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: ApplicationFederatedIdentityCredentialTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
+
+---
+
+##### `applicationObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.applicationObjectId"></a>
+
+```typescript
+public readonly applicationObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `audiences`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.audiences"></a>
+
+```typescript
+public readonly audiences: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `issuer`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.issuer"></a>
+
+```typescript
+public readonly issuer: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `subject`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.subject"></a>
+
+```typescript
+public readonly subject: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### ApplicationPassword <a name="@cdktf/provider-azuread.ApplicationPassword"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html azuread_application_password}.
@@ -8842,10 +9075,34 @@ public putTimeouts(value: ServicePrincipalPasswordTimeouts)
 
 ---
 
+##### `resetDisplayName` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetDisplayName"></a>
+
+```typescript
+public resetDisplayName()
+```
+
+##### `resetEndDate` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetEndDate"></a>
+
+```typescript
+public resetEndDate()
+```
+
+##### `resetEndDateRelative` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetEndDateRelative"></a>
+
+```typescript
+public resetEndDateRelative()
+```
+
 ##### `resetRotateWhenChanged` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetRotateWhenChanged"></a>
 
 ```typescript
 public resetRotateWhenChanged()
+```
+
+##### `resetStartDate` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetStartDate"></a>
+
+```typescript
+public resetStartDate()
 ```
 
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetTimeouts"></a>
@@ -8856,26 +9113,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.displayName"></a>
-
-```typescript
-public readonly displayName: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `endDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.endDate"></a>
-
-```typescript
-public readonly endDate: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.id"></a>
 
@@ -8891,16 +9128,6 @@ public readonly id: string;
 
 ```typescript
 public readonly keyId: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `startDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.startDate"></a>
-
-```typescript
-public readonly startDate: string;
 ```
 
 - *Type:* `string`
@@ -8927,6 +9154,36 @@ public readonly value: string;
 
 ---
 
+##### `displayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.displayNameInput"></a>
+
+```typescript
+public readonly displayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endDateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.endDateInput"></a>
+
+```typescript
+public readonly endDateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endDateRelativeInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.endDateRelativeInput"></a>
+
+```typescript
+public readonly endDateRelativeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `rotateWhenChangedInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.rotateWhenChangedInput"></a>
 
 ```typescript
@@ -8947,6 +9204,16 @@ public readonly servicePrincipalIdInput: string;
 
 ---
 
+##### `startDateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.startDateInput"></a>
+
+```typescript
+public readonly startDateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.timeoutsInput"></a>
 
 ```typescript
@@ -8954,6 +9221,36 @@ public readonly timeoutsInput: ServicePrincipalPasswordTimeouts;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts`](#@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts)
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.endDate"></a>
+
+```typescript
+public readonly endDate: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endDateRelative`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.endDateRelative"></a>
+
+```typescript
+public readonly endDateRelative: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -8971,6 +9268,16 @@ public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
 
 ```typescript
 public readonly servicePrincipalId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `startDate`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
 ```
 
 - *Type:* `string`
@@ -11439,6 +11746,218 @@ public readonly hide: boolean | IResolvable;
 Whether this application is invisible to users in My Apps and Office 365 Launcher.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#hide Application#hide}
+
+---
+
+### ApplicationFederatedIdentityCredentialConfig <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ApplicationFederatedIdentityCredentialConfig } from '@cdktf/provider-azuread'
+
+const applicationFederatedIdentityCredentialConfig: ApplicationFederatedIdentityCredentialConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `applicationObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.applicationObjectId"></a>
+
+```typescript
+public readonly applicationObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the application for which this federated identity credential should be created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#application_object_id ApplicationFederatedIdentityCredential#application_object_id}
+
+---
+
+##### `audiences`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.audiences"></a>
+
+```typescript
+public readonly audiences: string[];
+```
+
+- *Type:* `string`[]
+
+List of audiences that can appear in the external token.
+
+This specifies what should be accepted in the `aud` claim of incoming tokens.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#audiences ApplicationFederatedIdentityCredential#audiences}
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+A unique display name for the federated identity credential.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#display_name ApplicationFederatedIdentityCredential#display_name}
+
+---
+
+##### `issuer`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.issuer"></a>
+
+```typescript
+public readonly issuer: string;
+```
+
+- *Type:* `string`
+
+The URL of the external identity provider, which must match the issuer claim of the external token being exchanged.
+
+The combination of the values of issuer and subject must be unique on the app.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#issuer ApplicationFederatedIdentityCredential#issuer}
+
+---
+
+##### `subject`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.subject"></a>
+
+```typescript
+public readonly subject: string;
+```
+
+- *Type:* `string`
+
+The identifier of the external software workload within the external identity provider.
+
+The combination of issuer and subject must be unique on the app.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#subject ApplicationFederatedIdentityCredential#subject}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+A description for the federated identity credential.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#description ApplicationFederatedIdentityCredential#description}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: ApplicationFederatedIdentityCredentialTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#timeouts ApplicationFederatedIdentityCredential#timeouts}
+
+---
+
+### ApplicationFederatedIdentityCredentialTimeouts <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ApplicationFederatedIdentityCredentialTimeouts } from '@cdktf/provider-azuread'
+
+const applicationFederatedIdentityCredentialTimeouts: ApplicationFederatedIdentityCredentialTimeouts = { ... }
+```
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#create ApplicationFederatedIdentityCredential#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#delete ApplicationFederatedIdentityCredential#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#read ApplicationFederatedIdentityCredential#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#update ApplicationFederatedIdentityCredential#update}.
 
 ---
 
@@ -17190,6 +17709,50 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `displayName`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+A display name for the password.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#display_name ServicePrincipalPassword#display_name}
+
+---
+
+##### `endDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.endDate"></a>
+
+```typescript
+public readonly endDate: string;
+```
+
+- *Type:* `string`
+
+The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#end_date ServicePrincipalPassword#end_date}
+
+---
+
+##### `endDateRelative`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.endDateRelative"></a>
+
+```typescript
+public readonly endDateRelative: string;
+```
+
+- *Type:* `string`
+
+A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`.
+
+Changing this field forces a new resource to be created
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#end_date_relative ServicePrincipalPassword#end_date_relative}
+
+---
+
 ##### `rotateWhenChanged`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.rotateWhenChanged"></a>
 
 ```typescript
@@ -17201,6 +17764,20 @@ public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
 Arbitrary map of values that, when changed, will trigger rotation of the password.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#rotate_when_changed ServicePrincipalPassword#rotate_when_changed}
+
+---
+
+##### `startDate`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
+```
+
+- *Type:* `string`
+
+The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#start_date ServicePrincipalPassword#start_date}
 
 ---
 
@@ -18598,6 +19175,160 @@ public readonly internalValue: ApplicationCertificateTimeouts;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationCertificateTimeouts`](#@cdktf/provider-azuread.ApplicationCertificateTimeouts)
+
+---
+
+
+### ApplicationFederatedIdentityCredentialTimeoutsOutputReference <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationFederatedIdentityCredentialTimeoutsOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationFederatedIdentityCredentialTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCreate` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+##### `resetDelete` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete()
+```
+
+##### `resetRead` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead()
+```
+
+##### `resetUpdate` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationFederatedIdentityCredentialTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
 
 ---
 

@@ -4,6 +4,7 @@ export * from './administrative-unit-member';
 export * from './app-role-assignment';
 export * from './application';
 export * from './application-certificate';
+export * from './application-federated-identity-credential';
 export * from './application-password';
 export * from './application-pre-authorized';
 export * from './conditional-access-policy';
