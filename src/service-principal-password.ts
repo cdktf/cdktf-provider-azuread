@@ -8,6 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface ServicePrincipalPasswordConfig extends cdktf.TerraformMetaArguments {
   /**
+  * A display name for the password
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#display_name ServicePrincipalPassword#display_name}
+  */
+  readonly displayName?: string;
+  /**
+  * The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#end_date ServicePrincipalPassword#end_date}
+  */
+  readonly endDate?: string;
+  /**
+  * A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#end_date_relative ServicePrincipalPassword#end_date_relative}
+  */
+  readonly endDateRelative?: string;
+  /**
   * Arbitrary map of values that, when changed, will trigger rotation of the password
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#rotate_when_changed ServicePrincipalPassword#rotate_when_changed}
@@ -19,6 +37,12 @@ export interface ServicePrincipalPasswordConfig extends cdktf.TerraformMetaArgum
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#service_principal_id ServicePrincipalPassword#service_principal_id}
   */
   readonly servicePrincipalId: string;
+  /**
+  * The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#start_date ServicePrincipalPassword#start_date}
+  */
+  readonly startDate?: string;
   /**
   * timeouts block
   * 
@@ -206,8 +230,12 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._displayName = config.displayName;
+    this._endDate = config.endDate;
+    this._endDateRelative = config.endDateRelative;
     this._rotateWhenChanged = config.rotateWhenChanged;
     this._servicePrincipalId = config.servicePrincipalId;
+    this._startDate = config.startDate;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -215,14 +243,52 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // display_name - computed: true, optional: false, required: false
+  // display_name - computed: true, optional: true, required: false
+  private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
 
-  // end_date - computed: true, optional: false, required: false
+  // end_date - computed: true, optional: true, required: false
+  private _endDate?: string; 
   public get endDate() {
     return this.getStringAttribute('end_date');
+  }
+  public set endDate(value: string) {
+    this._endDate = value;
+  }
+  public resetEndDate() {
+    this._endDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endDateInput() {
+    return this._endDate;
+  }
+
+  // end_date_relative - computed: false, optional: true, required: false
+  private _endDateRelative?: string; 
+  public get endDateRelative() {
+    return this.getStringAttribute('end_date_relative');
+  }
+  public set endDateRelative(value: string) {
+    this._endDateRelative = value;
+  }
+  public resetEndDateRelative() {
+    this._endDateRelative = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endDateRelativeInput() {
+    return this._endDateRelative;
   }
 
   // id - computed: true, optional: true, required: false
@@ -265,9 +331,20 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
     return this._servicePrincipalId;
   }
 
-  // start_date - computed: true, optional: false, required: false
+  // start_date - computed: true, optional: true, required: false
+  private _startDate?: string; 
   public get startDate() {
     return this.getStringAttribute('start_date');
+  }
+  public set startDate(value: string) {
+    this._startDate = value;
+  }
+  public resetStartDate() {
+    this._startDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startDateInput() {
+    return this._startDate;
   }
 
   // value - computed: true, optional: false, required: false
@@ -297,8 +374,12 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      display_name: cdktf.stringToTerraform(this._displayName),
+      end_date: cdktf.stringToTerraform(this._endDate),
+      end_date_relative: cdktf.stringToTerraform(this._endDateRelative),
       rotate_when_changed: cdktf.hashMapper(cdktf.anyToTerraform)(this._rotateWhenChanged),
       service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
+      start_date: cdktf.stringToTerraform(this._startDate),
       timeouts: servicePrincipalPasswordTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
