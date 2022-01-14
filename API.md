@@ -4771,6 +4771,12 @@ public putTimeouts(value: DataAzureadGroupsTimeouts)
 
 ---
 
+##### `resetDisplayNamePrefix` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetDisplayNamePrefix"></a>
+
+```typescript
+public resetDisplayNamePrefix()
+```
+
 ##### `resetDisplayNames` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetDisplayNames"></a>
 
 ```typescript
@@ -4827,6 +4833,16 @@ public readonly timeouts: DataAzureadGroupsTimeoutsOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference`](#@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference)
+
+---
+
+##### `displayNamePrefixInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.displayNamePrefixInput"></a>
+
+```typescript
+public readonly displayNamePrefixInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -4887,6 +4903,16 @@ public readonly timeoutsInput: DataAzureadGroupsTimeouts;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadGroupsTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupsTimeouts)
+
+---
+
+##### `displayNamePrefix`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.displayNamePrefix"></a>
+
+```typescript
+public readonly displayNamePrefix: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -14808,6 +14834,20 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `displayNamePrefix`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.displayNamePrefix"></a>
+
+```typescript
+public readonly displayNamePrefix: string;
+```
+
+- *Type:* `string`
+
+Common display name prefix of the groups.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#display_name_prefix DataAzureadGroups#display_name_prefix}
 
 ---
 
