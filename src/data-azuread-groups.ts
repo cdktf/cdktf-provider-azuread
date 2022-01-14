@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Common display name prefix of the groups
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#display_name_prefix DataAzureadGroups#display_name_prefix}
+  */
+  readonly displayNamePrefix?: string;
+  /**
   * The display names of the groups
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#display_names DataAzureadGroups#display_names}
@@ -143,6 +149,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._displayNamePrefix = config.displayNamePrefix;
     this._displayNames = config.displayNames;
     this._mailEnabled = config.mailEnabled;
     this._objectIds = config.objectIds;
@@ -154,6 +161,22 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // display_name_prefix - computed: true, optional: true, required: false
+  private _displayNamePrefix?: string; 
+  public get displayNamePrefix() {
+    return this.getStringAttribute('display_name_prefix');
+  }
+  public set displayNamePrefix(value: string) {
+    this._displayNamePrefix = value;
+  }
+  public resetDisplayNamePrefix() {
+    this._displayNamePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNamePrefixInput() {
+    return this._displayNamePrefix;
+  }
 
   // display_names - computed: true, optional: true, required: false
   private _displayNames?: string[]; 
@@ -262,6 +285,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      display_name_prefix: cdktf.stringToTerraform(this._displayNamePrefix),
       display_names: cdktf.listMapper(cdktf.stringToTerraform)(this._displayNames),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       object_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._objectIds),
