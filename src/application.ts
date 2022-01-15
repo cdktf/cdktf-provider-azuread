@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/application.html
+// https://www.terraform.io/docs/providers/azuread/r/application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,151 +10,151 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether this application supports device authentication without a user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#device_only_auth_enabled Application#device_only_auth_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#device_only_auth_enabled Application#device_only_auth_enabled}
   */
   readonly deviceOnlyAuthEnabled?: boolean | cdktf.IResolvable;
   /**
   * The display name for the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#display_name Application#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#display_name Application#display_name}
   */
   readonly displayName: string;
   /**
   * Specifies whether the application is a public client. Appropriate for apps using token grant flows that don't use a redirect URI
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#fallback_public_client_enabled Application#fallback_public_client_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
   */
   readonly fallbackPublicClientEnabled?: boolean | cdktf.IResolvable;
   /**
   * Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#group_membership_claims Application#group_membership_claims}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#group_membership_claims Application#group_membership_claims}
   */
   readonly groupMembershipClaims?: string[];
   /**
   * The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#identifier_uris Application#identifier_uris}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#identifier_uris Application#identifier_uris}
   */
   readonly identifierUris?: string[];
   /**
   * Base64 encoded logo image in gif, png or jpeg format
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#logo_image Application#logo_image}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#logo_image Application#logo_image}
   */
   readonly logoImage?: string;
   /**
   * URL of the application's marketing page
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#marketing_url Application#marketing_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#marketing_url Application#marketing_url}
   */
   readonly marketingUrl?: string;
   /**
   * Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#oauth2_post_response_required Application#oauth2_post_response_required}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#oauth2_post_response_required Application#oauth2_post_response_required}
   */
   readonly oauth2PostResponseRequired?: boolean | cdktf.IResolvable;
   /**
   * A list of object IDs of principals that will be granted ownership of the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#owners Application#owners}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#owners Application#owners}
   */
   readonly owners?: string[];
   /**
   * If `true`, will return an error if an existing application is found with the same name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#prevent_duplicate_names Application#prevent_duplicate_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#prevent_duplicate_names Application#prevent_duplicate_names}
   */
   readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
   /**
   * URL of the application's privacy statement
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#privacy_statement_url Application#privacy_statement_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#privacy_statement_url Application#privacy_statement_url}
   */
   readonly privacyStatementUrl?: string;
   /**
   * The Microsoft account types that are supported for the current application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#sign_in_audience Application#sign_in_audience}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#sign_in_audience Application#sign_in_audience}
   */
   readonly signInAudience?: string;
   /**
   * URL of the application's support page
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#support_url Application#support_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#support_url Application#support_url}
   */
   readonly supportUrl?: string;
   /**
   * A set of tags to apply to the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#tags Application#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#tags Application#tags}
   */
   readonly tags?: string[];
   /**
   * Unique ID of the application template from which this application is created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#template_id Application#template_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#template_id Application#template_id}
   */
   readonly templateId?: string;
   /**
   * URL of the application's terms of service statement
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#terms_of_service_url Application#terms_of_service_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#terms_of_service_url Application#terms_of_service_url}
   */
   readonly termsOfServiceUrl?: string;
   /**
   * api block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#api Application#api}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#api Application#api}
   */
   readonly api?: ApplicationApi;
   /**
   * app_role block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#app_role Application#app_role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#app_role Application#app_role}
   */
   readonly appRole?: ApplicationAppRole[];
   /**
   * feature_tags block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#feature_tags Application#feature_tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#feature_tags Application#feature_tags}
   */
   readonly featureTags?: ApplicationFeatureTags[];
   /**
   * optional_claims block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#optional_claims Application#optional_claims}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#optional_claims Application#optional_claims}
   */
   readonly optionalClaims?: ApplicationOptionalClaims;
   /**
   * public_client block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#public_client Application#public_client}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#public_client Application#public_client}
   */
   readonly publicClient?: ApplicationPublicClient;
   /**
   * required_resource_access block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#required_resource_access Application#required_resource_access}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
   */
   readonly requiredResourceAccess?: ApplicationRequiredResourceAccess[];
   /**
   * single_page_application block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#single_page_application Application#single_page_application}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#single_page_application Application#single_page_application}
   */
   readonly singlePageApplication?: ApplicationSinglePageApplication;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#timeouts Application#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#timeouts Application#timeouts}
   */
   readonly timeouts?: ApplicationTimeouts;
   /**
   * web block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#web Application#web}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#web Application#web}
   */
   readonly web?: ApplicationWeb;
 }
@@ -162,49 +162,49 @@ export interface ApplicationApiOauth2PermissionScope {
   /**
   * Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#admin_consent_description Application#admin_consent_description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#admin_consent_description Application#admin_consent_description}
   */
   readonly adminConsentDescription?: string;
   /**
   * Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#admin_consent_display_name Application#admin_consent_display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#admin_consent_display_name Application#admin_consent_display_name}
   */
   readonly adminConsentDisplayName?: string;
   /**
   * Determines if the permission scope is enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enabled Application#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#enabled Application#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The unique identifier of the delegated permission
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id Application#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
   */
   readonly id: string;
   /**
   * Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#type Application#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#type Application#type}
   */
   readonly type?: string;
   /**
   * Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#user_consent_description Application#user_consent_description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#user_consent_description Application#user_consent_description}
   */
   readonly userConsentDescription?: string;
   /**
   * Display name for the delegated permission that appears in the end user consent experience
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#user_consent_display_name Application#user_consent_display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#user_consent_display_name Application#user_consent_display_name}
   */
   readonly userConsentDisplayName?: string;
   /**
   * The value that is used for the `scp` claim in OAuth 2.0 access tokens
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#value Application#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#value Application#value}
   */
   readonly value?: string;
 }
@@ -230,25 +230,25 @@ export interface ApplicationApi {
   /**
   * Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#known_client_applications Application#known_client_applications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#known_client_applications Application#known_client_applications}
   */
   readonly knownClientApplications?: string[];
   /**
   * Allows an application to use claims mapping without specifying a custom signing key
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#mapped_claims_enabled Application#mapped_claims_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#mapped_claims_enabled Application#mapped_claims_enabled}
   */
   readonly mappedClaimsEnabled?: boolean | cdktf.IResolvable;
   /**
   * The access token version expected by this resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#requested_access_token_version Application#requested_access_token_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#requested_access_token_version Application#requested_access_token_version}
   */
   readonly requestedAccessTokenVersion?: number;
   /**
   * oauth2_permission_scope block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#oauth2_permission_scope Application#oauth2_permission_scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#oauth2_permission_scope Application#oauth2_permission_scope}
   */
   readonly oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[];
 }
@@ -386,37 +386,37 @@ export interface ApplicationAppRole {
   /**
   * Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#allowed_member_types Application#allowed_member_types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#allowed_member_types Application#allowed_member_types}
   */
   readonly allowedMemberTypes: string[];
   /**
   * Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#description Application#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#description Application#description}
   */
   readonly description: string;
   /**
   * Display name for the app role that appears during app role assignment and in consent experiences
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#display_name Application#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#display_name Application#display_name}
   */
   readonly displayName: string;
   /**
   * Determines if the app role is enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enabled Application#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#enabled Application#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The unique identifier of the app role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id Application#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
   */
   readonly id: string;
   /**
   * The value that is used for the `roles` claim in ID tokens and OAuth 2.0 access tokens that are authenticating an assigned service or user principal
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#value Application#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#value Application#value}
   */
   readonly value?: string;
 }
@@ -440,25 +440,25 @@ export interface ApplicationFeatureTags {
   /**
   * Whether this application represents a custom SAML application for linked service principals
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#custom_single_sign_on Application#custom_single_sign_on}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#custom_single_sign_on Application#custom_single_sign_on}
   */
   readonly customSingleSignOn?: boolean | cdktf.IResolvable;
   /**
   * Whether this application represents an Enterprise Application for linked service principals
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enterprise Application#enterprise}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#enterprise Application#enterprise}
   */
   readonly enterprise?: boolean | cdktf.IResolvable;
   /**
   * Whether this application represents a gallery application for linked service principals
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#gallery Application#gallery}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#gallery Application#gallery}
   */
   readonly gallery?: boolean | cdktf.IResolvable;
   /**
   * Whether this application is invisible to users in My Apps and Office 365 Launcher
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#hide Application#hide}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#hide Application#hide}
   */
   readonly hide?: boolean | cdktf.IResolvable;
 }
@@ -480,25 +480,25 @@ export interface ApplicationOptionalClaimsAccessToken {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#additional_properties Application#additional_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#additional_properties Application#additional_properties}
   */
   readonly additionalProperties?: string[];
   /**
   * Whether the claim specified by the client is necessary to ensure a smooth authorization experience
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#essential Application#essential}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#essential Application#essential}
   */
   readonly essential?: boolean | cdktf.IResolvable;
   /**
   * The name of the optional claim
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#name Application#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#name Application#name}
   */
   readonly name: string;
   /**
   * The source of the claim. If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#source Application#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#source Application#source}
   */
   readonly source?: string;
 }
@@ -520,25 +520,25 @@ export interface ApplicationOptionalClaimsIdToken {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#additional_properties Application#additional_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#additional_properties Application#additional_properties}
   */
   readonly additionalProperties?: string[];
   /**
   * Whether the claim specified by the client is necessary to ensure a smooth authorization experience
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#essential Application#essential}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#essential Application#essential}
   */
   readonly essential?: boolean | cdktf.IResolvable;
   /**
   * The name of the optional claim
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#name Application#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#name Application#name}
   */
   readonly name: string;
   /**
   * The source of the claim. If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#source Application#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#source Application#source}
   */
   readonly source?: string;
 }
@@ -560,25 +560,25 @@ export interface ApplicationOptionalClaimsSaml2Token {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#additional_properties Application#additional_properties}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#additional_properties Application#additional_properties}
   */
   readonly additionalProperties?: string[];
   /**
   * Whether the claim specified by the client is necessary to ensure a smooth authorization experience
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#essential Application#essential}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#essential Application#essential}
   */
   readonly essential?: boolean | cdktf.IResolvable;
   /**
   * The name of the optional claim
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#name Application#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#name Application#name}
   */
   readonly name: string;
   /**
   * The source of the claim. If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#source Application#source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#source Application#source}
   */
   readonly source?: string;
 }
@@ -600,19 +600,19 @@ export interface ApplicationOptionalClaims {
   /**
   * access_token block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#access_token Application#access_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#access_token Application#access_token}
   */
   readonly accessToken?: ApplicationOptionalClaimsAccessToken[];
   /**
   * id_token block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id_token Application#id_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id_token Application#id_token}
   */
   readonly idToken?: ApplicationOptionalClaimsIdToken[];
   /**
   * saml2_token block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#saml2_token Application#saml2_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#saml2_token Application#saml2_token}
   */
   readonly saml2Token?: ApplicationOptionalClaimsSaml2Token[];
 }
@@ -729,7 +729,7 @@ export interface ApplicationPublicClient {
   /**
   * The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#redirect_uris Application#redirect_uris}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#redirect_uris Application#redirect_uris}
   */
   readonly redirectUris?: string[];
 }
@@ -795,11 +795,11 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
 }
 export interface ApplicationRequiredResourceAccessResourceAccess {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id Application#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#type Application#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#type Application#type}
   */
   readonly type: string;
 }
@@ -817,13 +817,13 @@ export function applicationRequiredResourceAccessResourceAccessToTerraform(struc
 
 export interface ApplicationRequiredResourceAccess {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#resource_app_id Application#resource_app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#resource_app_id Application#resource_app_id}
   */
   readonly resourceAppId: string;
   /**
   * resource_access block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#resource_access Application#resource_access}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#resource_access Application#resource_access}
   */
   readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccess[];
 }
@@ -843,7 +843,7 @@ export interface ApplicationSinglePageApplication {
   /**
   * The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#redirect_uris Application#redirect_uris}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#redirect_uris Application#redirect_uris}
   */
   readonly redirectUris?: string[];
 }
@@ -909,19 +909,19 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
 }
 export interface ApplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#create Application#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#create Application#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#delete Application#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#delete Application#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#read Application#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#read Application#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#update Application#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#update Application#update}
   */
   readonly update?: string;
 }
@@ -1058,13 +1058,13 @@ export interface ApplicationWebImplicitGrant {
   /**
   * Whether this web application can request an access token using OAuth 2.0 implicit flow
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#access_token_issuance_enabled Application#access_token_issuance_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
   */
   readonly accessTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether this web application can request an ID token using OAuth 2.0 implicit flow
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id_token_issuance_enabled Application#id_token_issuance_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
   */
   readonly idTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
 }
@@ -1155,25 +1155,25 @@ export interface ApplicationWeb {
   /**
   * Home page or landing page of the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#homepage_url Application#homepage_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#homepage_url Application#homepage_url}
   */
   readonly homepageUrl?: string;
   /**
   * The URL that will be used by Microsoft's authorization service to sign out a user using front-channel, back-channel or SAML logout protocols
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#logout_url Application#logout_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#logout_url Application#logout_url}
   */
   readonly logoutUrl?: string;
   /**
   * The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#redirect_uris Application#redirect_uris}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#redirect_uris Application#redirect_uris}
   */
   readonly redirectUris?: string[];
   /**
   * implicit_grant block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#implicit_grant Application#implicit_grant}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#implicit_grant Application#implicit_grant}
   */
   readonly implicitGrant?: ApplicationWebImplicitGrant;
 }
@@ -1308,7 +1308,7 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application.html azuread_application}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application azuread_application}
 */
 export class Application extends cdktf.TerraformResource {
 
@@ -1322,7 +1322,7 @@ export class Application extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application.html azuread_application} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application azuread_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

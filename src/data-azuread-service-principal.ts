@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/service_principal.html
+// https://www.terraform.io/docs/providers/azuread/d/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataAzureadServicePrincipalConfig extends cdktf.TerraformMetaAr
   /**
   * The application ID (client ID) of the application associated with this service principal
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#application_id DataAzureadServicePrincipal#application_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#application_id DataAzureadServicePrincipal#application_id}
   */
   readonly applicationId?: string;
   /**
   * The display name of the application associated with this service principal
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#display_name DataAzureadServicePrincipal#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#display_name DataAzureadServicePrincipal#display_name}
   */
   readonly displayName?: string;
   /**
   * The object ID of the service principal
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#object_id DataAzureadServicePrincipal#object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#object_id DataAzureadServicePrincipal#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#timeouts DataAzureadServicePrincipal#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
   */
   readonly timeouts?: DataAzureadServicePrincipalTimeouts;
 }
@@ -159,7 +159,7 @@ export class DataAzureadServicePrincipalSamlSingleSignOn extends cdktf.ComplexCo
 }
 export interface DataAzureadServicePrincipalTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#read DataAzureadServicePrincipal#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#read DataAzureadServicePrincipal#read}
   */
   readonly read?: string;
 }
@@ -225,7 +225,7 @@ export class DataAzureadServicePrincipalTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html azuread_service_principal}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principal azuread_service_principal}
 */
 export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
 
@@ -239,7 +239,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html azuread_service_principal} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/service_principal azuread_service_principal} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html
+// https://www.terraform.io/docs/providers/azuread/d/administrative_unit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface DataAzureadAdministrativeUnitConfig extends cdktf.TerraformMeta
   /**
   * The display name for the administrative unit
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#display_name DataAzureadAdministrativeUnit#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
   */
   readonly displayName?: string;
   /**
   * The object ID of the administrative unit
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#object_id DataAzureadAdministrativeUnit#object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#object_id DataAzureadAdministrativeUnit#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#timeouts DataAzureadAdministrativeUnit#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#timeouts DataAzureadAdministrativeUnit#timeouts}
   */
   readonly timeouts?: DataAzureadAdministrativeUnitTimeouts;
 }
 export interface DataAzureadAdministrativeUnitTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#create DataAzureadAdministrativeUnit#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#create DataAzureadAdministrativeUnit#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#delete DataAzureadAdministrativeUnit#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#delete DataAzureadAdministrativeUnit#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#read DataAzureadAdministrativeUnit#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#read DataAzureadAdministrativeUnit#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#update DataAzureadAdministrativeUnit#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#update DataAzureadAdministrativeUnit#update}
   */
   readonly update?: string;
 }
@@ -175,7 +175,7 @@ export class DataAzureadAdministrativeUnitTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html azuread_administrative_unit}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit azuread_administrative_unit}
 */
 export class DataAzureadAdministrativeUnit extends cdktf.TerraformDataSource {
 
@@ -189,7 +189,7 @@ export class DataAzureadAdministrativeUnit extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html azuread_administrative_unit} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit azuread_administrative_unit} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

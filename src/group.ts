@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/group.html
+// https://www.terraform.io/docs/providers/azuread/r/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,109 +10,109 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicates whether this group can be assigned to an Azure Active Directory role. This property can only be `true` for security-enabled groups.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#assignable_to_role Group#assignable_to_role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#assignable_to_role Group#assignable_to_role}
   */
   readonly assignableToRole?: boolean | cdktf.IResolvable;
   /**
   * The group behaviours for a Microsoft 365 group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#behaviors Group#behaviors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#behaviors Group#behaviors}
   */
   readonly behaviors?: string[];
   /**
   * The description for the group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#description Group#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#description Group#description}
   */
   readonly description?: string;
   /**
   * The display name for the group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#display_name Group#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the group is a mail enabled, with a shared group mailbox. At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#mail_enabled Group#mail_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#mail_enabled Group#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The mail alias for the group, unique in the organisation
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#mail_nickname Group#mail_nickname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#mail_nickname Group#mail_nickname}
   */
   readonly mailNickname?: string;
   /**
   * A set of members who should be present in this group. Supported object types are Users, Groups or Service Principals
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#members Group#members}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#members Group#members}
   */
   readonly members?: string[];
   /**
   * A set of owners who own this group. Supported object types are Users or Service Principals
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#owners Group#owners}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#owners Group#owners}
   */
   readonly owners?: string[];
   /**
   * If `true`, will return an error if an existing group is found with the same name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#prevent_duplicate_names Group#prevent_duplicate_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#prevent_duplicate_names Group#prevent_duplicate_names}
   */
   readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
   /**
   * The group provisioning options for a Microsoft 365 group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#provisioning_options Group#provisioning_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#provisioning_options Group#provisioning_options}
   */
   readonly provisioningOptions?: string[];
   /**
   * Whether the group is a security group for controlling access to in-app resources. At least one of `security_enabled` or `mail_enabled` must be specified. A group can be security enabled _and_ mail enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#security_enabled Group#security_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#security_enabled Group#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * The colour theme for a Microsoft 365 group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#theme Group#theme}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#theme Group#theme}
   */
   readonly theme?: string;
   /**
   * A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#types Group#types}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#types Group#types}
   */
   readonly types?: string[];
   /**
   * Specifies the group join policy and group content visibility
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#visibility Group#visibility}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#visibility Group#visibility}
   */
   readonly visibility?: string;
   /**
   * dynamic_membership block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#dynamic_membership Group#dynamic_membership}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#dynamic_membership Group#dynamic_membership}
   */
   readonly dynamicMembership?: GroupDynamicMembership;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#timeouts Group#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#timeouts Group#timeouts}
   */
   readonly timeouts?: GroupTimeouts;
 }
 export interface GroupDynamicMembership {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#enabled Group#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#enabled Group#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#rule Group#rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#rule Group#rule}
   */
   readonly rule: string;
 }
@@ -195,19 +195,19 @@ export class GroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
 }
 export interface GroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#create Group#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#create Group#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#delete Group#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#delete Group#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#read Group#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#read Group#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#update Group#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#update Group#update}
   */
   readonly update?: string;
 }
@@ -342,7 +342,7 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group.html azuread_group}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group azuread_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -356,7 +356,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/group.html azuread_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/group azuread_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

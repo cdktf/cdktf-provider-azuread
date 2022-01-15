@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/domains.html
+// https://www.terraform.io/docs/providers/azuread/d/domains
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,43 +10,43 @@ export interface DataAzureadDomainsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Set to `true` to only return domains whose DNS is managed by Microsoft 365
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#admin_managed DataAzureadDomains#admin_managed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#admin_managed DataAzureadDomains#admin_managed}
   */
   readonly adminManaged?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` if unverified Azure AD domains should be included
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#include_unverified DataAzureadDomains#include_unverified}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#include_unverified DataAzureadDomains#include_unverified}
   */
   readonly includeUnverified?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to only return the default domain
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#only_default DataAzureadDomains#only_default}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#only_default DataAzureadDomains#only_default}
   */
   readonly onlyDefault?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#only_initial DataAzureadDomains#only_initial}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#only_initial DataAzureadDomains#only_initial}
   */
   readonly onlyInitial?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to only return verified root domains. Excludes subdomains and unverified domains
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#only_root DataAzureadDomains#only_root}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#only_root DataAzureadDomains#only_root}
   */
   readonly onlyRoot?: boolean | cdktf.IResolvable;
   /**
   * A list of supported services that must be supported by a domain
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#supports_services DataAzureadDomains#supports_services}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#supports_services DataAzureadDomains#supports_services}
   */
   readonly supportsServices?: string[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#timeouts DataAzureadDomains#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#timeouts DataAzureadDomains#timeouts}
   */
   readonly timeouts?: DataAzureadDomainsTimeouts;
 }
@@ -94,7 +94,7 @@ export class DataAzureadDomainsDomains extends cdktf.ComplexComputedList {
 }
 export interface DataAzureadDomainsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#read DataAzureadDomains#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#read DataAzureadDomains#read}
   */
   readonly read?: string;
 }
@@ -160,7 +160,7 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/domains.html azuread_domains}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/domains azuread_domains}
 */
 export class DataAzureadDomains extends cdktf.TerraformDataSource {
 
@@ -174,7 +174,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/domains.html azuread_domains} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/domains azuread_domains} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

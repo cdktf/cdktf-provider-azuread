@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/application_password.html
+// https://www.terraform.io/docs/providers/azuread/r/application_password
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,61 +10,61 @@ export interface ApplicationPasswordConfig extends cdktf.TerraformMetaArguments 
   /**
   * The object ID of the application for which this password should be created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#application_object_id ApplicationPassword#application_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#application_object_id ApplicationPassword#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * A display name for the password
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#display_name ApplicationPassword#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#display_name ApplicationPassword#display_name}
   */
   readonly displayName?: string;
   /**
   * The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#end_date ApplicationPassword#end_date}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#end_date ApplicationPassword#end_date}
   */
   readonly endDate?: string;
   /**
   * A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#end_date_relative ApplicationPassword#end_date_relative}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#end_date_relative ApplicationPassword#end_date_relative}
   */
   readonly endDateRelative?: string;
   /**
   * Arbitrary map of values that, when changed, will trigger rotation of the password
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#rotate_when_changed ApplicationPassword#rotate_when_changed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#rotate_when_changed ApplicationPassword#rotate_when_changed}
   */
   readonly rotateWhenChanged?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#start_date ApplicationPassword#start_date}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#start_date ApplicationPassword#start_date}
   */
   readonly startDate?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#timeouts ApplicationPassword#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#timeouts ApplicationPassword#timeouts}
   */
   readonly timeouts?: ApplicationPasswordTimeouts;
 }
 export interface ApplicationPasswordTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#create ApplicationPassword#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#create ApplicationPassword#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#delete ApplicationPassword#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#delete ApplicationPassword#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#read ApplicationPassword#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#read ApplicationPassword#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#update ApplicationPassword#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#update ApplicationPassword#update}
   */
   readonly update?: string;
 }
@@ -199,7 +199,7 @@ export class ApplicationPasswordTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html azuread_application_password}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_password azuread_application_password}
 */
 export class ApplicationPassword extends cdktf.TerraformResource {
 
@@ -213,7 +213,7 @@ export class ApplicationPassword extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html azuread_application_password} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application_password azuread_application_password} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

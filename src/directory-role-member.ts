@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html
+// https://www.terraform.io/docs/providers/azuread/r/directory_role_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface DirectoryRoleMemberConfig extends cdktf.TerraformMetaArguments 
   /**
   * The object ID of the member
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#member_object_id DirectoryRoleMember#member_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#member_object_id DirectoryRoleMember#member_object_id}
   */
   readonly memberObjectId?: string;
   /**
   * The object ID of the directory role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#role_object_id DirectoryRoleMember#role_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#role_object_id DirectoryRoleMember#role_object_id}
   */
   readonly roleObjectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#timeouts DirectoryRoleMember#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#timeouts DirectoryRoleMember#timeouts}
   */
   readonly timeouts?: DirectoryRoleMemberTimeouts;
 }
 export interface DirectoryRoleMemberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#create DirectoryRoleMember#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#create DirectoryRoleMember#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#delete DirectoryRoleMember#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#delete DirectoryRoleMember#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#read DirectoryRoleMember#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#read DirectoryRoleMember#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#update DirectoryRoleMember#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#update DirectoryRoleMember#update}
   */
   readonly update?: string;
 }
@@ -175,7 +175,7 @@ export class DirectoryRoleMemberTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html azuread_directory_role_member}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member azuread_directory_role_member}
 */
 export class DirectoryRoleMember extends cdktf.TerraformResource {
 
@@ -189,7 +189,7 @@ export class DirectoryRoleMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html azuread_directory_role_member} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member azuread_directory_role_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

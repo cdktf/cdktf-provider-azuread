@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/client_config.html
+// https://www.terraform.io/docs/providers/azuread/d/client_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataAzureadClientConfigConfig extends cdktf.TerraformMetaArgume
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config.html#timeouts DataAzureadClientConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#timeouts DataAzureadClientConfig#timeouts}
   */
   readonly timeouts?: DataAzureadClientConfigTimeouts;
 }
 export interface DataAzureadClientConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config.html#read DataAzureadClientConfig#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#read DataAzureadClientConfig#read}
   */
   readonly read?: string;
 }
@@ -82,7 +82,7 @@ export class DataAzureadClientConfigTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/client_config.html azuread_client_config}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config}
 */
 export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
 
@@ -96,7 +96,7 @@ export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/client_config.html azuread_client_config} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

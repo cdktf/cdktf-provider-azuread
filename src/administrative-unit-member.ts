@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html
+// https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface AdministrativeUnitMemberConfig extends cdktf.TerraformMetaArgum
   /**
   * The object ID of the administrative unit
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
   */
   readonly administrativeUnitObjectId?: string;
   /**
   * The object ID of the member
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#member_object_id AdministrativeUnitMember#member_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
   */
   readonly memberObjectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#timeouts AdministrativeUnitMember#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
   */
   readonly timeouts?: AdministrativeUnitMemberTimeouts;
 }
 export interface AdministrativeUnitMemberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#create AdministrativeUnitMember#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#create AdministrativeUnitMember#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#delete AdministrativeUnitMember#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#delete AdministrativeUnitMember#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#read AdministrativeUnitMember#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#read AdministrativeUnitMember#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#update AdministrativeUnitMember#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#update AdministrativeUnitMember#update}
   */
   readonly update?: string;
 }
@@ -175,7 +175,7 @@ export class AdministrativeUnitMemberTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html azuread_administrative_unit_member}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member azuread_administrative_unit_member}
 */
 export class AdministrativeUnitMember extends cdktf.TerraformResource {
 
@@ -189,7 +189,7 @@ export class AdministrativeUnitMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html azuread_administrative_unit_member} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member azuread_administrative_unit_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

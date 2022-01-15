@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/named_location.html
+// https://www.terraform.io/docs/providers/azuread/r/named_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface NamedLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#display_name NamedLocation#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#display_name NamedLocation#display_name}
   */
   readonly displayName: string;
   /**
   * country block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#country NamedLocation#country}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#country NamedLocation#country}
   */
   readonly country?: NamedLocationCountry;
   /**
   * ip block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#ip NamedLocation#ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#ip NamedLocation#ip}
   */
   readonly ip?: NamedLocationIp;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#timeouts NamedLocation#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#timeouts NamedLocation#timeouts}
   */
   readonly timeouts?: NamedLocationTimeouts;
 }
 export interface NamedLocationCountry {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#countries_and_regions NamedLocation#countries_and_regions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#countries_and_regions NamedLocation#countries_and_regions}
   */
   readonly countriesAndRegions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}
   */
   readonly includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable;
 }
@@ -122,11 +122,11 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
 }
 export interface NamedLocationIp {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#ip_ranges NamedLocation#ip_ranges}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#ip_ranges NamedLocation#ip_ranges}
   */
   readonly ipRanges: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#trusted NamedLocation#trusted}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#trusted NamedLocation#trusted}
   */
   readonly trusted?: boolean | cdktf.IResolvable;
 }
@@ -212,19 +212,19 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
 }
 export interface NamedLocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#create NamedLocation#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#create NamedLocation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#delete NamedLocation#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#delete NamedLocation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#read NamedLocation#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#read NamedLocation#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#update NamedLocation#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#update NamedLocation#update}
   */
   readonly update?: string;
 }
@@ -359,7 +359,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html azuread_named_location}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/named_location azuread_named_location}
 */
 export class NamedLocation extends cdktf.TerraformResource {
 
@@ -373,7 +373,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html azuread_named_location} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/named_location azuread_named_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

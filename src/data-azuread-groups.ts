@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/groups.html
+// https://www.terraform.io/docs/providers/azuread/d/groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Common display name prefix of the groups
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#display_name_prefix DataAzureadGroups#display_name_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
   */
   readonly displayNamePrefix?: string;
   /**
   * The display names of the groups
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#display_names DataAzureadGroups#display_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#display_names DataAzureadGroups#display_names}
   */
   readonly displayNames?: string[];
   /**
   * Whether the groups are mail-enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#mail_enabled DataAzureadGroups#mail_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#mail_enabled DataAzureadGroups#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The object IDs of the groups
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#object_ids DataAzureadGroups#object_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#object_ids DataAzureadGroups#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Retrieve all groups with no filter
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#return_all DataAzureadGroups#return_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#return_all DataAzureadGroups#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * Whether the groups are security-enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#security_enabled DataAzureadGroups#security_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#security_enabled DataAzureadGroups#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#timeouts DataAzureadGroups#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#timeouts DataAzureadGroups#timeouts}
   */
   readonly timeouts?: DataAzureadGroupsTimeouts;
 }
 export interface DataAzureadGroupsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#read DataAzureadGroups#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#read DataAzureadGroups#read}
   */
   readonly read?: string;
 }
@@ -118,7 +118,7 @@ export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/groups.html azuread_groups}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/groups azuread_groups}
 */
 export class DataAzureadGroups extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/groups.html azuread_groups} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/groups azuread_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

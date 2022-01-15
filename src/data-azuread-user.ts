@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/user.html
+// https://www.terraform.io/docs/providers/azuread/d/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface DataAzureadUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The email alias of the user
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#mail_nickname DataAzureadUser#mail_nickname}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#mail_nickname DataAzureadUser#mail_nickname}
   */
   readonly mailNickname?: string;
   /**
   * The object ID of the user
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#object_id DataAzureadUser#object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#object_id DataAzureadUser#object_id}
   */
   readonly objectId?: string;
   /**
   * The user principal name (UPN) of the user
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#user_principal_name DataAzureadUser#user_principal_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#user_principal_name DataAzureadUser#user_principal_name}
   */
   readonly userPrincipalName?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#timeouts DataAzureadUser#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#timeouts DataAzureadUser#timeouts}
   */
   readonly timeouts?: DataAzureadUserTimeouts;
 }
 export interface DataAzureadUserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#read DataAzureadUser#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#read DataAzureadUser#read}
   */
   readonly read?: string;
 }
@@ -100,7 +100,7 @@ export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/user.html azuread_user}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/user azuread_user}
 */
 export class DataAzureadUser extends cdktf.TerraformDataSource {
 
@@ -114,7 +114,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/user.html azuread_user} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/user azuread_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

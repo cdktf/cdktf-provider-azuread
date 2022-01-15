@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html
+// https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface ServicePrincipalDelegatedPermissionGrantConfig extends cdktf.Te
   /**
   * A set of claim values for delegated permission scopes which should be included in access tokens for the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#claim_values ServicePrincipalDelegatedPermissionGrant#claim_values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#claim_values ServicePrincipalDelegatedPermissionGrant#claim_values}
   */
   readonly claimValues: string[];
   /**
   * The object ID of the service principal representing the resource to be accessed
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#resource_service_principal_object_id ServicePrincipalDelegatedPermissionGrant#resource_service_principal_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#resource_service_principal_object_id ServicePrincipalDelegatedPermissionGrant#resource_service_principal_object_id}
   */
   readonly resourceServicePrincipalObjectId: string;
   /**
   * The object ID of the service principal for which this delegated permission grant should be created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#service_principal_object_id ServicePrincipalDelegatedPermissionGrant#service_principal_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#service_principal_object_id ServicePrincipalDelegatedPermissionGrant#service_principal_object_id}
   */
   readonly servicePrincipalObjectId: string;
   /**
   * The object ID of the user on behalf of whom the service principal is authorized to access the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#user_object_id ServicePrincipalDelegatedPermissionGrant#user_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#user_object_id ServicePrincipalDelegatedPermissionGrant#user_object_id}
   */
   readonly userObjectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#timeouts ServicePrincipalDelegatedPermissionGrant#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#timeouts ServicePrincipalDelegatedPermissionGrant#timeouts}
   */
   readonly timeouts?: ServicePrincipalDelegatedPermissionGrantTimeouts;
 }
 export interface ServicePrincipalDelegatedPermissionGrantTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#create ServicePrincipalDelegatedPermissionGrant#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#create ServicePrincipalDelegatedPermissionGrant#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#delete ServicePrincipalDelegatedPermissionGrant#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#delete ServicePrincipalDelegatedPermissionGrant#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#read ServicePrincipalDelegatedPermissionGrant#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#read ServicePrincipalDelegatedPermissionGrant#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#update ServicePrincipalDelegatedPermissionGrant#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#update ServicePrincipalDelegatedPermissionGrant#update}
   */
   readonly update?: string;
 }
@@ -187,7 +187,7 @@ export class ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference ext
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html azuread_service_principal_delegated_permission_grant}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant}
 */
 export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformResource {
 
@@ -201,7 +201,7 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html azuread_service_principal_delegated_permission_grant} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
