@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/users.html
+// https://www.terraform.io/docs/providers/azuread/d/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Ignore missing users and return users that were found. The data source will still fail if no users are found
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#ignore_missing DataAzureadUsers#ignore_missing}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#ignore_missing DataAzureadUsers#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * The email aliases of the users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#mail_nicknames DataAzureadUsers#mail_nicknames}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#mail_nicknames DataAzureadUsers#mail_nicknames}
   */
   readonly mailNicknames?: string[];
   /**
   * The object IDs of the users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#object_ids DataAzureadUsers#object_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#object_ids DataAzureadUsers#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Fetch all users with no filter and return all that were found. The data source will still fail if no users are found.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#return_all DataAzureadUsers#return_all}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#return_all DataAzureadUsers#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * The user principal names (UPNs) of the users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#user_principal_names DataAzureadUsers#user_principal_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#user_principal_names DataAzureadUsers#user_principal_names}
   */
   readonly userPrincipalNames?: string[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#timeouts DataAzureadUsers#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#timeouts DataAzureadUsers#timeouts}
   */
   readonly timeouts?: DataAzureadUsersTimeouts;
 }
@@ -98,7 +98,7 @@ export class DataAzureadUsersUsers extends cdktf.ComplexComputedList {
 }
 export interface DataAzureadUsersTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#read DataAzureadUsers#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#read DataAzureadUsers#read}
   */
   readonly read?: string;
 }
@@ -164,7 +164,7 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/users.html azuread_users}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/users azuread_users}
 */
 export class DataAzureadUsers extends cdktf.TerraformDataSource {
 
@@ -178,7 +178,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/users.html azuread_users} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/users azuread_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

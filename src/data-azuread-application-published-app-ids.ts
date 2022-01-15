@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html
+// https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataAzureadApplicationPublishedAppIdsConfig extends cdktf.Terra
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html#timeouts DataAzureadApplicationPublishedAppIds#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids#timeouts DataAzureadApplicationPublishedAppIds#timeouts}
   */
   readonly timeouts?: DataAzureadApplicationPublishedAppIdsTimeouts;
 }
 export interface DataAzureadApplicationPublishedAppIdsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html#read DataAzureadApplicationPublishedAppIds#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids#read DataAzureadApplicationPublishedAppIds#read}
   */
   readonly read?: string;
 }
@@ -82,7 +82,7 @@ export class DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html azuread_application_published_app_ids}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids azuread_application_published_app_ids}
 */
 export class DataAzureadApplicationPublishedAppIds extends cdktf.TerraformDataSource {
 
@@ -96,7 +96,7 @@ export class DataAzureadApplicationPublishedAppIds extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html azuread_application_published_app_ids} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids azuread_application_published_app_ids} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

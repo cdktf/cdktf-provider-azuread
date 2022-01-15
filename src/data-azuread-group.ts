@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/group.html
+// https://www.terraform.io/docs/providers/azuread/d/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name for the group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#display_name DataAzureadGroup#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#display_name DataAzureadGroup#display_name}
   */
   readonly displayName?: string;
   /**
   * Whether the group is mail-enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#mail_enabled DataAzureadGroup#mail_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#mail_enabled DataAzureadGroup#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The object ID of the group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#object_id DataAzureadGroup#object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#object_id DataAzureadGroup#object_id}
   */
   readonly objectId?: string;
   /**
   * Whether the group is a security group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#security_enabled DataAzureadGroup#security_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#security_enabled DataAzureadGroup#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#timeouts DataAzureadGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#timeouts DataAzureadGroup#timeouts}
   */
   readonly timeouts?: DataAzureadGroupTimeouts;
 }
@@ -52,7 +52,7 @@ export class DataAzureadGroupDynamicMembership extends cdktf.ComplexComputedList
 }
 export interface DataAzureadGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#read DataAzureadGroup#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#read DataAzureadGroup#read}
   */
   readonly read?: string;
 }
@@ -118,7 +118,7 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/group.html azuread_group}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/group azuread_group}
 */
 export class DataAzureadGroup extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/group.html azuread_group} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/group azuread_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

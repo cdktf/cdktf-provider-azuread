@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html
+// https://www.terraform.io/docs/providers/azuread/r/administrative_unit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,55 +10,55 @@ export interface AdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description for the administrative unit
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#description AdministrativeUnit#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#description AdministrativeUnit#description}
   */
   readonly description?: string;
   /**
   * The display name for the administrative unit
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#display_name AdministrativeUnit#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#display_name AdministrativeUnit#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the administrative unit and its members are hidden or publicly viewable in the directory
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
   */
   readonly hiddenMembershipEnabled?: boolean | cdktf.IResolvable;
   /**
   * A set of object IDs of members who should be present in this administrative unit. Supported object types are Users or Groups
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#members AdministrativeUnit#members}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#members AdministrativeUnit#members}
   */
   readonly members?: string[];
   /**
   * If `true`, will return an error if an existing administrative unit is found with the same name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
   */
   readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#timeouts AdministrativeUnit#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#timeouts AdministrativeUnit#timeouts}
   */
   readonly timeouts?: AdministrativeUnitTimeouts;
 }
 export interface AdministrativeUnitTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#create AdministrativeUnit#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#create AdministrativeUnit#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#delete AdministrativeUnit#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#delete AdministrativeUnit#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#read AdministrativeUnit#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#read AdministrativeUnit#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#update AdministrativeUnit#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#update AdministrativeUnit#update}
   */
   readonly update?: string;
 }
@@ -193,7 +193,7 @@ export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html azuread_administrative_unit}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit azuread_administrative_unit}
 */
 export class AdministrativeUnit extends cdktf.TerraformResource {
 
@@ -207,7 +207,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html azuread_administrative_unit} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit azuread_administrative_unit} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

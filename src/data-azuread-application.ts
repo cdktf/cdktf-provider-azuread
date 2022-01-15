@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/application.html
+// https://www.terraform.io/docs/providers/azuread/d/application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataAzureadApplicationConfig extends cdktf.TerraformMetaArgumen
   /**
   * The Application ID (also called Client ID)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#application_id DataAzureadApplication#application_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#application_id DataAzureadApplication#application_id}
   */
   readonly applicationId?: string;
   /**
   * The display name for the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#display_name DataAzureadApplication#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#display_name DataAzureadApplication#display_name}
   */
   readonly displayName?: string;
   /**
   * The application's object ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#object_id DataAzureadApplication#object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#object_id DataAzureadApplication#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#timeouts DataAzureadApplication#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#timeouts DataAzureadApplication#timeouts}
   */
   readonly timeouts?: DataAzureadApplicationTimeouts;
 }
@@ -313,7 +313,7 @@ export class DataAzureadApplicationWeb extends cdktf.ComplexComputedList {
 }
 export interface DataAzureadApplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#read DataAzureadApplication#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#read DataAzureadApplication#read}
   */
   readonly read?: string;
 }
@@ -379,7 +379,7 @@ export class DataAzureadApplicationTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application.html azuread_application}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application azuread_application}
 */
 export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
@@ -393,7 +393,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/application.html azuread_application} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/application azuread_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

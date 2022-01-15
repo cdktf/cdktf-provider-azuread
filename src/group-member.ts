@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/group_member.html
+// https://www.terraform.io/docs/providers/azuread/r/group_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface GroupMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the group you want to add the member to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#group_object_id GroupMember#group_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#group_object_id GroupMember#group_object_id}
   */
   readonly groupObjectId: string;
   /**
   * The object ID of the principal you want to add as a member to the group. Supported object types are Users, Groups or Service Principals
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#member_object_id GroupMember#member_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#member_object_id GroupMember#member_object_id}
   */
   readonly memberObjectId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#timeouts GroupMember#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#timeouts GroupMember#timeouts}
   */
   readonly timeouts?: GroupMemberTimeouts;
 }
 export interface GroupMemberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#create GroupMember#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#create GroupMember#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#delete GroupMember#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#delete GroupMember#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#read GroupMember#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#read GroupMember#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#update GroupMember#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#update GroupMember#update}
   */
   readonly update?: string;
 }
@@ -175,7 +175,7 @@ export class GroupMemberTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html azuread_group_member}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group_member azuread_group_member}
 */
 export class GroupMember extends cdktf.TerraformResource {
 
@@ -189,7 +189,7 @@ export class GroupMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html azuread_group_member} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/group_member azuread_group_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

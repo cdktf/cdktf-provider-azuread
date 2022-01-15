@@ -4,7 +4,7 @@
 
 ### AdministrativeUnit <a name="@cdktf/provider-azuread.AdministrativeUnit"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html azuread_administrative_unit}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit azuread_administrative_unit}.
 
 #### Initializers <a name="@cdktf/provider-azuread.AdministrativeUnit.Initializer"></a>
 
@@ -235,7 +235,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 ### AdministrativeUnitMember <a name="@cdktf/provider-azuread.AdministrativeUnitMember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html azuread_administrative_unit_member}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member azuread_administrative_unit_member}.
 
 #### Initializers <a name="@cdktf/provider-azuread.AdministrativeUnitMember.Initializer"></a>
 
@@ -384,7 +384,7 @@ public readonly memberObjectId: string;
 
 ### Application <a name="@cdktf/provider-azuread.Application"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application.html azuread_application}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application azuread_application}.
 
 #### Initializers <a name="@cdktf/provider-azuread.Application.Initializer"></a>
 
@@ -1233,7 +1233,7 @@ public readonly termsOfServiceUrl: string;
 
 ### ApplicationCertificate <a name="@cdktf/provider-azuread.ApplicationCertificate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html azuread_application_certificate}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate azuread_application_certificate}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ApplicationCertificate.Initializer"></a>
 
@@ -1526,7 +1526,7 @@ public readonly value: string;
 
 ### ApplicationFederatedIdentityCredential <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html azuread_application_federated_identity_credential}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential azuread_application_federated_identity_credential}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.Initializer"></a>
 
@@ -1759,7 +1759,7 @@ public readonly subject: string;
 
 ### ApplicationPassword <a name="@cdktf/provider-azuread.ApplicationPassword"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html azuread_application_password}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_password azuread_application_password}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ApplicationPassword.Initializer"></a>
 
@@ -2026,7 +2026,7 @@ public readonly startDate: string;
 
 ### ApplicationPreAuthorized <a name="@cdktf/provider-azuread.ApplicationPreAuthorized"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html azuread_application_pre_authorized}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized azuread_application_pre_authorized}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.Initializer"></a>
 
@@ -2183,7 +2183,7 @@ public readonly permissionIds: string[];
 
 ### AppRoleAssignment <a name="@cdktf/provider-azuread.AppRoleAssignment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html azuread_app_role_assignment}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment azuread_app_role_assignment}.
 
 #### Initializers <a name="@cdktf/provider-azuread.AppRoleAssignment.Initializer"></a>
 
@@ -2757,7 +2757,7 @@ public readonly useMsi: boolean | IResolvable;
 
 ### ConditionalAccessPolicy <a name="@cdktf/provider-azuread.ConditionalAccessPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html azuread_conditional_access_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy azuread_conditional_access_policy}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.Initializer"></a>
 
@@ -2996,7 +2996,7 @@ public readonly state: string;
 
 ### DataAzureadAdministrativeUnit <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html azuread_administrative_unit}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit azuread_administrative_unit}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.Initializer"></a>
 
@@ -3175,7 +3175,7 @@ public readonly objectId: string;
 
 ### DataAzureadApplication <a name="@cdktf/provider-azuread.DataAzureadApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application.html azuread_application}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application azuread_application}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplication.Initializer"></a>
 
@@ -3620,7 +3620,7 @@ public readonly objectId: string;
 
 ### DataAzureadApplicationPublishedAppIds <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html azuread_application_published_app_ids}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids azuread_application_published_app_ids}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.Initializer"></a>
 
@@ -3729,7 +3729,7 @@ public readonly timeoutsInput: DataAzureadApplicationPublishedAppIdsTimeouts;
 
 ### DataAzureadApplicationTemplate <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application_template.html azuread_application_template}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application_template azuread_application_template}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.Initializer"></a>
 
@@ -3938,7 +3938,7 @@ public readonly templateId: string;
 
 ### DataAzureadClientConfig <a name="@cdktf/provider-azuread.DataAzureadClientConfig"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/client_config.html azuread_client_config}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadClientConfig.Initializer"></a>
 
@@ -4065,7 +4065,7 @@ public readonly timeoutsInput: DataAzureadClientConfigTimeouts;
 
 ### DataAzureadDomains <a name="@cdktf/provider-azuread.DataAzureadDomains"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/domains.html azuread_domains}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/domains azuread_domains}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadDomains.Initializer"></a>
 
@@ -4330,7 +4330,7 @@ public readonly supportsServices: string[];
 
 ### DataAzureadGroup <a name="@cdktf/provider-azuread.DataAzureadGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/group.html azuread_group}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/group azuread_group}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadGroup.Initializer"></a>
 
@@ -4723,7 +4723,7 @@ public readonly securityEnabled: boolean | IResolvable;
 
 ### DataAzureadGroups <a name="@cdktf/provider-azuread.DataAzureadGroups"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/groups.html azuread_groups}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/groups azuread_groups}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadGroups.Initializer"></a>
 
@@ -4976,7 +4976,7 @@ public readonly securityEnabled: boolean | IResolvable;
 
 ### DataAzureadServicePrincipal <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html azuread_service_principal}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principal azuread_service_principal}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.Initializer"></a>
 
@@ -5405,7 +5405,7 @@ public readonly objectId: string;
 
 ### DataAzureadServicePrincipals <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html azuread_service_principals}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/service_principals azuread_service_principals}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.Initializer"></a>
 
@@ -5644,7 +5644,7 @@ public readonly returnAll: boolean | IResolvable;
 
 ### DataAzureadUser <a name="@cdktf/provider-azuread.DataAzureadUser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/user.html azuread_user}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/user azuread_user}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadUser.Initializer"></a>
 
@@ -6219,7 +6219,7 @@ public readonly userPrincipalName: string;
 
 ### DataAzureadUsers <a name="@cdktf/provider-azuread.DataAzureadUsers"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/d/users.html azuread_users}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/users azuread_users}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DataAzureadUsers.Initializer"></a>
 
@@ -6458,7 +6458,7 @@ public readonly userPrincipalNames: string[];
 
 ### DirectoryRole <a name="@cdktf/provider-azuread.DirectoryRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html azuread_directory_role}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role azuread_directory_role}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DirectoryRole.Initializer"></a>
 
@@ -6627,7 +6627,7 @@ public readonly templateId: string;
 
 ### DirectoryRoleMember <a name="@cdktf/provider-azuread.DirectoryRoleMember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html azuread_directory_role_member}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member azuread_directory_role_member}.
 
 #### Initializers <a name="@cdktf/provider-azuread.DirectoryRoleMember.Initializer"></a>
 
@@ -6776,7 +6776,7 @@ public readonly roleObjectId: string;
 
 ### Group <a name="@cdktf/provider-azuread.Group"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group.html azuread_group}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group azuread_group}.
 
 #### Initializers <a name="@cdktf/provider-azuread.Group.Initializer"></a>
 
@@ -7359,7 +7359,7 @@ public readonly visibility: string;
 
 ### GroupMember <a name="@cdktf/provider-azuread.GroupMember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html azuread_group_member}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group_member azuread_group_member}.
 
 #### Initializers <a name="@cdktf/provider-azuread.GroupMember.Initializer"></a>
 
@@ -7496,7 +7496,7 @@ public readonly memberObjectId: string;
 
 ### Invitation <a name="@cdktf/provider-azuread.Invitation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html azuread_invitation}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/invitation azuread_invitation}.
 
 #### Initializers <a name="@cdktf/provider-azuread.Invitation.Initializer"></a>
 
@@ -7743,7 +7743,7 @@ public readonly userType: string;
 
 ### NamedLocation <a name="@cdktf/provider-azuread.NamedLocation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html azuread_named_location}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/named_location azuread_named_location}.
 
 #### Initializers <a name="@cdktf/provider-azuread.NamedLocation.Initializer"></a>
 
@@ -7936,7 +7936,7 @@ public readonly displayName: string;
 
 ### ServicePrincipal <a name="@cdktf/provider-azuread.ServicePrincipal"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html azuread_service_principal}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal azuread_service_principal}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ServicePrincipal.Initializer"></a>
 
@@ -8577,7 +8577,7 @@ public readonly useExisting: boolean | IResolvable;
 
 ### ServicePrincipalCertificate <a name="@cdktf/provider-azuread.ServicePrincipalCertificate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html azuread_service_principal_certificate}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate azuread_service_principal_certificate}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.Initializer"></a>
 
@@ -8870,7 +8870,7 @@ public readonly value: string;
 
 ### ServicePrincipalDelegatedPermissionGrant <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html azuread_service_principal_delegated_permission_grant}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.Initializer"></a>
 
@@ -9053,7 +9053,7 @@ public readonly userObjectId: string;
 
 ### ServicePrincipalPassword <a name="@cdktf/provider-azuread.ServicePrincipalPassword"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html azuread_service_principal_password}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password azuread_service_principal_password}.
 
 #### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalPassword.Initializer"></a>
 
@@ -9320,7 +9320,7 @@ public readonly startDate: string;
 
 ### User <a name="@cdktf/provider-azuread.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/user.html azuread_user}.
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/user azuread_user}.
 
 #### Initializers <a name="@cdktf/provider-azuread.User.Initializer"></a>
 
@@ -10505,7 +10505,7 @@ public readonly displayName: string;
 
 The display name for the administrative unit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#display_name AdministrativeUnit#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#display_name AdministrativeUnit#display_name}
 
 ---
 
@@ -10519,7 +10519,7 @@ public readonly description: string;
 
 The description for the administrative unit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#description AdministrativeUnit#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#description AdministrativeUnit#description}
 
 ---
 
@@ -10533,7 +10533,7 @@ public readonly hiddenMembershipEnabled: boolean | IResolvable;
 
 Whether the administrative unit and its members are hidden or publicly viewable in the directory.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
 
 ---
 
@@ -10549,7 +10549,7 @@ A set of object IDs of members who should be present in this administrative unit
 
 Supported object types are Users or Groups
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#members AdministrativeUnit#members}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#members AdministrativeUnit#members}
 
 ---
 
@@ -10563,7 +10563,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 If `true`, will return an error if an existing administrative unit is found with the same name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
 
 ---
 
@@ -10577,7 +10577,7 @@ public readonly timeouts: AdministrativeUnitTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#timeouts AdministrativeUnit#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#timeouts AdministrativeUnit#timeouts}
 
 ---
 
@@ -10641,7 +10641,7 @@ public readonly administrativeUnitObjectId: string;
 
 The object ID of the administrative unit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
 
 ---
 
@@ -10655,7 +10655,7 @@ public readonly memberObjectId: string;
 
 The object ID of the member.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#member_object_id AdministrativeUnitMember#member_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
 
 ---
 
@@ -10669,7 +10669,7 @@ public readonly timeouts: AdministrativeUnitMemberTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#timeouts AdministrativeUnitMember#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
 
 ---
 
@@ -10691,7 +10691,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#create AdministrativeUnitMember#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#create AdministrativeUnitMember#create}.
 
 ---
 
@@ -10703,7 +10703,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#delete AdministrativeUnitMember#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#delete AdministrativeUnitMember#delete}.
 
 ---
 
@@ -10715,7 +10715,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#read AdministrativeUnitMember#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#read AdministrativeUnitMember#read}.
 
 ---
 
@@ -10727,7 +10727,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member.html#update AdministrativeUnitMember#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#update AdministrativeUnitMember#update}.
 
 ---
 
@@ -10749,7 +10749,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#create AdministrativeUnit#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#create AdministrativeUnit#create}.
 
 ---
 
@@ -10761,7 +10761,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#delete AdministrativeUnit#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#delete AdministrativeUnit#delete}.
 
 ---
 
@@ -10773,7 +10773,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#read AdministrativeUnit#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#read AdministrativeUnit#read}.
 
 ---
 
@@ -10785,7 +10785,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit.html#update AdministrativeUnit#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#update AdministrativeUnit#update}.
 
 ---
 
@@ -10809,7 +10809,7 @@ public readonly knownClientApplications: string[];
 
 Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#known_client_applications Application#known_client_applications}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#known_client_applications Application#known_client_applications}
 
 ---
 
@@ -10823,7 +10823,7 @@ public readonly mappedClaimsEnabled: boolean | IResolvable;
 
 Allows an application to use claims mapping without specifying a custom signing key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#mapped_claims_enabled Application#mapped_claims_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#mapped_claims_enabled Application#mapped_claims_enabled}
 
 ---
 
@@ -10837,7 +10837,7 @@ public readonly oauth2PermissionScope: ApplicationApiOauth2PermissionScope[];
 
 oauth2_permission_scope block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#oauth2_permission_scope Application#oauth2_permission_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#oauth2_permission_scope Application#oauth2_permission_scope}
 
 ---
 
@@ -10851,7 +10851,7 @@ public readonly requestedAccessTokenVersion: number;
 
 The access token version expected by this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#requested_access_token_version Application#requested_access_token_version}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#requested_access_token_version Application#requested_access_token_version}
 
 ---
 
@@ -10875,7 +10875,7 @@ public readonly id: string;
 
 The unique identifier of the delegated permission.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id Application#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
 
 ---
 
@@ -10889,7 +10889,7 @@ public readonly adminConsentDescription: string;
 
 Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#admin_consent_description Application#admin_consent_description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#admin_consent_description Application#admin_consent_description}
 
 ---
 
@@ -10903,7 +10903,7 @@ public readonly adminConsentDisplayName: string;
 
 Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#admin_consent_display_name Application#admin_consent_display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#admin_consent_display_name Application#admin_consent_display_name}
 
 ---
 
@@ -10917,7 +10917,7 @@ public readonly enabled: boolean | IResolvable;
 
 Determines if the permission scope is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#enabled Application#enabled}
 
 ---
 
@@ -10931,7 +10931,7 @@ public readonly type: string;
 
 Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#type Application#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#type Application#type}
 
 ---
 
@@ -10945,7 +10945,7 @@ public readonly userConsentDescription: string;
 
 Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#user_consent_description Application#user_consent_description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#user_consent_description Application#user_consent_description}
 
 ---
 
@@ -10959,7 +10959,7 @@ public readonly userConsentDisplayName: string;
 
 Display name for the delegated permission that appears in the end user consent experience.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#user_consent_display_name Application#user_consent_display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#user_consent_display_name Application#user_consent_display_name}
 
 ---
 
@@ -10973,7 +10973,7 @@ public readonly value: string;
 
 The value that is used for the `scp` claim in OAuth 2.0 access tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#value Application#value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#value Application#value}
 
 ---
 
@@ -10997,7 +10997,7 @@ public readonly allowedMemberTypes: string[];
 
 Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#allowed_member_types Application#allowed_member_types}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#allowed_member_types Application#allowed_member_types}
 
 ---
 
@@ -11011,7 +11011,7 @@ public readonly description: string;
 
 Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#description Application#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#description Application#description}
 
 ---
 
@@ -11025,7 +11025,7 @@ public readonly displayName: string;
 
 Display name for the app role that appears during app role assignment and in consent experiences.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#display_name Application#display_name}
 
 ---
 
@@ -11039,7 +11039,7 @@ public readonly id: string;
 
 The unique identifier of the app role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id Application#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
 
 ---
 
@@ -11053,7 +11053,7 @@ public readonly enabled: boolean | IResolvable;
 
 Determines if the app role is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#enabled Application#enabled}
 
 ---
 
@@ -11067,7 +11067,7 @@ public readonly value: string;
 
 The value that is used for the `roles` claim in ID tokens and OAuth 2.0 access tokens that are authenticating an assigned service or user principal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#value Application#value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#value Application#value}
 
 ---
 
@@ -11131,7 +11131,7 @@ public readonly applicationObjectId: string;
 
 The object ID of the application for which this certificate should be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#application_object_id ApplicationCertificate#application_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#application_object_id ApplicationCertificate#application_object_id}
 
 ---
 
@@ -11147,7 +11147,7 @@ The certificate data, which can be PEM encoded, base64 encoded DER or hexadecima
 
 See also the `encoding` argumen
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#value ApplicationCertificate#value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#value ApplicationCertificate#value}
 
 ---
 
@@ -11161,7 +11161,7 @@ public readonly encoding: string;
 
 Specifies the encoding used for the supplied certificate data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#encoding ApplicationCertificate#encoding}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#encoding ApplicationCertificate#encoding}
 
 ---
 
@@ -11175,7 +11175,7 @@ public readonly endDate: string;
 
 The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If omitted, the API will decide a suitable expiry date, which is typically around 2 years from the start date.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#end_date ApplicationCertificate#end_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#end_date ApplicationCertificate#end_date}
 
 ---
 
@@ -11189,7 +11189,7 @@ public readonly endDateRelative: string;
 
 A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#end_date_relative ApplicationCertificate#end_date_relative}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#end_date_relative ApplicationCertificate#end_date_relative}
 
 ---
 
@@ -11203,7 +11203,7 @@ public readonly keyId: string;
 
 A UUID used to uniquely identify this certificate. If omitted, a random UUID will be automatically generated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#key_id ApplicationCertificate#key_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#key_id ApplicationCertificate#key_id}
 
 ---
 
@@ -11217,7 +11217,7 @@ public readonly startDate: string;
 
 The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date and time are use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#start_date ApplicationCertificate#start_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#start_date ApplicationCertificate#start_date}
 
 ---
 
@@ -11231,7 +11231,7 @@ public readonly timeouts: ApplicationCertificateTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#timeouts ApplicationCertificate#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#timeouts ApplicationCertificate#timeouts}
 
 ---
 
@@ -11245,7 +11245,7 @@ public readonly type: string;
 
 The type of key/certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#type ApplicationCertificate#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#type ApplicationCertificate#type}
 
 ---
 
@@ -11267,7 +11267,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#create ApplicationCertificate#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#create ApplicationCertificate#create}.
 
 ---
 
@@ -11279,7 +11279,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#delete ApplicationCertificate#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#delete ApplicationCertificate#delete}.
 
 ---
 
@@ -11291,7 +11291,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#read ApplicationCertificate#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#read ApplicationCertificate#read}.
 
 ---
 
@@ -11303,7 +11303,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate.html#update ApplicationCertificate#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#update ApplicationCertificate#update}.
 
 ---
 
@@ -11367,7 +11367,7 @@ public readonly displayName: string;
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#display_name Application#display_name}
 
 ---
 
@@ -11381,7 +11381,7 @@ public readonly api: ApplicationApi;
 
 api block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#api Application#api}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#api Application#api}
 
 ---
 
@@ -11395,7 +11395,7 @@ public readonly appRole: ApplicationAppRole[];
 
 app_role block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#app_role Application#app_role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#app_role Application#app_role}
 
 ---
 
@@ -11409,7 +11409,7 @@ public readonly deviceOnlyAuthEnabled: boolean | IResolvable;
 
 Specifies whether this application supports device authentication without a user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#device_only_auth_enabled Application#device_only_auth_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#device_only_auth_enabled Application#device_only_auth_enabled}
 
 ---
 
@@ -11425,7 +11425,7 @@ Specifies whether the application is a public client.
 
 Appropriate for apps using token grant flows that don't use a redirect URI
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#fallback_public_client_enabled Application#fallback_public_client_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
 
 ---
 
@@ -11439,7 +11439,7 @@ public readonly featureTags: ApplicationFeatureTags[];
 
 feature_tags block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#feature_tags Application#feature_tags}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#feature_tags Application#feature_tags}
 
 ---
 
@@ -11453,7 +11453,7 @@ public readonly groupMembershipClaims: string[];
 
 Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#group_membership_claims Application#group_membership_claims}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#group_membership_claims Application#group_membership_claims}
 
 ---
 
@@ -11467,7 +11467,7 @@ public readonly identifierUris: string[];
 
 The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#identifier_uris Application#identifier_uris}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#identifier_uris Application#identifier_uris}
 
 ---
 
@@ -11481,7 +11481,7 @@ public readonly logoImage: string;
 
 Base64 encoded logo image in gif, png or jpeg format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#logo_image Application#logo_image}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#logo_image Application#logo_image}
 
 ---
 
@@ -11495,7 +11495,7 @@ public readonly marketingUrl: string;
 
 URL of the application's marketing page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#marketing_url Application#marketing_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#marketing_url Application#marketing_url}
 
 ---
 
@@ -11509,7 +11509,7 @@ public readonly oauth2PostResponseRequired: boolean | IResolvable;
 
 Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#oauth2_post_response_required Application#oauth2_post_response_required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#oauth2_post_response_required Application#oauth2_post_response_required}
 
 ---
 
@@ -11523,7 +11523,7 @@ public readonly optionalClaims: ApplicationOptionalClaims;
 
 optional_claims block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#optional_claims Application#optional_claims}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#optional_claims Application#optional_claims}
 
 ---
 
@@ -11537,7 +11537,7 @@ public readonly owners: string[];
 
 A list of object IDs of principals that will be granted ownership of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#owners Application#owners}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#owners Application#owners}
 
 ---
 
@@ -11551,7 +11551,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 If `true`, will return an error if an existing application is found with the same name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#prevent_duplicate_names Application#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#prevent_duplicate_names Application#prevent_duplicate_names}
 
 ---
 
@@ -11565,7 +11565,7 @@ public readonly privacyStatementUrl: string;
 
 URL of the application's privacy statement.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#privacy_statement_url Application#privacy_statement_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#privacy_statement_url Application#privacy_statement_url}
 
 ---
 
@@ -11579,7 +11579,7 @@ public readonly publicClient: ApplicationPublicClient;
 
 public_client block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#public_client Application#public_client}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#public_client Application#public_client}
 
 ---
 
@@ -11593,7 +11593,7 @@ public readonly requiredResourceAccess: ApplicationRequiredResourceAccess[];
 
 required_resource_access block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#required_resource_access Application#required_resource_access}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
 
 ---
 
@@ -11607,7 +11607,7 @@ public readonly signInAudience: string;
 
 The Microsoft account types that are supported for the current application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#sign_in_audience Application#sign_in_audience}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#sign_in_audience Application#sign_in_audience}
 
 ---
 
@@ -11621,7 +11621,7 @@ public readonly singlePageApplication: ApplicationSinglePageApplication;
 
 single_page_application block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#single_page_application Application#single_page_application}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#single_page_application Application#single_page_application}
 
 ---
 
@@ -11635,7 +11635,7 @@ public readonly supportUrl: string;
 
 URL of the application's support page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#support_url Application#support_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#support_url Application#support_url}
 
 ---
 
@@ -11649,7 +11649,7 @@ public readonly tags: string[];
 
 A set of tags to apply to the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#tags Application#tags}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#tags Application#tags}
 
 ---
 
@@ -11663,7 +11663,7 @@ public readonly templateId: string;
 
 Unique ID of the application template from which this application is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#template_id Application#template_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#template_id Application#template_id}
 
 ---
 
@@ -11677,7 +11677,7 @@ public readonly termsOfServiceUrl: string;
 
 URL of the application's terms of service statement.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#terms_of_service_url Application#terms_of_service_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#terms_of_service_url Application#terms_of_service_url}
 
 ---
 
@@ -11691,7 +11691,7 @@ public readonly timeouts: ApplicationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#timeouts Application#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#timeouts Application#timeouts}
 
 ---
 
@@ -11705,7 +11705,7 @@ public readonly web: ApplicationWeb;
 
 web block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#web Application#web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#web Application#web}
 
 ---
 
@@ -11729,7 +11729,7 @@ public readonly customSingleSignOn: boolean | IResolvable;
 
 Whether this application represents a custom SAML application for linked service principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#custom_single_sign_on Application#custom_single_sign_on}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#custom_single_sign_on Application#custom_single_sign_on}
 
 ---
 
@@ -11743,7 +11743,7 @@ public readonly enterprise: boolean | IResolvable;
 
 Whether this application represents an Enterprise Application for linked service principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#enterprise Application#enterprise}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#enterprise Application#enterprise}
 
 ---
 
@@ -11757,7 +11757,7 @@ public readonly gallery: boolean | IResolvable;
 
 Whether this application represents a gallery application for linked service principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#gallery Application#gallery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#gallery Application#gallery}
 
 ---
 
@@ -11771,7 +11771,7 @@ public readonly hide: boolean | IResolvable;
 
 Whether this application is invisible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#hide Application#hide}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#hide Application#hide}
 
 ---
 
@@ -11835,7 +11835,7 @@ public readonly applicationObjectId: string;
 
 The object ID of the application for which this federated identity credential should be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#application_object_id ApplicationFederatedIdentityCredential#application_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#application_object_id ApplicationFederatedIdentityCredential#application_object_id}
 
 ---
 
@@ -11851,7 +11851,7 @@ List of audiences that can appear in the external token.
 
 This specifies what should be accepted in the `aud` claim of incoming tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#audiences ApplicationFederatedIdentityCredential#audiences}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#audiences ApplicationFederatedIdentityCredential#audiences}
 
 ---
 
@@ -11865,7 +11865,7 @@ public readonly displayName: string;
 
 A unique display name for the federated identity credential.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#display_name ApplicationFederatedIdentityCredential#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#display_name ApplicationFederatedIdentityCredential#display_name}
 
 ---
 
@@ -11881,7 +11881,7 @@ The URL of the external identity provider, which must match the issuer claim of 
 
 The combination of the values of issuer and subject must be unique on the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#issuer ApplicationFederatedIdentityCredential#issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#issuer ApplicationFederatedIdentityCredential#issuer}
 
 ---
 
@@ -11897,7 +11897,7 @@ The identifier of the external software workload within the external identity pr
 
 The combination of issuer and subject must be unique on the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#subject ApplicationFederatedIdentityCredential#subject}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#subject ApplicationFederatedIdentityCredential#subject}
 
 ---
 
@@ -11911,7 +11911,7 @@ public readonly description: string;
 
 A description for the federated identity credential.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#description ApplicationFederatedIdentityCredential#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#description ApplicationFederatedIdentityCredential#description}
 
 ---
 
@@ -11925,7 +11925,7 @@ public readonly timeouts: ApplicationFederatedIdentityCredentialTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#timeouts ApplicationFederatedIdentityCredential#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#timeouts ApplicationFederatedIdentityCredential#timeouts}
 
 ---
 
@@ -11947,7 +11947,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#create ApplicationFederatedIdentityCredential#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#create ApplicationFederatedIdentityCredential#create}.
 
 ---
 
@@ -11959,7 +11959,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#delete ApplicationFederatedIdentityCredential#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#delete ApplicationFederatedIdentityCredential#delete}.
 
 ---
 
@@ -11971,7 +11971,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#read ApplicationFederatedIdentityCredential#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#read ApplicationFederatedIdentityCredential#read}.
 
 ---
 
@@ -11983,7 +11983,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential.html#update ApplicationFederatedIdentityCredential#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#update ApplicationFederatedIdentityCredential#update}.
 
 ---
 
@@ -12007,7 +12007,7 @@ public readonly accessToken: ApplicationOptionalClaimsAccessToken[];
 
 access_token block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#access_token Application#access_token}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#access_token Application#access_token}
 
 ---
 
@@ -12021,7 +12021,7 @@ public readonly idToken: ApplicationOptionalClaimsIdToken[];
 
 id_token block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id_token Application#id_token}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id_token Application#id_token}
 
 ---
 
@@ -12035,7 +12035,7 @@ public readonly saml2Token: ApplicationOptionalClaimsSaml2Token[];
 
 saml2_token block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#saml2_token Application#saml2_token}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#saml2_token Application#saml2_token}
 
 ---
 
@@ -12059,7 +12059,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#name Application#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#name Application#name}
 
 ---
 
@@ -12075,7 +12075,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -12089,7 +12089,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#essential Application#essential}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#essential Application#essential}
 
 ---
 
@@ -12105,7 +12105,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#source Application#source}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#source Application#source}
 
 ---
 
@@ -12129,7 +12129,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#name Application#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#name Application#name}
 
 ---
 
@@ -12145,7 +12145,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -12159,7 +12159,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#essential Application#essential}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#essential Application#essential}
 
 ---
 
@@ -12175,7 +12175,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#source Application#source}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#source Application#source}
 
 ---
 
@@ -12199,7 +12199,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#name Application#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#name Application#name}
 
 ---
 
@@ -12215,7 +12215,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -12229,7 +12229,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#essential Application#essential}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#essential Application#essential}
 
 ---
 
@@ -12245,7 +12245,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#source Application#source}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#source Application#source}
 
 ---
 
@@ -12309,7 +12309,7 @@ public readonly applicationObjectId: string;
 
 The object ID of the application for which this password should be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#application_object_id ApplicationPassword#application_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#application_object_id ApplicationPassword#application_object_id}
 
 ---
 
@@ -12323,7 +12323,7 @@ public readonly displayName: string;
 
 A display name for the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#display_name ApplicationPassword#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#display_name ApplicationPassword#display_name}
 
 ---
 
@@ -12337,7 +12337,7 @@ public readonly endDate: string;
 
 The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#end_date ApplicationPassword#end_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#end_date ApplicationPassword#end_date}
 
 ---
 
@@ -12353,7 +12353,7 @@ A relative duration for which the password is valid until, for example `240h` (1
 
 Changing this field forces a new resource to be created
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#end_date_relative ApplicationPassword#end_date_relative}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#end_date_relative ApplicationPassword#end_date_relative}
 
 ---
 
@@ -12367,7 +12367,7 @@ public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
 
 Arbitrary map of values that, when changed, will trigger rotation of the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#rotate_when_changed ApplicationPassword#rotate_when_changed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#rotate_when_changed ApplicationPassword#rotate_when_changed}
 
 ---
 
@@ -12381,7 +12381,7 @@ public readonly startDate: string;
 
 The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#start_date ApplicationPassword#start_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#start_date ApplicationPassword#start_date}
 
 ---
 
@@ -12395,7 +12395,7 @@ public readonly timeouts: ApplicationPasswordTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#timeouts ApplicationPassword#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#timeouts ApplicationPassword#timeouts}
 
 ---
 
@@ -12417,7 +12417,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#create ApplicationPassword#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#create ApplicationPassword#create}.
 
 ---
 
@@ -12429,7 +12429,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#delete ApplicationPassword#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#delete ApplicationPassword#delete}.
 
 ---
 
@@ -12441,7 +12441,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#read ApplicationPassword#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#read ApplicationPassword#read}.
 
 ---
 
@@ -12453,7 +12453,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password.html#update ApplicationPassword#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#update ApplicationPassword#update}.
 
 ---
 
@@ -12517,7 +12517,7 @@ public readonly applicationObjectId: string;
 
 The object ID of the application to which this pre-authorized application should be added.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#application_object_id ApplicationPreAuthorized#application_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#application_object_id ApplicationPreAuthorized#application_object_id}
 
 ---
 
@@ -12531,7 +12531,7 @@ public readonly authorizedAppId: string;
 
 The application ID of the pre-authorized application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
 
 ---
 
@@ -12545,7 +12545,7 @@ public readonly permissionIds: string[];
 
 The IDs of the permission scopes required by the pre-authorized application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#permission_ids ApplicationPreAuthorized#permission_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
 
 ---
 
@@ -12559,7 +12559,7 @@ public readonly timeouts: ApplicationPreAuthorizedTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#timeouts ApplicationPreAuthorized#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
 
 ---
 
@@ -12581,7 +12581,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#create ApplicationPreAuthorized#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#create ApplicationPreAuthorized#create}.
 
 ---
 
@@ -12593,7 +12593,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#delete ApplicationPreAuthorized#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#delete ApplicationPreAuthorized#delete}.
 
 ---
 
@@ -12605,7 +12605,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#read ApplicationPreAuthorized#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#read ApplicationPreAuthorized#read}.
 
 ---
 
@@ -12617,7 +12617,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized.html#update ApplicationPreAuthorized#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#update ApplicationPreAuthorized#update}.
 
 ---
 
@@ -12641,7 +12641,7 @@ public readonly redirectUris: string[];
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -12665,7 +12665,7 @@ public readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccess[
 
 resource_access block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#resource_access Application#resource_access}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#resource_access Application#resource_access}
 
 ---
 
@@ -12677,7 +12677,7 @@ public readonly resourceAppId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#resource_app_id Application#resource_app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#resource_app_id Application#resource_app_id}.
 
 ---
 
@@ -12699,7 +12699,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id Application#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}.
 
 ---
 
@@ -12711,7 +12711,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#type Application#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#type Application#type}.
 
 ---
 
@@ -12735,7 +12735,7 @@ public readonly redirectUris: string[];
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -12757,7 +12757,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#create Application#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#create Application#create}.
 
 ---
 
@@ -12769,7 +12769,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#delete Application#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#delete Application#delete}.
 
 ---
 
@@ -12781,7 +12781,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#read Application#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#read Application#read}.
 
 ---
 
@@ -12793,7 +12793,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#update Application#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#update Application#update}.
 
 ---
 
@@ -12817,7 +12817,7 @@ public readonly homepageUrl: string;
 
 Home page or landing page of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#homepage_url Application#homepage_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#homepage_url Application#homepage_url}
 
 ---
 
@@ -12831,7 +12831,7 @@ public readonly implicitGrant: ApplicationWebImplicitGrant;
 
 implicit_grant block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#implicit_grant Application#implicit_grant}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#implicit_grant Application#implicit_grant}
 
 ---
 
@@ -12845,7 +12845,7 @@ public readonly logoutUrl: string;
 
 The URL that will be used by Microsoft's authorization service to sign out a user using front-channel, back-channel or SAML logout protocols.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#logout_url Application#logout_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#logout_url Application#logout_url}
 
 ---
 
@@ -12859,7 +12859,7 @@ public readonly redirectUris: string[];
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -12883,7 +12883,7 @@ public readonly accessTokenIssuanceEnabled: boolean | IResolvable;
 
 Whether this web application can request an access token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#access_token_issuance_enabled Application#access_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
 
 ---
 
@@ -12897,7 +12897,7 @@ public readonly idTokenIssuanceEnabled: boolean | IResolvable;
 
 Whether this web application can request an ID token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application.html#id_token_issuance_enabled Application#id_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
 
 ---
 
@@ -12961,7 +12961,7 @@ public readonly appRoleId: string;
 
 The ID of the app role to be assigned.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html#app_role_id AppRoleAssignment#app_role_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
 
 ---
 
@@ -12975,7 +12975,7 @@ public readonly principalObjectId: string;
 
 The object ID of the user, group or service principal to be assigned this app role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html#principal_object_id AppRoleAssignment#principal_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
 
 ---
 
@@ -12989,7 +12989,7 @@ public readonly resourceObjectId: string;
 
 The object ID of the service principal representing the resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html#resource_object_id AppRoleAssignment#resource_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
 
 ---
 
@@ -13003,7 +13003,7 @@ public readonly timeouts: AppRoleAssignmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html#timeouts AppRoleAssignment#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#timeouts AppRoleAssignment#timeouts}
 
 ---
 
@@ -13025,7 +13025,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html#create AppRoleAssignment#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#create AppRoleAssignment#create}.
 
 ---
 
@@ -13037,7 +13037,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html#delete AppRoleAssignment#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#delete AppRoleAssignment#delete}.
 
 ---
 
@@ -13049,7 +13049,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment.html#read AppRoleAssignment#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#read AppRoleAssignment#read}.
 
 ---
 
@@ -13267,7 +13267,7 @@ public readonly applications: ConditionalAccessPolicyConditionsApplications;
 
 applications block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#applications ConditionalAccessPolicy#applications}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#applications ConditionalAccessPolicy#applications}
 
 ---
 
@@ -13279,7 +13279,7 @@ public readonly clientAppTypes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#client_app_types ConditionalAccessPolicy#client_app_types}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#client_app_types ConditionalAccessPolicy#client_app_types}.
 
 ---
 
@@ -13293,7 +13293,7 @@ public readonly locations: ConditionalAccessPolicyConditionsLocations;
 
 locations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#locations ConditionalAccessPolicy#locations}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#locations ConditionalAccessPolicy#locations}
 
 ---
 
@@ -13307,7 +13307,7 @@ public readonly platforms: ConditionalAccessPolicyConditionsPlatforms;
 
 platforms block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#platforms ConditionalAccessPolicy#platforms}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#platforms ConditionalAccessPolicy#platforms}
 
 ---
 
@@ -13321,7 +13321,7 @@ public readonly users: ConditionalAccessPolicyConditionsUsers;
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#users ConditionalAccessPolicy#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#users ConditionalAccessPolicy#users}
 
 ---
 
@@ -13335,7 +13335,7 @@ public readonly devices: ConditionalAccessPolicyConditionsDevices;
 
 devices block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#devices ConditionalAccessPolicy#devices}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#devices ConditionalAccessPolicy#devices}
 
 ---
 
@@ -13347,7 +13347,7 @@ public readonly signInRiskLevels: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#sign_in_risk_levels ConditionalAccessPolicy#sign_in_risk_levels}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#sign_in_risk_levels ConditionalAccessPolicy#sign_in_risk_levels}.
 
 ---
 
@@ -13359,7 +13359,7 @@ public readonly userRiskLevels: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#user_risk_levels ConditionalAccessPolicy#user_risk_levels}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#user_risk_levels ConditionalAccessPolicy#user_risk_levels}.
 
 ---
 
@@ -13381,7 +13381,7 @@ public readonly includedApplications: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_applications ConditionalAccessPolicy#included_applications}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_applications ConditionalAccessPolicy#included_applications}.
 
 ---
 
@@ -13393,7 +13393,7 @@ public readonly excludedApplications: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_applications ConditionalAccessPolicy#excluded_applications}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#excluded_applications ConditionalAccessPolicy#excluded_applications}.
 
 ---
 
@@ -13405,7 +13405,7 @@ public readonly includedUserActions: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_user_actions ConditionalAccessPolicy#included_user_actions}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_user_actions ConditionalAccessPolicy#included_user_actions}.
 
 ---
 
@@ -13429,7 +13429,7 @@ public readonly filter: ConditionalAccessPolicyConditionsDevicesFilter;
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#filter ConditionalAccessPolicy#filter}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#filter ConditionalAccessPolicy#filter}
 
 ---
 
@@ -13451,7 +13451,7 @@ public readonly mode: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#mode ConditionalAccessPolicy#mode}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#mode ConditionalAccessPolicy#mode}.
 
 ---
 
@@ -13463,7 +13463,7 @@ public readonly rule: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#rule ConditionalAccessPolicy#rule}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#rule ConditionalAccessPolicy#rule}.
 
 ---
 
@@ -13485,7 +13485,7 @@ public readonly includedLocations: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_locations ConditionalAccessPolicy#included_locations}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_locations ConditionalAccessPolicy#included_locations}.
 
 ---
 
@@ -13497,7 +13497,7 @@ public readonly excludedLocations: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_locations ConditionalAccessPolicy#excluded_locations}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#excluded_locations ConditionalAccessPolicy#excluded_locations}.
 
 ---
 
@@ -13519,7 +13519,7 @@ public readonly includedPlatforms: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_platforms ConditionalAccessPolicy#included_platforms}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_platforms ConditionalAccessPolicy#included_platforms}.
 
 ---
 
@@ -13531,7 +13531,7 @@ public readonly excludedPlatforms: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_platforms ConditionalAccessPolicy#excluded_platforms}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#excluded_platforms ConditionalAccessPolicy#excluded_platforms}.
 
 ---
 
@@ -13553,7 +13553,7 @@ public readonly excludedGroups: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_groups ConditionalAccessPolicy#excluded_groups}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#excluded_groups ConditionalAccessPolicy#excluded_groups}.
 
 ---
 
@@ -13565,7 +13565,7 @@ public readonly excludedRoles: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_roles ConditionalAccessPolicy#excluded_roles}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#excluded_roles ConditionalAccessPolicy#excluded_roles}.
 
 ---
 
@@ -13577,7 +13577,7 @@ public readonly excludedUsers: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#excluded_users ConditionalAccessPolicy#excluded_users}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#excluded_users ConditionalAccessPolicy#excluded_users}.
 
 ---
 
@@ -13589,7 +13589,7 @@ public readonly includedGroups: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_groups ConditionalAccessPolicy#included_groups}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_groups ConditionalAccessPolicy#included_groups}.
 
 ---
 
@@ -13601,7 +13601,7 @@ public readonly includedRoles: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_roles ConditionalAccessPolicy#included_roles}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_roles ConditionalAccessPolicy#included_roles}.
 
 ---
 
@@ -13613,7 +13613,7 @@ public readonly includedUsers: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#included_users ConditionalAccessPolicy#included_users}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_users ConditionalAccessPolicy#included_users}.
 
 ---
 
@@ -13677,7 +13677,7 @@ public readonly conditions: ConditionalAccessPolicyConditions;
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#conditions ConditionalAccessPolicy#conditions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#conditions ConditionalAccessPolicy#conditions}
 
 ---
 
@@ -13689,7 +13689,7 @@ public readonly displayName: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#display_name ConditionalAccessPolicy#display_name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#display_name ConditionalAccessPolicy#display_name}.
 
 ---
 
@@ -13703,7 +13703,7 @@ public readonly grantControls: ConditionalAccessPolicyGrantControls;
 
 grant_controls block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#grant_controls ConditionalAccessPolicy#grant_controls}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#grant_controls ConditionalAccessPolicy#grant_controls}
 
 ---
 
@@ -13715,7 +13715,7 @@ public readonly state: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#state ConditionalAccessPolicy#state}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#state ConditionalAccessPolicy#state}.
 
 ---
 
@@ -13729,7 +13729,7 @@ public readonly sessionControls: ConditionalAccessPolicySessionControls;
 
 session_controls block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#session_controls ConditionalAccessPolicy#session_controls}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#session_controls ConditionalAccessPolicy#session_controls}
 
 ---
 
@@ -13743,7 +13743,7 @@ public readonly timeouts: ConditionalAccessPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#timeouts ConditionalAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#timeouts ConditionalAccessPolicy#timeouts}
 
 ---
 
@@ -13765,7 +13765,7 @@ public readonly builtInControls: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#built_in_controls ConditionalAccessPolicy#built_in_controls}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#built_in_controls ConditionalAccessPolicy#built_in_controls}.
 
 ---
 
@@ -13777,7 +13777,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#operator ConditionalAccessPolicy#operator}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#operator ConditionalAccessPolicy#operator}.
 
 ---
 
@@ -13789,7 +13789,7 @@ public readonly customAuthenticationFactors: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#custom_authentication_factors ConditionalAccessPolicy#custom_authentication_factors}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#custom_authentication_factors ConditionalAccessPolicy#custom_authentication_factors}.
 
 ---
 
@@ -13801,7 +13801,7 @@ public readonly termsOfUse: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#terms_of_use ConditionalAccessPolicy#terms_of_use}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#terms_of_use ConditionalAccessPolicy#terms_of_use}.
 
 ---
 
@@ -13823,7 +13823,7 @@ public readonly applicationEnforcedRestrictionsEnabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#application_enforced_restrictions_enabled ConditionalAccessPolicy#application_enforced_restrictions_enabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#application_enforced_restrictions_enabled ConditionalAccessPolicy#application_enforced_restrictions_enabled}.
 
 ---
 
@@ -13835,7 +13835,7 @@ public readonly cloudAppSecurityPolicy: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#cloud_app_security_policy ConditionalAccessPolicy#cloud_app_security_policy}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#cloud_app_security_policy ConditionalAccessPolicy#cloud_app_security_policy}.
 
 ---
 
@@ -13847,7 +13847,7 @@ public readonly persistentBrowserMode: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#persistent_browser_mode ConditionalAccessPolicy#persistent_browser_mode}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#persistent_browser_mode ConditionalAccessPolicy#persistent_browser_mode}.
 
 ---
 
@@ -13859,7 +13859,7 @@ public readonly signInFrequency: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#sign_in_frequency ConditionalAccessPolicy#sign_in_frequency}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#sign_in_frequency ConditionalAccessPolicy#sign_in_frequency}.
 
 ---
 
@@ -13871,7 +13871,7 @@ public readonly signInFrequencyPeriod: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#sign_in_frequency_period ConditionalAccessPolicy#sign_in_frequency_period}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#sign_in_frequency_period ConditionalAccessPolicy#sign_in_frequency_period}.
 
 ---
 
@@ -13893,7 +13893,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#create ConditionalAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#create ConditionalAccessPolicy#create}.
 
 ---
 
@@ -13905,7 +13905,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#delete ConditionalAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#delete ConditionalAccessPolicy#delete}.
 
 ---
 
@@ -13917,7 +13917,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#read ConditionalAccessPolicy#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#read ConditionalAccessPolicy#read}.
 
 ---
 
@@ -13929,7 +13929,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy.html#update ConditionalAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#update ConditionalAccessPolicy#update}.
 
 ---
 
@@ -13993,7 +13993,7 @@ public readonly displayName: string;
 
 The display name for the administrative unit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#display_name DataAzureadAdministrativeUnit#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
 
 ---
 
@@ -14007,7 +14007,7 @@ public readonly objectId: string;
 
 The object ID of the administrative unit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#object_id DataAzureadAdministrativeUnit#object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#object_id DataAzureadAdministrativeUnit#object_id}
 
 ---
 
@@ -14021,7 +14021,7 @@ public readonly timeouts: DataAzureadAdministrativeUnitTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#timeouts DataAzureadAdministrativeUnit#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#timeouts DataAzureadAdministrativeUnit#timeouts}
 
 ---
 
@@ -14043,7 +14043,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#create DataAzureadAdministrativeUnit#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#create DataAzureadAdministrativeUnit#create}.
 
 ---
 
@@ -14055,7 +14055,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#delete DataAzureadAdministrativeUnit#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#delete DataAzureadAdministrativeUnit#delete}.
 
 ---
 
@@ -14067,7 +14067,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#read DataAzureadAdministrativeUnit#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#read DataAzureadAdministrativeUnit#read}.
 
 ---
 
@@ -14079,7 +14079,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit.html#update DataAzureadAdministrativeUnit#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#update DataAzureadAdministrativeUnit#update}.
 
 ---
 
@@ -14143,7 +14143,7 @@ public readonly applicationId: string;
 
 The Application ID (also called Client ID).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#application_id DataAzureadApplication#application_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#application_id DataAzureadApplication#application_id}
 
 ---
 
@@ -14157,7 +14157,7 @@ public readonly displayName: string;
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#display_name DataAzureadApplication#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#display_name DataAzureadApplication#display_name}
 
 ---
 
@@ -14171,7 +14171,7 @@ public readonly objectId: string;
 
 The application's object ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#object_id DataAzureadApplication#object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#object_id DataAzureadApplication#object_id}
 
 ---
 
@@ -14185,7 +14185,7 @@ public readonly timeouts: DataAzureadApplicationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#timeouts DataAzureadApplication#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#timeouts DataAzureadApplication#timeouts}
 
 ---
 
@@ -14249,7 +14249,7 @@ public readonly timeouts: DataAzureadApplicationPublishedAppIdsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html#timeouts DataAzureadApplicationPublishedAppIds#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids#timeouts DataAzureadApplicationPublishedAppIds#timeouts}
 
 ---
 
@@ -14271,7 +14271,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids.html#read DataAzureadApplicationPublishedAppIds#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids#read DataAzureadApplicationPublishedAppIds#read}.
 
 ---
 
@@ -14335,7 +14335,7 @@ public readonly displayName: string;
 
 The display name for the application template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template.html#display_name DataAzureadApplicationTemplate#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#display_name DataAzureadApplicationTemplate#display_name}
 
 ---
 
@@ -14349,7 +14349,7 @@ public readonly templateId: string;
 
 The application template's ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template.html#template_id DataAzureadApplicationTemplate#template_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#template_id DataAzureadApplicationTemplate#template_id}
 
 ---
 
@@ -14363,7 +14363,7 @@ public readonly timeouts: DataAzureadApplicationTemplateTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template.html#timeouts DataAzureadApplicationTemplate#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#timeouts DataAzureadApplicationTemplate#timeouts}
 
 ---
 
@@ -14385,7 +14385,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template.html#read DataAzureadApplicationTemplate#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#read DataAzureadApplicationTemplate#read}.
 
 ---
 
@@ -14407,7 +14407,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application.html#read DataAzureadApplication#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#read DataAzureadApplication#read}.
 
 ---
 
@@ -14471,7 +14471,7 @@ public readonly timeouts: DataAzureadClientConfigTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config.html#timeouts DataAzureadClientConfig#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#timeouts DataAzureadClientConfig#timeouts}
 
 ---
 
@@ -14493,7 +14493,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config.html#read DataAzureadClientConfig#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#read DataAzureadClientConfig#read}.
 
 ---
 
@@ -14557,7 +14557,7 @@ public readonly adminManaged: boolean | IResolvable;
 
 Set to `true` to only return domains whose DNS is managed by Microsoft 365.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#admin_managed DataAzureadDomains#admin_managed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#admin_managed DataAzureadDomains#admin_managed}
 
 ---
 
@@ -14571,7 +14571,7 @@ public readonly includeUnverified: boolean | IResolvable;
 
 Set to `true` if unverified Azure AD domains should be included.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#include_unverified DataAzureadDomains#include_unverified}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#include_unverified DataAzureadDomains#include_unverified}
 
 ---
 
@@ -14585,7 +14585,7 @@ public readonly onlyDefault: boolean | IResolvable;
 
 Set to `true` to only return the default domain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#only_default DataAzureadDomains#only_default}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#only_default DataAzureadDomains#only_default}
 
 ---
 
@@ -14599,7 +14599,7 @@ public readonly onlyInitial: boolean | IResolvable;
 
 Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#only_initial DataAzureadDomains#only_initial}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#only_initial DataAzureadDomains#only_initial}
 
 ---
 
@@ -14613,7 +14613,7 @@ public readonly onlyRoot: boolean | IResolvable;
 
 Set to `true` to only return verified root domains. Excludes subdomains and unverified domains.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#only_root DataAzureadDomains#only_root}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#only_root DataAzureadDomains#only_root}
 
 ---
 
@@ -14627,7 +14627,7 @@ public readonly supportsServices: string[];
 
 A list of supported services that must be supported by a domain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#supports_services DataAzureadDomains#supports_services}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#supports_services DataAzureadDomains#supports_services}
 
 ---
 
@@ -14641,7 +14641,7 @@ public readonly timeouts: DataAzureadDomainsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#timeouts DataAzureadDomains#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#timeouts DataAzureadDomains#timeouts}
 
 ---
 
@@ -14663,7 +14663,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains.html#read DataAzureadDomains#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#read DataAzureadDomains#read}.
 
 ---
 
@@ -14727,7 +14727,7 @@ public readonly displayName: string;
 
 The display name for the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#display_name DataAzureadGroup#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#display_name DataAzureadGroup#display_name}
 
 ---
 
@@ -14741,7 +14741,7 @@ public readonly mailEnabled: boolean | IResolvable;
 
 Whether the group is mail-enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#mail_enabled DataAzureadGroup#mail_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#mail_enabled DataAzureadGroup#mail_enabled}
 
 ---
 
@@ -14755,7 +14755,7 @@ public readonly objectId: string;
 
 The object ID of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#object_id DataAzureadGroup#object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#object_id DataAzureadGroup#object_id}
 
 ---
 
@@ -14769,7 +14769,7 @@ public readonly securityEnabled: boolean | IResolvable;
 
 Whether the group is a security group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#security_enabled DataAzureadGroup#security_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#security_enabled DataAzureadGroup#security_enabled}
 
 ---
 
@@ -14783,7 +14783,7 @@ public readonly timeouts: DataAzureadGroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#timeouts DataAzureadGroup#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#timeouts DataAzureadGroup#timeouts}
 
 ---
 
@@ -14847,7 +14847,7 @@ public readonly displayNamePrefix: string;
 
 Common display name prefix of the groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#display_name_prefix DataAzureadGroups#display_name_prefix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
 
 ---
 
@@ -14861,7 +14861,7 @@ public readonly displayNames: string[];
 
 The display names of the groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#display_names DataAzureadGroups#display_names}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#display_names DataAzureadGroups#display_names}
 
 ---
 
@@ -14875,7 +14875,7 @@ public readonly mailEnabled: boolean | IResolvable;
 
 Whether the groups are mail-enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#mail_enabled DataAzureadGroups#mail_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#mail_enabled DataAzureadGroups#mail_enabled}
 
 ---
 
@@ -14889,7 +14889,7 @@ public readonly objectIds: string[];
 
 The object IDs of the groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#object_ids DataAzureadGroups#object_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#object_ids DataAzureadGroups#object_ids}
 
 ---
 
@@ -14903,7 +14903,7 @@ public readonly returnAll: boolean | IResolvable;
 
 Retrieve all groups with no filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#return_all DataAzureadGroups#return_all}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#return_all DataAzureadGroups#return_all}
 
 ---
 
@@ -14917,7 +14917,7 @@ public readonly securityEnabled: boolean | IResolvable;
 
 Whether the groups are security-enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#security_enabled DataAzureadGroups#security_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#security_enabled DataAzureadGroups#security_enabled}
 
 ---
 
@@ -14931,7 +14931,7 @@ public readonly timeouts: DataAzureadGroupsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#timeouts DataAzureadGroups#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#timeouts DataAzureadGroups#timeouts}
 
 ---
 
@@ -14953,7 +14953,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups.html#read DataAzureadGroups#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#read DataAzureadGroups#read}.
 
 ---
 
@@ -14975,7 +14975,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group.html#read DataAzureadGroup#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#read DataAzureadGroup#read}.
 
 ---
 
@@ -15039,7 +15039,7 @@ public readonly applicationId: string;
 
 The application ID (client ID) of the application associated with this service principal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#application_id DataAzureadServicePrincipal#application_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#application_id DataAzureadServicePrincipal#application_id}
 
 ---
 
@@ -15053,7 +15053,7 @@ public readonly displayName: string;
 
 The display name of the application associated with this service principal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#display_name DataAzureadServicePrincipal#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#display_name DataAzureadServicePrincipal#display_name}
 
 ---
 
@@ -15067,7 +15067,7 @@ public readonly objectId: string;
 
 The object ID of the service principal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#object_id DataAzureadServicePrincipal#object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#object_id DataAzureadServicePrincipal#object_id}
 
 ---
 
@@ -15081,7 +15081,7 @@ public readonly timeouts: DataAzureadServicePrincipalTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#timeouts DataAzureadServicePrincipal#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
 
 ---
 
@@ -15145,7 +15145,7 @@ public readonly applicationIds: string[];
 
 The application IDs (client IDs) of the applications associated with the service principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html#application_ids DataAzureadServicePrincipals#application_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#application_ids DataAzureadServicePrincipals#application_ids}
 
 ---
 
@@ -15159,7 +15159,7 @@ public readonly displayNames: string[];
 
 The display names of the applications associated with the service principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html#display_names DataAzureadServicePrincipals#display_names}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#display_names DataAzureadServicePrincipals#display_names}
 
 ---
 
@@ -15175,7 +15175,7 @@ Ignore missing service principals and return the service principals that were fo
 
 The data source will still fail if no service principals are found
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html#ignore_missing DataAzureadServicePrincipals#ignore_missing}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
 
 ---
 
@@ -15189,7 +15189,7 @@ public readonly objectIds: string[];
 
 The object IDs of the service principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html#object_ids DataAzureadServicePrincipals#object_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
 
 ---
 
@@ -15205,7 +15205,7 @@ Fetch all service principals with no filter and return all that were found.
 
 The data source will still fail if no service principals are found.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html#return_all DataAzureadServicePrincipals#return_all}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#return_all DataAzureadServicePrincipals#return_all}
 
 ---
 
@@ -15219,7 +15219,7 @@ public readonly timeouts: DataAzureadServicePrincipalsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html#timeouts DataAzureadServicePrincipals#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
 
 ---
 
@@ -15241,7 +15241,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals.html#read DataAzureadServicePrincipals#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#read DataAzureadServicePrincipals#read}.
 
 ---
 
@@ -15263,7 +15263,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal.html#read DataAzureadServicePrincipal#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#read DataAzureadServicePrincipal#read}.
 
 ---
 
@@ -15327,7 +15327,7 @@ public readonly mailNickname: string;
 
 The email alias of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#mail_nickname DataAzureadUser#mail_nickname}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#mail_nickname DataAzureadUser#mail_nickname}
 
 ---
 
@@ -15341,7 +15341,7 @@ public readonly objectId: string;
 
 The object ID of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#object_id DataAzureadUser#object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#object_id DataAzureadUser#object_id}
 
 ---
 
@@ -15355,7 +15355,7 @@ public readonly timeouts: DataAzureadUserTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#timeouts DataAzureadUser#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#timeouts DataAzureadUser#timeouts}
 
 ---
 
@@ -15369,7 +15369,7 @@ public readonly userPrincipalName: string;
 
 The user principal name (UPN) of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#user_principal_name DataAzureadUser#user_principal_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#user_principal_name DataAzureadUser#user_principal_name}
 
 ---
 
@@ -15435,7 +15435,7 @@ Ignore missing users and return users that were found.
 
 The data source will still fail if no users are found
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#ignore_missing DataAzureadUsers#ignore_missing}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#ignore_missing DataAzureadUsers#ignore_missing}
 
 ---
 
@@ -15449,7 +15449,7 @@ public readonly mailNicknames: string[];
 
 The email aliases of the users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#mail_nicknames DataAzureadUsers#mail_nicknames}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#mail_nicknames DataAzureadUsers#mail_nicknames}
 
 ---
 
@@ -15463,7 +15463,7 @@ public readonly objectIds: string[];
 
 The object IDs of the users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#object_ids DataAzureadUsers#object_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#object_ids DataAzureadUsers#object_ids}
 
 ---
 
@@ -15479,7 +15479,7 @@ Fetch all users with no filter and return all that were found.
 
 The data source will still fail if no users are found.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#return_all DataAzureadUsers#return_all}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#return_all DataAzureadUsers#return_all}
 
 ---
 
@@ -15493,7 +15493,7 @@ public readonly timeouts: DataAzureadUsersTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#timeouts DataAzureadUsers#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#timeouts DataAzureadUsers#timeouts}
 
 ---
 
@@ -15507,7 +15507,7 @@ public readonly userPrincipalNames: string[];
 
 The user principal names (UPNs) of the users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#user_principal_names DataAzureadUsers#user_principal_names}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#user_principal_names DataAzureadUsers#user_principal_names}
 
 ---
 
@@ -15529,7 +15529,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users.html#read DataAzureadUsers#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#read DataAzureadUsers#read}.
 
 ---
 
@@ -15551,7 +15551,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user.html#read DataAzureadUser#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#read DataAzureadUser#read}.
 
 ---
 
@@ -15615,7 +15615,7 @@ public readonly displayName: string;
 
 The display name of the directory role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html#display_name DirectoryRole#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#display_name DirectoryRole#display_name}
 
 ---
 
@@ -15629,7 +15629,7 @@ public readonly templateId: string;
 
 The object ID of the template associated with the directory role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html#template_id DirectoryRole#template_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#template_id DirectoryRole#template_id}
 
 ---
 
@@ -15643,7 +15643,7 @@ public readonly timeouts: DirectoryRoleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html#timeouts DirectoryRole#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#timeouts DirectoryRole#timeouts}
 
 ---
 
@@ -15707,7 +15707,7 @@ public readonly memberObjectId: string;
 
 The object ID of the member.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#member_object_id DirectoryRoleMember#member_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#member_object_id DirectoryRoleMember#member_object_id}
 
 ---
 
@@ -15721,7 +15721,7 @@ public readonly roleObjectId: string;
 
 The object ID of the directory role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#role_object_id DirectoryRoleMember#role_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#role_object_id DirectoryRoleMember#role_object_id}
 
 ---
 
@@ -15735,7 +15735,7 @@ public readonly timeouts: DirectoryRoleMemberTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#timeouts DirectoryRoleMember#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#timeouts DirectoryRoleMember#timeouts}
 
 ---
 
@@ -15757,7 +15757,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#create DirectoryRoleMember#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#create DirectoryRoleMember#create}.
 
 ---
 
@@ -15769,7 +15769,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#delete DirectoryRoleMember#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#delete DirectoryRoleMember#delete}.
 
 ---
 
@@ -15781,7 +15781,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#read DirectoryRoleMember#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#read DirectoryRoleMember#read}.
 
 ---
 
@@ -15793,7 +15793,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member.html#update DirectoryRoleMember#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#update DirectoryRoleMember#update}.
 
 ---
 
@@ -15815,7 +15815,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html#create DirectoryRole#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#create DirectoryRole#create}.
 
 ---
 
@@ -15827,7 +15827,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html#delete DirectoryRole#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#delete DirectoryRole#delete}.
 
 ---
 
@@ -15839,7 +15839,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html#read DirectoryRole#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#read DirectoryRole#read}.
 
 ---
 
@@ -15851,7 +15851,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role.html#update DirectoryRole#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#update DirectoryRole#update}.
 
 ---
 
@@ -15915,7 +15915,7 @@ public readonly displayName: string;
 
 The display name for the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#display_name Group#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
 
 ---
 
@@ -15931,7 +15931,7 @@ Indicates whether this group can be assigned to an Azure Active Directory role.
 
 This property can only be `true` for security-enabled groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#assignable_to_role Group#assignable_to_role}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#assignable_to_role Group#assignable_to_role}
 
 ---
 
@@ -15945,7 +15945,7 @@ public readonly behaviors: string[];
 
 The group behaviours for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#behaviors Group#behaviors}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#behaviors Group#behaviors}
 
 ---
 
@@ -15959,7 +15959,7 @@ public readonly description: string;
 
 The description for the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#description Group#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#description Group#description}
 
 ---
 
@@ -15973,7 +15973,7 @@ public readonly dynamicMembership: GroupDynamicMembership;
 
 dynamic_membership block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#dynamic_membership Group#dynamic_membership}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#dynamic_membership Group#dynamic_membership}
 
 ---
 
@@ -15989,7 +15989,7 @@ Whether the group is a mail enabled, with a shared group mailbox.
 
 At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#mail_enabled Group#mail_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#mail_enabled Group#mail_enabled}
 
 ---
 
@@ -16003,7 +16003,7 @@ public readonly mailNickname: string;
 
 The mail alias for the group, unique in the organisation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#mail_nickname Group#mail_nickname}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#mail_nickname Group#mail_nickname}
 
 ---
 
@@ -16019,7 +16019,7 @@ A set of members who should be present in this group.
 
 Supported object types are Users, Groups or Service Principals
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#members Group#members}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#members Group#members}
 
 ---
 
@@ -16033,7 +16033,7 @@ public readonly owners: string[];
 
 A set of owners who own this group. Supported object types are Users or Service Principals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#owners Group#owners}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#owners Group#owners}
 
 ---
 
@@ -16047,7 +16047,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 If `true`, will return an error if an existing group is found with the same name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#prevent_duplicate_names Group#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#prevent_duplicate_names Group#prevent_duplicate_names}
 
 ---
 
@@ -16061,7 +16061,7 @@ public readonly provisioningOptions: string[];
 
 The group provisioning options for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#provisioning_options Group#provisioning_options}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#provisioning_options Group#provisioning_options}
 
 ---
 
@@ -16077,7 +16077,7 @@ Whether the group is a security group for controlling access to in-app resources
 
 At least one of `security_enabled` or `mail_enabled` must be specified. A group can be security enabled _and_ mail enabled
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#security_enabled Group#security_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#security_enabled Group#security_enabled}
 
 ---
 
@@ -16091,7 +16091,7 @@ public readonly theme: string;
 
 The colour theme for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#theme Group#theme}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#theme Group#theme}
 
 ---
 
@@ -16105,7 +16105,7 @@ public readonly timeouts: GroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#timeouts Group#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#timeouts Group#timeouts}
 
 ---
 
@@ -16121,7 +16121,7 @@ A set of group types to configure for the group.
 
 `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#types Group#types}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#types Group#types}
 
 ---
 
@@ -16135,7 +16135,7 @@ public readonly visibility: string;
 
 Specifies the group join policy and group content visibility.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#visibility Group#visibility}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#visibility Group#visibility}
 
 ---
 
@@ -16157,7 +16157,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#enabled Group#enabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#enabled Group#enabled}.
 
 ---
 
@@ -16171,7 +16171,7 @@ public readonly rule: string;
 
 Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#rule Group#rule}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#rule Group#rule}
 
 ---
 
@@ -16235,7 +16235,7 @@ public readonly groupObjectId: string;
 
 The object ID of the group you want to add the member to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#group_object_id GroupMember#group_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#group_object_id GroupMember#group_object_id}
 
 ---
 
@@ -16251,7 +16251,7 @@ The object ID of the principal you want to add as a member to the group.
 
 Supported object types are Users, Groups or Service Principals
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#member_object_id GroupMember#member_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#member_object_id GroupMember#member_object_id}
 
 ---
 
@@ -16265,7 +16265,7 @@ public readonly timeouts: GroupMemberTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#timeouts GroupMember#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#timeouts GroupMember#timeouts}
 
 ---
 
@@ -16287,7 +16287,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#create GroupMember#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#create GroupMember#create}.
 
 ---
 
@@ -16299,7 +16299,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#delete GroupMember#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#delete GroupMember#delete}.
 
 ---
 
@@ -16311,7 +16311,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#read GroupMember#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#read GroupMember#read}.
 
 ---
 
@@ -16323,7 +16323,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member.html#update GroupMember#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#update GroupMember#update}.
 
 ---
 
@@ -16345,7 +16345,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#create Group#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#create Group#create}.
 
 ---
 
@@ -16357,7 +16357,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#delete Group#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#delete Group#delete}.
 
 ---
 
@@ -16369,7 +16369,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#read Group#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#read Group#read}.
 
 ---
 
@@ -16381,7 +16381,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group.html#update Group#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#update Group#update}.
 
 ---
 
@@ -16445,7 +16445,7 @@ public readonly redirectUrl: string;
 
 The URL that the user should be redirected to once the invitation is redeemed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#redirect_url Invitation#redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#redirect_url Invitation#redirect_url}
 
 ---
 
@@ -16459,7 +16459,7 @@ public readonly userEmailAddress: string;
 
 The email address of the user being invited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#user_email_address Invitation#user_email_address}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#user_email_address Invitation#user_email_address}
 
 ---
 
@@ -16473,7 +16473,7 @@ public readonly message: InvitationMessage;
 
 message block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#message Invitation#message}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#message Invitation#message}
 
 ---
 
@@ -16487,7 +16487,7 @@ public readonly timeouts: InvitationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#timeouts Invitation#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#timeouts Invitation#timeouts}
 
 ---
 
@@ -16501,7 +16501,7 @@ public readonly userDisplayName: string;
 
 The display name of the user being invited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#user_display_name Invitation#user_display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#user_display_name Invitation#user_display_name}
 
 ---
 
@@ -16515,7 +16515,7 @@ public readonly userType: string;
 
 The user type of the user being invited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#user_type Invitation#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#user_type Invitation#user_type}
 
 ---
 
@@ -16539,7 +16539,7 @@ public readonly additionalRecipients: string[];
 
 Email addresses of additional recipients the invitation message should be sent to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#additional_recipients Invitation#additional_recipients}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#additional_recipients Invitation#additional_recipients}
 
 ---
 
@@ -16553,7 +16553,7 @@ public readonly body: string;
 
 Customized message body you want to send if you don't want to send the default message.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#body Invitation#body}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#body Invitation#body}
 
 ---
 
@@ -16567,7 +16567,7 @@ public readonly language: string;
 
 The language you want to send the default message in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#language Invitation#language}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#language Invitation#language}
 
 ---
 
@@ -16589,7 +16589,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#create Invitation#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#create Invitation#create}.
 
 ---
 
@@ -16601,7 +16601,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#delete Invitation#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#delete Invitation#delete}.
 
 ---
 
@@ -16613,7 +16613,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#read Invitation#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#read Invitation#read}.
 
 ---
 
@@ -16625,7 +16625,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#update Invitation#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#update Invitation#update}.
 
 ---
 
@@ -16687,7 +16687,7 @@ public readonly displayName: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#display_name NamedLocation#display_name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#display_name NamedLocation#display_name}.
 
 ---
 
@@ -16701,7 +16701,7 @@ public readonly country: NamedLocationCountry;
 
 country block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#country NamedLocation#country}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#country NamedLocation#country}
 
 ---
 
@@ -16715,7 +16715,7 @@ public readonly ip: NamedLocationIp;
 
 ip block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#ip NamedLocation#ip}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#ip NamedLocation#ip}
 
 ---
 
@@ -16729,7 +16729,7 @@ public readonly timeouts: NamedLocationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#timeouts NamedLocation#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#timeouts NamedLocation#timeouts}
 
 ---
 
@@ -16751,7 +16751,7 @@ public readonly countriesAndRegions: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#countries_and_regions NamedLocation#countries_and_regions}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#countries_and_regions NamedLocation#countries_and_regions}.
 
 ---
 
@@ -16763,7 +16763,7 @@ public readonly includeUnknownCountriesAndRegions: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}.
 
 ---
 
@@ -16785,7 +16785,7 @@ public readonly ipRanges: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#ip_ranges NamedLocation#ip_ranges}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#ip_ranges NamedLocation#ip_ranges}.
 
 ---
 
@@ -16797,7 +16797,7 @@ public readonly trusted: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#trusted NamedLocation#trusted}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#trusted NamedLocation#trusted}.
 
 ---
 
@@ -16819,7 +16819,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#create NamedLocation#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#create NamedLocation#create}.
 
 ---
 
@@ -16831,7 +16831,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#delete NamedLocation#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#delete NamedLocation#delete}.
 
 ---
 
@@ -16843,7 +16843,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#read NamedLocation#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#read NamedLocation#read}.
 
 ---
 
@@ -16855,7 +16855,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location.html#update NamedLocation#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#update NamedLocation#update}.
 
 ---
 
@@ -16919,7 +16919,7 @@ public readonly servicePrincipalId: string;
 
 The object ID of the service principal for which this certificate should be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#service_principal_id ServicePrincipalCertificate#service_principal_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#service_principal_id ServicePrincipalCertificate#service_principal_id}
 
 ---
 
@@ -16933,7 +16933,7 @@ public readonly value: string;
 
 The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#value ServicePrincipalCertificate#value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#value ServicePrincipalCertificate#value}
 
 ---
 
@@ -16947,7 +16947,7 @@ public readonly encoding: string;
 
 Specifies the encoding used for the supplied certificate data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#encoding ServicePrincipalCertificate#encoding}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#encoding ServicePrincipalCertificate#encoding}
 
 ---
 
@@ -16961,7 +16961,7 @@ public readonly endDate: string;
 
 The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#end_date ServicePrincipalCertificate#end_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#end_date ServicePrincipalCertificate#end_date}
 
 ---
 
@@ -16977,7 +16977,7 @@ A relative duration for which the certificate is valid until, for example `240h`
 
 Valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h"
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#end_date_relative ServicePrincipalCertificate#end_date_relative}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#end_date_relative ServicePrincipalCertificate#end_date_relative}
 
 ---
 
@@ -16991,7 +16991,7 @@ public readonly keyId: string;
 
 A UUID used to uniquely identify this certificate. If not specified a UUID will be automatically generated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#key_id ServicePrincipalCertificate#key_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#key_id ServicePrincipalCertificate#key_id}
 
 ---
 
@@ -17005,7 +17005,7 @@ public readonly startDate: string;
 
 The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#start_date ServicePrincipalCertificate#start_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#start_date ServicePrincipalCertificate#start_date}
 
 ---
 
@@ -17019,7 +17019,7 @@ public readonly timeouts: ServicePrincipalCertificateTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#timeouts ServicePrincipalCertificate#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#timeouts ServicePrincipalCertificate#timeouts}
 
 ---
 
@@ -17033,7 +17033,7 @@ public readonly type: string;
 
 The type of key/certificate.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#type ServicePrincipalCertificate#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#type ServicePrincipalCertificate#type}
 
 ---
 
@@ -17055,7 +17055,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#create ServicePrincipalCertificate#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#create ServicePrincipalCertificate#create}.
 
 ---
 
@@ -17067,7 +17067,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#delete ServicePrincipalCertificate#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#delete ServicePrincipalCertificate#delete}.
 
 ---
 
@@ -17079,7 +17079,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#read ServicePrincipalCertificate#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#read ServicePrincipalCertificate#read}.
 
 ---
 
@@ -17091,7 +17091,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate.html#update ServicePrincipalCertificate#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#update ServicePrincipalCertificate#update}.
 
 ---
 
@@ -17155,7 +17155,7 @@ public readonly applicationId: string;
 
 The application ID (client ID) of the application for which to create a service principal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#application_id ServicePrincipal#application_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#application_id ServicePrincipal#application_id}
 
 ---
 
@@ -17169,7 +17169,7 @@ public readonly accountEnabled: boolean | IResolvable;
 
 Whether or not the service principal account is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#account_enabled ServicePrincipal#account_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#account_enabled ServicePrincipal#account_enabled}
 
 ---
 
@@ -17183,7 +17183,7 @@ public readonly alternativeNames: string[];
 
 A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#alternative_names ServicePrincipal#alternative_names}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#alternative_names ServicePrincipal#alternative_names}
 
 ---
 
@@ -17197,7 +17197,7 @@ public readonly appRoleAssignmentRequired: boolean | IResolvable;
 
 Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#app_role_assignment_required ServicePrincipal#app_role_assignment_required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#app_role_assignment_required ServicePrincipal#app_role_assignment_required}
 
 ---
 
@@ -17211,7 +17211,7 @@ public readonly description: string;
 
 Description of the service principal provided for internal end-users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#description ServicePrincipal#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#description ServicePrincipal#description}
 
 ---
 
@@ -17225,7 +17225,7 @@ public readonly features: ServicePrincipalFeatures[];
 
 features block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#features ServicePrincipal#features}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#features ServicePrincipal#features}
 
 ---
 
@@ -17239,7 +17239,7 @@ public readonly featureTags: ServicePrincipalFeatureTags[];
 
 feature_tags block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#feature_tags ServicePrincipal#feature_tags}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#feature_tags ServicePrincipal#feature_tags}
 
 ---
 
@@ -17255,7 +17255,7 @@ The URL where the service provider redirects the user to Azure AD to authenticat
 
 Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#login_url ServicePrincipal#login_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#login_url ServicePrincipal#login_url}
 
 ---
 
@@ -17269,7 +17269,7 @@ public readonly notes: string;
 
 Free text field to capture information about the service principal, typically used for operational purposes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#notes ServicePrincipal#notes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#notes ServicePrincipal#notes}
 
 ---
 
@@ -17285,7 +17285,7 @@ List of email addresses where Azure AD sends a notification when the active cert
 
 This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#notification_email_addresses ServicePrincipal#notification_email_addresses}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#notification_email_addresses ServicePrincipal#notification_email_addresses}
 
 ---
 
@@ -17299,7 +17299,7 @@ public readonly owners: string[];
 
 A list of object IDs of principals that will be granted ownership of the service principal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#owners ServicePrincipal#owners}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#owners ServicePrincipal#owners}
 
 ---
 
@@ -17315,7 +17315,7 @@ The single sign-on mode configured for this application.
 
 Azure AD uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Azure AD My Apps
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#preferred_single_sign_on_mode ServicePrincipal#preferred_single_sign_on_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#preferred_single_sign_on_mode ServicePrincipal#preferred_single_sign_on_mode}
 
 ---
 
@@ -17329,7 +17329,7 @@ public readonly samlSingleSignOn: ServicePrincipalSamlSingleSignOn;
 
 saml_single_sign_on block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#saml_single_sign_on ServicePrincipal#saml_single_sign_on}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#saml_single_sign_on ServicePrincipal#saml_single_sign_on}
 
 ---
 
@@ -17343,7 +17343,7 @@ public readonly tags: string[];
 
 A set of tags to apply to the service principal.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#tags ServicePrincipal#tags}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#tags ServicePrincipal#tags}
 
 ---
 
@@ -17357,7 +17357,7 @@ public readonly timeouts: ServicePrincipalTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#timeouts ServicePrincipal#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#timeouts ServicePrincipal#timeouts}
 
 ---
 
@@ -17371,7 +17371,7 @@ public readonly useExisting: boolean | IResolvable;
 
 When true, the resource will return an existing service principal instead of failing with an error.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#use_existing ServicePrincipal#use_existing}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#use_existing ServicePrincipal#use_existing}
 
 ---
 
@@ -17435,7 +17435,7 @@ public readonly claimValues: string[];
 
 A set of claim values for delegated permission scopes which should be included in access tokens for the resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#claim_values ServicePrincipalDelegatedPermissionGrant#claim_values}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#claim_values ServicePrincipalDelegatedPermissionGrant#claim_values}
 
 ---
 
@@ -17449,7 +17449,7 @@ public readonly resourceServicePrincipalObjectId: string;
 
 The object ID of the service principal representing the resource to be accessed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#resource_service_principal_object_id ServicePrincipalDelegatedPermissionGrant#resource_service_principal_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#resource_service_principal_object_id ServicePrincipalDelegatedPermissionGrant#resource_service_principal_object_id}
 
 ---
 
@@ -17463,7 +17463,7 @@ public readonly servicePrincipalObjectId: string;
 
 The object ID of the service principal for which this delegated permission grant should be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#service_principal_object_id ServicePrincipalDelegatedPermissionGrant#service_principal_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#service_principal_object_id ServicePrincipalDelegatedPermissionGrant#service_principal_object_id}
 
 ---
 
@@ -17477,7 +17477,7 @@ public readonly timeouts: ServicePrincipalDelegatedPermissionGrantTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#timeouts ServicePrincipalDelegatedPermissionGrant#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#timeouts ServicePrincipalDelegatedPermissionGrant#timeouts}
 
 ---
 
@@ -17491,7 +17491,7 @@ public readonly userObjectId: string;
 
 The object ID of the user on behalf of whom the service principal is authorized to access the resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#user_object_id ServicePrincipalDelegatedPermissionGrant#user_object_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#user_object_id ServicePrincipalDelegatedPermissionGrant#user_object_id}
 
 ---
 
@@ -17513,7 +17513,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#create ServicePrincipalDelegatedPermissionGrant#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#create ServicePrincipalDelegatedPermissionGrant#create}.
 
 ---
 
@@ -17525,7 +17525,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#delete ServicePrincipalDelegatedPermissionGrant#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#delete ServicePrincipalDelegatedPermissionGrant#delete}.
 
 ---
 
@@ -17537,7 +17537,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#read ServicePrincipalDelegatedPermissionGrant#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#read ServicePrincipalDelegatedPermissionGrant#read}.
 
 ---
 
@@ -17549,7 +17549,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant.html#update ServicePrincipalDelegatedPermissionGrant#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#update ServicePrincipalDelegatedPermissionGrant#update}.
 
 ---
 
@@ -17573,7 +17573,7 @@ public readonly customSingleSignOnApp: boolean | IResolvable;
 
 Whether this service principal represents a custom SAML application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#custom_single_sign_on_app ServicePrincipal#custom_single_sign_on_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#custom_single_sign_on_app ServicePrincipal#custom_single_sign_on_app}
 
 ---
 
@@ -17587,7 +17587,7 @@ public readonly enterpriseApplication: boolean | IResolvable;
 
 Whether this service principal represents an Enterprise Application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#enterprise_application ServicePrincipal#enterprise_application}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#enterprise_application ServicePrincipal#enterprise_application}
 
 ---
 
@@ -17601,7 +17601,7 @@ public readonly galleryApplication: boolean | IResolvable;
 
 Whether this service principal represents a gallery application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#gallery_application ServicePrincipal#gallery_application}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#gallery_application ServicePrincipal#gallery_application}
 
 ---
 
@@ -17615,7 +17615,7 @@ public readonly visibleToUsers: boolean | IResolvable;
 
 Whether this app is visible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#visible_to_users ServicePrincipal#visible_to_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#visible_to_users ServicePrincipal#visible_to_users}
 
 ---
 
@@ -17639,7 +17639,7 @@ public readonly customSingleSignOn: boolean | IResolvable;
 
 Whether this service principal represents a custom SAML application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
 
 ---
 
@@ -17653,7 +17653,7 @@ public readonly enterprise: boolean | IResolvable;
 
 Whether this service principal represents an Enterprise Application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#enterprise ServicePrincipal#enterprise}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#enterprise ServicePrincipal#enterprise}
 
 ---
 
@@ -17667,7 +17667,7 @@ public readonly gallery: boolean | IResolvable;
 
 Whether this service principal represents a gallery application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#gallery ServicePrincipal#gallery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#gallery ServicePrincipal#gallery}
 
 ---
 
@@ -17681,7 +17681,7 @@ public readonly hide: boolean | IResolvable;
 
 Whether this app is invisible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#hide ServicePrincipal#hide}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#hide ServicePrincipal#hide}
 
 ---
 
@@ -17745,7 +17745,7 @@ public readonly servicePrincipalId: string;
 
 The object ID of the service principal for which this password should be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#service_principal_id ServicePrincipalPassword#service_principal_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#service_principal_id ServicePrincipalPassword#service_principal_id}
 
 ---
 
@@ -17759,7 +17759,7 @@ public readonly displayName: string;
 
 A display name for the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#display_name ServicePrincipalPassword#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#display_name ServicePrincipalPassword#display_name}
 
 ---
 
@@ -17773,7 +17773,7 @@ public readonly endDate: string;
 
 The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#end_date ServicePrincipalPassword#end_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#end_date ServicePrincipalPassword#end_date}
 
 ---
 
@@ -17789,7 +17789,7 @@ A relative duration for which the password is valid until, for example `240h` (1
 
 Changing this field forces a new resource to be created
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#end_date_relative ServicePrincipalPassword#end_date_relative}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#end_date_relative ServicePrincipalPassword#end_date_relative}
 
 ---
 
@@ -17803,7 +17803,7 @@ public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
 
 Arbitrary map of values that, when changed, will trigger rotation of the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#rotate_when_changed ServicePrincipalPassword#rotate_when_changed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#rotate_when_changed ServicePrincipalPassword#rotate_when_changed}
 
 ---
 
@@ -17817,7 +17817,7 @@ public readonly startDate: string;
 
 The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#start_date ServicePrincipalPassword#start_date}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#start_date ServicePrincipalPassword#start_date}
 
 ---
 
@@ -17831,7 +17831,7 @@ public readonly timeouts: ServicePrincipalPasswordTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#timeouts ServicePrincipalPassword#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#timeouts ServicePrincipalPassword#timeouts}
 
 ---
 
@@ -17853,7 +17853,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#create ServicePrincipalPassword#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#create ServicePrincipalPassword#create}.
 
 ---
 
@@ -17865,7 +17865,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#delete ServicePrincipalPassword#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#delete ServicePrincipalPassword#delete}.
 
 ---
 
@@ -17877,7 +17877,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#read ServicePrincipalPassword#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#read ServicePrincipalPassword#read}.
 
 ---
 
@@ -17889,7 +17889,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password.html#update ServicePrincipalPassword#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#update ServicePrincipalPassword#update}.
 
 ---
 
@@ -17913,7 +17913,7 @@ public readonly relayState: string;
 
 The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#relay_state ServicePrincipal#relay_state}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#relay_state ServicePrincipal#relay_state}
 
 ---
 
@@ -17935,7 +17935,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#create ServicePrincipal#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#create ServicePrincipal#create}.
 
 ---
 
@@ -17947,7 +17947,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#delete ServicePrincipal#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#delete ServicePrincipal#delete}.
 
 ---
 
@@ -17959,7 +17959,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#read ServicePrincipal#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#read ServicePrincipal#read}.
 
 ---
 
@@ -17971,7 +17971,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal.html#update ServicePrincipal#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#update ServicePrincipal#update}.
 
 ---
 
@@ -18035,7 +18035,7 @@ public readonly displayName: string;
 
 The name to display in the address book for the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#display_name User#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#display_name User#display_name}
 
 ---
 
@@ -18049,7 +18049,7 @@ public readonly userPrincipalName: string;
 
 The user principal name (UPN) of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#user_principal_name User#user_principal_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#user_principal_name User#user_principal_name}
 
 ---
 
@@ -18063,7 +18063,7 @@ public readonly accountEnabled: boolean | IResolvable;
 
 Whether or not the account should be enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#account_enabled User#account_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#account_enabled User#account_enabled}
 
 ---
 
@@ -18077,7 +18077,7 @@ public readonly ageGroup: string;
 
 The age group of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#age_group User#age_group}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#age_group User#age_group}
 
 ---
 
@@ -18093,7 +18093,7 @@ The telephone numbers for the user.
 
 Only one number can be set for this property. Read-only for users synced with Azure AD Connect
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#business_phones User#business_phones}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#business_phones User#business_phones}
 
 ---
 
@@ -18107,7 +18107,7 @@ public readonly city: string;
 
 The city in which the user is located.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#city User#city}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#city User#city}
 
 ---
 
@@ -18123,7 +18123,7 @@ The company name which the user is associated.
 
 This property can be useful for describing the company that an external user comes from
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#company_name User#company_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#company_name User#company_name}
 
 ---
 
@@ -18137,7 +18137,7 @@ public readonly consentProvidedForMinor: string;
 
 Whether consent has been obtained for minors.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#consent_provided_for_minor User#consent_provided_for_minor}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#consent_provided_for_minor User#consent_provided_for_minor}
 
 ---
 
@@ -18151,7 +18151,7 @@ public readonly costCenter: string;
 
 The cost center associated with the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#cost_center User#cost_center}
 
 ---
 
@@ -18165,7 +18165,7 @@ public readonly country: string;
 
 The country/region in which the user is located, e.g. `US` or `UK`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#country User#country}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#country User#country}
 
 ---
 
@@ -18179,7 +18179,7 @@ public readonly department: string;
 
 The name for the department in which the user works.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#department User#department}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#department User#department}
 
 ---
 
@@ -18193,7 +18193,7 @@ public readonly disablePasswordExpiration: boolean | IResolvable;
 
 Whether the users password is exempt from expiring.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#disable_password_expiration User#disable_password_expiration}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#disable_password_expiration User#disable_password_expiration}
 
 ---
 
@@ -18207,7 +18207,7 @@ public readonly disableStrongPassword: boolean | IResolvable;
 
 Whether the user is allowed weaker passwords than the default policy to be specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#disable_strong_password User#disable_strong_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#disable_strong_password User#disable_strong_password}
 
 ---
 
@@ -18221,7 +18221,7 @@ public readonly division: string;
 
 The name of the division in which the user works.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#division User#division}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#division User#division}
 
 ---
 
@@ -18235,7 +18235,7 @@ public readonly employeeId: string;
 
 The employee identifier assigned to the user by the organisation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#employee_id User#employee_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#employee_id User#employee_id}
 
 ---
 
@@ -18249,7 +18249,7 @@ public readonly employeeType: string;
 
 Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#employee_type User#employee_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#employee_type User#employee_type}
 
 ---
 
@@ -18263,7 +18263,7 @@ public readonly faxNumber: string;
 
 The fax number of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#fax_number User#fax_number}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#fax_number User#fax_number}
 
 ---
 
@@ -18279,7 +18279,7 @@ Whether the user is forced to change the password during the next sign-in.
 
 Only takes effect when also changing the password
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#force_password_change User#force_password_change}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#force_password_change User#force_password_change}
 
 ---
 
@@ -18293,7 +18293,7 @@ public readonly givenName: string;
 
 The given name (first name) of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#given_name User#given_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#given_name User#given_name}
 
 ---
 
@@ -18307,7 +18307,7 @@ public readonly jobTitle: string;
 
 The user’s job title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#job_title User#job_title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#job_title User#job_title}
 
 ---
 
@@ -18321,7 +18321,7 @@ public readonly mail: string;
 
 The SMTP address for the user. Cannot be unset.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#mail User#mail}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#mail User#mail}
 
 ---
 
@@ -18335,7 +18335,7 @@ public readonly mailNickname: string;
 
 The mail alias for the user. Defaults to the user name part of the user principal name (UPN).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#mail_nickname User#mail_nickname}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#mail_nickname User#mail_nickname}
 
 ---
 
@@ -18349,7 +18349,7 @@ public readonly managerId: string;
 
 The object ID of the user's manager.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#manager_id User#manager_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#manager_id User#manager_id}
 
 ---
 
@@ -18363,7 +18363,7 @@ public readonly mobilePhone: string;
 
 The primary cellular telephone number for the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#mobile_phone User#mobile_phone}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#mobile_phone User#mobile_phone}
 
 ---
 
@@ -18377,7 +18377,7 @@ public readonly officeLocation: string;
 
 The office location in the user's place of business.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#office_location User#office_location}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#office_location User#office_location}
 
 ---
 
@@ -18393,7 +18393,7 @@ The value used to associate an on-premise Active Directory user account with the
 
 This must be specified if you are using a federated domain for the user's `user_principal_name` property when creating a new user account
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#onpremises_immutable_id User#onpremises_immutable_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#onpremises_immutable_id User#onpremises_immutable_id}
 
 ---
 
@@ -18407,7 +18407,7 @@ public readonly otherMails: string[];
 
 Additional email addresses for the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#other_mails User#other_mails}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#other_mails User#other_mails}
 
 ---
 
@@ -18423,7 +18423,7 @@ The password for the user.
 
 The password must satisfy minimum requirements as specified by the password policy. The maximum length is 256 characters. This property is required when creating a new user
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#password User#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#password User#password}
 
 ---
 
@@ -18439,7 +18439,7 @@ The postal code for the user's postal address.
 
 The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#postal_code User#postal_code}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#postal_code User#postal_code}
 
 ---
 
@@ -18453,7 +18453,7 @@ public readonly preferredLanguage: string;
 
 The user's preferred language, in ISO 639-1 notation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#preferred_language User#preferred_language}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#preferred_language User#preferred_language}
 
 ---
 
@@ -18467,7 +18467,7 @@ public readonly showInAddressList: boolean | IResolvable;
 
 Whether or not the Outlook global address list should include this user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#show_in_address_list User#show_in_address_list}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#show_in_address_list User#show_in_address_list}
 
 ---
 
@@ -18481,7 +18481,7 @@ public readonly state: string;
 
 The state or province in the user's address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#state User#state}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#state User#state}
 
 ---
 
@@ -18495,7 +18495,7 @@ public readonly streetAddress: string;
 
 The street address of the user's place of business.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#street_address User#street_address}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#street_address User#street_address}
 
 ---
 
@@ -18509,7 +18509,7 @@ public readonly surname: string;
 
 The user's surname (family name or last name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#surname User#surname}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#surname User#surname}
 
 ---
 
@@ -18523,7 +18523,7 @@ public readonly timeouts: UserTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#timeouts User#timeouts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#timeouts User#timeouts}
 
 ---
 
@@ -18539,7 +18539,7 @@ The usage location of the user.
 
 Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries. The usage location is a two letter country code (ISO standard 3166). Examples include: `NO`, `JP`, and `GB`. Cannot be reset to null once set
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#usage_location User#usage_location}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#usage_location User#usage_location}
 
 ---
 
@@ -18561,7 +18561,7 @@ public readonly create: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#create User#create}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#create User#create}.
 
 ---
 
@@ -18573,7 +18573,7 @@ public readonly delete: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#delete User#delete}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#delete User#delete}.
 
 ---
 
@@ -18585,7 +18585,7 @@ public readonly read: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#read User#read}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#read User#read}.
 
 ---
 
@@ -18597,7 +18597,7 @@ public readonly update: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user.html#update User#update}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#update User#update}.
 
 ---
 

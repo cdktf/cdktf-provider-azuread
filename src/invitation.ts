@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/invitation.html
+// https://www.terraform.io/docs/providers/azuread/r/invitation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface InvitationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The URL that the user should be redirected to once the invitation is redeemed
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#redirect_url Invitation#redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#redirect_url Invitation#redirect_url}
   */
   readonly redirectUrl: string;
   /**
   * The display name of the user being invited
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#user_display_name Invitation#user_display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#user_display_name Invitation#user_display_name}
   */
   readonly userDisplayName?: string;
   /**
   * The email address of the user being invited
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#user_email_address Invitation#user_email_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#user_email_address Invitation#user_email_address}
   */
   readonly userEmailAddress: string;
   /**
   * The user type of the user being invited
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#user_type Invitation#user_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#user_type Invitation#user_type}
   */
   readonly userType?: string;
   /**
   * message block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#message Invitation#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#message Invitation#message}
   */
   readonly message?: InvitationMessage;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#timeouts Invitation#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#timeouts Invitation#timeouts}
   */
   readonly timeouts?: InvitationTimeouts;
 }
@@ -48,19 +48,19 @@ export interface InvitationMessage {
   /**
   * Email addresses of additional recipients the invitation message should be sent to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#additional_recipients Invitation#additional_recipients}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#additional_recipients Invitation#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Customized message body you want to send if you don't want to send the default message
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#body Invitation#body}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#body Invitation#body}
   */
   readonly body?: string;
   /**
   * The language you want to send the default message in
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#language Invitation#language}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#language Invitation#language}
   */
   readonly language?: string;
 }
@@ -172,19 +172,19 @@ export class InvitationMessageOutputReference extends cdktf.ComplexObject {
 }
 export interface InvitationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#create Invitation#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#create Invitation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#delete Invitation#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#delete Invitation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#read Invitation#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#read Invitation#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html#update Invitation#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#update Invitation#update}
   */
   readonly update?: string;
 }
@@ -319,7 +319,7 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html azuread_invitation}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/invitation azuread_invitation}
 */
 export class Invitation extends cdktf.TerraformResource {
 
@@ -333,7 +333,7 @@ export class Invitation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/invitation.html azuread_invitation} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/invitation azuread_invitation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
