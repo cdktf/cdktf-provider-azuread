@@ -30,7 +30,7 @@ export interface ServicePrincipalPasswordConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#rotate_when_changed ServicePrincipalPassword#rotate_when_changed}
   */
-  readonly rotateWhenChanged?: { [key: string]: string } | cdktf.IResolvable;
+  readonly rotateWhenChanged?: { [key: string]: string };
   /**
   * The object ID of the service principal for which this password should be created
   * 
@@ -69,8 +69,8 @@ export interface ServicePrincipalPasswordTimeouts {
   readonly update?: string;
 }
 
-export function servicePrincipalPasswordTimeoutsToTerraform(struct?: ServicePrincipalPasswordTimeoutsOutputReference | ServicePrincipalPasswordTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function servicePrincipalPasswordTimeoutsToTerraform(struct?: ServicePrincipalPasswordTimeoutsOutputReference | ServicePrincipalPasswordTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -90,7 +90,7 @@ export class ServicePrincipalPasswordTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -302,12 +302,11 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
   }
 
   // rotate_when_changed - computed: false, optional: true, required: false
-  private _rotateWhenChanged?: { [key: string]: string } | cdktf.IResolvable; 
+  private _rotateWhenChanged?: { [key: string]: string }; 
   public get rotateWhenChanged() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rotate_when_changed') as any;
+    return this.getStringMapAttribute('rotate_when_changed');
   }
-  public set rotateWhenChanged(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set rotateWhenChanged(value: { [key: string]: string }) {
     this._rotateWhenChanged = value;
   }
   public resetRotateWhenChanged() {
@@ -353,7 +352,7 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ServicePrincipalPasswordTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ServicePrincipalPasswordTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -377,7 +376,7 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
       display_name: cdktf.stringToTerraform(this._displayName),
       end_date: cdktf.stringToTerraform(this._endDate),
       end_date_relative: cdktf.stringToTerraform(this._endDateRelative),
-      rotate_when_changed: cdktf.hashMapper(cdktf.anyToTerraform)(this._rotateWhenChanged),
+      rotate_when_changed: cdktf.hashMapper(cdktf.stringToTerraform)(this._rotateWhenChanged),
       service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
       start_date: cdktf.stringToTerraform(this._startDate),
       timeouts: servicePrincipalPasswordTimeoutsToTerraform(this._timeouts.internalValue),

@@ -42,7 +42,7 @@ export class DataAzureadGroupDynamicMembership extends cdktf.ComplexComputedList
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // rule - computed: true, optional: false, required: false
@@ -57,8 +57,8 @@ export interface DataAzureadGroupTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadGroupTimeoutsToTerraform(struct?: DataAzureadGroupTimeoutsOutputReference | DataAzureadGroupTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAzureadGroupTimeoutsToTerraform(struct?: DataAzureadGroupTimeoutsOutputReference | DataAzureadGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -75,7 +75,7 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -162,7 +162,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
 
   // assignable_to_role - computed: true, optional: false, required: false
   public get assignableToRole() {
-    return this.getBooleanAttribute('assignable_to_role') as any;
+    return this.getBooleanAttribute('assignable_to_role');
   }
 
   // behaviors - computed: true, optional: false, required: false
@@ -193,7 +193,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
 
   // dynamic_membership - computed: true, optional: false, required: false
   public dynamicMembership(index: string) {
-    return new DataAzureadGroupDynamicMembership(this, 'dynamic_membership', index);
+    return new DataAzureadGroupDynamicMembership(this, 'dynamic_membership', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -209,7 +209,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // mail_enabled - computed: true, optional: true, required: false
   private _mailEnabled?: boolean | cdktf.IResolvable; 
   public get mailEnabled() {
-    return this.getBooleanAttribute('mail_enabled') as any;
+    return this.getBooleanAttribute('mail_enabled');
   }
   public set mailEnabled(value: boolean | cdktf.IResolvable) {
     this._mailEnabled = value;
@@ -270,7 +270,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
 
   // onpremises_sync_enabled - computed: true, optional: false, required: false
   public get onpremisesSyncEnabled() {
-    return this.getBooleanAttribute('onpremises_sync_enabled') as any;
+    return this.getBooleanAttribute('onpremises_sync_enabled');
   }
 
   // owners - computed: true, optional: false, required: false
@@ -296,7 +296,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // security_enabled - computed: true, optional: true, required: false
   private _securityEnabled?: boolean | cdktf.IResolvable; 
   public get securityEnabled() {
-    return this.getBooleanAttribute('security_enabled') as any;
+    return this.getBooleanAttribute('security_enabled');
   }
   public set securityEnabled(value: boolean | cdktf.IResolvable) {
     this._securityEnabled = value;
@@ -325,7 +325,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadGroupTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadGroupTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

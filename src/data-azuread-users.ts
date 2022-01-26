@@ -48,7 +48,7 @@ export class DataAzureadUsersUsers extends cdktf.ComplexComputedList {
 
   // account_enabled - computed: true, optional: false, required: false
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled') as any;
+    return this.getBooleanAttribute('account_enabled');
   }
 
   // display_name - computed: true, optional: false, required: false
@@ -103,8 +103,8 @@ export interface DataAzureadUsersTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeoutsOutputReference | DataAzureadUsersTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeoutsOutputReference | DataAzureadUsersTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -121,7 +121,7 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -215,7 +215,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // ignore_missing - computed: false, optional: true, required: false
   private _ignoreMissing?: boolean | cdktf.IResolvable; 
   public get ignoreMissing() {
-    return this.getBooleanAttribute('ignore_missing') as any;
+    return this.getBooleanAttribute('ignore_missing');
   }
   public set ignoreMissing(value: boolean | cdktf.IResolvable) {
     this._ignoreMissing = value;
@@ -263,7 +263,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // return_all - computed: false, optional: true, required: false
   private _returnAll?: boolean | cdktf.IResolvable; 
   public get returnAll() {
-    return this.getBooleanAttribute('return_all') as any;
+    return this.getBooleanAttribute('return_all');
   }
   public set returnAll(value: boolean | cdktf.IResolvable) {
     this._returnAll = value;
@@ -294,11 +294,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
 
   // users - computed: true, optional: false, required: false
   public users(index: string) {
-    return new DataAzureadUsersUsers(this, 'users', index);
+    return new DataAzureadUsersUsers(this, 'users', index, false);
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadUsersTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadUsersTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

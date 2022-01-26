@@ -46,7 +46,7 @@ export class DataAzureadApplicationApiOauth2PermissionScopes extends cdktf.Compl
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // id - computed: true, optional: false, required: false
@@ -83,13 +83,13 @@ export class DataAzureadApplicationApi extends cdktf.ComplexComputedList {
 
   // mapped_claims_enabled - computed: true, optional: false, required: false
   public get mappedClaimsEnabled() {
-    return this.getBooleanAttribute('mapped_claims_enabled') as any;
+    return this.getBooleanAttribute('mapped_claims_enabled');
   }
 
   // oauth2_permission_scopes - computed: true, optional: false, required: false
   public get oauth2PermissionScopes() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('oauth2_permission_scopes') as any;
+    return this.interpolationForAttribute('oauth2_permission_scopes');
   }
 
   // requested_access_token_version - computed: true, optional: false, required: false
@@ -116,7 +116,7 @@ export class DataAzureadApplicationAppRoles extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // id - computed: true, optional: false, required: false
@@ -133,22 +133,22 @@ export class DataAzureadApplicationFeatureTags extends cdktf.ComplexComputedList
 
   // custom_single_sign_on - computed: true, optional: false, required: false
   public get customSingleSignOn() {
-    return this.getBooleanAttribute('custom_single_sign_on') as any;
+    return this.getBooleanAttribute('custom_single_sign_on');
   }
 
   // enterprise - computed: true, optional: false, required: false
   public get enterprise() {
-    return this.getBooleanAttribute('enterprise') as any;
+    return this.getBooleanAttribute('enterprise');
   }
 
   // gallery - computed: true, optional: false, required: false
   public get gallery() {
-    return this.getBooleanAttribute('gallery') as any;
+    return this.getBooleanAttribute('gallery');
   }
 
   // hide - computed: true, optional: false, required: false
   public get hide() {
-    return this.getBooleanAttribute('hide') as any;
+    return this.getBooleanAttribute('hide');
   }
 }
 export class DataAzureadApplicationOptionalClaimsAccessToken extends cdktf.ComplexComputedList {
@@ -160,7 +160,7 @@ export class DataAzureadApplicationOptionalClaimsAccessToken extends cdktf.Compl
 
   // essential - computed: true, optional: false, required: false
   public get essential() {
-    return this.getBooleanAttribute('essential') as any;
+    return this.getBooleanAttribute('essential');
   }
 
   // name - computed: true, optional: false, required: false
@@ -182,7 +182,7 @@ export class DataAzureadApplicationOptionalClaimsIdToken extends cdktf.ComplexCo
 
   // essential - computed: true, optional: false, required: false
   public get essential() {
-    return this.getBooleanAttribute('essential') as any;
+    return this.getBooleanAttribute('essential');
   }
 
   // name - computed: true, optional: false, required: false
@@ -204,7 +204,7 @@ export class DataAzureadApplicationOptionalClaimsSaml2Token extends cdktf.Comple
 
   // essential - computed: true, optional: false, required: false
   public get essential() {
-    return this.getBooleanAttribute('essential') as any;
+    return this.getBooleanAttribute('essential');
   }
 
   // name - computed: true, optional: false, required: false
@@ -222,19 +222,19 @@ export class DataAzureadApplicationOptionalClaims extends cdktf.ComplexComputedL
   // access_token - computed: true, optional: false, required: false
   public get accessToken() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('access_token') as any;
+    return this.interpolationForAttribute('access_token');
   }
 
   // id_token - computed: true, optional: false, required: false
   public get idToken() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('id_token') as any;
+    return this.interpolationForAttribute('id_token');
   }
 
   // saml2_token - computed: true, optional: false, required: false
   public get saml2Token() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml2_token') as any;
+    return this.interpolationForAttribute('saml2_token');
   }
 }
 export class DataAzureadApplicationPublicClient extends cdktf.ComplexComputedList {
@@ -261,7 +261,7 @@ export class DataAzureadApplicationRequiredResourceAccess extends cdktf.ComplexC
   // resource_access - computed: true, optional: false, required: false
   public get resourceAccess() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resource_access') as any;
+    return this.interpolationForAttribute('resource_access');
   }
 
   // resource_app_id - computed: true, optional: false, required: false
@@ -280,12 +280,12 @@ export class DataAzureadApplicationWebImplicitGrant extends cdktf.ComplexCompute
 
   // access_token_issuance_enabled - computed: true, optional: false, required: false
   public get accessTokenIssuanceEnabled() {
-    return this.getBooleanAttribute('access_token_issuance_enabled') as any;
+    return this.getBooleanAttribute('access_token_issuance_enabled');
   }
 
   // id_token_issuance_enabled - computed: true, optional: false, required: false
   public get idTokenIssuanceEnabled() {
-    return this.getBooleanAttribute('id_token_issuance_enabled') as any;
+    return this.getBooleanAttribute('id_token_issuance_enabled');
   }
 }
 export class DataAzureadApplicationWeb extends cdktf.ComplexComputedList {
@@ -298,7 +298,7 @@ export class DataAzureadApplicationWeb extends cdktf.ComplexComputedList {
   // implicit_grant - computed: true, optional: false, required: false
   public get implicitGrant() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('implicit_grant') as any;
+    return this.interpolationForAttribute('implicit_grant');
   }
 
   // logout_url - computed: true, optional: false, required: false
@@ -318,8 +318,8 @@ export interface DataAzureadApplicationTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadApplicationTimeoutsToTerraform(struct?: DataAzureadApplicationTimeoutsOutputReference | DataAzureadApplicationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAzureadApplicationTimeoutsToTerraform(struct?: DataAzureadApplicationTimeoutsOutputReference | DataAzureadApplicationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -336,7 +336,7 @@ export class DataAzureadApplicationTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -422,17 +422,17 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // api - computed: true, optional: false, required: false
   public api(index: string) {
-    return new DataAzureadApplicationApi(this, 'api', index);
+    return new DataAzureadApplicationApi(this, 'api', index, false);
   }
 
   // app_role_ids - computed: true, optional: false, required: false
-  public appRoleIds(key: string): string {
+  public appRoleIds(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'app_role_ids').lookup(key);
   }
 
   // app_roles - computed: true, optional: false, required: false
   public appRoles(index: string) {
-    return new DataAzureadApplicationAppRoles(this, 'app_roles', index);
+    return new DataAzureadApplicationAppRoles(this, 'app_roles', index, false);
   }
 
   // application_id - computed: true, optional: true, required: false
@@ -453,7 +453,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // device_only_auth_enabled - computed: true, optional: false, required: false
   public get deviceOnlyAuthEnabled() {
-    return this.getBooleanAttribute('device_only_auth_enabled') as any;
+    return this.getBooleanAttribute('device_only_auth_enabled');
   }
 
   // disabled_by_microsoft - computed: true, optional: false, required: false
@@ -479,12 +479,12 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // fallback_public_client_enabled - computed: true, optional: false, required: false
   public get fallbackPublicClientEnabled() {
-    return this.getBooleanAttribute('fallback_public_client_enabled') as any;
+    return this.getBooleanAttribute('fallback_public_client_enabled');
   }
 
   // feature_tags - computed: true, optional: false, required: false
   public featureTags(index: string) {
-    return new DataAzureadApplicationFeatureTags(this, 'feature_tags', index);
+    return new DataAzureadApplicationFeatureTags(this, 'feature_tags', index, false);
   }
 
   // group_membership_claims - computed: true, optional: false, required: false
@@ -513,13 +513,13 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
-  public oauth2PermissionScopeIds(key: string): string {
+  public oauth2PermissionScopeIds(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'oauth2_permission_scope_ids').lookup(key);
   }
 
   // oauth2_post_response_required - computed: true, optional: false, required: false
   public get oauth2PostResponseRequired() {
-    return this.getBooleanAttribute('oauth2_post_response_required') as any;
+    return this.getBooleanAttribute('oauth2_post_response_required');
   }
 
   // object_id - computed: true, optional: true, required: false
@@ -540,7 +540,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // optional_claims - computed: true, optional: false, required: false
   public optionalClaims(index: string) {
-    return new DataAzureadApplicationOptionalClaims(this, 'optional_claims', index);
+    return new DataAzureadApplicationOptionalClaims(this, 'optional_claims', index, false);
   }
 
   // owners - computed: true, optional: false, required: false
@@ -555,7 +555,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // public_client - computed: true, optional: false, required: false
   public publicClient(index: string) {
-    return new DataAzureadApplicationPublicClient(this, 'public_client', index);
+    return new DataAzureadApplicationPublicClient(this, 'public_client', index, false);
   }
 
   // publisher_domain - computed: true, optional: false, required: false
@@ -565,7 +565,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // required_resource_access - computed: true, optional: false, required: false
   public requiredResourceAccess(index: string) {
-    return new DataAzureadApplicationRequiredResourceAccess(this, 'required_resource_access', index);
+    return new DataAzureadApplicationRequiredResourceAccess(this, 'required_resource_access', index, false);
   }
 
   // sign_in_audience - computed: true, optional: false, required: false
@@ -575,7 +575,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // single_page_application - computed: true, optional: false, required: false
   public singlePageApplication(index: string) {
-    return new DataAzureadApplicationSinglePageApplication(this, 'single_page_application', index);
+    return new DataAzureadApplicationSinglePageApplication(this, 'single_page_application', index, false);
   }
 
   // support_url - computed: true, optional: false, required: false
@@ -585,7 +585,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
 
   // terms_of_service_url - computed: true, optional: false, required: false
@@ -595,11 +595,11 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
   // web - computed: true, optional: false, required: false
   public web(index: string) {
-    return new DataAzureadApplicationWeb(this, 'web', index);
+    return new DataAzureadApplicationWeb(this, 'web', index, false);
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadApplicationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadApplicationTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

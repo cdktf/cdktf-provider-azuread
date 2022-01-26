@@ -39,8 +39,8 @@ export interface DataAzureadUserTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadUserTimeoutsToTerraform(struct?: DataAzureadUserTimeoutsOutputReference | DataAzureadUserTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAzureadUserTimeoutsToTerraform(struct?: DataAzureadUserTimeoutsOutputReference | DataAzureadUserTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -57,7 +57,7 @@ export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -143,7 +143,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
 
   // account_enabled - computed: true, optional: false, required: false
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled') as any;
+    return this.getBooleanAttribute('account_enabled');
   }
 
   // age_group - computed: true, optional: false, required: false
@@ -320,7 +320,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
 
   // onpremises_sync_enabled - computed: true, optional: false, required: false
   public get onpremisesSyncEnabled() {
-    return this.getBooleanAttribute('onpremises_sync_enabled') as any;
+    return this.getBooleanAttribute('onpremises_sync_enabled');
   }
 
   // onpremises_user_principal_name - computed: true, optional: false, required: false
@@ -350,7 +350,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
 
   // show_in_address_list - computed: true, optional: false, required: false
   public get showInAddressList() {
-    return this.getBooleanAttribute('show_in_address_list') as any;
+    return this.getBooleanAttribute('show_in_address_list');
   }
 
   // state - computed: true, optional: false, required: false
@@ -395,7 +395,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadUserTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadUserTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

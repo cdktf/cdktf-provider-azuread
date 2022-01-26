@@ -48,12 +48,12 @@ export class DataAzureadServicePrincipalsServicePrincipals extends cdktf.Complex
 
   // account_enabled - computed: true, optional: false, required: false
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled') as any;
+    return this.getBooleanAttribute('account_enabled');
   }
 
   // app_role_assignment_required - computed: true, optional: false, required: false
   public get appRoleAssignmentRequired() {
-    return this.getBooleanAttribute('app_role_assignment_required') as any;
+    return this.getBooleanAttribute('app_role_assignment_required');
   }
 
   // application_id - computed: true, optional: false, required: false
@@ -108,8 +108,8 @@ export interface DataAzureadServicePrincipalsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadServicePrincipalsTimeoutsToTerraform(struct?: DataAzureadServicePrincipalsTimeoutsOutputReference | DataAzureadServicePrincipalsTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAzureadServicePrincipalsTimeoutsToTerraform(struct?: DataAzureadServicePrincipalsTimeoutsOutputReference | DataAzureadServicePrincipalsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -126,7 +126,7 @@ export class DataAzureadServicePrincipalsTimeoutsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -252,7 +252,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   // ignore_missing - computed: false, optional: true, required: false
   private _ignoreMissing?: boolean | cdktf.IResolvable; 
   public get ignoreMissing() {
-    return this.getBooleanAttribute('ignore_missing') as any;
+    return this.getBooleanAttribute('ignore_missing');
   }
   public set ignoreMissing(value: boolean | cdktf.IResolvable) {
     this._ignoreMissing = value;
@@ -284,7 +284,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   // return_all - computed: false, optional: true, required: false
   private _returnAll?: boolean | cdktf.IResolvable; 
   public get returnAll() {
-    return this.getBooleanAttribute('return_all') as any;
+    return this.getBooleanAttribute('return_all');
   }
   public set returnAll(value: boolean | cdktf.IResolvable) {
     this._returnAll = value;
@@ -299,11 +299,11 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
 
   // service_principals - computed: true, optional: false, required: false
   public servicePrincipals(index: string) {
-    return new DataAzureadServicePrincipalsServicePrincipals(this, 'service_principals', index);
+    return new DataAzureadServicePrincipalsServicePrincipals(this, 'service_principals', index, false);
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadServicePrincipalsTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadServicePrincipalsTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

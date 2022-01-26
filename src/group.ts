@@ -118,7 +118,7 @@ export interface GroupDynamicMembership {
 }
 
 export function groupDynamicMembershipToTerraform(struct?: GroupDynamicMembershipOutputReference | GroupDynamicMembership): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -136,7 +136,7 @@ export class GroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -170,7 +170,7 @@ export class GroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -212,8 +212,8 @@ export interface GroupTimeouts {
   readonly update?: string;
 }
 
-export function groupTimeoutsToTerraform(struct?: GroupTimeoutsOutputReference | GroupTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function groupTimeoutsToTerraform(struct?: GroupTimeoutsOutputReference | GroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -233,7 +233,7 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -398,7 +398,7 @@ export class Group extends cdktf.TerraformResource {
   // assignable_to_role - computed: false, optional: true, required: false
   private _assignableToRole?: boolean | cdktf.IResolvable; 
   public get assignableToRole() {
-    return this.getBooleanAttribute('assignable_to_role') as any;
+    return this.getBooleanAttribute('assignable_to_role');
   }
   public set assignableToRole(value: boolean | cdktf.IResolvable) {
     this._assignableToRole = value;
@@ -414,7 +414,7 @@ export class Group extends cdktf.TerraformResource {
   // behaviors - computed: false, optional: true, required: false
   private _behaviors?: string[]; 
   public get behaviors() {
-    return this.getListAttribute('behaviors');
+    return cdktf.Fn.tolist(this.getListAttribute('behaviors'));
   }
   public set behaviors(value: string[]) {
     this._behaviors = value;
@@ -469,7 +469,7 @@ export class Group extends cdktf.TerraformResource {
   // mail_enabled - computed: false, optional: true, required: false
   private _mailEnabled?: boolean | cdktf.IResolvable; 
   public get mailEnabled() {
-    return this.getBooleanAttribute('mail_enabled') as any;
+    return this.getBooleanAttribute('mail_enabled');
   }
   public set mailEnabled(value: boolean | cdktf.IResolvable) {
     this._mailEnabled = value;
@@ -501,7 +501,7 @@ export class Group extends cdktf.TerraformResource {
   // members - computed: true, optional: true, required: false
   private _members?: string[]; 
   public get members() {
-    return this.getListAttribute('members');
+    return cdktf.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;
@@ -541,13 +541,13 @@ export class Group extends cdktf.TerraformResource {
 
   // onpremises_sync_enabled - computed: true, optional: false, required: false
   public get onpremisesSyncEnabled() {
-    return this.getBooleanAttribute('onpremises_sync_enabled') as any;
+    return this.getBooleanAttribute('onpremises_sync_enabled');
   }
 
   // owners - computed: true, optional: true, required: false
   private _owners?: string[]; 
   public get owners() {
-    return this.getListAttribute('owners');
+    return cdktf.Fn.tolist(this.getListAttribute('owners'));
   }
   public set owners(value: string[]) {
     this._owners = value;
@@ -568,7 +568,7 @@ export class Group extends cdktf.TerraformResource {
   // prevent_duplicate_names - computed: false, optional: true, required: false
   private _preventDuplicateNames?: boolean | cdktf.IResolvable; 
   public get preventDuplicateNames() {
-    return this.getBooleanAttribute('prevent_duplicate_names') as any;
+    return this.getBooleanAttribute('prevent_duplicate_names');
   }
   public set preventDuplicateNames(value: boolean | cdktf.IResolvable) {
     this._preventDuplicateNames = value;
@@ -584,7 +584,7 @@ export class Group extends cdktf.TerraformResource {
   // provisioning_options - computed: false, optional: true, required: false
   private _provisioningOptions?: string[]; 
   public get provisioningOptions() {
-    return this.getListAttribute('provisioning_options');
+    return cdktf.Fn.tolist(this.getListAttribute('provisioning_options'));
   }
   public set provisioningOptions(value: string[]) {
     this._provisioningOptions = value;
@@ -605,7 +605,7 @@ export class Group extends cdktf.TerraformResource {
   // security_enabled - computed: false, optional: true, required: false
   private _securityEnabled?: boolean | cdktf.IResolvable; 
   public get securityEnabled() {
-    return this.getBooleanAttribute('security_enabled') as any;
+    return this.getBooleanAttribute('security_enabled');
   }
   public set securityEnabled(value: boolean | cdktf.IResolvable) {
     this._securityEnabled = value;
@@ -637,7 +637,7 @@ export class Group extends cdktf.TerraformResource {
   // types - computed: false, optional: true, required: false
   private _types?: string[]; 
   public get types() {
-    return this.getListAttribute('types');
+    return cdktf.Fn.tolist(this.getListAttribute('types'));
   }
   public set types(value: string[]) {
     this._types = value;
@@ -667,7 +667,7 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // dynamic_membership - computed: false, optional: true, required: false
-  private _dynamicMembership = new GroupDynamicMembershipOutputReference(this as any, "dynamic_membership", true);
+  private _dynamicMembership = new GroupDynamicMembershipOutputReference(this, "dynamic_membership", true);
   public get dynamicMembership() {
     return this._dynamicMembership;
   }
@@ -683,7 +683,7 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GroupTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new GroupTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
