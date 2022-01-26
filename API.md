@@ -796,10 +796,10 @@ public readonly apiInput: ApplicationApi;
 ##### `appRoleInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.appRoleInput"></a>
 
 ```typescript
-public readonly appRoleInput: ApplicationAppRole[];
+public readonly appRoleInput: IResolvable | ApplicationAppRole[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
 
 ---
 
@@ -836,10 +836,10 @@ public readonly fallbackPublicClientEnabledInput: boolean | IResolvable;
 ##### `featureTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.featureTagsInput"></a>
 
 ```typescript
-public readonly featureTagsInput: ApplicationFeatureTags[];
+public readonly featureTagsInput: IResolvable | ApplicationFeatureTags[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
 
 ---
 
@@ -946,10 +946,10 @@ public readonly publicClientInput: ApplicationPublicClient;
 ##### `requiredResourceAccessInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.requiredResourceAccessInput"></a>
 
 ```typescript
-public readonly requiredResourceAccessInput: ApplicationRequiredResourceAccess[];
+public readonly requiredResourceAccessInput: IResolvable | ApplicationRequiredResourceAccess[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
 
 ---
 
@@ -1036,10 +1036,10 @@ public readonly webInput: ApplicationWeb;
 ##### `appRole`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.appRole"></a>
 
 ```typescript
-public readonly appRole: ApplicationAppRole[];
+public readonly appRole: IResolvable | ApplicationAppRole[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
 
 ---
 
@@ -1076,10 +1076,10 @@ public readonly fallbackPublicClientEnabled: boolean | IResolvable;
 ##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.featureTags"></a>
 
 ```typescript
-public readonly featureTags: ApplicationFeatureTags[];
+public readonly featureTags: IResolvable | ApplicationFeatureTags[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
 
 ---
 
@@ -1166,10 +1166,10 @@ public readonly privacyStatementUrl: string;
 ##### `requiredResourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.requiredResourceAccess"></a>
 
 ```typescript
-public readonly requiredResourceAccess: ApplicationRequiredResourceAccess[];
+public readonly requiredResourceAccess: IResolvable | ApplicationRequiredResourceAccess[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
 
 ---
 
@@ -1929,10 +1929,10 @@ public readonly endDateRelativeInput: string;
 ##### `rotateWhenChangedInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.rotateWhenChangedInput"></a>
 
 ```typescript
-public readonly rotateWhenChangedInput: IResolvable | {[ key: string ]: string};
+public readonly rotateWhenChangedInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1999,10 +1999,10 @@ public readonly endDateRelative: string;
 ##### `rotateWhenChanged`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.rotateWhenChanged"></a>
 
 ```typescript
-public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
+public readonly rotateWhenChanged: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3373,10 +3373,10 @@ public web(index: string)
 ##### `deviceOnlyAuthEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.deviceOnlyAuthEnabled"></a>
 
 ```typescript
-public readonly deviceOnlyAuthEnabled: any;
+public readonly deviceOnlyAuthEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3393,10 +3393,10 @@ public readonly disabledByMicrosoft: string;
 ##### `fallbackPublicClientEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.fallbackPublicClientEnabled"></a>
 
 ```typescript
-public readonly fallbackPublicClientEnabled: any;
+public readonly fallbackPublicClientEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3453,10 +3453,10 @@ public readonly marketingUrl: string;
 ##### `oauth2PostResponseRequired`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.oauth2PostResponseRequired"></a>
 
 ```typescript
-public readonly oauth2PostResponseRequired: any;
+public readonly oauth2PostResponseRequired: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -4426,10 +4426,10 @@ public resetTimeouts()
 ##### `assignableToRole`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.assignableToRole"></a>
 
 ```typescript
-public readonly assignableToRole: any;
+public readonly assignableToRole: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -4536,10 +4536,10 @@ public readonly onpremisesSecurityIdentifier: string;
 ##### `onpremisesSyncEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.onpremisesSyncEnabled"></a>
 
 ```typescript
-public readonly onpremisesSyncEnabled: any;
+public readonly onpremisesSyncEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -5138,10 +5138,10 @@ public samlSingleSignOn(index: string)
 ##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.accountEnabled"></a>
 
 ```typescript
-public readonly accountEnabled: any;
+public readonly accountEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -5168,10 +5168,10 @@ public readonly applicationTenantId: string;
 ##### `appRoleAssignmentRequired`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.appRoleAssignmentRequired"></a>
 
 ```typescript
-public readonly appRoleAssignmentRequired: any;
+public readonly appRoleAssignmentRequired: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -5722,10 +5722,10 @@ public resetUserPrincipalName()
 ##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.accountEnabled"></a>
 
 ```typescript
-public readonly accountEnabled: any;
+public readonly accountEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -6012,10 +6012,10 @@ public readonly onpremisesSecurityIdentifier: string;
 ##### `onpremisesSyncEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.onpremisesSyncEnabled"></a>
 
 ```typescript
-public readonly onpremisesSyncEnabled: any;
+public readonly onpremisesSyncEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -6072,10 +6072,10 @@ public readonly proxyAddresses: string[];
 ##### `showInAddressList`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.showInAddressList"></a>
 
 ```typescript
-public readonly showInAddressList: any;
+public readonly showInAddressList: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -7012,10 +7012,10 @@ public readonly onpremisesSecurityIdentifier: string;
 ##### `onpremisesSyncEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.onpremisesSyncEnabled"></a>
 
 ```typescript
-public readonly onpremisesSyncEnabled: any;
+public readonly onpremisesSyncEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -8320,20 +8320,20 @@ public readonly descriptionInput: string;
 ##### `featuresInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featuresInput"></a>
 
 ```typescript
-public readonly featuresInput: ServicePrincipalFeatures[];
+public readonly featuresInput: IResolvable | ServicePrincipalFeatures[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
 
 ---
 
 ##### `featureTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTagsInput"></a>
 
 ```typescript
-public readonly featureTagsInput: ServicePrincipalFeatureTags[];
+public readonly featureTagsInput: IResolvable | ServicePrincipalFeatureTags[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
 
 ---
 
@@ -8480,20 +8480,20 @@ public readonly description: string;
 ##### `features`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.features"></a>
 
 ```typescript
-public readonly features: ServicePrincipalFeatures[];
+public readonly features: IResolvable | ServicePrincipalFeatures[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
 
 ---
 
 ##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTags"></a>
 
 ```typescript
-public readonly featureTags: ServicePrincipalFeatureTags[];
+public readonly featureTags: IResolvable | ServicePrincipalFeatureTags[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
 
 ---
 
@@ -9213,10 +9213,10 @@ public readonly endDateRelativeInput: string;
 ##### `rotateWhenChangedInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.rotateWhenChangedInput"></a>
 
 ```typescript
-public readonly rotateWhenChangedInput: IResolvable | {[ key: string ]: string};
+public readonly rotateWhenChangedInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -9283,10 +9283,10 @@ public readonly endDateRelative: string;
 ##### `rotateWhenChanged`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.rotateWhenChanged"></a>
 
 ```typescript
-public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
+public readonly rotateWhenChanged: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -9678,10 +9678,10 @@ public readonly onpremisesSecurityIdentifier: string;
 ##### `onpremisesSyncEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.onpremisesSyncEnabled"></a>
 
 ```typescript
-public readonly onpremisesSyncEnabled: any;
+public readonly onpremisesSyncEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -10458,10 +10458,10 @@ const administrativeUnitConfig: AdministrativeUnitConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10594,10 +10594,10 @@ const administrativeUnitMemberConfig: AdministrativeUnitMemberConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10830,10 +10830,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `oauth2PermissionScope`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApi.property.oauth2PermissionScope"></a>
 
 ```typescript
-public readonly oauth2PermissionScope: ApplicationApiOauth2PermissionScope[];
+public readonly oauth2PermissionScope: IResolvable | ApplicationApiOauth2PermissionScope[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
 
 oauth2_permission_scope block.
 
@@ -11084,10 +11084,10 @@ const applicationCertificateConfig: ApplicationCertificateConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11320,10 +11320,10 @@ const applicationConfig: ApplicationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11388,10 +11388,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `appRole`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.appRole"></a>
 
 ```typescript
-public readonly appRole: ApplicationAppRole[];
+public readonly appRole: IResolvable | ApplicationAppRole[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
 
 app_role block.
 
@@ -11432,10 +11432,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `featureTags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.featureTags"></a>
 
 ```typescript
-public readonly featureTags: ApplicationFeatureTags[];
+public readonly featureTags: IResolvable | ApplicationFeatureTags[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
 
 feature_tags block.
 
@@ -11586,10 +11586,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `requiredResourceAccess`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.requiredResourceAccess"></a>
 
 ```typescript
-public readonly requiredResourceAccess: ApplicationRequiredResourceAccess[];
+public readonly requiredResourceAccess: IResolvable | ApplicationRequiredResourceAccess[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
 
 required_resource_access block.
 
@@ -11788,10 +11788,10 @@ const applicationFederatedIdentityCredentialConfig: ApplicationFederatedIdentity
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12000,10 +12000,10 @@ const applicationOptionalClaims: ApplicationOptionalClaims = { ... }
 ##### `accessToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaims.property.accessToken"></a>
 
 ```typescript
-public readonly accessToken: ApplicationOptionalClaimsAccessToken[];
+public readonly accessToken: IResolvable | ApplicationOptionalClaimsAccessToken[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
 
 access_token block.
 
@@ -12014,10 +12014,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `idToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaims.property.idToken"></a>
 
 ```typescript
-public readonly idToken: ApplicationOptionalClaimsIdToken[];
+public readonly idToken: IResolvable | ApplicationOptionalClaimsIdToken[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
 
 id_token block.
 
@@ -12028,10 +12028,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `saml2Token`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaims.property.saml2Token"></a>
 
 ```typescript
-public readonly saml2Token: ApplicationOptionalClaimsSaml2Token[];
+public readonly saml2Token: IResolvable | ApplicationOptionalClaimsSaml2Token[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
 
 saml2_token block.
 
@@ -12262,10 +12262,10 @@ const applicationPasswordConfig: ApplicationPasswordConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12360,10 +12360,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `rotateWhenChanged`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.rotateWhenChanged"></a>
 
 ```typescript
-public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
+public readonly rotateWhenChanged: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger rotation of the password.
 
@@ -12470,10 +12470,10 @@ const applicationPreAuthorizedConfig: ApplicationPreAuthorizedConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -12658,10 +12658,10 @@ const applicationRequiredResourceAccess: ApplicationRequiredResourceAccess = { .
 ##### `resourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccess.property.resourceAccess"></a>
 
 ```typescript
-public readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccess[];
+public readonly resourceAccess: IResolvable | ApplicationRequiredResourceAccessResourceAccess[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess)[]
 
 resource_access block.
 
@@ -12914,10 +12914,10 @@ const appRoleAssignmentConfig: AppRoleAssignmentConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -13630,10 +13630,10 @@ const conditionalAccessPolicyConfig: ConditionalAccessPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -13946,10 +13946,10 @@ const dataAzureadAdministrativeUnitConfig: DataAzureadAdministrativeUnitConfig =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14096,10 +14096,10 @@ const dataAzureadApplicationConfig: DataAzureadApplicationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14202,10 +14202,10 @@ const dataAzureadApplicationPublishedAppIdsConfig: DataAzureadApplicationPublish
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14288,10 +14288,10 @@ const dataAzureadApplicationTemplateConfig: DataAzureadApplicationTemplateConfig
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14424,10 +14424,10 @@ const dataAzureadClientConfigConfig: DataAzureadClientConfigConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14510,10 +14510,10 @@ const dataAzureadDomainsConfig: DataAzureadDomainsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14680,10 +14680,10 @@ const dataAzureadGroupConfig: DataAzureadGroupConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14800,10 +14800,10 @@ const dataAzureadGroupsConfig: DataAzureadGroupsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -14992,10 +14992,10 @@ const dataAzureadServicePrincipalConfig: DataAzureadServicePrincipalConfig = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -15098,10 +15098,10 @@ const dataAzureadServicePrincipalsConfig: DataAzureadServicePrincipalsConfig = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -15280,10 +15280,10 @@ const dataAzureadUserConfig: DataAzureadUserConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -15386,10 +15386,10 @@ const dataAzureadUsersConfig: DataAzureadUsersConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -15568,10 +15568,10 @@ const directoryRoleConfig: DirectoryRoleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -15660,10 +15660,10 @@ const directoryRoleMemberConfig: DirectoryRoleMemberConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -15868,10 +15868,10 @@ const groupConfig: GroupConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -16188,10 +16188,10 @@ const groupMemberConfig: GroupMemberConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -16398,10 +16398,10 @@ const invitationConfig: InvitationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -16642,10 +16642,10 @@ const namedLocationConfig: NamedLocationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -16872,10 +16872,10 @@ const servicePrincipalCertificateConfig: ServicePrincipalCertificateConfig = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -17108,10 +17108,10 @@ const servicePrincipalConfig: ServicePrincipalConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -17218,10 +17218,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `features`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.features"></a>
 
 ```typescript
-public readonly features: ServicePrincipalFeatures[];
+public readonly features: IResolvable | ServicePrincipalFeatures[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
 
 features block.
 
@@ -17232,10 +17232,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `featureTags`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.featureTags"></a>
 
 ```typescript
-public readonly featureTags: ServicePrincipalFeatureTags[];
+public readonly featureTags: IResolvable | ServicePrincipalFeatureTags[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
 
 feature_tags block.
 
@@ -17388,10 +17388,10 @@ const servicePrincipalDelegatedPermissionGrantConfig: ServicePrincipalDelegatedP
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -17698,10 +17698,10 @@ const servicePrincipalPasswordConfig: ServicePrincipalPasswordConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -17796,10 +17796,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ##### `rotateWhenChanged`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.rotateWhenChanged"></a>
 
 ```typescript
-public readonly rotateWhenChanged: IResolvable | {[ key: string ]: string};
+public readonly rotateWhenChanged: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Arbitrary map of values that, when changed, will trigger rotation of the password.
 
@@ -17988,10 +17988,10 @@ const userConfig: UserConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -18610,12 +18610,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ```typescript
 import { AdministrativeUnitMemberTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new AdministrativeUnitMemberTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AdministrativeUnitMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -18764,12 +18764,12 @@ public readonly internalValue: AdministrativeUnitMemberTimeouts;
 ```typescript
 import { AdministrativeUnitTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new AdministrativeUnitTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AdministrativeUnitTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -18918,12 +18918,12 @@ public readonly internalValue: AdministrativeUnitTimeouts;
 ```typescript
 import { ApplicationApiOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationApiOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationApiOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -18997,10 +18997,10 @@ public readonly mappedClaimsEnabledInput: boolean | IResolvable;
 ##### `oauth2PermissionScopeInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.oauth2PermissionScopeInput"></a>
 
 ```typescript
-public readonly oauth2PermissionScopeInput: ApplicationApiOauth2PermissionScope[];
+public readonly oauth2PermissionScopeInput: IResolvable | ApplicationApiOauth2PermissionScope[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
 
 ---
 
@@ -19037,10 +19037,10 @@ public readonly mappedClaimsEnabled: boolean | IResolvable;
 ##### `oauth2PermissionScope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.oauth2PermissionScope"></a>
 
 ```typescript
-public readonly oauth2PermissionScope: ApplicationApiOauth2PermissionScope[];
+public readonly oauth2PermissionScope: IResolvable | ApplicationApiOauth2PermissionScope[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
 
 ---
 
@@ -19072,12 +19072,12 @@ public readonly internalValue: ApplicationApi;
 ```typescript
 import { ApplicationCertificateTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationCertificateTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationCertificateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19226,12 +19226,12 @@ public readonly internalValue: ApplicationCertificateTimeouts;
 ```typescript
 import { ApplicationFederatedIdentityCredentialTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationFederatedIdentityCredentialTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationFederatedIdentityCredentialTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19380,12 +19380,12 @@ public readonly internalValue: ApplicationFederatedIdentityCredentialTimeouts;
 ```typescript
 import { ApplicationOptionalClaimsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationOptionalClaimsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationOptionalClaimsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19433,60 +19433,60 @@ public resetSaml2Token()
 ##### `accessTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.accessTokenInput"></a>
 
 ```typescript
-public readonly accessTokenInput: ApplicationOptionalClaimsAccessToken[];
+public readonly accessTokenInput: IResolvable | ApplicationOptionalClaimsAccessToken[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
 
 ---
 
 ##### `idTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.idTokenInput"></a>
 
 ```typescript
-public readonly idTokenInput: ApplicationOptionalClaimsIdToken[];
+public readonly idTokenInput: IResolvable | ApplicationOptionalClaimsIdToken[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
 
 ---
 
 ##### `saml2TokenInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.saml2TokenInput"></a>
 
 ```typescript
-public readonly saml2TokenInput: ApplicationOptionalClaimsSaml2Token[];
+public readonly saml2TokenInput: IResolvable | ApplicationOptionalClaimsSaml2Token[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
 
 ---
 
 ##### `accessToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.accessToken"></a>
 
 ```typescript
-public readonly accessToken: ApplicationOptionalClaimsAccessToken[];
+public readonly accessToken: IResolvable | ApplicationOptionalClaimsAccessToken[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
 
 ---
 
 ##### `idToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.idToken"></a>
 
 ```typescript
-public readonly idToken: ApplicationOptionalClaimsIdToken[];
+public readonly idToken: IResolvable | ApplicationOptionalClaimsIdToken[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
 
 ---
 
 ##### `saml2Token`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.saml2Token"></a>
 
 ```typescript
-public readonly saml2Token: ApplicationOptionalClaimsSaml2Token[];
+public readonly saml2Token: IResolvable | ApplicationOptionalClaimsSaml2Token[];
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
 
 ---
 
@@ -19508,12 +19508,12 @@ public readonly internalValue: ApplicationOptionalClaims;
 ```typescript
 import { ApplicationPasswordTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationPasswordTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationPasswordTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19662,12 +19662,12 @@ public readonly internalValue: ApplicationPasswordTimeouts;
 ```typescript
 import { ApplicationPreAuthorizedTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationPreAuthorizedTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationPreAuthorizedTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19816,12 +19816,12 @@ public readonly internalValue: ApplicationPreAuthorizedTimeouts;
 ```typescript
 import { ApplicationPublicClientOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationPublicClientOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationPublicClientOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPublicClientOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19892,12 +19892,12 @@ public readonly internalValue: ApplicationPublicClient;
 ```typescript
 import { ApplicationSinglePageApplicationOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationSinglePageApplicationOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationSinglePageApplicationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationSinglePageApplicationOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -19968,12 +19968,12 @@ public readonly internalValue: ApplicationSinglePageApplication;
 ```typescript
 import { ApplicationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20122,12 +20122,12 @@ public readonly internalValue: ApplicationTimeouts;
 ```typescript
 import { ApplicationWebImplicitGrantOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationWebImplicitGrantOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationWebImplicitGrantOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20224,12 +20224,12 @@ public readonly internalValue: ApplicationWebImplicitGrant;
 ```typescript
 import { ApplicationWebOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationWebOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationWebOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20390,12 +20390,12 @@ public readonly internalValue: ApplicationWeb;
 ```typescript
 import { AppRoleAssignmentTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new AppRoleAssignmentTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AppRoleAssignmentTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20518,12 +20518,12 @@ public readonly internalValue: AppRoleAssignmentTimeouts;
 ```typescript
 import { ConditionalAccessPolicyConditionsApplicationsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsApplicationsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsApplicationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20640,12 +20640,12 @@ public readonly internalValue: ConditionalAccessPolicyConditionsApplications;
 ```typescript
 import { ConditionalAccessPolicyConditionsDevicesFilterOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20729,12 +20729,12 @@ public readonly internalValue: ConditionalAccessPolicyConditionsDevicesFilter;
 ```typescript
 import { ConditionalAccessPolicyConditionsDevicesOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsDevicesOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsDevicesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20817,12 +20817,12 @@ public readonly internalValue: ConditionalAccessPolicyConditionsDevices;
 ```typescript
 import { ConditionalAccessPolicyConditionsLocationsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsLocationsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsLocationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -20913,12 +20913,12 @@ public readonly internalValue: ConditionalAccessPolicyConditionsLocations;
 ```typescript
 import { ConditionalAccessPolicyConditionsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21201,12 +21201,12 @@ public readonly internalValue: ConditionalAccessPolicyConditions;
 ```typescript
 import { ConditionalAccessPolicyConditionsPlatformsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsPlatformsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsPlatformsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatformsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21297,12 +21297,12 @@ public readonly internalValue: ConditionalAccessPolicyConditionsPlatforms;
 ```typescript
 import { ConditionalAccessPolicyConditionsUsersOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsUsersOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21503,12 +21503,12 @@ public readonly internalValue: ConditionalAccessPolicyConditionsUsers;
 ```typescript
 import { ConditionalAccessPolicyGrantControlsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyGrantControlsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyGrantControlsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21645,12 +21645,12 @@ public readonly internalValue: ConditionalAccessPolicyGrantControls;
 ```typescript
 import { ConditionalAccessPolicySessionControlsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicySessionControlsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicySessionControlsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21825,12 +21825,12 @@ public readonly internalValue: ConditionalAccessPolicySessionControls;
 ```typescript
 import { ConditionalAccessPolicyTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -21979,12 +21979,12 @@ public readonly internalValue: ConditionalAccessPolicyTimeouts;
 ```typescript
 import { DataAzureadAdministrativeUnitTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadAdministrativeUnitTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadAdministrativeUnitTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -22133,12 +22133,12 @@ public readonly internalValue: DataAzureadAdministrativeUnitTimeouts;
 ```typescript
 import { DataAzureadApplicationApi } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationApi(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationApi(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22151,6 +22151,12 @@ new DataAzureadApplicationApi(terraformResource: ITerraformResource, terraformAt
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22171,20 +22177,20 @@ public readonly knownClientApplications: string[];
 ##### `mappedClaimsEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.property.mappedClaimsEnabled"></a>
 
 ```typescript
-public readonly mappedClaimsEnabled: any;
+public readonly mappedClaimsEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `oauth2PermissionScopes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.property.oauth2PermissionScopes"></a>
 
 ```typescript
-public readonly oauth2PermissionScopes: any;
+public readonly oauth2PermissionScopes: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22206,12 +22212,12 @@ public readonly requestedAccessTokenVersion: number;
 ```typescript
 import { DataAzureadApplicationApiOauth2PermissionScopes } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationApiOauth2PermissionScopes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationApiOauth2PermissionScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22224,6 +22230,12 @@ new DataAzureadApplicationApiOauth2PermissionScopes(terraformResource: ITerrafor
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22254,10 +22266,10 @@ public readonly adminConsentDisplayName: string;
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22319,12 +22331,12 @@ public readonly value: string;
 ```typescript
 import { DataAzureadApplicationAppRoles } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationAppRoles(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationAppRoles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22337,6 +22349,12 @@ new DataAzureadApplicationAppRoles(terraformResource: ITerraformResource, terraf
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22377,10 +22395,10 @@ public readonly displayName: string;
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22412,12 +22430,12 @@ public readonly value: string;
 ```typescript
 import { DataAzureadApplicationFeatureTags } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationFeatureTags(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationFeatureTags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22433,6 +22451,12 @@ new DataAzureadApplicationFeatureTags(terraformResource: ITerraformResource, ter
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -22440,40 +22464,40 @@ new DataAzureadApplicationFeatureTags(terraformResource: ITerraformResource, ter
 ##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.customSingleSignOn"></a>
 
 ```typescript
-public readonly customSingleSignOn: any;
+public readonly customSingleSignOn: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.enterprise"></a>
 
 ```typescript
-public readonly enterprise: any;
+public readonly enterprise: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.gallery"></a>
 
 ```typescript
-public readonly gallery: any;
+public readonly gallery: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.hide"></a>
 
 ```typescript
-public readonly hide: any;
+public readonly hide: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22485,12 +22509,12 @@ public readonly hide: any;
 ```typescript
 import { DataAzureadApplicationOptionalClaims } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationOptionalClaims(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationOptionalClaims(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22506,6 +22530,12 @@ new DataAzureadApplicationOptionalClaims(terraformResource: ITerraformResource, 
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -22513,30 +22543,30 @@ new DataAzureadApplicationOptionalClaims(terraformResource: ITerraformResource, 
 ##### `accessToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.property.accessToken"></a>
 
 ```typescript
-public readonly accessToken: any;
+public readonly accessToken: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `idToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.property.idToken"></a>
 
 ```typescript
-public readonly idToken: any;
+public readonly idToken: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `saml2Token`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.property.saml2Token"></a>
 
 ```typescript
-public readonly saml2Token: any;
+public readonly saml2Token: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22548,12 +22578,12 @@ public readonly saml2Token: any;
 ```typescript
 import { DataAzureadApplicationOptionalClaimsAccessToken } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationOptionalClaimsAccessToken(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationOptionalClaimsAccessToken(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22566,6 +22596,12 @@ new DataAzureadApplicationOptionalClaimsAccessToken(terraformResource: ITerrafor
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22586,10 +22622,10 @@ public readonly additionalProperties: string[];
 ##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.property.essential"></a>
 
 ```typescript
-public readonly essential: any;
+public readonly essential: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22621,12 +22657,12 @@ public readonly source: string;
 ```typescript
 import { DataAzureadApplicationOptionalClaimsIdToken } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationOptionalClaimsIdToken(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationOptionalClaimsIdToken(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22639,6 +22675,12 @@ new DataAzureadApplicationOptionalClaimsIdToken(terraformResource: ITerraformRes
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22659,10 +22701,10 @@ public readonly additionalProperties: string[];
 ##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.property.essential"></a>
 
 ```typescript
-public readonly essential: any;
+public readonly essential: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22694,12 +22736,12 @@ public readonly source: string;
 ```typescript
 import { DataAzureadApplicationOptionalClaimsSaml2Token } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationOptionalClaimsSaml2Token(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationOptionalClaimsSaml2Token(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22712,6 +22754,12 @@ new DataAzureadApplicationOptionalClaimsSaml2Token(terraformResource: ITerraform
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22732,10 +22780,10 @@ public readonly additionalProperties: string[];
 ##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.property.essential"></a>
 
 ```typescript
-public readonly essential: any;
+public readonly essential: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22767,12 +22815,12 @@ public readonly source: string;
 ```typescript
 import { DataAzureadApplicationPublicClient } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationPublicClient(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationPublicClient(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22785,6 +22833,12 @@ new DataAzureadApplicationPublicClient(terraformResource: ITerraformResource, te
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22810,12 +22864,12 @@ public readonly redirectUris: string[];
 ```typescript
 import { DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -22886,12 +22940,12 @@ public readonly internalValue: DataAzureadApplicationPublishedAppIdsTimeouts;
 ```typescript
 import { DataAzureadApplicationRequiredResourceAccess } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationRequiredResourceAccess(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationRequiredResourceAccess(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22907,6 +22961,12 @@ new DataAzureadApplicationRequiredResourceAccess(terraformResource: ITerraformRe
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -22914,10 +22974,10 @@ new DataAzureadApplicationRequiredResourceAccess(terraformResource: ITerraformRe
 ##### `resourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.property.resourceAccess"></a>
 
 ```typescript
-public readonly resourceAccess: any;
+public readonly resourceAccess: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22939,12 +22999,12 @@ public readonly resourceAppId: string;
 ```typescript
 import { DataAzureadApplicationRequiredResourceAccessResourceAccess } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationRequiredResourceAccessResourceAccess(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationRequiredResourceAccessResourceAccess(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -22957,6 +23017,12 @@ new DataAzureadApplicationRequiredResourceAccessResourceAccess(terraformResource
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -22992,12 +23058,12 @@ public readonly type: string;
 ```typescript
 import { DataAzureadApplicationSinglePageApplication } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationSinglePageApplication(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationSinglePageApplication(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23010,6 +23076,12 @@ new DataAzureadApplicationSinglePageApplication(terraformResource: ITerraformRes
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -23035,12 +23107,12 @@ public readonly redirectUris: string[];
 ```typescript
 import { DataAzureadApplicationTemplateTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationTemplateTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadApplicationTemplateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -23111,12 +23183,12 @@ public readonly internalValue: DataAzureadApplicationTemplateTimeouts;
 ```typescript
 import { DataAzureadApplicationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadApplicationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -23187,12 +23259,12 @@ public readonly internalValue: DataAzureadApplicationTimeouts;
 ```typescript
 import { DataAzureadApplicationWeb } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationWeb(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationWeb(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23205,6 +23277,12 @@ new DataAzureadApplicationWeb(terraformResource: ITerraformResource, terraformAt
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -23225,10 +23303,10 @@ public readonly homepageUrl: string;
 ##### `implicitGrant`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.property.implicitGrant"></a>
 
 ```typescript
-public readonly implicitGrant: any;
+public readonly implicitGrant: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23260,12 +23338,12 @@ public readonly redirectUris: string[];
 ```typescript
 import { DataAzureadApplicationWebImplicitGrant } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationWebImplicitGrant(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadApplicationWebImplicitGrant(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23281,6 +23359,12 @@ new DataAzureadApplicationWebImplicitGrant(terraformResource: ITerraformResource
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -23288,20 +23372,20 @@ new DataAzureadApplicationWebImplicitGrant(terraformResource: ITerraformResource
 ##### `accessTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.property.accessTokenIssuanceEnabled"></a>
 
 ```typescript
-public readonly accessTokenIssuanceEnabled: any;
+public readonly accessTokenIssuanceEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `idTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.property.idTokenIssuanceEnabled"></a>
 
 ```typescript
-public readonly idTokenIssuanceEnabled: any;
+public readonly idTokenIssuanceEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23313,12 +23397,12 @@ public readonly idTokenIssuanceEnabled: any;
 ```typescript
 import { DataAzureadClientConfigTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadClientConfigTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadClientConfigTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -23389,12 +23473,12 @@ public readonly internalValue: DataAzureadClientConfigTimeouts;
 ```typescript
 import { DataAzureadDomainsDomains } from '@cdktf/provider-azuread'
 
-new DataAzureadDomainsDomains(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadDomainsDomains(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23410,6 +23494,12 @@ new DataAzureadDomainsDomains(terraformResource: ITerraformResource, terraformAt
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -23417,10 +23507,10 @@ new DataAzureadDomainsDomains(terraformResource: ITerraformResource, terraformAt
 ##### `adminManaged`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.adminManaged"></a>
 
 ```typescript
-public readonly adminManaged: any;
+public readonly adminManaged: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23437,10 +23527,10 @@ public readonly authenticationType: string;
 ##### `default`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.default"></a>
 
 ```typescript
-public readonly default: any;
+public readonly default: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23457,20 +23547,20 @@ public readonly domainName: string;
 ##### `initial`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.initial"></a>
 
 ```typescript
-public readonly initial: any;
+public readonly initial: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `root`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.root"></a>
 
 ```typescript
-public readonly root: any;
+public readonly root: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23487,10 +23577,10 @@ public readonly supportedServices: string[];
 ##### `verified`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.verified"></a>
 
 ```typescript
-public readonly verified: any;
+public readonly verified: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23502,12 +23592,12 @@ public readonly verified: any;
 ```typescript
 import { DataAzureadDomainsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadDomainsTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadDomainsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -23578,12 +23668,12 @@ public readonly internalValue: DataAzureadDomainsTimeouts;
 ```typescript
 import { DataAzureadGroupDynamicMembership } from '@cdktf/provider-azuread'
 
-new DataAzureadGroupDynamicMembership(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadGroupDynamicMembership(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23599,6 +23689,12 @@ new DataAzureadGroupDynamicMembership(terraformResource: ITerraformResource, ter
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -23606,10 +23702,10 @@ new DataAzureadGroupDynamicMembership(terraformResource: ITerraformResource, ter
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23631,12 +23727,12 @@ public readonly rule: string;
 ```typescript
 import { DataAzureadGroupsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadGroupsTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadGroupsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -23707,12 +23803,12 @@ public readonly internalValue: DataAzureadGroupsTimeouts;
 ```typescript
 import { DataAzureadGroupTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadGroupTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadGroupTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -23783,12 +23879,12 @@ public readonly internalValue: DataAzureadGroupTimeouts;
 ```typescript
 import { DataAzureadServicePrincipalAppRoles } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalAppRoles(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadServicePrincipalAppRoles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23801,6 +23897,12 @@ new DataAzureadServicePrincipalAppRoles(terraformResource: ITerraformResource, t
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -23841,10 +23943,10 @@ public readonly displayName: string;
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23876,12 +23978,12 @@ public readonly value: string;
 ```typescript
 import { DataAzureadServicePrincipalFeatures } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalFeatures(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadServicePrincipalFeatures(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23897,6 +23999,12 @@ new DataAzureadServicePrincipalFeatures(terraformResource: ITerraformResource, t
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -23904,40 +24012,40 @@ new DataAzureadServicePrincipalFeatures(terraformResource: ITerraformResource, t
 ##### `customSingleSignOnApp`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.customSingleSignOnApp"></a>
 
 ```typescript
-public readonly customSingleSignOnApp: any;
+public readonly customSingleSignOnApp: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `enterpriseApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.enterpriseApplication"></a>
 
 ```typescript
-public readonly enterpriseApplication: any;
+public readonly enterpriseApplication: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `galleryApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.galleryApplication"></a>
 
 ```typescript
-public readonly galleryApplication: any;
+public readonly galleryApplication: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `visibleToUsers`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.visibleToUsers"></a>
 
 ```typescript
-public readonly visibleToUsers: any;
+public readonly visibleToUsers: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23949,12 +24057,12 @@ public readonly visibleToUsers: any;
 ```typescript
 import { DataAzureadServicePrincipalFeatureTags } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalFeatureTags(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadServicePrincipalFeatureTags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -23970,6 +24078,12 @@ new DataAzureadServicePrincipalFeatureTags(terraformResource: ITerraformResource
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -23977,40 +24091,40 @@ new DataAzureadServicePrincipalFeatureTags(terraformResource: ITerraformResource
 ##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.customSingleSignOn"></a>
 
 ```typescript
-public readonly customSingleSignOn: any;
+public readonly customSingleSignOn: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.enterprise"></a>
 
 ```typescript
-public readonly enterprise: any;
+public readonly enterprise: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.gallery"></a>
 
 ```typescript
-public readonly gallery: any;
+public readonly gallery: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.hide"></a>
 
 ```typescript
-public readonly hide: any;
+public readonly hide: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -24022,12 +24136,12 @@ public readonly hide: any;
 ```typescript
 import { DataAzureadServicePrincipalOauth2PermissionScopes } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalOauth2PermissionScopes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadServicePrincipalOauth2PermissionScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -24040,6 +24154,12 @@ new DataAzureadServicePrincipalOauth2PermissionScopes(terraformResource: ITerraf
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -24070,10 +24190,10 @@ public readonly adminConsentDisplayName: string;
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -24135,12 +24255,12 @@ public readonly value: string;
 ```typescript
 import { DataAzureadServicePrincipalSamlSingleSignOn } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalSamlSingleSignOn(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadServicePrincipalSamlSingleSignOn(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -24153,6 +24273,12 @@ new DataAzureadServicePrincipalSamlSingleSignOn(terraformResource: ITerraformRes
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -24178,12 +24304,12 @@ public readonly relayState: string;
 ```typescript
 import { DataAzureadServicePrincipalsServicePrincipals } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalsServicePrincipals(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadServicePrincipalsServicePrincipals(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -24199,6 +24325,12 @@ new DataAzureadServicePrincipalsServicePrincipals(terraformResource: ITerraformR
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -24206,10 +24338,10 @@ new DataAzureadServicePrincipalsServicePrincipals(terraformResource: ITerraformR
 ##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.accountEnabled"></a>
 
 ```typescript
-public readonly accountEnabled: any;
+public readonly accountEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -24236,10 +24368,10 @@ public readonly applicationTenantId: string;
 ##### `appRoleAssignmentRequired`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.appRoleAssignmentRequired"></a>
 
 ```typescript
-public readonly appRoleAssignmentRequired: any;
+public readonly appRoleAssignmentRequired: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -24321,12 +24453,12 @@ public readonly type: string;
 ```typescript
 import { DataAzureadServicePrincipalsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalsTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadServicePrincipalsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -24397,12 +24529,12 @@ public readonly internalValue: DataAzureadServicePrincipalsTimeouts;
 ```typescript
 import { DataAzureadServicePrincipalTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadServicePrincipalTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -24473,12 +24605,12 @@ public readonly internalValue: DataAzureadServicePrincipalTimeouts;
 ```typescript
 import { DataAzureadUsersTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadUsersTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadUsersTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -24549,12 +24681,12 @@ public readonly internalValue: DataAzureadUsersTimeouts;
 ```typescript
 import { DataAzureadUsersUsers } from '@cdktf/provider-azuread'
 
-new DataAzureadUsersUsers(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataAzureadUsersUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -24570,6 +24702,12 @@ new DataAzureadUsersUsers(terraformResource: ITerraformResource, terraformAttrib
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -24577,10 +24715,10 @@ new DataAzureadUsersUsers(terraformResource: ITerraformResource, terraformAttrib
 ##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.accountEnabled"></a>
 
 ```typescript
-public readonly accountEnabled: any;
+public readonly accountEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -24682,12 +24820,12 @@ public readonly userPrincipalName: string;
 ```typescript
 import { DataAzureadUserTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadUserTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadUserTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUserTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -24758,12 +24896,12 @@ public readonly internalValue: DataAzureadUserTimeouts;
 ```typescript
 import { DirectoryRoleMemberTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DirectoryRoleMemberTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DirectoryRoleMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -24912,12 +25050,12 @@ public readonly internalValue: DirectoryRoleMemberTimeouts;
 ```typescript
 import { DirectoryRoleTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DirectoryRoleTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DirectoryRoleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25066,12 +25204,12 @@ public readonly internalValue: DirectoryRoleTimeouts;
 ```typescript
 import { GroupDynamicMembershipOutputReference } from '@cdktf/provider-azuread'
 
-new GroupDynamicMembershipOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new GroupDynamicMembershipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25155,12 +25293,12 @@ public readonly internalValue: GroupDynamicMembership;
 ```typescript
 import { GroupMemberTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new GroupMemberTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new GroupMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25309,12 +25447,12 @@ public readonly internalValue: GroupMemberTimeouts;
 ```typescript
 import { GroupTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new GroupTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new GroupTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25463,12 +25601,12 @@ public readonly internalValue: GroupTimeouts;
 ```typescript
 import { InvitationMessageOutputReference } from '@cdktf/provider-azuread'
 
-new InvitationMessageOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new InvitationMessageOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25591,12 +25729,12 @@ public readonly internalValue: InvitationMessage;
 ```typescript
 import { InvitationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new InvitationTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new InvitationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25745,12 +25883,12 @@ public readonly internalValue: InvitationTimeouts;
 ```typescript
 import { NamedLocationCountryOutputReference } from '@cdktf/provider-azuread'
 
-new NamedLocationCountryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NamedLocationCountryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationCountryOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25841,12 +25979,12 @@ public readonly internalValue: NamedLocationCountry;
 ```typescript
 import { NamedLocationIpOutputReference } from '@cdktf/provider-azuread'
 
-new NamedLocationIpOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NamedLocationIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationIpOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -25937,12 +26075,12 @@ public readonly internalValue: NamedLocationIp;
 ```typescript
 import { NamedLocationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new NamedLocationTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NamedLocationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -26091,12 +26229,12 @@ public readonly internalValue: NamedLocationTimeouts;
 ```typescript
 import { ServicePrincipalAppRoles } from '@cdktf/provider-azuread'
 
-new ServicePrincipalAppRoles(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new ServicePrincipalAppRoles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -26109,6 +26247,12 @@ new ServicePrincipalAppRoles(terraformResource: ITerraformResource, terraformAtt
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -26149,10 +26293,10 @@ public readonly displayName: string;
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -26184,12 +26328,12 @@ public readonly value: string;
 ```typescript
 import { ServicePrincipalCertificateTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalCertificateTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalCertificateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -26338,12 +26482,12 @@ public readonly internalValue: ServicePrincipalCertificateTimeouts;
 ```typescript
 import { ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -26492,12 +26636,12 @@ public readonly internalValue: ServicePrincipalDelegatedPermissionGrantTimeouts;
 ```typescript
 import { ServicePrincipalOauth2PermissionScopes } from '@cdktf/provider-azuread'
 
-new ServicePrincipalOauth2PermissionScopes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new ServicePrincipalOauth2PermissionScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -26510,6 +26654,12 @@ new ServicePrincipalOauth2PermissionScopes(terraformResource: ITerraformResource
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -26540,10 +26690,10 @@ public readonly adminConsentDisplayName: string;
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -26605,12 +26755,12 @@ public readonly value: string;
 ```typescript
 import { ServicePrincipalPasswordTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalPasswordTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalPasswordTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -26759,12 +26909,12 @@ public readonly internalValue: ServicePrincipalPasswordTimeouts;
 ```typescript
 import { ServicePrincipalSamlSingleSignOnOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalSamlSingleSignOnOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalSamlSingleSignOnOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOnOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -26835,12 +26985,12 @@ public readonly internalValue: ServicePrincipalSamlSingleSignOn;
 ```typescript
 import { ServicePrincipalTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -26989,12 +27139,12 @@ public readonly internalValue: ServicePrincipalTimeouts;
 ```typescript
 import { UserTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new UserTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new UserTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 

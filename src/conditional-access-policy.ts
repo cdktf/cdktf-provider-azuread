@@ -56,7 +56,7 @@ export interface ConditionalAccessPolicyConditionsApplications {
 }
 
 export function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsOutputReference | ConditionalAccessPolicyConditionsApplications): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -75,7 +75,7 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -169,7 +169,7 @@ export interface ConditionalAccessPolicyConditionsDevicesFilter {
 }
 
 export function conditionalAccessPolicyConditionsDevicesFilterToTerraform(struct?: ConditionalAccessPolicyConditionsDevicesFilterOutputReference | ConditionalAccessPolicyConditionsDevicesFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -187,7 +187,7 @@ export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -254,7 +254,7 @@ export interface ConditionalAccessPolicyConditionsDevices {
 }
 
 export function conditionalAccessPolicyConditionsDevicesToTerraform(struct?: ConditionalAccessPolicyConditionsDevicesOutputReference | ConditionalAccessPolicyConditionsDevices): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -271,7 +271,7 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -297,7 +297,7 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(this as any, "filter", true);
+  private _filter = new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(this, "filter", true);
   public get filter() {
     return this._filter;
   }
@@ -324,7 +324,7 @@ export interface ConditionalAccessPolicyConditionsLocations {
 }
 
 export function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: ConditionalAccessPolicyConditionsLocationsOutputReference | ConditionalAccessPolicyConditionsLocations): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -342,7 +342,7 @@ export class ConditionalAccessPolicyConditionsLocationsOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -414,7 +414,7 @@ export interface ConditionalAccessPolicyConditionsPlatforms {
 }
 
 export function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: ConditionalAccessPolicyConditionsPlatformsOutputReference | ConditionalAccessPolicyConditionsPlatforms): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -432,7 +432,7 @@ export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -520,7 +520,7 @@ export interface ConditionalAccessPolicyConditionsUsers {
 }
 
 export function conditionalAccessPolicyConditionsUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersOutputReference | ConditionalAccessPolicyConditionsUsers): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -542,7 +542,7 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -739,7 +739,7 @@ export interface ConditionalAccessPolicyConditions {
 }
 
 export function conditionalAccessPolicyConditionsToTerraform(struct?: ConditionalAccessPolicyConditionsOutputReference | ConditionalAccessPolicyConditions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -763,7 +763,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -876,7 +876,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // applications - computed: false, optional: false, required: true
-  private _applications = new ConditionalAccessPolicyConditionsApplicationsOutputReference(this as any, "applications", true);
+  private _applications = new ConditionalAccessPolicyConditionsApplicationsOutputReference(this, "applications", true);
   public get applications() {
     return this._applications;
   }
@@ -889,7 +889,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // devices - computed: false, optional: true, required: false
-  private _devices = new ConditionalAccessPolicyConditionsDevicesOutputReference(this as any, "devices", true);
+  private _devices = new ConditionalAccessPolicyConditionsDevicesOutputReference(this, "devices", true);
   public get devices() {
     return this._devices;
   }
@@ -905,7 +905,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // locations - computed: false, optional: false, required: true
-  private _locations = new ConditionalAccessPolicyConditionsLocationsOutputReference(this as any, "locations", true);
+  private _locations = new ConditionalAccessPolicyConditionsLocationsOutputReference(this, "locations", true);
   public get locations() {
     return this._locations;
   }
@@ -918,7 +918,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // platforms - computed: false, optional: false, required: true
-  private _platforms = new ConditionalAccessPolicyConditionsPlatformsOutputReference(this as any, "platforms", true);
+  private _platforms = new ConditionalAccessPolicyConditionsPlatformsOutputReference(this, "platforms", true);
   public get platforms() {
     return this._platforms;
   }
@@ -931,7 +931,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // users - computed: false, optional: false, required: true
-  private _users = new ConditionalAccessPolicyConditionsUsersOutputReference(this as any, "users", true);
+  private _users = new ConditionalAccessPolicyConditionsUsersOutputReference(this, "users", true);
   public get users() {
     return this._users;
   }
@@ -963,7 +963,7 @@ export interface ConditionalAccessPolicyGrantControls {
 }
 
 export function conditionalAccessPolicyGrantControlsToTerraform(struct?: ConditionalAccessPolicyGrantControlsOutputReference | ConditionalAccessPolicyGrantControls): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -983,7 +983,7 @@ export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1108,7 +1108,7 @@ export interface ConditionalAccessPolicySessionControls {
 }
 
 export function conditionalAccessPolicySessionControlsToTerraform(struct?: ConditionalAccessPolicySessionControlsOutputReference | ConditionalAccessPolicySessionControls): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1129,7 +1129,7 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1181,7 +1181,7 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   // application_enforced_restrictions_enabled - computed: false, optional: true, required: false
   private _applicationEnforcedRestrictionsEnabled?: boolean | cdktf.IResolvable; 
   public get applicationEnforcedRestrictionsEnabled() {
-    return this.getBooleanAttribute('application_enforced_restrictions_enabled') as any;
+    return this.getBooleanAttribute('application_enforced_restrictions_enabled');
   }
   public set applicationEnforcedRestrictionsEnabled(value: boolean | cdktf.IResolvable) {
     this._applicationEnforcedRestrictionsEnabled = value;
@@ -1277,8 +1277,8 @@ export interface ConditionalAccessPolicyTimeouts {
   readonly update?: string;
 }
 
-export function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPolicyTimeoutsOutputReference | ConditionalAccessPolicyTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPolicyTimeoutsOutputReference | ConditionalAccessPolicyTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1298,7 +1298,7 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1482,7 +1482,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // conditions - computed: false, optional: false, required: true
-  private _conditions = new ConditionalAccessPolicyConditionsOutputReference(this as any, "conditions", true);
+  private _conditions = new ConditionalAccessPolicyConditionsOutputReference(this, "conditions", true);
   public get conditions() {
     return this._conditions;
   }
@@ -1495,7 +1495,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // grant_controls - computed: false, optional: false, required: true
-  private _grantControls = new ConditionalAccessPolicyGrantControlsOutputReference(this as any, "grant_controls", true);
+  private _grantControls = new ConditionalAccessPolicyGrantControlsOutputReference(this, "grant_controls", true);
   public get grantControls() {
     return this._grantControls;
   }
@@ -1508,7 +1508,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // session_controls - computed: false, optional: true, required: false
-  private _sessionControls = new ConditionalAccessPolicySessionControlsOutputReference(this as any, "session_controls", true);
+  private _sessionControls = new ConditionalAccessPolicySessionControlsOutputReference(this, "session_controls", true);
   public get sessionControls() {
     return this._sessionControls;
   }
@@ -1524,7 +1524,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ConditionalAccessPolicyTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ConditionalAccessPolicyTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

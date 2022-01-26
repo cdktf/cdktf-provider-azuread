@@ -84,13 +84,13 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#feature_tags ServicePrincipal#feature_tags}
   */
-  readonly featureTags?: ServicePrincipalFeatureTags[];
+  readonly featureTags?: ServicePrincipalFeatureTags[] | cdktf.IResolvable;
   /**
   * features block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#features ServicePrincipal#features}
   */
-  readonly features?: ServicePrincipalFeatures[];
+  readonly features?: ServicePrincipalFeatures[] | cdktf.IResolvable;
   /**
   * saml_single_sign_on block
   * 
@@ -123,7 +123,7 @@ export class ServicePrincipalAppRoles extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // id - computed: true, optional: false, required: false
@@ -150,7 +150,7 @@ export class ServicePrincipalOauth2PermissionScopes extends cdktf.ComplexCompute
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // id - computed: true, optional: false, required: false
@@ -205,8 +205,8 @@ export interface ServicePrincipalFeatureTags {
   readonly hide?: boolean | cdktf.IResolvable;
 }
 
-export function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipalFeatureTags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipalFeatureTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -245,8 +245,8 @@ export interface ServicePrincipalFeatures {
   readonly visibleToUsers?: boolean | cdktf.IResolvable;
 }
 
-export function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFeatures): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFeatures | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -268,7 +268,7 @@ export interface ServicePrincipalSamlSingleSignOn {
 }
 
 export function servicePrincipalSamlSingleSignOnToTerraform(struct?: ServicePrincipalSamlSingleSignOnOutputReference | ServicePrincipalSamlSingleSignOn): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -285,7 +285,7 @@ export class ServicePrincipalSamlSingleSignOnOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -345,8 +345,8 @@ export interface ServicePrincipalTimeouts {
   readonly update?: string;
 }
 
-export function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTimeoutsOutputReference | ServicePrincipalTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTimeoutsOutputReference | ServicePrincipalTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -366,7 +366,7 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -531,7 +531,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // account_enabled - computed: false, optional: true, required: false
   private _accountEnabled?: boolean | cdktf.IResolvable; 
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled') as any;
+    return this.getBooleanAttribute('account_enabled');
   }
   public set accountEnabled(value: boolean | cdktf.IResolvable) {
     this._accountEnabled = value;
@@ -547,7 +547,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // alternative_names - computed: false, optional: true, required: false
   private _alternativeNames?: string[]; 
   public get alternativeNames() {
-    return this.getListAttribute('alternative_names');
+    return cdktf.Fn.tolist(this.getListAttribute('alternative_names'));
   }
   public set alternativeNames(value: string[]) {
     this._alternativeNames = value;
@@ -563,7 +563,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // app_role_assignment_required - computed: false, optional: true, required: false
   private _appRoleAssignmentRequired?: boolean | cdktf.IResolvable; 
   public get appRoleAssignmentRequired() {
-    return this.getBooleanAttribute('app_role_assignment_required') as any;
+    return this.getBooleanAttribute('app_role_assignment_required');
   }
   public set appRoleAssignmentRequired(value: boolean | cdktf.IResolvable) {
     this._appRoleAssignmentRequired = value;
@@ -577,13 +577,13 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // app_role_ids - computed: true, optional: false, required: false
-  public appRoleIds(key: string): string {
+  public appRoleIds(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'app_role_ids').lookup(key);
   }
 
   // app_roles - computed: true, optional: false, required: false
   public appRoles(index: string) {
-    return new ServicePrincipalAppRoles(this, 'app_roles', index);
+    return new ServicePrincipalAppRoles(this, 'app_roles', index, false);
   }
 
   // application_id - computed: false, optional: false, required: true
@@ -675,7 +675,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // notification_email_addresses - computed: false, optional: true, required: false
   private _notificationEmailAddresses?: string[]; 
   public get notificationEmailAddresses() {
-    return this.getListAttribute('notification_email_addresses');
+    return cdktf.Fn.tolist(this.getListAttribute('notification_email_addresses'));
   }
   public set notificationEmailAddresses(value: string[]) {
     this._notificationEmailAddresses = value;
@@ -689,13 +689,13 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
-  public oauth2PermissionScopeIds(key: string): string {
+  public oauth2PermissionScopeIds(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'oauth2_permission_scope_ids').lookup(key);
   }
 
   // oauth2_permission_scopes - computed: true, optional: false, required: false
   public oauth2PermissionScopes(index: string) {
-    return new ServicePrincipalOauth2PermissionScopes(this, 'oauth2_permission_scopes', index);
+    return new ServicePrincipalOauth2PermissionScopes(this, 'oauth2_permission_scopes', index, false);
   }
 
   // object_id - computed: true, optional: false, required: false
@@ -706,7 +706,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // owners - computed: false, optional: true, required: false
   private _owners?: string[]; 
   public get owners() {
-    return this.getListAttribute('owners');
+    return cdktf.Fn.tolist(this.getListAttribute('owners'));
   }
   public set owners(value: string[]) {
     this._owners = value;
@@ -758,7 +758,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -779,7 +779,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // use_existing - computed: false, optional: true, required: false
   private _useExisting?: boolean | cdktf.IResolvable; 
   public get useExisting() {
-    return this.getBooleanAttribute('use_existing') as any;
+    return this.getBooleanAttribute('use_existing');
   }
   public set useExisting(value: boolean | cdktf.IResolvable) {
     this._useExisting = value;
@@ -793,12 +793,12 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // feature_tags - computed: false, optional: true, required: false
-  private _featureTags?: ServicePrincipalFeatureTags[]; 
+  private _featureTags?: ServicePrincipalFeatureTags[] | cdktf.IResolvable; 
   public get featureTags() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('feature_tags') as any;
+    return this.interpolationForAttribute('feature_tags');
   }
-  public set featureTags(value: ServicePrincipalFeatureTags[]) {
+  public set featureTags(value: ServicePrincipalFeatureTags[] | cdktf.IResolvable) {
     this._featureTags = value;
   }
   public resetFeatureTags() {
@@ -810,12 +810,12 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // features - computed: false, optional: true, required: false
-  private _features?: ServicePrincipalFeatures[]; 
+  private _features?: ServicePrincipalFeatures[] | cdktf.IResolvable; 
   public get features() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('features') as any;
+    return this.interpolationForAttribute('features');
   }
-  public set features(value: ServicePrincipalFeatures[]) {
+  public set features(value: ServicePrincipalFeatures[] | cdktf.IResolvable) {
     this._features = value;
   }
   public resetFeatures() {
@@ -827,7 +827,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // saml_single_sign_on - computed: false, optional: true, required: false
-  private _samlSingleSignOn = new ServicePrincipalSamlSingleSignOnOutputReference(this as any, "saml_single_sign_on", true);
+  private _samlSingleSignOn = new ServicePrincipalSamlSingleSignOnOutputReference(this, "saml_single_sign_on", true);
   public get samlSingleSignOn() {
     return this._samlSingleSignOn;
   }
@@ -843,7 +843,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ServicePrincipalTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ServicePrincipalTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

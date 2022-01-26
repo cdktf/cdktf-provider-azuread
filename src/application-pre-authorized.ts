@@ -51,8 +51,8 @@ export interface ApplicationPreAuthorizedTimeouts {
   readonly update?: string;
 }
 
-export function applicationPreAuthorizedTimeoutsToTerraform(struct?: ApplicationPreAuthorizedTimeoutsOutputReference | ApplicationPreAuthorizedTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationPreAuthorizedTimeoutsToTerraform(struct?: ApplicationPreAuthorizedTimeoutsOutputReference | ApplicationPreAuthorizedTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -72,7 +72,7 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -256,7 +256,7 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   // permission_ids - computed: false, optional: false, required: true
   private _permissionIds?: string[]; 
   public get permissionIds() {
-    return this.getListAttribute('permission_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('permission_ids'));
   }
   public set permissionIds(value: string[]) {
     this._permissionIds = value;
@@ -267,7 +267,7 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ApplicationPreAuthorizedTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ApplicationPreAuthorizedTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

@@ -54,7 +54,7 @@ export class DataAzureadDomainsDomains extends cdktf.ComplexComputedList {
 
   // admin_managed - computed: true, optional: false, required: false
   public get adminManaged() {
-    return this.getBooleanAttribute('admin_managed') as any;
+    return this.getBooleanAttribute('admin_managed');
   }
 
   // authentication_type - computed: true, optional: false, required: false
@@ -64,7 +64,7 @@ export class DataAzureadDomainsDomains extends cdktf.ComplexComputedList {
 
   // default - computed: true, optional: false, required: false
   public get default() {
-    return this.getBooleanAttribute('default') as any;
+    return this.getBooleanAttribute('default');
   }
 
   // domain_name - computed: true, optional: false, required: false
@@ -74,12 +74,12 @@ export class DataAzureadDomainsDomains extends cdktf.ComplexComputedList {
 
   // initial - computed: true, optional: false, required: false
   public get initial() {
-    return this.getBooleanAttribute('initial') as any;
+    return this.getBooleanAttribute('initial');
   }
 
   // root - computed: true, optional: false, required: false
   public get root() {
-    return this.getBooleanAttribute('root') as any;
+    return this.getBooleanAttribute('root');
   }
 
   // supported_services - computed: true, optional: false, required: false
@@ -89,7 +89,7 @@ export class DataAzureadDomainsDomains extends cdktf.ComplexComputedList {
 
   // verified - computed: true, optional: false, required: false
   public get verified() {
-    return this.getBooleanAttribute('verified') as any;
+    return this.getBooleanAttribute('verified');
   }
 }
 export interface DataAzureadDomainsTimeouts {
@@ -99,8 +99,8 @@ export interface DataAzureadDomainsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadDomainsTimeoutsToTerraform(struct?: DataAzureadDomainsTimeoutsOutputReference | DataAzureadDomainsTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAzureadDomainsTimeoutsToTerraform(struct?: DataAzureadDomainsTimeoutsOutputReference | DataAzureadDomainsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -117,7 +117,7 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -207,7 +207,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // admin_managed - computed: false, optional: true, required: false
   private _adminManaged?: boolean | cdktf.IResolvable; 
   public get adminManaged() {
-    return this.getBooleanAttribute('admin_managed') as any;
+    return this.getBooleanAttribute('admin_managed');
   }
   public set adminManaged(value: boolean | cdktf.IResolvable) {
     this._adminManaged = value;
@@ -222,7 +222,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
 
   // domains - computed: true, optional: false, required: false
   public domains(index: string) {
-    return new DataAzureadDomainsDomains(this, 'domains', index);
+    return new DataAzureadDomainsDomains(this, 'domains', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -233,7 +233,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // include_unverified - computed: false, optional: true, required: false
   private _includeUnverified?: boolean | cdktf.IResolvable; 
   public get includeUnverified() {
-    return this.getBooleanAttribute('include_unverified') as any;
+    return this.getBooleanAttribute('include_unverified');
   }
   public set includeUnverified(value: boolean | cdktf.IResolvable) {
     this._includeUnverified = value;
@@ -249,7 +249,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // only_default - computed: false, optional: true, required: false
   private _onlyDefault?: boolean | cdktf.IResolvable; 
   public get onlyDefault() {
-    return this.getBooleanAttribute('only_default') as any;
+    return this.getBooleanAttribute('only_default');
   }
   public set onlyDefault(value: boolean | cdktf.IResolvable) {
     this._onlyDefault = value;
@@ -265,7 +265,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // only_initial - computed: false, optional: true, required: false
   private _onlyInitial?: boolean | cdktf.IResolvable; 
   public get onlyInitial() {
-    return this.getBooleanAttribute('only_initial') as any;
+    return this.getBooleanAttribute('only_initial');
   }
   public set onlyInitial(value: boolean | cdktf.IResolvable) {
     this._onlyInitial = value;
@@ -281,7 +281,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // only_root - computed: false, optional: true, required: false
   private _onlyRoot?: boolean | cdktf.IResolvable; 
   public get onlyRoot() {
-    return this.getBooleanAttribute('only_root') as any;
+    return this.getBooleanAttribute('only_root');
   }
   public set onlyRoot(value: boolean | cdktf.IResolvable) {
     this._onlyRoot = value;
@@ -311,7 +311,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadDomainsTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadDomainsTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

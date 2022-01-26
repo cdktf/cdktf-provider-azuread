@@ -57,8 +57,8 @@ export interface DataAzureadGroupsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadGroupsTimeoutsToTerraform(struct?: DataAzureadGroupsTimeoutsOutputReference | DataAzureadGroupsTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataAzureadGroupsTimeoutsToTerraform(struct?: DataAzureadGroupsTimeoutsOutputReference | DataAzureadGroupsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -75,7 +75,7 @@ export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -202,7 +202,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   // mail_enabled - computed: true, optional: true, required: false
   private _mailEnabled?: boolean | cdktf.IResolvable; 
   public get mailEnabled() {
-    return this.getBooleanAttribute('mail_enabled') as any;
+    return this.getBooleanAttribute('mail_enabled');
   }
   public set mailEnabled(value: boolean | cdktf.IResolvable) {
     this._mailEnabled = value;
@@ -234,7 +234,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   // return_all - computed: false, optional: true, required: false
   private _returnAll?: boolean | cdktf.IResolvable; 
   public get returnAll() {
-    return this.getBooleanAttribute('return_all') as any;
+    return this.getBooleanAttribute('return_all');
   }
   public set returnAll(value: boolean | cdktf.IResolvable) {
     this._returnAll = value;
@@ -250,7 +250,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   // security_enabled - computed: true, optional: true, required: false
   private _securityEnabled?: boolean | cdktf.IResolvable; 
   public get securityEnabled() {
-    return this.getBooleanAttribute('security_enabled') as any;
+    return this.getBooleanAttribute('security_enabled');
   }
   public set securityEnabled(value: boolean | cdktf.IResolvable) {
     this._securityEnabled = value;
@@ -264,7 +264,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadGroupsTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DataAzureadGroupsTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

@@ -114,13 +114,13 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#app_role Application#app_role}
   */
-  readonly appRole?: ApplicationAppRole[];
+  readonly appRole?: ApplicationAppRole[] | cdktf.IResolvable;
   /**
   * feature_tags block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#feature_tags Application#feature_tags}
   */
-  readonly featureTags?: ApplicationFeatureTags[];
+  readonly featureTags?: ApplicationFeatureTags[] | cdktf.IResolvable;
   /**
   * optional_claims block
   * 
@@ -138,7 +138,7 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
   */
-  readonly requiredResourceAccess?: ApplicationRequiredResourceAccess[];
+  readonly requiredResourceAccess?: ApplicationRequiredResourceAccess[] | cdktf.IResolvable;
   /**
   * single_page_application block
   * 
@@ -209,8 +209,8 @@ export interface ApplicationApiOauth2PermissionScope {
   readonly value?: string;
 }
 
-export function applicationApiOauth2PermissionScopeToTerraform(struct?: ApplicationApiOauth2PermissionScope): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationApiOauth2PermissionScopeToTerraform(struct?: ApplicationApiOauth2PermissionScope | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -250,11 +250,11 @@ export interface ApplicationApi {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#oauth2_permission_scope Application#oauth2_permission_scope}
   */
-  readonly oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[];
+  readonly oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable;
 }
 
 export function applicationApiToTerraform(struct?: ApplicationApiOutputReference | ApplicationApi): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -274,7 +274,7 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -320,7 +320,7 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   // known_client_applications - computed: false, optional: true, required: false
   private _knownClientApplications?: string[]; 
   public get knownClientApplications() {
-    return this.getListAttribute('known_client_applications');
+    return cdktf.Fn.tolist(this.getListAttribute('known_client_applications'));
   }
   public set knownClientApplications(value: string[]) {
     this._knownClientApplications = value;
@@ -336,7 +336,7 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   // mapped_claims_enabled - computed: false, optional: true, required: false
   private _mappedClaimsEnabled?: boolean | cdktf.IResolvable; 
   public get mappedClaimsEnabled() {
-    return this.getBooleanAttribute('mapped_claims_enabled') as any;
+    return this.getBooleanAttribute('mapped_claims_enabled');
   }
   public set mappedClaimsEnabled(value: boolean | cdktf.IResolvable) {
     this._mappedClaimsEnabled = value;
@@ -366,12 +366,12 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   }
 
   // oauth2_permission_scope - computed: false, optional: true, required: false
-  private _oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[]; 
+  private _oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable; 
   public get oauth2PermissionScope() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('oauth2_permission_scope') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('oauth2_permission_scope')));
   }
-  public set oauth2PermissionScope(value: ApplicationApiOauth2PermissionScope[]) {
+  public set oauth2PermissionScope(value: ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable) {
     this._oauth2PermissionScope = value;
   }
   public resetOauth2PermissionScope() {
@@ -421,8 +421,8 @@ export interface ApplicationAppRole {
   readonly value?: string;
 }
 
-export function applicationAppRoleToTerraform(struct?: ApplicationAppRole): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationAppRoleToTerraform(struct?: ApplicationAppRole | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -463,8 +463,8 @@ export interface ApplicationFeatureTags {
   readonly hide?: boolean | cdktf.IResolvable;
 }
 
-export function applicationFeatureTagsToTerraform(struct?: ApplicationFeatureTags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationFeatureTagsToTerraform(struct?: ApplicationFeatureTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -503,8 +503,8 @@ export interface ApplicationOptionalClaimsAccessToken {
   readonly source?: string;
 }
 
-export function applicationOptionalClaimsAccessTokenToTerraform(struct?: ApplicationOptionalClaimsAccessToken): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationOptionalClaimsAccessTokenToTerraform(struct?: ApplicationOptionalClaimsAccessToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -543,8 +543,8 @@ export interface ApplicationOptionalClaimsIdToken {
   readonly source?: string;
 }
 
-export function applicationOptionalClaimsIdTokenToTerraform(struct?: ApplicationOptionalClaimsIdToken): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationOptionalClaimsIdTokenToTerraform(struct?: ApplicationOptionalClaimsIdToken | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -583,8 +583,8 @@ export interface ApplicationOptionalClaimsSaml2Token {
   readonly source?: string;
 }
 
-export function applicationOptionalClaimsSaml2TokenToTerraform(struct?: ApplicationOptionalClaimsSaml2Token): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationOptionalClaimsSaml2TokenToTerraform(struct?: ApplicationOptionalClaimsSaml2Token | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -602,23 +602,23 @@ export interface ApplicationOptionalClaims {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#access_token Application#access_token}
   */
-  readonly accessToken?: ApplicationOptionalClaimsAccessToken[];
+  readonly accessToken?: ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable;
   /**
   * id_token block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id_token Application#id_token}
   */
-  readonly idToken?: ApplicationOptionalClaimsIdToken[];
+  readonly idToken?: ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable;
   /**
   * saml2_token block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#saml2_token Application#saml2_token}
   */
-  readonly saml2Token?: ApplicationOptionalClaimsSaml2Token[];
+  readonly saml2Token?: ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable;
 }
 
 export function applicationOptionalClaimsToTerraform(struct?: ApplicationOptionalClaimsOutputReference | ApplicationOptionalClaims): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -637,7 +637,7 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -675,12 +675,12 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   }
 
   // access_token - computed: false, optional: true, required: false
-  private _accessToken?: ApplicationOptionalClaimsAccessToken[]; 
+  private _accessToken?: ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable; 
   public get accessToken() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('access_token') as any;
+    return this.interpolationForAttribute('access_token');
   }
-  public set accessToken(value: ApplicationOptionalClaimsAccessToken[]) {
+  public set accessToken(value: ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable) {
     this._accessToken = value;
   }
   public resetAccessToken() {
@@ -692,12 +692,12 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   }
 
   // id_token - computed: false, optional: true, required: false
-  private _idToken?: ApplicationOptionalClaimsIdToken[]; 
+  private _idToken?: ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable; 
   public get idToken() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('id_token') as any;
+    return this.interpolationForAttribute('id_token');
   }
-  public set idToken(value: ApplicationOptionalClaimsIdToken[]) {
+  public set idToken(value: ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable) {
     this._idToken = value;
   }
   public resetIdToken() {
@@ -709,12 +709,12 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   }
 
   // saml2_token - computed: false, optional: true, required: false
-  private _saml2Token?: ApplicationOptionalClaimsSaml2Token[]; 
+  private _saml2Token?: ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable; 
   public get saml2Token() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml2_token') as any;
+    return this.interpolationForAttribute('saml2_token');
   }
-  public set saml2Token(value: ApplicationOptionalClaimsSaml2Token[]) {
+  public set saml2Token(value: ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable) {
     this._saml2Token = value;
   }
   public resetSaml2Token() {
@@ -735,7 +735,7 @@ export interface ApplicationPublicClient {
 }
 
 export function applicationPublicClientToTerraform(struct?: ApplicationPublicClientOutputReference | ApplicationPublicClient): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -752,7 +752,7 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -780,7 +780,7 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
   // redirect_uris - computed: false, optional: true, required: false
   private _redirectUris?: string[]; 
   public get redirectUris() {
-    return this.getListAttribute('redirect_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('redirect_uris'));
   }
   public set redirectUris(value: string[]) {
     this._redirectUris = value;
@@ -804,8 +804,8 @@ export interface ApplicationRequiredResourceAccessResourceAccess {
   readonly type: string;
 }
 
-export function applicationRequiredResourceAccessResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccessResourceAccess): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationRequiredResourceAccessResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccessResourceAccess | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -825,11 +825,11 @@ export interface ApplicationRequiredResourceAccess {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#resource_access Application#resource_access}
   */
-  readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccess[];
+  readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccess[] | cdktf.IResolvable;
 }
 
-export function applicationRequiredResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccess): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationRequiredResourceAccessToTerraform(struct?: ApplicationRequiredResourceAccess | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -849,7 +849,7 @@ export interface ApplicationSinglePageApplication {
 }
 
 export function applicationSinglePageApplicationToTerraform(struct?: ApplicationSinglePageApplicationOutputReference | ApplicationSinglePageApplication): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -866,7 +866,7 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -894,7 +894,7 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
   // redirect_uris - computed: false, optional: true, required: false
   private _redirectUris?: string[]; 
   public get redirectUris() {
-    return this.getListAttribute('redirect_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('redirect_uris'));
   }
   public set redirectUris(value: string[]) {
     this._redirectUris = value;
@@ -926,8 +926,8 @@ export interface ApplicationTimeouts {
   readonly update?: string;
 }
 
-export function applicationTimeoutsToTerraform(struct?: ApplicationTimeoutsOutputReference | ApplicationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function applicationTimeoutsToTerraform(struct?: ApplicationTimeoutsOutputReference | ApplicationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -947,7 +947,7 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1070,7 +1070,7 @@ export interface ApplicationWebImplicitGrant {
 }
 
 export function applicationWebImplicitGrantToTerraform(struct?: ApplicationWebImplicitGrantOutputReference | ApplicationWebImplicitGrant): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1088,7 +1088,7 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1122,7 +1122,7 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   // access_token_issuance_enabled - computed: false, optional: true, required: false
   private _accessTokenIssuanceEnabled?: boolean | cdktf.IResolvable; 
   public get accessTokenIssuanceEnabled() {
-    return this.getBooleanAttribute('access_token_issuance_enabled') as any;
+    return this.getBooleanAttribute('access_token_issuance_enabled');
   }
   public set accessTokenIssuanceEnabled(value: boolean | cdktf.IResolvable) {
     this._accessTokenIssuanceEnabled = value;
@@ -1138,7 +1138,7 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   // id_token_issuance_enabled - computed: false, optional: true, required: false
   private _idTokenIssuanceEnabled?: boolean | cdktf.IResolvable; 
   public get idTokenIssuanceEnabled() {
-    return this.getBooleanAttribute('id_token_issuance_enabled') as any;
+    return this.getBooleanAttribute('id_token_issuance_enabled');
   }
   public set idTokenIssuanceEnabled(value: boolean | cdktf.IResolvable) {
     this._idTokenIssuanceEnabled = value;
@@ -1179,7 +1179,7 @@ export interface ApplicationWeb {
 }
 
 export function applicationWebToTerraform(struct?: ApplicationWebOutputReference | ApplicationWeb): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1199,7 +1199,7 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1277,7 +1277,7 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   // redirect_uris - computed: false, optional: true, required: false
   private _redirectUris?: string[]; 
   public get redirectUris() {
-    return this.getListAttribute('redirect_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('redirect_uris'));
   }
   public set redirectUris(value: string[]) {
     this._redirectUris = value;
@@ -1291,7 +1291,7 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   }
 
   // implicit_grant - computed: false, optional: true, required: false
-  private _implicitGrant = new ApplicationWebImplicitGrantOutputReference(this as any, "implicit_grant", true);
+  private _implicitGrant = new ApplicationWebImplicitGrantOutputReference(this, "implicit_grant", true);
   public get implicitGrant() {
     return this._implicitGrant;
   }
@@ -1371,7 +1371,7 @@ export class Application extends cdktf.TerraformResource {
   // ==========
 
   // app_role_ids - computed: true, optional: false, required: false
-  public appRoleIds(key: string): string {
+  public appRoleIds(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'app_role_ids').lookup(key);
   }
 
@@ -1383,7 +1383,7 @@ export class Application extends cdktf.TerraformResource {
   // device_only_auth_enabled - computed: false, optional: true, required: false
   private _deviceOnlyAuthEnabled?: boolean | cdktf.IResolvable; 
   public get deviceOnlyAuthEnabled() {
-    return this.getBooleanAttribute('device_only_auth_enabled') as any;
+    return this.getBooleanAttribute('device_only_auth_enabled');
   }
   public set deviceOnlyAuthEnabled(value: boolean | cdktf.IResolvable) {
     this._deviceOnlyAuthEnabled = value;
@@ -1417,7 +1417,7 @@ export class Application extends cdktf.TerraformResource {
   // fallback_public_client_enabled - computed: false, optional: true, required: false
   private _fallbackPublicClientEnabled?: boolean | cdktf.IResolvable; 
   public get fallbackPublicClientEnabled() {
-    return this.getBooleanAttribute('fallback_public_client_enabled') as any;
+    return this.getBooleanAttribute('fallback_public_client_enabled');
   }
   public set fallbackPublicClientEnabled(value: boolean | cdktf.IResolvable) {
     this._fallbackPublicClientEnabled = value;
@@ -1433,7 +1433,7 @@ export class Application extends cdktf.TerraformResource {
   // group_membership_claims - computed: false, optional: true, required: false
   private _groupMembershipClaims?: string[]; 
   public get groupMembershipClaims() {
-    return this.getListAttribute('group_membership_claims');
+    return cdktf.Fn.tolist(this.getListAttribute('group_membership_claims'));
   }
   public set groupMembershipClaims(value: string[]) {
     this._groupMembershipClaims = value;
@@ -1454,7 +1454,7 @@ export class Application extends cdktf.TerraformResource {
   // identifier_uris - computed: false, optional: true, required: false
   private _identifierUris?: string[]; 
   public get identifierUris() {
-    return this.getListAttribute('identifier_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('identifier_uris'));
   }
   public set identifierUris(value: string[]) {
     this._identifierUris = value;
@@ -1505,14 +1505,14 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
-  public oauth2PermissionScopeIds(key: string): string {
+  public oauth2PermissionScopeIds(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'oauth2_permission_scope_ids').lookup(key);
   }
 
   // oauth2_post_response_required - computed: false, optional: true, required: false
   private _oauth2PostResponseRequired?: boolean | cdktf.IResolvable; 
   public get oauth2PostResponseRequired() {
-    return this.getBooleanAttribute('oauth2_post_response_required') as any;
+    return this.getBooleanAttribute('oauth2_post_response_required');
   }
   public set oauth2PostResponseRequired(value: boolean | cdktf.IResolvable) {
     this._oauth2PostResponseRequired = value;
@@ -1533,7 +1533,7 @@ export class Application extends cdktf.TerraformResource {
   // owners - computed: false, optional: true, required: false
   private _owners?: string[]; 
   public get owners() {
-    return this.getListAttribute('owners');
+    return cdktf.Fn.tolist(this.getListAttribute('owners'));
   }
   public set owners(value: string[]) {
     this._owners = value;
@@ -1549,7 +1549,7 @@ export class Application extends cdktf.TerraformResource {
   // prevent_duplicate_names - computed: false, optional: true, required: false
   private _preventDuplicateNames?: boolean | cdktf.IResolvable; 
   public get preventDuplicateNames() {
-    return this.getBooleanAttribute('prevent_duplicate_names') as any;
+    return this.getBooleanAttribute('prevent_duplicate_names');
   }
   public set preventDuplicateNames(value: boolean | cdktf.IResolvable) {
     this._preventDuplicateNames = value;
@@ -1618,7 +1618,7 @@ export class Application extends cdktf.TerraformResource {
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -1664,7 +1664,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // api - computed: false, optional: true, required: false
-  private _api = new ApplicationApiOutputReference(this as any, "api", true);
+  private _api = new ApplicationApiOutputReference(this, "api", true);
   public get api() {
     return this._api;
   }
@@ -1680,12 +1680,12 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // app_role - computed: false, optional: true, required: false
-  private _appRole?: ApplicationAppRole[]; 
+  private _appRole?: ApplicationAppRole[] | cdktf.IResolvable; 
   public get appRole() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('app_role') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_role')));
   }
-  public set appRole(value: ApplicationAppRole[]) {
+  public set appRole(value: ApplicationAppRole[] | cdktf.IResolvable) {
     this._appRole = value;
   }
   public resetAppRole() {
@@ -1697,12 +1697,12 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // feature_tags - computed: false, optional: true, required: false
-  private _featureTags?: ApplicationFeatureTags[]; 
+  private _featureTags?: ApplicationFeatureTags[] | cdktf.IResolvable; 
   public get featureTags() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('feature_tags') as any;
+    return this.interpolationForAttribute('feature_tags');
   }
-  public set featureTags(value: ApplicationFeatureTags[]) {
+  public set featureTags(value: ApplicationFeatureTags[] | cdktf.IResolvable) {
     this._featureTags = value;
   }
   public resetFeatureTags() {
@@ -1714,7 +1714,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // optional_claims - computed: false, optional: true, required: false
-  private _optionalClaims = new ApplicationOptionalClaimsOutputReference(this as any, "optional_claims", true);
+  private _optionalClaims = new ApplicationOptionalClaimsOutputReference(this, "optional_claims", true);
   public get optionalClaims() {
     return this._optionalClaims;
   }
@@ -1730,7 +1730,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // public_client - computed: false, optional: true, required: false
-  private _publicClient = new ApplicationPublicClientOutputReference(this as any, "public_client", true);
+  private _publicClient = new ApplicationPublicClientOutputReference(this, "public_client", true);
   public get publicClient() {
     return this._publicClient;
   }
@@ -1746,12 +1746,12 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // required_resource_access - computed: false, optional: true, required: false
-  private _requiredResourceAccess?: ApplicationRequiredResourceAccess[]; 
+  private _requiredResourceAccess?: ApplicationRequiredResourceAccess[] | cdktf.IResolvable; 
   public get requiredResourceAccess() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('required_resource_access') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('required_resource_access')));
   }
-  public set requiredResourceAccess(value: ApplicationRequiredResourceAccess[]) {
+  public set requiredResourceAccess(value: ApplicationRequiredResourceAccess[] | cdktf.IResolvable) {
     this._requiredResourceAccess = value;
   }
   public resetRequiredResourceAccess() {
@@ -1763,7 +1763,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // single_page_application - computed: false, optional: true, required: false
-  private _singlePageApplication = new ApplicationSinglePageApplicationOutputReference(this as any, "single_page_application", true);
+  private _singlePageApplication = new ApplicationSinglePageApplicationOutputReference(this, "single_page_application", true);
   public get singlePageApplication() {
     return this._singlePageApplication;
   }
@@ -1779,7 +1779,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ApplicationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ApplicationTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -1795,7 +1795,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // web - computed: false, optional: true, required: false
-  private _web = new ApplicationWebOutputReference(this as any, "web", true);
+  private _web = new ApplicationWebOutputReference(this, "web", true);
   public get web() {
     return this._web;
   }

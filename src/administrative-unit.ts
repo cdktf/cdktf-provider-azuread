@@ -63,8 +63,8 @@ export interface AdministrativeUnitTimeouts {
   readonly update?: string;
 }
 
-export function administrativeUnitTimeoutsToTerraform(struct?: AdministrativeUnitTimeoutsOutputReference | AdministrativeUnitTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function administrativeUnitTimeoutsToTerraform(struct?: AdministrativeUnitTimeoutsOutputReference | AdministrativeUnitTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -84,7 +84,7 @@ export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -268,7 +268,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   // hidden_membership_enabled - computed: false, optional: true, required: false
   private _hiddenMembershipEnabled?: boolean | cdktf.IResolvable; 
   public get hiddenMembershipEnabled() {
-    return this.getBooleanAttribute('hidden_membership_enabled') as any;
+    return this.getBooleanAttribute('hidden_membership_enabled');
   }
   public set hiddenMembershipEnabled(value: boolean | cdktf.IResolvable) {
     this._hiddenMembershipEnabled = value;
@@ -289,7 +289,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   // members - computed: true, optional: true, required: false
   private _members?: string[]; 
   public get members() {
-    return this.getListAttribute('members');
+    return cdktf.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;
@@ -310,7 +310,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   // prevent_duplicate_names - computed: false, optional: true, required: false
   private _preventDuplicateNames?: boolean | cdktf.IResolvable; 
   public get preventDuplicateNames() {
-    return this.getBooleanAttribute('prevent_duplicate_names') as any;
+    return this.getBooleanAttribute('prevent_duplicate_names');
   }
   public set preventDuplicateNames(value: boolean | cdktf.IResolvable) {
     this._preventDuplicateNames = value;
@@ -324,7 +324,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AdministrativeUnitTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new AdministrativeUnitTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

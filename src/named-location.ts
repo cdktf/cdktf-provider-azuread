@@ -42,7 +42,7 @@ export interface NamedLocationCountry {
 }
 
 export function namedLocationCountryToTerraform(struct?: NamedLocationCountryOutputReference | NamedLocationCountry): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -60,7 +60,7 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -107,7 +107,7 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   // include_unknown_countries_and_regions - computed: false, optional: true, required: false
   private _includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable; 
   public get includeUnknownCountriesAndRegions() {
-    return this.getBooleanAttribute('include_unknown_countries_and_regions') as any;
+    return this.getBooleanAttribute('include_unknown_countries_and_regions');
   }
   public set includeUnknownCountriesAndRegions(value: boolean | cdktf.IResolvable) {
     this._includeUnknownCountriesAndRegions = value;
@@ -132,7 +132,7 @@ export interface NamedLocationIp {
 }
 
 export function namedLocationIpToTerraform(struct?: NamedLocationIpOutputReference | NamedLocationIp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -150,7 +150,7 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -197,7 +197,7 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   // trusted - computed: false, optional: true, required: false
   private _trusted?: boolean | cdktf.IResolvable; 
   public get trusted() {
-    return this.getBooleanAttribute('trusted') as any;
+    return this.getBooleanAttribute('trusted');
   }
   public set trusted(value: boolean | cdktf.IResolvable) {
     this._trusted = value;
@@ -229,8 +229,8 @@ export interface NamedLocationTimeouts {
   readonly update?: string;
 }
 
-export function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeoutsOutputReference | NamedLocationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeoutsOutputReference | NamedLocationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -250,7 +250,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -419,7 +419,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
 
   // country - computed: false, optional: true, required: false
-  private _country = new NamedLocationCountryOutputReference(this as any, "country", true);
+  private _country = new NamedLocationCountryOutputReference(this, "country", true);
   public get country() {
     return this._country;
   }
@@ -435,7 +435,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
 
   // ip - computed: false, optional: true, required: false
-  private _ip = new NamedLocationIpOutputReference(this as any, "ip", true);
+  private _ip = new NamedLocationIpOutputReference(this, "ip", true);
   public get ip() {
     return this._ip;
   }
@@ -451,7 +451,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NamedLocationTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NamedLocationTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

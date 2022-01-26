@@ -243,8 +243,8 @@ export interface UserTimeouts {
   readonly update?: string;
 }
 
-export function userTimeoutsToTerraform(struct?: UserTimeoutsOutputReference | UserTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function userTimeoutsToTerraform(struct?: UserTimeoutsOutputReference | UserTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -264,7 +264,7 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -454,7 +454,7 @@ export class User extends cdktf.TerraformResource {
   // account_enabled - computed: false, optional: true, required: false
   private _accountEnabled?: boolean | cdktf.IResolvable; 
   public get accountEnabled() {
-    return this.getBooleanAttribute('account_enabled') as any;
+    return this.getBooleanAttribute('account_enabled');
   }
   public set accountEnabled(value: boolean | cdktf.IResolvable) {
     this._accountEnabled = value;
@@ -603,7 +603,7 @@ export class User extends cdktf.TerraformResource {
   // disable_password_expiration - computed: false, optional: true, required: false
   private _disablePasswordExpiration?: boolean | cdktf.IResolvable; 
   public get disablePasswordExpiration() {
-    return this.getBooleanAttribute('disable_password_expiration') as any;
+    return this.getBooleanAttribute('disable_password_expiration');
   }
   public set disablePasswordExpiration(value: boolean | cdktf.IResolvable) {
     this._disablePasswordExpiration = value;
@@ -619,7 +619,7 @@ export class User extends cdktf.TerraformResource {
   // disable_strong_password - computed: false, optional: true, required: false
   private _disableStrongPassword?: boolean | cdktf.IResolvable; 
   public get disableStrongPassword() {
-    return this.getBooleanAttribute('disable_strong_password') as any;
+    return this.getBooleanAttribute('disable_strong_password');
   }
   public set disableStrongPassword(value: boolean | cdktf.IResolvable) {
     this._disableStrongPassword = value;
@@ -717,7 +717,7 @@ export class User extends cdktf.TerraformResource {
   // force_password_change - computed: false, optional: true, required: false
   private _forcePasswordChange?: boolean | cdktf.IResolvable; 
   public get forcePasswordChange() {
-    return this.getBooleanAttribute('force_password_change') as any;
+    return this.getBooleanAttribute('force_password_change');
   }
   public set forcePasswordChange(value: boolean | cdktf.IResolvable) {
     this._forcePasswordChange = value;
@@ -895,7 +895,7 @@ export class User extends cdktf.TerraformResource {
 
   // onpremises_sync_enabled - computed: true, optional: false, required: false
   public get onpremisesSyncEnabled() {
-    return this.getBooleanAttribute('onpremises_sync_enabled') as any;
+    return this.getBooleanAttribute('onpremises_sync_enabled');
   }
 
   // onpremises_user_principal_name - computed: true, optional: false, required: false
@@ -906,7 +906,7 @@ export class User extends cdktf.TerraformResource {
   // other_mails - computed: false, optional: true, required: false
   private _otherMails?: string[]; 
   public get otherMails() {
-    return this.getListAttribute('other_mails');
+    return cdktf.Fn.tolist(this.getListAttribute('other_mails'));
   }
   public set otherMails(value: string[]) {
     this._otherMails = value;
@@ -975,7 +975,7 @@ export class User extends cdktf.TerraformResource {
   // show_in_address_list - computed: false, optional: true, required: false
   private _showInAddressList?: boolean | cdktf.IResolvable; 
   public get showInAddressList() {
-    return this.getBooleanAttribute('show_in_address_list') as any;
+    return this.getBooleanAttribute('show_in_address_list');
   }
   public set showInAddressList(value: boolean | cdktf.IResolvable) {
     this._showInAddressList = value;
@@ -1071,7 +1071,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new UserTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new UserTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
