@@ -4433,6 +4433,16 @@ public readonly assignableToRole: IResolvable;
 
 ---
 
+##### `autoSubscribeNewMembers`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.autoSubscribeNewMembers"></a>
+
+```typescript
+public readonly autoSubscribeNewMembers: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `behaviors`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.behaviors"></a>
 
 ```typescript
@@ -4450,6 +4460,36 @@ public readonly description: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `externalSendersAllowed`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.externalSendersAllowed"></a>
+
+```typescript
+public readonly externalSendersAllowed: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideFromAddressLists`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.hideFromAddressLists"></a>
+
+```typescript
+public readonly hideFromAddressLists: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideFromOutlookClients`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.hideFromOutlookClients"></a>
+
+```typescript
+public readonly hideFromOutlookClients: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -6842,6 +6882,12 @@ public putTimeouts(value: GroupTimeouts)
 public resetAssignableToRole()
 ```
 
+##### `resetAutoSubscribeNewMembers` <a name="@cdktf/provider-azuread.Group.resetAutoSubscribeNewMembers"></a>
+
+```typescript
+public resetAutoSubscribeNewMembers()
+```
+
 ##### `resetBehaviors` <a name="@cdktf/provider-azuread.Group.resetBehaviors"></a>
 
 ```typescript
@@ -6858,6 +6904,24 @@ public resetDescription()
 
 ```typescript
 public resetDynamicMembership()
+```
+
+##### `resetExternalSendersAllowed` <a name="@cdktf/provider-azuread.Group.resetExternalSendersAllowed"></a>
+
+```typescript
+public resetExternalSendersAllowed()
+```
+
+##### `resetHideFromAddressLists` <a name="@cdktf/provider-azuread.Group.resetHideFromAddressLists"></a>
+
+```typescript
+public resetHideFromAddressLists()
+```
+
+##### `resetHideFromOutlookClients` <a name="@cdktf/provider-azuread.Group.resetHideFromOutlookClients"></a>
+
+```typescript
+public resetHideFromOutlookClients()
 ```
 
 ##### `resetMailEnabled` <a name="@cdktf/provider-azuread.Group.resetMailEnabled"></a>
@@ -7059,6 +7123,16 @@ public readonly assignableToRoleInput: boolean | IResolvable;
 
 ---
 
+##### `autoSubscribeNewMembersInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.autoSubscribeNewMembersInput"></a>
+
+```typescript
+public readonly autoSubscribeNewMembersInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `behaviorsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.behaviorsInput"></a>
 
 ```typescript
@@ -7096,6 +7170,36 @@ public readonly dynamicMembershipInput: GroupDynamicMembership;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.GroupDynamicMembership`](#@cdktf/provider-azuread.GroupDynamicMembership)
+
+---
+
+##### `externalSendersAllowedInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.externalSendersAllowedInput"></a>
+
+```typescript
+public readonly externalSendersAllowedInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideFromAddressListsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.hideFromAddressListsInput"></a>
+
+```typescript
+public readonly hideFromAddressListsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideFromOutlookClientsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.hideFromOutlookClientsInput"></a>
+
+```typescript
+public readonly hideFromOutlookClientsInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -7219,6 +7323,16 @@ public readonly assignableToRole: boolean | IResolvable;
 
 ---
 
+##### `autoSubscribeNewMembers`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.autoSubscribeNewMembers"></a>
+
+```typescript
+public readonly autoSubscribeNewMembers: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `behaviors`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.behaviors"></a>
 
 ```typescript
@@ -7246,6 +7360,36 @@ public readonly displayName: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `externalSendersAllowed`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.externalSendersAllowed"></a>
+
+```typescript
+public readonly externalSendersAllowed: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideFromAddressLists`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.hideFromAddressLists"></a>
+
+```typescript
+public readonly hideFromAddressLists: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideFromOutlookClients`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.hideFromOutlookClients"></a>
+
+```typescript
+public readonly hideFromOutlookClients: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -15935,6 +16079,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `autoSubscribeNewMembers`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.autoSubscribeNewMembers"></a>
+
+```typescript
+public readonly autoSubscribeNewMembers: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#auto_subscribe_new_members Group#auto_subscribe_new_members}
+
+---
+
 ##### `behaviors`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.behaviors"></a>
 
 ```typescript
@@ -15974,6 +16132,48 @@ public readonly dynamicMembership: GroupDynamicMembership;
 dynamic_membership block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#dynamic_membership Group#dynamic_membership}
+
+---
+
+##### `externalSendersAllowed`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.externalSendersAllowed"></a>
+
+```typescript
+public readonly externalSendersAllowed: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether people external to the organization can send messages to the group.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#external_senders_allowed Group#external_senders_allowed}
+
+---
+
+##### `hideFromAddressLists`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.hideFromAddressLists"></a>
+
+```typescript
+public readonly hideFromAddressLists: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#hide_from_address_lists Group#hide_from_address_lists}
+
+---
+
+##### `hideFromOutlookClients`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.hideFromOutlookClients"></a>
+
+```typescript
+public readonly hideFromOutlookClients: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#hide_from_outlook_clients Group#hide_from_outlook_clients}
 
 ---
 

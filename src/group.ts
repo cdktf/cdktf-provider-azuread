@@ -14,6 +14,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly assignableToRole?: boolean | cdktf.IResolvable;
   /**
+  * Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#auto_subscribe_new_members Group#auto_subscribe_new_members}
+  */
+  readonly autoSubscribeNewMembers?: boolean | cdktf.IResolvable;
+  /**
   * The group behaviours for a Microsoft 365 group
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#behaviors Group#behaviors}
@@ -31,6 +37,24 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
   */
   readonly displayName: string;
+  /**
+  * Indicates whether people external to the organization can send messages to the group.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#external_senders_allowed Group#external_senders_allowed}
+  */
+  readonly externalSendersAllowed?: boolean | cdktf.IResolvable;
+  /**
+  * Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#hide_from_address_lists Group#hide_from_address_lists}
+  */
+  readonly hideFromAddressLists?: boolean | cdktf.IResolvable;
+  /**
+  * Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#hide_from_outlook_clients Group#hide_from_outlook_clients}
+  */
+  readonly hideFromOutlookClients?: boolean | cdktf.IResolvable;
   /**
   * Whether the group is a mail enabled, with a shared group mailbox. At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled
   * 
@@ -374,9 +398,13 @@ export class Group extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._assignableToRole = config.assignableToRole;
+    this._autoSubscribeNewMembers = config.autoSubscribeNewMembers;
     this._behaviors = config.behaviors;
     this._description = config.description;
     this._displayName = config.displayName;
+    this._externalSendersAllowed = config.externalSendersAllowed;
+    this._hideFromAddressLists = config.hideFromAddressLists;
+    this._hideFromOutlookClients = config.hideFromOutlookClients;
     this._mailEnabled = config.mailEnabled;
     this._mailNickname = config.mailNickname;
     this._members = config.members;
@@ -409,6 +437,22 @@ export class Group extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get assignableToRoleInput() {
     return this._assignableToRole;
+  }
+
+  // auto_subscribe_new_members - computed: false, optional: true, required: false
+  private _autoSubscribeNewMembers?: boolean | cdktf.IResolvable; 
+  public get autoSubscribeNewMembers() {
+    return this.getBooleanAttribute('auto_subscribe_new_members');
+  }
+  public set autoSubscribeNewMembers(value: boolean | cdktf.IResolvable) {
+    this._autoSubscribeNewMembers = value;
+  }
+  public resetAutoSubscribeNewMembers() {
+    this._autoSubscribeNewMembers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoSubscribeNewMembersInput() {
+    return this._autoSubscribeNewMembers;
   }
 
   // behaviors - computed: false, optional: true, required: false
@@ -454,6 +498,54 @@ export class Group extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // external_senders_allowed - computed: false, optional: true, required: false
+  private _externalSendersAllowed?: boolean | cdktf.IResolvable; 
+  public get externalSendersAllowed() {
+    return this.getBooleanAttribute('external_senders_allowed');
+  }
+  public set externalSendersAllowed(value: boolean | cdktf.IResolvable) {
+    this._externalSendersAllowed = value;
+  }
+  public resetExternalSendersAllowed() {
+    this._externalSendersAllowed = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalSendersAllowedInput() {
+    return this._externalSendersAllowed;
+  }
+
+  // hide_from_address_lists - computed: false, optional: true, required: false
+  private _hideFromAddressLists?: boolean | cdktf.IResolvable; 
+  public get hideFromAddressLists() {
+    return this.getBooleanAttribute('hide_from_address_lists');
+  }
+  public set hideFromAddressLists(value: boolean | cdktf.IResolvable) {
+    this._hideFromAddressLists = value;
+  }
+  public resetHideFromAddressLists() {
+    this._hideFromAddressLists = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideFromAddressListsInput() {
+    return this._hideFromAddressLists;
+  }
+
+  // hide_from_outlook_clients - computed: false, optional: true, required: false
+  private _hideFromOutlookClients?: boolean | cdktf.IResolvable; 
+  public get hideFromOutlookClients() {
+    return this.getBooleanAttribute('hide_from_outlook_clients');
+  }
+  public set hideFromOutlookClients(value: boolean | cdktf.IResolvable) {
+    this._hideFromOutlookClients = value;
+  }
+  public resetHideFromOutlookClients() {
+    this._hideFromOutlookClients = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideFromOutlookClientsInput() {
+    return this._hideFromOutlookClients;
   }
 
   // id - computed: true, optional: true, required: false
@@ -705,9 +797,13 @@ export class Group extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       assignable_to_role: cdktf.booleanToTerraform(this._assignableToRole),
+      auto_subscribe_new_members: cdktf.booleanToTerraform(this._autoSubscribeNewMembers),
       behaviors: cdktf.listMapper(cdktf.stringToTerraform)(this._behaviors),
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      external_senders_allowed: cdktf.booleanToTerraform(this._externalSendersAllowed),
+      hide_from_address_lists: cdktf.booleanToTerraform(this._hideFromAddressLists),
+      hide_from_outlook_clients: cdktf.booleanToTerraform(this._hideFromOutlookClients),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),

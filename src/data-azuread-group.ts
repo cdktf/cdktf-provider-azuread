@@ -165,6 +165,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('assignable_to_role');
   }
 
+  // auto_subscribe_new_members - computed: true, optional: false, required: false
+  public get autoSubscribeNewMembers() {
+    return this.getBooleanAttribute('auto_subscribe_new_members');
+  }
+
   // behaviors - computed: true, optional: false, required: false
   public get behaviors() {
     return this.getListAttribute('behaviors');
@@ -194,6 +199,21 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // dynamic_membership - computed: true, optional: false, required: false
   public dynamicMembership(index: string) {
     return new DataAzureadGroupDynamicMembership(this, 'dynamic_membership', index, false);
+  }
+
+  // external_senders_allowed - computed: true, optional: false, required: false
+  public get externalSendersAllowed() {
+    return this.getBooleanAttribute('external_senders_allowed');
+  }
+
+  // hide_from_address_lists - computed: true, optional: false, required: false
+  public get hideFromAddressLists() {
+    return this.getBooleanAttribute('hide_from_address_lists');
+  }
+
+  // hide_from_outlook_clients - computed: true, optional: false, required: false
+  public get hideFromOutlookClients() {
+    return this.getBooleanAttribute('hide_from_outlook_clients');
   }
 
   // id - computed: true, optional: true, required: false
