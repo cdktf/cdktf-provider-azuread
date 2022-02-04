@@ -8,6 +8,7 @@ export * from './application-federated-identity-credential';
 export * from './application-password';
 export * from './application-pre-authorized';
 export * from './conditional-access-policy';
+export * from './custom-directory-role';
 export * from './directory-role';
 export * from './directory-role-member';
 export * from './group';
