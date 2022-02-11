@@ -439,7 +439,7 @@ export class Group extends cdktf.TerraformResource {
     return this._assignableToRole;
   }
 
-  // auto_subscribe_new_members - computed: false, optional: true, required: false
+  // auto_subscribe_new_members - computed: true, optional: true, required: false
   private _autoSubscribeNewMembers?: boolean | cdktf.IResolvable; 
   public get autoSubscribeNewMembers() {
     return this.getBooleanAttribute('auto_subscribe_new_members');
@@ -500,7 +500,7 @@ export class Group extends cdktf.TerraformResource {
     return this._displayName;
   }
 
-  // external_senders_allowed - computed: false, optional: true, required: false
+  // external_senders_allowed - computed: true, optional: true, required: false
   private _externalSendersAllowed?: boolean | cdktf.IResolvable; 
   public get externalSendersAllowed() {
     return this.getBooleanAttribute('external_senders_allowed');
@@ -516,7 +516,7 @@ export class Group extends cdktf.TerraformResource {
     return this._externalSendersAllowed;
   }
 
-  // hide_from_address_lists - computed: false, optional: true, required: false
+  // hide_from_address_lists - computed: true, optional: true, required: false
   private _hideFromAddressLists?: boolean | cdktf.IResolvable; 
   public get hideFromAddressLists() {
     return this.getBooleanAttribute('hide_from_address_lists');
@@ -532,7 +532,7 @@ export class Group extends cdktf.TerraformResource {
     return this._hideFromAddressLists;
   }
 
-  // hide_from_outlook_clients - computed: false, optional: true, required: false
+  // hide_from_outlook_clients - computed: true, optional: true, required: false
   private _hideFromOutlookClients?: boolean | cdktf.IResolvable; 
   public get hideFromOutlookClients() {
     return this.getBooleanAttribute('hide_from_outlook_clients');
