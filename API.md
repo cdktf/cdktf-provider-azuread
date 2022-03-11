@@ -25208,6 +25208,16 @@ public readonly displayName: string;
 
 ---
 
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.objectId"></a>
+
+```typescript
+public readonly objectId: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `preferredSingleSignOnMode`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.preferredSingleSignOnMode"></a>
 
 ```typescript

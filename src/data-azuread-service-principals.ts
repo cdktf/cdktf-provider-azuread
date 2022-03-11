@@ -71,6 +71,11 @@ export class DataAzureadServicePrincipalsServicePrincipals extends cdktf.Complex
     return this.getStringAttribute('display_name');
   }
 
+  // object_id - computed: true, optional: false, required: false
+  public get objectId() {
+    return this.getStringAttribute('object_id');
+  }
+
   // preferred_single_sign_on_mode - computed: true, optional: false, required: false
   public get preferredSingleSignOnMode() {
     return this.getStringAttribute('preferred_single_sign_on_mode');
