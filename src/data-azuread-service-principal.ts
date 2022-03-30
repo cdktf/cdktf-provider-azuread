@@ -32,7 +32,45 @@ export interface DataAzureadServicePrincipalConfig extends cdktf.TerraformMetaAr
   */
   readonly timeouts?: DataAzureadServicePrincipalTimeouts;
 }
-export class DataAzureadServicePrincipalAppRoles extends cdktf.ComplexComputedList {
+export interface DataAzureadServicePrincipalAppRoles {
+}
+
+export function dataAzureadServicePrincipalAppRolesToTerraform(struct?: DataAzureadServicePrincipalAppRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadServicePrincipalAppRolesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadServicePrincipalAppRoles | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadServicePrincipalAppRoles | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // allowed_member_types - computed: true, optional: false, required: false
   public get allowedMemberTypes() {
@@ -64,7 +102,64 @@ export class DataAzureadServicePrincipalAppRoles extends cdktf.ComplexComputedLi
     return this.getStringAttribute('value');
   }
 }
-export class DataAzureadServicePrincipalFeatureTags extends cdktf.ComplexComputedList {
+
+export class DataAzureadServicePrincipalAppRolesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadServicePrincipalAppRolesOutputReference {
+    return new DataAzureadServicePrincipalAppRolesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzureadServicePrincipalFeatureTags {
+}
+
+export function dataAzureadServicePrincipalFeatureTagsToTerraform(struct?: DataAzureadServicePrincipalFeatureTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadServicePrincipalFeatureTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadServicePrincipalFeatureTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // custom_single_sign_on - computed: true, optional: false, required: false
   public get customSingleSignOn() {
@@ -86,7 +181,64 @@ export class DataAzureadServicePrincipalFeatureTags extends cdktf.ComplexCompute
     return this.getBooleanAttribute('hide');
   }
 }
-export class DataAzureadServicePrincipalFeatures extends cdktf.ComplexComputedList {
+
+export class DataAzureadServicePrincipalFeatureTagsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadServicePrincipalFeatureTagsOutputReference {
+    return new DataAzureadServicePrincipalFeatureTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzureadServicePrincipalFeatures {
+}
+
+export function dataAzureadServicePrincipalFeaturesToTerraform(struct?: DataAzureadServicePrincipalFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadServicePrincipalFeatures | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadServicePrincipalFeatures | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // custom_single_sign_on_app - computed: true, optional: false, required: false
   public get customSingleSignOnApp() {
@@ -108,7 +260,64 @@ export class DataAzureadServicePrincipalFeatures extends cdktf.ComplexComputedLi
     return this.getBooleanAttribute('visible_to_users');
   }
 }
-export class DataAzureadServicePrincipalOauth2PermissionScopes extends cdktf.ComplexComputedList {
+
+export class DataAzureadServicePrincipalFeaturesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadServicePrincipalFeaturesOutputReference {
+    return new DataAzureadServicePrincipalFeaturesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzureadServicePrincipalOauth2PermissionScopes {
+}
+
+export function dataAzureadServicePrincipalOauth2PermissionScopesToTerraform(struct?: DataAzureadServicePrincipalOauth2PermissionScopes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadServicePrincipalOauth2PermissionScopesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadServicePrincipalOauth2PermissionScopes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadServicePrincipalOauth2PermissionScopes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // admin_consent_description - computed: true, optional: false, required: false
   public get adminConsentDescription() {
@@ -150,11 +359,87 @@ export class DataAzureadServicePrincipalOauth2PermissionScopes extends cdktf.Com
     return this.getStringAttribute('value');
   }
 }
-export class DataAzureadServicePrincipalSamlSingleSignOn extends cdktf.ComplexComputedList {
+
+export class DataAzureadServicePrincipalOauth2PermissionScopesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadServicePrincipalOauth2PermissionScopesOutputReference {
+    return new DataAzureadServicePrincipalOauth2PermissionScopesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzureadServicePrincipalSamlSingleSignOn {
+}
+
+export function dataAzureadServicePrincipalSamlSingleSignOnToTerraform(struct?: DataAzureadServicePrincipalSamlSingleSignOn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadServicePrincipalSamlSingleSignOnOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadServicePrincipalSamlSingleSignOn | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadServicePrincipalSamlSingleSignOn | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // relay_state - computed: true, optional: false, required: false
   public get relayState() {
     return this.getStringAttribute('relay_state');
+  }
+}
+
+export class DataAzureadServicePrincipalSamlSingleSignOnList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadServicePrincipalSamlSingleSignOnOutputReference {
+    return new DataAzureadServicePrincipalSamlSingleSignOnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAzureadServicePrincipalTimeouts {
@@ -180,10 +465,9 @@ export class DataAzureadServicePrincipalTimeoutsOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAzureadServicePrincipalTimeouts | undefined {
@@ -232,7 +516,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_service_principal";
+  public static readonly tfResourceType = "azuread_service_principal";
 
   // ===========
   // INITIALIZER
@@ -249,7 +533,9 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'azuread_service_principal',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -287,8 +573,9 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // app_roles - computed: true, optional: false, required: false
-  public appRoles(index: string) {
-    return new DataAzureadServicePrincipalAppRoles(this, 'app_roles', index, false);
+  private _appRoles = new DataAzureadServicePrincipalAppRolesList(this, "app_roles", false);
+  public get appRoles() {
+    return this._appRoles;
   }
 
   // application_id - computed: true, optional: true, required: false
@@ -334,13 +621,15 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // feature_tags - computed: true, optional: false, required: false
-  public featureTags(index: string) {
-    return new DataAzureadServicePrincipalFeatureTags(this, 'feature_tags', index, false);
+  private _featureTags = new DataAzureadServicePrincipalFeatureTagsList(this, "feature_tags", false);
+  public get featureTags() {
+    return this._featureTags;
   }
 
   // features - computed: true, optional: false, required: false
-  public features(index: string) {
-    return new DataAzureadServicePrincipalFeatures(this, 'features', index, false);
+  private _features = new DataAzureadServicePrincipalFeaturesList(this, "features", false);
+  public get features() {
+    return this._features;
   }
 
   // homepage_url - computed: true, optional: false, required: false
@@ -379,8 +668,9 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // oauth2_permission_scopes - computed: true, optional: false, required: false
-  public oauth2PermissionScopes(index: string) {
-    return new DataAzureadServicePrincipalOauth2PermissionScopes(this, 'oauth2_permission_scopes', index, false);
+  private _oauth2PermissionScopes = new DataAzureadServicePrincipalOauth2PermissionScopesList(this, "oauth2_permission_scopes", false);
+  public get oauth2PermissionScopes() {
+    return this._oauth2PermissionScopes;
   }
 
   // object_id - computed: true, optional: true, required: false
@@ -415,8 +705,9 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // saml_single_sign_on - computed: true, optional: false, required: false
-  public samlSingleSignOn(index: string) {
-    return new DataAzureadServicePrincipalSamlSingleSignOn(this, 'saml_single_sign_on', index, false);
+  private _samlSingleSignOn = new DataAzureadServicePrincipalSamlSingleSignOnList(this, "saml_single_sign_on", false);
+  public get samlSingleSignOn() {
+    return this._samlSingleSignOn;
   }
 
   // service_principal_names - computed: true, optional: false, required: false
@@ -440,7 +731,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadServicePrincipalTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DataAzureadServicePrincipalTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

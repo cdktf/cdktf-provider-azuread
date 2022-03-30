@@ -44,7 +44,45 @@ export interface DataAzureadServicePrincipalsConfig extends cdktf.TerraformMetaA
   */
   readonly timeouts?: DataAzureadServicePrincipalsTimeouts;
 }
-export class DataAzureadServicePrincipalsServicePrincipals extends cdktf.ComplexComputedList {
+export interface DataAzureadServicePrincipalsServicePrincipals {
+}
+
+export function dataAzureadServicePrincipalsServicePrincipalsToTerraform(struct?: DataAzureadServicePrincipalsServicePrincipals): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadServicePrincipalsServicePrincipalsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadServicePrincipalsServicePrincipals | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadServicePrincipalsServicePrincipals | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // account_enabled - computed: true, optional: false, required: false
   public get accountEnabled() {
@@ -106,6 +144,25 @@ export class DataAzureadServicePrincipalsServicePrincipals extends cdktf.Complex
     return this.getStringAttribute('type');
   }
 }
+
+export class DataAzureadServicePrincipalsServicePrincipalsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadServicePrincipalsServicePrincipalsOutputReference {
+    return new DataAzureadServicePrincipalsServicePrincipalsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAzureadServicePrincipalsTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#read DataAzureadServicePrincipals#read}
@@ -129,10 +186,9 @@ export class DataAzureadServicePrincipalsTimeoutsOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAzureadServicePrincipalsTimeouts | undefined {
@@ -181,7 +237,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_service_principals";
+  public static readonly tfResourceType = "azuread_service_principals";
 
   // ===========
   // INITIALIZER
@@ -198,7 +254,9 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'azuread_service_principals',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -303,12 +361,13 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   }
 
   // service_principals - computed: true, optional: false, required: false
-  public servicePrincipals(index: string) {
-    return new DataAzureadServicePrincipalsServicePrincipals(this, 'service_principals', index, false);
+  private _servicePrincipals = new DataAzureadServicePrincipalsServicePrincipalsList(this, "service_principals", false);
+  public get servicePrincipals() {
+    return this._servicePrincipals;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadServicePrincipalsTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DataAzureadServicePrincipalsTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

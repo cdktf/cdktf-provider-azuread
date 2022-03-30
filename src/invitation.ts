@@ -83,10 +83,9 @@ export class InvitationMessageOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InvitationMessage | undefined {
@@ -208,10 +207,9 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): InvitationTimeouts | undefined {
@@ -326,7 +324,7 @@ export class Invitation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_invitation";
+  public static readonly tfResourceType = "azuread_invitation";
 
   // ===========
   // INITIALIZER
@@ -343,7 +341,9 @@ export class Invitation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'azuread_invitation',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -436,7 +436,7 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // message - computed: false, optional: true, required: false
-  private _message = new InvitationMessageOutputReference(this, "message", true);
+  private _message = new InvitationMessageOutputReference(this, "message");
   public get message() {
     return this._message;
   }
@@ -452,7 +452,7 @@ export class Invitation extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new InvitationTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new InvitationTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

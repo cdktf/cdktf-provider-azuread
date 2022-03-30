@@ -95,7 +95,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread";
+  public static readonly tfResourceType = "azuread";
 
   // ===========
   // INITIALIZER
@@ -113,6 +113,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'azuread',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
+        providerVersion: '2.19.1',
         providerVersionConstraint: '~> 2.0'
       },
       terraformProviderSource: 'hashicorp/azuread'

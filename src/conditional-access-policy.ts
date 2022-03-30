@@ -73,10 +73,9 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsApplications | undefined {
@@ -185,10 +184,9 @@ export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsDevicesFilter | undefined {
@@ -269,10 +267,9 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsDevices | undefined {
@@ -297,7 +294,7 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(this, "filter", true);
+  private _filter = new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(this, "filter");
   public get filter() {
     return this._filter;
   }
@@ -340,10 +337,9 @@ export class ConditionalAccessPolicyConditionsLocationsOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsLocations | undefined {
@@ -430,10 +426,9 @@ export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsPlatforms | undefined {
@@ -540,10 +535,9 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyConditionsUsers | undefined {
@@ -761,10 +755,9 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyConditions | undefined {
@@ -876,7 +869,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // applications - computed: false, optional: false, required: true
-  private _applications = new ConditionalAccessPolicyConditionsApplicationsOutputReference(this, "applications", true);
+  private _applications = new ConditionalAccessPolicyConditionsApplicationsOutputReference(this, "applications");
   public get applications() {
     return this._applications;
   }
@@ -889,7 +882,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // devices - computed: false, optional: true, required: false
-  private _devices = new ConditionalAccessPolicyConditionsDevicesOutputReference(this, "devices", true);
+  private _devices = new ConditionalAccessPolicyConditionsDevicesOutputReference(this, "devices");
   public get devices() {
     return this._devices;
   }
@@ -905,7 +898,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // locations - computed: false, optional: false, required: true
-  private _locations = new ConditionalAccessPolicyConditionsLocationsOutputReference(this, "locations", true);
+  private _locations = new ConditionalAccessPolicyConditionsLocationsOutputReference(this, "locations");
   public get locations() {
     return this._locations;
   }
@@ -918,7 +911,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // platforms - computed: false, optional: false, required: true
-  private _platforms = new ConditionalAccessPolicyConditionsPlatformsOutputReference(this, "platforms", true);
+  private _platforms = new ConditionalAccessPolicyConditionsPlatformsOutputReference(this, "platforms");
   public get platforms() {
     return this._platforms;
   }
@@ -931,7 +924,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   }
 
   // users - computed: false, optional: false, required: true
-  private _users = new ConditionalAccessPolicyConditionsUsersOutputReference(this, "users", true);
+  private _users = new ConditionalAccessPolicyConditionsUsersOutputReference(this, "users");
   public get users() {
     return this._users;
   }
@@ -981,10 +974,9 @@ export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyGrantControls | undefined {
@@ -1127,10 +1119,9 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicySessionControls | undefined {
@@ -1296,10 +1287,9 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ConditionalAccessPolicyTimeouts | undefined {
@@ -1414,7 +1404,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_conditional_access_policy";
+  public static readonly tfResourceType = "azuread_conditional_access_policy";
 
   // ===========
   // INITIALIZER
@@ -1431,7 +1421,9 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'azuread_conditional_access_policy',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1482,7 +1474,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // conditions - computed: false, optional: false, required: true
-  private _conditions = new ConditionalAccessPolicyConditionsOutputReference(this, "conditions", true);
+  private _conditions = new ConditionalAccessPolicyConditionsOutputReference(this, "conditions");
   public get conditions() {
     return this._conditions;
   }
@@ -1495,7 +1487,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // grant_controls - computed: false, optional: false, required: true
-  private _grantControls = new ConditionalAccessPolicyGrantControlsOutputReference(this, "grant_controls", true);
+  private _grantControls = new ConditionalAccessPolicyGrantControlsOutputReference(this, "grant_controls");
   public get grantControls() {
     return this._grantControls;
   }
@@ -1508,7 +1500,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // session_controls - computed: false, optional: true, required: false
-  private _sessionControls = new ConditionalAccessPolicySessionControlsOutputReference(this, "session_controls", true);
+  private _sessionControls = new ConditionalAccessPolicySessionControlsOutputReference(this, "session_controls");
   public get sessionControls() {
     return this._sessionControls;
   }
@@ -1524,7 +1516,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ConditionalAccessPolicyTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new ConditionalAccessPolicyTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

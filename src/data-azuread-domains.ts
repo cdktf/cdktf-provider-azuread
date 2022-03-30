@@ -50,7 +50,45 @@ export interface DataAzureadDomainsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: DataAzureadDomainsTimeouts;
 }
-export class DataAzureadDomainsDomains extends cdktf.ComplexComputedList {
+export interface DataAzureadDomainsDomains {
+}
+
+export function dataAzureadDomainsDomainsToTerraform(struct?: DataAzureadDomainsDomains): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadDomainsDomainsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadDomainsDomains | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadDomainsDomains | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // admin_managed - computed: true, optional: false, required: false
   public get adminManaged() {
@@ -92,6 +130,25 @@ export class DataAzureadDomainsDomains extends cdktf.ComplexComputedList {
     return this.getBooleanAttribute('verified');
   }
 }
+
+export class DataAzureadDomainsDomainsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadDomainsDomainsOutputReference {
+    return new DataAzureadDomainsDomainsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAzureadDomainsTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#read DataAzureadDomains#read}
@@ -115,10 +172,9 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAzureadDomainsTimeouts | undefined {
@@ -167,7 +223,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_domains";
+  public static readonly tfResourceType = "azuread_domains";
 
   // ===========
   // INITIALIZER
@@ -184,7 +240,9 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'azuread_domains',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -221,8 +279,9 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // domains - computed: true, optional: false, required: false
-  public domains(index: string) {
-    return new DataAzureadDomainsDomains(this, 'domains', index, false);
+  private _domains = new DataAzureadDomainsDomainsList(this, "domains", false);
+  public get domains() {
+    return this._domains;
   }
 
   // id - computed: true, optional: true, required: false
@@ -311,7 +370,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadDomainsTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DataAzureadDomainsTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

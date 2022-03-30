@@ -104,7 +104,45 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: ServicePrincipalTimeouts;
 }
-export class ServicePrincipalAppRoles extends cdktf.ComplexComputedList {
+export interface ServicePrincipalAppRoles {
+}
+
+export function servicePrincipalAppRolesToTerraform(struct?: ServicePrincipalAppRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ServicePrincipalAppRolesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServicePrincipalAppRoles | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalAppRoles | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // allowed_member_types - computed: true, optional: false, required: false
   public get allowedMemberTypes() {
@@ -136,7 +174,64 @@ export class ServicePrincipalAppRoles extends cdktf.ComplexComputedList {
     return this.getStringAttribute('value');
   }
 }
-export class ServicePrincipalOauth2PermissionScopes extends cdktf.ComplexComputedList {
+
+export class ServicePrincipalAppRolesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServicePrincipalAppRolesOutputReference {
+    return new ServicePrincipalAppRolesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServicePrincipalOauth2PermissionScopes {
+}
+
+export function servicePrincipalOauth2PermissionScopesToTerraform(struct?: ServicePrincipalOauth2PermissionScopes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ServicePrincipalOauth2PermissionScopesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServicePrincipalOauth2PermissionScopes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalOauth2PermissionScopes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // admin_consent_description - computed: true, optional: false, required: false
   public get adminConsentDescription() {
@@ -176,6 +271,25 @@ export class ServicePrincipalOauth2PermissionScopes extends cdktf.ComplexCompute
   // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
+  }
+}
+
+export class ServicePrincipalOauth2PermissionScopesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServicePrincipalOauth2PermissionScopesOutputReference {
+    return new ServicePrincipalOauth2PermissionScopesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ServicePrincipalFeatureTags {
@@ -283,10 +397,9 @@ export class ServicePrincipalSamlSingleSignOnOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServicePrincipalSamlSingleSignOn | undefined {
@@ -364,10 +477,9 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServicePrincipalTimeouts | undefined {
@@ -482,7 +594,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_service_principal";
+  public static readonly tfResourceType = "azuread_service_principal";
 
   // ===========
   // INITIALIZER
@@ -499,7 +611,9 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'azuread_service_principal',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -582,8 +696,9 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // app_roles - computed: true, optional: false, required: false
-  public appRoles(index: string) {
-    return new ServicePrincipalAppRoles(this, 'app_roles', index, false);
+  private _appRoles = new ServicePrincipalAppRolesList(this, "app_roles", false);
+  public get appRoles() {
+    return this._appRoles;
   }
 
   // application_id - computed: false, optional: false, required: true
@@ -694,8 +809,9 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // oauth2_permission_scopes - computed: true, optional: false, required: false
-  public oauth2PermissionScopes(index: string) {
-    return new ServicePrincipalOauth2PermissionScopes(this, 'oauth2_permission_scopes', index, false);
+  private _oauth2PermissionScopes = new ServicePrincipalOauth2PermissionScopesList(this, "oauth2_permission_scopes", false);
+  public get oauth2PermissionScopes() {
+    return this._oauth2PermissionScopes;
   }
 
   // object_id - computed: true, optional: false, required: false
@@ -827,7 +943,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // saml_single_sign_on - computed: false, optional: true, required: false
-  private _samlSingleSignOn = new ServicePrincipalSamlSingleSignOnOutputReference(this, "saml_single_sign_on", true);
+  private _samlSingleSignOn = new ServicePrincipalSamlSingleSignOnOutputReference(this, "saml_single_sign_on");
   public get samlSingleSignOn() {
     return this._samlSingleSignOn;
   }
@@ -843,7 +959,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ServicePrincipalTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new ServicePrincipalTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

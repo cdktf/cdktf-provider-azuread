@@ -38,7 +38,45 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: DataAzureadGroupTimeouts;
 }
-export class DataAzureadGroupDynamicMembership extends cdktf.ComplexComputedList {
+export interface DataAzureadGroupDynamicMembership {
+}
+
+export function dataAzureadGroupDynamicMembershipToTerraform(struct?: DataAzureadGroupDynamicMembership): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadGroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadGroupDynamicMembership | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadGroupDynamicMembership | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -48,6 +86,25 @@ export class DataAzureadGroupDynamicMembership extends cdktf.ComplexComputedList
   // rule - computed: true, optional: false, required: false
   public get rule() {
     return this.getStringAttribute('rule');
+  }
+}
+
+export class DataAzureadGroupDynamicMembershipList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadGroupDynamicMembershipOutputReference {
+    return new DataAzureadGroupDynamicMembershipOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAzureadGroupTimeouts {
@@ -73,10 +130,9 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAzureadGroupTimeouts | undefined {
@@ -125,7 +181,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_group";
+  public static readonly tfResourceType = "azuread_group";
 
   // ===========
   // INITIALIZER
@@ -142,7 +198,9 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'azuread_group',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -197,8 +255,9 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // dynamic_membership - computed: true, optional: false, required: false
-  public dynamicMembership(index: string) {
-    return new DataAzureadGroupDynamicMembership(this, 'dynamic_membership', index, false);
+  private _dynamicMembership = new DataAzureadGroupDynamicMembershipList(this, "dynamic_membership", false);
+  public get dynamicMembership() {
+    return this._dynamicMembership;
   }
 
   // external_senders_allowed - computed: true, optional: false, required: false
@@ -345,7 +404,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadGroupTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DataAzureadGroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
