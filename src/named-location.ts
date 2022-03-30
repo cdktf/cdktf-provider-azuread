@@ -58,10 +58,9 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NamedLocationCountry | undefined {
@@ -148,10 +147,9 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NamedLocationIp | undefined {
@@ -248,10 +246,9 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): NamedLocationTimeouts | undefined {
@@ -366,7 +363,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_named_location";
+  public static readonly tfResourceType = "azuread_named_location";
 
   // ===========
   // INITIALIZER
@@ -383,7 +380,9 @@ export class NamedLocation extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'azuread_named_location',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -419,7 +418,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
 
   // country - computed: false, optional: true, required: false
-  private _country = new NamedLocationCountryOutputReference(this, "country", true);
+  private _country = new NamedLocationCountryOutputReference(this, "country");
   public get country() {
     return this._country;
   }
@@ -435,7 +434,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
 
   // ip - computed: false, optional: true, required: false
-  private _ip = new NamedLocationIpOutputReference(this, "ip", true);
+  private _ip = new NamedLocationIpOutputReference(this, "ip");
   public get ip() {
     return this._ip;
   }
@@ -451,7 +450,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NamedLocationTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new NamedLocationTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

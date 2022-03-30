@@ -44,7 +44,45 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: DataAzureadUsersTimeouts;
 }
-export class DataAzureadUsersUsers extends cdktf.ComplexComputedList {
+export interface DataAzureadUsersUsers {
+}
+
+export function dataAzureadUsersUsersToTerraform(struct?: DataAzureadUsersUsers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAzureadUsersUsersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzureadUsersUsers | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzureadUsersUsers | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // account_enabled - computed: true, optional: false, required: false
   public get accountEnabled() {
@@ -96,6 +134,25 @@ export class DataAzureadUsersUsers extends cdktf.ComplexComputedList {
     return this.getStringAttribute('user_principal_name');
   }
 }
+
+export class DataAzureadUsersUsersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzureadUsersUsersOutputReference {
+    return new DataAzureadUsersUsersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAzureadUsersTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#read DataAzureadUsers#read}
@@ -119,10 +176,9 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataAzureadUsersTimeouts | undefined {
@@ -171,7 +227,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_users";
+  public static readonly tfResourceType = "azuread_users";
 
   // ===========
   // INITIALIZER
@@ -188,7 +244,9 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'azuread_users',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -293,12 +351,13 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // users - computed: true, optional: false, required: false
-  public users(index: string) {
-    return new DataAzureadUsersUsers(this, 'users', index, false);
+  private _users = new DataAzureadUsersUsersList(this, "users", false);
+  public get users() {
+    return this._users;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadUsersTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new DataAzureadUsersTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

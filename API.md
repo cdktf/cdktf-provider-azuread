@@ -3450,18 +3450,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `api` <a name="@cdktf/provider-azuread.DataAzureadApplication.api"></a>
-
-```typescript
-public api(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `appRoleIds` <a name="@cdktf/provider-azuread.DataAzureadApplication.appRoleIds"></a>
 
 ```typescript
@@ -3469,30 +3457,6 @@ public appRoleIds(key: string)
 ```
 
 ###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
-##### `appRoles` <a name="@cdktf/provider-azuread.DataAzureadApplication.appRoles"></a>
-
-```typescript
-public appRoles(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `featureTags` <a name="@cdktf/provider-azuread.DataAzureadApplication.featureTags"></a>
-
-```typescript
-public featureTags(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
 
 - *Type:* `string`
 
@@ -3510,30 +3474,6 @@ public oauth2PermissionScopeIds(key: string)
 
 ---
 
-##### `optionalClaims` <a name="@cdktf/provider-azuread.DataAzureadApplication.optionalClaims"></a>
-
-```typescript
-public optionalClaims(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `publicClient` <a name="@cdktf/provider-azuread.DataAzureadApplication.publicClient"></a>
-
-```typescript
-public publicClient(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadApplication.putTimeouts"></a>
 
 ```typescript
@@ -3543,18 +3483,6 @@ public putTimeouts(value: DataAzureadApplicationTimeouts)
 ###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTimeouts)
-
----
-
-##### `requiredResourceAccess` <a name="@cdktf/provider-azuread.DataAzureadApplication.requiredResourceAccess"></a>
-
-```typescript
-public requiredResourceAccess(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
-
-- *Type:* `string`
 
 ---
 
@@ -3582,32 +3510,28 @@ public resetObjectId()
 public resetTimeouts()
 ```
 
-##### `singlePageApplication` <a name="@cdktf/provider-azuread.DataAzureadApplication.singlePageApplication"></a>
-
-```typescript
-public singlePageApplication(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `web` <a name="@cdktf/provider-azuread.DataAzureadApplication.web"></a>
-
-```typescript
-public web(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
+
+##### `api`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.api"></a>
+
+```typescript
+public readonly api: DataAzureadApplicationApiList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationApiList`](#@cdktf/provider-azuread.DataAzureadApplicationApiList)
+
+---
+
+##### `appRoles`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.appRoles"></a>
+
+```typescript
+public readonly appRoles: DataAzureadApplicationAppRolesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationAppRolesList`](#@cdktf/provider-azuread.DataAzureadApplicationAppRolesList)
+
+---
 
 ##### `deviceOnlyAuthEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.deviceOnlyAuthEnabled"></a>
 
@@ -3636,6 +3560,16 @@ public readonly fallbackPublicClientEnabled: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.featureTags"></a>
+
+```typescript
+public readonly featureTags: DataAzureadApplicationFeatureTagsList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList`](#@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList)
 
 ---
 
@@ -3699,6 +3633,16 @@ public readonly oauth2PostResponseRequired: IResolvable;
 
 ---
 
+##### `optionalClaims`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.optionalClaims"></a>
+
+```typescript
+public readonly optionalClaims: DataAzureadApplicationOptionalClaimsList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList)
+
+---
+
 ##### `owners`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.owners"></a>
 
 ```typescript
@@ -3719,6 +3663,16 @@ public readonly privacyStatementUrl: string;
 
 ---
 
+##### `publicClient`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.publicClient"></a>
+
+```typescript
+public readonly publicClient: DataAzureadApplicationPublicClientList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationPublicClientList`](#@cdktf/provider-azuread.DataAzureadApplicationPublicClientList)
+
+---
+
 ##### `publisherDomain`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.publisherDomain"></a>
 
 ```typescript
@@ -3729,6 +3683,16 @@ public readonly publisherDomain: string;
 
 ---
 
+##### `requiredResourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.requiredResourceAccess"></a>
+
+```typescript
+public readonly requiredResourceAccess: DataAzureadApplicationRequiredResourceAccessList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList`](#@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList)
+
+---
+
 ##### `signInAudience`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.signInAudience"></a>
 
 ```typescript
@@ -3736,6 +3700,16 @@ public readonly signInAudience: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `singlePageApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.singlePageApplication"></a>
+
+```typescript
+public readonly singlePageApplication: DataAzureadApplicationSinglePageApplicationList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList`](#@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList)
 
 ---
 
@@ -3776,6 +3750,16 @@ public readonly timeouts: DataAzureadApplicationTimeoutsOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference`](#@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference)
+
+---
+
+##### `web`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.web"></a>
+
+```typescript
+public readonly web: DataAzureadApplicationWebList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationWebList`](#@cdktf/provider-azuread.DataAzureadApplicationWebList)
 
 ---
 
@@ -4340,18 +4324,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `domains` <a name="@cdktf/provider-azuread.DataAzureadDomains.domains"></a>
-
-```typescript
-public domains(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadDomains.putTimeouts"></a>
 
 ```typescript
@@ -4408,6 +4380,16 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `domains`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.domains"></a>
+
+```typescript
+public readonly domains: DataAzureadDomainsDomainsList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadDomainsDomainsList`](#@cdktf/provider-azuread.DataAzureadDomainsDomainsList)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.id"></a>
 
@@ -4605,18 +4587,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `dynamicMembership` <a name="@cdktf/provider-azuread.DataAzureadGroup.dynamicMembership"></a>
-
-```typescript
-public dynamicMembership(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadGroup.putTimeouts"></a>
 
 ```typescript
@@ -4699,6 +4669,16 @@ public readonly description: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `dynamicMembership`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.dynamicMembership"></a>
+
+```typescript
+public readonly dynamicMembership: DataAzureadGroupDynamicMembershipList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList`](#@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList)
 
 ---
 
@@ -5303,42 +5283,6 @@ public appRoleIds(key: string)
 
 ---
 
-##### `appRoles` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.appRoles"></a>
-
-```typescript
-public appRoles(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `features` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.features"></a>
-
-```typescript
-public features(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `featureTags` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.featureTags"></a>
-
-```typescript
-public featureTags(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `oauth2PermissionScopeIds` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.oauth2PermissionScopeIds"></a>
 
 ```typescript
@@ -5346,18 +5290,6 @@ public oauth2PermissionScopeIds(key: string)
 ```
 
 ###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
-##### `oauth2PermissionScopes` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.oauth2PermissionScopes"></a>
-
-```typescript
-public oauth2PermissionScopes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.index"></a>
 
 - *Type:* `string`
 
@@ -5398,18 +5330,6 @@ public resetObjectId()
 ```typescript
 public resetTimeouts()
 ```
-
-##### `samlSingleSignOn` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.samlSingleSignOn"></a>
-
-```typescript
-public samlSingleSignOn(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.index"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties"></a>
@@ -5454,6 +5374,16 @@ public readonly appRoleAssignmentRequired: IResolvable;
 
 ---
 
+##### `appRoles`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.appRoles"></a>
+
+```typescript
+public readonly appRoles: DataAzureadServicePrincipalAppRolesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList`](#@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList)
+
+---
+
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.description"></a>
 
 ```typescript
@@ -5461,6 +5391,26 @@ public readonly description: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `features`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.features"></a>
+
+```typescript
+public readonly features: DataAzureadServicePrincipalFeaturesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList`](#@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList)
+
+---
+
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.featureTags"></a>
+
+```typescript
+public readonly featureTags: DataAzureadServicePrincipalFeatureTagsList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList`](#@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList)
 
 ---
 
@@ -5524,6 +5474,16 @@ public readonly notificationEmailAddresses: string[];
 
 ---
 
+##### `oauth2PermissionScopes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.oauth2PermissionScopes"></a>
+
+```typescript
+public readonly oauth2PermissionScopes: DataAzureadServicePrincipalOauth2PermissionScopesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList`](#@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList)
+
+---
+
 ##### `preferredSingleSignOnMode`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.preferredSingleSignOnMode"></a>
 
 ```typescript
@@ -5551,6 +5511,16 @@ public readonly samlMetadataUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `samlSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.samlSingleSignOn"></a>
+
+```typescript
+public readonly samlSingleSignOn: DataAzureadServicePrincipalSamlSingleSignOnList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList`](#@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList)
 
 ---
 
@@ -5768,18 +5738,6 @@ public resetReturnAll()
 public resetTimeouts()
 ```
 
-##### `servicePrincipals` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.servicePrincipals"></a>
-
-```typescript
-public servicePrincipals(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -5790,6 +5748,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `servicePrincipals`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.servicePrincipals"></a>
+
+```typescript
+public readonly servicePrincipals: DataAzureadServicePrincipalsServicePrincipalsList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList)
 
 ---
 
@@ -6582,18 +6550,6 @@ public resetTimeouts()
 public resetUserPrincipalNames()
 ```
 
-##### `users` <a name="@cdktf/provider-azuread.DataAzureadUsers.users"></a>
-
-```typescript
-public users(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -6614,6 +6570,16 @@ public readonly timeouts: DataAzureadUsersTimeoutsOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference`](#@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference)
+
+---
+
+##### `users`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.users"></a>
+
+```typescript
+public readonly users: DataAzureadUsersUsersList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadUsersUsersList`](#@cdktf/provider-azuread.DataAzureadUsersUsersList)
 
 ---
 
@@ -8367,18 +8333,6 @@ public appRoleIds(key: string)
 
 ---
 
-##### `appRoles` <a name="@cdktf/provider-azuread.ServicePrincipal.appRoles"></a>
-
-```typescript
-public appRoles(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `oauth2PermissionScopeIds` <a name="@cdktf/provider-azuread.ServicePrincipal.oauth2PermissionScopeIds"></a>
 
 ```typescript
@@ -8386,18 +8340,6 @@ public oauth2PermissionScopeIds(key: string)
 ```
 
 ###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
-##### `oauth2PermissionScopes` <a name="@cdktf/provider-azuread.ServicePrincipal.oauth2PermissionScopes"></a>
-
-```typescript
-public oauth2PermissionScopes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.index"></a>
 
 - *Type:* `string`
 
@@ -8530,6 +8472,16 @@ public readonly applicationTenantId: string;
 
 ---
 
+##### `appRoles`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.appRoles"></a>
+
+```typescript
+public readonly appRoles: ServicePrincipalAppRolesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalAppRolesList`](#@cdktf/provider-azuread.ServicePrincipalAppRolesList)
+
+---
+
 ##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.displayName"></a>
 
 ```typescript
@@ -8567,6 +8519,16 @@ public readonly logoutUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `oauth2PermissionScopes`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.oauth2PermissionScopes"></a>
+
+```typescript
+public readonly oauth2PermissionScopes: ServicePrincipalOauth2PermissionScopesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList`](#@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList)
 
 ---
 
@@ -14696,6 +14658,36 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+### DataAzureadApplicationApi <a name="@cdktf/provider-azuread.DataAzureadApplicationApi"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationApi } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationApi: DataAzureadApplicationApi = { ... }
+```
+
+### DataAzureadApplicationApiOauth2PermissionScopes <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationApiOauth2PermissionScopes } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationApiOauth2PermissionScopes: DataAzureadApplicationApiOauth2PermissionScopes = { ... }
+```
+
+### DataAzureadApplicationAppRoles <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationAppRoles } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationAppRoles: DataAzureadApplicationAppRoles = { ... }
+```
+
 ### DataAzureadApplicationConfig <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -14802,6 +14794,66 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+### DataAzureadApplicationFeatureTags <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationFeatureTags } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationFeatureTags: DataAzureadApplicationFeatureTags = { ... }
+```
+
+### DataAzureadApplicationOptionalClaims <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaims } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationOptionalClaims: DataAzureadApplicationOptionalClaims = { ... }
+```
+
+### DataAzureadApplicationOptionalClaimsAccessToken <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsAccessToken } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationOptionalClaimsAccessToken: DataAzureadApplicationOptionalClaimsAccessToken = { ... }
+```
+
+### DataAzureadApplicationOptionalClaimsIdToken <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsIdToken } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationOptionalClaimsIdToken: DataAzureadApplicationOptionalClaimsIdToken = { ... }
+```
+
+### DataAzureadApplicationOptionalClaimsSaml2Token <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsSaml2Token } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationOptionalClaimsSaml2Token: DataAzureadApplicationOptionalClaimsSaml2Token = { ... }
+```
+
+### DataAzureadApplicationPublicClient <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationPublicClient } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationPublicClient: DataAzureadApplicationPublicClient = { ... }
+```
+
 ### DataAzureadApplicationPublishedAppIdsConfig <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -14887,6 +14939,36 @@ public readonly read: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids#read DataAzureadApplicationPublishedAppIds#read}.
 
 ---
+
+### DataAzureadApplicationRequiredResourceAccess <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationRequiredResourceAccess } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationRequiredResourceAccess: DataAzureadApplicationRequiredResourceAccess = { ... }
+```
+
+### DataAzureadApplicationRequiredResourceAccessResourceAccess <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationRequiredResourceAccessResourceAccess } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationRequiredResourceAccessResourceAccess: DataAzureadApplicationRequiredResourceAccessResourceAccess = { ... }
+```
+
+### DataAzureadApplicationSinglePageApplication <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationSinglePageApplication } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationSinglePageApplication: DataAzureadApplicationSinglePageApplication = { ... }
+```
 
 ### DataAzureadApplicationTemplateConfig <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig"></a>
 
@@ -15023,6 +15105,26 @@ public readonly read: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#read DataAzureadApplication#read}.
 
 ---
+
+### DataAzureadApplicationWeb <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationWeb } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationWeb: DataAzureadApplicationWeb = { ... }
+```
+
+### DataAzureadApplicationWebImplicitGrant <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationWebImplicitGrant } from '@cdktf/provider-azuread'
+
+const dataAzureadApplicationWebImplicitGrant: DataAzureadApplicationWebImplicitGrant = { ... }
+```
 
 ### DataAzureadClientConfigConfig <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig"></a>
 
@@ -15258,6 +15360,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+### DataAzureadDomainsDomains <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadDomainsDomains } from '@cdktf/provider-azuread'
+
+const dataAzureadDomainsDomains: DataAzureadDomainsDomains = { ... }
+```
+
 ### DataAzureadDomainsTimeouts <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeouts"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -15399,6 +15511,16 @@ timeouts block.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#timeouts DataAzureadGroup#timeouts}
 
 ---
+
+### DataAzureadGroupDynamicMembership <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadGroupDynamicMembership } from '@cdktf/provider-azuread'
+
+const dataAzureadGroupDynamicMembership: DataAzureadGroupDynamicMembership = { ... }
+```
 
 ### DataAzureadGroupsConfig <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig"></a>
 
@@ -15592,6 +15714,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+### DataAzureadServicePrincipalAppRoles <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalAppRoles } from '@cdktf/provider-azuread'
+
+const dataAzureadServicePrincipalAppRoles: DataAzureadServicePrincipalAppRoles = { ... }
+```
+
 ### DataAzureadServicePrincipalConfig <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -15697,6 +15829,46 @@ timeouts block.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
 
 ---
+
+### DataAzureadServicePrincipalFeatures <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalFeatures } from '@cdktf/provider-azuread'
+
+const dataAzureadServicePrincipalFeatures: DataAzureadServicePrincipalFeatures = { ... }
+```
+
+### DataAzureadServicePrincipalFeatureTags <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalFeatureTags } from '@cdktf/provider-azuread'
+
+const dataAzureadServicePrincipalFeatureTags: DataAzureadServicePrincipalFeatureTags = { ... }
+```
+
+### DataAzureadServicePrincipalOauth2PermissionScopes <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalOauth2PermissionScopes } from '@cdktf/provider-azuread'
+
+const dataAzureadServicePrincipalOauth2PermissionScopes: DataAzureadServicePrincipalOauth2PermissionScopes = { ... }
+```
+
+### DataAzureadServicePrincipalSamlSingleSignOn <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalSamlSingleSignOn } from '@cdktf/provider-azuread'
+
+const dataAzureadServicePrincipalSamlSingleSignOn: DataAzureadServicePrincipalSamlSingleSignOn = { ... }
+```
 
 ### DataAzureadServicePrincipalsConfig <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig"></a>
 
@@ -15835,6 +16007,16 @@ timeouts block.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
 
 ---
+
+### DataAzureadServicePrincipalsServicePrincipals <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalsServicePrincipals } from '@cdktf/provider-azuread'
+
+const dataAzureadServicePrincipalsServicePrincipals: DataAzureadServicePrincipalsServicePrincipals = { ... }
+```
 
 ### DataAzureadServicePrincipalsTimeouts <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts"></a>
 
@@ -16145,6 +16327,16 @@ public readonly read: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#read DataAzureadUsers#read}.
 
 ---
+
+### DataAzureadUsersUsers <a name="@cdktf/provider-azuread.DataAzureadUsersUsers"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadUsersUsers } from '@cdktf/provider-azuread'
+
+const dataAzureadUsersUsers: DataAzureadUsersUsers = { ... }
+```
 
 ### DataAzureadUserTimeouts <a name="@cdktf/provider-azuread.DataAzureadUserTimeouts"></a>
 
@@ -17528,6 +17720,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+### ServicePrincipalAppRoles <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ServicePrincipalAppRoles } from '@cdktf/provider-azuread'
+
+const servicePrincipalAppRoles: ServicePrincipalAppRoles = { ... }
+```
+
 ### ServicePrincipalCertificateConfig <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -18353,6 +18555,16 @@ Whether this app is invisible to users in My Apps and Office 365 Launcher.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#hide ServicePrincipal#hide}
 
 ---
+
+### ServicePrincipalOauth2PermissionScopes <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ServicePrincipalOauth2PermissionScopes } from '@cdktf/provider-azuread'
+
+const servicePrincipalOauth2PermissionScopes: ServicePrincipalOauth2PermissionScopes = { ... }
+```
 
 ### ServicePrincipalPasswordConfig <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig"></a>
 
@@ -19279,7 +19491,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 ```typescript
 import { AdministrativeUnitMemberTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new AdministrativeUnitMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AdministrativeUnitMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -19295,14 +19507,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -19433,7 +19637,7 @@ public readonly internalValue: AdministrativeUnitMemberTimeouts;
 ```typescript
 import { AdministrativeUnitTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new AdministrativeUnitTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AdministrativeUnitTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -19449,14 +19653,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -19587,7 +19783,7 @@ public readonly internalValue: AdministrativeUnitTimeouts;
 ```typescript
 import { ApplicationApiOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationApiOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationApiOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.parameter.terraformResource"></a>
@@ -19603,14 +19799,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -19741,7 +19929,7 @@ public readonly internalValue: ApplicationApi;
 ```typescript
 import { ApplicationCertificateTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationCertificateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationCertificateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -19757,14 +19945,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -19895,7 +20075,7 @@ public readonly internalValue: ApplicationCertificateTimeouts;
 ```typescript
 import { ApplicationFederatedIdentityCredentialTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationFederatedIdentityCredentialTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationFederatedIdentityCredentialTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -19911,14 +20091,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20049,7 +20221,7 @@ public readonly internalValue: ApplicationFederatedIdentityCredentialTimeouts;
 ```typescript
 import { ApplicationOptionalClaimsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationOptionalClaimsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationOptionalClaimsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.parameter.terraformResource"></a>
@@ -20065,14 +20237,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20177,7 +20341,7 @@ public readonly internalValue: ApplicationOptionalClaims;
 ```typescript
 import { ApplicationPasswordTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationPasswordTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationPasswordTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -20193,14 +20357,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20331,7 +20487,7 @@ public readonly internalValue: ApplicationPasswordTimeouts;
 ```typescript
 import { ApplicationPreAuthorizedTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationPreAuthorizedTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationPreAuthorizedTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -20347,14 +20503,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20485,7 +20633,7 @@ public readonly internalValue: ApplicationPreAuthorizedTimeouts;
 ```typescript
 import { ApplicationPublicClientOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationPublicClientOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationPublicClientOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPublicClientOutputReference.parameter.terraformResource"></a>
@@ -20501,14 +20649,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPublicClientOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20561,7 +20701,7 @@ public readonly internalValue: ApplicationPublicClient;
 ```typescript
 import { ApplicationSinglePageApplicationOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationSinglePageApplicationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationSinglePageApplicationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationSinglePageApplicationOutputReference.parameter.terraformResource"></a>
@@ -20577,14 +20717,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationSinglePageApplicationOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20637,7 +20769,7 @@ public readonly internalValue: ApplicationSinglePageApplication;
 ```typescript
 import { ApplicationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -20653,14 +20785,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20791,7 +20915,7 @@ public readonly internalValue: ApplicationTimeouts;
 ```typescript
 import { ApplicationWebImplicitGrantOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationWebImplicitGrantOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationWebImplicitGrantOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.parameter.terraformResource"></a>
@@ -20807,14 +20931,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebImplicitGrantOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -20893,7 +21009,7 @@ public readonly internalValue: ApplicationWebImplicitGrant;
 ```typescript
 import { ApplicationWebOutputReference } from '@cdktf/provider-azuread'
 
-new ApplicationWebOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ApplicationWebOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.parameter.terraformResource"></a>
@@ -20909,14 +21025,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationWebOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21059,7 +21167,7 @@ public readonly internalValue: ApplicationWeb;
 ```typescript
 import { AppRoleAssignmentTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new AppRoleAssignmentTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AppRoleAssignmentTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -21075,14 +21183,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21187,7 +21287,7 @@ public readonly internalValue: AppRoleAssignmentTimeouts;
 ```typescript
 import { ConditionalAccessPolicyConditionsApplicationsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsApplicationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsApplicationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.parameter.terraformResource"></a>
@@ -21203,14 +21303,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21309,7 +21401,7 @@ public readonly internalValue: ConditionalAccessPolicyConditionsApplications;
 ```typescript
 import { ConditionalAccessPolicyConditionsDevicesFilterOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsDevicesFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.parameter.terraformResource"></a>
@@ -21325,14 +21417,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21398,7 +21482,7 @@ public readonly internalValue: ConditionalAccessPolicyConditionsDevicesFilter;
 ```typescript
 import { ConditionalAccessPolicyConditionsDevicesOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsDevicesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsDevicesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.terraformResource"></a>
@@ -21414,14 +21498,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsDevicesOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21486,7 +21562,7 @@ public readonly internalValue: ConditionalAccessPolicyConditionsDevices;
 ```typescript
 import { ConditionalAccessPolicyConditionsLocationsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsLocationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsLocationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.parameter.terraformResource"></a>
@@ -21502,14 +21578,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocationsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21582,7 +21650,7 @@ public readonly internalValue: ConditionalAccessPolicyConditionsLocations;
 ```typescript
 import { ConditionalAccessPolicyConditionsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.parameter.terraformResource"></a>
@@ -21598,14 +21666,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21870,7 +21930,7 @@ public readonly internalValue: ConditionalAccessPolicyConditions;
 ```typescript
 import { ConditionalAccessPolicyConditionsPlatformsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsPlatformsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsPlatformsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatformsOutputReference.parameter.terraformResource"></a>
@@ -21886,14 +21946,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatformsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -21966,7 +22018,7 @@ public readonly internalValue: ConditionalAccessPolicyConditionsPlatforms;
 ```typescript
 import { ConditionalAccessPolicyConditionsUsersOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyConditionsUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyConditionsUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.parameter.terraformResource"></a>
@@ -21982,14 +22034,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsUsersOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22172,7 +22216,7 @@ public readonly internalValue: ConditionalAccessPolicyConditionsUsers;
 ```typescript
 import { ConditionalAccessPolicyGrantControlsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyGrantControlsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyGrantControlsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.parameter.terraformResource"></a>
@@ -22188,14 +22232,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22314,7 +22350,7 @@ public readonly internalValue: ConditionalAccessPolicyGrantControls;
 ```typescript
 import { ConditionalAccessPolicySessionControlsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicySessionControlsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicySessionControlsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.parameter.terraformResource"></a>
@@ -22330,14 +22366,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicySessionControlsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22494,7 +22522,7 @@ public readonly internalValue: ConditionalAccessPolicySessionControls;
 ```typescript
 import { ConditionalAccessPolicyTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ConditionalAccessPolicyTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ConditionalAccessPolicyTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -22510,14 +22538,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22648,7 +22668,7 @@ public readonly internalValue: ConditionalAccessPolicyTimeouts;
 ```typescript
 import { CustomDirectoryRoleTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new CustomDirectoryRoleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CustomDirectoryRoleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -22664,14 +22684,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22802,7 +22814,7 @@ public readonly internalValue: CustomDirectoryRoleTimeouts;
 ```typescript
 import { DataAzureadAdministrativeUnitTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadAdministrativeUnitTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadAdministrativeUnitTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -22818,14 +22830,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -22949,116 +22953,151 @@ public readonly internalValue: DataAzureadAdministrativeUnitTimeouts;
 ---
 
 
-### DataAzureadApplicationApi <a name="@cdktf/provider-azuread.DataAzureadApplicationApi"></a>
+### DataAzureadApplicationApiList <a name="@cdktf/provider-azuread.DataAzureadApplicationApiList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationApiList.Initializer"></a>
 
 ```typescript
-import { DataAzureadApplicationApi } from '@cdktf/provider-azuread'
+import { DataAzureadApplicationApiList } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationApi(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadApplicationApiList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
 
----
-
-
-
-#### Properties <a name="Properties"></a>
-
-##### `knownClientApplications`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.property.knownClientApplications"></a>
-
-```typescript
-public readonly knownClientApplications: string[];
-```
-
-- *Type:* `string`[]
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
-##### `mappedClaimsEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.property.mappedClaimsEnabled"></a>
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationApiList.get"></a>
 
 ```typescript
-public readonly mappedClaimsEnabled: IResolvable;
+public get(index: number)
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `oauth2PermissionScopes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.property.oauth2PermissionScopes"></a>
-
-```typescript
-public readonly oauth2PermissionScopes: IResolvable;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `requestedAccessTokenVersion`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApi.property.requestedAccessTokenVersion"></a>
-
-```typescript
-public readonly requestedAccessTokenVersion: number;
-```
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiList.parameter.index"></a>
 
 - *Type:* `number`
 
+the index of the item to return.
+
 ---
 
 
-### DataAzureadApplicationApiOauth2PermissionScopes <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.Initializer"></a>
+
+### DataAzureadApplicationApiOauth2PermissionScopesList <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList.Initializer"></a>
 
 ```typescript
-import { DataAzureadApplicationApiOauth2PermissionScopes } from '@cdktf/provider-azuread'
+import { DataAzureadApplicationApiOauth2PermissionScopesList } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationApiOauth2PermissionScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadApplicationApiOauth2PermissionScopesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationApiOauth2PermissionScopesOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationApiOauth2PermissionScopesOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationApiOauth2PermissionScopesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23066,7 +23105,7 @@ new DataAzureadApplicationApiOauth2PermissionScopes(terraformResource: IInterpol
 
 #### Properties <a name="Properties"></a>
 
-##### `adminConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.adminConsentDescription"></a>
+##### `adminConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.adminConsentDescription"></a>
 
 ```typescript
 public readonly adminConsentDescription: string;
@@ -23076,7 +23115,7 @@ public readonly adminConsentDescription: string;
 
 ---
 
-##### `adminConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.adminConsentDisplayName"></a>
+##### `adminConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.adminConsentDisplayName"></a>
 
 ```typescript
 public readonly adminConsentDisplayName: string;
@@ -23086,7 +23125,7 @@ public readonly adminConsentDisplayName: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -23096,7 +23135,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -23106,7 +23145,7 @@ public readonly id: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -23116,7 +23155,7 @@ public readonly type: string;
 
 ---
 
-##### `userConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.userConsentDescription"></a>
+##### `userConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.userConsentDescription"></a>
 
 ```typescript
 public readonly userConsentDescription: string;
@@ -23126,7 +23165,7 @@ public readonly userConsentDescription: string;
 
 ---
 
-##### `userConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.userConsentDisplayName"></a>
+##### `userConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.userConsentDisplayName"></a>
 
 ```typescript
 public readonly userConsentDisplayName: string;
@@ -23136,7 +23175,7 @@ public readonly userConsentDisplayName: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -23146,38 +23185,56 @@ public readonly value: string;
 
 ---
 
-
-### DataAzureadApplicationAppRoles <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationAppRoles } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationAppRoles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationApiOauth2PermissionScopes;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes`](#@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopes)
+
+---
+
+
+### DataAzureadApplicationApiOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationApiOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationApiOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.parameter.wrapsSet"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23185,7 +23242,157 @@ new DataAzureadApplicationAppRoles(terraformResource: IInterpolatingParent, terr
 
 #### Properties <a name="Properties"></a>
 
-##### `allowedMemberTypes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.property.allowedMemberTypes"></a>
+##### `knownClientApplications`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.property.knownClientApplications"></a>
+
+```typescript
+public readonly knownClientApplications: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `mappedClaimsEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.property.mappedClaimsEnabled"></a>
+
+```typescript
+public readonly mappedClaimsEnabled: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `oauth2PermissionScopes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.property.oauth2PermissionScopes"></a>
+
+```typescript
+public readonly oauth2PermissionScopes: DataAzureadApplicationApiOauth2PermissionScopesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList`](#@cdktf/provider-azuread.DataAzureadApplicationApiOauth2PermissionScopesList)
+
+---
+
+##### `requestedAccessTokenVersion`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.property.requestedAccessTokenVersion"></a>
+
+```typescript
+public readonly requestedAccessTokenVersion: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationApiOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationApi;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationApi`](#@cdktf/provider-azuread.DataAzureadApplicationApi)
+
+---
+
+
+### DataAzureadApplicationAppRolesList <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationAppRolesList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationAppRolesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationAppRolesOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationAppRolesOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationAppRolesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `allowedMemberTypes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.property.allowedMemberTypes"></a>
 
 ```typescript
 public readonly allowedMemberTypes: string[];
@@ -23195,7 +23402,7 @@ public readonly allowedMemberTypes: string[];
 
 ---
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.property.description"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -23205,7 +23412,7 @@ public readonly description: string;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -23215,7 +23422,7 @@ public readonly displayName: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -23225,7 +23432,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -23235,7 +23442,7 @@ public readonly id: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRoles.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -23245,38 +23452,109 @@ public readonly value: string;
 
 ---
 
-
-### DataAzureadApplicationFeatureTags <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationAppRolesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationFeatureTags } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationFeatureTags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationAppRoles;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationAppRoles`](#@cdktf/provider-azuread.DataAzureadApplicationAppRoles)
+
+---
+
+
+### DataAzureadApplicationFeatureTagsList <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationFeatureTagsList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationFeatureTagsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationFeatureTagsOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationFeatureTagsOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationFeatureTagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23284,7 +23562,7 @@ new DataAzureadApplicationFeatureTags(terraformResource: IInterpolatingParent, t
 
 #### Properties <a name="Properties"></a>
 
-##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.customSingleSignOn"></a>
+##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.property.customSingleSignOn"></a>
 
 ```typescript
 public readonly customSingleSignOn: IResolvable;
@@ -23294,7 +23572,7 @@ public readonly customSingleSignOn: IResolvable;
 
 ---
 
-##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.enterprise"></a>
+##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.property.enterprise"></a>
 
 ```typescript
 public readonly enterprise: IResolvable;
@@ -23304,7 +23582,7 @@ public readonly enterprise: IResolvable;
 
 ---
 
-##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.gallery"></a>
+##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.property.gallery"></a>
 
 ```typescript
 public readonly gallery: IResolvable;
@@ -23314,7 +23592,7 @@ public readonly gallery: IResolvable;
 
 ---
 
-##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTags.property.hide"></a>
+##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.property.hide"></a>
 
 ```typescript
 public readonly hide: IResolvable;
@@ -23324,38 +23602,109 @@ public readonly hide: IResolvable;
 
 ---
 
-
-### DataAzureadApplicationOptionalClaims <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationFeatureTagsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationOptionalClaims } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationOptionalClaims(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationFeatureTags;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationFeatureTags`](#@cdktf/provider-azuread.DataAzureadApplicationFeatureTags)
+
+---
+
+
+### DataAzureadApplicationOptionalClaimsAccessTokenList <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsAccessTokenList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsAccessTokenList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationOptionalClaimsAccessTokenOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsAccessTokenOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsAccessTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23363,76 +23712,7 @@ new DataAzureadApplicationOptionalClaims(terraformResource: IInterpolatingParent
 
 #### Properties <a name="Properties"></a>
 
-##### `accessToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.property.accessToken"></a>
-
-```typescript
-public readonly accessToken: IResolvable;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `idToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.property.idToken"></a>
-
-```typescript
-public readonly idToken: IResolvable;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `saml2Token`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims.property.saml2Token"></a>
-
-```typescript
-public readonly saml2Token: IResolvable;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-
-### DataAzureadApplicationOptionalClaimsAccessToken <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.Initializer"></a>
-
-```typescript
-import { DataAzureadApplicationOptionalClaimsAccessToken } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationOptionalClaimsAccessToken(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
-```
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.parameter.terraformResource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.parameter.terraformAttribute"></a>
-
-- *Type:* `string`
-
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
-
----
-
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.parameter.wrapsSet"></a>
-
-- *Type:* `boolean`
-
----
-
-
-
-#### Properties <a name="Properties"></a>
-
-##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.property.additionalProperties"></a>
+##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.property.additionalProperties"></a>
 
 ```typescript
 public readonly additionalProperties: string[];
@@ -23442,7 +23722,7 @@ public readonly additionalProperties: string[];
 
 ---
 
-##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.property.essential"></a>
+##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.property.essential"></a>
 
 ```typescript
 public readonly essential: IResolvable;
@@ -23452,7 +23732,7 @@ public readonly essential: IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -23462,7 +23742,7 @@ public readonly name: string;
 
 ---
 
-##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken.property.source"></a>
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -23472,38 +23752,109 @@ public readonly source: string;
 
 ---
 
-
-### DataAzureadApplicationOptionalClaimsIdToken <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationOptionalClaimsIdToken } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationOptionalClaimsIdToken(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationOptionalClaimsAccessToken;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessToken)
+
+---
+
+
+### DataAzureadApplicationOptionalClaimsIdTokenList <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsIdTokenList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsIdTokenList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationOptionalClaimsIdTokenOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsIdTokenOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsIdTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23511,7 +23862,7 @@ new DataAzureadApplicationOptionalClaimsIdToken(terraformResource: IInterpolatin
 
 #### Properties <a name="Properties"></a>
 
-##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.property.additionalProperties"></a>
+##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.property.additionalProperties"></a>
 
 ```typescript
 public readonly additionalProperties: string[];
@@ -23521,7 +23872,7 @@ public readonly additionalProperties: string[];
 
 ---
 
-##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.property.essential"></a>
+##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.property.essential"></a>
 
 ```typescript
 public readonly essential: IResolvable;
@@ -23531,7 +23882,7 @@ public readonly essential: IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -23541,7 +23892,7 @@ public readonly name: string;
 
 ---
 
-##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken.property.source"></a>
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -23551,38 +23902,109 @@ public readonly source: string;
 
 ---
 
-
-### DataAzureadApplicationOptionalClaimsSaml2Token <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationOptionalClaimsSaml2Token } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationOptionalClaimsSaml2Token(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationOptionalClaimsIdToken;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdToken)
+
+---
+
+
+### DataAzureadApplicationOptionalClaimsList <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationOptionalClaimsOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23590,7 +24012,147 @@ new DataAzureadApplicationOptionalClaimsSaml2Token(terraformResource: IInterpola
 
 #### Properties <a name="Properties"></a>
 
-##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.property.additionalProperties"></a>
+##### `accessToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: DataAzureadApplicationOptionalClaimsAccessTokenList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsAccessTokenList)
+
+---
+
+##### `idToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.property.idToken"></a>
+
+```typescript
+public readonly idToken: DataAzureadApplicationOptionalClaimsIdTokenList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsIdTokenList)
+
+---
+
+##### `saml2Token`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.property.saml2Token"></a>
+
+```typescript
+public readonly saml2Token: DataAzureadApplicationOptionalClaimsSaml2TokenList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationOptionalClaims;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaims)
+
+---
+
+
+### DataAzureadApplicationOptionalClaimsSaml2TokenList <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsSaml2TokenList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsSaml2TokenList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.property.additionalProperties"></a>
 
 ```typescript
 public readonly additionalProperties: string[];
@@ -23600,7 +24162,7 @@ public readonly additionalProperties: string[];
 
 ---
 
-##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.property.essential"></a>
+##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.property.essential"></a>
 
 ```typescript
 public readonly essential: IResolvable;
@@ -23610,7 +24172,7 @@ public readonly essential: IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -23620,7 +24182,7 @@ public readonly name: string;
 
 ---
 
-##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token.property.source"></a>
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -23630,38 +24192,109 @@ public readonly source: string;
 
 ---
 
-
-### DataAzureadApplicationPublicClient <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationPublicClient } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationPublicClient(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationOptionalClaimsSaml2Token;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.DataAzureadApplicationOptionalClaimsSaml2Token)
+
+---
+
+
+### DataAzureadApplicationPublicClientList <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationPublicClientList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationPublicClientList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationPublicClientOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationPublicClientOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationPublicClientOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23669,13 +24302,23 @@ new DataAzureadApplicationPublicClient(terraformResource: IInterpolatingParent, 
 
 #### Properties <a name="Properties"></a>
 
-##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClient.property.redirectUris"></a>
+##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference.property.redirectUris"></a>
 
 ```typescript
 public readonly redirectUris: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublicClientOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationPublicClient;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationPublicClient`](#@cdktf/provider-azuread.DataAzureadApplicationPublicClient)
 
 ---
 
@@ -23687,7 +24330,7 @@ public readonly redirectUris: string[];
 ```typescript
 import { DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -23703,14 +24346,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -23756,37 +24391,98 @@ public readonly internalValue: DataAzureadApplicationPublishedAppIdsTimeouts;
 ---
 
 
-### DataAzureadApplicationRequiredResourceAccess <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess"></a>
+### DataAzureadApplicationRequiredResourceAccessList <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList.Initializer"></a>
 
 ```typescript
-import { DataAzureadApplicationRequiredResourceAccess } from '@cdktf/provider-azuread'
+import { DataAzureadApplicationRequiredResourceAccessList } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationRequiredResourceAccess(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadApplicationRequiredResourceAccessList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationRequiredResourceAccessOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationRequiredResourceAccessOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationRequiredResourceAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23794,17 +24490,17 @@ new DataAzureadApplicationRequiredResourceAccess(terraformResource: IInterpolati
 
 #### Properties <a name="Properties"></a>
 
-##### `resourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.property.resourceAccess"></a>
+##### `resourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.property.resourceAccess"></a>
 
 ```typescript
-public readonly resourceAccess: IResolvable;
+public readonly resourceAccess: DataAzureadApplicationRequiredResourceAccessResourceAccessList;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList`](#@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList)
 
 ---
 
-##### `resourceAppId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess.property.resourceAppId"></a>
+##### `resourceAppId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.property.resourceAppId"></a>
 
 ```typescript
 public readonly resourceAppId: string;
@@ -23814,38 +24510,109 @@ public readonly resourceAppId: string;
 
 ---
 
-
-### DataAzureadApplicationRequiredResourceAccessResourceAccess <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationRequiredResourceAccessResourceAccess } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationRequiredResourceAccessResourceAccess(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationRequiredResourceAccess;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccess)
+
+---
+
+
+### DataAzureadApplicationRequiredResourceAccessResourceAccessList <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationRequiredResourceAccessResourceAccessList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationRequiredResourceAccessResourceAccessList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23853,7 +24620,7 @@ new DataAzureadApplicationRequiredResourceAccessResourceAccess(terraformResource
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -23863,7 +24630,7 @@ public readonly id: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -23873,38 +24640,109 @@ public readonly type: string;
 
 ---
 
-
-### DataAzureadApplicationSinglePageApplication <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadApplicationSinglePageApplication } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationSinglePageApplication(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadApplicationRequiredResourceAccessResourceAccess;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess`](#@cdktf/provider-azuread.DataAzureadApplicationRequiredResourceAccessResourceAccess)
+
+---
+
+
+### DataAzureadApplicationSinglePageApplicationList <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationSinglePageApplicationList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationSinglePageApplicationList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationSinglePageApplicationOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationSinglePageApplicationOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationSinglePageApplicationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -23912,13 +24750,23 @@ new DataAzureadApplicationSinglePageApplication(terraformResource: IInterpolatin
 
 #### Properties <a name="Properties"></a>
 
-##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication.property.redirectUris"></a>
+##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference.property.redirectUris"></a>
 
 ```typescript
 public readonly redirectUris: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplicationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationSinglePageApplication;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication`](#@cdktf/provider-azuread.DataAzureadApplicationSinglePageApplication)
 
 ---
 
@@ -23930,7 +24778,7 @@ public readonly redirectUris: string[];
 ```typescript
 import { DataAzureadApplicationTemplateTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationTemplateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadApplicationTemplateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -23946,14 +24794,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24006,7 +24846,7 @@ public readonly internalValue: DataAzureadApplicationTemplateTimeouts;
 ```typescript
 import { DataAzureadApplicationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadApplicationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -24022,14 +24862,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24075,37 +24907,98 @@ public readonly internalValue: DataAzureadApplicationTimeouts;
 ---
 
 
-### DataAzureadApplicationWeb <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb"></a>
+### DataAzureadApplicationWebImplicitGrantList <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList.Initializer"></a>
 
 ```typescript
-import { DataAzureadApplicationWeb } from '@cdktf/provider-azuread'
+import { DataAzureadApplicationWebImplicitGrantList } from '@cdktf/provider-azuread'
 
-new DataAzureadApplicationWeb(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadApplicationWebImplicitGrantList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationWebImplicitGrantOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationWebImplicitGrantOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationWebImplicitGrantOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24113,86 +25006,7 @@ new DataAzureadApplicationWeb(terraformResource: IInterpolatingParent, terraform
 
 #### Properties <a name="Properties"></a>
 
-##### `homepageUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.property.homepageUrl"></a>
-
-```typescript
-public readonly homepageUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `implicitGrant`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.property.implicitGrant"></a>
-
-```typescript
-public readonly implicitGrant: IResolvable;
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `logoutUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.property.logoutUrl"></a>
-
-```typescript
-public readonly logoutUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWeb.property.redirectUris"></a>
-
-```typescript
-public readonly redirectUris: string[];
-```
-
-- *Type:* `string`[]
-
----
-
-
-### DataAzureadApplicationWebImplicitGrant <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.Initializer"></a>
-
-```typescript
-import { DataAzureadApplicationWebImplicitGrant } from '@cdktf/provider-azuread'
-
-new DataAzureadApplicationWebImplicitGrant(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
-```
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.parameter.terraformResource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.parameter.terraformAttribute"></a>
-
-- *Type:* `string`
-
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
-
----
-
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.parameter.wrapsSet"></a>
-
-- *Type:* `boolean`
-
----
-
-
-
-#### Properties <a name="Properties"></a>
-
-##### `accessTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.property.accessTokenIssuanceEnabled"></a>
+##### `accessTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly accessTokenIssuanceEnabled: IResolvable;
@@ -24202,13 +25016,173 @@ public readonly accessTokenIssuanceEnabled: IResolvable;
 
 ---
 
-##### `idTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant.property.idTokenIssuanceEnabled"></a>
+##### `idTokenIssuanceEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly idTokenIssuanceEnabled: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationWebImplicitGrant;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant`](#@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrant)
+
+---
+
+
+### DataAzureadApplicationWebList <a name="@cdktf/provider-azuread.DataAzureadApplicationWebList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationWebList.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationWebList } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationWebList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadApplicationWebList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadApplicationWebOutputReference <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadApplicationWebOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadApplicationWebOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `homepageUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.property.homepageUrl"></a>
+
+```typescript
+public readonly homepageUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `implicitGrant`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.property.implicitGrant"></a>
+
+```typescript
+public readonly implicitGrant: DataAzureadApplicationWebImplicitGrantList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList`](#@cdktf/provider-azuread.DataAzureadApplicationWebImplicitGrantList)
+
+---
+
+##### `logoutUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.property.logoutUrl"></a>
+
+```typescript
+public readonly logoutUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `redirectUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.property.redirectUris"></a>
+
+```typescript
+public readonly redirectUris: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationWebOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadApplicationWeb;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationWeb`](#@cdktf/provider-azuread.DataAzureadApplicationWeb)
 
 ---
 
@@ -24220,7 +25194,7 @@ public readonly idTokenIssuanceEnabled: IResolvable;
 ```typescript
 import { DataAzureadClientConfigTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadClientConfigTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadClientConfigTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -24236,14 +25210,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24289,37 +25255,98 @@ public readonly internalValue: DataAzureadClientConfigTimeouts;
 ---
 
 
-### DataAzureadDomainsDomains <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains"></a>
+### DataAzureadDomainsDomainsList <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsList.Initializer"></a>
 
 ```typescript
-import { DataAzureadDomainsDomains } from '@cdktf/provider-azuread'
+import { DataAzureadDomainsDomainsList } from '@cdktf/provider-azuread'
 
-new DataAzureadDomainsDomains(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadDomainsDomainsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadDomainsDomainsOutputReference <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadDomainsDomainsOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadDomainsDomainsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24327,7 +25354,7 @@ new DataAzureadDomainsDomains(terraformResource: IInterpolatingParent, terraform
 
 #### Properties <a name="Properties"></a>
 
-##### `adminManaged`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.adminManaged"></a>
+##### `adminManaged`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.adminManaged"></a>
 
 ```typescript
 public readonly adminManaged: IResolvable;
@@ -24337,7 +25364,7 @@ public readonly adminManaged: IResolvable;
 
 ---
 
-##### `authenticationType`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.authenticationType"></a>
+##### `authenticationType`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.authenticationType"></a>
 
 ```typescript
 public readonly authenticationType: string;
@@ -24347,7 +25374,7 @@ public readonly authenticationType: string;
 
 ---
 
-##### `default`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.default"></a>
+##### `default`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.default"></a>
 
 ```typescript
 public readonly default: IResolvable;
@@ -24357,7 +25384,7 @@ public readonly default: IResolvable;
 
 ---
 
-##### `domainName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.domainName"></a>
+##### `domainName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.domainName"></a>
 
 ```typescript
 public readonly domainName: string;
@@ -24367,7 +25394,7 @@ public readonly domainName: string;
 
 ---
 
-##### `initial`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.initial"></a>
+##### `initial`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.initial"></a>
 
 ```typescript
 public readonly initial: IResolvable;
@@ -24377,7 +25404,7 @@ public readonly initial: IResolvable;
 
 ---
 
-##### `root`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.root"></a>
+##### `root`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.root"></a>
 
 ```typescript
 public readonly root: IResolvable;
@@ -24387,7 +25414,7 @@ public readonly root: IResolvable;
 
 ---
 
-##### `supportedServices`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.supportedServices"></a>
+##### `supportedServices`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.supportedServices"></a>
 
 ```typescript
 public readonly supportedServices: string[];
@@ -24397,13 +25424,23 @@ public readonly supportedServices: string[];
 
 ---
 
-##### `verified`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomains.property.verified"></a>
+##### `verified`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.verified"></a>
 
 ```typescript
 public readonly verified: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsDomainsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadDomainsDomains;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadDomainsDomains`](#@cdktf/provider-azuread.DataAzureadDomainsDomains)
 
 ---
 
@@ -24415,7 +25452,7 @@ public readonly verified: IResolvable;
 ```typescript
 import { DataAzureadDomainsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadDomainsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadDomainsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -24431,14 +25468,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24484,37 +25513,98 @@ public readonly internalValue: DataAzureadDomainsTimeouts;
 ---
 
 
-### DataAzureadGroupDynamicMembership <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership"></a>
+### DataAzureadGroupDynamicMembershipList <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList.Initializer"></a>
 
 ```typescript
-import { DataAzureadGroupDynamicMembership } from '@cdktf/provider-azuread'
+import { DataAzureadGroupDynamicMembershipList } from '@cdktf/provider-azuread'
 
-new DataAzureadGroupDynamicMembership(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadGroupDynamicMembershipList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadGroupDynamicMembershipOutputReference <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadGroupDynamicMembershipOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadGroupDynamicMembershipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24522,7 +25612,7 @@ new DataAzureadGroupDynamicMembership(terraformResource: IInterpolatingParent, t
 
 #### Properties <a name="Properties"></a>
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -24532,13 +25622,23 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembership.property.rule"></a>
+##### `rule`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.property.rule"></a>
 
 ```typescript
 public readonly rule: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupDynamicMembershipOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadGroupDynamicMembership;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupDynamicMembership`](#@cdktf/provider-azuread.DataAzureadGroupDynamicMembership)
 
 ---
 
@@ -24550,7 +25650,7 @@ public readonly rule: string;
 ```typescript
 import { DataAzureadGroupsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadGroupsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadGroupsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -24566,14 +25666,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24626,7 +25718,7 @@ public readonly internalValue: DataAzureadGroupsTimeouts;
 ```typescript
 import { DataAzureadGroupTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadGroupTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadGroupTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -24642,14 +25734,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -24695,37 +25779,98 @@ public readonly internalValue: DataAzureadGroupTimeouts;
 ---
 
 
-### DataAzureadServicePrincipalAppRoles <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles"></a>
+### DataAzureadServicePrincipalAppRolesList <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList.Initializer"></a>
 
 ```typescript
-import { DataAzureadServicePrincipalAppRoles } from '@cdktf/provider-azuread'
+import { DataAzureadServicePrincipalAppRolesList } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalAppRoles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadServicePrincipalAppRolesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadServicePrincipalAppRolesOutputReference <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalAppRolesOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalAppRolesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24733,7 +25878,7 @@ new DataAzureadServicePrincipalAppRoles(terraformResource: IInterpolatingParent,
 
 #### Properties <a name="Properties"></a>
 
-##### `allowedMemberTypes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.property.allowedMemberTypes"></a>
+##### `allowedMemberTypes`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.property.allowedMemberTypes"></a>
 
 ```typescript
 public readonly allowedMemberTypes: string[];
@@ -24743,7 +25888,7 @@ public readonly allowedMemberTypes: string[];
 
 ---
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.property.description"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -24753,7 +25898,7 @@ public readonly description: string;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -24763,7 +25908,7 @@ public readonly displayName: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -24773,7 +25918,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -24783,7 +25928,7 @@ public readonly id: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -24793,38 +25938,109 @@ public readonly value: string;
 
 ---
 
-
-### DataAzureadServicePrincipalFeatures <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalAppRolesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadServicePrincipalFeatures } from '@cdktf/provider-azuread'
-
-new DataAzureadServicePrincipalFeatures(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadServicePrincipalAppRoles;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles`](#@cdktf/provider-azuread.DataAzureadServicePrincipalAppRoles)
+
+---
+
+
+### DataAzureadServicePrincipalFeaturesList <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalFeaturesList } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalFeaturesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadServicePrincipalFeaturesOutputReference <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalFeaturesOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalFeaturesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24832,7 +26048,7 @@ new DataAzureadServicePrincipalFeatures(terraformResource: IInterpolatingParent,
 
 #### Properties <a name="Properties"></a>
 
-##### `customSingleSignOnApp`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.customSingleSignOnApp"></a>
+##### `customSingleSignOnApp`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.property.customSingleSignOnApp"></a>
 
 ```typescript
 public readonly customSingleSignOnApp: IResolvable;
@@ -24842,7 +26058,7 @@ public readonly customSingleSignOnApp: IResolvable;
 
 ---
 
-##### `enterpriseApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.enterpriseApplication"></a>
+##### `enterpriseApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.property.enterpriseApplication"></a>
 
 ```typescript
 public readonly enterpriseApplication: IResolvable;
@@ -24852,7 +26068,7 @@ public readonly enterpriseApplication: IResolvable;
 
 ---
 
-##### `galleryApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.galleryApplication"></a>
+##### `galleryApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.property.galleryApplication"></a>
 
 ```typescript
 public readonly galleryApplication: IResolvable;
@@ -24862,7 +26078,7 @@ public readonly galleryApplication: IResolvable;
 
 ---
 
-##### `visibleToUsers`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures.property.visibleToUsers"></a>
+##### `visibleToUsers`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.property.visibleToUsers"></a>
 
 ```typescript
 public readonly visibleToUsers: IResolvable;
@@ -24872,38 +26088,109 @@ public readonly visibleToUsers: IResolvable;
 
 ---
 
-
-### DataAzureadServicePrincipalFeatureTags <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeaturesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadServicePrincipalFeatureTags } from '@cdktf/provider-azuread'
-
-new DataAzureadServicePrincipalFeatureTags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadServicePrincipalFeatures;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures`](#@cdktf/provider-azuread.DataAzureadServicePrincipalFeatures)
+
+---
+
+
+### DataAzureadServicePrincipalFeatureTagsList <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalFeatureTagsList } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalFeatureTagsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadServicePrincipalFeatureTagsOutputReference <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalFeatureTagsOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalFeatureTagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24911,7 +26198,7 @@ new DataAzureadServicePrincipalFeatureTags(terraformResource: IInterpolatingPare
 
 #### Properties <a name="Properties"></a>
 
-##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.customSingleSignOn"></a>
+##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.property.customSingleSignOn"></a>
 
 ```typescript
 public readonly customSingleSignOn: IResolvable;
@@ -24921,7 +26208,7 @@ public readonly customSingleSignOn: IResolvable;
 
 ---
 
-##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.enterprise"></a>
+##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.property.enterprise"></a>
 
 ```typescript
 public readonly enterprise: IResolvable;
@@ -24931,7 +26218,7 @@ public readonly enterprise: IResolvable;
 
 ---
 
-##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.gallery"></a>
+##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.property.gallery"></a>
 
 ```typescript
 public readonly gallery: IResolvable;
@@ -24941,7 +26228,7 @@ public readonly gallery: IResolvable;
 
 ---
 
-##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags.property.hide"></a>
+##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.property.hide"></a>
 
 ```typescript
 public readonly hide: IResolvable;
@@ -24951,38 +26238,109 @@ public readonly hide: IResolvable;
 
 ---
 
-
-### DataAzureadServicePrincipalOauth2PermissionScopes <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTagsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadServicePrincipalOauth2PermissionScopes } from '@cdktf/provider-azuread'
-
-new DataAzureadServicePrincipalOauth2PermissionScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadServicePrincipalFeatureTags;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags`](#@cdktf/provider-azuread.DataAzureadServicePrincipalFeatureTags)
+
+---
+
+
+### DataAzureadServicePrincipalOauth2PermissionScopesList <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalOauth2PermissionScopesList } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalOauth2PermissionScopesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadServicePrincipalOauth2PermissionScopesOutputReference <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalOauth2PermissionScopesOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalOauth2PermissionScopesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -24990,7 +26348,7 @@ new DataAzureadServicePrincipalOauth2PermissionScopes(terraformResource: IInterp
 
 #### Properties <a name="Properties"></a>
 
-##### `adminConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.adminConsentDescription"></a>
+##### `adminConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDescription"></a>
 
 ```typescript
 public readonly adminConsentDescription: string;
@@ -25000,7 +26358,7 @@ public readonly adminConsentDescription: string;
 
 ---
 
-##### `adminConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.adminConsentDisplayName"></a>
+##### `adminConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDisplayName"></a>
 
 ```typescript
 public readonly adminConsentDisplayName: string;
@@ -25010,7 +26368,7 @@ public readonly adminConsentDisplayName: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -25020,7 +26378,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -25030,7 +26388,7 @@ public readonly id: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -25040,7 +26398,7 @@ public readonly type: string;
 
 ---
 
-##### `userConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.userConsentDescription"></a>
+##### `userConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDescription"></a>
 
 ```typescript
 public readonly userConsentDescription: string;
@@ -25050,7 +26408,7 @@ public readonly userConsentDescription: string;
 
 ---
 
-##### `userConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.userConsentDisplayName"></a>
+##### `userConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDisplayName"></a>
 
 ```typescript
 public readonly userConsentDisplayName: string;
@@ -25060,7 +26418,7 @@ public readonly userConsentDisplayName: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -25070,38 +26428,109 @@ public readonly value: string;
 
 ---
 
-
-### DataAzureadServicePrincipalSamlSingleSignOn <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadServicePrincipalSamlSingleSignOn } from '@cdktf/provider-azuread'
-
-new DataAzureadServicePrincipalSamlSingleSignOn(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadServicePrincipalOauth2PermissionScopes;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes`](#@cdktf/provider-azuread.DataAzureadServicePrincipalOauth2PermissionScopes)
+
+---
+
+
+### DataAzureadServicePrincipalSamlSingleSignOnList <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalSamlSingleSignOnList } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalSamlSingleSignOnList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadServicePrincipalSamlSingleSignOnOutputReference <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalSamlSingleSignOnOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalSamlSingleSignOnOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -25109,7 +26538,7 @@ new DataAzureadServicePrincipalSamlSingleSignOn(terraformResource: IInterpolatin
 
 #### Properties <a name="Properties"></a>
 
-##### `relayState`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn.property.relayState"></a>
+##### `relayState`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.property.relayState"></a>
 
 ```typescript
 public readonly relayState: string;
@@ -25119,38 +26548,109 @@ public readonly relayState: string;
 
 ---
 
-
-### DataAzureadServicePrincipalsServicePrincipals <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals"></a>
-
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataAzureadServicePrincipalsServicePrincipals } from '@cdktf/provider-azuread'
-
-new DataAzureadServicePrincipalsServicePrincipals(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataAzureadServicePrincipalSamlSingleSignOn;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn`](#@cdktf/provider-azuread.DataAzureadServicePrincipalSamlSingleSignOn)
+
+---
+
+
+### DataAzureadServicePrincipalsServicePrincipalsList <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalsServicePrincipalsList } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalsServicePrincipalsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadServicePrincipalsServicePrincipalsOutputReference <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadServicePrincipalsServicePrincipalsOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadServicePrincipalsServicePrincipalsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -25158,7 +26658,7 @@ new DataAzureadServicePrincipalsServicePrincipals(terraformResource: IInterpolat
 
 #### Properties <a name="Properties"></a>
 
-##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.accountEnabled"></a>
+##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.accountEnabled"></a>
 
 ```typescript
 public readonly accountEnabled: IResolvable;
@@ -25168,7 +26668,7 @@ public readonly accountEnabled: IResolvable;
 
 ---
 
-##### `applicationId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.applicationId"></a>
+##### `applicationId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.applicationId"></a>
 
 ```typescript
 public readonly applicationId: string;
@@ -25178,7 +26678,7 @@ public readonly applicationId: string;
 
 ---
 
-##### `applicationTenantId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.applicationTenantId"></a>
+##### `applicationTenantId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.applicationTenantId"></a>
 
 ```typescript
 public readonly applicationTenantId: string;
@@ -25188,7 +26688,7 @@ public readonly applicationTenantId: string;
 
 ---
 
-##### `appRoleAssignmentRequired`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.appRoleAssignmentRequired"></a>
+##### `appRoleAssignmentRequired`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.appRoleAssignmentRequired"></a>
 
 ```typescript
 public readonly appRoleAssignmentRequired: IResolvable;
@@ -25198,7 +26698,7 @@ public readonly appRoleAssignmentRequired: IResolvable;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -25208,7 +26708,7 @@ public readonly displayName: string;
 
 ---
 
-##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -25218,7 +26718,7 @@ public readonly objectId: string;
 
 ---
 
-##### `preferredSingleSignOnMode`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.preferredSingleSignOnMode"></a>
+##### `preferredSingleSignOnMode`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.preferredSingleSignOnMode"></a>
 
 ```typescript
 public readonly preferredSingleSignOnMode: string;
@@ -25228,7 +26728,7 @@ public readonly preferredSingleSignOnMode: string;
 
 ---
 
-##### `samlMetadataUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.samlMetadataUrl"></a>
+##### `samlMetadataUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.samlMetadataUrl"></a>
 
 ```typescript
 public readonly samlMetadataUrl: string;
@@ -25238,7 +26738,7 @@ public readonly samlMetadataUrl: string;
 
 ---
 
-##### `servicePrincipalNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.servicePrincipalNames"></a>
+##### `servicePrincipalNames`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.servicePrincipalNames"></a>
 
 ```typescript
 public readonly servicePrincipalNames: string[];
@@ -25248,7 +26748,7 @@ public readonly servicePrincipalNames: string[];
 
 ---
 
-##### `signInAudience`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.signInAudience"></a>
+##### `signInAudience`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.signInAudience"></a>
 
 ```typescript
 public readonly signInAudience: string;
@@ -25258,7 +26758,7 @@ public readonly signInAudience: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.tags"></a>
 
 ```typescript
 public readonly tags: string[];
@@ -25268,13 +26768,23 @@ public readonly tags: string[];
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipalsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadServicePrincipalsServicePrincipals;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsServicePrincipals)
 
 ---
 
@@ -25286,7 +26796,7 @@ public readonly type: string;
 ```typescript
 import { DataAzureadServicePrincipalsTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadServicePrincipalsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -25302,14 +26812,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -25362,7 +26864,7 @@ public readonly internalValue: DataAzureadServicePrincipalsTimeouts;
 ```typescript
 import { DataAzureadServicePrincipalTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadServicePrincipalTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadServicePrincipalTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -25378,14 +26880,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -25438,7 +26932,7 @@ public readonly internalValue: DataAzureadServicePrincipalTimeouts;
 ```typescript
 import { DataAzureadUsersTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadUsersTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadUsersTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -25454,14 +26948,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -25507,37 +26993,98 @@ public readonly internalValue: DataAzureadUsersTimeouts;
 ---
 
 
-### DataAzureadUsersUsers <a name="@cdktf/provider-azuread.DataAzureadUsersUsers"></a>
+### DataAzureadUsersUsersList <a name="@cdktf/provider-azuread.DataAzureadUsersUsersList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadUsersUsersList.Initializer"></a>
 
 ```typescript
-import { DataAzureadUsersUsers } from '@cdktf/provider-azuread'
+import { DataAzureadUsersUsersList } from '@cdktf/provider-azuread'
 
-new DataAzureadUsersUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataAzureadUsersUsersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.DataAzureadUsersUsersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataAzureadUsersUsersOutputReference <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadUsersUsersOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadUsersUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -25545,7 +27092,7 @@ new DataAzureadUsersUsers(terraformResource: IInterpolatingParent, terraformAttr
 
 #### Properties <a name="Properties"></a>
 
-##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.accountEnabled"></a>
+##### `accountEnabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.accountEnabled"></a>
 
 ```typescript
 public readonly accountEnabled: IResolvable;
@@ -25555,7 +27102,7 @@ public readonly accountEnabled: IResolvable;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -25565,7 +27112,7 @@ public readonly displayName: string;
 
 ---
 
-##### `mail`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.mail"></a>
+##### `mail`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.mail"></a>
 
 ```typescript
 public readonly mail: string;
@@ -25575,7 +27122,7 @@ public readonly mail: string;
 
 ---
 
-##### `mailNickname`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.mailNickname"></a>
+##### `mailNickname`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.mailNickname"></a>
 
 ```typescript
 public readonly mailNickname: string;
@@ -25585,7 +27132,7 @@ public readonly mailNickname: string;
 
 ---
 
-##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -25595,7 +27142,7 @@ public readonly objectId: string;
 
 ---
 
-##### `onpremisesImmutableId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.onpremisesImmutableId"></a>
+##### `onpremisesImmutableId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.onpremisesImmutableId"></a>
 
 ```typescript
 public readonly onpremisesImmutableId: string;
@@ -25605,7 +27152,7 @@ public readonly onpremisesImmutableId: string;
 
 ---
 
-##### `onpremisesSamAccountName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.onpremisesSamAccountName"></a>
+##### `onpremisesSamAccountName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.onpremisesSamAccountName"></a>
 
 ```typescript
 public readonly onpremisesSamAccountName: string;
@@ -25615,7 +27162,7 @@ public readonly onpremisesSamAccountName: string;
 
 ---
 
-##### `onpremisesUserPrincipalName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.onpremisesUserPrincipalName"></a>
+##### `onpremisesUserPrincipalName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.onpremisesUserPrincipalName"></a>
 
 ```typescript
 public readonly onpremisesUserPrincipalName: string;
@@ -25625,7 +27172,7 @@ public readonly onpremisesUserPrincipalName: string;
 
 ---
 
-##### `usageLocation`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.usageLocation"></a>
+##### `usageLocation`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.usageLocation"></a>
 
 ```typescript
 public readonly usageLocation: string;
@@ -25635,13 +27182,23 @@ public readonly usageLocation: string;
 
 ---
 
-##### `userPrincipalName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsers.property.userPrincipalName"></a>
+##### `userPrincipalName`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.userPrincipalName"></a>
 
 ```typescript
 public readonly userPrincipalName: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersUsersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzureadUsersUsers;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadUsersUsers`](#@cdktf/provider-azuread.DataAzureadUsersUsers)
 
 ---
 
@@ -25653,7 +27210,7 @@ public readonly userPrincipalName: string;
 ```typescript
 import { DataAzureadUserTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DataAzureadUserTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataAzureadUserTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUserTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -25669,14 +27226,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUserTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -25729,7 +27278,7 @@ public readonly internalValue: DataAzureadUserTimeouts;
 ```typescript
 import { DirectoryRoleMemberTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DirectoryRoleMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DirectoryRoleMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -25745,14 +27294,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -25883,7 +27424,7 @@ public readonly internalValue: DirectoryRoleMemberTimeouts;
 ```typescript
 import { DirectoryRoleTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new DirectoryRoleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DirectoryRoleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -25899,14 +27440,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26037,7 +27570,7 @@ public readonly internalValue: DirectoryRoleTimeouts;
 ```typescript
 import { GroupDynamicMembershipOutputReference } from '@cdktf/provider-azuread'
 
-new GroupDynamicMembershipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new GroupDynamicMembershipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.parameter.terraformResource"></a>
@@ -26053,14 +27586,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupDynamicMembershipOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26126,7 +27651,7 @@ public readonly internalValue: GroupDynamicMembership;
 ```typescript
 import { GroupMemberTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new GroupMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new GroupMemberTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -26142,14 +27667,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26280,7 +27797,7 @@ public readonly internalValue: GroupMemberTimeouts;
 ```typescript
 import { GroupTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new GroupTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new GroupTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -26296,14 +27813,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26434,7 +27943,7 @@ public readonly internalValue: GroupTimeouts;
 ```typescript
 import { InvitationMessageOutputReference } from '@cdktf/provider-azuread'
 
-new InvitationMessageOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new InvitationMessageOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.parameter.terraformResource"></a>
@@ -26450,14 +27959,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationMessageOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26562,7 +28063,7 @@ public readonly internalValue: InvitationMessage;
 ```typescript
 import { InvitationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new InvitationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new InvitationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -26578,14 +28079,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26716,7 +28209,7 @@ public readonly internalValue: InvitationTimeouts;
 ```typescript
 import { NamedLocationCountryOutputReference } from '@cdktf/provider-azuread'
 
-new NamedLocationCountryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NamedLocationCountryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationCountryOutputReference.parameter.terraformResource"></a>
@@ -26732,14 +28225,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationCountryOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26812,7 +28297,7 @@ public readonly internalValue: NamedLocationCountry;
 ```typescript
 import { NamedLocationIpOutputReference } from '@cdktf/provider-azuread'
 
-new NamedLocationIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NamedLocationIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationIpOutputReference.parameter.terraformResource"></a>
@@ -26828,14 +28313,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationIpOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -26908,7 +28385,7 @@ public readonly internalValue: NamedLocationIp;
 ```typescript
 import { NamedLocationTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new NamedLocationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NamedLocationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -26924,14 +28401,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -27055,37 +28524,98 @@ public readonly internalValue: NamedLocationTimeouts;
 ---
 
 
-### ServicePrincipalAppRoles <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles"></a>
+### ServicePrincipalAppRolesList <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesList.Initializer"></a>
 
 ```typescript
-import { ServicePrincipalAppRoles } from '@cdktf/provider-azuread'
+import { ServicePrincipalAppRolesList } from '@cdktf/provider-azuread'
 
-new ServicePrincipalAppRoles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ServicePrincipalAppRolesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### ServicePrincipalAppRolesOutputReference <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.Initializer"></a>
+
+```typescript
+import { ServicePrincipalAppRolesOutputReference } from '@cdktf/provider-azuread'
+
+new ServicePrincipalAppRolesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -27093,7 +28623,7 @@ new ServicePrincipalAppRoles(terraformResource: IInterpolatingParent, terraformA
 
 #### Properties <a name="Properties"></a>
 
-##### `allowedMemberTypes`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.property.allowedMemberTypes"></a>
+##### `allowedMemberTypes`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.property.allowedMemberTypes"></a>
 
 ```typescript
 public readonly allowedMemberTypes: string[];
@@ -27103,7 +28633,7 @@ public readonly allowedMemberTypes: string[];
 
 ---
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.property.description"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -27113,7 +28643,7 @@ public readonly description: string;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -27123,7 +28653,7 @@ public readonly displayName: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -27133,7 +28663,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -27143,13 +28673,23 @@ public readonly id: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRoles.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalAppRolesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServicePrincipalAppRoles;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalAppRoles`](#@cdktf/provider-azuread.ServicePrincipalAppRoles)
 
 ---
 
@@ -27161,7 +28701,7 @@ public readonly value: string;
 ```typescript
 import { ServicePrincipalCertificateTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalCertificateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalCertificateTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -27177,14 +28717,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -27315,7 +28847,7 @@ public readonly internalValue: ServicePrincipalCertificateTimeouts;
 ```typescript
 import { ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -27331,14 +28863,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -27462,37 +28986,98 @@ public readonly internalValue: ServicePrincipalDelegatedPermissionGrantTimeouts;
 ---
 
 
-### ServicePrincipalOauth2PermissionScopes <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes"></a>
+### ServicePrincipalOauth2PermissionScopesList <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList"></a>
 
-#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList.Initializer"></a>
 
 ```typescript
-import { ServicePrincipalOauth2PermissionScopes } from '@cdktf/provider-azuread'
+import { ServicePrincipalOauth2PermissionScopesList } from '@cdktf/provider-azuread'
 
-new ServicePrincipalOauth2PermissionScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ServicePrincipalOauth2PermissionScopesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### ServicePrincipalOauth2PermissionScopesOutputReference <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer"></a>
+
+```typescript
+import { ServicePrincipalOauth2PermissionScopesOutputReference } from '@cdktf/provider-azuread'
+
+new ServicePrincipalOauth2PermissionScopesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -27500,7 +29085,7 @@ new ServicePrincipalOauth2PermissionScopes(terraformResource: IInterpolatingPare
 
 #### Properties <a name="Properties"></a>
 
-##### `adminConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.adminConsentDescription"></a>
+##### `adminConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDescription"></a>
 
 ```typescript
 public readonly adminConsentDescription: string;
@@ -27510,7 +29095,7 @@ public readonly adminConsentDescription: string;
 
 ---
 
-##### `adminConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.adminConsentDisplayName"></a>
+##### `adminConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDisplayName"></a>
 
 ```typescript
 public readonly adminConsentDisplayName: string;
@@ -27520,7 +29105,7 @@ public readonly adminConsentDisplayName: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -27530,7 +29115,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -27540,7 +29125,7 @@ public readonly id: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -27550,7 +29135,7 @@ public readonly type: string;
 
 ---
 
-##### `userConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.userConsentDescription"></a>
+##### `userConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDescription"></a>
 
 ```typescript
 public readonly userConsentDescription: string;
@@ -27560,7 +29145,7 @@ public readonly userConsentDescription: string;
 
 ---
 
-##### `userConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.userConsentDisplayName"></a>
+##### `userConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDisplayName"></a>
 
 ```typescript
 public readonly userConsentDisplayName: string;
@@ -27570,13 +29155,23 @@ public readonly userConsentDisplayName: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServicePrincipalOauth2PermissionScopes;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes`](#@cdktf/provider-azuread.ServicePrincipalOauth2PermissionScopes)
 
 ---
 
@@ -27588,7 +29183,7 @@ public readonly value: string;
 ```typescript
 import { ServicePrincipalPasswordTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalPasswordTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalPasswordTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -27604,14 +29199,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -27742,7 +29329,7 @@ public readonly internalValue: ServicePrincipalPasswordTimeouts;
 ```typescript
 import { ServicePrincipalSamlSingleSignOnOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalSamlSingleSignOnOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalSamlSingleSignOnOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOnOutputReference.parameter.terraformResource"></a>
@@ -27758,14 +29345,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalSamlSingleSignOnOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -27818,7 +29397,7 @@ public readonly internalValue: ServicePrincipalSamlSingleSignOn;
 ```typescript
 import { ServicePrincipalTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new ServicePrincipalTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServicePrincipalTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -27834,14 +29413,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -27972,7 +29543,7 @@ public readonly internalValue: ServicePrincipalTimeouts;
 ```typescript
 import { UserTimeoutsOutputReference } from '@cdktf/provider-azuread'
 
-new UserTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new UserTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -27988,14 +29559,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 

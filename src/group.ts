@@ -158,10 +158,9 @@ export class GroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GroupDynamicMembership | undefined {
@@ -255,10 +254,9 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): GroupTimeouts | undefined {
@@ -373,7 +371,7 @@ export class Group extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_group";
+  public static readonly tfResourceType = "azuread_group";
 
   // ===========
   // INITIALIZER
@@ -390,7 +388,9 @@ export class Group extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'azuread_group',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -759,7 +759,7 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // dynamic_membership - computed: false, optional: true, required: false
-  private _dynamicMembership = new GroupDynamicMembershipOutputReference(this, "dynamic_membership", true);
+  private _dynamicMembership = new GroupDynamicMembershipOutputReference(this, "dynamic_membership");
   public get dynamicMembership() {
     return this._dynamicMembership;
   }
@@ -775,7 +775,7 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new GroupTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new GroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

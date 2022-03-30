@@ -88,10 +88,9 @@ export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationFederatedIdentityCredentialTimeouts | undefined {
@@ -206,7 +205,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_application_federated_identity_credential";
+  public static readonly tfResourceType = "azuread_application_federated_identity_credential";
 
   // ===========
   // INITIALIZER
@@ -223,7 +222,9 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
     super(scope, id, {
       terraformResourceType: 'azuread_application_federated_identity_credential',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -335,7 +336,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ApplicationFederatedIdentityCredentialTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new ApplicationFederatedIdentityCredentialTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

@@ -272,10 +272,9 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationApi | undefined {
@@ -635,10 +634,9 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationOptionalClaims | undefined {
@@ -750,10 +748,9 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationPublicClient | undefined {
@@ -864,10 +861,9 @@ export class ApplicationSinglePageApplicationOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationSinglePageApplication | undefined {
@@ -945,10 +941,9 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationTimeouts | undefined {
@@ -1086,10 +1081,9 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationWebImplicitGrant | undefined {
@@ -1197,10 +1191,9 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ApplicationWeb | undefined {
@@ -1291,7 +1284,7 @@ export class ApplicationWebOutputReference extends cdktf.ComplexObject {
   }
 
   // implicit_grant - computed: false, optional: true, required: false
-  private _implicitGrant = new ApplicationWebImplicitGrantOutputReference(this, "implicit_grant", true);
+  private _implicitGrant = new ApplicationWebImplicitGrantOutputReference(this, "implicit_grant");
   public get implicitGrant() {
     return this._implicitGrant;
   }
@@ -1315,7 +1308,7 @@ export class Application extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "azuread_application";
+  public static readonly tfResourceType = "azuread_application";
 
   // ===========
   // INITIALIZER
@@ -1332,7 +1325,9 @@ export class Application extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
-        providerName: 'azuread'
+        providerName: 'azuread',
+        providerVersion: '2.19.1',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1664,7 +1659,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // api - computed: false, optional: true, required: false
-  private _api = new ApplicationApiOutputReference(this, "api", true);
+  private _api = new ApplicationApiOutputReference(this, "api");
   public get api() {
     return this._api;
   }
@@ -1714,7 +1709,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // optional_claims - computed: false, optional: true, required: false
-  private _optionalClaims = new ApplicationOptionalClaimsOutputReference(this, "optional_claims", true);
+  private _optionalClaims = new ApplicationOptionalClaimsOutputReference(this, "optional_claims");
   public get optionalClaims() {
     return this._optionalClaims;
   }
@@ -1730,7 +1725,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // public_client - computed: false, optional: true, required: false
-  private _publicClient = new ApplicationPublicClientOutputReference(this, "public_client", true);
+  private _publicClient = new ApplicationPublicClientOutputReference(this, "public_client");
   public get publicClient() {
     return this._publicClient;
   }
@@ -1763,7 +1758,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // single_page_application - computed: false, optional: true, required: false
-  private _singlePageApplication = new ApplicationSinglePageApplicationOutputReference(this, "single_page_application", true);
+  private _singlePageApplication = new ApplicationSinglePageApplicationOutputReference(this, "single_page_application");
   public get singlePageApplication() {
     return this._singlePageApplication;
   }
@@ -1779,7 +1774,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ApplicationTimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new ApplicationTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -1795,7 +1790,7 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // web - computed: false, optional: true, required: false
-  private _web = new ApplicationWebOutputReference(this, "web", true);
+  private _web = new ApplicationWebOutputReference(this, "web");
   public get web() {
     return this._web;
   }
