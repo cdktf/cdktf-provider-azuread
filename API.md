@@ -2755,6 +2755,104 @@ public readonly useMsi: boolean | IResolvable;
 
 ---
 
+### ClaimsMappingPolicy <a name="@cdktf/provider-azuread.ClaimsMappingPolicy"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy azuread_claims_mapping_policy}.
+
+#### Initializers <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.Initializer"></a>
+
+```typescript
+import { ClaimsMappingPolicy } from '@cdktf/provider-azuread'
+
+new ClaimsMappingPolicy(scope: Construct, id: string, config: ClaimsMappingPolicyConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ClaimsMappingPolicyConfig`](#@cdktf/provider-azuread.ClaimsMappingPolicyConfig)
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `definitionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.definitionInput"></a>
+
+```typescript
+public readonly definitionInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `displayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.displayNameInput"></a>
+
+```typescript
+public readonly displayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `definition`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.definition"></a>
+
+```typescript
+public readonly definition: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### ConditionalAccessPolicy <a name="@cdktf/provider-azuread.ConditionalAccessPolicy"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy azuread_conditional_access_policy}.
@@ -9213,6 +9311,104 @@ public readonly value: string;
 
 ---
 
+### ServicePrincipalClaimsMappingPolicyAssignment <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment}.
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.Initializer"></a>
+
+```typescript
+import { ServicePrincipalClaimsMappingPolicyAssignment } from '@cdktf/provider-azuread'
+
+new ServicePrincipalClaimsMappingPolicyAssignment(scope: Construct, id: string, config: ServicePrincipalClaimsMappingPolicyAssignmentConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig`](#@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig)
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `claimsMappingPolicyIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.claimsMappingPolicyIdInput"></a>
+
+```typescript
+public readonly claimsMappingPolicyIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `servicePrincipalIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.servicePrincipalIdInput"></a>
+
+```typescript
+public readonly servicePrincipalIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `claimsMappingPolicyId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.claimsMappingPolicyId"></a>
+
+```typescript
+public readonly claimsMappingPolicyId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `servicePrincipalId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.servicePrincipalId"></a>
+
+```typescript
+public readonly servicePrincipalId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### ServicePrincipalDelegatedPermissionGrant <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant}.
@@ -13592,6 +13788,84 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+### ClaimsMappingPolicyConfig <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ClaimsMappingPolicyConfig } from '@cdktf/provider-azuread'
+
+const claimsMappingPolicyConfig: ClaimsMappingPolicyConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `definition`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.definition"></a>
+
+```typescript
+public readonly definition: string[];
+```
+
+- *Type:* `string`[]
+
+A string collection containing a JSON string that defines the rules and settings for this policy.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+Display name for this policy.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
+
+---
+
 ### ConditionalAccessPolicyConditions <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -17963,6 +18237,84 @@ public readonly update: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#update ServicePrincipalCertificate#update}.
+
+---
+
+### ServicePrincipalClaimsMappingPolicyAssignmentConfig <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ServicePrincipalClaimsMappingPolicyAssignmentConfig } from '@cdktf/provider-azuread'
+
+const servicePrincipalClaimsMappingPolicyAssignmentConfig: ServicePrincipalClaimsMappingPolicyAssignmentConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `claimsMappingPolicyId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.claimsMappingPolicyId"></a>
+
+```typescript
+public readonly claimsMappingPolicyId: string;
+```
+
+- *Type:* `string`
+
+ID of the claims mapping policy to assign.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment#claims_mapping_policy_id ServicePrincipalClaimsMappingPolicyAssignment#claims_mapping_policy_id}
+
+---
+
+##### `servicePrincipalId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.servicePrincipalId"></a>
+
+```typescript
+public readonly servicePrincipalId: string;
+```
+
+- *Type:* `string`
+
+Object ID of the service principal for which to assign the policy.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment#service_principal_id ServicePrincipalClaimsMappingPolicyAssignment#service_principal_id}
 
 ---
 
