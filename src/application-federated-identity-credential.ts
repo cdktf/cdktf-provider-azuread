@@ -223,7 +223,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
       terraformResourceType: 'azuread_application_federated_identity_credential',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

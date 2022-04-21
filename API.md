@@ -13902,34 +13902,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
-##### `locations`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions.property.locations"></a>
-
-```typescript
-public readonly locations: ConditionalAccessPolicyConditionsLocations;
-```
-
-- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocations`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocations)
-
-locations block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#locations ConditionalAccessPolicy#locations}
-
----
-
-##### `platforms`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions.property.platforms"></a>
-
-```typescript
-public readonly platforms: ConditionalAccessPolicyConditionsPlatforms;
-```
-
-- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatforms`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatforms)
-
-platforms block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#platforms ConditionalAccessPolicy#platforms}
-
----
-
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions.property.users"></a>
 
 ```typescript
@@ -13955,6 +13927,34 @@ public readonly devices: ConditionalAccessPolicyConditionsDevices;
 devices block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#devices ConditionalAccessPolicy#devices}
+
+---
+
+##### `locations`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions.property.locations"></a>
+
+```typescript
+public readonly locations: ConditionalAccessPolicyConditionsLocations;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocations`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsLocations)
+
+locations block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#locations ConditionalAccessPolicy#locations}
+
+---
+
+##### `platforms`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditions.property.platforms"></a>
+
+```typescript
+public readonly platforms: ConditionalAccessPolicyConditionsPlatforms;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatforms`](#@cdktf/provider-azuread.ConditionalAccessPolicyConditionsPlatforms)
+
+platforms block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#platforms ConditionalAccessPolicy#platforms}
 
 ---
 
@@ -13992,18 +13992,6 @@ import { ConditionalAccessPolicyConditionsApplications } from '@cdktf/provider-a
 const conditionalAccessPolicyConditionsApplications: ConditionalAccessPolicyConditionsApplications = { ... }
 ```
 
-##### `includedApplications`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplications.property.includedApplications"></a>
-
-```typescript
-public readonly includedApplications: string[];
-```
-
-- *Type:* `string`[]
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_applications ConditionalAccessPolicy#included_applications}.
-
----
-
 ##### `excludedApplications`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplications.property.excludedApplications"></a>
 
 ```typescript
@@ -14013,6 +14001,18 @@ public readonly excludedApplications: string[];
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#excluded_applications ConditionalAccessPolicy#excluded_applications}.
+
+---
+
+##### `includedApplications`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplications.property.includedApplications"></a>
+
+```typescript
+public readonly includedApplications: string[];
+```
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_applications ConditionalAccessPolicy#included_applications}.
 
 ---
 
@@ -21666,6 +21666,12 @@ The attribute on the parent resource this class is referencing.
 public resetExcludedApplications()
 ```
 
+##### `resetIncludedApplications` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.resetIncludedApplications"></a>
+
+```typescript
+public resetIncludedApplications()
+```
+
 ##### `resetIncludedUserActions` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsApplicationsOutputReference.resetIncludedUserActions"></a>
 
 ```typescript
@@ -22087,6 +22093,18 @@ public putUsers(value: ConditionalAccessPolicyConditionsUsers)
 
 ```typescript
 public resetDevices()
+```
+
+##### `resetLocations` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.resetLocations"></a>
+
+```typescript
+public resetLocations()
+```
+
+##### `resetPlatforms` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.resetPlatforms"></a>
+
+```typescript
+public resetPlatforms()
 ```
 
 ##### `resetSignInRiskLevels` <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConditionsOutputReference.resetSignInRiskLevels"></a>

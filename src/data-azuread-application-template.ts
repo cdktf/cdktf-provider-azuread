@@ -118,7 +118,7 @@ export class DataAzureadApplicationTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_application_template',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

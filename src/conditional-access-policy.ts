@@ -48,7 +48,7 @@ export interface ConditionalAccessPolicyConditionsApplications {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_applications ConditionalAccessPolicy#included_applications}
   */
-  readonly includedApplications: string[];
+  readonly includedApplications?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#included_user_actions ConditionalAccessPolicy#included_user_actions}
   */
@@ -127,13 +127,16 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
     return this._excludedApplications;
   }
 
-  // included_applications - computed: false, optional: false, required: true
+  // included_applications - computed: false, optional: true, required: false
   private _includedApplications?: string[]; 
   public get includedApplications() {
     return this.getListAttribute('included_applications');
   }
   public set includedApplications(value: string[]) {
     this._includedApplications = value;
+  }
+  public resetIncludedApplications() {
+    this._includedApplications = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get includedApplicationsInput() {
@@ -717,13 +720,13 @@ export interface ConditionalAccessPolicyConditions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#locations ConditionalAccessPolicy#locations}
   */
-  readonly locations: ConditionalAccessPolicyConditionsLocations;
+  readonly locations?: ConditionalAccessPolicyConditionsLocations;
   /**
   * platforms block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#platforms ConditionalAccessPolicy#platforms}
   */
-  readonly platforms: ConditionalAccessPolicyConditionsPlatforms;
+  readonly platforms?: ConditionalAccessPolicyConditionsPlatforms;
   /**
   * users block
   * 
@@ -897,7 +900,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
     return this._devices.internalValue;
   }
 
-  // locations - computed: false, optional: false, required: true
+  // locations - computed: false, optional: true, required: false
   private _locations = new ConditionalAccessPolicyConditionsLocationsOutputReference(this, "locations");
   public get locations() {
     return this._locations;
@@ -905,18 +908,24 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   public putLocations(value: ConditionalAccessPolicyConditionsLocations) {
     this._locations.internalValue = value;
   }
+  public resetLocations() {
+    this._locations.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get locationsInput() {
     return this._locations.internalValue;
   }
 
-  // platforms - computed: false, optional: false, required: true
+  // platforms - computed: false, optional: true, required: false
   private _platforms = new ConditionalAccessPolicyConditionsPlatformsOutputReference(this, "platforms");
   public get platforms() {
     return this._platforms;
   }
   public putPlatforms(value: ConditionalAccessPolicyConditionsPlatforms) {
     this._platforms.internalValue = value;
+  }
+  public resetPlatforms() {
+    this._platforms.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get platformsInput() {
@@ -1422,7 +1431,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_conditional_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
