@@ -199,7 +199,7 @@ export class GroupMember extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_group_member',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
