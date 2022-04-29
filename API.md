@@ -5140,6 +5140,12 @@ public resetDisplayNamePrefix()
 public resetDisplayNames()
 ```
 
+##### `resetIgnoreMissing` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetIgnoreMissing"></a>
+
+```typescript
+public resetIgnoreMissing()
+```
+
 ##### `resetMailEnabled` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetMailEnabled"></a>
 
 ```typescript
@@ -5213,6 +5219,16 @@ public readonly displayNamesInput: string[];
 
 ---
 
+##### `ignoreMissingInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.ignoreMissingInput"></a>
+
+```typescript
+public readonly ignoreMissingInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `mailEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.mailEnabledInput"></a>
 
 ```typescript
@@ -5280,6 +5296,16 @@ public readonly displayNames: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `ignoreMissing`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.ignoreMissing"></a>
+
+```typescript
+public readonly ignoreMissing: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -15871,6 +15897,22 @@ public readonly displayNames: string[];
 The display names of the groups.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#display_names DataAzureadGroups#display_names}
+
+---
+
+##### `ignoreMissing`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.ignoreMissing"></a>
+
+```typescript
+public readonly ignoreMissing: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Ignore missing groups and return groups that were found.
+
+The data source will still fail if no groups are found
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#ignore_missing DataAzureadGroups#ignore_missing}
 
 ---
 
