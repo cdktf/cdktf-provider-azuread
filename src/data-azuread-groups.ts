@@ -20,6 +20,12 @@ export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly displayNames?: string[];
   /**
+  * Ignore missing groups and return groups that were found. The data source will still fail if no groups are found
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#ignore_missing DataAzureadGroups#ignore_missing}
+  */
+  readonly ignoreMissing?: boolean | cdktf.IResolvable;
+  /**
   * Whether the groups are mail-enabled
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#mail_enabled DataAzureadGroups#mail_enabled}
@@ -142,7 +148,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_groups',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -152,6 +158,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
     });
     this._displayNamePrefix = config.displayNamePrefix;
     this._displayNames = config.displayNames;
+    this._ignoreMissing = config.ignoreMissing;
     this._mailEnabled = config.mailEnabled;
     this._objectIds = config.objectIds;
     this._returnAll = config.returnAll;
@@ -198,6 +205,22 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ignore_missing - computed: false, optional: true, required: false
+  private _ignoreMissing?: boolean | cdktf.IResolvable; 
+  public get ignoreMissing() {
+    return this.getBooleanAttribute('ignore_missing');
+  }
+  public set ignoreMissing(value: boolean | cdktf.IResolvable) {
+    this._ignoreMissing = value;
+  }
+  public resetIgnoreMissing() {
+    this._ignoreMissing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreMissingInput() {
+    return this._ignoreMissing;
   }
 
   // mail_enabled - computed: true, optional: true, required: false
@@ -288,6 +311,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
     return {
       display_name_prefix: cdktf.stringToTerraform(this._displayNamePrefix),
       display_names: cdktf.listMapper(cdktf.stringToTerraform)(this._displayNames),
+      ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       object_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._objectIds),
       return_all: cdktf.booleanToTerraform(this._returnAll),
