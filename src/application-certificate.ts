@@ -32,6 +32,13 @@ export interface ApplicationCertificateConfig extends cdktf.TerraformMetaArgumen
   */
   readonly endDateRelative?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#id ApplicationCertificate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A UUID used to uniquely identify this certificate. If omitted, a random UUID will be automatically generated
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#key_id ApplicationCertificate#key_id}
@@ -96,6 +103,7 @@ export function applicationCertificateTimeoutsToTerraform(struct?: ApplicationCe
 
 export class ApplicationCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,7 +113,10 @@ export class ApplicationCertificateTimeoutsOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ApplicationCertificateTimeouts | undefined {
+  public get internalValue(): ApplicationCertificateTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -127,16 +138,22 @@ export class ApplicationCertificateTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationCertificateTimeouts | undefined) {
+  public set internalValue(value: ApplicationCertificateTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -247,6 +264,7 @@ export class ApplicationCertificate extends cdktf.TerraformResource {
     this._encoding = config.encoding;
     this._endDate = config.endDate;
     this._endDateRelative = config.endDateRelative;
+    this._id = config.id;
     this._keyId = config.keyId;
     this._startDate = config.startDate;
     this._type = config.type;
@@ -320,8 +338,19 @@ export class ApplicationCertificate extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // key_id - computed: true, optional: true, required: false
@@ -411,6 +440,7 @@ export class ApplicationCertificate extends cdktf.TerraformResource {
       encoding: cdktf.stringToTerraform(this._encoding),
       end_date: cdktf.stringToTerraform(this._endDate),
       end_date_relative: cdktf.stringToTerraform(this._endDateRelative),
+      id: cdktf.stringToTerraform(this._id),
       key_id: cdktf.stringToTerraform(this._keyId),
       start_date: cdktf.stringToTerraform(this._startDate),
       type: cdktf.stringToTerraform(this._type),

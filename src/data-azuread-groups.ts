@@ -20,6 +20,13 @@ export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly displayNames?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#id DataAzureadGroups#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Ignore missing groups and return groups that were found. The data source will still fail if no groups are found
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#ignore_missing DataAzureadGroups#ignore_missing}
@@ -75,6 +82,7 @@ export function dataAzureadGroupsTimeoutsToTerraform(struct?: DataAzureadGroupsT
 
 export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -84,7 +92,10 @@ export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DataAzureadGroupsTimeouts | undefined {
+  public get internalValue(): DataAzureadGroupsTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._read !== undefined) {
@@ -94,13 +105,19 @@ export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadGroupsTimeouts | undefined) {
+  public set internalValue(value: DataAzureadGroupsTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._read = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._read = value.read;
     }
   }
@@ -158,6 +175,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
     });
     this._displayNamePrefix = config.displayNamePrefix;
     this._displayNames = config.displayNames;
+    this._id = config.id;
     this._ignoreMissing = config.ignoreMissing;
     this._mailEnabled = config.mailEnabled;
     this._objectIds = config.objectIds;
@@ -203,8 +221,19 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ignore_missing - computed: false, optional: true, required: false
@@ -311,6 +340,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
     return {
       display_name_prefix: cdktf.stringToTerraform(this._displayNamePrefix),
       display_names: cdktf.listMapper(cdktf.stringToTerraform)(this._displayNames),
+      id: cdktf.stringToTerraform(this._id),
       ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       object_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._objectIds),

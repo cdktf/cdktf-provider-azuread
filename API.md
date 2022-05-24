@@ -64,6 +64,12 @@ public resetDescription()
 public resetHiddenMembershipEnabled()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.AdministrativeUnit.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetMembers` <a name="@cdktf/provider-azuread.AdministrativeUnit.resetMembers"></a>
 
 ```typescript
@@ -84,16 +90,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.objectId"></a>
 
@@ -145,6 +141,16 @@ public readonly hiddenMembershipEnabledInput: boolean | IResolvable;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `membersInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.membersInput"></a>
 
 ```typescript
@@ -168,10 +174,10 @@ public readonly preventDuplicateNamesInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: AdministrativeUnitTimeouts;
+public readonly timeoutsInput: IResolvable | AdministrativeUnitTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
 
 ---
 
@@ -202,6 +208,16 @@ public readonly hiddenMembershipEnabled: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnit.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -289,6 +305,12 @@ public putTimeouts(value: AdministrativeUnitMemberTimeouts)
 public resetAdministrativeUnitObjectId()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetMemberObjectId` <a name="@cdktf/provider-azuread.AdministrativeUnitMember.resetMemberObjectId"></a>
 
 ```typescript
@@ -303,16 +325,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.timeouts"></a>
 
@@ -334,6 +346,16 @@ public readonly administrativeUnitObjectIdInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `memberObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.memberObjectIdInput"></a>
 
 ```typescript
@@ -347,10 +369,10 @@ public readonly memberObjectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: AdministrativeUnitMemberTimeouts;
+public readonly timeoutsInput: IResolvable | AdministrativeUnitMemberTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
 
 ---
 
@@ -358,6 +380,16 @@ public readonly timeoutsInput: AdministrativeUnitMemberTimeouts;
 
 ```typescript
 public readonly administrativeUnitObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMember.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -420,30 +452,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `appRoleIds` <a name="@cdktf/provider-azuread.Application.appRoleIds"></a>
-
-```typescript
-public appRoleIds(key: string)
-```
-
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
-##### `oauth2PermissionScopeIds` <a name="@cdktf/provider-azuread.Application.oauth2PermissionScopeIds"></a>
-
-```typescript
-public oauth2PermissionScopeIds(key: string)
-```
-
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putApi` <a name="@cdktf/provider-azuread.Application.putApi"></a>
 
 ```typescript
@@ -453,6 +461,30 @@ public putApi(value: ApplicationApi)
 ###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationApi`](#@cdktf/provider-azuread.ApplicationApi)
+
+---
+
+##### `putAppRole` <a name="@cdktf/provider-azuread.Application.putAppRole"></a>
+
+```typescript
+public putAppRole(value: IResolvable | ApplicationAppRole[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
+
+---
+
+##### `putFeatureTags` <a name="@cdktf/provider-azuread.Application.putFeatureTags"></a>
+
+```typescript
+public putFeatureTags(value: IResolvable | ApplicationFeatureTags[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
 
 ---
 
@@ -477,6 +509,18 @@ public putPublicClient(value: ApplicationPublicClient)
 ###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationPublicClient`](#@cdktf/provider-azuread.ApplicationPublicClient)
+
+---
+
+##### `putRequiredResourceAccess` <a name="@cdktf/provider-azuread.Application.putRequiredResourceAccess"></a>
+
+```typescript
+public putRequiredResourceAccess(value: IResolvable | ApplicationRequiredResourceAccess[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
 
 ---
 
@@ -550,6 +594,12 @@ public resetFeatureTags()
 
 ```typescript
 public resetGroupMembershipClaims()
+```
+
+##### `resetId` <a name="@cdktf/provider-azuread.Application.resetId"></a>
+
+```typescript
+public resetId()
 ```
 
 ##### `resetIdentifierUris` <a name="@cdktf/provider-azuread.Application.resetIdentifierUris"></a>
@@ -683,6 +733,26 @@ public readonly applicationId: string;
 
 ---
 
+##### `appRole`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.appRole"></a>
+
+```typescript
+public readonly appRole: ApplicationAppRoleList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationAppRoleList`](#@cdktf/provider-azuread.ApplicationAppRoleList)
+
+---
+
+##### `appRoleIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.appRoleIds"></a>
+
+```typescript
+public readonly appRoleIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
+
+---
+
 ##### `disabledByMicrosoft`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.disabledByMicrosoft"></a>
 
 ```typescript
@@ -693,13 +763,13 @@ public readonly disabledByMicrosoft: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.id"></a>
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.featureTags"></a>
 
 ```typescript
-public readonly id: string;
+public readonly featureTags: ApplicationFeatureTagsList;
 ```
 
-- *Type:* `string`
+- *Type:* [`@cdktf/provider-azuread.ApplicationFeatureTagsList`](#@cdktf/provider-azuread.ApplicationFeatureTagsList)
 
 ---
 
@@ -710,6 +780,16 @@ public readonly logoUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `oauth2PermissionScopeIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.oauth2PermissionScopeIds"></a>
+
+```typescript
+public readonly oauth2PermissionScopeIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
 
 ---
 
@@ -750,6 +830,16 @@ public readonly publisherDomain: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `requiredResourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.requiredResourceAccess"></a>
+
+```typescript
+public readonly requiredResourceAccess: ApplicationRequiredResourceAccessList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessList`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessList)
 
 ---
 
@@ -860,6 +950,16 @@ public readonly identifierUrisInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -1016,10 +1116,10 @@ public readonly termsOfServiceUrlInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Application.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ApplicationTimeouts;
+public readonly timeoutsInput: IResolvable | ApplicationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationTimeouts`](#@cdktf/provider-azuread.ApplicationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationTimeouts`](#@cdktf/provider-azuread.ApplicationTimeouts)
 
 ---
 
@@ -1030,16 +1130,6 @@ public readonly webInput: ApplicationWeb;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationWeb`](#@cdktf/provider-azuread.ApplicationWeb)
-
----
-
-##### `appRole`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.appRole"></a>
-
-```typescript
-public readonly appRole: IResolvable | ApplicationAppRole[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
 
 ---
 
@@ -1073,16 +1163,6 @@ public readonly fallbackPublicClientEnabled: boolean | IResolvable;
 
 ---
 
-##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.featureTags"></a>
-
-```typescript
-public readonly featureTags: IResolvable | ApplicationFeatureTags[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
-
----
-
 ##### `groupMembershipClaims`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.groupMembershipClaims"></a>
 
 ```typescript
@@ -1090,6 +1170,16 @@ public readonly groupMembershipClaims: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -1160,16 +1250,6 @@ public readonly privacyStatementUrl: string;
 ```
 
 - *Type:* `string`
-
----
-
-##### `requiredResourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.Application.property.requiredResourceAccess"></a>
-
-```typescript
-public readonly requiredResourceAccess: IResolvable | ApplicationRequiredResourceAccess[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
 
 ---
 
@@ -1299,6 +1379,12 @@ public resetEndDate()
 public resetEndDateRelative()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.ApplicationCertificate.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetKeyId` <a name="@cdktf/provider-azuread.ApplicationCertificate.resetKeyId"></a>
 
 ```typescript
@@ -1325,16 +1411,6 @@ public resetType()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.timeouts"></a>
 
@@ -1386,6 +1462,16 @@ public readonly endDateRelativeInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `keyIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.keyIdInput"></a>
 
 ```typescript
@@ -1409,10 +1495,10 @@ public readonly startDateInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ApplicationCertificateTimeouts;
+public readonly timeoutsInput: IResolvable | ApplicationCertificateTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationCertificateTimeouts`](#@cdktf/provider-azuread.ApplicationCertificateTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationCertificateTimeouts`](#@cdktf/provider-azuread.ApplicationCertificateTimeouts)
 
 ---
 
@@ -1470,6 +1556,16 @@ public readonly endDate: string;
 
 ```typescript
 public readonly endDateRelative: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationCertificate.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -1580,6 +1676,12 @@ public putTimeouts(value: ApplicationFederatedIdentityCredentialTimeouts)
 public resetDescription()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.resetTimeouts"></a>
 
 ```typescript
@@ -1593,16 +1695,6 @@ public resetTimeouts()
 
 ```typescript
 public readonly credentialId: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -1659,6 +1751,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `issuerInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.issuerInput"></a>
 
 ```typescript
@@ -1682,10 +1784,10 @@ public readonly subjectInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ApplicationFederatedIdentityCredentialTimeouts;
+public readonly timeoutsInput: IResolvable | ApplicationFederatedIdentityCredentialTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
 
 ---
 
@@ -1723,6 +1825,16 @@ public readonly description: string;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredential.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -1825,6 +1937,12 @@ public resetEndDate()
 public resetEndDateRelative()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.ApplicationPassword.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetRotateWhenChanged` <a name="@cdktf/provider-azuread.ApplicationPassword.resetRotateWhenChanged"></a>
 
 ```typescript
@@ -1845,16 +1963,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `keyId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.keyId"></a>
 
@@ -1926,6 +2034,16 @@ public readonly endDateRelativeInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `rotateWhenChangedInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.rotateWhenChangedInput"></a>
 
 ```typescript
@@ -1949,10 +2067,10 @@ public readonly startDateInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ApplicationPasswordTimeouts;
+public readonly timeoutsInput: IResolvable | ApplicationPasswordTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationPasswordTimeouts`](#@cdktf/provider-azuread.ApplicationPasswordTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationPasswordTimeouts`](#@cdktf/provider-azuread.ApplicationPasswordTimeouts)
 
 ---
 
@@ -1990,6 +2108,16 @@ public readonly endDate: string;
 
 ```typescript
 public readonly endDateRelative: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPassword.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -2074,6 +2202,12 @@ public putTimeouts(value: ApplicationPreAuthorizedTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.resetTimeouts"></a>
 
 ```typescript
@@ -2082,16 +2216,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.property.timeouts"></a>
 
@@ -2123,6 +2247,16 @@ public readonly authorizedAppIdInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `permissionIdsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.property.permissionIdsInput"></a>
 
 ```typescript
@@ -2136,10 +2270,10 @@ public readonly permissionIdsInput: string[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ApplicationPreAuthorizedTimeouts;
+public readonly timeoutsInput: IResolvable | ApplicationPreAuthorizedTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts`](#@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts`](#@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts)
 
 ---
 
@@ -2157,6 +2291,16 @@ public readonly applicationObjectId: string;
 
 ```typescript
 public readonly authorizedAppId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorized.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -2231,6 +2375,12 @@ public putTimeouts(value: AppRoleAssignmentTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.AppRoleAssignment.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.AppRoleAssignment.resetTimeouts"></a>
 
 ```typescript
@@ -2239,16 +2389,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `principalDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.property.principalDisplayName"></a>
 
@@ -2300,6 +2440,16 @@ public readonly appRoleIdInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `principalObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.property.principalObjectIdInput"></a>
 
 ```typescript
@@ -2323,10 +2473,10 @@ public readonly resourceObjectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: AppRoleAssignmentTimeouts;
+public readonly timeoutsInput: IResolvable | AppRoleAssignmentTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.AppRoleAssignmentTimeouts`](#@cdktf/provider-azuread.AppRoleAssignmentTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.AppRoleAssignmentTimeouts`](#@cdktf/provider-azuread.AppRoleAssignmentTimeouts)
 
 ---
 
@@ -2334,6 +2484,16 @@ public readonly timeoutsInput: AppRoleAssignmentTimeouts;
 
 ```typescript
 public readonly appRoleId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.AppRoleAssignment.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -2791,19 +2951,16 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Methods <a name="Methods"></a>
+
+##### `resetId` <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.resetId"></a>
+
+```typescript
+public resetId()
+```
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `definitionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.definitionInput"></a>
 
@@ -2825,6 +2982,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `definition`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.definition"></a>
 
 ```typescript
@@ -2839,6 +3006,16 @@ public readonly definition: string[];
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicy.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -2939,6 +3116,12 @@ public putTimeouts(value: ConditionalAccessPolicyTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetSessionControls` <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.resetSessionControls"></a>
 
 ```typescript
@@ -2971,16 +3154,6 @@ public readonly grantControls: ConditionalAccessPolicyGrantControlsOutputReferen
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference`](#@cdktf/provider-azuread.ConditionalAccessPolicyGrantControlsOutputReference)
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
 
 ---
 
@@ -3034,6 +3207,16 @@ public readonly grantControlsInput: ConditionalAccessPolicyGrantControls;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `sessionControlsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.property.sessionControlsInput"></a>
 
 ```typescript
@@ -3057,10 +3240,10 @@ public readonly stateInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ConditionalAccessPolicyTimeouts;
+public readonly timeoutsInput: IResolvable | ConditionalAccessPolicyTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts`](#@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts`](#@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts)
 
 ---
 
@@ -3068,6 +3251,16 @@ public readonly timeoutsInput: ConditionalAccessPolicyTimeouts;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicy.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -3130,6 +3323,18 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
+##### `putPermissions` <a name="@cdktf/provider-azuread.CustomDirectoryRole.putPermissions"></a>
+
+```typescript
+public putPermissions(value: IResolvable | CustomDirectoryRolePermissions[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.CustomDirectoryRolePermissions`](#@cdktf/provider-azuread.CustomDirectoryRolePermissions)[]
+
+---
+
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.CustomDirectoryRole.putTimeouts"></a>
 
 ```typescript
@@ -3148,6 +3353,12 @@ public putTimeouts(value: CustomDirectoryRoleTimeouts)
 public resetDescription()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.CustomDirectoryRole.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTemplateId` <a name="@cdktf/provider-azuread.CustomDirectoryRole.resetTemplateId"></a>
 
 ```typescript
@@ -3163,16 +3374,6 @@ public resetTimeouts()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.objectId"></a>
 
 ```typescript
@@ -3180,6 +3381,16 @@ public readonly objectId: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `permissions`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.permissions"></a>
+
+```typescript
+public readonly permissions: CustomDirectoryRolePermissionsList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.CustomDirectoryRolePermissionsList`](#@cdktf/provider-azuread.CustomDirectoryRolePermissionsList)
 
 ---
 
@@ -3223,6 +3434,16 @@ public readonly enabledInput: boolean | IResolvable;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `permissionsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.permissionsInput"></a>
 
 ```typescript
@@ -3246,10 +3467,10 @@ public readonly templateIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: CustomDirectoryRoleTimeouts;
+public readonly timeoutsInput: IResolvable | CustomDirectoryRoleTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.CustomDirectoryRoleTimeouts`](#@cdktf/provider-azuread.CustomDirectoryRoleTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.CustomDirectoryRoleTimeouts`](#@cdktf/provider-azuread.CustomDirectoryRoleTimeouts)
 
 ---
 
@@ -3293,13 +3514,13 @@ public readonly enabled: boolean | IResolvable;
 
 ---
 
-##### `permissions`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.permissions"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRole.property.id"></a>
 
 ```typescript
-public readonly permissions: IResolvable | CustomDirectoryRolePermissions[];
+public readonly id: string;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.CustomDirectoryRolePermissions`](#@cdktf/provider-azuread.CustomDirectoryRolePermissions)[]
+- *Type:* `string`
 
 ---
 
@@ -3387,6 +3608,12 @@ public putTimeouts(value: DataAzureadAdministrativeUnitTimeouts)
 public resetDisplayName()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetObjectId` <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.resetObjectId"></a>
 
 ```typescript
@@ -3406,16 +3633,6 @@ public resetTimeouts()
 
 ```typescript
 public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -3462,6 +3679,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `objectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.objectIdInput"></a>
 
 ```typescript
@@ -3475,10 +3702,10 @@ public readonly objectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadAdministrativeUnitTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadAdministrativeUnitTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
 
 ---
 
@@ -3486,6 +3713,16 @@ public readonly timeoutsInput: DataAzureadAdministrativeUnitTimeouts;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnit.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -3548,30 +3785,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `appRoleIds` <a name="@cdktf/provider-azuread.DataAzureadApplication.appRoleIds"></a>
-
-```typescript
-public appRoleIds(key: string)
-```
-
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
-##### `oauth2PermissionScopeIds` <a name="@cdktf/provider-azuread.DataAzureadApplication.oauth2PermissionScopeIds"></a>
-
-```typescript
-public oauth2PermissionScopeIds(key: string)
-```
-
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadApplication.putTimeouts"></a>
 
 ```typescript
@@ -3596,6 +3809,12 @@ public resetApplicationId()
 public resetDisplayName()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadApplication.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetObjectId` <a name="@cdktf/provider-azuread.DataAzureadApplication.resetObjectId"></a>
 
 ```typescript
@@ -3618,6 +3837,16 @@ public readonly api: DataAzureadApplicationApiList;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationApiList`](#@cdktf/provider-azuread.DataAzureadApplicationApiList)
+
+---
+
+##### `appRoleIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.appRoleIds"></a>
+
+```typescript
+public readonly appRoleIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
 
 ---
 
@@ -3681,16 +3910,6 @@ public readonly groupMembershipClaims: string[];
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `identifierUris`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.identifierUris"></a>
 
 ```typescript
@@ -3718,6 +3937,16 @@ public readonly marketingUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `oauth2PermissionScopeIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.oauth2PermissionScopeIds"></a>
+
+```typescript
+public readonly oauth2PermissionScopeIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
 
 ---
 
@@ -3881,6 +4110,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `objectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.objectIdInput"></a>
 
 ```typescript
@@ -3894,10 +4133,10 @@ public readonly objectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadApplicationTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadApplicationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadApplicationTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTimeouts)
 
 ---
 
@@ -3915,6 +4154,16 @@ public readonly applicationId: string;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplication.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -3989,34 +4238,28 @@ public putTimeouts(value: DataAzureadApplicationPublishedAppIdsTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts()
 ```
 
-##### `result` <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.result"></a>
-
-```typescript
-public result(key: string)
-```
-
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.property.id"></a>
+##### `result`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.property.result"></a>
 
 ```typescript
-public readonly id: string;
+public readonly result: StringMap;
 ```
 
-- *Type:* `string`
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
 
 ---
 
@@ -4030,13 +4273,33 @@ public readonly timeouts: DataAzureadApplicationPublishedAppIdsTimeoutsOutputRef
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadApplicationPublishedAppIdsTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadApplicationPublishedAppIdsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIds.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -4104,6 +4367,12 @@ public putTimeouts(value: DataAzureadApplicationTemplateTimeouts)
 public resetDisplayName()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTemplateId` <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.resetTemplateId"></a>
 
 ```typescript
@@ -4133,16 +4402,6 @@ public readonly categories: string[];
 
 ```typescript
 public readonly homepageUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -4209,6 +4468,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `templateIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.templateIdInput"></a>
 
 ```typescript
@@ -4222,10 +4491,10 @@ public readonly templateIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadApplicationTemplateTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadApplicationTemplateTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts)
 
 ---
 
@@ -4233,6 +4502,16 @@ public readonly timeoutsInput: DataAzureadApplicationTemplateTimeouts;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplate.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -4307,6 +4586,12 @@ public putTimeouts(value: DataAzureadClientConfigTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadClientConfig.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.DataAzureadClientConfig.resetTimeouts"></a>
 
 ```typescript
@@ -4320,16 +4605,6 @@ public resetTimeouts()
 
 ```typescript
 public readonly clientId: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -4366,13 +4641,33 @@ public readonly timeouts: DataAzureadClientConfigTimeoutsOutputReference;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfig.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfig.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadClientConfigTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadClientConfigTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadClientConfigTimeouts`](#@cdktf/provider-azuread.DataAzureadClientConfigTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadClientConfigTimeouts`](#@cdktf/provider-azuread.DataAzureadClientConfigTimeouts)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -4440,6 +4735,12 @@ public putTimeouts(value: DataAzureadDomainsTimeouts)
 public resetAdminManaged()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadDomains.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetIncludeUnverified` <a name="@cdktf/provider-azuread.DataAzureadDomains.resetIncludeUnverified"></a>
 
 ```typescript
@@ -4489,16 +4790,6 @@ public readonly domains: DataAzureadDomainsDomainsList;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.timeouts"></a>
 
 ```typescript
@@ -4516,6 +4807,16 @@ public readonly adminManagedInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -4572,10 +4873,10 @@ public readonly supportsServicesInput: string[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadDomainsTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadDomainsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadDomainsTimeouts`](#@cdktf/provider-azuread.DataAzureadDomainsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadDomainsTimeouts`](#@cdktf/provider-azuread.DataAzureadDomainsTimeouts)
 
 ---
 
@@ -4586,6 +4887,16 @@ public readonly adminManaged: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDomains.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -4703,6 +5014,12 @@ public putTimeouts(value: DataAzureadGroupTimeouts)
 public resetDisplayName()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadGroup.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetMailEnabled` <a name="@cdktf/provider-azuread.DataAzureadGroup.resetMailEnabled"></a>
 
 ```typescript
@@ -4807,16 +5124,6 @@ public readonly hideFromOutlookClients: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
 
 ---
 
@@ -4990,6 +5297,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `mailEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.mailEnabledInput"></a>
 
 ```typescript
@@ -5023,10 +5340,10 @@ public readonly securityEnabledInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadGroupTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadGroupTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadGroupTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupTimeouts)
 
 ---
 
@@ -5034,6 +5351,16 @@ public readonly timeoutsInput: DataAzureadGroupTimeouts;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroup.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -5140,6 +5467,12 @@ public resetDisplayNamePrefix()
 public resetDisplayNames()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetIgnoreMissing` <a name="@cdktf/provider-azuread.DataAzureadGroups.resetIgnoreMissing"></a>
 
 ```typescript
@@ -5179,16 +5512,6 @@ public resetTimeouts()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.timeouts"></a>
 
 ```typescript
@@ -5216,6 +5539,16 @@ public readonly displayNamesInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -5272,10 +5605,10 @@ public readonly securityEnabledInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadGroupsTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadGroupsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupsTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadGroupsTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupsTimeouts)
 
 ---
 
@@ -5296,6 +5629,16 @@ public readonly displayNames: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadGroups.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -5395,30 +5738,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `appRoleIds` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.appRoleIds"></a>
-
-```typescript
-public appRoleIds(key: string)
-```
-
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
-##### `oauth2PermissionScopeIds` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.oauth2PermissionScopeIds"></a>
-
-```typescript
-public oauth2PermissionScopeIds(key: string)
-```
-
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.putTimeouts"></a>
 
 ```typescript
@@ -5441,6 +5760,12 @@ public resetApplicationId()
 
 ```typescript
 public resetDisplayName()
+```
+
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.resetId"></a>
+
+```typescript
+public resetId()
 ```
 
 ##### `resetObjectId` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.resetObjectId"></a>
@@ -5498,6 +5823,16 @@ public readonly appRoleAssignmentRequired: IResolvable;
 
 ---
 
+##### `appRoleIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.appRoleIds"></a>
+
+```typescript
+public readonly appRoleIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
+
+---
+
 ##### `appRoles`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.appRoles"></a>
 
 ```typescript
@@ -5548,16 +5883,6 @@ public readonly homepageUrl: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `loginUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.loginUrl"></a>
 
 ```typescript
@@ -5595,6 +5920,16 @@ public readonly notificationEmailAddresses: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `oauth2PermissionScopeIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.oauth2PermissionScopeIds"></a>
+
+```typescript
+public readonly oauth2PermissionScopeIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
 
 ---
 
@@ -5718,6 +6053,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `objectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.objectIdInput"></a>
 
 ```typescript
@@ -5731,10 +6076,10 @@ public readonly objectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadServicePrincipalTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadServicePrincipalTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts)
 
 ---
 
@@ -5752,6 +6097,16 @@ public readonly applicationId: string;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipal.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -5838,6 +6193,12 @@ public resetApplicationIds()
 public resetDisplayNames()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetIgnoreMissing` <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.resetIgnoreMissing"></a>
 
 ```typescript
@@ -5864,16 +6225,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `servicePrincipals`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.servicePrincipals"></a>
 
@@ -5915,6 +6266,16 @@ public readonly displayNamesInput: string[];
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `ignoreMissingInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.ignoreMissingInput"></a>
 
 ```typescript
@@ -5948,10 +6309,10 @@ public readonly returnAllInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadServicePrincipalsTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadServicePrincipalsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts)
 
 ---
 
@@ -5972,6 +6333,16 @@ public readonly displayNames: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipals.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -6062,6 +6433,12 @@ public putTimeouts(value: DataAzureadUserTimeouts)
 - *Type:* [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
 
 ---
+
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadUser.resetId"></a>
+
+```typescript
+public resetId()
+```
 
 ##### `resetMailNickname` <a name="@cdktf/provider-azuread.DataAzureadUser.resetMailNickname"></a>
 
@@ -6254,16 +6631,6 @@ public readonly faxNumber: string;
 
 ```typescript
 public readonly givenName: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -6510,6 +6877,16 @@ public readonly userType: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `mailNicknameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.mailNicknameInput"></a>
 
 ```typescript
@@ -6533,10 +6910,10 @@ public readonly objectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadUserTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadUserTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
 
 ---
 
@@ -6544,6 +6921,16 @@ public readonly timeoutsInput: DataAzureadUserTimeouts;
 
 ```typescript
 public readonly userPrincipalNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUser.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -6638,6 +7025,12 @@ public putTimeouts(value: DataAzureadUsersTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadUsers.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetIgnoreMissing` <a name="@cdktf/provider-azuread.DataAzureadUsers.resetIgnoreMissing"></a>
 
 ```typescript
@@ -6677,16 +7070,6 @@ public resetUserPrincipalNames()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.timeouts"></a>
 
 ```typescript
@@ -6704,6 +7087,16 @@ public readonly users: DataAzureadUsersUsersList;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DataAzureadUsersUsersList`](#@cdktf/provider-azuread.DataAzureadUsersUsersList)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -6750,10 +7143,10 @@ public readonly returnAllInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadUsersTimeouts;
+public readonly timeoutsInput: IResolvable | DataAzureadUsersTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadUsersTimeouts`](#@cdktf/provider-azuread.DataAzureadUsersTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadUsersTimeouts`](#@cdktf/provider-azuread.DataAzureadUsersTimeouts)
 
 ---
 
@@ -6764,6 +7157,16 @@ public readonly userPrincipalNamesInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadUsers.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -6881,6 +7284,12 @@ public putTimeouts(value: DirectoryRoleTimeouts)
 public resetDisplayName()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.DirectoryRole.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTemplateId` <a name="@cdktf/provider-azuread.DirectoryRole.resetTemplateId"></a>
 
 ```typescript
@@ -6900,16 +7309,6 @@ public resetTimeouts()
 
 ```typescript
 public readonly description: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -6946,6 +7345,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `templateIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.templateIdInput"></a>
 
 ```typescript
@@ -6959,10 +7368,10 @@ public readonly templateIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DirectoryRoleTimeouts;
+public readonly timeoutsInput: IResolvable | DirectoryRoleTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DirectoryRoleTimeouts`](#@cdktf/provider-azuread.DirectoryRoleTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DirectoryRoleTimeouts`](#@cdktf/provider-azuread.DirectoryRoleTimeouts)
 
 ---
 
@@ -6970,6 +7379,16 @@ public readonly timeoutsInput: DirectoryRoleTimeouts;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRole.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -7044,6 +7463,12 @@ public putTimeouts(value: DirectoryRoleMemberTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.DirectoryRoleMember.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetMemberObjectId` <a name="@cdktf/provider-azuread.DirectoryRoleMember.resetMemberObjectId"></a>
 
 ```typescript
@@ -7065,16 +7490,6 @@ public resetTimeouts()
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.timeouts"></a>
 
 ```typescript
@@ -7082,6 +7497,16 @@ public readonly timeouts: DirectoryRoleMemberTimeoutsOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference`](#@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -7108,10 +7533,20 @@ public readonly roleObjectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DirectoryRoleMemberTimeouts;
+public readonly timeoutsInput: IResolvable | DirectoryRoleMemberTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DirectoryRoleMemberTimeouts`](#@cdktf/provider-azuread.DirectoryRoleMemberTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DirectoryRoleMemberTimeouts`](#@cdktf/provider-azuread.DirectoryRoleMemberTimeouts)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMember.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -7253,6 +7688,12 @@ public resetHideFromAddressLists()
 public resetHideFromOutlookClients()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.Group.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetMailEnabled` <a name="@cdktf/provider-azuread.Group.resetMailEnabled"></a>
 
 ```typescript
@@ -7329,16 +7770,6 @@ public readonly dynamicMembership: GroupDynamicMembershipOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.GroupDynamicMembershipOutputReference`](#@cdktf/provider-azuread.GroupDynamicMembershipOutputReference)
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
 
 ---
 
@@ -7532,6 +7963,16 @@ public readonly hideFromOutlookClientsInput: boolean | IResolvable;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `mailEnabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.mailEnabledInput"></a>
 
 ```typescript
@@ -7615,10 +8056,10 @@ public readonly themeInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Group.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GroupTimeouts;
+public readonly timeoutsInput: IResolvable | GroupTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.GroupTimeouts`](#@cdktf/provider-azuread.GroupTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.GroupTimeouts`](#@cdktf/provider-azuread.GroupTimeouts)
 
 ---
 
@@ -7719,6 +8160,16 @@ public readonly hideFromOutlookClients: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.Group.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -7880,6 +8331,12 @@ public putTimeouts(value: GroupMemberTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.GroupMember.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.GroupMember.resetTimeouts"></a>
 
 ```typescript
@@ -7888,16 +8345,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMember.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMember.property.timeouts"></a>
 
@@ -7919,6 +8366,16 @@ public readonly groupObjectIdInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMember.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `memberObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMember.property.memberObjectIdInput"></a>
 
 ```typescript
@@ -7932,10 +8389,10 @@ public readonly memberObjectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMember.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GroupMemberTimeouts;
+public readonly timeoutsInput: IResolvable | GroupMemberTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.GroupMemberTimeouts`](#@cdktf/provider-azuread.GroupMemberTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.GroupMemberTimeouts`](#@cdktf/provider-azuread.GroupMemberTimeouts)
 
 ---
 
@@ -7943,6 +8400,16 @@ public readonly timeoutsInput: GroupMemberTimeouts;
 
 ```typescript
 public readonly groupObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.GroupMember.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -8029,6 +8496,12 @@ public putTimeouts(value: InvitationTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.Invitation.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetMessage` <a name="@cdktf/provider-azuread.Invitation.resetMessage"></a>
 
 ```typescript
@@ -8055,16 +8528,6 @@ public resetUserType()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `message`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.property.message"></a>
 
@@ -8106,6 +8569,16 @@ public readonly userId: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Invitation.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `messageInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Invitation.property.messageInput"></a>
 
 ```typescript
@@ -8129,10 +8602,10 @@ public readonly redirectUrlInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.Invitation.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: InvitationTimeouts;
+public readonly timeoutsInput: IResolvable | InvitationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.InvitationTimeouts`](#@cdktf/provider-azuread.InvitationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.InvitationTimeouts`](#@cdktf/provider-azuread.InvitationTimeouts)
 
 ---
 
@@ -8160,6 +8633,16 @@ public readonly userEmailAddressInput: string;
 
 ```typescript
 public readonly userTypeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.Invitation.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -8294,6 +8777,12 @@ public putTimeouts(value: NamedLocationTimeouts)
 public resetCountry()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.NamedLocation.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetIp` <a name="@cdktf/provider-azuread.NamedLocation.resetIp"></a>
 
 ```typescript
@@ -8316,16 +8805,6 @@ public readonly country: NamedLocationCountryOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.NamedLocationCountryOutputReference`](#@cdktf/provider-azuread.NamedLocationCountryOutputReference)
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocation.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
 
 ---
 
@@ -8369,6 +8848,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocation.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `ipInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocation.property.ipInput"></a>
 
 ```typescript
@@ -8382,10 +8871,10 @@ public readonly ipInput: NamedLocationIp;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocation.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: NamedLocationTimeouts;
+public readonly timeoutsInput: IResolvable | NamedLocationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.NamedLocationTimeouts`](#@cdktf/provider-azuread.NamedLocationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.NamedLocationTimeouts`](#@cdktf/provider-azuread.NamedLocationTimeouts)
 
 ---
 
@@ -8393,6 +8882,16 @@ public readonly timeoutsInput: NamedLocationTimeouts;
 
 ```typescript
 public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.NamedLocation.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -8445,27 +8944,27 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `appRoleIds` <a name="@cdktf/provider-azuread.ServicePrincipal.appRoleIds"></a>
+##### `putFeatures` <a name="@cdktf/provider-azuread.ServicePrincipal.putFeatures"></a>
 
 ```typescript
-public appRoleIds(key: string)
+public putFeatures(value: IResolvable | ServicePrincipalFeatures[])
 ```
 
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.key"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.value"></a>
 
-- *Type:* `string`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
 
 ---
 
-##### `oauth2PermissionScopeIds` <a name="@cdktf/provider-azuread.ServicePrincipal.oauth2PermissionScopeIds"></a>
+##### `putFeatureTags` <a name="@cdktf/provider-azuread.ServicePrincipal.putFeatureTags"></a>
 
 ```typescript
-public oauth2PermissionScopeIds(key: string)
+public putFeatureTags(value: IResolvable | ServicePrincipalFeatureTags[])
 ```
 
-###### `key`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.key"></a>
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.parameter.value"></a>
 
-- *Type:* `string`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
 
 ---
 
@@ -8527,6 +9026,12 @@ public resetFeatures()
 
 ```typescript
 public resetFeatureTags()
+```
+
+##### `resetId` <a name="@cdktf/provider-azuread.ServicePrincipal.resetId"></a>
+
+```typescript
+public resetId()
 ```
 
 ##### `resetLoginUrl` <a name="@cdktf/provider-azuread.ServicePrincipal.resetLoginUrl"></a>
@@ -8596,6 +9101,16 @@ public readonly applicationTenantId: string;
 
 ---
 
+##### `appRoleIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.appRoleIds"></a>
+
+```typescript
+public readonly appRoleIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
+
+---
+
 ##### `appRoles`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.appRoles"></a>
 
 ```typescript
@@ -8616,20 +9131,30 @@ public readonly displayName: string;
 
 ---
 
+##### `features`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.features"></a>
+
+```typescript
+public readonly features: ServicePrincipalFeaturesList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeaturesList`](#@cdktf/provider-azuread.ServicePrincipalFeaturesList)
+
+---
+
+##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTags"></a>
+
+```typescript
+public readonly featureTags: ServicePrincipalFeatureTagsList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ServicePrincipalFeatureTagsList`](#@cdktf/provider-azuread.ServicePrincipalFeatureTagsList)
+
+---
+
 ##### `homepageUrl`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.homepageUrl"></a>
 
 ```typescript
 public readonly homepageUrl: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -8643,6 +9168,16 @@ public readonly logoutUrl: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `oauth2PermissionScopeIds`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.oauth2PermissionScopeIds"></a>
+
+```typescript
+public readonly oauth2PermissionScopeIds: StringMap;
+```
+
+- *Type:* [`cdktf.StringMap`](#cdktf.StringMap)
 
 ---
 
@@ -8806,6 +9341,16 @@ public readonly featureTagsInput: IResolvable | ServicePrincipalFeatureTags[];
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `loginUrlInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.loginUrlInput"></a>
 
 ```typescript
@@ -8879,10 +9424,10 @@ public readonly tagsInput: string[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ServicePrincipalTimeouts;
+public readonly timeoutsInput: IResolvable | ServicePrincipalTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalTimeouts`](#@cdktf/provider-azuread.ServicePrincipalTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalTimeouts`](#@cdktf/provider-azuread.ServicePrincipalTimeouts)
 
 ---
 
@@ -8946,23 +9491,13 @@ public readonly description: string;
 
 ---
 
-##### `features`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.features"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.id"></a>
 
 ```typescript
-public readonly features: IResolvable | ServicePrincipalFeatures[];
+public readonly id: string;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
-
----
-
-##### `featureTags`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipal.property.featureTags"></a>
-
-```typescript
-public readonly featureTags: IResolvable | ServicePrincipalFeatureTags[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
+- *Type:* `string`
 
 ---
 
@@ -9112,6 +9647,12 @@ public resetEndDate()
 public resetEndDateRelative()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetKeyId` <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.resetKeyId"></a>
 
 ```typescript
@@ -9138,16 +9679,6 @@ public resetType()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.timeouts"></a>
 
@@ -9189,6 +9720,16 @@ public readonly endDateRelativeInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `keyIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.keyIdInput"></a>
 
 ```typescript
@@ -9222,10 +9763,10 @@ public readonly startDateInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ServicePrincipalCertificateTimeouts;
+public readonly timeoutsInput: IResolvable | ServicePrincipalCertificateTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts`](#@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts`](#@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts)
 
 ---
 
@@ -9273,6 +9814,16 @@ public readonly endDate: string;
 
 ```typescript
 public readonly endDateRelative: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificate.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -9373,24 +9924,31 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Methods <a name="Methods"></a>
+
+##### `resetId` <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.resetId"></a>
+
+```typescript
+public resetId()
+```
 
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.id"></a>
+##### `claimsMappingPolicyIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.claimsMappingPolicyIdInput"></a>
 
 ```typescript
-public readonly id: string;
+public readonly claimsMappingPolicyIdInput: string;
 ```
 
 - *Type:* `string`
 
 ---
 
-##### `claimsMappingPolicyIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.claimsMappingPolicyIdInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.idInput"></a>
 
 ```typescript
-public readonly claimsMappingPolicyIdInput: string;
+public readonly idInput: string;
 ```
 
 - *Type:* `string`
@@ -9411,6 +9969,16 @@ public readonly servicePrincipalIdInput: string;
 
 ```typescript
 public readonly claimsMappingPolicyId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignment.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -9485,6 +10053,12 @@ public putTimeouts(value: ServicePrincipalDelegatedPermissionGrantTimeouts)
 
 ---
 
+##### `resetId` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.resetTimeouts"></a>
 
 ```typescript
@@ -9499,16 +10073,6 @@ public resetUserObjectId()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.timeouts"></a>
 
@@ -9527,6 +10091,16 @@ public readonly claimValuesInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -9553,10 +10127,10 @@ public readonly servicePrincipalObjectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ServicePrincipalDelegatedPermissionGrantTimeouts;
+public readonly timeoutsInput: IResolvable | ServicePrincipalDelegatedPermissionGrantTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
 
 ---
 
@@ -9577,6 +10151,16 @@ public readonly claimValues: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrant.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -9686,6 +10270,12 @@ public resetEndDate()
 public resetEndDateRelative()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetRotateWhenChanged` <a name="@cdktf/provider-azuread.ServicePrincipalPassword.resetRotateWhenChanged"></a>
 
 ```typescript
@@ -9706,16 +10296,6 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* `string`
-
----
 
 ##### `keyId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.keyId"></a>
 
@@ -9777,6 +10357,16 @@ public readonly endDateRelativeInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `rotateWhenChangedInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.rotateWhenChangedInput"></a>
 
 ```typescript
@@ -9810,10 +10400,10 @@ public readonly startDateInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ServicePrincipalPasswordTimeouts;
+public readonly timeoutsInput: IResolvable | ServicePrincipalPasswordTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts`](#@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts`](#@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts)
 
 ---
 
@@ -9841,6 +10431,16 @@ public readonly endDate: string;
 
 ```typescript
 public readonly endDateRelative: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPassword.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -10037,6 +10637,12 @@ public resetForcePasswordChange()
 public resetGivenName()
 ```
 
+##### `resetId` <a name="@cdktf/provider-azuread.User.resetId"></a>
+
+```typescript
+public resetId()
+```
+
 ##### `resetJobTitle` <a name="@cdktf/provider-azuread.User.resetJobTitle"></a>
 
 ```typescript
@@ -10166,16 +10772,6 @@ public readonly creationType: string;
 
 ```typescript
 public readonly externalUserState: string;
-```
-
-- *Type:* `string`
-
----
-
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -10472,6 +11068,16 @@ public readonly givenNameInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `jobTitleInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.jobTitleInput"></a>
 
 ```typescript
@@ -10625,10 +11231,10 @@ public readonly surnameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.User.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: UserTimeouts;
+public readonly timeoutsInput: IResolvable | UserTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.UserTimeouts`](#@cdktf/provider-azuread.UserTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.UserTimeouts`](#@cdktf/provider-azuread.UserTimeouts)
 
 ---
 
@@ -10826,6 +11432,16 @@ public readonly forcePasswordChange: boolean | IResolvable;
 
 ```typescript
 public readonly givenName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.User.property.id"></a>
+
+```typescript
+public readonly id: string;
 ```
 
 - *Type:* `string`
@@ -11104,6 +11720,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#id AdministrativeUnit#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `members`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.members"></a>
 
 ```typescript
@@ -11209,6 +11840,21 @@ public readonly administrativeUnitObjectId: string;
 The object ID of the administrative unit.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit_member#id AdministrativeUnitMember#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -11444,6 +12090,9 @@ The unique identifier of the delegated permission.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
 
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
 ---
 
 ##### `adminConsentDescription`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope.property.adminConsentDescription"></a>
@@ -11608,6 +12257,9 @@ The unique identifier of the app role.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
 
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
 ---
 
 ##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRole.property.enabled"></a>
@@ -11757,6 +12409,21 @@ public readonly endDateRelative: string;
 A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#end_date_relative ApplicationCertificate#end_date_relative}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_certificate#id ApplicationCertificate#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -12021,6 +12688,21 @@ public readonly groupMembershipClaims: string[];
 Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#group_membership_claims Application#group_membership_claims}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -12482,6 +13164,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#id ApplicationFederatedIdentityCredential#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.timeouts"></a>
 
 ```typescript
@@ -12924,6 +13621,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_password#id ApplicationPassword#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `rotateWhenChanged`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.rotateWhenChanged"></a>
 
 ```typescript
@@ -13116,6 +13828,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#id ApplicationPreAuthorized#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.timeouts"></a>
 
 ```typescript
@@ -13267,6 +13994,9 @@ public readonly id: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -13557,6 +14287,21 @@ public readonly resourceObjectId: string;
 The object ID of the service principal representing the resource.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#id AppRoleAssignment#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -13889,6 +14634,21 @@ public readonly displayName: string;
 Display name for this policy.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy#id ClaimsMappingPolicy#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -14364,6 +15124,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/conditional_access_policy#id ConditionalAccessPolicy#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `sessionControls`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.sessionControls"></a>
 
 ```typescript
@@ -14698,6 +15473,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#id CustomDirectoryRole#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `templateId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleConfig.property.templateId"></a>
 
 ```typescript
@@ -14869,6 +15659,21 @@ public readonly displayName: string;
 The display name for the administrative unit.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/administrative_unit#id DataAzureadAdministrativeUnit#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -15066,6 +15871,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application#id DataAzureadApplication#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.objectId"></a>
 
 ```typescript
@@ -15204,6 +16024,21 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_published_app_ids#id DataAzureadApplicationPublishedAppIds#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.timeouts"></a>
 
 ```typescript
@@ -15331,6 +16166,21 @@ public readonly displayName: string;
 The display name for the application template.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#display_name DataAzureadApplicationTemplate#display_name}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#id DataAzureadApplicationTemplate#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -15476,6 +16326,21 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#id DataAzureadClientConfig#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.timeouts"></a>
 
 ```typescript
@@ -15573,6 +16438,21 @@ public readonly adminManaged: boolean | IResolvable;
 Set to `true` to only return domains whose DNS is managed by Microsoft 365.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#admin_managed DataAzureadDomains#admin_managed}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/domains#id DataAzureadDomains#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -15756,6 +16636,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/group#id DataAzureadGroup#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `mailEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.mailEnabled"></a>
 
 ```typescript
@@ -15897,6 +16792,21 @@ public readonly displayNames: string[];
 The display names of the groups.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#display_names DataAzureadGroups#display_names}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/groups#id DataAzureadGroups#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -16118,6 +17028,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principal#id DataAzureadServicePrincipal#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `objectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.objectId"></a>
 
 ```typescript
@@ -16261,6 +17186,21 @@ public readonly displayNames: string[];
 The display names of the applications associated with the service principals.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#display_names DataAzureadServicePrincipals#display_names}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/service_principals#id DataAzureadServicePrincipals#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -16428,6 +17368,21 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#id DataAzureadUser#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `mailNickname`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.mailNickname"></a>
 
 ```typescript
@@ -16531,6 +17486,21 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#id DataAzureadUsers#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -16740,6 +17710,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#id DirectoryRole#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `templateId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.templateId"></a>
 
 ```typescript
@@ -16815,6 +17800,21 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member#id DirectoryRoleMember#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -17154,6 +18154,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#id Group#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `mailEnabled`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.mailEnabled"></a>
 
 ```typescript
@@ -17432,6 +18447,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#id GroupMember#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.timeouts"></a>
 
 ```typescript
@@ -17637,6 +18667,21 @@ public readonly userEmailAddress: string;
 The email address of the user being invited.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#user_email_address Invitation#user_email_address}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/invitation#id Invitation#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -17879,6 +18924,21 @@ public readonly country: NamedLocationCountry;
 country block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#country NamedLocation#country}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/named_location#id NamedLocation#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -18168,6 +19228,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_certificate#id ServicePrincipalCertificate#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `keyId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.keyId"></a>
 
 ```typescript
@@ -18360,6 +19435,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment#id ServicePrincipalClaimsMappingPolicyAssignment#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ### ServicePrincipalConfig <a name="@cdktf/provider-azuread.ServicePrincipalConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -18505,6 +19595,21 @@ public readonly featureTags: IResolvable | ServicePrincipalFeatureTags[];
 feature_tags block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#feature_tags ServicePrincipal#feature_tags}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#id ServicePrincipal#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -18729,6 +19834,21 @@ public readonly servicePrincipalObjectId: string;
 The object ID of the service principal for which this delegated permission grant should be created.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#service_principal_object_id ServicePrincipalDelegatedPermissionGrant#service_principal_object_id}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_delegated_permission_grant#id ServicePrincipalDelegatedPermissionGrant#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -19065,6 +20185,21 @@ A relative duration for which the password is valid until, for example `240h` (1
 Changing this field forces a new resource to be created
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#end_date_relative ServicePrincipalPassword#end_date_relative}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_password#id ServicePrincipalPassword#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -19572,6 +20707,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user#id User#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `jobTitle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.jobTitle"></a>
 
 ```typescript
@@ -20016,10 +21166,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AdministrativeUnitMemberTimeouts;
+public readonly internalValue: IResolvable | AdministrativeUnitMemberTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitMemberTimeouts)
 
 ---
 
@@ -20162,10 +21312,334 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AdministrativeUnitTimeouts;
+public readonly internalValue: IResolvable | AdministrativeUnitTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.AdministrativeUnitTimeouts`](#@cdktf/provider-azuread.AdministrativeUnitTimeouts)
+
+---
+
+
+### ApplicationApiOauth2PermissionScopeList <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList.Initializer"></a>
+
+```typescript
+import { ApplicationApiOauth2PermissionScopeList } from '@cdktf/provider-azuread'
+
+new ApplicationApiOauth2PermissionScopeList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationApiOauth2PermissionScope[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
+
+---
+
+
+### ApplicationApiOauth2PermissionScopeOutputReference <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationApiOauth2PermissionScopeOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationApiOauth2PermissionScopeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetAdminConsentDescription` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.resetAdminConsentDescription"></a>
+
+```typescript
+public resetAdminConsentDescription()
+```
+
+##### `resetAdminConsentDisplayName` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.resetAdminConsentDisplayName"></a>
+
+```typescript
+public resetAdminConsentDisplayName()
+```
+
+##### `resetEnabled` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.resetEnabled"></a>
+
+```typescript
+public resetEnabled()
+```
+
+##### `resetType` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.resetType"></a>
+
+```typescript
+public resetType()
+```
+
+##### `resetUserConsentDescription` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.resetUserConsentDescription"></a>
+
+```typescript
+public resetUserConsentDescription()
+```
+
+##### `resetUserConsentDisplayName` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.resetUserConsentDisplayName"></a>
+
+```typescript
+public resetUserConsentDisplayName()
+```
+
+##### `resetValue` <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.resetValue"></a>
+
+```typescript
+public resetValue()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `adminConsentDescriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDescriptionInput"></a>
+
+```typescript
+public readonly adminConsentDescriptionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `adminConsentDisplayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDisplayNameInput"></a>
+
+```typescript
+public readonly adminConsentDisplayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userConsentDescriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDescriptionInput"></a>
+
+```typescript
+public readonly userConsentDescriptionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userConsentDisplayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDisplayNameInput"></a>
+
+```typescript
+public readonly userConsentDisplayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `adminConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDescription"></a>
+
+```typescript
+public readonly adminConsentDescription: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `adminConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDisplayName"></a>
+
+```typescript
+public readonly adminConsentDisplayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userConsentDescription`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDescription"></a>
+
+```typescript
+public readonly userConsentDescription: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userConsentDisplayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDisplayName"></a>
+
+```typescript
+public readonly userConsentDisplayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationApiOauth2PermissionScope;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)
 
 ---
 
@@ -20198,6 +21672,18 @@ The attribute on the parent resource this class is referencing.
 
 #### Methods <a name="Methods"></a>
 
+##### `putOauth2PermissionScope` <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.putOauth2PermissionScope"></a>
+
+```typescript
+public putOauth2PermissionScope(value: IResolvable | ApplicationApiOauth2PermissionScope[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
+
+---
+
 ##### `resetKnownClientApplications` <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.resetKnownClientApplications"></a>
 
 ```typescript
@@ -20224,6 +21710,16 @@ public resetRequestedAccessTokenVersion()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `oauth2PermissionScope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.oauth2PermissionScope"></a>
+
+```typescript
+public readonly oauth2PermissionScope: ApplicationApiOauth2PermissionScopeList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScopeList)
+
+---
 
 ##### `knownClientApplicationsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.knownClientApplicationsInput"></a>
 
@@ -20285,16 +21781,6 @@ public readonly mappedClaimsEnabled: boolean | IResolvable;
 
 ---
 
-##### `oauth2PermissionScope`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.oauth2PermissionScope"></a>
-
-```typescript
-public readonly oauth2PermissionScope: IResolvable | ApplicationApiOauth2PermissionScope[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope`](#@cdktf/provider-azuread.ApplicationApiOauth2PermissionScope)[]
-
----
-
 ##### `requestedAccessTokenVersion`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationApiOutputReference.property.requestedAccessTokenVersion"></a>
 
 ```typescript
@@ -20312,6 +21798,260 @@ public readonly internalValue: ApplicationApi;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationApi`](#@cdktf/provider-azuread.ApplicationApi)
+
+---
+
+
+### ApplicationAppRoleList <a name="@cdktf/provider-azuread.ApplicationAppRoleList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationAppRoleList.Initializer"></a>
+
+```typescript
+import { ApplicationAppRoleList } from '@cdktf/provider-azuread'
+
+new ApplicationAppRoleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationAppRoleList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationAppRole[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)[]
+
+---
+
+
+### ApplicationAppRoleOutputReference <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationAppRoleOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationAppRoleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetEnabled` <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.resetEnabled"></a>
+
+```typescript
+public resetEnabled()
+```
+
+##### `resetValue` <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.resetValue"></a>
+
+```typescript
+public resetValue()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `allowedMemberTypesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.allowedMemberTypesInput"></a>
+
+```typescript
+public readonly allowedMemberTypesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayNameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.displayNameInput"></a>
+
+```typescript
+public readonly displayNameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `allowedMemberTypes`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.allowedMemberTypes"></a>
+
+```typescript
+public readonly allowedMemberTypes: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationAppRoleOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationAppRole;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationAppRole`](#@cdktf/provider-azuread.ApplicationAppRole)
 
 ---
 
@@ -20454,10 +22194,236 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationCertificateTimeouts;
+public readonly internalValue: IResolvable | ApplicationCertificateTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationCertificateTimeouts`](#@cdktf/provider-azuread.ApplicationCertificateTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationCertificateTimeouts`](#@cdktf/provider-azuread.ApplicationCertificateTimeouts)
+
+---
+
+
+### ApplicationFeatureTagsList <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList.Initializer"></a>
+
+```typescript
+import { ApplicationFeatureTagsList } from '@cdktf/provider-azuread'
+
+new ApplicationFeatureTagsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationFeatureTags[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)[]
+
+---
+
+
+### ApplicationFeatureTagsOutputReference <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationFeatureTagsOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationFeatureTagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCustomSingleSignOn` <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.resetCustomSingleSignOn"></a>
+
+```typescript
+public resetCustomSingleSignOn()
+```
+
+##### `resetEnterprise` <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.resetEnterprise"></a>
+
+```typescript
+public resetEnterprise()
+```
+
+##### `resetGallery` <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.resetGallery"></a>
+
+```typescript
+public resetGallery()
+```
+
+##### `resetHide` <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.resetHide"></a>
+
+```typescript
+public resetHide()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `customSingleSignOnInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.customSingleSignOnInput"></a>
+
+```typescript
+public readonly customSingleSignOnInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enterpriseInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.enterpriseInput"></a>
+
+```typescript
+public readonly enterpriseInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `galleryInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.galleryInput"></a>
+
+```typescript
+public readonly galleryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.hideInput"></a>
+
+```typescript
+public readonly hideInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.customSingleSignOn"></a>
+
+```typescript
+public readonly customSingleSignOn: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.enterprise"></a>
+
+```typescript
+public readonly enterprise: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.gallery"></a>
+
+```typescript
+public readonly gallery: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.hide"></a>
+
+```typescript
+public readonly hide: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFeatureTagsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationFeatureTags;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFeatureTags`](#@cdktf/provider-azuread.ApplicationFeatureTags)
 
 ---
 
@@ -20600,10 +22566,450 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationFederatedIdentityCredentialTimeouts;
+public readonly internalValue: IResolvable | ApplicationFederatedIdentityCredentialTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts`](#@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialTimeouts)
+
+---
+
+
+### ApplicationOptionalClaimsAccessTokenList <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList.Initializer"></a>
+
+```typescript
+import { ApplicationOptionalClaimsAccessTokenList } from '@cdktf/provider-azuread'
+
+new ApplicationOptionalClaimsAccessTokenList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsAccessToken[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
+
+---
+
+
+### ApplicationOptionalClaimsAccessTokenOutputReference <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationOptionalClaimsAccessTokenOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationOptionalClaimsAccessTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetAdditionalProperties` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.resetAdditionalProperties"></a>
+
+```typescript
+public resetAdditionalProperties()
+```
+
+##### `resetEssential` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.resetEssential"></a>
+
+```typescript
+public resetEssential()
+```
+
+##### `resetSource` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.resetSource"></a>
+
+```typescript
+public resetSource()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `additionalPropertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.additionalPropertiesInput"></a>
+
+```typescript
+public readonly additionalPropertiesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `essentialInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.essentialInput"></a>
+
+```typescript
+public readonly essentialInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.additionalProperties"></a>
+
+```typescript
+public readonly additionalProperties: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.essential"></a>
+
+```typescript
+public readonly essential: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsAccessToken;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)
+
+---
+
+
+### ApplicationOptionalClaimsIdTokenList <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList.Initializer"></a>
+
+```typescript
+import { ApplicationOptionalClaimsIdTokenList } from '@cdktf/provider-azuread'
+
+new ApplicationOptionalClaimsIdTokenList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsIdToken[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
+
+---
+
+
+### ApplicationOptionalClaimsIdTokenOutputReference <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationOptionalClaimsIdTokenOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationOptionalClaimsIdTokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetAdditionalProperties` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.resetAdditionalProperties"></a>
+
+```typescript
+public resetAdditionalProperties()
+```
+
+##### `resetEssential` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.resetEssential"></a>
+
+```typescript
+public resetEssential()
+```
+
+##### `resetSource` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.resetSource"></a>
+
+```typescript
+public resetSource()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `additionalPropertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.additionalPropertiesInput"></a>
+
+```typescript
+public readonly additionalPropertiesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `essentialInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.essentialInput"></a>
+
+```typescript
+public readonly essentialInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.additionalProperties"></a>
+
+```typescript
+public readonly additionalProperties: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.essential"></a>
+
+```typescript
+public readonly essential: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsIdToken;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)
 
 ---
 
@@ -20636,6 +23042,42 @@ The attribute on the parent resource this class is referencing.
 
 #### Methods <a name="Methods"></a>
 
+##### `putAccessToken` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.putAccessToken"></a>
+
+```typescript
+public putAccessToken(value: IResolvable | ApplicationOptionalClaimsAccessToken[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
+
+---
+
+##### `putIdToken` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.putIdToken"></a>
+
+```typescript
+public putIdToken(value: IResolvable | ApplicationOptionalClaimsIdToken[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
+
+---
+
+##### `putSaml2Token` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.putSaml2Token"></a>
+
+```typescript
+public putSaml2Token(value: IResolvable | ApplicationOptionalClaimsSaml2Token[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
+
+---
+
 ##### `resetAccessToken` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.resetAccessToken"></a>
 
 ```typescript
@@ -20656,6 +23098,36 @@ public resetSaml2Token()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `accessToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.accessToken"></a>
+
+```typescript
+public readonly accessToken: ApplicationOptionalClaimsAccessTokenList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessTokenList)
+
+---
+
+##### `idToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.idToken"></a>
+
+```typescript
+public readonly idToken: ApplicationOptionalClaimsIdTokenList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdTokenList)
+
+---
+
+##### `saml2Token`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.saml2Token"></a>
+
+```typescript
+public readonly saml2Token: ApplicationOptionalClaimsSaml2TokenList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList)
+
+---
 
 ##### `accessTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.accessTokenInput"></a>
 
@@ -20687,36 +23159,6 @@ public readonly saml2TokenInput: IResolvable | ApplicationOptionalClaimsSaml2Tok
 
 ---
 
-##### `accessToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.accessToken"></a>
-
-```typescript
-public readonly accessToken: IResolvable | ApplicationOptionalClaimsAccessToken[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsAccessToken)[]
-
----
-
-##### `idToken`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.idToken"></a>
-
-```typescript
-public readonly idToken: IResolvable | ApplicationOptionalClaimsIdToken[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken`](#@cdktf/provider-azuread.ApplicationOptionalClaimsIdToken)[]
-
----
-
-##### `saml2Token`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.saml2Token"></a>
-
-```typescript
-public readonly saml2Token: IResolvable | ApplicationOptionalClaimsSaml2Token[];
-```
-
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
-
----
-
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsOutputReference.property.internalValue"></a>
 
 ```typescript
@@ -20724,6 +23166,226 @@ public readonly internalValue: ApplicationOptionalClaims;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationOptionalClaims`](#@cdktf/provider-azuread.ApplicationOptionalClaims)
+
+---
+
+
+### ApplicationOptionalClaimsSaml2TokenList <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList.Initializer"></a>
+
+```typescript
+import { ApplicationOptionalClaimsSaml2TokenList } from '@cdktf/provider-azuread'
+
+new ApplicationOptionalClaimsSaml2TokenList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsSaml2Token[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)[]
+
+---
+
+
+### ApplicationOptionalClaimsSaml2TokenOutputReference <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationOptionalClaimsSaml2TokenOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationOptionalClaimsSaml2TokenOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetAdditionalProperties` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.resetAdditionalProperties"></a>
+
+```typescript
+public resetAdditionalProperties()
+```
+
+##### `resetEssential` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.resetEssential"></a>
+
+```typescript
+public resetEssential()
+```
+
+##### `resetSource` <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.resetSource"></a>
+
+```typescript
+public resetSource()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `additionalPropertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.additionalPropertiesInput"></a>
+
+```typescript
+public readonly additionalPropertiesInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `essentialInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essentialInput"></a>
+
+```typescript
+public readonly essentialInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `additionalProperties`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.additionalProperties"></a>
+
+```typescript
+public readonly additionalProperties: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `essential`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essential"></a>
+
+```typescript
+public readonly essential: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `source`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsSaml2Token;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token`](#@cdktf/provider-azuread.ApplicationOptionalClaimsSaml2Token)
 
 ---
 
@@ -20866,10 +23528,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationPasswordTimeouts;
+public readonly internalValue: IResolvable | ApplicationPasswordTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationPasswordTimeouts`](#@cdktf/provider-azuread.ApplicationPasswordTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationPasswordTimeouts`](#@cdktf/provider-azuread.ApplicationPasswordTimeouts)
 
 ---
 
@@ -21012,10 +23674,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationPreAuthorizedTimeouts;
+public readonly internalValue: IResolvable | ApplicationPreAuthorizedTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts`](#@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts`](#@cdktf/provider-azuread.ApplicationPreAuthorizedTimeouts)
 
 ---
 
@@ -21084,6 +23746,341 @@ public readonly internalValue: ApplicationPublicClient;
 ```
 
 - *Type:* [`@cdktf/provider-azuread.ApplicationPublicClient`](#@cdktf/provider-azuread.ApplicationPublicClient)
+
+---
+
+
+### ApplicationRequiredResourceAccessList <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList.Initializer"></a>
+
+```typescript
+import { ApplicationRequiredResourceAccessList } from '@cdktf/provider-azuread'
+
+new ApplicationRequiredResourceAccessList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationRequiredResourceAccess[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)[]
+
+---
+
+
+### ApplicationRequiredResourceAccessOutputReference <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationRequiredResourceAccessOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationRequiredResourceAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putResourceAccess` <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.putResourceAccess"></a>
+
+```typescript
+public putResourceAccess(value: IResolvable | ApplicationRequiredResourceAccessResourceAccess[])
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.parameter.value"></a>
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess)[]
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `resourceAccess`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.property.resourceAccess"></a>
+
+```typescript
+public readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccessList;
+```
+
+- *Type:* [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList)
+
+---
+
+##### `resourceAccessInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.property.resourceAccessInput"></a>
+
+```typescript
+public readonly resourceAccessInput: IResolvable | ApplicationRequiredResourceAccessResourceAccess[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess)[]
+
+---
+
+##### `resourceAppIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.property.resourceAppIdInput"></a>
+
+```typescript
+public readonly resourceAppIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `resourceAppId`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.property.resourceAppId"></a>
+
+```typescript
+public readonly resourceAppId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationRequiredResourceAccess;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccess)
+
+---
+
+
+### ApplicationRequiredResourceAccessResourceAccessList <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList.Initializer"></a>
+
+```typescript
+import { ApplicationRequiredResourceAccessResourceAccessList } from '@cdktf/provider-azuread'
+
+new ApplicationRequiredResourceAccessResourceAccessList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationRequiredResourceAccessResourceAccess[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess)[]
+
+---
+
+
+### ApplicationRequiredResourceAccessResourceAccessOutputReference <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.Initializer"></a>
+
+```typescript
+import { ApplicationRequiredResourceAccessResourceAccessOutputReference } from '@cdktf/provider-azuread'
+
+new ApplicationRequiredResourceAccessResourceAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ApplicationRequiredResourceAccessResourceAccess;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess`](#@cdktf/provider-azuread.ApplicationRequiredResourceAccessResourceAccess)
 
 ---
 
@@ -21294,10 +24291,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationTimeouts;
+public readonly internalValue: IResolvable | ApplicationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ApplicationTimeouts`](#@cdktf/provider-azuread.ApplicationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ApplicationTimeouts`](#@cdktf/provider-azuread.ApplicationTimeouts)
 
 ---
 
@@ -21666,10 +24663,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppRoleAssignmentTimeouts;
+public readonly internalValue: IResolvable | AppRoleAssignmentTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.AppRoleAssignmentTimeouts`](#@cdktf/provider-azuread.AppRoleAssignmentTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.AppRoleAssignmentTimeouts`](#@cdktf/provider-azuread.AppRoleAssignmentTimeouts)
 
 ---
 
@@ -23065,10 +26062,151 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ConditionalAccessPolicyTimeouts;
+public readonly internalValue: IResolvable | ConditionalAccessPolicyTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts`](#@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts`](#@cdktf/provider-azuread.ConditionalAccessPolicyTimeouts)
+
+---
+
+
+### CustomDirectoryRolePermissionsList <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList.Initializer"></a>
+
+```typescript
+import { CustomDirectoryRolePermissionsList } from '@cdktf/provider-azuread'
+
+new CustomDirectoryRolePermissionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CustomDirectoryRolePermissions[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.CustomDirectoryRolePermissions`](#@cdktf/provider-azuread.CustomDirectoryRolePermissions)[]
+
+---
+
+
+### CustomDirectoryRolePermissionsOutputReference <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.Initializer"></a>
+
+```typescript
+import { CustomDirectoryRolePermissionsOutputReference } from '@cdktf/provider-azuread'
+
+new CustomDirectoryRolePermissionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `allowedResourceActionsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActionsInput"></a>
+
+```typescript
+public readonly allowedResourceActionsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `allowedResourceActions`<sup>Required</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActions"></a>
+
+```typescript
+public readonly allowedResourceActions: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRolePermissionsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CustomDirectoryRolePermissions;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.CustomDirectoryRolePermissions`](#@cdktf/provider-azuread.CustomDirectoryRolePermissions)
 
 ---
 
@@ -23211,10 +26349,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: CustomDirectoryRoleTimeouts;
+public readonly internalValue: IResolvable | CustomDirectoryRoleTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.CustomDirectoryRoleTimeouts`](#@cdktf/provider-azuread.CustomDirectoryRoleTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.CustomDirectoryRoleTimeouts`](#@cdktf/provider-azuread.CustomDirectoryRoleTimeouts)
 
 ---
 
@@ -23357,10 +26495,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadAdministrativeUnitTimeouts;
+public readonly internalValue: IResolvable | DataAzureadAdministrativeUnitTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts`](#@cdktf/provider-azuread.DataAzureadAdministrativeUnitTimeouts)
 
 ---
 
@@ -24795,10 +27933,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadApplicationPublishedAppIdsTimeouts;
+public readonly internalValue: IResolvable | DataAzureadApplicationPublishedAppIdsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsTimeouts)
 
 ---
 
@@ -25243,10 +28381,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadApplicationTemplateTimeouts;
+public readonly internalValue: IResolvable | DataAzureadApplicationTemplateTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTemplateTimeouts)
 
 ---
 
@@ -25311,10 +28449,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadApplicationTimeouts;
+public readonly internalValue: IResolvable | DataAzureadApplicationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadApplicationTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadApplicationTimeouts`](#@cdktf/provider-azuread.DataAzureadApplicationTimeouts)
 
 ---
 
@@ -25659,10 +28797,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadClientConfigTimeouts;
+public readonly internalValue: IResolvable | DataAzureadClientConfigTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadClientConfigTimeouts`](#@cdktf/provider-azuread.DataAzureadClientConfigTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadClientConfigTimeouts`](#@cdktf/provider-azuread.DataAzureadClientConfigTimeouts)
 
 ---
 
@@ -25917,10 +29055,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadDomainsTimeouts;
+public readonly internalValue: IResolvable | DataAzureadDomainsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadDomainsTimeouts`](#@cdktf/provider-azuread.DataAzureadDomainsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadDomainsTimeouts`](#@cdktf/provider-azuread.DataAzureadDomainsTimeouts)
 
 ---
 
@@ -26115,10 +29253,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadGroupsTimeouts;
+public readonly internalValue: IResolvable | DataAzureadGroupsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupsTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadGroupsTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupsTimeouts)
 
 ---
 
@@ -26183,10 +29321,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadGroupTimeouts;
+public readonly internalValue: IResolvable | DataAzureadGroupTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadGroupTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadGroupTimeouts`](#@cdktf/provider-azuread.DataAzureadGroupTimeouts)
 
 ---
 
@@ -27261,10 +30399,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadServicePrincipalsTimeouts;
+public readonly internalValue: IResolvable | DataAzureadServicePrincipalsTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalsTimeouts)
 
 ---
 
@@ -27329,10 +30467,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadServicePrincipalTimeouts;
+public readonly internalValue: IResolvable | DataAzureadServicePrincipalTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts`](#@cdktf/provider-azuread.DataAzureadServicePrincipalTimeouts)
 
 ---
 
@@ -27397,10 +30535,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadUsersTimeouts;
+public readonly internalValue: IResolvable | DataAzureadUsersTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadUsersTimeouts`](#@cdktf/provider-azuread.DataAzureadUsersTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadUsersTimeouts`](#@cdktf/provider-azuread.DataAzureadUsersTimeouts)
 
 ---
 
@@ -27675,10 +30813,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadUserTimeouts;
+public readonly internalValue: IResolvable | DataAzureadUserTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
 
 ---
 
@@ -27821,10 +30959,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DirectoryRoleMemberTimeouts;
+public readonly internalValue: IResolvable | DirectoryRoleMemberTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DirectoryRoleMemberTimeouts`](#@cdktf/provider-azuread.DirectoryRoleMemberTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DirectoryRoleMemberTimeouts`](#@cdktf/provider-azuread.DirectoryRoleMemberTimeouts)
 
 ---
 
@@ -27967,10 +31105,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DirectoryRoleTimeouts;
+public readonly internalValue: IResolvable | DirectoryRoleTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.DirectoryRoleTimeouts`](#@cdktf/provider-azuread.DirectoryRoleTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DirectoryRoleTimeouts`](#@cdktf/provider-azuread.DirectoryRoleTimeouts)
 
 ---
 
@@ -28194,10 +31332,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GroupMemberTimeouts;
+public readonly internalValue: IResolvable | GroupMemberTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.GroupMemberTimeouts`](#@cdktf/provider-azuread.GroupMemberTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.GroupMemberTimeouts`](#@cdktf/provider-azuread.GroupMemberTimeouts)
 
 ---
 
@@ -28340,10 +31478,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GroupTimeouts;
+public readonly internalValue: IResolvable | GroupTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.GroupTimeouts`](#@cdktf/provider-azuread.GroupTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.GroupTimeouts`](#@cdktf/provider-azuread.GroupTimeouts)
 
 ---
 
@@ -28606,10 +31744,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: InvitationTimeouts;
+public readonly internalValue: IResolvable | InvitationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.InvitationTimeouts`](#@cdktf/provider-azuread.InvitationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.InvitationTimeouts`](#@cdktf/provider-azuread.InvitationTimeouts)
 
 ---
 
@@ -28928,10 +32066,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NamedLocationTimeouts;
+public readonly internalValue: IResolvable | NamedLocationTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.NamedLocationTimeouts`](#@cdktf/provider-azuread.NamedLocationTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.NamedLocationTimeouts`](#@cdktf/provider-azuread.NamedLocationTimeouts)
 
 ---
 
@@ -29244,10 +32382,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServicePrincipalCertificateTimeouts;
+public readonly internalValue: IResolvable | ServicePrincipalCertificateTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts`](#@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts`](#@cdktf/provider-azuread.ServicePrincipalCertificateTimeouts)
 
 ---
 
@@ -29390,10 +32528,462 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServicePrincipalDelegatedPermissionGrantTimeouts;
+public readonly internalValue: IResolvable | ServicePrincipalDelegatedPermissionGrantTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts`](#@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantTimeouts)
+
+---
+
+
+### ServicePrincipalFeaturesList <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList.Initializer"></a>
+
+```typescript
+import { ServicePrincipalFeaturesList } from '@cdktf/provider-azuread'
+
+new ServicePrincipalFeaturesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServicePrincipalFeatures[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)[]
+
+---
+
+
+### ServicePrincipalFeaturesOutputReference <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.Initializer"></a>
+
+```typescript
+import { ServicePrincipalFeaturesOutputReference } from '@cdktf/provider-azuread'
+
+new ServicePrincipalFeaturesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCustomSingleSignOnApp` <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.resetCustomSingleSignOnApp"></a>
+
+```typescript
+public resetCustomSingleSignOnApp()
+```
+
+##### `resetEnterpriseApplication` <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.resetEnterpriseApplication"></a>
+
+```typescript
+public resetEnterpriseApplication()
+```
+
+##### `resetGalleryApplication` <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.resetGalleryApplication"></a>
+
+```typescript
+public resetGalleryApplication()
+```
+
+##### `resetVisibleToUsers` <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.resetVisibleToUsers"></a>
+
+```typescript
+public resetVisibleToUsers()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `customSingleSignOnAppInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnAppInput"></a>
+
+```typescript
+public readonly customSingleSignOnAppInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enterpriseApplicationInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.enterpriseApplicationInput"></a>
+
+```typescript
+public readonly enterpriseApplicationInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `galleryApplicationInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.galleryApplicationInput"></a>
+
+```typescript
+public readonly galleryApplicationInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `visibleToUsersInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.visibleToUsersInput"></a>
+
+```typescript
+public readonly visibleToUsersInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `customSingleSignOnApp`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnApp"></a>
+
+```typescript
+public readonly customSingleSignOnApp: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enterpriseApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.enterpriseApplication"></a>
+
+```typescript
+public readonly enterpriseApplication: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `galleryApplication`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.galleryApplication"></a>
+
+```typescript
+public readonly galleryApplication: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `visibleToUsers`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.visibleToUsers"></a>
+
+```typescript
+public readonly visibleToUsers: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeaturesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServicePrincipalFeatures;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatures`](#@cdktf/provider-azuread.ServicePrincipalFeatures)
+
+---
+
+
+### ServicePrincipalFeatureTagsList <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList.Initializer"></a>
+
+```typescript
+import { ServicePrincipalFeatureTagsList } from '@cdktf/provider-azuread'
+
+new ServicePrincipalFeatureTagsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServicePrincipalFeatureTags[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)[]
+
+---
+
+
+### ServicePrincipalFeatureTagsOutputReference <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.Initializer"></a>
+
+```typescript
+import { ServicePrincipalFeatureTagsOutputReference } from '@cdktf/provider-azuread'
+
+new ServicePrincipalFeatureTagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCustomSingleSignOn` <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.resetCustomSingleSignOn"></a>
+
+```typescript
+public resetCustomSingleSignOn()
+```
+
+##### `resetEnterprise` <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.resetEnterprise"></a>
+
+```typescript
+public resetEnterprise()
+```
+
+##### `resetGallery` <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.resetGallery"></a>
+
+```typescript
+public resetGallery()
+```
+
+##### `resetHide` <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.resetHide"></a>
+
+```typescript
+public resetHide()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `customSingleSignOnInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOnInput"></a>
+
+```typescript
+public readonly customSingleSignOnInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enterpriseInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.enterpriseInput"></a>
+
+```typescript
+public readonly enterpriseInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `galleryInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.galleryInput"></a>
+
+```typescript
+public readonly galleryInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hideInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.hideInput"></a>
+
+```typescript
+public readonly hideInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `customSingleSignOn`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOn"></a>
+
+```typescript
+public readonly customSingleSignOn: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `enterprise`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.enterprise"></a>
+
+```typescript
+public readonly enterprise: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `gallery`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.gallery"></a>
+
+```typescript
+public readonly gallery: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `hide`<sup>Required</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.hide"></a>
+
+```typescript
+public readonly hide: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalFeatureTagsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ServicePrincipalFeatureTags;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalFeatureTags`](#@cdktf/provider-azuread.ServicePrincipalFeatureTags)
 
 ---
 
@@ -29726,10 +33316,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServicePrincipalPasswordTimeouts;
+public readonly internalValue: IResolvable | ServicePrincipalPasswordTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts`](#@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts`](#@cdktf/provider-azuread.ServicePrincipalPasswordTimeouts)
 
 ---
 
@@ -29940,10 +33530,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServicePrincipalTimeouts;
+public readonly internalValue: IResolvable | ServicePrincipalTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.ServicePrincipalTimeouts`](#@cdktf/provider-azuread.ServicePrincipalTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.ServicePrincipalTimeouts`](#@cdktf/provider-azuread.ServicePrincipalTimeouts)
 
 ---
 
@@ -30086,10 +33676,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserTimeouts;
+public readonly internalValue: IResolvable | UserTimeouts;
 ```
 
-- *Type:* [`@cdktf/provider-azuread.UserTimeouts`](#@cdktf/provider-azuread.UserTimeouts)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.UserTimeouts`](#@cdktf/provider-azuread.UserTimeouts)
 
 ---
 

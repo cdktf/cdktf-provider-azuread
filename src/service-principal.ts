@@ -38,6 +38,13 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#id ServicePrincipal#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The URL where the service provider redirects the user to Azure AD to authenticate. Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal#login_url ServicePrincipal#login_url}
@@ -332,6 +339,152 @@ export function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipal
   }
 }
 
+export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServicePrincipalFeatureTags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customSingleSignOn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customSingleSignOn = this._customSingleSignOn;
+    }
+    if (this._enterprise !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enterprise = this._enterprise;
+    }
+    if (this._gallery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gallery = this._gallery;
+    }
+    if (this._hide !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hide = this._hide;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalFeatureTags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customSingleSignOn = undefined;
+      this._enterprise = undefined;
+      this._gallery = undefined;
+      this._hide = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customSingleSignOn = value.customSingleSignOn;
+      this._enterprise = value.enterprise;
+      this._gallery = value.gallery;
+      this._hide = value.hide;
+    }
+  }
+
+  // custom_single_sign_on - computed: false, optional: true, required: false
+  private _customSingleSignOn?: boolean | cdktf.IResolvable; 
+  public get customSingleSignOn() {
+    return this.getBooleanAttribute('custom_single_sign_on');
+  }
+  public set customSingleSignOn(value: boolean | cdktf.IResolvable) {
+    this._customSingleSignOn = value;
+  }
+  public resetCustomSingleSignOn() {
+    this._customSingleSignOn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customSingleSignOnInput() {
+    return this._customSingleSignOn;
+  }
+
+  // enterprise - computed: false, optional: true, required: false
+  private _enterprise?: boolean | cdktf.IResolvable; 
+  public get enterprise() {
+    return this.getBooleanAttribute('enterprise');
+  }
+  public set enterprise(value: boolean | cdktf.IResolvable) {
+    this._enterprise = value;
+  }
+  public resetEnterprise() {
+    this._enterprise = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enterpriseInput() {
+    return this._enterprise;
+  }
+
+  // gallery - computed: false, optional: true, required: false
+  private _gallery?: boolean | cdktf.IResolvable; 
+  public get gallery() {
+    return this.getBooleanAttribute('gallery');
+  }
+  public set gallery(value: boolean | cdktf.IResolvable) {
+    this._gallery = value;
+  }
+  public resetGallery() {
+    this._gallery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get galleryInput() {
+    return this._gallery;
+  }
+
+  // hide - computed: false, optional: true, required: false
+  private _hide?: boolean | cdktf.IResolvable; 
+  public get hide() {
+    return this.getBooleanAttribute('hide');
+  }
+  public set hide(value: boolean | cdktf.IResolvable) {
+    this._hide = value;
+  }
+  public resetHide() {
+    this._hide = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideInput() {
+    return this._hide;
+  }
+}
+
+export class ServicePrincipalFeatureTagsList extends cdktf.ComplexList {
+  public internalValue? : ServicePrincipalFeatureTags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServicePrincipalFeatureTagsOutputReference {
+    return new ServicePrincipalFeatureTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServicePrincipalFeatures {
   /**
   * Whether this service principal represents a custom SAML application
@@ -372,6 +525,152 @@ export function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFea
   }
 }
 
+export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServicePrincipalFeatures | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customSingleSignOnApp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customSingleSignOnApp = this._customSingleSignOnApp;
+    }
+    if (this._enterpriseApplication !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enterpriseApplication = this._enterpriseApplication;
+    }
+    if (this._galleryApplication !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.galleryApplication = this._galleryApplication;
+    }
+    if (this._visibleToUsers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.visibleToUsers = this._visibleToUsers;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalFeatures | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customSingleSignOnApp = undefined;
+      this._enterpriseApplication = undefined;
+      this._galleryApplication = undefined;
+      this._visibleToUsers = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customSingleSignOnApp = value.customSingleSignOnApp;
+      this._enterpriseApplication = value.enterpriseApplication;
+      this._galleryApplication = value.galleryApplication;
+      this._visibleToUsers = value.visibleToUsers;
+    }
+  }
+
+  // custom_single_sign_on_app - computed: false, optional: true, required: false
+  private _customSingleSignOnApp?: boolean | cdktf.IResolvable; 
+  public get customSingleSignOnApp() {
+    return this.getBooleanAttribute('custom_single_sign_on_app');
+  }
+  public set customSingleSignOnApp(value: boolean | cdktf.IResolvable) {
+    this._customSingleSignOnApp = value;
+  }
+  public resetCustomSingleSignOnApp() {
+    this._customSingleSignOnApp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customSingleSignOnAppInput() {
+    return this._customSingleSignOnApp;
+  }
+
+  // enterprise_application - computed: false, optional: true, required: false
+  private _enterpriseApplication?: boolean | cdktf.IResolvable; 
+  public get enterpriseApplication() {
+    return this.getBooleanAttribute('enterprise_application');
+  }
+  public set enterpriseApplication(value: boolean | cdktf.IResolvable) {
+    this._enterpriseApplication = value;
+  }
+  public resetEnterpriseApplication() {
+    this._enterpriseApplication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enterpriseApplicationInput() {
+    return this._enterpriseApplication;
+  }
+
+  // gallery_application - computed: false, optional: true, required: false
+  private _galleryApplication?: boolean | cdktf.IResolvable; 
+  public get galleryApplication() {
+    return this.getBooleanAttribute('gallery_application');
+  }
+  public set galleryApplication(value: boolean | cdktf.IResolvable) {
+    this._galleryApplication = value;
+  }
+  public resetGalleryApplication() {
+    this._galleryApplication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get galleryApplicationInput() {
+    return this._galleryApplication;
+  }
+
+  // visible_to_users - computed: false, optional: true, required: false
+  private _visibleToUsers?: boolean | cdktf.IResolvable; 
+  public get visibleToUsers() {
+    return this.getBooleanAttribute('visible_to_users');
+  }
+  public set visibleToUsers(value: boolean | cdktf.IResolvable) {
+    this._visibleToUsers = value;
+  }
+  public resetVisibleToUsers() {
+    this._visibleToUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibleToUsersInput() {
+    return this._visibleToUsers;
+  }
+}
+
+export class ServicePrincipalFeaturesList extends cdktf.ComplexList {
+  public internalValue? : ServicePrincipalFeatures[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServicePrincipalFeaturesOutputReference {
+    return new ServicePrincipalFeaturesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServicePrincipalSamlSingleSignOn {
   /**
   * The relative URI the service provider would redirect to after completion of the single sign-on flow
@@ -473,6 +772,7 @@ export function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTim
 
 export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -482,7 +782,10 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ServicePrincipalTimeouts | undefined {
+  public get internalValue(): ServicePrincipalTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -504,16 +807,22 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicePrincipalTimeouts | undefined) {
+  public set internalValue(value: ServicePrincipalTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -625,6 +934,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     this._appRoleAssignmentRequired = config.appRoleAssignmentRequired;
     this._applicationId = config.applicationId;
     this._description = config.description;
+    this._id = config.id;
     this._loginUrl = config.loginUrl;
     this._notes = config.notes;
     this._notificationEmailAddresses = config.notificationEmailAddresses;
@@ -632,8 +942,8 @@ export class ServicePrincipal extends cdktf.TerraformResource {
     this._preferredSingleSignOnMode = config.preferredSingleSignOnMode;
     this._tags = config.tags;
     this._useExisting = config.useExisting;
-    this._featureTags = config.featureTags;
-    this._features = config.features;
+    this._featureTags.internalValue = config.featureTags;
+    this._features.internalValue = config.features;
     this._samlSingleSignOn.internalValue = config.samlSingleSignOn;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -691,8 +1001,9 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // app_role_ids - computed: true, optional: false, required: false
-  public appRoleIds(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'app_role_ids').lookup(key);
+  private _appRoleIds = new cdktf.StringMap(this, "app_role_ids");
+  public get appRoleIds() {
+    return this._appRoleIds;
   }
 
   // app_roles - computed: true, optional: false, required: false
@@ -746,8 +1057,19 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // login_url - computed: false, optional: true, required: false
@@ -804,8 +1126,9 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
-  public oauth2PermissionScopeIds(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'oauth2_permission_scope_ids').lookup(key);
+  private _oauth2PermissionScopeIds = new cdktf.StringMap(this, "oauth2_permission_scope_ids");
+  public get oauth2PermissionScopeIds() {
+    return this._oauth2PermissionScopeIds;
   }
 
   // oauth2_permission_scopes - computed: true, optional: false, required: false
@@ -909,37 +1232,35 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // feature_tags - computed: false, optional: true, required: false
-  private _featureTags?: ServicePrincipalFeatureTags[] | cdktf.IResolvable; 
+  private _featureTags = new ServicePrincipalFeatureTagsList(this, "feature_tags", false);
   public get featureTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('feature_tags');
+    return this._featureTags;
   }
-  public set featureTags(value: ServicePrincipalFeatureTags[] | cdktf.IResolvable) {
-    this._featureTags = value;
+  public putFeatureTags(value: ServicePrincipalFeatureTags[] | cdktf.IResolvable) {
+    this._featureTags.internalValue = value;
   }
   public resetFeatureTags() {
-    this._featureTags = undefined;
+    this._featureTags.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get featureTagsInput() {
-    return this._featureTags;
+    return this._featureTags.internalValue;
   }
 
   // features - computed: false, optional: true, required: false
-  private _features?: ServicePrincipalFeatures[] | cdktf.IResolvable; 
+  private _features = new ServicePrincipalFeaturesList(this, "features", false);
   public get features() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('features');
+    return this._features;
   }
-  public set features(value: ServicePrincipalFeatures[] | cdktf.IResolvable) {
-    this._features = value;
+  public putFeatures(value: ServicePrincipalFeatures[] | cdktf.IResolvable) {
+    this._features.internalValue = value;
   }
   public resetFeatures() {
-    this._features = undefined;
+    this._features.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get featuresInput() {
-    return this._features;
+    return this._features.internalValue;
   }
 
   // saml_single_sign_on - computed: false, optional: true, required: false
@@ -985,6 +1306,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       app_role_assignment_required: cdktf.booleanToTerraform(this._appRoleAssignmentRequired),
       application_id: cdktf.stringToTerraform(this._applicationId),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       login_url: cdktf.stringToTerraform(this._loginUrl),
       notes: cdktf.stringToTerraform(this._notes),
       notification_email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationEmailAddresses),
@@ -992,8 +1314,8 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       preferred_single_sign_on_mode: cdktf.stringToTerraform(this._preferredSingleSignOnMode),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       use_existing: cdktf.booleanToTerraform(this._useExisting),
-      feature_tags: cdktf.listMapper(servicePrincipalFeatureTagsToTerraform)(this._featureTags),
-      features: cdktf.listMapper(servicePrincipalFeaturesToTerraform)(this._features),
+      feature_tags: cdktf.listMapper(servicePrincipalFeatureTagsToTerraform)(this._featureTags.internalValue),
+      features: cdktf.listMapper(servicePrincipalFeaturesToTerraform)(this._features.internalValue),
       saml_single_sign_on: servicePrincipalSamlSingleSignOnToTerraform(this._samlSingleSignOn.internalValue),
       timeouts: servicePrincipalTimeoutsToTerraform(this._timeouts.internalValue),
     };

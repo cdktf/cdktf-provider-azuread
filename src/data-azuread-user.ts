@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadUserConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#id DataAzureadUser#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The email alias of the user
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#mail_nickname DataAzureadUser#mail_nickname}
@@ -51,6 +58,7 @@ export function dataAzureadUserTimeoutsToTerraform(struct?: DataAzureadUserTimeo
 
 export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -60,7 +68,10 @@ export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DataAzureadUserTimeouts | undefined {
+  public get internalValue(): DataAzureadUserTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._read !== undefined) {
@@ -70,13 +81,19 @@ export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadUserTimeouts | undefined) {
+  public set internalValue(value: DataAzureadUserTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._read = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._read = value.read;
     }
   }
@@ -132,6 +149,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._mailNickname = config.mailNickname;
     this._objectId = config.objectId;
     this._userPrincipalName = config.userPrincipalName;
@@ -228,8 +246,19 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // im_addresses - computed: true, optional: false, required: false
@@ -417,6 +446,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       object_id: cdktf.stringToTerraform(this._objectId),
       user_principal_name: cdktf.stringToTerraform(this._userPrincipalName),

@@ -26,6 +26,13 @@ export interface AdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hiddenMembershipEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#id AdministrativeUnit#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A set of object IDs of members who should be present in this administrative unit. Supported object types are Users or Groups
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#members AdministrativeUnit#members}
@@ -78,6 +85,7 @@ export function administrativeUnitTimeoutsToTerraform(struct?: AdministrativeUni
 
 export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -87,7 +95,10 @@ export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): AdministrativeUnitTimeouts | undefined {
+  public get internalValue(): AdministrativeUnitTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -109,16 +120,22 @@ export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AdministrativeUnitTimeouts | undefined) {
+  public set internalValue(value: AdministrativeUnitTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -228,6 +245,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
     this._description = config.description;
     this._displayName = config.displayName;
     this._hiddenMembershipEnabled = config.hiddenMembershipEnabled;
+    this._id = config.id;
     this._members = config.members;
     this._preventDuplicateNames = config.preventDuplicateNames;
     this._timeouts.internalValue = config.timeouts;
@@ -283,8 +301,19 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // members - computed: true, optional: true, required: false
@@ -349,6 +378,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
       hidden_membership_enabled: cdktf.booleanToTerraform(this._hiddenMembershipEnabled),
+      id: cdktf.stringToTerraform(this._id),
       members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
       prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
       timeouts: administrativeUnitTimeoutsToTerraform(this._timeouts.internalValue),
