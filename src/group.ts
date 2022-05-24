@@ -56,6 +56,13 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hideFromOutlookClients?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#id Group#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Whether the group is a mail enabled, with a shared group mailbox. At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#mail_enabled Group#mail_enabled}
@@ -250,6 +257,7 @@ export function groupTimeoutsToTerraform(struct?: GroupTimeoutsOutputReference |
 
 export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -259,7 +267,10 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GroupTimeouts | undefined {
+  public get internalValue(): GroupTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -281,16 +292,22 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GroupTimeouts | undefined) {
+  public set internalValue(value: GroupTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -405,6 +422,7 @@ export class Group extends cdktf.TerraformResource {
     this._externalSendersAllowed = config.externalSendersAllowed;
     this._hideFromAddressLists = config.hideFromAddressLists;
     this._hideFromOutlookClients = config.hideFromOutlookClients;
+    this._id = config.id;
     this._mailEnabled = config.mailEnabled;
     this._mailNickname = config.mailNickname;
     this._members = config.members;
@@ -549,8 +567,19 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // mail - computed: true, optional: false, required: false
@@ -804,6 +833,7 @@ export class Group extends cdktf.TerraformResource {
       external_senders_allowed: cdktf.booleanToTerraform(this._externalSendersAllowed),
       hide_from_address_lists: cdktf.booleanToTerraform(this._hideFromAddressLists),
       hide_from_outlook_clients: cdktf.booleanToTerraform(this._hideFromOutlookClients),
+      id: cdktf.stringToTerraform(this._id),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),

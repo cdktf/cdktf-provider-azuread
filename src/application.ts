@@ -32,6 +32,13 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupMembershipClaims?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#identifier_uris Application#identifier_uris}
@@ -181,6 +188,9 @@ export interface ApplicationApiOauth2PermissionScope {
   * The unique identifier of the delegated permission
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -226,6 +236,237 @@ export function applicationApiOauth2PermissionScopeToTerraform(struct?: Applicat
   }
 }
 
+export class ApplicationApiOauth2PermissionScopeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationApiOauth2PermissionScope | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._adminConsentDescription !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.adminConsentDescription = this._adminConsentDescription;
+    }
+    if (this._adminConsentDisplayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.adminConsentDisplayName = this._adminConsentDisplayName;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._userConsentDescription !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userConsentDescription = this._userConsentDescription;
+    }
+    if (this._userConsentDisplayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userConsentDisplayName = this._userConsentDisplayName;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationApiOauth2PermissionScope | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._adminConsentDescription = undefined;
+      this._adminConsentDisplayName = undefined;
+      this._enabled = undefined;
+      this._id = undefined;
+      this._type = undefined;
+      this._userConsentDescription = undefined;
+      this._userConsentDisplayName = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._adminConsentDescription = value.adminConsentDescription;
+      this._adminConsentDisplayName = value.adminConsentDisplayName;
+      this._enabled = value.enabled;
+      this._id = value.id;
+      this._type = value.type;
+      this._userConsentDescription = value.userConsentDescription;
+      this._userConsentDisplayName = value.userConsentDisplayName;
+      this._value = value.value;
+    }
+  }
+
+  // admin_consent_description - computed: false, optional: true, required: false
+  private _adminConsentDescription?: string; 
+  public get adminConsentDescription() {
+    return this.getStringAttribute('admin_consent_description');
+  }
+  public set adminConsentDescription(value: string) {
+    this._adminConsentDescription = value;
+  }
+  public resetAdminConsentDescription() {
+    this._adminConsentDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminConsentDescriptionInput() {
+    return this._adminConsentDescription;
+  }
+
+  // admin_consent_display_name - computed: false, optional: true, required: false
+  private _adminConsentDisplayName?: string; 
+  public get adminConsentDisplayName() {
+    return this.getStringAttribute('admin_consent_display_name');
+  }
+  public set adminConsentDisplayName(value: string) {
+    this._adminConsentDisplayName = value;
+  }
+  public resetAdminConsentDisplayName() {
+    this._adminConsentDisplayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminConsentDisplayNameInput() {
+    return this._adminConsentDisplayName;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // user_consent_description - computed: false, optional: true, required: false
+  private _userConsentDescription?: string; 
+  public get userConsentDescription() {
+    return this.getStringAttribute('user_consent_description');
+  }
+  public set userConsentDescription(value: string) {
+    this._userConsentDescription = value;
+  }
+  public resetUserConsentDescription() {
+    this._userConsentDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userConsentDescriptionInput() {
+    return this._userConsentDescription;
+  }
+
+  // user_consent_display_name - computed: false, optional: true, required: false
+  private _userConsentDisplayName?: string; 
+  public get userConsentDisplayName() {
+    return this.getStringAttribute('user_consent_display_name');
+  }
+  public set userConsentDisplayName(value: string) {
+    this._userConsentDisplayName = value;
+  }
+  public resetUserConsentDisplayName() {
+    this._userConsentDisplayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userConsentDisplayNameInput() {
+    return this._userConsentDisplayName;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ApplicationApiOauth2PermissionScopeList extends cdktf.ComplexList {
+  public internalValue? : ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationApiOauth2PermissionScopeOutputReference {
+    return new ApplicationApiOauth2PermissionScopeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationApi {
   /**
   * Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app
@@ -292,9 +533,9 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.requestedAccessTokenVersion = this._requestedAccessTokenVersion;
     }
-    if (this._oauth2PermissionScope !== undefined) {
+    if (this._oauth2PermissionScope?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.oauth2PermissionScope = this._oauth2PermissionScope;
+      internalValueResult.oauth2PermissionScope = this._oauth2PermissionScope?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -305,14 +546,14 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
       this._knownClientApplications = undefined;
       this._mappedClaimsEnabled = undefined;
       this._requestedAccessTokenVersion = undefined;
-      this._oauth2PermissionScope = undefined;
+      this._oauth2PermissionScope.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._knownClientApplications = value.knownClientApplications;
       this._mappedClaimsEnabled = value.mappedClaimsEnabled;
       this._requestedAccessTokenVersion = value.requestedAccessTokenVersion;
-      this._oauth2PermissionScope = value.oauth2PermissionScope;
+      this._oauth2PermissionScope.internalValue = value.oauth2PermissionScope;
     }
   }
 
@@ -365,20 +606,19 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
   }
 
   // oauth2_permission_scope - computed: false, optional: true, required: false
-  private _oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable; 
+  private _oauth2PermissionScope = new ApplicationApiOauth2PermissionScopeList(this, "oauth2_permission_scope", true);
   public get oauth2PermissionScope() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('oauth2_permission_scope')));
+    return this._oauth2PermissionScope;
   }
-  public set oauth2PermissionScope(value: ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable) {
-    this._oauth2PermissionScope = value;
+  public putOauth2PermissionScope(value: ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable) {
+    this._oauth2PermissionScope.internalValue = value;
   }
   public resetOauth2PermissionScope() {
-    this._oauth2PermissionScope = undefined;
+    this._oauth2PermissionScope.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get oauth2PermissionScopeInput() {
-    return this._oauth2PermissionScope;
+    return this._oauth2PermissionScope.internalValue;
   }
 }
 export interface ApplicationAppRole {
@@ -410,6 +650,9 @@ export interface ApplicationAppRole {
   * The unique identifier of the app role
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -435,6 +678,184 @@ export function applicationAppRoleToTerraform(struct?: ApplicationAppRole | cdkt
   }
 }
 
+export class ApplicationAppRoleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationAppRole | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedMemberTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedMemberTypes = this._allowedMemberTypes;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._displayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.displayName = this._displayName;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationAppRole | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowedMemberTypes = undefined;
+      this._description = undefined;
+      this._displayName = undefined;
+      this._enabled = undefined;
+      this._id = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowedMemberTypes = value.allowedMemberTypes;
+      this._description = value.description;
+      this._displayName = value.displayName;
+      this._enabled = value.enabled;
+      this._id = value.id;
+      this._value = value.value;
+    }
+  }
+
+  // allowed_member_types - computed: false, optional: false, required: true
+  private _allowedMemberTypes?: string[]; 
+  public get allowedMemberTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_member_types'));
+  }
+  public set allowedMemberTypes(value: string[]) {
+    this._allowedMemberTypes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedMemberTypesInput() {
+    return this._allowedMemberTypes;
+  }
+
+  // description - computed: false, optional: false, required: true
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // display_name - computed: false, optional: false, required: true
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ApplicationAppRoleList extends cdktf.ComplexList {
+  public internalValue? : ApplicationAppRole[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationAppRoleOutputReference {
+    return new ApplicationAppRoleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationFeatureTags {
   /**
   * Whether this application represents a custom SAML application for linked service principals
@@ -475,6 +896,152 @@ export function applicationFeatureTagsToTerraform(struct?: ApplicationFeatureTag
   }
 }
 
+export class ApplicationFeatureTagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationFeatureTags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customSingleSignOn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customSingleSignOn = this._customSingleSignOn;
+    }
+    if (this._enterprise !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enterprise = this._enterprise;
+    }
+    if (this._gallery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gallery = this._gallery;
+    }
+    if (this._hide !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hide = this._hide;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationFeatureTags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customSingleSignOn = undefined;
+      this._enterprise = undefined;
+      this._gallery = undefined;
+      this._hide = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customSingleSignOn = value.customSingleSignOn;
+      this._enterprise = value.enterprise;
+      this._gallery = value.gallery;
+      this._hide = value.hide;
+    }
+  }
+
+  // custom_single_sign_on - computed: false, optional: true, required: false
+  private _customSingleSignOn?: boolean | cdktf.IResolvable; 
+  public get customSingleSignOn() {
+    return this.getBooleanAttribute('custom_single_sign_on');
+  }
+  public set customSingleSignOn(value: boolean | cdktf.IResolvable) {
+    this._customSingleSignOn = value;
+  }
+  public resetCustomSingleSignOn() {
+    this._customSingleSignOn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customSingleSignOnInput() {
+    return this._customSingleSignOn;
+  }
+
+  // enterprise - computed: false, optional: true, required: false
+  private _enterprise?: boolean | cdktf.IResolvable; 
+  public get enterprise() {
+    return this.getBooleanAttribute('enterprise');
+  }
+  public set enterprise(value: boolean | cdktf.IResolvable) {
+    this._enterprise = value;
+  }
+  public resetEnterprise() {
+    this._enterprise = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enterpriseInput() {
+    return this._enterprise;
+  }
+
+  // gallery - computed: false, optional: true, required: false
+  private _gallery?: boolean | cdktf.IResolvable; 
+  public get gallery() {
+    return this.getBooleanAttribute('gallery');
+  }
+  public set gallery(value: boolean | cdktf.IResolvable) {
+    this._gallery = value;
+  }
+  public resetGallery() {
+    this._gallery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get galleryInput() {
+    return this._gallery;
+  }
+
+  // hide - computed: false, optional: true, required: false
+  private _hide?: boolean | cdktf.IResolvable; 
+  public get hide() {
+    return this.getBooleanAttribute('hide');
+  }
+  public set hide(value: boolean | cdktf.IResolvable) {
+    this._hide = value;
+  }
+  public resetHide() {
+    this._hide = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideInput() {
+    return this._hide;
+  }
+}
+
+export class ApplicationFeatureTagsList extends cdktf.ComplexList {
+  public internalValue? : ApplicationFeatureTags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationFeatureTagsOutputReference {
+    return new ApplicationFeatureTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationOptionalClaimsAccessToken {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
@@ -515,6 +1082,149 @@ export function applicationOptionalClaimsAccessTokenToTerraform(struct?: Applica
   }
 }
 
+export class ApplicationOptionalClaimsAccessTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationOptionalClaimsAccessToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._additionalProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.additionalProperties = this._additionalProperties;
+    }
+    if (this._essential !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.essential = this._essential;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationOptionalClaimsAccessToken | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._additionalProperties = undefined;
+      this._essential = undefined;
+      this._name = undefined;
+      this._source = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._additionalProperties = value.additionalProperties;
+      this._essential = value.essential;
+      this._name = value.name;
+      this._source = value.source;
+    }
+  }
+
+  // additional_properties - computed: false, optional: true, required: false
+  private _additionalProperties?: string[]; 
+  public get additionalProperties() {
+    return this.getListAttribute('additional_properties');
+  }
+  public set additionalProperties(value: string[]) {
+    this._additionalProperties = value;
+  }
+  public resetAdditionalProperties() {
+    this._additionalProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalPropertiesInput() {
+    return this._additionalProperties;
+  }
+
+  // essential - computed: false, optional: true, required: false
+  private _essential?: boolean | cdktf.IResolvable; 
+  public get essential() {
+    return this.getBooleanAttribute('essential');
+  }
+  public set essential(value: boolean | cdktf.IResolvable) {
+    this._essential = value;
+  }
+  public resetEssential() {
+    this._essential = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get essentialInput() {
+    return this._essential;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+}
+
+export class ApplicationOptionalClaimsAccessTokenList extends cdktf.ComplexList {
+  public internalValue? : ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationOptionalClaimsAccessTokenOutputReference {
+    return new ApplicationOptionalClaimsAccessTokenOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationOptionalClaimsIdToken {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
@@ -555,6 +1265,149 @@ export function applicationOptionalClaimsIdTokenToTerraform(struct?: Application
   }
 }
 
+export class ApplicationOptionalClaimsIdTokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationOptionalClaimsIdToken | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._additionalProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.additionalProperties = this._additionalProperties;
+    }
+    if (this._essential !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.essential = this._essential;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationOptionalClaimsIdToken | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._additionalProperties = undefined;
+      this._essential = undefined;
+      this._name = undefined;
+      this._source = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._additionalProperties = value.additionalProperties;
+      this._essential = value.essential;
+      this._name = value.name;
+      this._source = value.source;
+    }
+  }
+
+  // additional_properties - computed: false, optional: true, required: false
+  private _additionalProperties?: string[]; 
+  public get additionalProperties() {
+    return this.getListAttribute('additional_properties');
+  }
+  public set additionalProperties(value: string[]) {
+    this._additionalProperties = value;
+  }
+  public resetAdditionalProperties() {
+    this._additionalProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalPropertiesInput() {
+    return this._additionalProperties;
+  }
+
+  // essential - computed: false, optional: true, required: false
+  private _essential?: boolean | cdktf.IResolvable; 
+  public get essential() {
+    return this.getBooleanAttribute('essential');
+  }
+  public set essential(value: boolean | cdktf.IResolvable) {
+    this._essential = value;
+  }
+  public resetEssential() {
+    this._essential = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get essentialInput() {
+    return this._essential;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+}
+
+export class ApplicationOptionalClaimsIdTokenList extends cdktf.ComplexList {
+  public internalValue? : ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationOptionalClaimsIdTokenOutputReference {
+    return new ApplicationOptionalClaimsIdTokenOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationOptionalClaimsSaml2Token {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
@@ -595,6 +1448,149 @@ export function applicationOptionalClaimsSaml2TokenToTerraform(struct?: Applicat
   }
 }
 
+export class ApplicationOptionalClaimsSaml2TokenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationOptionalClaimsSaml2Token | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._additionalProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.additionalProperties = this._additionalProperties;
+    }
+    if (this._essential !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.essential = this._essential;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationOptionalClaimsSaml2Token | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._additionalProperties = undefined;
+      this._essential = undefined;
+      this._name = undefined;
+      this._source = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._additionalProperties = value.additionalProperties;
+      this._essential = value.essential;
+      this._name = value.name;
+      this._source = value.source;
+    }
+  }
+
+  // additional_properties - computed: false, optional: true, required: false
+  private _additionalProperties?: string[]; 
+  public get additionalProperties() {
+    return this.getListAttribute('additional_properties');
+  }
+  public set additionalProperties(value: string[]) {
+    this._additionalProperties = value;
+  }
+  public resetAdditionalProperties() {
+    this._additionalProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalPropertiesInput() {
+    return this._additionalProperties;
+  }
+
+  // essential - computed: false, optional: true, required: false
+  private _essential?: boolean | cdktf.IResolvable; 
+  public get essential() {
+    return this.getBooleanAttribute('essential');
+  }
+  public set essential(value: boolean | cdktf.IResolvable) {
+    this._essential = value;
+  }
+  public resetEssential() {
+    this._essential = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get essentialInput() {
+    return this._essential;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+}
+
+export class ApplicationOptionalClaimsSaml2TokenList extends cdktf.ComplexList {
+  public internalValue? : ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationOptionalClaimsSaml2TokenOutputReference {
+    return new ApplicationOptionalClaimsSaml2TokenOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationOptionalClaims {
   /**
   * access_token block
@@ -642,17 +1638,17 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   public get internalValue(): ApplicationOptionalClaims | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accessToken !== undefined) {
+    if (this._accessToken?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.accessToken = this._accessToken;
+      internalValueResult.accessToken = this._accessToken?.internalValue;
     }
-    if (this._idToken !== undefined) {
+    if (this._idToken?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.idToken = this._idToken;
+      internalValueResult.idToken = this._idToken?.internalValue;
     }
-    if (this._saml2Token !== undefined) {
+    if (this._saml2Token?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.saml2Token = this._saml2Token;
+      internalValueResult.saml2Token = this._saml2Token?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -660,67 +1656,64 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
   public set internalValue(value: ApplicationOptionalClaims | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._accessToken = undefined;
-      this._idToken = undefined;
-      this._saml2Token = undefined;
+      this._accessToken.internalValue = undefined;
+      this._idToken.internalValue = undefined;
+      this._saml2Token.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._accessToken = value.accessToken;
-      this._idToken = value.idToken;
-      this._saml2Token = value.saml2Token;
+      this._accessToken.internalValue = value.accessToken;
+      this._idToken.internalValue = value.idToken;
+      this._saml2Token.internalValue = value.saml2Token;
     }
   }
 
   // access_token - computed: false, optional: true, required: false
-  private _accessToken?: ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable; 
+  private _accessToken = new ApplicationOptionalClaimsAccessTokenList(this, "access_token", false);
   public get accessToken() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('access_token');
+    return this._accessToken;
   }
-  public set accessToken(value: ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable) {
-    this._accessToken = value;
+  public putAccessToken(value: ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable) {
+    this._accessToken.internalValue = value;
   }
   public resetAccessToken() {
-    this._accessToken = undefined;
+    this._accessToken.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accessTokenInput() {
-    return this._accessToken;
+    return this._accessToken.internalValue;
   }
 
   // id_token - computed: false, optional: true, required: false
-  private _idToken?: ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable; 
+  private _idToken = new ApplicationOptionalClaimsIdTokenList(this, "id_token", false);
   public get idToken() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('id_token');
+    return this._idToken;
   }
-  public set idToken(value: ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable) {
-    this._idToken = value;
+  public putIdToken(value: ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable) {
+    this._idToken.internalValue = value;
   }
   public resetIdToken() {
-    this._idToken = undefined;
+    this._idToken.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get idTokenInput() {
-    return this._idToken;
+    return this._idToken.internalValue;
   }
 
   // saml2_token - computed: false, optional: true, required: false
-  private _saml2Token?: ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable; 
+  private _saml2Token = new ApplicationOptionalClaimsSaml2TokenList(this, "saml2_token", false);
   public get saml2Token() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml2_token');
+    return this._saml2Token;
   }
-  public set saml2Token(value: ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable) {
-    this._saml2Token = value;
+  public putSaml2Token(value: ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable) {
+    this._saml2Token.internalValue = value;
   }
   public resetSaml2Token() {
-    this._saml2Token = undefined;
+    this._saml2Token.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get saml2TokenInput() {
-    return this._saml2Token;
+    return this._saml2Token.internalValue;
   }
 }
 export interface ApplicationPublicClient {
@@ -793,6 +1786,9 @@ export class ApplicationPublicClientOutputReference extends cdktf.ComplexObject 
 export interface ApplicationRequiredResourceAccessResourceAccess {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#id Application#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -812,6 +1808,102 @@ export function applicationRequiredResourceAccessResourceAccessToTerraform(struc
   }
 }
 
+export class ApplicationRequiredResourceAccessResourceAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationRequiredResourceAccessResourceAccess | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationRequiredResourceAccessResourceAccess | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ApplicationRequiredResourceAccessResourceAccessList extends cdktf.ComplexList {
+  public internalValue? : ApplicationRequiredResourceAccessResourceAccess[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationRequiredResourceAccessResourceAccessOutputReference {
+    return new ApplicationRequiredResourceAccessResourceAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationRequiredResourceAccess {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#resource_app_id Application#resource_app_id}
@@ -836,6 +1928,102 @@ export function applicationRequiredResourceAccessToTerraform(struct?: Applicatio
   }
 }
 
+export class ApplicationRequiredResourceAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ApplicationRequiredResourceAccess | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceAppId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceAppId = this._resourceAppId;
+    }
+    if (this._resourceAccess?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceAccess = this._resourceAccess?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApplicationRequiredResourceAccess | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._resourceAppId = undefined;
+      this._resourceAccess.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._resourceAppId = value.resourceAppId;
+      this._resourceAccess.internalValue = value.resourceAccess;
+    }
+  }
+
+  // resource_app_id - computed: false, optional: false, required: true
+  private _resourceAppId?: string; 
+  public get resourceAppId() {
+    return this.getStringAttribute('resource_app_id');
+  }
+  public set resourceAppId(value: string) {
+    this._resourceAppId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceAppIdInput() {
+    return this._resourceAppId;
+  }
+
+  // resource_access - computed: false, optional: false, required: true
+  private _resourceAccess = new ApplicationRequiredResourceAccessResourceAccessList(this, "resource_access", false);
+  public get resourceAccess() {
+    return this._resourceAccess;
+  }
+  public putResourceAccess(value: ApplicationRequiredResourceAccessResourceAccess[] | cdktf.IResolvable) {
+    this._resourceAccess.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceAccessInput() {
+    return this._resourceAccess.internalValue;
+  }
+}
+
+export class ApplicationRequiredResourceAccessList extends cdktf.ComplexList {
+  public internalValue? : ApplicationRequiredResourceAccess[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ApplicationRequiredResourceAccessOutputReference {
+    return new ApplicationRequiredResourceAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ApplicationSinglePageApplication {
   /**
   * The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent
@@ -937,6 +2125,7 @@ export function applicationTimeoutsToTerraform(struct?: ApplicationTimeoutsOutpu
 
 export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -946,7 +2135,10 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ApplicationTimeouts | undefined {
+  public get internalValue(): ApplicationTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -968,16 +2160,22 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationTimeouts | undefined) {
+  public set internalValue(value: ApplicationTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -1338,6 +2536,7 @@ export class Application extends cdktf.TerraformResource {
     this._displayName = config.displayName;
     this._fallbackPublicClientEnabled = config.fallbackPublicClientEnabled;
     this._groupMembershipClaims = config.groupMembershipClaims;
+    this._id = config.id;
     this._identifierUris = config.identifierUris;
     this._logoImage = config.logoImage;
     this._marketingUrl = config.marketingUrl;
@@ -1351,11 +2550,11 @@ export class Application extends cdktf.TerraformResource {
     this._templateId = config.templateId;
     this._termsOfServiceUrl = config.termsOfServiceUrl;
     this._api.internalValue = config.api;
-    this._appRole = config.appRole;
-    this._featureTags = config.featureTags;
+    this._appRole.internalValue = config.appRole;
+    this._featureTags.internalValue = config.featureTags;
     this._optionalClaims.internalValue = config.optionalClaims;
     this._publicClient.internalValue = config.publicClient;
-    this._requiredResourceAccess = config.requiredResourceAccess;
+    this._requiredResourceAccess.internalValue = config.requiredResourceAccess;
     this._singlePageApplication.internalValue = config.singlePageApplication;
     this._timeouts.internalValue = config.timeouts;
     this._web.internalValue = config.web;
@@ -1366,8 +2565,9 @@ export class Application extends cdktf.TerraformResource {
   // ==========
 
   // app_role_ids - computed: true, optional: false, required: false
-  public appRoleIds(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'app_role_ids').lookup(key);
+  private _appRoleIds = new cdktf.StringMap(this, "app_role_ids");
+  public get appRoleIds() {
+    return this._appRoleIds;
   }
 
   // application_id - computed: true, optional: false, required: false
@@ -1442,8 +2642,19 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // identifier_uris - computed: false, optional: true, required: false
@@ -1500,8 +2711,9 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
-  public oauth2PermissionScopeIds(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'oauth2_permission_scope_ids').lookup(key);
+  private _oauth2PermissionScopeIds = new cdktf.StringMap(this, "oauth2_permission_scope_ids");
+  public get oauth2PermissionScopeIds() {
+    return this._oauth2PermissionScopeIds;
   }
 
   // oauth2_post_response_required - computed: false, optional: true, required: false
@@ -1675,37 +2887,35 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // app_role - computed: false, optional: true, required: false
-  private _appRole?: ApplicationAppRole[] | cdktf.IResolvable; 
+  private _appRole = new ApplicationAppRoleList(this, "app_role", true);
   public get appRole() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_role')));
+    return this._appRole;
   }
-  public set appRole(value: ApplicationAppRole[] | cdktf.IResolvable) {
-    this._appRole = value;
+  public putAppRole(value: ApplicationAppRole[] | cdktf.IResolvable) {
+    this._appRole.internalValue = value;
   }
   public resetAppRole() {
-    this._appRole = undefined;
+    this._appRole.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get appRoleInput() {
-    return this._appRole;
+    return this._appRole.internalValue;
   }
 
   // feature_tags - computed: false, optional: true, required: false
-  private _featureTags?: ApplicationFeatureTags[] | cdktf.IResolvable; 
+  private _featureTags = new ApplicationFeatureTagsList(this, "feature_tags", false);
   public get featureTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('feature_tags');
+    return this._featureTags;
   }
-  public set featureTags(value: ApplicationFeatureTags[] | cdktf.IResolvable) {
-    this._featureTags = value;
+  public putFeatureTags(value: ApplicationFeatureTags[] | cdktf.IResolvable) {
+    this._featureTags.internalValue = value;
   }
   public resetFeatureTags() {
-    this._featureTags = undefined;
+    this._featureTags.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get featureTagsInput() {
-    return this._featureTags;
+    return this._featureTags.internalValue;
   }
 
   // optional_claims - computed: false, optional: true, required: false
@@ -1741,20 +2951,19 @@ export class Application extends cdktf.TerraformResource {
   }
 
   // required_resource_access - computed: false, optional: true, required: false
-  private _requiredResourceAccess?: ApplicationRequiredResourceAccess[] | cdktf.IResolvable; 
+  private _requiredResourceAccess = new ApplicationRequiredResourceAccessList(this, "required_resource_access", true);
   public get requiredResourceAccess() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('required_resource_access')));
+    return this._requiredResourceAccess;
   }
-  public set requiredResourceAccess(value: ApplicationRequiredResourceAccess[] | cdktf.IResolvable) {
-    this._requiredResourceAccess = value;
+  public putRequiredResourceAccess(value: ApplicationRequiredResourceAccess[] | cdktf.IResolvable) {
+    this._requiredResourceAccess.internalValue = value;
   }
   public resetRequiredResourceAccess() {
-    this._requiredResourceAccess = undefined;
+    this._requiredResourceAccess.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requiredResourceAccessInput() {
-    return this._requiredResourceAccess;
+    return this._requiredResourceAccess.internalValue;
   }
 
   // single_page_application - computed: false, optional: true, required: false
@@ -1815,6 +3024,7 @@ export class Application extends cdktf.TerraformResource {
       display_name: cdktf.stringToTerraform(this._displayName),
       fallback_public_client_enabled: cdktf.booleanToTerraform(this._fallbackPublicClientEnabled),
       group_membership_claims: cdktf.listMapper(cdktf.stringToTerraform)(this._groupMembershipClaims),
+      id: cdktf.stringToTerraform(this._id),
       identifier_uris: cdktf.listMapper(cdktf.stringToTerraform)(this._identifierUris),
       logo_image: cdktf.stringToTerraform(this._logoImage),
       marketing_url: cdktf.stringToTerraform(this._marketingUrl),
@@ -1828,11 +3038,11 @@ export class Application extends cdktf.TerraformResource {
       template_id: cdktf.stringToTerraform(this._templateId),
       terms_of_service_url: cdktf.stringToTerraform(this._termsOfServiceUrl),
       api: applicationApiToTerraform(this._api.internalValue),
-      app_role: cdktf.listMapper(applicationAppRoleToTerraform)(this._appRole),
-      feature_tags: cdktf.listMapper(applicationFeatureTagsToTerraform)(this._featureTags),
+      app_role: cdktf.listMapper(applicationAppRoleToTerraform)(this._appRole.internalValue),
+      feature_tags: cdktf.listMapper(applicationFeatureTagsToTerraform)(this._featureTags.internalValue),
       optional_claims: applicationOptionalClaimsToTerraform(this._optionalClaims.internalValue),
       public_client: applicationPublicClientToTerraform(this._publicClient.internalValue),
-      required_resource_access: cdktf.listMapper(applicationRequiredResourceAccessToTerraform)(this._requiredResourceAccess),
+      required_resource_access: cdktf.listMapper(applicationRequiredResourceAccessToTerraform)(this._requiredResourceAccess.internalValue),
       single_page_application: applicationSinglePageApplicationToTerraform(this._singlePageApplication.internalValue),
       timeouts: applicationTimeoutsToTerraform(this._timeouts.internalValue),
       web: applicationWebToTerraform(this._web.internalValue),

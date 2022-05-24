@@ -32,6 +32,13 @@ export interface ApplicationFederatedIdentityCredentialConfig extends cdktf.Terr
   */
   readonly displayName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#id ApplicationFederatedIdentityCredential#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The URL of the external identity provider, which must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_federated_identity_credential#issuer ApplicationFederatedIdentityCredential#issuer}
@@ -84,6 +91,7 @@ export function applicationFederatedIdentityCredentialTimeoutsToTerraform(struct
 
 export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,7 +101,10 @@ export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference exten
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ApplicationFederatedIdentityCredentialTimeouts | undefined {
+  public get internalValue(): ApplicationFederatedIdentityCredentialTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -115,16 +126,22 @@ export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationFederatedIdentityCredentialTimeouts | undefined) {
+  public set internalValue(value: ApplicationFederatedIdentityCredentialTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -235,6 +252,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
     this._audiences = config.audiences;
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._issuer = config.issuer;
     this._subject = config.subject;
     this._timeouts.internalValue = config.timeouts;
@@ -305,8 +323,19 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issuer - computed: false, optional: false, required: true
@@ -361,6 +390,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
       audiences: cdktf.listMapper(cdktf.stringToTerraform)(this._audiences),
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       issuer: cdktf.stringToTerraform(this._issuer),
       subject: cdktf.stringToTerraform(this._subject),
       timeouts: applicationFederatedIdentityCredentialTimeoutsToTerraform(this._timeouts.internalValue),

@@ -14,6 +14,13 @@ export interface GroupMemberConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupObjectId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#id GroupMember#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The object ID of the principal you want to add as a member to the group. Supported object types are Users, Groups or Service Principals
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#member_object_id GroupMember#member_object_id}
@@ -60,6 +67,7 @@ export function groupMemberTimeoutsToTerraform(struct?: GroupMemberTimeoutsOutpu
 
 export class GroupMemberTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -69,7 +77,10 @@ export class GroupMemberTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GroupMemberTimeouts | undefined {
+  public get internalValue(): GroupMemberTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -91,16 +102,22 @@ export class GroupMemberTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GroupMemberTimeouts | undefined) {
+  public set internalValue(value: GroupMemberTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -208,6 +225,7 @@ export class GroupMember extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._groupObjectId = config.groupObjectId;
+    this._id = config.id;
     this._memberObjectId = config.memberObjectId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -230,8 +248,19 @@ export class GroupMember extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // member_object_id - computed: false, optional: false, required: true
@@ -270,6 +299,7 @@ export class GroupMember extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group_object_id: cdktf.stringToTerraform(this._groupObjectId),
+      id: cdktf.stringToTerraform(this._id),
       member_object_id: cdktf.stringToTerraform(this._memberObjectId),
       timeouts: groupMemberTimeoutsToTerraform(this._timeouts.internalValue),
     };
