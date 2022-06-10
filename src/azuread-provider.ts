@@ -56,6 +56,18 @@ export interface AzureadProviderConfig {
   */
   readonly msiEndpoint?: string;
   /**
+  * The bearer token for the request to the OIDC provider. For use when authenticating as a Service Principal using OpenID Connect.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_request_token AzureadProvider#oidc_request_token}
+  */
+  readonly oidcRequestToken?: string;
+  /**
+  * The URL for the OIDC provider from which to request an ID token. For use when authenticating as a Service Principal using OpenID Connect.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_request_url AzureadProvider#oidc_request_url}
+  */
+  readonly oidcRequestUrl?: string;
+  /**
   * A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#partner_id AzureadProvider#partner_id}
@@ -79,6 +91,12 @@ export interface AzureadProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#use_msi AzureadProvider#use_msi}
   */
   readonly useMsi?: boolean | cdktf.IResolvable;
+  /**
+  * Allow OpenID Connect to be used for authentication
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#use_oidc AzureadProvider#use_oidc}
+  */
+  readonly useOidc?: boolean | cdktf.IResolvable;
   /**
   * Alias name
   * 
@@ -113,7 +131,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'azuread',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.22.0',
+        providerVersion: '2.23.0',
         providerVersionConstraint: '~> 2.0'
       },
       terraformProviderSource: 'hashicorp/azuread'
@@ -126,10 +144,13 @@ export class AzureadProvider extends cdktf.TerraformProvider {
     this._disableTerraformPartnerId = config.disableTerraformPartnerId;
     this._environment = config.environment;
     this._msiEndpoint = config.msiEndpoint;
+    this._oidcRequestToken = config.oidcRequestToken;
+    this._oidcRequestUrl = config.oidcRequestUrl;
     this._partnerId = config.partnerId;
     this._tenantId = config.tenantId;
     this._useCli = config.useCli;
     this._useMsi = config.useMsi;
+    this._useOidc = config.useOidc;
     this._alias = config.alias;
   }
 
@@ -265,6 +286,38 @@ export class AzureadProvider extends cdktf.TerraformProvider {
     return this._msiEndpoint;
   }
 
+  // oidc_request_token - computed: false, optional: true, required: false
+  private _oidcRequestToken?: string; 
+  public get oidcRequestToken() {
+    return this._oidcRequestToken;
+  }
+  public set oidcRequestToken(value: string | undefined) {
+    this._oidcRequestToken = value;
+  }
+  public resetOidcRequestToken() {
+    this._oidcRequestToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidcRequestTokenInput() {
+    return this._oidcRequestToken;
+  }
+
+  // oidc_request_url - computed: false, optional: true, required: false
+  private _oidcRequestUrl?: string; 
+  public get oidcRequestUrl() {
+    return this._oidcRequestUrl;
+  }
+  public set oidcRequestUrl(value: string | undefined) {
+    this._oidcRequestUrl = value;
+  }
+  public resetOidcRequestUrl() {
+    this._oidcRequestUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidcRequestUrlInput() {
+    return this._oidcRequestUrl;
+  }
+
   // partner_id - computed: false, optional: true, required: false
   private _partnerId?: string; 
   public get partnerId() {
@@ -329,6 +382,22 @@ export class AzureadProvider extends cdktf.TerraformProvider {
     return this._useMsi;
   }
 
+  // use_oidc - computed: false, optional: true, required: false
+  private _useOidc?: boolean | cdktf.IResolvable; 
+  public get useOidc() {
+    return this._useOidc;
+  }
+  public set useOidc(value: boolean | cdktf.IResolvable | undefined) {
+    this._useOidc = value;
+  }
+  public resetUseOidc() {
+    this._useOidc = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useOidcInput() {
+    return this._useOidc;
+  }
+
   // alias - computed: false, optional: true, required: false
   private _alias?: string; 
   public get alias() {
@@ -359,10 +428,13 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       disable_terraform_partner_id: cdktf.booleanToTerraform(this._disableTerraformPartnerId),
       environment: cdktf.stringToTerraform(this._environment),
       msi_endpoint: cdktf.stringToTerraform(this._msiEndpoint),
+      oidc_request_token: cdktf.stringToTerraform(this._oidcRequestToken),
+      oidc_request_url: cdktf.stringToTerraform(this._oidcRequestUrl),
       partner_id: cdktf.stringToTerraform(this._partnerId),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       use_cli: cdktf.booleanToTerraform(this._useCli),
       use_msi: cdktf.booleanToTerraform(this._useMsi),
+      use_oidc: cdktf.booleanToTerraform(this._useOidc),
       alias: cdktf.stringToTerraform(this._alias),
     };
   }

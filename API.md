@@ -2620,6 +2620,18 @@ public resetEnvironment()
 public resetMsiEndpoint()
 ```
 
+##### `resetOidcRequestToken` <a name="@cdktf/provider-azuread.AzureadProvider.resetOidcRequestToken"></a>
+
+```typescript
+public resetOidcRequestToken()
+```
+
+##### `resetOidcRequestUrl` <a name="@cdktf/provider-azuread.AzureadProvider.resetOidcRequestUrl"></a>
+
+```typescript
+public resetOidcRequestUrl()
+```
+
 ##### `resetPartnerId` <a name="@cdktf/provider-azuread.AzureadProvider.resetPartnerId"></a>
 
 ```typescript
@@ -2642,6 +2654,12 @@ public resetUseCli()
 
 ```typescript
 public resetUseMsi()
+```
+
+##### `resetUseOidc` <a name="@cdktf/provider-azuread.AzureadProvider.resetUseOidc"></a>
+
+```typescript
+public resetUseOidc()
 ```
 
 
@@ -2737,6 +2755,26 @@ public readonly msiEndpointInput: string;
 
 ---
 
+##### `oidcRequestTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcRequestTokenInput"></a>
+
+```typescript
+public readonly oidcRequestTokenInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `oidcRequestUrlInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcRequestUrlInput"></a>
+
+```typescript
+public readonly oidcRequestUrlInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `partnerIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.partnerIdInput"></a>
 
 ```typescript
@@ -2771,6 +2809,16 @@ public readonly useCliInput: boolean | IResolvable;
 
 ```typescript
 public readonly useMsiInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `useOidcInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.useOidcInput"></a>
+
+```typescript
+public readonly useOidcInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -2867,6 +2915,26 @@ public readonly msiEndpoint: string;
 
 ---
 
+##### `oidcRequestToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcRequestToken"></a>
+
+```typescript
+public readonly oidcRequestToken: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `oidcRequestUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcRequestUrl"></a>
+
+```typescript
+public readonly oidcRequestUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `partnerId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.partnerId"></a>
 
 ```typescript
@@ -2901,6 +2969,16 @@ public readonly useCli: boolean | IResolvable;
 
 ```typescript
 public readonly useMsi: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `useOidc`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.useOidc"></a>
+
+```typescript
+public readonly useOidc: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
@@ -14503,6 +14581,38 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `oidcRequestToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProviderConfig.property.oidcRequestToken"></a>
+
+```typescript
+public readonly oidcRequestToken: string;
+```
+
+- *Type:* `string`
+
+The bearer token for the request to the OIDC provider.
+
+For use when authenticating as a Service Principal using OpenID Connect.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_request_token AzureadProvider#oidc_request_token}
+
+---
+
+##### `oidcRequestUrl`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProviderConfig.property.oidcRequestUrl"></a>
+
+```typescript
+public readonly oidcRequestUrl: string;
+```
+
+- *Type:* `string`
+
+The URL for the OIDC provider from which to request an ID token.
+
+For use when authenticating as a Service Principal using OpenID Connect.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_request_url AzureadProvider#oidc_request_url}
+
+---
+
 ##### `partnerId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProviderConfig.property.partnerId"></a>
 
 ```typescript
@@ -14556,6 +14666,20 @@ public readonly useMsi: boolean | IResolvable;
 Allow Managed Identity to be used for Authentication.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#use_msi AzureadProvider#use_msi}
+
+---
+
+##### `useOidc`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProviderConfig.property.useOidc"></a>
+
+```typescript
+public readonly useOidc: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Allow OpenID Connect to be used for authentication.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#use_oidc AzureadProvider#use_oidc}
 
 ---
 
