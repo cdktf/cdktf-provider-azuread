@@ -7491,6 +7491,223 @@ public readonly templateId: string;
 
 ---
 
+### DirectoryRoleAssignment <a name="@cdktf/provider-azuread.DirectoryRoleAssignment"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment azuread_directory_role_assignment}.
+
+#### Initializers <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.Initializer"></a>
+
+```typescript
+import { DirectoryRoleAssignment } from '@cdktf/provider-azuread'
+
+new DirectoryRoleAssignment(scope: Construct, id: string, config?: DirectoryRoleAssignmentConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.DirectoryRoleAssignmentConfig`](#@cdktf/provider-azuread.DirectoryRoleAssignmentConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putTimeouts` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: DirectoryRoleAssignmentTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts`](#@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts)
+
+---
+
+##### `resetAppScopeObjectId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetAppScopeObjectId"></a>
+
+```typescript
+public resetAppScopeObjectId()
+```
+
+##### `resetDirectoryScopeObjectId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetDirectoryScopeObjectId"></a>
+
+```typescript
+public resetDirectoryScopeObjectId()
+```
+
+##### `resetId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetId"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetPrincipalObjectId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetPrincipalObjectId"></a>
+
+```typescript
+public resetPrincipalObjectId()
+```
+
+##### `resetRoleId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetRoleId"></a>
+
+```typescript
+public resetRoleId()
+```
+
+##### `resetTimeouts` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DirectoryRoleAssignmentTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference`](#@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference)
+
+---
+
+##### `appScopeObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.appScopeObjectIdInput"></a>
+
+```typescript
+public readonly appScopeObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `directoryScopeObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.directoryScopeObjectIdInput"></a>
+
+```typescript
+public readonly directoryScopeObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `principalObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.principalObjectIdInput"></a>
+
+```typescript
+public readonly principalObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `roleIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.roleIdInput"></a>
+
+```typescript
+public readonly roleIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: IResolvable | DirectoryRoleAssignmentTimeouts;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts`](#@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts)
+
+---
+
+##### `appScopeObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.appScopeObjectId"></a>
+
+```typescript
+public readonly appScopeObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `directoryScopeObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.directoryScopeObjectId"></a>
+
+```typescript
+public readonly directoryScopeObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `principalObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.principalObjectId"></a>
+
+```typescript
+public readonly principalObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `roleId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.roleId"></a>
+
+```typescript
+public readonly roleId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### DirectoryRoleMember <a name="@cdktf/provider-azuread.DirectoryRoleMember"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_member azuread_directory_role_member}.
@@ -17767,6 +17984,199 @@ public readonly read: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#read DataAzureadUser#read}.
+
+---
+
+### DirectoryRoleAssignmentConfig <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DirectoryRoleAssignmentConfig } from '@cdktf/provider-azuread'
+
+const directoryRoleAssignmentConfig: DirectoryRoleAssignmentConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `appScopeObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.appScopeObjectId"></a>
+
+```typescript
+public readonly appScopeObjectId: string;
+```
+
+- *Type:* `string`
+
+Identifier of the app-specific scope when the assignment scope is app-specific.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#app_scope_object_id DirectoryRoleAssignment#app_scope_object_id}
+
+---
+
+##### `directoryScopeObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.directoryScopeObjectId"></a>
+
+```typescript
+public readonly directoryScopeObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of a directory object representing the scope of the assignment.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#directory_scope_object_id DirectoryRoleAssignment#directory_scope_object_id}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#id DirectoryRoleAssignment#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `principalObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.principalObjectId"></a>
+
+```typescript
+public readonly principalObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the member principal.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
+
+---
+
+##### `roleId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.roleId"></a>
+
+```typescript
+public readonly roleId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the directory role for this assignment.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DirectoryRoleAssignmentTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts`](#@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#timeouts DirectoryRoleAssignment#timeouts}
+
+---
+
+### DirectoryRoleAssignmentTimeouts <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DirectoryRoleAssignmentTimeouts } from '@cdktf/provider-azuread'
+
+const directoryRoleAssignmentTimeouts: DirectoryRoleAssignmentTimeouts = { ... }
+```
+
+##### `create`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#create DirectoryRoleAssignment#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#delete DirectoryRoleAssignment#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#read DirectoryRoleAssignment#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#update DirectoryRoleAssignment#update}.
 
 ---
 
@@ -30941,6 +31351,152 @@ public readonly internalValue: IResolvable | DataAzureadUserTimeouts;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadUserTimeouts`](#@cdktf/provider-azuread.DataAzureadUserTimeouts)
+
+---
+
+
+### DirectoryRoleAssignmentTimeoutsOutputReference <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { DirectoryRoleAssignmentTimeoutsOutputReference } from '@cdktf/provider-azuread'
+
+new DirectoryRoleAssignmentTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetCreate` <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate()
+```
+
+##### `resetDelete` <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete()
+```
+
+##### `resetRead` <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead()
+```
+
+##### `resetUpdate` <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `create`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `delete`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `update`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DirectoryRoleAssignmentTimeouts;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts`](#@cdktf/provider-azuread.DirectoryRoleAssignmentTimeouts)
 
 ---
 

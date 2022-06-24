@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/directory_role
+// https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,53 +6,65 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DirectoryRoleConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The display name of the directory role
+  * Identifier of the app-specific scope when the assignment scope is app-specific
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#display_name DirectoryRole#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#app_scope_object_id DirectoryRoleAssignment#app_scope_object_id}
   */
-  readonly displayName?: string;
+  readonly appScopeObjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#id DirectoryRole#id}
+  * The object ID of a directory object representing the scope of the assignment
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#directory_scope_object_id DirectoryRoleAssignment#directory_scope_object_id}
+  */
+  readonly directoryScopeObjectId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#id DirectoryRoleAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The object ID of the template associated with the directory role
+  * The object ID of the member principal
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#template_id DirectoryRole#template_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
   */
-  readonly templateId?: string;
+  readonly principalObjectId?: string;
+  /**
+  * The object ID of the directory role for this assignment
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
+  */
+  readonly roleId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#timeouts DirectoryRole#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#timeouts DirectoryRoleAssignment#timeouts}
   */
-  readonly timeouts?: DirectoryRoleTimeouts;
+  readonly timeouts?: DirectoryRoleAssignmentTimeouts;
 }
-export interface DirectoryRoleTimeouts {
+export interface DirectoryRoleAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#create DirectoryRole#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#create DirectoryRoleAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#delete DirectoryRole#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#delete DirectoryRoleAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#read DirectoryRole#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#read DirectoryRoleAssignment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#update DirectoryRole#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#update DirectoryRoleAssignment#update}
   */
   readonly update?: string;
 }
 
-export function directoryRoleTimeoutsToTerraform(struct?: DirectoryRoleTimeoutsOutputReference | DirectoryRoleTimeouts | cdktf.IResolvable): any {
+export function directoryRoleAssignmentTimeoutsToTerraform(struct?: DirectoryRoleAssignmentTimeoutsOutputReference | DirectoryRoleAssignmentTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,7 +77,7 @@ export function directoryRoleTimeoutsToTerraform(struct?: DirectoryRoleTimeoutsO
   }
 }
 
-export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -77,7 +89,7 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DirectoryRoleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DirectoryRoleAssignmentTimeouts | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -102,7 +114,7 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DirectoryRoleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DirectoryRoleAssignmentTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -191,29 +203,29 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role azuread_directory_role}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment azuread_directory_role_assignment}
 */
-export class DirectoryRole extends cdktf.TerraformResource {
+export class DirectoryRoleAssignment extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "azuread_directory_role";
+  public static readonly tfResourceType = "azuread_directory_role_assignment";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/directory_role azuread_directory_role} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment azuread_directory_role_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DirectoryRoleConfig = {}
+  * @param options DirectoryRoleAssignmentConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DirectoryRoleConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DirectoryRoleAssignmentConfig = {}) {
     super(scope, id, {
-      terraformResourceType: 'azuread_directory_role',
+      terraformResourceType: 'azuread_directory_role_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
         providerVersion: '2.25.0',
@@ -224,9 +236,11 @@ export class DirectoryRole extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._displayName = config.displayName;
+    this._appScopeObjectId = config.appScopeObjectId;
+    this._directoryScopeObjectId = config.directoryScopeObjectId;
     this._id = config.id;
-    this._templateId = config.templateId;
+    this._principalObjectId = config.principalObjectId;
+    this._roleId = config.roleId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -234,25 +248,36 @@ export class DirectoryRole extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
+  // app_scope_object_id - computed: false, optional: true, required: false
+  private _appScopeObjectId?: string; 
+  public get appScopeObjectId() {
+    return this.getStringAttribute('app_scope_object_id');
   }
-
-  // display_name - computed: true, optional: true, required: false
-  private _displayName?: string; 
-  public get displayName() {
-    return this.getStringAttribute('display_name');
+  public set appScopeObjectId(value: string) {
+    this._appScopeObjectId = value;
   }
-  public set displayName(value: string) {
-    this._displayName = value;
-  }
-  public resetDisplayName() {
-    this._displayName = undefined;
+  public resetAppScopeObjectId() {
+    this._appScopeObjectId = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get displayNameInput() {
-    return this._displayName;
+  public get appScopeObjectIdInput() {
+    return this._appScopeObjectId;
+  }
+
+  // directory_scope_object_id - computed: false, optional: true, required: false
+  private _directoryScopeObjectId?: string; 
+  public get directoryScopeObjectId() {
+    return this.getStringAttribute('directory_scope_object_id');
+  }
+  public set directoryScopeObjectId(value: string) {
+    this._directoryScopeObjectId = value;
+  }
+  public resetDirectoryScopeObjectId() {
+    this._directoryScopeObjectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryScopeObjectIdInput() {
+    return this._directoryScopeObjectId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -271,33 +296,44 @@ export class DirectoryRole extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // object_id - computed: true, optional: false, required: false
-  public get objectId() {
-    return this.getStringAttribute('object_id');
+  // principal_object_id - computed: false, optional: true, required: false
+  private _principalObjectId?: string; 
+  public get principalObjectId() {
+    return this.getStringAttribute('principal_object_id');
   }
-
-  // template_id - computed: true, optional: true, required: false
-  private _templateId?: string; 
-  public get templateId() {
-    return this.getStringAttribute('template_id');
+  public set principalObjectId(value: string) {
+    this._principalObjectId = value;
   }
-  public set templateId(value: string) {
-    this._templateId = value;
-  }
-  public resetTemplateId() {
-    this._templateId = undefined;
+  public resetPrincipalObjectId() {
+    this._principalObjectId = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get templateIdInput() {
-    return this._templateId;
+  public get principalObjectIdInput() {
+    return this._principalObjectId;
+  }
+
+  // role_id - computed: false, optional: true, required: false
+  private _roleId?: string; 
+  public get roleId() {
+    return this.getStringAttribute('role_id');
+  }
+  public set roleId(value: string) {
+    this._roleId = value;
+  }
+  public resetRoleId() {
+    this._roleId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleIdInput() {
+    return this._roleId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DirectoryRoleTimeoutsOutputReference(this, "timeouts");
+  private _timeouts = new DirectoryRoleAssignmentTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
-  public putTimeouts(value: DirectoryRoleTimeouts) {
+  public putTimeouts(value: DirectoryRoleAssignmentTimeouts) {
     this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
@@ -314,10 +350,12 @@ export class DirectoryRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
+      app_scope_object_id: cdktf.stringToTerraform(this._appScopeObjectId),
+      directory_scope_object_id: cdktf.stringToTerraform(this._directoryScopeObjectId),
       id: cdktf.stringToTerraform(this._id),
-      template_id: cdktf.stringToTerraform(this._templateId),
-      timeouts: directoryRoleTimeoutsToTerraform(this._timeouts.internalValue),
+      principal_object_id: cdktf.stringToTerraform(this._principalObjectId),
+      role_id: cdktf.stringToTerraform(this._roleId),
+      timeouts: directoryRoleAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

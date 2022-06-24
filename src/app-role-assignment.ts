@@ -195,7 +195,7 @@ export class AppRoleAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_app_role_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.24.0',
+        providerVersion: '2.25.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
