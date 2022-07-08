@@ -10,11 +10,23 @@ export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Identifier of the app-specific scope when the assignment scope is app-specific
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#app_scope_id DirectoryRoleAssignment#app_scope_id}
+  */
+  readonly appScopeId?: string;
+  /**
+  * Identifier of the app-specific scope when the assignment scope is app-specific
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#app_scope_object_id DirectoryRoleAssignment#app_scope_object_id}
   */
   readonly appScopeObjectId?: string;
   /**
-  * The object ID of a directory object representing the scope of the assignment
+  * Identifier of the directory object representing the scope of the assignment
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#directory_scope_id DirectoryRoleAssignment#directory_scope_id}
+  */
+  readonly directoryScopeId?: string;
+  /**
+  * Identifier of the directory object representing the scope of the assignment
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#directory_scope_object_id DirectoryRoleAssignment#directory_scope_object_id}
   */
@@ -31,13 +43,13 @@ export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
   */
-  readonly principalObjectId?: string;
+  readonly principalObjectId: string;
   /**
   * The object ID of the directory role for this assignment
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
   */
-  readonly roleId?: string;
+  readonly roleId: string;
   /**
   * timeouts block
   * 
@@ -221,14 +233,14 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DirectoryRoleAssignmentConfig = {}
+  * @param options DirectoryRoleAssignmentConfig
   */
-  public constructor(scope: Construct, id: string, config: DirectoryRoleAssignmentConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DirectoryRoleAssignmentConfig) {
     super(scope, id, {
       terraformResourceType: 'azuread_directory_role_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.25.0',
+        providerVersion: '2.26.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -236,7 +248,9 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._appScopeId = config.appScopeId;
     this._appScopeObjectId = config.appScopeObjectId;
+    this._directoryScopeId = config.directoryScopeId;
     this._directoryScopeObjectId = config.directoryScopeObjectId;
     this._id = config.id;
     this._principalObjectId = config.principalObjectId;
@@ -248,7 +262,23 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // app_scope_object_id - computed: false, optional: true, required: false
+  // app_scope_id - computed: true, optional: true, required: false
+  private _appScopeId?: string; 
+  public get appScopeId() {
+    return this.getStringAttribute('app_scope_id');
+  }
+  public set appScopeId(value: string) {
+    this._appScopeId = value;
+  }
+  public resetAppScopeId() {
+    this._appScopeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appScopeIdInput() {
+    return this._appScopeId;
+  }
+
+  // app_scope_object_id - computed: true, optional: true, required: false
   private _appScopeObjectId?: string; 
   public get appScopeObjectId() {
     return this.getStringAttribute('app_scope_object_id');
@@ -264,7 +294,23 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
     return this._appScopeObjectId;
   }
 
-  // directory_scope_object_id - computed: false, optional: true, required: false
+  // directory_scope_id - computed: true, optional: true, required: false
+  private _directoryScopeId?: string; 
+  public get directoryScopeId() {
+    return this.getStringAttribute('directory_scope_id');
+  }
+  public set directoryScopeId(value: string) {
+    this._directoryScopeId = value;
+  }
+  public resetDirectoryScopeId() {
+    this._directoryScopeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryScopeIdInput() {
+    return this._directoryScopeId;
+  }
+
+  // directory_scope_object_id - computed: true, optional: true, required: false
   private _directoryScopeObjectId?: string; 
   public get directoryScopeObjectId() {
     return this.getStringAttribute('directory_scope_object_id');
@@ -296,7 +342,7 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // principal_object_id - computed: false, optional: true, required: false
+  // principal_object_id - computed: false, optional: false, required: true
   private _principalObjectId?: string; 
   public get principalObjectId() {
     return this.getStringAttribute('principal_object_id');
@@ -304,24 +350,18 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
   public set principalObjectId(value: string) {
     this._principalObjectId = value;
   }
-  public resetPrincipalObjectId() {
-    this._principalObjectId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get principalObjectIdInput() {
     return this._principalObjectId;
   }
 
-  // role_id - computed: false, optional: true, required: false
+  // role_id - computed: false, optional: false, required: true
   private _roleId?: string; 
   public get roleId() {
     return this.getStringAttribute('role_id');
   }
   public set roleId(value: string) {
     this._roleId = value;
-  }
-  public resetRoleId() {
-    this._roleId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get roleIdInput() {
@@ -350,7 +390,9 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      app_scope_id: cdktf.stringToTerraform(this._appScopeId),
       app_scope_object_id: cdktf.stringToTerraform(this._appScopeObjectId),
+      directory_scope_id: cdktf.stringToTerraform(this._directoryScopeId),
       directory_scope_object_id: cdktf.stringToTerraform(this._directoryScopeObjectId),
       id: cdktf.stringToTerraform(this._id),
       principal_object_id: cdktf.stringToTerraform(this._principalObjectId),

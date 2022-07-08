@@ -216,7 +216,7 @@ export class DataAzureadAdministrativeUnit extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_administrative_unit',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.25.0',
+        providerVersion: '2.26.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
