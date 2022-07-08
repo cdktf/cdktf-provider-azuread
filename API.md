@@ -7500,7 +7500,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_
 ```typescript
 import { DirectoryRoleAssignment } from '@cdktf/provider-azuread'
 
-new DirectoryRoleAssignment(scope: Construct, id: string, config?: DirectoryRoleAssignmentConfig)
+new DirectoryRoleAssignment(scope: Construct, id: string, config: DirectoryRoleAssignmentConfig)
 ```
 
 ##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.parameter.scope"></a>
@@ -7521,7 +7521,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.parameter.config"></a>
 
 - *Type:* [`@cdktf/provider-azuread.DirectoryRoleAssignmentConfig`](#@cdktf/provider-azuread.DirectoryRoleAssignmentConfig)
 
@@ -7541,10 +7541,22 @@ public putTimeouts(value: DirectoryRoleAssignmentTimeouts)
 
 ---
 
+##### `resetAppScopeId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetAppScopeId"></a>
+
+```typescript
+public resetAppScopeId()
+```
+
 ##### `resetAppScopeObjectId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetAppScopeObjectId"></a>
 
 ```typescript
 public resetAppScopeObjectId()
+```
+
+##### `resetDirectoryScopeId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetDirectoryScopeId"></a>
+
+```typescript
+public resetDirectoryScopeId()
 ```
 
 ##### `resetDirectoryScopeObjectId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetDirectoryScopeObjectId"></a>
@@ -7557,18 +7569,6 @@ public resetDirectoryScopeObjectId()
 
 ```typescript
 public resetId()
-```
-
-##### `resetPrincipalObjectId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetPrincipalObjectId"></a>
-
-```typescript
-public resetPrincipalObjectId()
-```
-
-##### `resetRoleId` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetRoleId"></a>
-
-```typescript
-public resetRoleId()
 ```
 
 ##### `resetTimeouts` <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.resetTimeouts"></a>
@@ -7590,10 +7590,30 @@ public readonly timeouts: DirectoryRoleAssignmentTimeoutsOutputReference;
 
 ---
 
+##### `appScopeIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.appScopeIdInput"></a>
+
+```typescript
+public readonly appScopeIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `appScopeObjectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.appScopeObjectIdInput"></a>
 
 ```typescript
 public readonly appScopeObjectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `directoryScopeIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.directoryScopeIdInput"></a>
+
+```typescript
+public readonly directoryScopeIdInput: string;
 ```
 
 - *Type:* `string`
@@ -7650,10 +7670,30 @@ public readonly timeoutsInput: IResolvable | DirectoryRoleAssignmentTimeouts;
 
 ---
 
+##### `appScopeId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.appScopeId"></a>
+
+```typescript
+public readonly appScopeId: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `appScopeObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.appScopeObjectId"></a>
 
 ```typescript
 public readonly appScopeObjectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `directoryScopeId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignment.property.directoryScopeId"></a>
+
+```typescript
+public readonly directoryScopeId: string;
 ```
 
 - *Type:* `string`
@@ -18037,6 +18077,48 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `principalObjectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.principalObjectId"></a>
+
+```typescript
+public readonly principalObjectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the member principal.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
+
+---
+
+##### `roleId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.roleId"></a>
+
+```typescript
+public readonly roleId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the directory role for this assignment.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
+
+---
+
+##### `appScopeId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.appScopeId"></a>
+
+```typescript
+public readonly appScopeId: string;
+```
+
+- *Type:* `string`
+
+Identifier of the app-specific scope when the assignment scope is app-specific.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#app_scope_id DirectoryRoleAssignment#app_scope_id}
+
+---
+
 ##### `appScopeObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.appScopeObjectId"></a>
 
 ```typescript
@@ -18051,6 +18133,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `directoryScopeId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.directoryScopeId"></a>
+
+```typescript
+public readonly directoryScopeId: string;
+```
+
+- *Type:* `string`
+
+Identifier of the directory object representing the scope of the assignment.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#directory_scope_id DirectoryRoleAssignment#directory_scope_id}
+
+---
+
 ##### `directoryScopeObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.directoryScopeObjectId"></a>
 
 ```typescript
@@ -18059,7 +18155,7 @@ public readonly directoryScopeObjectId: string;
 
 - *Type:* `string`
 
-The object ID of a directory object representing the scope of the assignment.
+Identifier of the directory object representing the scope of the assignment.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#directory_scope_object_id DirectoryRoleAssignment#directory_scope_object_id}
 
@@ -18077,34 +18173,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `principalObjectId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.principalObjectId"></a>
-
-```typescript
-public readonly principalObjectId: string;
-```
-
-- *Type:* `string`
-
-The object ID of the member principal.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
-
----
-
-##### `roleId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.roleId"></a>
-
-```typescript
-public readonly roleId: string;
-```
-
-- *Type:* `string`
-
-The object ID of the directory role for this assignment.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
 
 ---
 
