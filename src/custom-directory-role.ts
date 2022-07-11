@@ -336,7 +336,7 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_custom_directory_role',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.26.0',
+        providerVersion: '2.26.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

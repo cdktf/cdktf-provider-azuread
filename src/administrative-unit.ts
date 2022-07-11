@@ -234,7 +234,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_administrative_unit',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.26.0',
+        providerVersion: '2.26.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

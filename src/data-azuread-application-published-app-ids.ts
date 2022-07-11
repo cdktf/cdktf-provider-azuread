@@ -123,7 +123,7 @@ export class DataAzureadApplicationPublishedAppIds extends cdktf.TerraformDataSo
       terraformResourceType: 'azuread_application_published_app_ids',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.26.0',
+        providerVersion: '2.26.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
