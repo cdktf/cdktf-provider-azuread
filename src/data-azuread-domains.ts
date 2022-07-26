@@ -264,7 +264,10 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminManaged = config.adminManaged;
     this._id = config.id;
@@ -426,7 +429,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
       only_default: cdktf.booleanToTerraform(this._onlyDefault),
       only_initial: cdktf.booleanToTerraform(this._onlyInitial),
       only_root: cdktf.booleanToTerraform(this._onlyRoot),
-      supports_services: cdktf.listMapper(cdktf.stringToTerraform)(this._supportsServices),
+      supports_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportsServices),
       timeouts: dataAzureadDomainsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

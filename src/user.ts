@@ -420,7 +420,10 @@ export class User extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountEnabled = config.accountEnabled;
     this._ageGroup = config.ageGroup;
@@ -1124,7 +1127,7 @@ export class User extends cdktf.TerraformResource {
     return {
       account_enabled: cdktf.booleanToTerraform(this._accountEnabled),
       age_group: cdktf.stringToTerraform(this._ageGroup),
-      business_phones: cdktf.listMapper(cdktf.stringToTerraform)(this._businessPhones),
+      business_phones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._businessPhones),
       city: cdktf.stringToTerraform(this._city),
       company_name: cdktf.stringToTerraform(this._companyName),
       consent_provided_for_minor: cdktf.stringToTerraform(this._consentProvidedForMinor),
@@ -1148,7 +1151,7 @@ export class User extends cdktf.TerraformResource {
       mobile_phone: cdktf.stringToTerraform(this._mobilePhone),
       office_location: cdktf.stringToTerraform(this._officeLocation),
       onpremises_immutable_id: cdktf.stringToTerraform(this._onpremisesImmutableId),
-      other_mails: cdktf.listMapper(cdktf.stringToTerraform)(this._otherMails),
+      other_mails: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherMails),
       password: cdktf.stringToTerraform(this._password),
       postal_code: cdktf.stringToTerraform(this._postalCode),
       preferred_language: cdktf.stringToTerraform(this._preferredLanguage),

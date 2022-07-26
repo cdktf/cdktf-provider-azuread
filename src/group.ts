@@ -412,7 +412,10 @@ export class Group extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._assignableToRole = config.assignableToRole;
     this._autoSubscribeNewMembers = config.autoSubscribeNewMembers;
@@ -827,7 +830,7 @@ export class Group extends cdktf.TerraformResource {
     return {
       assignable_to_role: cdktf.booleanToTerraform(this._assignableToRole),
       auto_subscribe_new_members: cdktf.booleanToTerraform(this._autoSubscribeNewMembers),
-      behaviors: cdktf.listMapper(cdktf.stringToTerraform)(this._behaviors),
+      behaviors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._behaviors),
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
       external_senders_allowed: cdktf.booleanToTerraform(this._externalSendersAllowed),
@@ -836,13 +839,13 @@ export class Group extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
+      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
       prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
-      provisioning_options: cdktf.listMapper(cdktf.stringToTerraform)(this._provisioningOptions),
+      provisioning_options: cdktf.listMapper(cdktf.stringToTerraform, false)(this._provisioningOptions),
       security_enabled: cdktf.booleanToTerraform(this._securityEnabled),
       theme: cdktf.stringToTerraform(this._theme),
-      types: cdktf.listMapper(cdktf.stringToTerraform)(this._types),
+      types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._types),
       visibility: cdktf.stringToTerraform(this._visibility),
       dynamic_membership: groupDynamicMembershipToTerraform(this._dynamicMembership.internalValue),
       timeouts: groupTimeoutsToTerraform(this._timeouts.internalValue),

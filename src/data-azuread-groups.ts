@@ -171,7 +171,10 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayNamePrefix = config.displayNamePrefix;
     this._displayNames = config.displayNames;
@@ -339,11 +342,11 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       display_name_prefix: cdktf.stringToTerraform(this._displayNamePrefix),
-      display_names: cdktf.listMapper(cdktf.stringToTerraform)(this._displayNames),
+      display_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._displayNames),
       id: cdktf.stringToTerraform(this._id),
       ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
-      object_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._objectIds),
+      object_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._objectIds),
       return_all: cdktf.booleanToTerraform(this._returnAll),
       security_enabled: cdktf.booleanToTerraform(this._securityEnabled),
       timeouts: dataAzureadGroupsTimeoutsToTerraform(this._timeouts.internalValue),

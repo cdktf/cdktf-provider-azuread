@@ -246,7 +246,10 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationObjectId = config.applicationObjectId;
     this._audiences = config.audiences;
@@ -387,7 +390,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_object_id: cdktf.stringToTerraform(this._applicationObjectId),
-      audiences: cdktf.listMapper(cdktf.stringToTerraform)(this._audiences),
+      audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(this._audiences),
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),

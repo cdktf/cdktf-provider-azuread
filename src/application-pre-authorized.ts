@@ -228,7 +228,10 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationObjectId = config.applicationObjectId;
     this._authorizedAppId = config.authorizedAppId;
@@ -321,7 +324,7 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
       application_object_id: cdktf.stringToTerraform(this._applicationObjectId),
       authorized_app_id: cdktf.stringToTerraform(this._authorizedAppId),
       id: cdktf.stringToTerraform(this._id),
-      permission_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._permissionIds),
+      permission_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissionIds),
       timeouts: applicationPreAuthorizedTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

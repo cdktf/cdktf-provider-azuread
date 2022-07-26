@@ -68,9 +68,9 @@ export function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_applications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedApplications),
-    included_applications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedApplications),
-    included_user_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedUserActions),
+    excluded_applications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedApplications),
+    included_applications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedApplications),
+    included_user_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedUserActions),
   }
 }
 
@@ -336,8 +336,8 @@ export function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: C
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedLocations),
-    included_locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedLocations),
+    excluded_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedLocations),
+    included_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedLocations),
   }
 }
 
@@ -425,8 +425,8 @@ export function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: C
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_platforms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedPlatforms),
-    included_platforms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedPlatforms),
+    excluded_platforms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedPlatforms),
+    included_platforms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPlatforms),
   }
 }
 
@@ -530,12 +530,12 @@ export function conditionalAccessPolicyConditionsUsersToTerraform(struct?: Condi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedGroups),
-    excluded_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedRoles),
-    excluded_users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedUsers),
-    included_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedGroups),
-    included_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedRoles),
-    included_users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedUsers),
+    excluded_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedGroups),
+    excluded_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedRoles),
+    excluded_users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedUsers),
+    included_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedGroups),
+    included_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedRoles),
+    included_users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedUsers),
   }
 }
 
@@ -748,9 +748,9 @@ export function conditionalAccessPolicyConditionsToTerraform(struct?: Conditiona
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_app_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.clientAppTypes),
-    sign_in_risk_levels: cdktf.listMapper(cdktf.stringToTerraform)(struct!.signInRiskLevels),
-    user_risk_levels: cdktf.listMapper(cdktf.stringToTerraform)(struct!.userRiskLevels),
+    client_app_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clientAppTypes),
+    sign_in_risk_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.signInRiskLevels),
+    user_risk_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.userRiskLevels),
     applications: conditionalAccessPolicyConditionsApplicationsToTerraform(struct!.applications),
     devices: conditionalAccessPolicyConditionsDevicesToTerraform(struct!.devices),
     locations: conditionalAccessPolicyConditionsLocationsToTerraform(struct!.locations),
@@ -977,10 +977,10 @@ export function conditionalAccessPolicyGrantControlsToTerraform(struct?: Conditi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    built_in_controls: cdktf.listMapper(cdktf.stringToTerraform)(struct!.builtInControls),
-    custom_authentication_factors: cdktf.listMapper(cdktf.stringToTerraform)(struct!.customAuthenticationFactors),
+    built_in_controls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.builtInControls),
+    custom_authentication_factors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customAuthenticationFactors),
     operator: cdktf.stringToTerraform(struct!.operator),
-    terms_of_use: cdktf.listMapper(cdktf.stringToTerraform)(struct!.termsOfUse),
+    terms_of_use: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.termsOfUse),
   }
 }
 
@@ -1454,7 +1454,10 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayName = config.displayName;
     this._id = config.id;
