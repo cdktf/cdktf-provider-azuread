@@ -78,7 +78,7 @@ export function invitationMessageToTerraform(struct?: InvitationMessageOutputRef
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform)(struct!.additionalRecipients),
+    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
     body: cdktf.stringToTerraform(struct!.body),
     language: cdktf.stringToTerraform(struct!.language),
   }
@@ -365,7 +365,10 @@ export class Invitation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._redirectUrl = config.redirectUrl;

@@ -268,7 +268,10 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._ignoreMissing = config.ignoreMissing;
@@ -409,10 +412,10 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),
-      mail_nicknames: cdktf.listMapper(cdktf.stringToTerraform)(this._mailNicknames),
-      object_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._objectIds),
+      mail_nicknames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._mailNicknames),
+      object_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._objectIds),
       return_all: cdktf.booleanToTerraform(this._returnAll),
-      user_principal_names: cdktf.listMapper(cdktf.stringToTerraform)(this._userPrincipalNames),
+      user_principal_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userPrincipalNames),
       timeouts: dataAzureadUsersTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

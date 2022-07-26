@@ -54,7 +54,7 @@ export function namedLocationCountryToTerraform(struct?: NamedLocationCountryOut
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    countries_and_regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countriesAndRegions),
+    countries_and_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.countriesAndRegions),
     include_unknown_countries_and_regions: cdktf.booleanToTerraform(struct!.includeUnknownCountriesAndRegions),
   }
 }
@@ -143,7 +143,7 @@ export function namedLocationIpToTerraform(struct?: NamedLocationIpOutputReferen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_ranges: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipRanges),
+    ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipRanges),
     trusted: cdktf.booleanToTerraform(struct!.trusted),
   }
 }
@@ -404,7 +404,10 @@ export class NamedLocation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayName = config.displayName;
     this._id = config.id;

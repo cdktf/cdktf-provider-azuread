@@ -234,7 +234,10 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._claimValues = config.claimValues;
     this._id = config.id;
@@ -341,7 +344,7 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      claim_values: cdktf.listMapper(cdktf.stringToTerraform)(this._claimValues),
+      claim_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._claimValues),
       id: cdktf.stringToTerraform(this._id),
       resource_service_principal_object_id: cdktf.stringToTerraform(this._resourceServicePrincipalObjectId),
       service_principal_object_id: cdktf.stringToTerraform(this._servicePrincipalObjectId),

@@ -240,7 +240,10 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._displayName = config.displayName;
@@ -379,7 +382,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
       display_name: cdktf.stringToTerraform(this._displayName),
       hidden_membership_enabled: cdktf.booleanToTerraform(this._hiddenMembershipEnabled),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
       timeouts: administrativeUnitTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -927,7 +927,10 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountEnabled = config.accountEnabled;
     this._alternativeNames = config.alternativeNames;
@@ -1302,20 +1305,20 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_enabled: cdktf.booleanToTerraform(this._accountEnabled),
-      alternative_names: cdktf.listMapper(cdktf.stringToTerraform)(this._alternativeNames),
+      alternative_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._alternativeNames),
       app_role_assignment_required: cdktf.booleanToTerraform(this._appRoleAssignmentRequired),
       application_id: cdktf.stringToTerraform(this._applicationId),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       login_url: cdktf.stringToTerraform(this._loginUrl),
       notes: cdktf.stringToTerraform(this._notes),
-      notification_email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationEmailAddresses),
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
+      notification_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationEmailAddresses),
+      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
       preferred_single_sign_on_mode: cdktf.stringToTerraform(this._preferredSingleSignOnMode),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       use_existing: cdktf.booleanToTerraform(this._useExisting),
-      feature_tags: cdktf.listMapper(servicePrincipalFeatureTagsToTerraform)(this._featureTags.internalValue),
-      features: cdktf.listMapper(servicePrincipalFeaturesToTerraform)(this._features.internalValue),
+      feature_tags: cdktf.listMapper(servicePrincipalFeatureTagsToTerraform, true)(this._featureTags.internalValue),
+      features: cdktf.listMapper(servicePrincipalFeaturesToTerraform, true)(this._features.internalValue),
       saml_single_sign_on: servicePrincipalSamlSingleSignOnToTerraform(this._samlSingleSignOn.internalValue),
       timeouts: servicePrincipalTimeoutsToTerraform(this._timeouts.internalValue),
     };

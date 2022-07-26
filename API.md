@@ -11973,6 +11973,16 @@ import { AdministrativeUnitConfig } from '@cdktf/provider-azuread'
 const administrativeUnitConfig: AdministrativeUnitConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.count"></a>
 
 ```typescript
@@ -11993,6 +12003,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.lifecycle"></a>
 
 ```typescript
@@ -12010,6 +12030,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12124,6 +12154,16 @@ import { AdministrativeUnitMemberConfig } from '@cdktf/provider-azuread'
 const administrativeUnitMemberConfig: AdministrativeUnitMemberConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.count"></a>
 
 ```typescript
@@ -12144,6 +12184,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.lifecycle"></a>
 
 ```typescript
@@ -12161,6 +12211,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AdministrativeUnitMemberConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12635,6 +12695,16 @@ import { ApplicationCertificateConfig } from '@cdktf/provider-azuread'
 const applicationCertificateConfig: ApplicationCertificateConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateConfig.property.count"></a>
 
 ```typescript
@@ -12655,6 +12725,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateConfig.property.lifecycle"></a>
 
 ```typescript
@@ -12672,6 +12752,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationCertificateConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -12886,6 +12976,16 @@ import { ApplicationConfig } from '@cdktf/provider-azuread'
 const applicationConfig: ApplicationConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.count"></a>
 
 ```typescript
@@ -12906,6 +13006,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.lifecycle"></a>
 
 ```typescript
@@ -12923,6 +13033,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13369,6 +13489,16 @@ import { ApplicationFederatedIdentityCredentialConfig } from '@cdktf/provider-az
 const applicationFederatedIdentityCredentialConfig: ApplicationFederatedIdentityCredentialConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.count"></a>
 
 ```typescript
@@ -13389,6 +13519,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.lifecycle"></a>
 
 ```typescript
@@ -13406,6 +13546,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationFederatedIdentityCredentialConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -13858,6 +14008,16 @@ import { ApplicationPasswordConfig } from '@cdktf/provider-azuread'
 const applicationPasswordConfig: ApplicationPasswordConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.count"></a>
 
 ```typescript
@@ -13878,6 +14038,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.lifecycle"></a>
 
 ```typescript
@@ -13895,6 +14065,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPasswordConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14081,6 +14261,16 @@ import { ApplicationPreAuthorizedConfig } from '@cdktf/provider-azuread'
 const applicationPreAuthorizedConfig: ApplicationPreAuthorizedConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.count"></a>
 
 ```typescript
@@ -14101,6 +14291,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.lifecycle"></a>
 
 ```typescript
@@ -14118,6 +14318,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ApplicationPreAuthorizedConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14543,6 +14753,16 @@ import { AppRoleAssignmentConfig } from '@cdktf/provider-azuread'
 const appRoleAssignmentConfig: AppRoleAssignmentConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentConfig.property.count"></a>
 
 ```typescript
@@ -14563,6 +14783,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentConfig.property.lifecycle"></a>
 
 ```typescript
@@ -14580,6 +14810,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AppRoleAssignmentConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -14950,6 +15190,16 @@ import { ClaimsMappingPolicyConfig } from '@cdktf/provider-azuread'
 const claimsMappingPolicyConfig: ClaimsMappingPolicyConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.count"></a>
 
 ```typescript
@@ -14970,6 +15220,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.lifecycle"></a>
 
 ```typescript
@@ -14987,6 +15247,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ClaimsMappingPolicyConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15413,6 +15683,16 @@ import { ConditionalAccessPolicyConfig } from '@cdktf/provider-azuread'
 const conditionalAccessPolicyConfig: ConditionalAccessPolicyConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.count"></a>
 
 ```typescript
@@ -15433,6 +15713,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.lifecycle"></a>
 
 ```typescript
@@ -15450,6 +15740,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ConditionalAccessPolicyConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15744,6 +16044,16 @@ import { CustomDirectoryRoleConfig } from '@cdktf/provider-azuread'
 const customDirectoryRoleConfig: CustomDirectoryRoleConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleConfig.property.count"></a>
 
 ```typescript
@@ -15764,6 +16074,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -15781,6 +16101,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.CustomDirectoryRoleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -15989,6 +16319,16 @@ import { DataAzureadAdministrativeUnitConfig } from '@cdktf/provider-azuread'
 const dataAzureadAdministrativeUnitConfig: DataAzureadAdministrativeUnitConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.count"></a>
 
 ```typescript
@@ -16009,6 +16349,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.lifecycle"></a>
 
 ```typescript
@@ -16026,6 +16376,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadAdministrativeUnitConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16184,6 +16544,16 @@ import { DataAzureadApplicationConfig } from '@cdktf/provider-azuread'
 const dataAzureadApplicationConfig: DataAzureadApplicationConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.count"></a>
 
 ```typescript
@@ -16204,6 +16574,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.lifecycle"></a>
 
 ```typescript
@@ -16221,6 +16601,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16365,6 +16755,16 @@ import { DataAzureadApplicationPublishedAppIdsConfig } from '@cdktf/provider-azu
 const dataAzureadApplicationPublishedAppIdsConfig: DataAzureadApplicationPublishedAppIdsConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.count"></a>
 
 ```typescript
@@ -16385,6 +16785,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -16402,6 +16812,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationPublishedAppIdsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16496,6 +16916,16 @@ import { DataAzureadApplicationTemplateConfig } from '@cdktf/provider-azuread'
 const dataAzureadApplicationTemplateConfig: DataAzureadApplicationTemplateConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig.property.count"></a>
 
 ```typescript
@@ -16516,6 +16946,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig.property.lifecycle"></a>
 
 ```typescript
@@ -16533,6 +16973,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadApplicationTemplateConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16667,6 +17117,16 @@ import { DataAzureadClientConfigConfig } from '@cdktf/provider-azuread'
 const dataAzureadClientConfigConfig: DataAzureadClientConfigConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.count"></a>
 
 ```typescript
@@ -16687,6 +17147,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.lifecycle"></a>
 
 ```typescript
@@ -16704,6 +17174,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadClientConfigConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16768,6 +17248,16 @@ import { DataAzureadDomainsConfig } from '@cdktf/provider-azuread'
 const dataAzureadDomainsConfig: DataAzureadDomainsConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsConfig.property.count"></a>
 
 ```typescript
@@ -16788,6 +17278,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -16805,6 +17305,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDomainsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -16963,6 +17473,16 @@ import { DataAzureadGroupConfig } from '@cdktf/provider-azuread'
 const dataAzureadGroupConfig: DataAzureadGroupConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.count"></a>
 
 ```typescript
@@ -16983,6 +17503,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.lifecycle"></a>
 
 ```typescript
@@ -17000,6 +17530,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -17108,6 +17648,16 @@ import { DataAzureadGroupsConfig } from '@cdktf/provider-azuread'
 const dataAzureadGroupsConfig: DataAzureadGroupsConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.count"></a>
 
 ```typescript
@@ -17128,6 +17678,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -17145,6 +17705,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadGroupsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -17341,6 +17911,16 @@ import { DataAzureadServicePrincipalConfig } from '@cdktf/provider-azuread'
 const dataAzureadServicePrincipalConfig: DataAzureadServicePrincipalConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.count"></a>
 
 ```typescript
@@ -17361,6 +17941,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.lifecycle"></a>
 
 ```typescript
@@ -17378,6 +17968,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -17502,6 +18102,16 @@ import { DataAzureadServicePrincipalsConfig } from '@cdktf/provider-azuread'
 const dataAzureadServicePrincipalsConfig: DataAzureadServicePrincipalsConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig.property.count"></a>
 
 ```typescript
@@ -17522,6 +18132,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -17539,6 +18159,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadServicePrincipalsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -17709,6 +18339,16 @@ import { DataAzureadUserConfig } from '@cdktf/provider-azuread'
 const dataAzureadUserConfig: DataAzureadUserConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.count"></a>
 
 ```typescript
@@ -17729,6 +18369,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.lifecycle"></a>
 
 ```typescript
@@ -17746,6 +18396,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUserConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -17830,6 +18490,16 @@ import { DataAzureadUsersConfig } from '@cdktf/provider-azuread'
 const dataAzureadUsersConfig: DataAzureadUsersConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersConfig.property.count"></a>
 
 ```typescript
@@ -17850,6 +18520,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersConfig.property.lifecycle"></a>
 
 ```typescript
@@ -17867,6 +18547,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadUsersConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -18037,6 +18727,16 @@ import { DirectoryRoleAssignmentConfig } from '@cdktf/provider-azuread'
 const directoryRoleAssignmentConfig: DirectoryRoleAssignmentConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.count"></a>
 
 ```typescript
@@ -18057,6 +18757,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18074,6 +18784,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleAssignmentConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -18258,6 +18978,16 @@ import { DirectoryRoleConfig } from '@cdktf/provider-azuread'
 const directoryRoleConfig: DirectoryRoleConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.count"></a>
 
 ```typescript
@@ -18278,6 +19008,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18295,6 +19035,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -18365,6 +19115,16 @@ import { DirectoryRoleMemberConfig } from '@cdktf/provider-azuread'
 const directoryRoleMemberConfig: DirectoryRoleMemberConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberConfig.property.count"></a>
 
 ```typescript
@@ -18385,6 +19145,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18402,6 +19172,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DirectoryRoleMemberConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -18588,6 +19368,16 @@ import { GroupConfig } from '@cdktf/provider-azuread'
 const groupConfig: GroupConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.count"></a>
 
 ```typescript
@@ -18608,6 +19398,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.lifecycle"></a>
 
 ```typescript
@@ -18625,6 +19425,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -18979,6 +19789,16 @@ import { GroupMemberConfig } from '@cdktf/provider-azuread'
 const groupMemberConfig: GroupMemberConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.count"></a>
 
 ```typescript
@@ -18999,6 +19819,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19016,6 +19846,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.GroupMemberConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -19204,6 +20044,16 @@ import { InvitationConfig } from '@cdktf/provider-azuread'
 const invitationConfig: InvitationConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationConfig.property.count"></a>
 
 ```typescript
@@ -19224,6 +20074,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19241,6 +20101,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.InvitationConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -19463,6 +20333,16 @@ import { NamedLocationConfig } from '@cdktf/provider-azuread'
 const namedLocationConfig: NamedLocationConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationConfig.property.count"></a>
 
 ```typescript
@@ -19483,6 +20363,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19500,6 +20390,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.NamedLocationConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -19718,6 +20618,16 @@ import { ServicePrincipalCertificateConfig } from '@cdktf/provider-azuread'
 const servicePrincipalCertificateConfig: ServicePrincipalCertificateConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.count"></a>
 
 ```typescript
@@ -19738,6 +20648,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.lifecycle"></a>
 
 ```typescript
@@ -19755,6 +20675,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalCertificateConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -19969,6 +20899,16 @@ import { ServicePrincipalClaimsMappingPolicyAssignmentConfig } from '@cdktf/prov
 const servicePrincipalClaimsMappingPolicyAssignmentConfig: ServicePrincipalClaimsMappingPolicyAssignmentConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.count"></a>
 
 ```typescript
@@ -19989,6 +20929,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.lifecycle"></a>
 
 ```typescript
@@ -20006,6 +20956,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -20062,6 +21022,16 @@ import { ServicePrincipalConfig } from '@cdktf/provider-azuread'
 const servicePrincipalConfig: ServicePrincipalConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.count"></a>
 
 ```typescript
@@ -20082,6 +21052,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.lifecycle"></a>
 
 ```typescript
@@ -20099,6 +21079,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -20357,6 +21347,16 @@ import { ServicePrincipalDelegatedPermissionGrantConfig } from '@cdktf/provider-
 const servicePrincipalDelegatedPermissionGrantConfig: ServicePrincipalDelegatedPermissionGrantConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.count"></a>
 
 ```typescript
@@ -20377,6 +21377,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.lifecycle"></a>
 
 ```typescript
@@ -20394,6 +21404,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalDelegatedPermissionGrantConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -20692,6 +21712,16 @@ import { ServicePrincipalPasswordConfig } from '@cdktf/provider-azuread'
 const servicePrincipalPasswordConfig: ServicePrincipalPasswordConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.count"></a>
 
 ```typescript
@@ -20712,6 +21742,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.lifecycle"></a>
 
 ```typescript
@@ -20729,6 +21769,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.ServicePrincipalPasswordConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 
@@ -20997,6 +22047,16 @@ import { UserConfig } from '@cdktf/provider-azuread'
 const userConfig: UserConfig = { ... }
 ```
 
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.count"></a>
 
 ```typescript
@@ -21017,6 +22077,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.lifecycle"></a>
 
 ```typescript
@@ -21034,6 +22104,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.UserConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
 
 ---
 

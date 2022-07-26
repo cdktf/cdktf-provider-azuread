@@ -60,7 +60,10 @@ export class ClaimsMappingPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._definition = config.definition;
     this._displayName = config.displayName;
@@ -119,7 +122,7 @@ export class ClaimsMappingPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      definition: cdktf.listMapper(cdktf.stringToTerraform)(this._definition),
+      definition: cdktf.listMapper(cdktf.stringToTerraform, false)(this._definition),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
     };

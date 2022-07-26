@@ -500,10 +500,10 @@ export function applicationApiToTerraform(struct?: ApplicationApiOutputReference
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    known_client_applications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.knownClientApplications),
+    known_client_applications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.knownClientApplications),
     mapped_claims_enabled: cdktf.booleanToTerraform(struct!.mappedClaimsEnabled),
     requested_access_token_version: cdktf.numberToTerraform(struct!.requestedAccessTokenVersion),
-    oauth2_permission_scope: cdktf.listMapper(applicationApiOauth2PermissionScopeToTerraform)(struct!.oauth2PermissionScope),
+    oauth2_permission_scope: cdktf.listMapper(applicationApiOauth2PermissionScopeToTerraform, true)(struct!.oauth2PermissionScope),
   }
 }
 
@@ -669,7 +669,7 @@ export function applicationAppRoleToTerraform(struct?: ApplicationAppRole | cdkt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_member_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMemberTypes),
+    allowed_member_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMemberTypes),
     description: cdktf.stringToTerraform(struct!.description),
     display_name: cdktf.stringToTerraform(struct!.displayName),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
@@ -1075,7 +1075,7 @@ export function applicationOptionalClaimsAccessTokenToTerraform(struct?: Applica
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_properties: cdktf.listMapper(cdktf.stringToTerraform)(struct!.additionalProperties),
+    additional_properties: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalProperties),
     essential: cdktf.booleanToTerraform(struct!.essential),
     name: cdktf.stringToTerraform(struct!.name),
     source: cdktf.stringToTerraform(struct!.source),
@@ -1258,7 +1258,7 @@ export function applicationOptionalClaimsIdTokenToTerraform(struct?: Application
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_properties: cdktf.listMapper(cdktf.stringToTerraform)(struct!.additionalProperties),
+    additional_properties: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalProperties),
     essential: cdktf.booleanToTerraform(struct!.essential),
     name: cdktf.stringToTerraform(struct!.name),
     source: cdktf.stringToTerraform(struct!.source),
@@ -1441,7 +1441,7 @@ export function applicationOptionalClaimsSaml2TokenToTerraform(struct?: Applicat
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_properties: cdktf.listMapper(cdktf.stringToTerraform)(struct!.additionalProperties),
+    additional_properties: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalProperties),
     essential: cdktf.booleanToTerraform(struct!.essential),
     name: cdktf.stringToTerraform(struct!.name),
     source: cdktf.stringToTerraform(struct!.source),
@@ -1618,9 +1618,9 @@ export function applicationOptionalClaimsToTerraform(struct?: ApplicationOptiona
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.listMapper(applicationOptionalClaimsAccessTokenToTerraform)(struct!.accessToken),
-    id_token: cdktf.listMapper(applicationOptionalClaimsIdTokenToTerraform)(struct!.idToken),
-    saml2_token: cdktf.listMapper(applicationOptionalClaimsSaml2TokenToTerraform)(struct!.saml2Token),
+    access_token: cdktf.listMapper(applicationOptionalClaimsAccessTokenToTerraform, true)(struct!.accessToken),
+    id_token: cdktf.listMapper(applicationOptionalClaimsIdTokenToTerraform, true)(struct!.idToken),
+    saml2_token: cdktf.listMapper(applicationOptionalClaimsSaml2TokenToTerraform, true)(struct!.saml2Token),
   }
 }
 
@@ -1731,7 +1731,7 @@ export function applicationPublicClientToTerraform(struct?: ApplicationPublicCli
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    redirect_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.redirectUris),
+    redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.redirectUris),
   }
 }
 
@@ -1924,7 +1924,7 @@ export function applicationRequiredResourceAccessToTerraform(struct?: Applicatio
   }
   return {
     resource_app_id: cdktf.stringToTerraform(struct!.resourceAppId),
-    resource_access: cdktf.listMapper(applicationRequiredResourceAccessResourceAccessToTerraform)(struct!.resourceAccess),
+    resource_access: cdktf.listMapper(applicationRequiredResourceAccessResourceAccessToTerraform, true)(struct!.resourceAccess),
   }
 }
 
@@ -2039,7 +2039,7 @@ export function applicationSinglePageApplicationToTerraform(struct?: Application
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    redirect_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.redirectUris),
+    redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.redirectUris),
   }
 }
 
@@ -2378,7 +2378,7 @@ export function applicationWebToTerraform(struct?: ApplicationWebOutputReference
   return {
     homepage_url: cdktf.stringToTerraform(struct!.homepageUrl),
     logout_url: cdktf.stringToTerraform(struct!.logoutUrl),
-    redirect_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.redirectUris),
+    redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.redirectUris),
     implicit_grant: applicationWebImplicitGrantToTerraform(struct!.implicitGrant),
   }
 }
@@ -2530,7 +2530,10 @@ export class Application extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deviceOnlyAuthEnabled = config.deviceOnlyAuthEnabled;
     this._displayName = config.displayName;
@@ -3023,26 +3026,26 @@ export class Application extends cdktf.TerraformResource {
       device_only_auth_enabled: cdktf.booleanToTerraform(this._deviceOnlyAuthEnabled),
       display_name: cdktf.stringToTerraform(this._displayName),
       fallback_public_client_enabled: cdktf.booleanToTerraform(this._fallbackPublicClientEnabled),
-      group_membership_claims: cdktf.listMapper(cdktf.stringToTerraform)(this._groupMembershipClaims),
+      group_membership_claims: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupMembershipClaims),
       id: cdktf.stringToTerraform(this._id),
-      identifier_uris: cdktf.listMapper(cdktf.stringToTerraform)(this._identifierUris),
+      identifier_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._identifierUris),
       logo_image: cdktf.stringToTerraform(this._logoImage),
       marketing_url: cdktf.stringToTerraform(this._marketingUrl),
       oauth2_post_response_required: cdktf.booleanToTerraform(this._oauth2PostResponseRequired),
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
+      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
       prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
       privacy_statement_url: cdktf.stringToTerraform(this._privacyStatementUrl),
       sign_in_audience: cdktf.stringToTerraform(this._signInAudience),
       support_url: cdktf.stringToTerraform(this._supportUrl),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       template_id: cdktf.stringToTerraform(this._templateId),
       terms_of_service_url: cdktf.stringToTerraform(this._termsOfServiceUrl),
       api: applicationApiToTerraform(this._api.internalValue),
-      app_role: cdktf.listMapper(applicationAppRoleToTerraform)(this._appRole.internalValue),
-      feature_tags: cdktf.listMapper(applicationFeatureTagsToTerraform)(this._featureTags.internalValue),
+      app_role: cdktf.listMapper(applicationAppRoleToTerraform, true)(this._appRole.internalValue),
+      feature_tags: cdktf.listMapper(applicationFeatureTagsToTerraform, true)(this._featureTags.internalValue),
       optional_claims: applicationOptionalClaimsToTerraform(this._optionalClaims.internalValue),
       public_client: applicationPublicClientToTerraform(this._publicClient.internalValue),
-      required_resource_access: cdktf.listMapper(applicationRequiredResourceAccessToTerraform)(this._requiredResourceAccess.internalValue),
+      required_resource_access: cdktf.listMapper(applicationRequiredResourceAccessToTerraform, true)(this._requiredResourceAccess.internalValue),
       single_page_application: applicationSinglePageApplicationToTerraform(this._singlePageApplication.internalValue),
       timeouts: applicationTimeoutsToTerraform(this._timeouts.internalValue),
       web: applicationWebToTerraform(this._web.internalValue),
