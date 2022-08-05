@@ -398,7 +398,7 @@ export class NamedLocation extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_named_location',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.26.1',
+        providerVersion: '2.27.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
