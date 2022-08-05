@@ -1448,7 +1448,7 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_conditional_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.26.1',
+        providerVersion: '2.27.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

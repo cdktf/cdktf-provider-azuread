@@ -240,7 +240,7 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_directory_role_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.26.1',
+        providerVersion: '2.27.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
