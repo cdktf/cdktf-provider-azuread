@@ -2632,6 +2632,12 @@ public resetOidcRequestToken()
 public resetOidcRequestUrl()
 ```
 
+##### `resetOidcToken` <a name="@cdktf/provider-azuread.AzureadProvider.resetOidcToken"></a>
+
+```typescript
+public resetOidcToken()
+```
+
 ##### `resetPartnerId` <a name="@cdktf/provider-azuread.AzureadProvider.resetPartnerId"></a>
 
 ```typescript
@@ -2769,6 +2775,16 @@ public readonly oidcRequestTokenInput: string;
 
 ```typescript
 public readonly oidcRequestUrlInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `oidcTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcTokenInput"></a>
+
+```typescript
+public readonly oidcTokenInput: string;
 ```
 
 - *Type:* `string`
@@ -2929,6 +2945,16 @@ public readonly oidcRequestToken: string;
 
 ```typescript
 public readonly oidcRequestUrl: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `oidcToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcToken"></a>
+
+```typescript
+public readonly oidcToken: string;
 ```
 
 - *Type:* `string`
@@ -4752,6 +4778,149 @@ public readonly id: string;
 #### Constants <a name="Constants"></a>
 
 ##### `tfResourceType` <a name="@cdktf/provider-azuread.DataAzureadClientConfig.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### DataAzureadDirectoryObject <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/azuread/d/directory_object azuread_directory_object}.
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.Initializer"></a>
+
+```typescript
+import { DataAzureadDirectoryObject } from '@cdktf/provider-azuread'
+
+new DataAzureadDirectoryObject(scope: Construct, id: string, config: DataAzureadDirectoryObjectConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig`](#@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `putTimeouts` <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: DataAzureadDirectoryObjectTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts`](#@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts)
+
+---
+
+##### `resetId` <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.resetId"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetTimeouts` <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `timeouts`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DataAzureadDirectoryObjectTimeoutsOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference`](#@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference)
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `objectIdInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.objectIdInput"></a>
+
+```typescript
+public readonly objectIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: IResolvable | DataAzureadDirectoryObjectTimeouts;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts`](#@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts)
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.objectId"></a>
+
+```typescript
+public readonly objectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-azuread.DataAzureadDirectoryObject.property.tfResourceType"></a>
 
 - *Type:* `string`
 
@@ -15110,6 +15279,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `oidcToken`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProviderConfig.property.oidcToken"></a>
+
+```typescript
+public readonly oidcToken: string;
+```
+
+- *Type:* `string`
+
+The ID token for use when authenticating as a Service Principal using OpenID Connect.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_token AzureadProvider#oidc_token}
+
+---
+
 ##### `partnerId`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProviderConfig.property.partnerId"></a>
 
 ```typescript
@@ -17235,6 +17418,151 @@ public readonly read: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#read DataAzureadClientConfig#read}.
+
+---
+
+### DataAzureadDirectoryObjectConfig <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadDirectoryObjectConfig } from '@cdktf/provider-azuread'
+
+const dataAzureadDirectoryObjectConfig: DataAzureadDirectoryObjectConfig = { ... }
+```
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+
+---
+
+##### `objectId`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.objectId"></a>
+
+```typescript
+public readonly objectId: string;
+```
+
+- *Type:* `string`
+
+The object ID of the principal.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#object_id DataAzureadDirectoryObject#object_id}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#id DataAzureadDirectoryObject#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DataAzureadDirectoryObjectTimeouts;
+```
+
+- *Type:* [`@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts`](#@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts)
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
+
+---
+
+### DataAzureadDirectoryObjectTimeouts <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataAzureadDirectoryObjectTimeouts } from '@cdktf/provider-azuread'
+
+const dataAzureadDirectoryObjectTimeouts: DataAzureadDirectoryObjectTimeouts = { ... }
+```
+
+##### `read`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#read DataAzureadDirectoryObject#read}.
 
 ---
 
@@ -30483,6 +30811,74 @@ public readonly internalValue: IResolvable | DataAzureadClientConfigTimeouts;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadClientConfigTimeouts`](#@cdktf/provider-azuread.DataAzureadClientConfigTimeouts)
+
+---
+
+
+### DataAzureadDirectoryObjectTimeoutsOutputReference <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { DataAzureadDirectoryObjectTimeoutsOutputReference } from '@cdktf/provider-azuread'
+
+new DataAzureadDirectoryObjectTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetRead` <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `readInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `read`<sup>Required</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataAzureadDirectoryObjectTimeouts;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts`](#@cdktf/provider-azuread.DataAzureadDirectoryObjectTimeouts)
 
 ---
 
