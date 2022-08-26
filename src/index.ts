@@ -28,6 +28,7 @@ export * from './data-azuread-application';
 export * from './data-azuread-application-published-app-ids';
 export * from './data-azuread-application-template';
 export * from './data-azuread-client-config';
+export * from './data-azuread-directory-object';
 export * from './data-azuread-domains';
 export * from './data-azuread-group';
 export * from './data-azuread-groups';

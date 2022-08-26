@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/client_config
+// https://www.terraform.io/docs/providers/azuread/d/directory_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,29 +6,35 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAzureadClientConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzureadDirectoryObjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#id DataAzureadClientConfig#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#id DataAzureadDirectoryObject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The object ID of the principal
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#object_id DataAzureadDirectoryObject#object_id}
+  */
+  readonly objectId: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#timeouts DataAzureadClientConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
   */
-  readonly timeouts?: DataAzureadClientConfigTimeouts;
+  readonly timeouts?: DataAzureadDirectoryObjectTimeouts;
 }
-export interface DataAzureadClientConfigTimeouts {
+export interface DataAzureadDirectoryObjectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/client_config#read DataAzureadClientConfig#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#read DataAzureadDirectoryObject#read}
   */
   readonly read?: string;
 }
 
-export function dataAzureadClientConfigTimeoutsToTerraform(struct?: DataAzureadClientConfigTimeoutsOutputReference | DataAzureadClientConfigTimeouts | cdktf.IResolvable): any {
+export function dataAzureadDirectoryObjectTimeoutsToTerraform(struct?: DataAzureadDirectoryObjectTimeoutsOutputReference | DataAzureadDirectoryObjectTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -38,7 +44,7 @@ export function dataAzureadClientConfigTimeoutsToTerraform(struct?: DataAzureadC
   }
 }
 
-export class DataAzureadClientConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzureadDirectoryObjectTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -50,7 +56,7 @@ export class DataAzureadClientConfigTimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DataAzureadClientConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzureadDirectoryObjectTimeouts | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -63,7 +69,7 @@ export class DataAzureadClientConfigTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadClientConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzureadDirectoryObjectTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -98,29 +104,29 @@ export class DataAzureadClientConfigTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/directory_object azuread_directory_object}
 */
-export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
+export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "azuread_client_config";
+  public static readonly tfResourceType = "azuread_directory_object";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/client_config azuread_client_config} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/directory_object azuread_directory_object} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAzureadClientConfigConfig = {}
+  * @param options DataAzureadDirectoryObjectConfig
   */
-  public constructor(scope: Construct, id: string, config: DataAzureadClientConfigConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataAzureadDirectoryObjectConfig) {
     super(scope, id, {
-      terraformResourceType: 'azuread_client_config',
+      terraformResourceType: 'azuread_directory_object',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
         providerVersion: '2.28.0',
@@ -135,17 +141,13 @@ export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._objectId = config.objectId;
     this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // client_id - computed: true, optional: false, required: false
-  public get clientId() {
-    return this.getStringAttribute('client_id');
-  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -163,22 +165,30 @@ export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // object_id - computed: true, optional: false, required: false
+  // object_id - computed: false, optional: false, required: true
+  private _objectId?: string; 
   public get objectId() {
     return this.getStringAttribute('object_id');
   }
+  public set objectId(value: string) {
+    this._objectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectIdInput() {
+    return this._objectId;
+  }
 
-  // tenant_id - computed: true, optional: false, required: false
-  public get tenantId() {
-    return this.getStringAttribute('tenant_id');
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzureadClientConfigTimeoutsOutputReference(this, "timeouts");
+  private _timeouts = new DataAzureadDirectoryObjectTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
-  public putTimeouts(value: DataAzureadClientConfigTimeouts) {
+  public putTimeouts(value: DataAzureadDirectoryObjectTimeouts) {
     this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
@@ -196,7 +206,8 @@ export class DataAzureadClientConfig extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      timeouts: dataAzureadClientConfigTimeoutsToTerraform(this._timeouts.internalValue),
+      object_id: cdktf.stringToTerraform(this._objectId),
+      timeouts: dataAzureadDirectoryObjectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

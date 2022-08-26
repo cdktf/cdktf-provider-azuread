@@ -258,7 +258,7 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_domains',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.27.0',
+        providerVersion: '2.28.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

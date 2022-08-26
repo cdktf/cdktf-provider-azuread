@@ -68,6 +68,12 @@ export interface AzureadProviderConfig {
   */
   readonly oidcRequestUrl?: string;
   /**
+  * The ID token for use when authenticating as a Service Principal using OpenID Connect.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_token AzureadProvider#oidc_token}
+  */
+  readonly oidcToken?: string;
+  /**
   * A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#partner_id AzureadProvider#partner_id}
@@ -131,7 +137,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'azuread',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.27.0',
+        providerVersion: '2.28.0',
         providerVersionConstraint: '~> 2.0'
       },
       terraformProviderSource: 'hashicorp/azuread'
@@ -146,6 +152,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
     this._msiEndpoint = config.msiEndpoint;
     this._oidcRequestToken = config.oidcRequestToken;
     this._oidcRequestUrl = config.oidcRequestUrl;
+    this._oidcToken = config.oidcToken;
     this._partnerId = config.partnerId;
     this._tenantId = config.tenantId;
     this._useCli = config.useCli;
@@ -318,6 +325,22 @@ export class AzureadProvider extends cdktf.TerraformProvider {
     return this._oidcRequestUrl;
   }
 
+  // oidc_token - computed: false, optional: true, required: false
+  private _oidcToken?: string; 
+  public get oidcToken() {
+    return this._oidcToken;
+  }
+  public set oidcToken(value: string | undefined) {
+    this._oidcToken = value;
+  }
+  public resetOidcToken() {
+    this._oidcToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidcTokenInput() {
+    return this._oidcToken;
+  }
+
   // partner_id - computed: false, optional: true, required: false
   private _partnerId?: string; 
   public get partnerId() {
@@ -430,6 +453,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       msi_endpoint: cdktf.stringToTerraform(this._msiEndpoint),
       oidc_request_token: cdktf.stringToTerraform(this._oidcRequestToken),
       oidc_request_url: cdktf.stringToTerraform(this._oidcRequestUrl),
+      oidc_token: cdktf.stringToTerraform(this._oidcToken),
       partner_id: cdktf.stringToTerraform(this._partnerId),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       use_cli: cdktf.booleanToTerraform(this._useCli),
