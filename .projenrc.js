@@ -1,5 +1,6 @@
 const { CdktfProviderProject } = require("@cdktf/provider-project");
 const project = new CdktfProviderProject({
+  useCustomGithubRunner: false,
   terraformProvider: "hashicorp/azuread@~> 2.0",
   cdktfVersion: "^0.12.2",
   constructsVersion: "^10.0.0",
