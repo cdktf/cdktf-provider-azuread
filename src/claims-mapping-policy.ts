@@ -54,7 +54,7 @@ export class ClaimsMappingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_claims_mapping_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.28.1',
+        providerVersion: '2.29.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
