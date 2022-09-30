@@ -2638,6 +2638,12 @@ public resetOidcRequestUrl()
 public resetOidcToken()
 ```
 
+##### `resetOidcTokenFilePath` <a name="@cdktf/provider-azuread.AzureadProvider.resetOidcTokenFilePath"></a>
+
+```typescript
+public resetOidcTokenFilePath()
+```
+
 ##### `resetPartnerId` <a name="@cdktf/provider-azuread.AzureadProvider.resetPartnerId"></a>
 
 ```typescript
@@ -2775,6 +2781,16 @@ public readonly oidcRequestTokenInput: string;
 
 ```typescript
 public readonly oidcRequestUrlInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `oidcTokenFilePathInput`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcTokenFilePathInput"></a>
+
+```typescript
+public readonly oidcTokenFilePathInput: string;
 ```
 
 - *Type:* `string`
@@ -2955,6 +2971,16 @@ public readonly oidcRequestUrl: string;
 
 ```typescript
 public readonly oidcToken: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `oidcTokenFilePath`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProvider.property.oidcTokenFilePath"></a>
+
+```typescript
+public readonly oidcTokenFilePath: string;
 ```
 
 - *Type:* `string`
@@ -15290,6 +15316,20 @@ public readonly oidcToken: string;
 The ID token for use when authenticating as a Service Principal using OpenID Connect.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_token AzureadProvider#oidc_token}
+
+---
+
+##### `oidcTokenFilePath`<sup>Optional</sup> <a name="@cdktf/provider-azuread.AzureadProviderConfig.property.oidcTokenFilePath"></a>
+
+```typescript
+public readonly oidcTokenFilePath: string;
+```
+
+- *Type:* `string`
+
+The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#oidc_token_file_path AzureadProvider#oidc_token_file_path}
 
 ---
 
