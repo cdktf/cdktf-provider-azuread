@@ -2524,7 +2524,7 @@ export class Application extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.29.0',
+        providerVersion: '2.30.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
