@@ -22,6 +22,8 @@ export * as servicePrincipalCertificate from './service-principal-certificate';
 export * as servicePrincipalClaimsMappingPolicyAssignment from './service-principal-claims-mapping-policy-assignment';
 export * as servicePrincipalDelegatedPermissionGrant from './service-principal-delegated-permission-grant';
 export * as servicePrincipalPassword from './service-principal-password';
+export * as synchronizationJob from './synchronization-job';
+export * as synchronizationSecret from './synchronization-secret';
 export * as user from './user';
 export * as dataAzureadAdministrativeUnit from './data-azuread-administrative-unit';
 export * as dataAzureadApplication from './data-azuread-application';

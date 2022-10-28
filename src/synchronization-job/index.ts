@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/custom_directory_role
+// https://www.terraform.io/docs/providers/azuread/r/synchronization_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,79 +6,53 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments {
+export interface SynchronizationJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The description of the custom directory role
+  * Whether or not the synchronization job is enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#description CustomDirectoryRole#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#enabled SynchronizationJob#enabled}
   */
-  readonly description?: string;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * The display name of the custom directory role
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#display_name CustomDirectoryRole#display_name}
-  */
-  readonly displayName: string;
-  /**
-  * Indicates whether the role is enabled for assignment
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#enabled CustomDirectoryRole#enabled}
-  */
-  readonly enabled: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#id CustomDirectoryRole#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#id SynchronizationJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Custom template identifier that is typically used if one needs an identifier to be the same across different directories.
+  * The object ID of the service principal for which this synchronization job should be created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#template_id CustomDirectoryRole#template_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#service_principal_id SynchronizationJob#service_principal_id}
   */
-  readonly templateId?: string;
+  readonly servicePrincipalId: string;
   /**
-  * The version of the role definition.
+  * Identifier of the synchronization template this job is based on.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#version CustomDirectoryRole#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#template_id SynchronizationJob#template_id}
   */
-  readonly version: string;
-  /**
-  * permissions block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#permissions CustomDirectoryRole#permissions}
-  */
-  readonly permissions: CustomDirectoryRolePermissions[] | cdktf.IResolvable;
+  readonly templateId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#timeouts SynchronizationJob#timeouts}
   */
-  readonly timeouts?: CustomDirectoryRoleTimeouts;
+  readonly timeouts?: SynchronizationJobTimeouts;
 }
-export interface CustomDirectoryRolePermissions {
-  /**
-  * Set of tasks that can be performed on a resource
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
-  */
-  readonly allowedResourceActions: string[];
+export interface SynchronizationJobSchedule {
 }
 
-export function customDirectoryRolePermissionsToTerraform(struct?: CustomDirectoryRolePermissions | cdktf.IResolvable): any {
+export function synchronizationJobScheduleToTerraform(struct?: SynchronizationJobSchedule): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_resource_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResourceActions),
   }
 }
 
-export class CustomDirectoryRolePermissionsOutputReference extends cdktf.ComplexObject {
+export class SynchronizationJobScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -90,52 +64,38 @@ export class CustomDirectoryRolePermissionsOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomDirectoryRolePermissions | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): SynchronizationJobSchedule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowedResourceActions !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowedResourceActions = this._allowedResourceActions;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomDirectoryRolePermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynchronizationJobSchedule | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._allowedResourceActions = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._allowedResourceActions = value.allowedResourceActions;
     }
   }
 
-  // allowed_resource_actions - computed: false, optional: false, required: true
-  private _allowedResourceActions?: string[]; 
-  public get allowedResourceActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_resource_actions'));
+  // expiration - computed: true, optional: false, required: false
+  public get expiration() {
+    return this.getStringAttribute('expiration');
   }
-  public set allowedResourceActions(value: string[]) {
-    this._allowedResourceActions = value;
+
+  // interval - computed: true, optional: false, required: false
+  public get interval() {
+    return this.getStringAttribute('interval');
   }
-  // Temporarily expose input value. Use with caution.
-  public get allowedResourceActionsInput() {
-    return this._allowedResourceActions;
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
   }
 }
 
-export class CustomDirectoryRolePermissionsList extends cdktf.ComplexList {
-  public internalValue? : CustomDirectoryRolePermissions[] | cdktf.IResolvable
+export class SynchronizationJobScheduleList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -149,30 +109,30 @@ export class CustomDirectoryRolePermissionsList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CustomDirectoryRolePermissionsOutputReference {
-    return new CustomDirectoryRolePermissionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): SynchronizationJobScheduleOutputReference {
+    return new SynchronizationJobScheduleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CustomDirectoryRoleTimeouts {
+export interface SynchronizationJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#create CustomDirectoryRole#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#create SynchronizationJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#delete CustomDirectoryRole#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#delete SynchronizationJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#read CustomDirectoryRole#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#read SynchronizationJob#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role#update CustomDirectoryRole#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#update SynchronizationJob#update}
   */
   readonly update?: string;
 }
 
-export function customDirectoryRoleTimeoutsToTerraform(struct?: CustomDirectoryRoleTimeoutsOutputReference | CustomDirectoryRoleTimeouts | cdktf.IResolvable): any {
+export function synchronizationJobTimeoutsToTerraform(struct?: SynchronizationJobTimeoutsOutputReference | SynchronizationJobTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -185,7 +145,7 @@ export function customDirectoryRoleTimeoutsToTerraform(struct?: CustomDirectoryR
   }
 }
 
-export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SynchronizationJobTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -197,7 +157,7 @@ export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CustomDirectoryRoleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SynchronizationJobTimeouts | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -222,7 +182,7 @@ export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomDirectoryRoleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynchronizationJobTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -311,29 +271,29 @@ export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role azuread_custom_directory_role}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job azuread_synchronization_job}
 */
-export class CustomDirectoryRole extends cdktf.TerraformResource {
+export class SynchronizationJob extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "azuread_custom_directory_role";
+  public static readonly tfResourceType = "azuread_synchronization_job";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/custom_directory_role azuread_custom_directory_role} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job azuread_synchronization_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options CustomDirectoryRoleConfig
+  * @param options SynchronizationJobConfig
   */
-  public constructor(scope: Construct, id: string, config: CustomDirectoryRoleConfig) {
+  public constructor(scope: Construct, id: string, config: SynchronizationJobConfig) {
     super(scope, id, {
-      terraformResourceType: 'azuread_custom_directory_role',
+      terraformResourceType: 'azuread_synchronization_job',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
         providerVersion: '2.30.0',
@@ -347,13 +307,10 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._description = config.description;
-    this._displayName = config.displayName;
     this._enabled = config.enabled;
     this._id = config.id;
+    this._servicePrincipalId = config.servicePrincipalId;
     this._templateId = config.templateId;
-    this._version = config.version;
-    this._permissions.internalValue = config.permissions;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -361,42 +318,16 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-  public set description(value: string) {
-    this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
-  }
-
-  // display_name - computed: false, optional: false, required: true
-  private _displayName?: string; 
-  public get displayName() {
-    return this.getStringAttribute('display_name');
-  }
-  public set displayName(value: string) {
-    this._displayName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get displayNameInput() {
-    return this._displayName;
-  }
-
-  // enabled - computed: false, optional: false, required: true
+  // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
@@ -419,12 +350,26 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // object_id - computed: true, optional: false, required: false
-  public get objectId() {
-    return this.getStringAttribute('object_id');
+  // schedule - computed: true, optional: false, required: false
+  private _schedule = new SynchronizationJobScheduleList(this, "schedule", false);
+  public get schedule() {
+    return this._schedule;
   }
 
-  // template_id - computed: true, optional: true, required: false
+  // service_principal_id - computed: false, optional: false, required: true
+  private _servicePrincipalId?: string; 
+  public get servicePrincipalId() {
+    return this.getStringAttribute('service_principal_id');
+  }
+  public set servicePrincipalId(value: string) {
+    this._servicePrincipalId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicePrincipalIdInput() {
+    return this._servicePrincipalId;
+  }
+
+  // template_id - computed: false, optional: false, required: true
   private _templateId?: string; 
   public get templateId() {
     return this.getStringAttribute('template_id');
@@ -432,46 +377,17 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   public set templateId(value: string) {
     this._templateId = value;
   }
-  public resetTemplateId() {
-    this._templateId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get templateIdInput() {
     return this._templateId;
   }
 
-  // version - computed: false, optional: false, required: true
-  private _version?: string; 
-  public get version() {
-    return this.getStringAttribute('version');
-  }
-  public set version(value: string) {
-    this._version = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version;
-  }
-
-  // permissions - computed: false, optional: false, required: true
-  private _permissions = new CustomDirectoryRolePermissionsList(this, "permissions", true);
-  public get permissions() {
-    return this._permissions;
-  }
-  public putPermissions(value: CustomDirectoryRolePermissions[] | cdktf.IResolvable) {
-    this._permissions.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get permissionsInput() {
-    return this._permissions.internalValue;
-  }
-
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CustomDirectoryRoleTimeoutsOutputReference(this, "timeouts");
+  private _timeouts = new SynchronizationJobTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
-  public putTimeouts(value: CustomDirectoryRoleTimeouts) {
+  public putTimeouts(value: SynchronizationJobTimeouts) {
     this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
@@ -488,14 +404,11 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
+      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
       template_id: cdktf.stringToTerraform(this._templateId),
-      version: cdktf.stringToTerraform(this._version),
-      permissions: cdktf.listMapper(customDirectoryRolePermissionsToTerraform, true)(this._permissions.internalValue),
-      timeouts: customDirectoryRoleTimeoutsToTerraform(this._timeouts.internalValue),
+      timeouts: synchronizationJobTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
