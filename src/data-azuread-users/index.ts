@@ -262,7 +262,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_users',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.30.0',
+        providerVersion: '2.31.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
