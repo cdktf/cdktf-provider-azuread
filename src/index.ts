@@ -31,6 +31,7 @@ export * as dataAzureadApplicationPublishedAppIds from './data-azuread-applicati
 export * as dataAzureadApplicationTemplate from './data-azuread-application-template';
 export * as dataAzureadClientConfig from './data-azuread-client-config';
 export * as dataAzureadDirectoryObject from './data-azuread-directory-object';
+export * as dataAzureadDirectoryRoles from './data-azuread-directory-roles';
 export * as dataAzureadDomains from './data-azuread-domains';
 export * as dataAzureadGroup from './data-azuread-group';
 export * as dataAzureadGroups from './data-azuread-groups';

@@ -54,7 +54,7 @@ export class ServicePrincipalClaimsMappingPolicyAssignment extends cdktf.Terrafo
       terraformResourceType: 'azuread_service_principal_claims_mapping_policy_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.31.0',
+        providerVersion: '2.32.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
