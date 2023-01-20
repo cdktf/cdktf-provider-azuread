@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized
+// https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,59 +6,59 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApplicationPreAuthorizedConfig extends cdktf.TerraformMetaArguments {
+export interface ServicePrincipalTokenSigningCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The object ID of the application to which this pre-authorized application should be added
+  * A friendly name for the certificate
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#application_object_id ApplicationPreAuthorized#application_object_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#display_name ServicePrincipalTokenSigningCertificate#display_name}
   */
-  readonly applicationObjectId: string;
+  readonly displayName?: string;
   /**
-  * The application ID of the pre-authorized application
+  * The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). Default is 3 years from current date.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#end_date ServicePrincipalTokenSigningCertificate#end_date}
   */
-  readonly authorizedAppId: string;
+  readonly endDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#id ApplicationPreAuthorized#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#id ServicePrincipalTokenSigningCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The IDs of the permission scopes required by the pre-authorized application
+  * The object ID of the service principal for which this certificate should be created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#service_principal_id ServicePrincipalTokenSigningCertificate#service_principal_id}
   */
-  readonly permissionIds: string[];
+  readonly servicePrincipalId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#timeouts ServicePrincipalTokenSigningCertificate#timeouts}
   */
-  readonly timeouts?: ApplicationPreAuthorizedTimeouts;
+  readonly timeouts?: ServicePrincipalTokenSigningCertificateTimeouts;
 }
-export interface ApplicationPreAuthorizedTimeouts {
+export interface ServicePrincipalTokenSigningCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#create ApplicationPreAuthorized#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#create ServicePrincipalTokenSigningCertificate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#delete ApplicationPreAuthorized#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#delete ServicePrincipalTokenSigningCertificate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#read ApplicationPreAuthorized#read}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#read ServicePrincipalTokenSigningCertificate#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized#update ApplicationPreAuthorized#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate#update ServicePrincipalTokenSigningCertificate#update}
   */
   readonly update?: string;
 }
 
-export function applicationPreAuthorizedTimeoutsToTerraform(struct?: ApplicationPreAuthorizedTimeoutsOutputReference | ApplicationPreAuthorizedTimeouts | cdktf.IResolvable): any {
+export function servicePrincipalTokenSigningCertificateTimeoutsToTerraform(struct?: ServicePrincipalTokenSigningCertificateTimeoutsOutputReference | ServicePrincipalTokenSigningCertificateTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -71,7 +71,7 @@ export function applicationPreAuthorizedTimeoutsToTerraform(struct?: Application
   }
 }
 
-export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalTokenSigningCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -83,7 +83,7 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ApplicationPreAuthorizedTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicePrincipalTokenSigningCertificateTimeouts | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,7 +108,7 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationPreAuthorizedTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicePrincipalTokenSigningCertificateTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -197,29 +197,29 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized azuread_application_pre_authorized}
+* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}
 */
-export class ApplicationPreAuthorized extends cdktf.TerraformResource {
+export class ServicePrincipalTokenSigningCertificate extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "azuread_application_pre_authorized";
+  public static readonly tfResourceType = "azuread_service_principal_token_signing_certificate";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/application_pre_authorized azuread_application_pre_authorized} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ApplicationPreAuthorizedConfig
+  * @param options ServicePrincipalTokenSigningCertificateConfig
   */
-  public constructor(scope: Construct, id: string, config: ApplicationPreAuthorizedConfig) {
+  public constructor(scope: Construct, id: string, config: ServicePrincipalTokenSigningCertificateConfig) {
     super(scope, id, {
-      terraformResourceType: 'azuread_application_pre_authorized',
+      terraformResourceType: 'azuread_service_principal_token_signing_certificate',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
         providerVersion: '2.33.0',
@@ -233,10 +233,10 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._applicationObjectId = config.applicationObjectId;
-    this._authorizedAppId = config.authorizedAppId;
+    this._displayName = config.displayName;
+    this._endDate = config.endDate;
     this._id = config.id;
-    this._permissionIds = config.permissionIds;
+    this._servicePrincipalId = config.servicePrincipalId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -244,30 +244,36 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // application_object_id - computed: false, optional: false, required: true
-  private _applicationObjectId?: string; 
-  public get applicationObjectId() {
-    return this.getStringAttribute('application_object_id');
+  // display_name - computed: true, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
   }
-  public set applicationObjectId(value: string) {
-    this._applicationObjectId = value;
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get applicationObjectIdInput() {
-    return this._applicationObjectId;
+  public get displayNameInput() {
+    return this._displayName;
   }
 
-  // authorized_app_id - computed: false, optional: false, required: true
-  private _authorizedAppId?: string; 
-  public get authorizedAppId() {
-    return this.getStringAttribute('authorized_app_id');
+  // end_date - computed: true, optional: true, required: false
+  private _endDate?: string; 
+  public get endDate() {
+    return this.getStringAttribute('end_date');
   }
-  public set authorizedAppId(value: string) {
-    this._authorizedAppId = value;
+  public set endDate(value: string) {
+    this._endDate = value;
+  }
+  public resetEndDate() {
+    this._endDate = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get authorizedAppIdInput() {
-    return this._authorizedAppId;
+  public get endDateInput() {
+    return this._endDate;
   }
 
   // id - computed: true, optional: true, required: false
@@ -286,25 +292,45 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // permission_ids - computed: false, optional: false, required: true
-  private _permissionIds?: string[]; 
-  public get permissionIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('permission_ids'));
+  // key_id - computed: true, optional: false, required: false
+  public get keyId() {
+    return this.getStringAttribute('key_id');
   }
-  public set permissionIds(value: string[]) {
-    this._permissionIds = value;
+
+  // service_principal_id - computed: false, optional: false, required: true
+  private _servicePrincipalId?: string; 
+  public get servicePrincipalId() {
+    return this.getStringAttribute('service_principal_id');
+  }
+  public set servicePrincipalId(value: string) {
+    this._servicePrincipalId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get permissionIdsInput() {
-    return this._permissionIds;
+  public get servicePrincipalIdInput() {
+    return this._servicePrincipalId;
+  }
+
+  // start_date - computed: true, optional: false, required: false
+  public get startDate() {
+    return this.getStringAttribute('start_date');
+  }
+
+  // thumbprint - computed: true, optional: false, required: false
+  public get thumbprint() {
+    return this.getStringAttribute('thumbprint');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ApplicationPreAuthorizedTimeoutsOutputReference(this, "timeouts");
+  private _timeouts = new ServicePrincipalTokenSigningCertificateTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
-  public putTimeouts(value: ApplicationPreAuthorizedTimeouts) {
+  public putTimeouts(value: ServicePrincipalTokenSigningCertificateTimeouts) {
     this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
@@ -321,11 +347,11 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_object_id: cdktf.stringToTerraform(this._applicationObjectId),
-      authorized_app_id: cdktf.stringToTerraform(this._authorizedAppId),
+      display_name: cdktf.stringToTerraform(this._displayName),
+      end_date: cdktf.stringToTerraform(this._endDate),
       id: cdktf.stringToTerraform(this._id),
-      permission_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissionIds),
-      timeouts: applicationPreAuthorizedTimeoutsToTerraform(this._timeouts.internalValue),
+      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
+      timeouts: servicePrincipalTokenSigningCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
