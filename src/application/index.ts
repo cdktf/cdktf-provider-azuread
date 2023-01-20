@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Description of the application as shown to end users
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#description Application#description}
+  */
+  readonly description?: string;
+  /**
   * Specifies whether this application supports device authentication without a user.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#device_only_auth_enabled Application#device_only_auth_enabled}
@@ -2524,7 +2530,7 @@ export class Application extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.32.0',
+        providerVersion: '2.33.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -2535,6 +2541,7 @@ export class Application extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._description = config.description;
     this._deviceOnlyAuthEnabled = config.deviceOnlyAuthEnabled;
     this._displayName = config.displayName;
     this._fallbackPublicClientEnabled = config.fallbackPublicClientEnabled;
@@ -2576,6 +2583,22 @@ export class Application extends cdktf.TerraformResource {
   // application_id - computed: true, optional: false, required: false
   public get applicationId() {
     return this.getStringAttribute('application_id');
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // device_only_auth_enabled - computed: false, optional: true, required: false
@@ -3023,6 +3046,7 @@ export class Application extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      description: cdktf.stringToTerraform(this._description),
       device_only_auth_enabled: cdktf.booleanToTerraform(this._deviceOnlyAuthEnabled),
       display_name: cdktf.stringToTerraform(this._displayName),
       fallback_public_client_enabled: cdktf.booleanToTerraform(this._fallbackPublicClientEnabled),

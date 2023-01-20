@@ -228,7 +228,7 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
       terraformResourceType: 'azuread_service_principal_delegated_permission_grant',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.32.0',
+        providerVersion: '2.33.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
