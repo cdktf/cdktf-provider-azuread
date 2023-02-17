@@ -129,7 +129,7 @@ export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_directory_object',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.33.0',
+        providerVersion: '2.34.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
