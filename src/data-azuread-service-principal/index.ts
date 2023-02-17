@@ -551,7 +551,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.33.0',
+        providerVersion: '2.34.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
