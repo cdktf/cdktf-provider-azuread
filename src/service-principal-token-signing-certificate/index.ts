@@ -222,7 +222,7 @@ export class ServicePrincipalTokenSigningCertificate extends cdktf.TerraformReso
       terraformResourceType: 'azuread_service_principal_token_signing_certificate',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.0',
+        providerVersion: '2.34.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
