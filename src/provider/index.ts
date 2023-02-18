@@ -143,7 +143,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'azuread',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.0',
+        providerVersion: '2.34.1',
         providerVersionConstraint: '~> 2.0'
       },
       terraformProviderSource: 'hashicorp/azuread'
