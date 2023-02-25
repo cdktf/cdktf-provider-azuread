@@ -86,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetIdentifierUris">ResetIdentifierUris</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetLogoImage">ResetLogoImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetMarketingUrl">ResetMarketingUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetNotes">ResetNotes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired">ResetOauth2PostResponseRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOptionalClaims">ResetOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOwners">ResetOwners</a></code> | *No description.* |
@@ -462,6 +463,12 @@ func ResetLogoImage()
 func ResetMarketingUrl()
 ```
 
+##### `ResetNotes` <a name="ResetNotes" id="@cdktf/provider-azuread.application.Application.resetNotes"></a>
+
+```go
+func ResetNotes()
+```
+
 ##### `ResetOauth2PostResponseRequired` <a name="ResetOauth2PostResponseRequired" id="@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired"></a>
 
 ```go
@@ -668,6 +675,7 @@ application.Application_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImageInput">LogoImageInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrlInput">MarketingUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notesInput">NotesInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput">Oauth2PostResponseRequiredInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.optionalClaimsInput">OptionalClaimsInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.ownersInput">OwnersInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -692,6 +700,7 @@ application.Application_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.identifierUris">IdentifierUris</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImage">LogoImage</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrl">MarketingUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notes">Notes</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequired">Oauth2PostResponseRequired</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">Owners</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>interface{}</code> | *No description.* |
@@ -1126,6 +1135,16 @@ func MarketingUrlInput() *string
 
 ---
 
+##### `NotesInput`<sup>Optional</sup> <a name="NotesInput" id="@cdktf/provider-azuread.application.Application.property.notesInput"></a>
+
+```go
+func NotesInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Oauth2PostResponseRequiredInput`<sup>Optional</sup> <a name="Oauth2PostResponseRequiredInput" id="@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput"></a>
 
 ```go
@@ -1360,6 +1379,16 @@ func LogoImage() *string
 
 ```go
 func MarketingUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Notes`<sup>Required</sup> <a name="Notes" id="@cdktf/provider-azuread.application.Application.property.notes"></a>
+
+```go
+func Notes() *string
 ```
 
 - *Type:* *string
@@ -1851,6 +1880,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 	IdentifierUris: *[]*string,
 	LogoImage: *string,
 	MarketingUrl: *string,
+	Notes: *string,
 	Oauth2PostResponseRequired: interface{},
 	OptionalClaims: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationOptionalClaims,
 	Owners: *[]*string,
@@ -1892,6 +1922,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">IdentifierUris</a></code> | <code>*[]*string</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">LogoImage</a></code> | <code>*string</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">MarketingUrl</a></code> | <code>*string</code> | URL of the application's marketing page. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.notes">Notes</a></code> | <code>*string</code> | User-specified notes relevant for the management of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired">Oauth2PostResponseRequired</a></code> | <code>interface{}</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.optionalClaims">OptionalClaims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.owners">Owners</a></code> | <code>*[]*string</code> | A list of object IDs of principals that will be granted ownership of the application. |
@@ -2148,6 +2179,20 @@ MarketingUrl *string
 URL of the application's marketing page.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#marketing_url Application#marketing_url}
+
+---
+
+##### `Notes`<sup>Optional</sup> <a name="Notes" id="@cdktf/provider-azuread.application.ApplicationConfig.property.notes"></a>
+
+```go
+Notes *string
+```
+
+- *Type:* *string
+
+User-specified notes relevant for the management of the application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
 
 ---
 

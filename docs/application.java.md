@@ -38,6 +38,7 @@ Application.Builder.create(Construct scope, java.lang.String id)
 //  .identifierUris(java.util.List<java.lang.String>)
 //  .logoImage(java.lang.String)
 //  .marketingUrl(java.lang.String)
+//  .notes(java.lang.String)
 //  .oauth2PostResponseRequired(java.lang.Boolean)
 //  .oauth2PostResponseRequired(IResolvable)
 //  .optionalClaims(ApplicationOptionalClaims)
@@ -82,6 +83,7 @@ Application.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.identifierUris">identifierUris</a></code> | <code>java.util.List<java.lang.String></code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.logoImage">logoImage</a></code> | <code>java.lang.String</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.marketingUrl">marketingUrl</a></code> | <code>java.lang.String</code> | URL of the application's marketing page. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.notes">notes</a></code> | <code>java.lang.String</code> | User-specified notes relevant for the management of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.oauth2PostResponseRequired">oauth2PostResponseRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.optionalClaims">optionalClaims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.owners">owners</a></code> | <code>java.util.List<java.lang.String></code> | A list of object IDs of principals that will be granted ownership of the application. |
@@ -283,6 +285,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.notes"></a>
+
+- *Type:* java.lang.String
+
+User-specified notes relevant for the management of the application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
+
+---
+
 ##### `oauth2PostResponseRequired`<sup>Optional</sup> <a name="oauth2PostResponseRequired" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.oauth2PostResponseRequired"></a>
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -473,6 +485,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetIdentifierUris">resetIdentifierUris</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetLogoImage">resetLogoImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetMarketingUrl">resetMarketingUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetNotes">resetNotes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired">resetOauth2PostResponseRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOptionalClaims">resetOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOwners">resetOwners</a></code> | *No description.* |
@@ -849,6 +862,12 @@ public void resetLogoImage()
 public void resetMarketingUrl()
 ```
 
+##### `resetNotes` <a name="resetNotes" id="@cdktf/provider-azuread.application.Application.resetNotes"></a>
+
+```java
+public void resetNotes()
+```
+
 ##### `resetOauth2PostResponseRequired` <a name="resetOauth2PostResponseRequired" id="@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired"></a>
 
 ```java
@@ -1055,6 +1074,7 @@ Application.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImageInput">logoImageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrlInput">marketingUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notesInput">notesInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput">oauth2PostResponseRequiredInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.optionalClaimsInput">optionalClaimsInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.ownersInput">ownersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1079,6 +1099,7 @@ Application.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.identifierUris">identifierUris</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImage">logoImage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrl">marketingUrl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notes">notes</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequired">oauth2PostResponseRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">owners</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">preventDuplicateNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1513,6 +1534,16 @@ public java.lang.String getMarketingUrlInput();
 
 ---
 
+##### `notesInput`<sup>Optional</sup> <a name="notesInput" id="@cdktf/provider-azuread.application.Application.property.notesInput"></a>
+
+```java
+public java.lang.String getNotesInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `oauth2PostResponseRequiredInput`<sup>Optional</sup> <a name="oauth2PostResponseRequiredInput" id="@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput"></a>
 
 ```java
@@ -1747,6 +1778,16 @@ public java.lang.String getLogoImage();
 
 ```java
 public java.lang.String getMarketingUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `notes`<sup>Required</sup> <a name="notes" id="@cdktf/provider-azuread.application.Application.property.notes"></a>
+
+```java
+public java.lang.String getNotes();
 ```
 
 - *Type:* java.lang.String
@@ -2249,6 +2290,7 @@ ApplicationConfig.builder()
 //  .identifierUris(java.util.List<java.lang.String>)
 //  .logoImage(java.lang.String)
 //  .marketingUrl(java.lang.String)
+//  .notes(java.lang.String)
 //  .oauth2PostResponseRequired(java.lang.Boolean)
 //  .oauth2PostResponseRequired(IResolvable)
 //  .optionalClaims(ApplicationOptionalClaims)
@@ -2293,6 +2335,7 @@ ApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">identifierUris</a></code> | <code>java.util.List<java.lang.String></code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">logoImage</a></code> | <code>java.lang.String</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">marketingUrl</a></code> | <code>java.lang.String</code> | URL of the application's marketing page. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.notes">notes</a></code> | <code>java.lang.String</code> | User-specified notes relevant for the management of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired">oauth2PostResponseRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.optionalClaims">optionalClaims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.owners">owners</a></code> | <code>java.util.List<java.lang.String></code> | A list of object IDs of principals that will be granted ownership of the application. |
@@ -2549,6 +2592,20 @@ public java.lang.String getMarketingUrl();
 URL of the application's marketing page.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#marketing_url Application#marketing_url}
+
+---
+
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.application.ApplicationConfig.property.notes"></a>
+
+```java
+public java.lang.String getNotes();
+```
+
+- *Type:* java.lang.String
+
+User-specified notes relevant for the management of the application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
 
 ---
 

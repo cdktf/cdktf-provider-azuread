@@ -252,7 +252,7 @@ export class ApplicationCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_certificate',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.1',
+        providerVersion: '2.35.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

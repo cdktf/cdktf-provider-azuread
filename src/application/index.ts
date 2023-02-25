@@ -63,6 +63,12 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly marketingUrl?: string;
   /**
+  * User-specified notes relevant for the management of the application
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
+  */
+  readonly notes?: string;
+  /**
   * Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#oauth2_post_response_required Application#oauth2_post_response_required}
@@ -2530,7 +2536,7 @@ export class Application extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.1',
+        providerVersion: '2.35.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -2550,6 +2556,7 @@ export class Application extends cdktf.TerraformResource {
     this._identifierUris = config.identifierUris;
     this._logoImage = config.logoImage;
     this._marketingUrl = config.marketingUrl;
+    this._notes = config.notes;
     this._oauth2PostResponseRequired = config.oauth2PostResponseRequired;
     this._owners = config.owners;
     this._preventDuplicateNames = config.preventDuplicateNames;
@@ -2734,6 +2741,22 @@ export class Application extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get marketingUrlInput() {
     return this._marketingUrl;
+  }
+
+  // notes - computed: false, optional: true, required: false
+  private _notes?: string; 
+  public get notes() {
+    return this.getStringAttribute('notes');
+  }
+  public set notes(value: string) {
+    this._notes = value;
+  }
+  public resetNotes() {
+    this._notes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notesInput() {
+    return this._notes;
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
@@ -3055,6 +3078,7 @@ export class Application extends cdktf.TerraformResource {
       identifier_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._identifierUris),
       logo_image: cdktf.stringToTerraform(this._logoImage),
       marketing_url: cdktf.stringToTerraform(this._marketingUrl),
+      notes: cdktf.stringToTerraform(this._notes),
       oauth2_post_response_required: cdktf.booleanToTerraform(this._oauth2PostResponseRequired),
       owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
       prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),

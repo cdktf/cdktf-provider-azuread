@@ -22,6 +22,7 @@ group.Group(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   display_name: str,
+  administrative_unit_ids: typing.List[str] = None,
   assignable_to_role: typing.Union[bool, IResolvable] = None,
   auto_subscribe_new_members: typing.Union[bool, IResolvable] = None,
   behaviors: typing.List[str] = None,
@@ -57,6 +58,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.assignableToRole">assignable_to_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
@@ -147,6 +149,18 @@ Must be unique amongst siblings in the same scope
 The display name for the group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
+
+---
+
+##### `administrative_unit_ids`<sup>Optional</sup> <a name="administrative_unit_ids" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.administrativeUnitIds"></a>
+
+- *Type:* typing.List[str]
+
+The administrative unit IDs in which the group should be.
+
+If empty, the group will be created at the tenant level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#administrative_unit_ids Group#administrative_unit_ids}
 
 ---
 
@@ -383,6 +397,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.group.Group.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.putDynamicMembership">put_dynamic_membership</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetAdministrativeUnitIds">reset_administrative_unit_ids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetAssignableToRole">reset_assignable_to_role</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetAutoSubscribeNewMembers">reset_auto_subscribe_new_members</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetBehaviors">reset_behaviors</a></code> | *No description.* |
@@ -685,6 +700,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `reset_administrative_unit_ids` <a name="reset_administrative_unit_ids" id="@cdktf/provider-azuread.group.Group.resetAdministrativeUnitIds"></a>
+
+```python
+def reset_administrative_unit_ids() -> None
+```
+
 ##### `reset_assignable_to_role` <a name="reset_assignable_to_role" id="@cdktf/provider-azuread.group.Group.resetAssignableToRole"></a>
 
 ```python
@@ -910,6 +931,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput">administrative_unit_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRoleInput">assignable_to_role_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput">auto_subscribe_new_members_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviorsInput">behaviors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -931,6 +953,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">assignable_to_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1205,6 +1228,16 @@ timeouts: GroupTimeoutsOutputReference
 
 ---
 
+##### `administrative_unit_ids_input`<sup>Optional</sup> <a name="administrative_unit_ids_input" id="@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput"></a>
+
+```python
+administrative_unit_ids_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `assignable_to_role_input`<sup>Optional</sup> <a name="assignable_to_role_input" id="@cdktf/provider-azuread.group.Group.property.assignableToRoleInput"></a>
 
 ```python
@@ -1412,6 +1445,16 @@ visibility_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `administrative_unit_ids`<sup>Required</sup> <a name="administrative_unit_ids" id="@cdktf/provider-azuread.group.Group.property.administrativeUnitIds"></a>
+
+```python
+administrative_unit_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1641,6 +1684,7 @@ group.GroupConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   display_name: str,
+  administrative_unit_ids: typing.List[str] = None,
   assignable_to_role: typing.Union[bool, IResolvable] = None,
   auto_subscribe_new_members: typing.Union[bool, IResolvable] = None,
   behaviors: typing.List[str] = None,
@@ -1676,6 +1720,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole">assignable_to_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
@@ -1780,6 +1825,22 @@ display_name: str
 The display name for the group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
+
+---
+
+##### `administrative_unit_ids`<sup>Optional</sup> <a name="administrative_unit_ids" id="@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds"></a>
+
+```python
+administrative_unit_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The administrative unit IDs in which the group should be.
+
+If empty, the group will be created at the tenant level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#administrative_unit_ids Group#administrative_unit_ids}
 
 ---
 

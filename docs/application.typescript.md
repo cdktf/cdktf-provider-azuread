@@ -86,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetIdentifierUris">resetIdentifierUris</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetLogoImage">resetLogoImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetMarketingUrl">resetMarketingUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetNotes">resetNotes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired">resetOauth2PostResponseRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOptionalClaims">resetOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOwners">resetOwners</a></code> | *No description.* |
@@ -462,6 +463,12 @@ public resetLogoImage(): void
 public resetMarketingUrl(): void
 ```
 
+##### `resetNotes` <a name="resetNotes" id="@cdktf/provider-azuread.application.Application.resetNotes"></a>
+
+```typescript
+public resetNotes(): void
+```
+
 ##### `resetOauth2PostResponseRequired` <a name="resetOauth2PostResponseRequired" id="@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired"></a>
 
 ```typescript
@@ -668,6 +675,7 @@ application.Application.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImageInput">logoImageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrlInput">marketingUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notesInput">notesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput">oauth2PostResponseRequiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.optionalClaimsInput">optionalClaimsInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.ownersInput">ownersInput</a></code> | <code>string[]</code> | *No description.* |
@@ -692,6 +700,7 @@ application.Application.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.identifierUris">identifierUris</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImage">logoImage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrl">marketingUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notes">notes</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequired">oauth2PostResponseRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">owners</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">preventDuplicateNames</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1126,6 +1135,16 @@ public readonly marketingUrlInput: string;
 
 ---
 
+##### `notesInput`<sup>Optional</sup> <a name="notesInput" id="@cdktf/provider-azuread.application.Application.property.notesInput"></a>
+
+```typescript
+public readonly notesInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `oauth2PostResponseRequiredInput`<sup>Optional</sup> <a name="oauth2PostResponseRequiredInput" id="@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput"></a>
 
 ```typescript
@@ -1360,6 +1379,16 @@ public readonly logoImage: string;
 
 ```typescript
 public readonly marketingUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `notes`<sup>Required</sup> <a name="notes" id="@cdktf/provider-azuread.application.Application.property.notes"></a>
+
+```typescript
+public readonly notes: string;
 ```
 
 - *Type:* string
@@ -1836,6 +1865,7 @@ const applicationConfig: application.ApplicationConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">identifierUris</a></code> | <code>string[]</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">logoImage</a></code> | <code>string</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">marketingUrl</a></code> | <code>string</code> | URL of the application's marketing page. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.notes">notes</a></code> | <code>string</code> | User-specified notes relevant for the management of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired">oauth2PostResponseRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.optionalClaims">optionalClaims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.owners">owners</a></code> | <code>string[]</code> | A list of object IDs of principals that will be granted ownership of the application. |
@@ -2092,6 +2122,20 @@ public readonly marketingUrl: string;
 URL of the application's marketing page.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#marketing_url Application#marketing_url}
+
+---
+
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.application.ApplicationConfig.property.notes"></a>
+
+```typescript
+public readonly notes: string;
+```
+
+- *Type:* string
+
+User-specified notes relevant for the management of the application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
 
 ---
 

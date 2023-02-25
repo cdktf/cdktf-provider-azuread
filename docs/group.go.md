@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.group.Group.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.putDynamicMembership">PutDynamicMembership</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetAdministrativeUnitIds">ResetAdministrativeUnitIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetAssignableToRole">ResetAssignableToRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetAutoSubscribeNewMembers">ResetAutoSubscribeNewMembers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetBehaviors">ResetBehaviors</a></code> | *No description.* |
@@ -299,6 +300,12 @@ func PutTimeouts(value GroupTimeouts)
 
 ---
 
+##### `ResetAdministrativeUnitIds` <a name="ResetAdministrativeUnitIds" id="@cdktf/provider-azuread.group.Group.resetAdministrativeUnitIds"></a>
+
+```go
+func ResetAdministrativeUnitIds()
+```
+
 ##### `ResetAssignableToRole` <a name="ResetAssignableToRole" id="@cdktf/provider-azuread.group.Group.resetAssignableToRole"></a>
 
 ```go
@@ -518,6 +525,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preferredLanguage">PreferredLanguage</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.proxyAddresses">ProxyAddresses</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput">AdministrativeUnitIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRoleInput">AssignableToRoleInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput">AutoSubscribeNewMembersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviorsInput">BehaviorsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -539,6 +547,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">TypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">VisibilityInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">AdministrativeUnitIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">AssignableToRole</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">AutoSubscribeNewMembers</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviors">Behaviors</a></code> | <code>*[]*string</code> | *No description.* |
@@ -813,6 +822,16 @@ func Timeouts() GroupTimeoutsOutputReference
 
 ---
 
+##### `AdministrativeUnitIdsInput`<sup>Optional</sup> <a name="AdministrativeUnitIdsInput" id="@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput"></a>
+
+```go
+func AdministrativeUnitIdsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `AssignableToRoleInput`<sup>Optional</sup> <a name="AssignableToRoleInput" id="@cdktf/provider-azuread.group.Group.property.assignableToRoleInput"></a>
 
 ```go
@@ -1020,6 +1039,16 @@ func VisibilityInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `AdministrativeUnitIds`<sup>Required</sup> <a name="AdministrativeUnitIds" id="@cdktf/provider-azuread.group.Group.property.administrativeUnitIds"></a>
+
+```go
+func AdministrativeUnitIds() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -1249,6 +1278,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
+	AdministrativeUnitIds: *[]*string,
 	AssignableToRole: interface{},
 	AutoSubscribeNewMembers: interface{},
 	Behaviors: *[]*string,
@@ -1284,6 +1314,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name for the group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds">AdministrativeUnitIds</a></code> | <code>*[]*string</code> | The administrative unit IDs in which the group should be. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole">AssignableToRole</a></code> | <code>interface{}</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers">AutoSubscribeNewMembers</a></code> | <code>interface{}</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.behaviors">Behaviors</a></code> | <code>*[]*string</code> | The group behaviours for a Microsoft 365 group. |
@@ -1388,6 +1419,22 @@ DisplayName *string
 The display name for the group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
+
+---
+
+##### `AdministrativeUnitIds`<sup>Optional</sup> <a name="AdministrativeUnitIds" id="@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds"></a>
+
+```go
+AdministrativeUnitIds *[]*string
+```
+
+- *Type:* *[]*string
+
+The administrative unit IDs in which the group should be.
+
+If empty, the group will be created at the tenant level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#administrative_unit_ids Group#administrative_unit_ids}
 
 ---
 

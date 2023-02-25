@@ -33,6 +33,7 @@ application.Application(
   identifier_uris: typing.List[str] = None,
   logo_image: str = None,
   marketing_url: str = None,
+  notes: str = None,
   oauth2_post_response_required: typing.Union[bool, IResolvable] = None,
   optional_claims: ApplicationOptionalClaims = None,
   owners: typing.List[str] = None,
@@ -74,6 +75,7 @@ application.Application(
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.identifierUris">identifier_uris</a></code> | <code>typing.List[str]</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.logoImage">logo_image</a></code> | <code>str</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the application's marketing page. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.optionalClaims">optional_claims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the application. |
@@ -275,6 +277,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.notes"></a>
+
+- *Type:* str
+
+User-specified notes relevant for the management of the application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
+
+---
+
 ##### `oauth2_post_response_required`<sup>Optional</sup> <a name="oauth2_post_response_required" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.oauth2PostResponseRequired"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -465,6 +477,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetIdentifierUris">reset_identifier_uris</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetLogoImage">reset_logo_image</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetMarketingUrl">reset_marketing_url</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetNotes">reset_notes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired">reset_oauth2_post_response_required</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOptionalClaims">reset_optional_claims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOwners">reset_owners</a></code> | *No description.* |
@@ -1021,6 +1034,12 @@ def reset_logo_image() -> None
 def reset_marketing_url() -> None
 ```
 
+##### `reset_notes` <a name="reset_notes" id="@cdktf/provider-azuread.application.Application.resetNotes"></a>
+
+```python
+def reset_notes() -> None
+```
+
 ##### `reset_oauth2_post_response_required` <a name="reset_oauth2_post_response_required" id="@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired"></a>
 
 ```python
@@ -1233,6 +1252,7 @@ application.Application.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImageInput">logo_image_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrlInput">marketing_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notesInput">notes_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput">oauth2_post_response_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.optionalClaimsInput">optional_claims_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1257,6 +1277,7 @@ application.Application.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.identifierUris">identifier_uris</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImage">logo_image</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrl">marketing_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.notes">notes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1691,6 +1712,16 @@ marketing_url_input: str
 
 ---
 
+##### `notes_input`<sup>Optional</sup> <a name="notes_input" id="@cdktf/provider-azuread.application.Application.property.notesInput"></a>
+
+```python
+notes_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `oauth2_post_response_required_input`<sup>Optional</sup> <a name="oauth2_post_response_required_input" id="@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput"></a>
 
 ```python
@@ -1925,6 +1956,16 @@ logo_image: str
 
 ```python
 marketing_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `notes`<sup>Required</sup> <a name="notes" id="@cdktf/provider-azuread.application.Application.property.notes"></a>
+
+```python
+notes: str
 ```
 
 - *Type:* str
@@ -2416,6 +2457,7 @@ application.ApplicationConfig(
   identifier_uris: typing.List[str] = None,
   logo_image: str = None,
   marketing_url: str = None,
+  notes: str = None,
   oauth2_post_response_required: typing.Union[bool, IResolvable] = None,
   optional_claims: ApplicationOptionalClaims = None,
   owners: typing.List[str] = None,
@@ -2457,6 +2499,7 @@ application.ApplicationConfig(
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">identifier_uris</a></code> | <code>typing.List[str]</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">logo_image</a></code> | <code>str</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the application's marketing page. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.optionalClaims">optional_claims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the application. |
@@ -2713,6 +2756,20 @@ marketing_url: str
 URL of the application's marketing page.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#marketing_url Application#marketing_url}
+
+---
+
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.application.ApplicationConfig.property.notes"></a>
+
+```python
+notes: str
+```
+
+- *Type:* str
+
+User-specified notes relevant for the management of the application.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#notes Application#notes}
 
 ---
 
