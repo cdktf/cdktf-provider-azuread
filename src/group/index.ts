@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The administrative unit IDs in which the group should be. If empty, the group will be created at the tenant level.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#administrative_unit_ids Group#administrative_unit_ids}
+  */
+  readonly administrativeUnitIds?: string[];
+  /**
   * Indicates whether this group can be assigned to an Azure Active Directory role. This property can only be `true` for security-enabled groups.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#assignable_to_role Group#assignable_to_role}
@@ -406,7 +412,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_group',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.1',
+        providerVersion: '2.35.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -417,6 +423,7 @@ export class Group extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._administrativeUnitIds = config.administrativeUnitIds;
     this._assignableToRole = config.assignableToRole;
     this._autoSubscribeNewMembers = config.autoSubscribeNewMembers;
     this._behaviors = config.behaviors;
@@ -443,6 +450,22 @@ export class Group extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // administrative_unit_ids - computed: false, optional: true, required: false
+  private _administrativeUnitIds?: string[]; 
+  public get administrativeUnitIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('administrative_unit_ids'));
+  }
+  public set administrativeUnitIds(value: string[]) {
+    this._administrativeUnitIds = value;
+  }
+  public resetAdministrativeUnitIds() {
+    this._administrativeUnitIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get administrativeUnitIdsInput() {
+    return this._administrativeUnitIds;
+  }
 
   // assignable_to_role - computed: false, optional: true, required: false
   private _assignableToRole?: boolean | cdktf.IResolvable; 
@@ -828,6 +851,7 @@ export class Group extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      administrative_unit_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._administrativeUnitIds),
       assignable_to_role: cdktf.booleanToTerraform(this._assignableToRole),
       auto_subscribe_new_members: cdktf.booleanToTerraform(this._autoSubscribeNewMembers),
       behaviors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._behaviors),

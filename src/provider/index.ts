@@ -50,6 +50,12 @@ export interface AzureadProviderConfig {
   */
   readonly environment?: string;
   /**
+  * The Hostname which should be used for the Azure Metadata Service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#metadata_host AzureadProvider#metadata_host}
+  */
+  readonly metadataHost?: string;
+  /**
   * The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#msi_endpoint AzureadProvider#msi_endpoint}
@@ -143,7 +149,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'azuread',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.1',
+        providerVersion: '2.35.0',
         providerVersionConstraint: '~> 2.0'
       },
       terraformProviderSource: 'hashicorp/azuread'
@@ -155,6 +161,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
     this._clientSecret = config.clientSecret;
     this._disableTerraformPartnerId = config.disableTerraformPartnerId;
     this._environment = config.environment;
+    this._metadataHost = config.metadataHost;
     this._msiEndpoint = config.msiEndpoint;
     this._oidcRequestToken = config.oidcRequestToken;
     this._oidcRequestUrl = config.oidcRequestUrl;
@@ -282,6 +289,22 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get environmentInput() {
     return this._environment;
+  }
+
+  // metadata_host - computed: false, optional: true, required: false
+  private _metadataHost?: string; 
+  public get metadataHost() {
+    return this._metadataHost;
+  }
+  public set metadataHost(value: string | undefined) {
+    this._metadataHost = value;
+  }
+  public resetMetadataHost() {
+    this._metadataHost = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataHostInput() {
+    return this._metadataHost;
   }
 
   // msi_endpoint - computed: false, optional: true, required: false
@@ -473,6 +496,7 @@ export class AzureadProvider extends cdktf.TerraformProvider {
       client_secret: cdktf.stringToTerraform(this._clientSecret),
       disable_terraform_partner_id: cdktf.booleanToTerraform(this._disableTerraformPartnerId),
       environment: cdktf.stringToTerraform(this._environment),
+      metadata_host: cdktf.stringToTerraform(this._metadataHost),
       msi_endpoint: cdktf.stringToTerraform(this._msiEndpoint),
       oidc_request_token: cdktf.stringToTerraform(this._oidcRequestToken),
       oidc_request_url: cdktf.stringToTerraform(this._oidcRequestUrl),

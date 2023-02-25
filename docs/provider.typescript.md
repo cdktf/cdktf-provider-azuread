@@ -64,6 +64,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecret">resetClientSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetDisableTerraformPartnerId">resetDisableTerraformPartnerId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetEnvironment">resetEnvironment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetMetadataHost">resetMetadataHost</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetMsiEndpoint">resetMsiEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetOidcRequestToken">resetOidcRequestToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetOidcRequestUrl">resetOidcRequestUrl</a></code> | *No description.* |
@@ -187,6 +188,12 @@ public resetDisableTerraformPartnerId(): void
 
 ```typescript
 public resetEnvironment(): void
+```
+
+##### `resetMetadataHost` <a name="resetMetadataHost" id="@cdktf/provider-azuread.provider.AzureadProvider.resetMetadataHost"></a>
+
+```typescript
+public resetMetadataHost(): void
 ```
 
 ##### `resetMsiEndpoint` <a name="resetMsiEndpoint" id="@cdktf/provider-azuread.provider.AzureadProvider.resetMsiEndpoint"></a>
@@ -340,6 +347,7 @@ provider.AzureadProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">disableTerraformPartnerIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHostInput">metadataHostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpointInput">msiEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestTokenInput">oidcRequestTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestUrlInput">oidcRequestUrlInput</a></code> | <code>string</code> | *No description.* |
@@ -357,6 +365,7 @@ provider.AzureadProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environment">environment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost">metadataHost</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpoint">msiEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestToken">oidcRequestToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestUrl">oidcRequestUrl</a></code> | <code>string</code> | *No description.* |
@@ -542,6 +551,16 @@ public readonly environmentInput: string;
 
 ---
 
+##### `metadataHostInput`<sup>Optional</sup> <a name="metadataHostInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHostInput"></a>
+
+```typescript
+public readonly metadataHostInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `msiEndpointInput`<sup>Optional</sup> <a name="msiEndpointInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpointInput"></a>
 
 ```typescript
@@ -712,6 +731,16 @@ public readonly environment: string;
 
 ---
 
+##### `metadataHost`<sup>Optional</sup> <a name="metadataHost" id="@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost"></a>
+
+```typescript
+public readonly metadataHost: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `msiEndpoint`<sup>Optional</sup> <a name="msiEndpoint" id="@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpoint"></a>
 
 ```typescript
@@ -854,6 +883,7 @@ const azureadProviderConfig: provider.AzureadProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.environment">environment</a></code> | <code>string</code> | The cloud environment which should be used. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost">metadataHost</a></code> | <code>string</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint">msiEndpoint</a></code> | <code>string</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestToken">oidcRequestToken</a></code> | <code>string</code> | The bearer token for the request to the OIDC provider. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestUrl">oidcRequestUrl</a></code> | <code>string</code> | The URL for the OIDC provider from which to request an ID token. |
@@ -978,6 +1008,20 @@ The cloud environment which should be used.
 Possible values are: `global` (also `public`), `usgovernmentl4` (also `usgovernment`), `usgovernmentl5` (also `dod`), and `china`. Defaults to `global`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#environment AzureadProvider#environment}
+
+---
+
+##### `metadataHost`<sup>Optional</sup> <a name="metadataHost" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost"></a>
+
+```typescript
+public readonly metadataHost: string;
+```
+
+- *Type:* string
+
+The Hostname which should be used for the Azure Metadata Service.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread#metadata_host AzureadProvider#metadata_host}
 
 ---
 

@@ -23,6 +23,7 @@ Group.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .displayName(java.lang.String)
+//  .administrativeUnitIds(java.util.List<java.lang.String>)
 //  .assignableToRole(java.lang.Boolean)
 //  .assignableToRole(IResolvable)
 //  .autoSubscribeNewMembers(java.lang.Boolean)
@@ -66,6 +67,7 @@ Group.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name for the group. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.administrativeUnitIds">administrativeUnitIds</a></code> | <code>java.util.List<java.lang.String></code> | The administrative unit IDs in which the group should be. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.assignableToRole">assignableToRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.autoSubscribeNewMembers">autoSubscribeNewMembers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.behaviors">behaviors</a></code> | <code>java.util.List<java.lang.String></code> | The group behaviours for a Microsoft 365 group. |
@@ -156,6 +158,18 @@ Must be unique amongst siblings in the same scope
 The display name for the group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
+
+---
+
+##### `administrativeUnitIds`<sup>Optional</sup> <a name="administrativeUnitIds" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.administrativeUnitIds"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+The administrative unit IDs in which the group should be.
+
+If empty, the group will be created at the tenant level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#administrative_unit_ids Group#administrative_unit_ids}
 
 ---
 
@@ -392,6 +406,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.group.Group.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.putDynamicMembership">putDynamicMembership</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetAdministrativeUnitIds">resetAdministrativeUnitIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetAssignableToRole">resetAssignableToRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetAutoSubscribeNewMembers">resetAutoSubscribeNewMembers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetBehaviors">resetBehaviors</a></code> | *No description.* |
@@ -623,6 +638,12 @@ public void putTimeouts(GroupTimeouts value)
 
 ---
 
+##### `resetAdministrativeUnitIds` <a name="resetAdministrativeUnitIds" id="@cdktf/provider-azuread.group.Group.resetAdministrativeUnitIds"></a>
+
+```java
+public void resetAdministrativeUnitIds()
+```
+
 ##### `resetAssignableToRole` <a name="resetAssignableToRole" id="@cdktf/provider-azuread.group.Group.resetAssignableToRole"></a>
 
 ```java
@@ -842,6 +863,7 @@ Group.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preferredLanguage">preferredLanguage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.proxyAddresses">proxyAddresses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput">administrativeUnitIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRoleInput">assignableToRoleInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput">autoSubscribeNewMembersInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviorsInput">behaviorsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -863,6 +885,7 @@ Group.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">typesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">visibilityInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">administrativeUnitIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">assignableToRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">autoSubscribeNewMembers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviors">behaviors</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1137,6 +1160,16 @@ public GroupTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `administrativeUnitIdsInput`<sup>Optional</sup> <a name="administrativeUnitIdsInput" id="@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getAdministrativeUnitIdsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `assignableToRoleInput`<sup>Optional</sup> <a name="assignableToRoleInput" id="@cdktf/provider-azuread.group.Group.property.assignableToRoleInput"></a>
 
 ```java
@@ -1344,6 +1377,16 @@ public java.lang.String getVisibilityInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `administrativeUnitIds`<sup>Required</sup> <a name="administrativeUnitIds" id="@cdktf/provider-azuread.group.Group.property.administrativeUnitIds"></a>
+
+```java
+public java.util.List<java.lang.String> getAdministrativeUnitIds();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -1576,6 +1619,7 @@ GroupConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .displayName(java.lang.String)
+//  .administrativeUnitIds(java.util.List<java.lang.String>)
 //  .assignableToRole(java.lang.Boolean)
 //  .assignableToRole(IResolvable)
 //  .autoSubscribeNewMembers(java.lang.Boolean)
@@ -1619,6 +1663,7 @@ GroupConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name for the group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds">administrativeUnitIds</a></code> | <code>java.util.List<java.lang.String></code> | The administrative unit IDs in which the group should be. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole">assignableToRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers">autoSubscribeNewMembers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.behaviors">behaviors</a></code> | <code>java.util.List<java.lang.String></code> | The group behaviours for a Microsoft 365 group. |
@@ -1723,6 +1768,22 @@ public java.lang.String getDisplayName();
 The display name for the group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#display_name Group#display_name}
+
+---
+
+##### `administrativeUnitIds`<sup>Optional</sup> <a name="administrativeUnitIds" id="@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds"></a>
+
+```java
+public java.util.List<java.lang.String> getAdministrativeUnitIds();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The administrative unit IDs in which the group should be.
+
+If empty, the group will be created at the tenant level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#administrative_unit_ids Group#administrative_unit_ids}
 
 ---
 

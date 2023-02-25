@@ -202,7 +202,7 @@ export class DataAzureadDirectoryRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_directory_roles',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.1',
+        providerVersion: '2.35.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -246,6 +246,11 @@ export class DataAzureadDirectoryRoles extends cdktf.TerraformDataSource {
   private _roles = new DataAzureadDirectoryRolesRolesList(this, "roles", false);
   public get roles() {
     return this._roles;
+  }
+
+  // template_ids - computed: true, optional: false, required: false
+  public get templateIds() {
+    return this.getListAttribute('template_ids');
   }
 
   // timeouts - computed: false, optional: true, required: false

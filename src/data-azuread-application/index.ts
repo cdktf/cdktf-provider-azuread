@@ -1218,7 +1218,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.34.1',
+        providerVersion: '2.35.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -1350,6 +1350,11 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   // marketing_url - computed: true, optional: false, required: false
   public get marketingUrl() {
     return this.getStringAttribute('marketing_url');
+  }
+
+  // notes - computed: true, optional: false, required: false
+  public get notes() {
+    return this.getStringAttribute('notes');
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
