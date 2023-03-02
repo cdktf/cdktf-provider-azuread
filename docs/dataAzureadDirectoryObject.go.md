@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/d/directory_
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryobject"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaddirectoryobject"
 
 dataazureaddirectoryobject.NewDataAzureadDirectoryObject(scope Construct, id *string, config DataAzureadDirectoryObjectConfig) DataAzureadDirectoryObject
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryobject"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaddirectoryobject"
 
 dataazureaddirectoryobject.DataAzureadDirectoryObject_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryobject"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaddirectoryobject"
 
 dataazureaddirectoryobject.DataAzureadDirectoryObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ dataazureaddirectoryobject.DataAzureadDirectoryObject_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryobject"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaddirectoryobject"
 
 dataazureaddirectoryobject.DataAzureadDirectoryObject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryobject"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaddirectoryobject"
 
 &dataazureaddirectoryobject.DataAzureadDirectoryObjectConfig {
 	Connection: interface{},
@@ -605,7 +605,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryo
 	Provisioners: *[]interface{},
 	ObjectId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v5.dataAzureadDirectoryObject.DataAzureadDirectoryObjectTimeouts,
 }
 ```
 
@@ -744,7 +744,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryobject"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaddirectoryobject"
 
 &dataazureaddirectoryobject.DataAzureadDirectoryObjectTimeouts {
 	Read: *string,
@@ -778,7 +778,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaddirectoryobject"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/dataazureaddirectoryobject"
 
 dataazureaddirectoryobject.NewDataAzureadDirectoryObjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadDirectoryObjectTimeoutsOutputReference
 ```
