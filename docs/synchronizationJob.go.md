@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/r/synchroniz
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 synchronizationjob.NewSynchronizationJob(scope Construct, id *string, config SynchronizationJobConfig) SynchronizationJob
 ```
@@ -300,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 synchronizationjob.SynchronizationJob_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 synchronizationjob.SynchronizationJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ synchronizationjob.SynchronizationJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 synchronizationjob.SynchronizationJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 &synchronizationjob.SynchronizationJobConfig {
 	Connection: interface{},
@@ -680,7 +680,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob
 	TemplateId: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v5.synchronizationJob.SynchronizationJobTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.synchronizationJob.SynchronizationJobTimeouts,
 }
 ```
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJobSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 &synchronizationjob.SynchronizationJobSchedule {
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 &synchronizationjob.SynchronizationJobTimeouts {
 	Create: *string,
@@ -938,7 +938,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJobScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 synchronizationjob.NewSynchronizationJobScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SynchronizationJobScheduleList
 ```
@@ -1070,7 +1070,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJobScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 synchronizationjob.NewSynchronizationJobScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SynchronizationJobScheduleOutputReference
 ```
@@ -1370,7 +1370,7 @@ func InternalValue() SynchronizationJobSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/synchronizationjob"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/synchronizationjob"
 
 synchronizationjob.NewSynchronizationJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynchronizationJobTimeoutsOutputReference
 ```
