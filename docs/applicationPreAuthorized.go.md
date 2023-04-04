@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/r/applicatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/applicationpreauthorized"
 
 applicationpreauthorized.NewApplicationPreAuthorized(scope Construct, id *string, config ApplicationPreAuthorizedConfig) ApplicationPreAuthorized
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ applicationpreauthorized.ApplicationPreAuthorized_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsTerraformResource(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/applicationpreauthorized"
 
 &applicationpreauthorized.ApplicationPreAuthorizedConfig {
 	Connection: interface{},
@@ -662,7 +662,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthori
 	AuthorizedAppId: *string,
 	PermissionIds: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v5.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts,
 }
 ```
 
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/applicationpreauthorized"
 
 &applicationpreauthorized.ApplicationPreAuthorizedTimeouts {
 	Create: *string,
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v5/applicationpreauthorized"
 
 applicationpreauthorized.NewApplicationPreAuthorizedTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationPreAuthorizedTimeoutsOutputReference
 ```
