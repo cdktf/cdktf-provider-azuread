@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/r/applicatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationcertificate"
 
 applicationcertificate.NewApplicationCertificate(scope Construct, id *string, config ApplicationCertificateConfig) ApplicationCertificate
 ```
@@ -335,7 +335,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ applicationcertificate.ApplicationCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationcertificate"
 
 &applicationcertificate.ApplicationCertificateConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificat
 	Id: *string,
 	KeyId: *string,
 	StartDate: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationCertificate.ApplicationCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.applicationCertificate.ApplicationCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationcertificate"
 
 &applicationcertificate.ApplicationCertificateTimeouts {
 	Create: *string,
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/applicationcertificate"
 
 applicationcertificate.NewApplicationCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationCertificateTimeoutsOutputReference
 ```

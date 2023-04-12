@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_pr
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltokensigningcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate"
 
 serviceprincipaltokensigningcertificate.NewServicePrincipalTokenSigningCertificate(scope Construct, id *string, config ServicePrincipalTokenSigningCertificateConfig) ServicePrincipalTokenSigningCertificate
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltokensigningcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate"
 
 serviceprincipaltokensigningcertificate.ServicePrincipalTokenSigningCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltokensigningcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate"
 
 serviceprincipaltokensigningcertificate.ServicePrincipalTokenSigningCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ serviceprincipaltokensigningcertificate.ServicePrincipalTokenSigningCertificate_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltokensigningcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate"
 
 serviceprincipaltokensigningcertificate.ServicePrincipalTokenSigningCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -706,7 +706,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltokensigningcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate"
 
 &serviceprincipaltokensigningcertificate.ServicePrincipalTokenSigningCertificateConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltoken
 	DisplayName: *string,
 	EndDate: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificateTimeouts,
 }
 ```
 
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltokensigningcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate"
 
 &serviceprincipaltokensigningcertificate.ServicePrincipalTokenSigningCertificateTimeouts {
 	Create: *string,
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate.ServicePrincipalTokenSigningCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipaltokensigningcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipaltokensigningcertificate"
 
 serviceprincipaltokensigningcertificate.NewServicePrincipalTokenSigningCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalTokenSigningCertificateTimeoutsOutputReference
 ```
