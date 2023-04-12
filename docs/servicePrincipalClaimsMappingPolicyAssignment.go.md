@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/r/service_pr
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.NewServicePrincipalClaimsMappingPolicyAssignment(scope Construct, id *string, config ServicePrincipalClaimsMappingPolicyAssignmentConfig) ServicePrincipalClaimsMappingPolicyAssignment
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 &serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig {
 	Connection: interface{},
