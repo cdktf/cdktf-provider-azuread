@@ -35,6 +35,7 @@ group.Group(
   mail_enabled: typing.Union[bool, IResolvable] = None,
   mail_nickname: str = None,
   members: typing.List[str] = None,
+  onpremises_group_type: str = None,
   owners: typing.List[str] = None,
   prevent_duplicate_names: typing.Union[bool, IResolvable] = None,
   provisioning_options: typing.List[str] = None,
@@ -42,7 +43,8 @@ group.Group(
   theme: str = None,
   timeouts: GroupTimeouts = None,
   types: typing.List[str] = None,
-  visibility: str = None
+  visibility: str = None,
+  writeback_enabled: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -71,6 +73,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | A set of members who should be present in this group. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
@@ -79,6 +82,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.writebackEnabled">writeback_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
@@ -291,6 +295,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `onpremises_group_type`<sup>Optional</sup> <a name="onpremises_group_type" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.onpremisesGroupType"></a>
+
+- *Type:* str
+
+Indicates the target on-premise group type the group will be written back as.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#onpremises_group_type Group#onpremises_group_type}
+
+---
+
 ##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.owners"></a>
 
 - *Type:* typing.List[str]
@@ -375,6 +389,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.writebackEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#writeback_enabled Group#writeback_enabled}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -410,6 +434,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMailEnabled">reset_mail_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMailNickname">reset_mail_nickname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMembers">reset_members</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetOnpremisesGroupType">reset_onpremises_group_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetOwners">reset_owners</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetPreventDuplicateNames">reset_prevent_duplicate_names</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetProvisioningOptions">reset_provisioning_options</a></code> | *No description.* |
@@ -418,6 +443,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetTypes">reset_types</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetVisibility">reset_visibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetWritebackEnabled">reset_writeback_enabled</a></code> | *No description.* |
 
 ---
 
@@ -778,6 +804,12 @@ def reset_mail_nickname() -> None
 def reset_members() -> None
 ```
 
+##### `reset_onpremises_group_type` <a name="reset_onpremises_group_type" id="@cdktf/provider-azuread.group.Group.resetOnpremisesGroupType"></a>
+
+```python
+def reset_onpremises_group_type() -> None
+```
+
 ##### `reset_owners` <a name="reset_owners" id="@cdktf/provider-azuread.group.Group.resetOwners"></a>
 
 ```python
@@ -824,6 +856,12 @@ def reset_types() -> None
 
 ```python
 def reset_visibility() -> None
+```
+
+##### `reset_writeback_enabled` <a name="reset_writeback_enabled" id="@cdktf/provider-azuread.group.Group.resetWritebackEnabled"></a>
+
+```python
+def reset_writeback_enabled() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -945,6 +983,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabledInput">mail_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.membersInput">members_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput">onpremises_group_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput">prevent_duplicate_names_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptionsInput">provisioning_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -953,6 +992,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">writeback_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">assignable_to_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -966,6 +1006,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabled">mail_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.members">members</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -973,6 +1014,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.theme">theme</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.types">types</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabled">writeback_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
@@ -1368,6 +1410,16 @@ members_input: typing.List[str]
 
 ---
 
+##### `onpremises_group_type_input`<sup>Optional</sup> <a name="onpremises_group_type_input" id="@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput"></a>
+
+```python
+onpremises_group_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `owners_input`<sup>Optional</sup> <a name="owners_input" id="@cdktf/provider-azuread.group.Group.property.ownersInput"></a>
 
 ```python
@@ -1445,6 +1497,16 @@ visibility_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `writeback_enabled_input`<sup>Optional</sup> <a name="writeback_enabled_input" id="@cdktf/provider-azuread.group.Group.property.writebackEnabledInput"></a>
+
+```python
+writeback_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1578,6 +1640,16 @@ members: typing.List[str]
 
 ---
 
+##### `onpremises_group_type`<sup>Required</sup> <a name="onpremises_group_type" id="@cdktf/provider-azuread.group.Group.property.onpremisesGroupType"></a>
+
+```python
+onpremises_group_type: str
+```
+
+- *Type:* str
+
+---
+
 ##### `owners`<sup>Required</sup> <a name="owners" id="@cdktf/provider-azuread.group.Group.property.owners"></a>
 
 ```python
@@ -1648,6 +1720,16 @@ visibility: str
 
 ---
 
+##### `writeback_enabled`<sup>Required</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.group.Group.property.writebackEnabled"></a>
+
+```python
+writeback_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1697,6 +1779,7 @@ group.GroupConfig(
   mail_enabled: typing.Union[bool, IResolvable] = None,
   mail_nickname: str = None,
   members: typing.List[str] = None,
+  onpremises_group_type: str = None,
   owners: typing.List[str] = None,
   prevent_duplicate_names: typing.Union[bool, IResolvable] = None,
   provisioning_options: typing.List[str] = None,
@@ -1704,7 +1787,8 @@ group.GroupConfig(
   theme: str = None,
   timeouts: GroupTimeouts = None,
   types: typing.List[str] = None,
-  visibility: str = None
+  visibility: str = None,
+  writeback_enabled: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -1733,6 +1817,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">mail_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.members">members</a></code> | <code>typing.List[str]</code> | A set of members who should be present in this group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
@@ -1741,6 +1826,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled">writeback_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
@@ -2019,6 +2105,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `onpremises_group_type`<sup>Optional</sup> <a name="onpremises_group_type" id="@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType"></a>
+
+```python
+onpremises_group_type: str
+```
+
+- *Type:* str
+
+Indicates the target on-premise group type the group will be written back as.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#onpremises_group_type Group#onpremises_group_type}
+
+---
+
 ##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.group.GroupConfig.property.owners"></a>
 
 ```python
@@ -2132,6 +2232,20 @@ visibility: str
 Specifies the group join policy and group content visibility.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#visibility Group#visibility}
+
+---
+
+##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled"></a>
+
+```python
+writeback_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#writeback_enabled Group#writeback_enabled}
 
 ---
 

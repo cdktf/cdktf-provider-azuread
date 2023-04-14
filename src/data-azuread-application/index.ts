@@ -1218,7 +1218,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -1415,6 +1415,11 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   private _requiredResourceAccess = new DataAzureadApplicationRequiredResourceAccessList(this, "required_resource_access", false);
   public get requiredResourceAccess() {
     return this._requiredResourceAccess;
+  }
+
+  // service_management_reference - computed: true, optional: false, required: false
+  public get serviceManagementReference() {
+    return this.getStringAttribute('service_management_reference');
   }
 
   // sign_in_audience - computed: true, optional: false, required: false

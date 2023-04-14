@@ -216,7 +216,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_group',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -364,6 +364,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     return this.getStringAttribute('onpremises_domain_name');
   }
 
+  // onpremises_group_type - computed: true, optional: false, required: false
+  public get onpremisesGroupType() {
+    return this.getStringAttribute('onpremises_group_type');
+  }
+
   // onpremises_netbios_name - computed: true, optional: false, required: false
   public get onpremisesNetbiosName() {
     return this.getStringAttribute('onpremises_netbios_name');
@@ -433,6 +438,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // visibility - computed: true, optional: false, required: false
   public get visibility() {
     return this.getStringAttribute('visibility');
+  }
+
+  // writeback_enabled - computed: true, optional: false, required: false
+  public get writebackEnabled() {
+    return this.getBooleanAttribute('writeback_enabled');
   }
 
   // timeouts - computed: false, optional: true, required: false

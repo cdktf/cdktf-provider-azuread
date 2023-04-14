@@ -49,6 +49,7 @@ Application.Builder.create(Construct scope, java.lang.String id)
 //  .publicClient(ApplicationPublicClient)
 //  .requiredResourceAccess(IResolvable)
 //  .requiredResourceAccess(java.util.List<ApplicationRequiredResourceAccess>)
+//  .serviceManagementReference(java.lang.String)
 //  .signInAudience(java.lang.String)
 //  .singlePageApplication(ApplicationSinglePageApplication)
 //  .supportUrl(java.lang.String)
@@ -91,6 +92,7 @@ Application.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.privacyStatementUrl">privacyStatementUrl</a></code> | <code>java.lang.String</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.publicClient">publicClient</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.requiredResourceAccess">requiredResourceAccess</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>></code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.serviceManagementReference">serviceManagementReference</a></code> | <code>java.lang.String</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.signInAudience">signInAudience</a></code> | <code>java.lang.String</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.singlePageApplication">singlePageApplication</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.supportUrl">supportUrl</a></code> | <code>java.lang.String</code> | URL of the application's support page. |
@@ -365,6 +367,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `serviceManagementReference`<sup>Optional</sup> <a name="serviceManagementReference" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.serviceManagementReference"></a>
+
+- *Type:* java.lang.String
+
+References application or service contact information from a Service or Asset Management database.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
+
+---
+
 ##### `signInAudience`<sup>Optional</sup> <a name="signInAudience" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.signInAudience"></a>
 
 - *Type:* java.lang.String
@@ -493,6 +505,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPrivacyStatementUrl">resetPrivacyStatementUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPublicClient">resetPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetRequiredResourceAccess">resetRequiredResourceAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetServiceManagementReference">resetServiceManagementReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSignInAudience">resetSignInAudience</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSinglePageApplication">resetSinglePageApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSupportUrl">resetSupportUrl</a></code> | *No description.* |
@@ -910,6 +923,12 @@ public void resetPublicClient()
 public void resetRequiredResourceAccess()
 ```
 
+##### `resetServiceManagementReference` <a name="resetServiceManagementReference" id="@cdktf/provider-azuread.application.Application.resetServiceManagementReference"></a>
+
+```java
+public void resetServiceManagementReference()
+```
+
 ##### `resetSignInAudience` <a name="resetSignInAudience" id="@cdktf/provider-azuread.application.Application.resetSignInAudience"></a>
 
 ```java
@@ -1082,6 +1101,7 @@ Application.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrlInput">privacyStatementUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publicClientInput">publicClientInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.requiredResourceAccessInput">requiredResourceAccessInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput">serviceManagementReferenceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudienceInput">signInAudienceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.singlePageApplicationInput">singlePageApplicationInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrlInput">supportUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1104,6 +1124,7 @@ Application.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">owners</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">preventDuplicateNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReference">serviceManagementReference</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudience">signInAudience</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrl">supportUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1614,6 +1635,16 @@ public java.lang.Object getRequiredResourceAccessInput();
 
 ---
 
+##### `serviceManagementReferenceInput`<sup>Optional</sup> <a name="serviceManagementReferenceInput" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput"></a>
+
+```java
+public java.lang.String getServiceManagementReferenceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `signInAudienceInput`<sup>Optional</sup> <a name="signInAudienceInput" id="@cdktf/provider-azuread.application.Application.property.signInAudienceInput"></a>
 
 ```java
@@ -1828,6 +1859,16 @@ public java.lang.Object getPreventDuplicateNames();
 
 ```java
 public java.lang.String getPrivacyStatementUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serviceManagementReference`<sup>Required</sup> <a name="serviceManagementReference" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReference"></a>
+
+```java
+public java.lang.String getServiceManagementReference();
 ```
 
 - *Type:* java.lang.String
@@ -2301,6 +2342,7 @@ ApplicationConfig.builder()
 //  .publicClient(ApplicationPublicClient)
 //  .requiredResourceAccess(IResolvable)
 //  .requiredResourceAccess(java.util.List<ApplicationRequiredResourceAccess>)
+//  .serviceManagementReference(java.lang.String)
 //  .signInAudience(java.lang.String)
 //  .singlePageApplication(ApplicationSinglePageApplication)
 //  .supportUrl(java.lang.String)
@@ -2343,6 +2385,7 @@ ApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>java.lang.String</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.publicClient">publicClient</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.requiredResourceAccess">requiredResourceAccess</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>></code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference">serviceManagementReference</a></code> | <code>java.lang.String</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.signInAudience">signInAudience</a></code> | <code>java.lang.String</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.singlePageApplication">singlePageApplication</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.supportUrl">supportUrl</a></code> | <code>java.lang.String</code> | URL of the application's support page. |
@@ -2704,6 +2747,20 @@ public java.lang.Object getRequiredResourceAccess();
 required_resource_access block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
+
+---
+
+##### `serviceManagementReference`<sup>Optional</sup> <a name="serviceManagementReference" id="@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference"></a>
+
+```java
+public java.lang.String getServiceManagementReference();
+```
+
+- *Type:* java.lang.String
+
+References application or service contact information from a Service or Asset Management database.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
 
 ---
 

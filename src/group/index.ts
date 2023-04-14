@@ -87,6 +87,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly members?: string[];
   /**
+  * Indicates the target on-premise group type the group will be written back as
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#onpremises_group_type Group#onpremises_group_type}
+  */
+  readonly onpremisesGroupType?: string;
+  /**
   * A set of owners who own this group. Supported object types are Users or Service Principals
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#owners Group#owners}
@@ -128,6 +134,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#visibility Group#visibility}
   */
   readonly visibility?: string;
+  /**
+  * Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#writeback_enabled Group#writeback_enabled}
+  */
+  readonly writebackEnabled?: boolean | cdktf.IResolvable;
   /**
   * dynamic_membership block
   * 
@@ -412,7 +424,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_group',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -436,6 +448,7 @@ export class Group extends cdktf.TerraformResource {
     this._mailEnabled = config.mailEnabled;
     this._mailNickname = config.mailNickname;
     this._members = config.members;
+    this._onpremisesGroupType = config.onpremisesGroupType;
     this._owners = config.owners;
     this._preventDuplicateNames = config.preventDuplicateNames;
     this._provisioningOptions = config.provisioningOptions;
@@ -443,6 +456,7 @@ export class Group extends cdktf.TerraformResource {
     this._theme = config.theme;
     this._types = config.types;
     this._visibility = config.visibility;
+    this._writebackEnabled = config.writebackEnabled;
     this._dynamicMembership.internalValue = config.dynamicMembership;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -671,6 +685,22 @@ export class Group extends cdktf.TerraformResource {
     return this.getStringAttribute('onpremises_domain_name');
   }
 
+  // onpremises_group_type - computed: false, optional: true, required: false
+  private _onpremisesGroupType?: string; 
+  public get onpremisesGroupType() {
+    return this.getStringAttribute('onpremises_group_type');
+  }
+  public set onpremisesGroupType(value: string) {
+    this._onpremisesGroupType = value;
+  }
+  public resetOnpremisesGroupType() {
+    this._onpremisesGroupType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onpremisesGroupTypeInput() {
+    return this._onpremisesGroupType;
+  }
+
   // onpremises_netbios_name - computed: true, optional: false, required: false
   public get onpremisesNetbiosName() {
     return this.getStringAttribute('onpremises_netbios_name');
@@ -813,6 +843,22 @@ export class Group extends cdktf.TerraformResource {
     return this._visibility;
   }
 
+  // writeback_enabled - computed: false, optional: true, required: false
+  private _writebackEnabled?: boolean | cdktf.IResolvable; 
+  public get writebackEnabled() {
+    return this.getBooleanAttribute('writeback_enabled');
+  }
+  public set writebackEnabled(value: boolean | cdktf.IResolvable) {
+    this._writebackEnabled = value;
+  }
+  public resetWritebackEnabled() {
+    this._writebackEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get writebackEnabledInput() {
+    return this._writebackEnabled;
+  }
+
   // dynamic_membership - computed: false, optional: true, required: false
   private _dynamicMembership = new GroupDynamicMembershipOutputReference(this, "dynamic_membership");
   public get dynamicMembership() {
@@ -864,6 +910,7 @@ export class Group extends cdktf.TerraformResource {
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
+      onpremises_group_type: cdktf.stringToTerraform(this._onpremisesGroupType),
       owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
       prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
       provisioning_options: cdktf.listMapper(cdktf.stringToTerraform, false)(this._provisioningOptions),
@@ -871,6 +918,7 @@ export class Group extends cdktf.TerraformResource {
       theme: cdktf.stringToTerraform(this._theme),
       types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._types),
       visibility: cdktf.stringToTerraform(this._visibility),
+      writeback_enabled: cdktf.booleanToTerraform(this._writebackEnabled),
       dynamic_membership: groupDynamicMembershipToTerraform(this._dynamicMembership.internalValue),
       timeouts: groupTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.resetMail">ResetMail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.resetMailNickname">ResetMailNickname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.resetObjectId">ResetObjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -277,6 +278,12 @@ func PutTimeouts(value DataAzureadUserTimeouts)
 func ResetId()
 ```
 
+##### `ResetMail` <a name="ResetMail" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.resetMail"></a>
+
+```go
+func ResetMail()
+```
+
 ##### `ResetMailNickname` <a name="ResetMailNickname" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.resetMailNickname"></a>
 
 ```go
@@ -406,7 +413,6 @@ dataazureaduser.DataAzureadUser_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.givenName">GivenName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.imAddresses">ImAddresses</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.jobTitle">JobTitle</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mail">Mail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.managerId">ManagerId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mobilePhone">MobilePhone</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.officeLocation">OfficeLocation</a></code> | <code>*string</code> | *No description.* |
@@ -429,11 +435,13 @@ dataazureaduser.DataAzureadUser_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.usageLocation">UsageLocation</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.userType">UserType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mailInput">MailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mailNicknameInput">MailNicknameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.objectIdInput">ObjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.userPrincipalNameInput">UserPrincipalNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mail">Mail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mailNickname">MailNickname</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.userPrincipalName">UserPrincipalName</a></code> | <code>*string</code> | *No description.* |
@@ -752,16 +760,6 @@ func JobTitle() *string
 
 ---
 
-##### `Mail`<sup>Required</sup> <a name="Mail" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mail"></a>
-
-```go
-func Mail() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `ManagerId`<sup>Required</sup> <a name="ManagerId" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.managerId"></a>
 
 ```go
@@ -982,6 +980,16 @@ func IdInput() *string
 
 ---
 
+##### `MailInput`<sup>Optional</sup> <a name="MailInput" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mailInput"></a>
+
+```go
+func MailInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MailNicknameInput`<sup>Optional</sup> <a name="MailNicknameInput" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mailNicknameInput"></a>
 
 ```go
@@ -1026,6 +1034,16 @@ func UserPrincipalNameInput() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Mail`<sup>Required</sup> <a name="Mail" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.property.mail"></a>
+
+```go
+func Mail() *string
 ```
 
 - *Type:* *string
@@ -1098,6 +1116,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureaduser"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
+	Mail: *string,
 	MailNickname: *string,
 	ObjectId: *string,
 	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.dataAzureadUser.DataAzureadUserTimeouts,
@@ -1117,6 +1136,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureaduser"
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#id DataAzureadUser#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.mail">Mail</a></code> | <code>*string</code> | The SMTP address for the user. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The email alias of the user. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.objectId">ObjectId</a></code> | <code>*string</code> | The object ID of the user. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserTimeouts">DataAzureadUserTimeouts</a></code> | timeouts block. |
@@ -1206,6 +1226,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Mail`<sup>Optional</sup> <a name="Mail" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.mail"></a>
+
+```go
+Mail *string
+```
+
+- *Type:* *string
+
+The SMTP address for the user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#mail DataAzureadUser#mail}
 
 ---
 

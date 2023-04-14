@@ -94,6 +94,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPrivacyStatementUrl">ResetPrivacyStatementUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPublicClient">ResetPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetRequiredResourceAccess">ResetRequiredResourceAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetServiceManagementReference">ResetServiceManagementReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSignInAudience">ResetSignInAudience</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSinglePageApplication">ResetSinglePageApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSupportUrl">ResetSupportUrl</a></code> | *No description.* |
@@ -511,6 +512,12 @@ func ResetPublicClient()
 func ResetRequiredResourceAccess()
 ```
 
+##### `ResetServiceManagementReference` <a name="ResetServiceManagementReference" id="@cdktf/provider-azuread.application.Application.resetServiceManagementReference"></a>
+
+```go
+func ResetServiceManagementReference()
+```
+
 ##### `ResetSignInAudience` <a name="ResetSignInAudience" id="@cdktf/provider-azuread.application.Application.resetSignInAudience"></a>
 
 ```go
@@ -683,6 +690,7 @@ application.Application_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrlInput">PrivacyStatementUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publicClientInput">PublicClientInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.requiredResourceAccessInput">RequiredResourceAccessInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput">ServiceManagementReferenceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudienceInput">SignInAudienceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.singlePageApplicationInput">SinglePageApplicationInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrlInput">SupportUrlInput</a></code> | <code>*string</code> | *No description.* |
@@ -705,6 +713,7 @@ application.Application_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">Owners</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrl">PrivacyStatementUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReference">ServiceManagementReference</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudience">SignInAudience</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrl">SupportUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
@@ -1215,6 +1224,16 @@ func RequiredResourceAccessInput() interface{}
 
 ---
 
+##### `ServiceManagementReferenceInput`<sup>Optional</sup> <a name="ServiceManagementReferenceInput" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput"></a>
+
+```go
+func ServiceManagementReferenceInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SignInAudienceInput`<sup>Optional</sup> <a name="SignInAudienceInput" id="@cdktf/provider-azuread.application.Application.property.signInAudienceInput"></a>
 
 ```go
@@ -1429,6 +1448,16 @@ func PreventDuplicateNames() interface{}
 
 ```go
 func PrivacyStatementUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceManagementReference`<sup>Required</sup> <a name="ServiceManagementReference" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReference"></a>
+
+```go
+func ServiceManagementReference() *string
 ```
 
 - *Type:* *string
@@ -1888,6 +1917,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/application"
 	PrivacyStatementUrl: *string,
 	PublicClient: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.application.ApplicationPublicClient,
 	RequiredResourceAccess: interface{},
+	ServiceManagementReference: *string,
 	SignInAudience: *string,
 	SinglePageApplication: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.application.ApplicationSinglePageApplication,
 	SupportUrl: *string,
@@ -1930,6 +1960,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/application"
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.privacyStatementUrl">PrivacyStatementUrl</a></code> | <code>*string</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.publicClient">PublicClient</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.requiredResourceAccess">RequiredResourceAccess</a></code> | <code>interface{}</code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference">ServiceManagementReference</a></code> | <code>*string</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.signInAudience">SignInAudience</a></code> | <code>*string</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.singlePageApplication">SinglePageApplication</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.supportUrl">SupportUrl</a></code> | <code>*string</code> | URL of the application's support page. |
@@ -2291,6 +2322,20 @@ RequiredResourceAccess interface{}
 required_resource_access block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
+
+---
+
+##### `ServiceManagementReference`<sup>Optional</sup> <a name="ServiceManagementReference" id="@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference"></a>
+
+```go
+ServiceManagementReference *string
+```
+
+- *Type:* *string
+
+References application or service contact information from a Service or Asset Management database.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
 
 ---
 

@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMailEnabled">ResetMailEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMailNickname">ResetMailNickname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMembers">ResetMembers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetOnpremisesGroupType">ResetOnpremisesGroupType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetOwners">ResetOwners</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetPreventDuplicateNames">ResetPreventDuplicateNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetProvisioningOptions">ResetProvisioningOptions</a></code> | *No description.* |
@@ -89,6 +90,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetTypes">ResetTypes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetVisibility">ResetVisibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetWritebackEnabled">ResetWritebackEnabled</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +380,12 @@ func ResetMailNickname()
 func ResetMembers()
 ```
 
+##### `ResetOnpremisesGroupType` <a name="ResetOnpremisesGroupType" id="@cdktf/provider-azuread.group.Group.resetOnpremisesGroupType"></a>
+
+```go
+func ResetOnpremisesGroupType()
+```
+
 ##### `ResetOwners` <a name="ResetOwners" id="@cdktf/provider-azuread.group.Group.resetOwners"></a>
 
 ```go
@@ -424,6 +432,12 @@ func ResetTypes()
 
 ```go
 func ResetVisibility()
+```
+
+##### `ResetWritebackEnabled` <a name="ResetWritebackEnabled" id="@cdktf/provider-azuread.group.Group.resetWritebackEnabled"></a>
+
+```go
+func ResetWritebackEnabled()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -539,6 +553,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabledInput">MailEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNicknameInput">MailNicknameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.membersInput">MembersInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput">OnpremisesGroupTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.ownersInput">OwnersInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput">PreventDuplicateNamesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptionsInput">ProvisioningOptionsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -547,6 +562,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">TypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">VisibilityInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">WritebackEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">AdministrativeUnitIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">AssignableToRole</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">AutoSubscribeNewMembers</a></code> | <code>interface{}</code> | *No description.* |
@@ -560,6 +576,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabled">MailEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNickname">MailNickname</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.members">Members</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupType">OnpremisesGroupType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.owners">Owners</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptions">ProvisioningOptions</a></code> | <code>*[]*string</code> | *No description.* |
@@ -567,6 +584,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.theme">Theme</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.types">Types</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibility">Visibility</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabled">WritebackEnabled</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -962,6 +980,16 @@ func MembersInput() *[]*string
 
 ---
 
+##### `OnpremisesGroupTypeInput`<sup>Optional</sup> <a name="OnpremisesGroupTypeInput" id="@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput"></a>
+
+```go
+func OnpremisesGroupTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `OwnersInput`<sup>Optional</sup> <a name="OwnersInput" id="@cdktf/provider-azuread.group.Group.property.ownersInput"></a>
 
 ```go
@@ -1039,6 +1067,16 @@ func VisibilityInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `WritebackEnabledInput`<sup>Optional</sup> <a name="WritebackEnabledInput" id="@cdktf/provider-azuread.group.Group.property.writebackEnabledInput"></a>
+
+```go
+func WritebackEnabledInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1172,6 +1210,16 @@ func Members() *[]*string
 
 ---
 
+##### `OnpremisesGroupType`<sup>Required</sup> <a name="OnpremisesGroupType" id="@cdktf/provider-azuread.group.Group.property.onpremisesGroupType"></a>
+
+```go
+func OnpremisesGroupType() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Owners`<sup>Required</sup> <a name="Owners" id="@cdktf/provider-azuread.group.Group.property.owners"></a>
 
 ```go
@@ -1242,6 +1290,16 @@ func Visibility() *string
 
 ---
 
+##### `WritebackEnabled`<sup>Required</sup> <a name="WritebackEnabled" id="@cdktf/provider-azuread.group.Group.property.writebackEnabled"></a>
+
+```go
+func WritebackEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1291,6 +1349,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/group"
 	MailEnabled: interface{},
 	MailNickname: *string,
 	Members: *[]*string,
+	OnpremisesGroupType: *string,
 	Owners: *[]*string,
 	PreventDuplicateNames: interface{},
 	ProvisioningOptions: *[]*string,
@@ -1299,6 +1358,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/group"
 	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.group.GroupTimeouts,
 	Types: *[]*string,
 	Visibility: *string,
+	WritebackEnabled: interface{},
 }
 ```
 
@@ -1327,6 +1387,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/group"
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">MailEnabled</a></code> | <code>interface{}</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.members">Members</a></code> | <code>*[]*string</code> | A set of members who should be present in this group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType">OnpremisesGroupType</a></code> | <code>*string</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.owners">Owners</a></code> | <code>*[]*string</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>interface{}</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioningOptions">ProvisioningOptions</a></code> | <code>*[]*string</code> | The group provisioning options for a Microsoft 365 group. |
@@ -1335,6 +1396,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/group"
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.types">Types</a></code> | <code>*[]*string</code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.visibility">Visibility</a></code> | <code>*string</code> | Specifies the group join policy and group content visibility. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled">WritebackEnabled</a></code> | <code>interface{}</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
@@ -1613,6 +1675,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `OnpremisesGroupType`<sup>Optional</sup> <a name="OnpremisesGroupType" id="@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType"></a>
+
+```go
+OnpremisesGroupType *string
+```
+
+- *Type:* *string
+
+Indicates the target on-premise group type the group will be written back as.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#onpremises_group_type Group#onpremises_group_type}
+
+---
+
 ##### `Owners`<sup>Optional</sup> <a name="Owners" id="@cdktf/provider-azuread.group.GroupConfig.property.owners"></a>
 
 ```go
@@ -1726,6 +1802,20 @@ Visibility *string
 Specifies the group join policy and group content visibility.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#visibility Group#visibility}
+
+---
+
+##### `WritebackEnabled`<sup>Optional</sup> <a name="WritebackEnabled" id="@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled"></a>
+
+```go
+WritebackEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#writeback_enabled Group#writeback_enabled}
 
 ---
 

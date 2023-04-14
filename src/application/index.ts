@@ -93,6 +93,12 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly privacyStatementUrl?: string;
   /**
+  * References application or service contact information from a Service or Asset Management database
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
+  */
+  readonly serviceManagementReference?: string;
+  /**
   * The Microsoft account types that are supported for the current application
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#sign_in_audience Application#sign_in_audience}
@@ -2536,7 +2542,7 @@ export class Application extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -2561,6 +2567,7 @@ export class Application extends cdktf.TerraformResource {
     this._owners = config.owners;
     this._preventDuplicateNames = config.preventDuplicateNames;
     this._privacyStatementUrl = config.privacyStatementUrl;
+    this._serviceManagementReference = config.serviceManagementReference;
     this._signInAudience = config.signInAudience;
     this._supportUrl = config.supportUrl;
     this._tags = config.tags;
@@ -2839,6 +2846,22 @@ export class Application extends cdktf.TerraformResource {
     return this.getStringAttribute('publisher_domain');
   }
 
+  // service_management_reference - computed: false, optional: true, required: false
+  private _serviceManagementReference?: string; 
+  public get serviceManagementReference() {
+    return this.getStringAttribute('service_management_reference');
+  }
+  public set serviceManagementReference(value: string) {
+    this._serviceManagementReference = value;
+  }
+  public resetServiceManagementReference() {
+    this._serviceManagementReference = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceManagementReferenceInput() {
+    return this._serviceManagementReference;
+  }
+
   // sign_in_audience - computed: false, optional: true, required: false
   private _signInAudience?: string; 
   public get signInAudience() {
@@ -3083,6 +3106,7 @@ export class Application extends cdktf.TerraformResource {
       owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
       prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
       privacy_statement_url: cdktf.stringToTerraform(this._privacyStatementUrl),
+      service_management_reference: cdktf.stringToTerraform(this._serviceManagementReference),
       sign_in_audience: cdktf.stringToTerraform(this._signInAudience),
       support_url: cdktf.stringToTerraform(this._supportUrl),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),

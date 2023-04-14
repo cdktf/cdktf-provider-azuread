@@ -15,6 +15,12 @@ export interface DataAzureadUserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The SMTP address for the user
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#mail DataAzureadUser#mail}
+  */
+  readonly mail?: string;
+  /**
   * The email alias of the user
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/user#mail_nickname DataAzureadUser#mail_nickname}
@@ -141,7 +147,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_user',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -153,6 +159,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._mail = config.mail;
     this._mailNickname = config.mailNickname;
     this._objectId = config.objectId;
     this._userPrincipalName = config.userPrincipalName;
@@ -274,9 +281,20 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
     return this.getStringAttribute('job_title');
   }
 
-  // mail - computed: true, optional: false, required: false
+  // mail - computed: true, optional: true, required: false
+  private _mail?: string; 
   public get mail() {
     return this.getStringAttribute('mail');
+  }
+  public set mail(value: string) {
+    this._mail = value;
+  }
+  public resetMail() {
+    this._mail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mailInput() {
+    return this._mail;
   }
 
   // mail_nickname - computed: true, optional: true, required: false
@@ -450,6 +468,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      mail: cdktf.stringToTerraform(this._mail),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       object_id: cdktf.stringToTerraform(this._objectId),
       user_principal_name: cdktf.stringToTerraform(this._userPrincipalName),

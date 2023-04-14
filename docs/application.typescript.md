@@ -94,6 +94,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPrivacyStatementUrl">resetPrivacyStatementUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPublicClient">resetPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetRequiredResourceAccess">resetRequiredResourceAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetServiceManagementReference">resetServiceManagementReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSignInAudience">resetSignInAudience</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSinglePageApplication">resetSinglePageApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSupportUrl">resetSupportUrl</a></code> | *No description.* |
@@ -511,6 +512,12 @@ public resetPublicClient(): void
 public resetRequiredResourceAccess(): void
 ```
 
+##### `resetServiceManagementReference` <a name="resetServiceManagementReference" id="@cdktf/provider-azuread.application.Application.resetServiceManagementReference"></a>
+
+```typescript
+public resetServiceManagementReference(): void
+```
+
 ##### `resetSignInAudience` <a name="resetSignInAudience" id="@cdktf/provider-azuread.application.Application.resetSignInAudience"></a>
 
 ```typescript
@@ -683,6 +690,7 @@ application.Application.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrlInput">privacyStatementUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publicClientInput">publicClientInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.requiredResourceAccessInput">requiredResourceAccessInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput">serviceManagementReferenceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudienceInput">signInAudienceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.singlePageApplicationInput">singlePageApplicationInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrlInput">supportUrlInput</a></code> | <code>string</code> | *No description.* |
@@ -705,6 +713,7 @@ application.Application.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">owners</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">preventDuplicateNames</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReference">serviceManagementReference</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudience">signInAudience</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrl">supportUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
@@ -1215,6 +1224,16 @@ public readonly requiredResourceAccessInput: IResolvable | ApplicationRequiredRe
 
 ---
 
+##### `serviceManagementReferenceInput`<sup>Optional</sup> <a name="serviceManagementReferenceInput" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput"></a>
+
+```typescript
+public readonly serviceManagementReferenceInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `signInAudienceInput`<sup>Optional</sup> <a name="signInAudienceInput" id="@cdktf/provider-azuread.application.Application.property.signInAudienceInput"></a>
 
 ```typescript
@@ -1429,6 +1448,16 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 ```typescript
 public readonly privacyStatementUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceManagementReference`<sup>Required</sup> <a name="serviceManagementReference" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReference"></a>
+
+```typescript
+public readonly serviceManagementReference: string;
 ```
 
 - *Type:* string
@@ -1873,6 +1902,7 @@ const applicationConfig: application.ApplicationConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>string</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.publicClient">publicClient</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.requiredResourceAccess">requiredResourceAccess</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>[]</code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference">serviceManagementReference</a></code> | <code>string</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.signInAudience">signInAudience</a></code> | <code>string</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.singlePageApplication">singlePageApplication</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.supportUrl">supportUrl</a></code> | <code>string</code> | URL of the application's support page. |
@@ -2234,6 +2264,20 @@ public readonly requiredResourceAccess: IResolvable | ApplicationRequiredResourc
 required_resource_access block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
+
+---
+
+##### `serviceManagementReference`<sup>Optional</sup> <a name="serviceManagementReference" id="@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference"></a>
+
+```typescript
+public readonly serviceManagementReference: string;
+```
+
+- *Type:* string
+
+References application or service contact information from a Service or Asset Management database.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
 
 ---
 

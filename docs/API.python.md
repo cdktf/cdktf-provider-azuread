@@ -1,8 +1,14 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accessPackage](./accessPackage.python.md)
+- [accessPackageAssignmentPolicy](./accessPackageAssignmentPolicy.python.md)
+- [accessPackageCatalog](./accessPackageCatalog.python.md)
+- [accessPackageResourceCatalogAssociation](./accessPackageResourceCatalogAssociation.python.md)
+- [accessPackageResourcePackageAssociation](./accessPackageResourcePackageAssociation.python.md)
 - [administrativeUnit](./administrativeUnit.python.md)
 - [administrativeUnitMember](./administrativeUnitMember.python.md)
+- [administrativeUnitRoleMember](./administrativeUnitRoleMember.python.md)
 - [appRoleAssignment](./appRoleAssignment.python.md)
 - [application](./application.python.md)
 - [applicationCertificate](./applicationCertificate.python.md)
@@ -12,6 +18,8 @@ The following submodules are available:
 - [claimsMappingPolicy](./claimsMappingPolicy.python.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.python.md)
 - [customDirectoryRole](./customDirectoryRole.python.md)
+- [dataAzureadAccessPackage](./dataAzureadAccessPackage.python.md)
+- [dataAzureadAccessPackageCatalog](./dataAzureadAccessPackageCatalog.python.md)
 - [dataAzureadAdministrativeUnit](./dataAzureadAdministrativeUnit.python.md)
 - [dataAzureadApplication](./dataAzureadApplication.python.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.python.md)
@@ -43,3 +51,4 @@ The following submodules are available:
 - [synchronizationJob](./synchronizationJob.python.md)
 - [synchronizationSecret](./synchronizationSecret.python.md)
 - [user](./user.python.md)
+- [userFlowAttribute](./userFlowAttribute.python.md)
