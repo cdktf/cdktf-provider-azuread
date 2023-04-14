@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/r/access_pac
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcepackageassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageresourcepackageassociation"
 
 accesspackageresourcepackageassociation.NewAccessPackageResourcePackageAssociation(scope Construct, id *string, config AccessPackageResourcePackageAssociationConfig) AccessPackageResourcePackageAssociation
 ```
@@ -300,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcepackageassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageresourcepackageassociation"
 
 accesspackageresourcepackageassociation.AccessPackageResourcePackageAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcepackageassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageresourcepackageassociation"
 
 accesspackageresourcepackageassociation.AccessPackageResourcePackageAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ accesspackageresourcepackageassociation.AccessPackageResourcePackageAssociation_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcepackageassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageresourcepackageassociation"
 
 accesspackageresourcepackageassociation.AccessPackageResourcePackageAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcepackageassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageresourcepackageassociation"
 
 &accesspackageresourcepackageassociation.AccessPackageResourcePackageAssociationConfig {
 	Connection: interface{},
@@ -669,7 +669,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresource
 	CatalogResourceAssociationId: *string,
 	AccessType: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociationTimeouts,
 }
 ```
 
@@ -838,7 +838,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcepackageassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageresourcepackageassociation"
 
 &accesspackageresourcepackageassociation.AccessPackageResourcePackageAssociationTimeouts {
 	Create: *string,
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageResourcePackageAssociation.AccessPackageResourcePackageAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcepackageassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageresourcepackageassociation"
 
 accesspackageresourcepackageassociation.NewAccessPackageResourcePackageAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageResourcePackageAssociationTimeoutsOutputReference
 ```
