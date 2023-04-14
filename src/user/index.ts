@@ -414,7 +414,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_user',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

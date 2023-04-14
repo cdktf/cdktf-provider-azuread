@@ -202,7 +202,7 @@ export class DataAzureadDirectoryRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_directory_roles',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.36.0',
+        providerVersion: '2.37.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

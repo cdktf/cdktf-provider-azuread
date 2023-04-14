@@ -1,8 +1,14 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accessPackage](./accessPackage.typescript.md)
+- [accessPackageAssignmentPolicy](./accessPackageAssignmentPolicy.typescript.md)
+- [accessPackageCatalog](./accessPackageCatalog.typescript.md)
+- [accessPackageResourceCatalogAssociation](./accessPackageResourceCatalogAssociation.typescript.md)
+- [accessPackageResourcePackageAssociation](./accessPackageResourcePackageAssociation.typescript.md)
 - [administrativeUnit](./administrativeUnit.typescript.md)
 - [administrativeUnitMember](./administrativeUnitMember.typescript.md)
+- [administrativeUnitRoleMember](./administrativeUnitRoleMember.typescript.md)
 - [appRoleAssignment](./appRoleAssignment.typescript.md)
 - [application](./application.typescript.md)
 - [applicationCertificate](./applicationCertificate.typescript.md)
@@ -12,6 +18,8 @@ The following submodules are available:
 - [claimsMappingPolicy](./claimsMappingPolicy.typescript.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.typescript.md)
 - [customDirectoryRole](./customDirectoryRole.typescript.md)
+- [dataAzureadAccessPackage](./dataAzureadAccessPackage.typescript.md)
+- [dataAzureadAccessPackageCatalog](./dataAzureadAccessPackageCatalog.typescript.md)
 - [dataAzureadAdministrativeUnit](./dataAzureadAdministrativeUnit.typescript.md)
 - [dataAzureadApplication](./dataAzureadApplication.typescript.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.typescript.md)
@@ -43,3 +51,4 @@ The following submodules are available:
 - [synchronizationJob](./synchronizationJob.typescript.md)
 - [synchronizationSecret](./synchronizationSecret.typescript.md)
 - [user](./user.typescript.md)
+- [userFlowAttribute](./userFlowAttribute.typescript.md)

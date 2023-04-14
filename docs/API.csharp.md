@@ -1,8 +1,14 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accessPackage](./accessPackage.csharp.md)
+- [accessPackageAssignmentPolicy](./accessPackageAssignmentPolicy.csharp.md)
+- [accessPackageCatalog](./accessPackageCatalog.csharp.md)
+- [accessPackageResourceCatalogAssociation](./accessPackageResourceCatalogAssociation.csharp.md)
+- [accessPackageResourcePackageAssociation](./accessPackageResourcePackageAssociation.csharp.md)
 - [administrativeUnit](./administrativeUnit.csharp.md)
 - [administrativeUnitMember](./administrativeUnitMember.csharp.md)
+- [administrativeUnitRoleMember](./administrativeUnitRoleMember.csharp.md)
 - [appRoleAssignment](./appRoleAssignment.csharp.md)
 - [application](./application.csharp.md)
 - [applicationCertificate](./applicationCertificate.csharp.md)
@@ -12,6 +18,8 @@ The following submodules are available:
 - [claimsMappingPolicy](./claimsMappingPolicy.csharp.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.csharp.md)
 - [customDirectoryRole](./customDirectoryRole.csharp.md)
+- [dataAzureadAccessPackage](./dataAzureadAccessPackage.csharp.md)
+- [dataAzureadAccessPackageCatalog](./dataAzureadAccessPackageCatalog.csharp.md)
 - [dataAzureadAdministrativeUnit](./dataAzureadAdministrativeUnit.csharp.md)
 - [dataAzureadApplication](./dataAzureadApplication.csharp.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.csharp.md)
@@ -43,3 +51,4 @@ The following submodules are available:
 - [synchronizationJob](./synchronizationJob.csharp.md)
 - [synchronizationSecret](./synchronizationSecret.csharp.md)
 - [user](./user.csharp.md)
+- [userFlowAttribute](./userFlowAttribute.csharp.md)

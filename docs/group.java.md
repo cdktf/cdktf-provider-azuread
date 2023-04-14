@@ -42,6 +42,7 @@ Group.Builder.create(Construct scope, java.lang.String id)
 //  .mailEnabled(IResolvable)
 //  .mailNickname(java.lang.String)
 //  .members(java.util.List<java.lang.String>)
+//  .onpremisesGroupType(java.lang.String)
 //  .owners(java.util.List<java.lang.String>)
 //  .preventDuplicateNames(java.lang.Boolean)
 //  .preventDuplicateNames(IResolvable)
@@ -52,6 +53,8 @@ Group.Builder.create(Construct scope, java.lang.String id)
 //  .timeouts(GroupTimeouts)
 //  .types(java.util.List<java.lang.String>)
 //  .visibility(java.lang.String)
+//  .writebackEnabled(java.lang.Boolean)
+//  .writebackEnabled(IResolvable)
     .build();
 ```
 
@@ -80,6 +83,7 @@ Group.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.mailEnabled">mailEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.mailNickname">mailNickname</a></code> | <code>java.lang.String</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | A set of members who should be present in this group. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.onpremisesGroupType">onpremisesGroupType</a></code> | <code>java.lang.String</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.owners">owners</a></code> | <code>java.util.List<java.lang.String></code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.preventDuplicateNames">preventDuplicateNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioningOptions">provisioningOptions</a></code> | <code>java.util.List<java.lang.String></code> | The group provisioning options for a Microsoft 365 group. |
@@ -88,6 +92,7 @@ Group.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.types">types</a></code> | <code>java.util.List<java.lang.String></code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.visibility">visibility</a></code> | <code>java.lang.String</code> | Specifies the group join policy and group content visibility. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.writebackEnabled">writebackEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
@@ -300,6 +305,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `onpremisesGroupType`<sup>Optional</sup> <a name="onpremisesGroupType" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.onpremisesGroupType"></a>
+
+- *Type:* java.lang.String
+
+Indicates the target on-premise group type the group will be written back as.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#onpremises_group_type Group#onpremises_group_type}
+
+---
+
 ##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.owners"></a>
 
 - *Type:* java.util.List<java.lang.String>
@@ -384,6 +399,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `writebackEnabled`<sup>Optional</sup> <a name="writebackEnabled" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.writebackEnabled"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#writeback_enabled Group#writeback_enabled}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -419,6 +444,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMailEnabled">resetMailEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMailNickname">resetMailNickname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetMembers">resetMembers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetOnpremisesGroupType">resetOnpremisesGroupType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetOwners">resetOwners</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetPreventDuplicateNames">resetPreventDuplicateNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetProvisioningOptions">resetProvisioningOptions</a></code> | *No description.* |
@@ -427,6 +453,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetTypes">resetTypes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.resetVisibility">resetVisibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.resetWritebackEnabled">resetWritebackEnabled</a></code> | *No description.* |
 
 ---
 
@@ -716,6 +743,12 @@ public void resetMailNickname()
 public void resetMembers()
 ```
 
+##### `resetOnpremisesGroupType` <a name="resetOnpremisesGroupType" id="@cdktf/provider-azuread.group.Group.resetOnpremisesGroupType"></a>
+
+```java
+public void resetOnpremisesGroupType()
+```
+
 ##### `resetOwners` <a name="resetOwners" id="@cdktf/provider-azuread.group.Group.resetOwners"></a>
 
 ```java
@@ -762,6 +795,12 @@ public void resetTypes()
 
 ```java
 public void resetVisibility()
+```
+
+##### `resetWritebackEnabled` <a name="resetWritebackEnabled" id="@cdktf/provider-azuread.group.Group.resetWritebackEnabled"></a>
+
+```java
+public void resetWritebackEnabled()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -877,6 +916,7 @@ Group.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabledInput">mailEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNicknameInput">mailNicknameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.membersInput">membersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput">onpremisesGroupTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.ownersInput">ownersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput">preventDuplicateNamesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptionsInput">provisioningOptionsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -885,6 +925,7 @@ Group.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">typesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">visibilityInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">writebackEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">administrativeUnitIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">assignableToRole</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">autoSubscribeNewMembers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -898,6 +939,7 @@ Group.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabled">mailEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNickname">mailNickname</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupType">onpremisesGroupType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.owners">owners</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNames">preventDuplicateNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptions">provisioningOptions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -905,6 +947,7 @@ Group.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.theme">theme</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.types">types</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibility">visibility</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabled">writebackEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1300,6 +1343,16 @@ public java.util.List<java.lang.String> getMembersInput();
 
 ---
 
+##### `onpremisesGroupTypeInput`<sup>Optional</sup> <a name="onpremisesGroupTypeInput" id="@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput"></a>
+
+```java
+public java.lang.String getOnpremisesGroupTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `ownersInput`<sup>Optional</sup> <a name="ownersInput" id="@cdktf/provider-azuread.group.Group.property.ownersInput"></a>
 
 ```java
@@ -1377,6 +1430,16 @@ public java.lang.String getVisibilityInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `writebackEnabledInput`<sup>Optional</sup> <a name="writebackEnabledInput" id="@cdktf/provider-azuread.group.Group.property.writebackEnabledInput"></a>
+
+```java
+public java.lang.Object getWritebackEnabledInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1510,6 +1573,16 @@ public java.util.List<java.lang.String> getMembers();
 
 ---
 
+##### `onpremisesGroupType`<sup>Required</sup> <a name="onpremisesGroupType" id="@cdktf/provider-azuread.group.Group.property.onpremisesGroupType"></a>
+
+```java
+public java.lang.String getOnpremisesGroupType();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `owners`<sup>Required</sup> <a name="owners" id="@cdktf/provider-azuread.group.Group.property.owners"></a>
 
 ```java
@@ -1580,6 +1653,16 @@ public java.lang.String getVisibility();
 
 ---
 
+##### `writebackEnabled`<sup>Required</sup> <a name="writebackEnabled" id="@cdktf/provider-azuread.group.Group.property.writebackEnabled"></a>
+
+```java
+public java.lang.Object getWritebackEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1638,6 +1721,7 @@ GroupConfig.builder()
 //  .mailEnabled(IResolvable)
 //  .mailNickname(java.lang.String)
 //  .members(java.util.List<java.lang.String>)
+//  .onpremisesGroupType(java.lang.String)
 //  .owners(java.util.List<java.lang.String>)
 //  .preventDuplicateNames(java.lang.Boolean)
 //  .preventDuplicateNames(IResolvable)
@@ -1648,6 +1732,8 @@ GroupConfig.builder()
 //  .timeouts(GroupTimeouts)
 //  .types(java.util.List<java.lang.String>)
 //  .visibility(java.lang.String)
+//  .writebackEnabled(java.lang.Boolean)
+//  .writebackEnabled(IResolvable)
     .build();
 ```
 
@@ -1676,6 +1762,7 @@ GroupConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">mailEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailNickname">mailNickname</a></code> | <code>java.lang.String</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | A set of members who should be present in this group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType">onpremisesGroupType</a></code> | <code>java.lang.String</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.owners">owners</a></code> | <code>java.util.List<java.lang.String></code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames">preventDuplicateNames</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioningOptions">provisioningOptions</a></code> | <code>java.util.List<java.lang.String></code> | The group provisioning options for a Microsoft 365 group. |
@@ -1684,6 +1771,7 @@ GroupConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.types">types</a></code> | <code>java.util.List<java.lang.String></code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.visibility">visibility</a></code> | <code>java.lang.String</code> | Specifies the group join policy and group content visibility. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled">writebackEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
@@ -1962,6 +2050,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `onpremisesGroupType`<sup>Optional</sup> <a name="onpremisesGroupType" id="@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType"></a>
+
+```java
+public java.lang.String getOnpremisesGroupType();
+```
+
+- *Type:* java.lang.String
+
+Indicates the target on-premise group type the group will be written back as.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#onpremises_group_type Group#onpremises_group_type}
+
+---
+
 ##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.group.GroupConfig.property.owners"></a>
 
 ```java
@@ -2075,6 +2177,20 @@ public java.lang.String getVisibility();
 Specifies the group join policy and group content visibility.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#visibility Group#visibility}
+
+---
+
+##### `writebackEnabled`<sup>Optional</sup> <a name="writebackEnabled" id="@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled"></a>
+
+```java
+public java.lang.Object getWritebackEnabled();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group#writeback_enabled Group#writeback_enabled}
 
 ---
 

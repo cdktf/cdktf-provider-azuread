@@ -41,6 +41,7 @@ application.Application(
   privacy_statement_url: str = None,
   public_client: ApplicationPublicClient = None,
   required_resource_access: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]] = None,
+  service_management_reference: str = None,
   sign_in_audience: str = None,
   single_page_application: ApplicationSinglePageApplication = None,
   support_url: str = None,
@@ -83,6 +84,7 @@ application.Application(
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.publicClient">public_client</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.requiredResourceAccess">required_resource_access</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]</code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.singlePageApplication">single_page_application</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.supportUrl">support_url</a></code> | <code>str</code> | URL of the application's support page. |
@@ -357,6 +359,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ---
 
+##### `service_management_reference`<sup>Optional</sup> <a name="service_management_reference" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.serviceManagementReference"></a>
+
+- *Type:* str
+
+References application or service contact information from a Service or Asset Management database.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
+
+---
+
 ##### `sign_in_audience`<sup>Optional</sup> <a name="sign_in_audience" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.signInAudience"></a>
 
 - *Type:* str
@@ -485,6 +497,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPrivacyStatementUrl">reset_privacy_statement_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPublicClient">reset_public_client</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetRequiredResourceAccess">reset_required_resource_access</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetServiceManagementReference">reset_service_management_reference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSignInAudience">reset_sign_in_audience</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSinglePageApplication">reset_single_page_application</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetSupportUrl">reset_support_url</a></code> | *No description.* |
@@ -1082,6 +1095,12 @@ def reset_public_client() -> None
 def reset_required_resource_access() -> None
 ```
 
+##### `reset_service_management_reference` <a name="reset_service_management_reference" id="@cdktf/provider-azuread.application.Application.resetServiceManagementReference"></a>
+
+```python
+def reset_service_management_reference() -> None
+```
+
 ##### `reset_sign_in_audience` <a name="reset_sign_in_audience" id="@cdktf/provider-azuread.application.Application.resetSignInAudience"></a>
 
 ```python
@@ -1260,6 +1279,7 @@ application.Application.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrlInput">privacy_statement_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publicClientInput">public_client_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.requiredResourceAccessInput">required_resource_access_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput">service_management_reference_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudienceInput">sign_in_audience_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.singlePageApplicationInput">single_page_application_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrlInput">support_url_input</a></code> | <code>str</code> | *No description.* |
@@ -1282,6 +1302,7 @@ application.Application.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.supportUrl">support_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1792,6 +1813,16 @@ required_resource_access_input: typing.Union[IResolvable, typing.List[Applicatio
 
 ---
 
+##### `service_management_reference_input`<sup>Optional</sup> <a name="service_management_reference_input" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput"></a>
+
+```python
+service_management_reference_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `sign_in_audience_input`<sup>Optional</sup> <a name="sign_in_audience_input" id="@cdktf/provider-azuread.application.Application.property.signInAudienceInput"></a>
 
 ```python
@@ -2006,6 +2037,16 @@ prevent_duplicate_names: typing.Union[bool, IResolvable]
 
 ```python
 privacy_statement_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_management_reference`<sup>Required</sup> <a name="service_management_reference" id="@cdktf/provider-azuread.application.Application.property.serviceManagementReference"></a>
+
+```python
+service_management_reference: str
 ```
 
 - *Type:* str
@@ -2465,6 +2506,7 @@ application.ApplicationConfig(
   privacy_statement_url: str = None,
   public_client: ApplicationPublicClient = None,
   required_resource_access: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]] = None,
+  service_management_reference: str = None,
   sign_in_audience: str = None,
   single_page_application: ApplicationSinglePageApplication = None,
   support_url: str = None,
@@ -2507,6 +2549,7 @@ application.ApplicationConfig(
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.publicClient">public_client</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.requiredResourceAccess">required_resource_access</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]</code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.singlePageApplication">single_page_application</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.supportUrl">support_url</a></code> | <code>str</code> | URL of the application's support page. |
@@ -2868,6 +2911,20 @@ required_resource_access: typing.Union[IResolvable, typing.List[ApplicationRequi
 required_resource_access block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#required_resource_access Application#required_resource_access}
+
+---
+
+##### `service_management_reference`<sup>Optional</sup> <a name="service_management_reference" id="@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference"></a>
+
+```python
+service_management_reference: str
+```
+
+- *Type:* str
+
+References application or service contact information from a Service or Asset Management database.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/application#service_management_reference Application#service_management_reference}
 
 ---
 

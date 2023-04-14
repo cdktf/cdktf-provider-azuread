@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azuread/d/client_con
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.NewDataAzureadClientConfig(scope Construct, id *string, config DataAzureadClientConfigConfig) DataAzureadClientConfig
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ dataazureadclientconfig.DataAzureadClientConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 &dataazureadclientconfig.DataAzureadClientConfigConfig {
 	Connection: interface{},
@@ -604,7 +604,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientc
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.dataAzureadClientConfig.DataAzureadClientConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts,
 }
 ```
 
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 &dataazureadclientconfig.DataAzureadClientConfigTimeouts {
 	Read: *string,
@@ -762,7 +762,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.NewDataAzureadClientConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadClientConfigTimeoutsOutputReference
 ```

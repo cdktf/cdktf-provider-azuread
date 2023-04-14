@@ -1,8 +1,14 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [accessPackage](./accessPackage.go.md)
+- [accessPackageAssignmentPolicy](./accessPackageAssignmentPolicy.go.md)
+- [accessPackageCatalog](./accessPackageCatalog.go.md)
+- [accessPackageResourceCatalogAssociation](./accessPackageResourceCatalogAssociation.go.md)
+- [accessPackageResourcePackageAssociation](./accessPackageResourcePackageAssociation.go.md)
 - [administrativeUnit](./administrativeUnit.go.md)
 - [administrativeUnitMember](./administrativeUnitMember.go.md)
+- [administrativeUnitRoleMember](./administrativeUnitRoleMember.go.md)
 - [appRoleAssignment](./appRoleAssignment.go.md)
 - [application](./application.go.md)
 - [applicationCertificate](./applicationCertificate.go.md)
@@ -12,6 +18,8 @@ The following submodules are available:
 - [claimsMappingPolicy](./claimsMappingPolicy.go.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.go.md)
 - [customDirectoryRole](./customDirectoryRole.go.md)
+- [dataAzureadAccessPackage](./dataAzureadAccessPackage.go.md)
+- [dataAzureadAccessPackageCatalog](./dataAzureadAccessPackageCatalog.go.md)
 - [dataAzureadAdministrativeUnit](./dataAzureadAdministrativeUnit.go.md)
 - [dataAzureadApplication](./dataAzureadApplication.go.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.go.md)
@@ -43,3 +51,4 @@ The following submodules are available:
 - [synchronizationJob](./synchronizationJob.go.md)
 - [synchronizationSecret](./synchronizationSecret.go.md)
 - [user](./user.go.md)
+- [userFlowAttribute](./userFlowAttribute.go.md)
