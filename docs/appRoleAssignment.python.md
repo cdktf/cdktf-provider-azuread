@@ -1,3 +1,7 @@
+# `azuread_app_role_assignment`
+
+Refer to the Terraform Registory for docs: [`azuread_app_role_assignment`](https://www.terraform.io/docs/providers/azuread/r/app_role_assignment).
+
 # `appRoleAssignment` Submodule <a name="`appRoleAssignment` Submodule" id="@cdktf/provider-azuread.appRoleAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

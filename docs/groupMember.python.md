@@ -1,3 +1,7 @@
+# `azuread_group_member`
+
+Refer to the Terraform Registory for docs: [`azuread_group_member`](https://www.terraform.io/docs/providers/azuread/r/group_member).
+
 # `groupMember` Submodule <a name="`groupMember` Submodule" id="@cdktf/provider-azuread.groupMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

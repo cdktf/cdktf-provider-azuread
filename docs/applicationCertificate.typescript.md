@@ -1,3 +1,7 @@
+# `azuread_application_certificate`
+
+Refer to the Terraform Registory for docs: [`azuread_application_certificate`](https://www.terraform.io/docs/providers/azuread/r/application_certificate).
+
 # `applicationCertificate` Submodule <a name="`applicationCertificate` Submodule" id="@cdktf/provider-azuread.applicationCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

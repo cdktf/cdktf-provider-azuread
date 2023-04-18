@@ -1,3 +1,7 @@
+# `data_azuread_user`
+
+Refer to the Terraform Registory for docs: [`data_azuread_user`](https://www.terraform.io/docs/providers/azuread/d/user).
+
 # `dataAzureadUser` Submodule <a name="`dataAzureadUser` Submodule" id="@cdktf/provider-azuread.dataAzureadUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `azuread_access_package_assignment_policy`
+
+Refer to the Terraform Registory for docs: [`azuread_access_package_assignment_policy`](https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy).
+
 # `accessPackageAssignmentPolicy` Submodule <a name="`accessPackageAssignmentPolicy` Submodule" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

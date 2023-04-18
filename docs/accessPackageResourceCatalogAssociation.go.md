@@ -1,3 +1,7 @@
+# `azuread_access_package_resource_catalog_association`
+
+Refer to the Terraform Registory for docs: [`azuread_access_package_resource_catalog_association`](https://www.terraform.io/docs/providers/azuread/r/access_package_resource_catalog_association).
+
 # `accessPackageResourceCatalogAssociation` Submodule <a name="`accessPackageResourceCatalogAssociation` Submodule" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

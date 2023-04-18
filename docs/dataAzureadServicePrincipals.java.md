@@ -1,3 +1,7 @@
+# `data_azuread_service_principals`
+
+Refer to the Terraform Registory for docs: [`data_azuread_service_principals`](https://www.terraform.io/docs/providers/azuread/d/service_principals).
+
 # `dataAzureadServicePrincipals` Submodule <a name="`dataAzureadServicePrincipals` Submodule" id="@cdktf/provider-azuread.dataAzureadServicePrincipals"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

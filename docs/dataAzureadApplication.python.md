@@ -1,3 +1,7 @@
+# `data_azuread_application`
+
+Refer to the Terraform Registory for docs: [`data_azuread_application`](https://www.terraform.io/docs/providers/azuread/d/application).
+
 # `dataAzureadApplication` Submodule <a name="`dataAzureadApplication` Submodule" id="@cdktf/provider-azuread.dataAzureadApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `azuread_service_principal_password`
+
+Refer to the Terraform Registory for docs: [`azuread_service_principal_password`](https://www.terraform.io/docs/providers/azuread/r/service_principal_password).
+
 # `servicePrincipalPassword` Submodule <a name="`servicePrincipalPassword` Submodule" id="@cdktf/provider-azuread.servicePrincipalPassword"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

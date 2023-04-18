@@ -1,3 +1,7 @@
+# `azuread_administrative_unit`
+
+Refer to the Terraform Registory for docs: [`azuread_administrative_unit`](https://www.terraform.io/docs/providers/azuread/r/administrative_unit).
+
 # `administrativeUnit` Submodule <a name="`administrativeUnit` Submodule" id="@cdktf/provider-azuread.administrativeUnit"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

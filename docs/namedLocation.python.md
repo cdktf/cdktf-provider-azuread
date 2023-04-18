@@ -1,3 +1,7 @@
+# `azuread_named_location`
+
+Refer to the Terraform Registory for docs: [`azuread_named_location`](https://www.terraform.io/docs/providers/azuread/r/named_location).
+
 # `namedLocation` Submodule <a name="`namedLocation` Submodule" id="@cdktf/provider-azuread.namedLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

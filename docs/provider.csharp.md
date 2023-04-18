@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`azuread`](https://www.terraform.io/docs/providers/azuread).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-azuread.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
