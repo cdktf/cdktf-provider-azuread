@@ -1,6 +1,6 @@
 # `azuread_administrative_unit`
 
-Refer to the Terraform Registory for docs: [`azuread_administrative_unit`](https://www.terraform.io/docs/providers/azuread/r/administrative_unit).
+Refer to the Terraform Registory for docs: [`azuread_administrative_unit`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit).
 
 # `administrativeUnit` Submodule <a name="`administrativeUnit` Submodule" id="@cdktf/provider-azuread.administrativeUnit"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_administrative_unit`](https
 
 ### AdministrativeUnit <a name="AdministrativeUnit" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit azuread_administrative_unit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit azuread_administrative_unit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunit"
 
 administrativeunit.NewAdministrativeUnit(scope Construct, id *string, config AdministrativeUnitConfig) AdministrativeUnit
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunit"
 
 administrativeunit.AdministrativeUnit_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunit"
 
 administrativeunit.AdministrativeUnit_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ administrativeunit.AdministrativeUnit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunit"
 
 administrativeunit.AdministrativeUnit_IsTerraformResource(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ administrativeunit.AdministrativeUnit_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -503,10 +503,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnit.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -735,11 +735,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunit"
 
 &administrativeunit.AdministrativeUnitConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit
 	Id: *string,
 	Members: *[]*string,
 	PreventDuplicateNames: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.administrativeUnit.AdministrativeUnitTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v7.administrativeUnit.AdministrativeUnitTimeouts,
 }
 ```
 
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name for the administrative unit. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.description">Description</a></code> | <code>*string</code> | The description for the administrative unit. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.hiddenMembershipEnabled">HiddenMembershipEnabled</a></code> | <code>interface{}</code> | Whether the administrative unit and its members are hidden or publicly viewable in the directory. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#id AdministrativeUnit#id}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#id AdministrativeUnit#id}. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.members">Members</a></code> | <code>*[]*string</code> | A set of object IDs of members who should be present in this administrative unit. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>interface{}</code> | If `true`, will return an error if an existing administrative unit is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts">AdministrativeUnitTimeouts</a></code> | timeouts block. |
@@ -789,10 +789,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -856,7 +856,7 @@ DisplayName *string
 
 The display name for the administrative unit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#display_name AdministrativeUnit#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#display_name AdministrativeUnit#display_name}
 
 ---
 
@@ -870,7 +870,7 @@ Description *string
 
 The description for the administrative unit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#description AdministrativeUnit#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#description AdministrativeUnit#description}
 
 ---
 
@@ -884,7 +884,7 @@ HiddenMembershipEnabled interface{}
 
 Whether the administrative unit and its members are hidden or publicly viewable in the directory.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
 
 ---
 
@@ -896,7 +896,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#id AdministrativeUnit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#id AdministrativeUnit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -915,7 +915,7 @@ A set of object IDs of members who should be present in this administrative unit
 
 Supported object types are Users or Groups
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#members AdministrativeUnit#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#members AdministrativeUnit#members}
 
 ---
 
@@ -929,7 +929,7 @@ PreventDuplicateNames interface{}
 
 If `true`, will return an error if an existing administrative unit is found with the same name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
 
 ---
 
@@ -943,7 +943,7 @@ Timeouts AdministrativeUnitTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#timeouts AdministrativeUnit#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#timeouts AdministrativeUnit#timeouts}
 
 ---
 
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunit"
 
 &administrativeunit.AdministrativeUnitTimeouts {
 	Create: *string,
@@ -966,10 +966,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#create AdministrativeUnit#create}. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#delete AdministrativeUnit#delete}. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#read AdministrativeUnit#read}. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#update AdministrativeUnit#update}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#create AdministrativeUnit#create}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#delete AdministrativeUnit#delete}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#read AdministrativeUnit#read}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#update AdministrativeUnit#update}. |
 
 ---
 
@@ -981,7 +981,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#create AdministrativeUnit#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#create AdministrativeUnit#create}.
 
 ---
 
@@ -993,7 +993,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#delete AdministrativeUnit#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#delete AdministrativeUnit#delete}.
 
 ---
 
@@ -1005,7 +1005,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#read AdministrativeUnit#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#read AdministrativeUnit#read}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/administrative_unit#update AdministrativeUnit#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/administrative_unit#update AdministrativeUnit#update}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.administrativeUnit.AdministrativeUnitTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/administrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/administrativeunit"
 
 administrativeunit.NewAdministrativeUnitTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdministrativeUnitTimeoutsOutputReference
 ```

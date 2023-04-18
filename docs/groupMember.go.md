@@ -1,6 +1,6 @@
 # `azuread_group_member`
 
-Refer to the Terraform Registory for docs: [`azuread_group_member`](https://www.terraform.io/docs/providers/azuread/r/group_member).
+Refer to the Terraform Registory for docs: [`azuread_group_member`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member).
 
 # `groupMember` Submodule <a name="`groupMember` Submodule" id="@cdktf/provider-azuread.groupMember"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_group_member`](https://www.
 
 ### GroupMember <a name="GroupMember" id="@cdktf/provider-azuread.groupMember.GroupMember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group_member azuread_group_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member azuread_group_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupMember.GroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/groupmember"
 
 groupmember.NewGroupMember(scope Construct, id *string, config GroupMemberConfig) GroupMember
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.groupMember.GroupMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/groupmember"
 
 groupmember.GroupMember_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.groupMember.GroupMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/groupmember"
 
 groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.groupMember.GroupMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/groupmember"
 
 groupmember.GroupMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ groupmember.GroupMember_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -468,10 +468,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.groupMember.GroupMember.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -630,11 +630,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupMember.GroupMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/groupmember"
 
 &groupmember.GroupMemberConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -643,7 +643,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
 	GroupObjectId: *string,
 	MemberObjectId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.groupMember.GroupMemberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v7.groupMember.GroupMemberTimeouts,
 }
 ```
 
@@ -652,7 +652,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -660,7 +660,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.groupObjectId">GroupObjectId</a></code> | <code>*string</code> | The object ID of the group you want to add the member to. |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.memberObjectId">MemberObjectId</a></code> | <code>*string</code> | The object ID of the principal you want to add as a member to the group. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#id GroupMember#id}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#id GroupMember#id}. |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts">GroupMemberTimeouts</a></code> | timeouts block. |
 
 ---
@@ -678,10 +678,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -745,7 +745,7 @@ GroupObjectId *string
 
 The object ID of the group you want to add the member to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#group_object_id GroupMember#group_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#group_object_id GroupMember#group_object_id}
 
 ---
 
@@ -761,7 +761,7 @@ The object ID of the principal you want to add as a member to the group.
 
 Supported object types are Users, Groups or Service Principals
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#member_object_id GroupMember#member_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#member_object_id GroupMember#member_object_id}
 
 ---
 
@@ -773,7 +773,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#id GroupMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#id GroupMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -790,7 +790,7 @@ Timeouts GroupMemberTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#timeouts GroupMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#timeouts GroupMember#timeouts}
 
 ---
 
@@ -799,7 +799,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/groupmember"
 
 &groupmember.GroupMemberTimeouts {
 	Create: *string,
@@ -813,10 +813,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#create GroupMember#create}. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#delete GroupMember#delete}. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#read GroupMember#read}. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#update GroupMember#update}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#create GroupMember#create}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#delete GroupMember#delete}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#read GroupMember#read}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#update GroupMember#update}. |
 
 ---
 
@@ -828,7 +828,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#create GroupMember#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#create GroupMember#create}.
 
 ---
 
@@ -840,7 +840,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#delete GroupMember#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#delete GroupMember#delete}.
 
 ---
 
@@ -852,7 +852,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#read GroupMember#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#read GroupMember#read}.
 
 ---
 
@@ -864,7 +864,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#update GroupMember#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#update GroupMember#update}.
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupMember.GroupMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/groupmember"
 
 groupmember.NewGroupMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupMemberTimeoutsOutputReference
 ```

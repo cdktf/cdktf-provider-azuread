@@ -1,6 +1,6 @@
 # `azuread_synchronization_secret`
 
-Refer to the Terraform Registory for docs: [`azuread_synchronization_secret`](https://www.terraform.io/docs/providers/azuread/r/synchronization_secret).
+Refer to the Terraform Registory for docs: [`azuread_synchronization_secret`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret).
 
 # `synchronizationSecret` Submodule <a name="`synchronizationSecret` Submodule" id="@cdktf/provider-azuread.synchronizationSecret"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_synchronization_secret`](ht
 
 ### SynchronizationSecret <a name="SynchronizationSecret" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret azuread_synchronization_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret azuread_synchronization_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecret(scope Construct, id *string, config SynchronizationSecretConfig) SynchronizationSecret
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 synchronizationsecret.SynchronizationSecret_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 synchronizationsecret.SynchronizationSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ synchronizationsecret.SynchronizationSecret_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 synchronizationsecret.SynchronizationSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ synchronizationsecret.SynchronizationSecret_IsTerraformResource(x interface{}) *
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -488,10 +488,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecret.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -650,11 +650,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 &synchronizationsecret.SynchronizationSecretConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsec
 	ServicePrincipalId: *string,
 	Credential: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.synchronizationSecret.SynchronizationSecretTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v7.synchronizationSecret.SynchronizationSecretTimeouts,
 }
 ```
 
@@ -672,7 +672,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsec
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -680,7 +680,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsec
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | The object ID of the service principal for which this synchronization secret should be created. |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.credential">Credential</a></code> | <code>interface{}</code> | credential block. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#id SynchronizationSecret#id}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#id SynchronizationSecret#id}. |
 | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts">SynchronizationSecretTimeouts</a></code> | timeouts block. |
 
 ---
@@ -698,10 +698,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -765,7 +765,7 @@ ServicePrincipalId *string
 
 The object ID of the service principal for which this synchronization secret should be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#service_principal_id SynchronizationSecret#service_principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#service_principal_id SynchronizationSecret#service_principal_id}
 
 ---
 
@@ -779,7 +779,7 @@ Credential interface{}
 
 credential block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#credential SynchronizationSecret#credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#credential SynchronizationSecret#credential}
 
 ---
 
@@ -791,7 +791,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#id SynchronizationSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#id SynchronizationSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -808,7 +808,7 @@ Timeouts SynchronizationSecretTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#timeouts SynchronizationSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#timeouts SynchronizationSecret#timeouts}
 
 ---
 
@@ -817,7 +817,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 &synchronizationsecret.SynchronizationSecretCredential {
 	Key: *string,
@@ -844,7 +844,7 @@ Key *string
 
 Name for this key-value pair.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#key SynchronizationSecret#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#key SynchronizationSecret#key}
 
 ---
 
@@ -858,7 +858,7 @@ Value *string
 
 Value for this key-value pair.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#value SynchronizationSecret#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#value SynchronizationSecret#value}
 
 ---
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 &synchronizationsecret.SynchronizationSecretTimeouts {
 	Create: *string,
@@ -881,10 +881,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#create SynchronizationSecret#create}. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#delete SynchronizationSecret#delete}. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#read SynchronizationSecret#read}. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#update SynchronizationSecret#update}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#create SynchronizationSecret#create}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#delete SynchronizationSecret#delete}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#read SynchronizationSecret#read}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#update SynchronizationSecret#update}. |
 
 ---
 
@@ -896,7 +896,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#create SynchronizationSecret#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#create SynchronizationSecret#create}.
 
 ---
 
@@ -908,7 +908,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#delete SynchronizationSecret#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#delete SynchronizationSecret#delete}.
 
 ---
 
@@ -920,7 +920,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#read SynchronizationSecret#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#read SynchronizationSecret#read}.
 
 ---
 
@@ -932,7 +932,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_secret#update SynchronizationSecret#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_secret#update SynchronizationSecret#update}.
 
 ---
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretCredentialList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecretCredentialList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SynchronizationSecretCredentialList
 ```
@@ -1086,7 +1086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecretCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SynchronizationSecretCredentialOutputReference
 ```
@@ -1397,7 +1397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationSecret.SynchronizationSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/synchronizationsecret"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynchronizationSecretTimeoutsOutputReference
 ```

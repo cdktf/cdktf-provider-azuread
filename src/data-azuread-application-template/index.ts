@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/application_template
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataAzureadApplicationTemplateConfig extends cdktf.TerraformMet
   /**
   * The display name for the application template
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#display_name DataAzureadApplicationTemplate#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template#display_name DataAzureadApplicationTemplate#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#id DataAzureadApplicationTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template#id DataAzureadApplicationTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,24 +23,24 @@ export interface DataAzureadApplicationTemplateConfig extends cdktf.TerraformMet
   /**
   * The application template's ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#template_id DataAzureadApplicationTemplate#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template#template_id DataAzureadApplicationTemplate#template_id}
   */
   readonly templateId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#timeouts DataAzureadApplicationTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template#timeouts DataAzureadApplicationTemplate#timeouts}
   */
   readonly timeouts?: DataAzureadApplicationTemplateTimeouts;
 }
 export interface DataAzureadApplicationTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/application_template#read DataAzureadApplicationTemplate#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template#read DataAzureadApplicationTemplate#read}
   */
   readonly read?: string;
 }
 
-export function dataAzureadApplicationTemplateTimeoutsToTerraform(struct?: DataAzureadApplicationTemplateTimeoutsOutputReference | DataAzureadApplicationTemplateTimeouts | cdktf.IResolvable): any {
+export function dataAzureadApplicationTemplateTimeoutsToTerraform(struct?: DataAzureadApplicationTemplateTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -59,7 +59,7 @@ export class DataAzureadApplicationTemplateTimeoutsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzureadApplicationTemplateTimeouts | cdktf.IResolvable | undefined {
@@ -110,7 +110,7 @@ export class DataAzureadApplicationTemplateTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/application_template azuread_application_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template azuread_application_template}
 */
 export class DataAzureadApplicationTemplate extends cdktf.TerraformDataSource {
 
@@ -124,7 +124,7 @@ export class DataAzureadApplicationTemplate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/application_template azuread_application_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/application_template azuread_application_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/directory_role
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DirectoryRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the directory role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#display_name DirectoryRole#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#display_name DirectoryRole#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#id DirectoryRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#id DirectoryRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,36 +23,36 @@ export interface DirectoryRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the template associated with the directory role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#template_id DirectoryRole#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#template_id DirectoryRole#template_id}
   */
   readonly templateId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#timeouts DirectoryRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#timeouts DirectoryRole#timeouts}
   */
   readonly timeouts?: DirectoryRoleTimeouts;
 }
 export interface DirectoryRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#create DirectoryRole#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#create DirectoryRole#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#delete DirectoryRole#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#delete DirectoryRole#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#read DirectoryRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#read DirectoryRole#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/directory_role#update DirectoryRole#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role#update DirectoryRole#update}
   */
   readonly update?: string;
 }
 
-export function directoryRoleTimeoutsToTerraform(struct?: DirectoryRoleTimeoutsOutputReference | DirectoryRoleTimeouts | cdktf.IResolvable): any {
+export function directoryRoleTimeoutsToTerraform(struct?: DirectoryRoleTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -74,7 +74,7 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DirectoryRoleTimeouts | cdktf.IResolvable | undefined {
@@ -191,7 +191,7 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/directory_role azuread_directory_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role azuread_directory_role}
 */
 export class DirectoryRole extends cdktf.TerraformResource {
 
@@ -205,7 +205,7 @@ export class DirectoryRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/directory_role azuread_directory_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/directory_role azuread_directory_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

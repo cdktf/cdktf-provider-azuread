@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/directory_roles
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadDirectoryRolesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_roles#id DataAzureadDirectoryRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,7 +17,7 @@ export interface DataAzureadDirectoryRolesConfig extends cdktf.TerraformMetaArgu
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_roles#timeouts DataAzureadDirectoryRoles#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#timeouts DataAzureadDirectoryRoles#timeouts}
   */
   readonly timeouts?: DataAzureadDirectoryRolesTimeouts;
 }
@@ -102,12 +102,12 @@ export class DataAzureadDirectoryRolesRolesList extends cdktf.ComplexList {
 }
 export interface DataAzureadDirectoryRolesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_roles#read DataAzureadDirectoryRoles#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#read DataAzureadDirectoryRoles#read}
   */
   readonly read?: string;
 }
 
-export function dataAzureadDirectoryRolesTimeoutsToTerraform(struct?: DataAzureadDirectoryRolesTimeoutsOutputReference | DataAzureadDirectoryRolesTimeouts | cdktf.IResolvable): any {
+export function dataAzureadDirectoryRolesTimeoutsToTerraform(struct?: DataAzureadDirectoryRolesTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -126,7 +126,7 @@ export class DataAzureadDirectoryRolesTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzureadDirectoryRolesTimeouts | cdktf.IResolvable | undefined {
@@ -177,7 +177,7 @@ export class DataAzureadDirectoryRolesTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/directory_roles azuread_directory_roles}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles azuread_directory_roles}
 */
 export class DataAzureadDirectoryRoles extends cdktf.TerraformDataSource {
 
@@ -191,7 +191,7 @@ export class DataAzureadDirectoryRoles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/directory_roles azuread_directory_roles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles azuread_directory_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

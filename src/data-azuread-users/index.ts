@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/users
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#id DataAzureadUsers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#id DataAzureadUsers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,37 +17,37 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Ignore missing users and return users that were found. The data source will still fail if no users are found
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#ignore_missing DataAzureadUsers#ignore_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * The email aliases of the users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#mail_nicknames DataAzureadUsers#mail_nicknames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
   */
   readonly mailNicknames?: string[];
   /**
   * The object IDs of the users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#object_ids DataAzureadUsers#object_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Fetch all users with no filter and return all that were found. The data source will still fail if no users are found.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#return_all DataAzureadUsers#return_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#return_all DataAzureadUsers#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * The user principal names (UPNs) of the users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#user_principal_names DataAzureadUsers#user_principal_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
   */
   readonly userPrincipalNames?: string[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#timeouts DataAzureadUsers#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
   */
   readonly timeouts?: DataAzureadUsersTimeouts;
 }
@@ -162,12 +162,12 @@ export class DataAzureadUsersUsersList extends cdktf.ComplexList {
 }
 export interface DataAzureadUsersTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/users#read DataAzureadUsers#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users#read DataAzureadUsers#read}
   */
   readonly read?: string;
 }
 
-export function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeoutsOutputReference | DataAzureadUsersTimeouts | cdktf.IResolvable): any {
+export function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -186,7 +186,7 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzureadUsersTimeouts | cdktf.IResolvable | undefined {
@@ -237,7 +237,7 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/users azuread_users}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users azuread_users}
 */
 export class DataAzureadUsers extends cdktf.TerraformDataSource {
 
@@ -251,7 +251,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/users azuread_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/users azuread_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

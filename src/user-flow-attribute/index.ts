@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface UserFlowAttributeConfig extends cdktf.TerraformMetaArguments {
   /**
   * The data type of the user flow attribute
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#data_type UserFlowAttribute#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#data_type UserFlowAttribute#data_type}
   */
   readonly dataType: string;
   /**
   * The description of the user flow attribute that is shown to the user at the time of sign-up
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#description UserFlowAttribute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#description UserFlowAttribute#description}
   */
   readonly description: string;
   /**
   * The display name of the user flow attribute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#display_name UserFlowAttribute#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#display_name UserFlowAttribute#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#id UserFlowAttribute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#id UserFlowAttribute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,30 +35,30 @@ export interface UserFlowAttributeConfig extends cdktf.TerraformMetaArguments {
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#timeouts UserFlowAttribute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#timeouts UserFlowAttribute#timeouts}
   */
   readonly timeouts?: UserFlowAttributeTimeouts;
 }
 export interface UserFlowAttributeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#create UserFlowAttribute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#create UserFlowAttribute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#delete UserFlowAttribute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#delete UserFlowAttribute#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#read UserFlowAttribute#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#read UserFlowAttribute#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute#update UserFlowAttribute#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute#update UserFlowAttribute#update}
   */
   readonly update?: string;
 }
 
-export function userFlowAttributeTimeoutsToTerraform(struct?: UserFlowAttributeTimeoutsOutputReference | UserFlowAttributeTimeouts | cdktf.IResolvable): any {
+export function userFlowAttributeTimeoutsToTerraform(struct?: UserFlowAttributeTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -80,7 +80,7 @@ export class UserFlowAttributeTimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): UserFlowAttributeTimeouts | cdktf.IResolvable | undefined {
@@ -197,7 +197,7 @@ export class UserFlowAttributeTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute azuread_user_flow_attribute}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute azuread_user_flow_attribute}
 */
 export class UserFlowAttribute extends cdktf.TerraformResource {
 
@@ -211,7 +211,7 @@ export class UserFlowAttribute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/user_flow_attribute azuread_user_flow_attribute} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/user_flow_attribute azuread_user_flow_attribute} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
