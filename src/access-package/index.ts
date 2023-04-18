@@ -228,7 +228,7 @@ export class AccessPackage extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_access_package',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.37.0',
+        providerVersion: '2.37.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

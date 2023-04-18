@@ -195,7 +195,7 @@ export class AccessPackageResourceCatalogAssociation extends cdktf.TerraformReso
       terraformResourceType: 'azuread_access_package_resource_catalog_association',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.37.0',
+        providerVersion: '2.37.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

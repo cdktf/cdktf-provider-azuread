@@ -2434,7 +2434,7 @@ export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_access_package_assignment_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.37.0',
+        providerVersion: '2.37.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
