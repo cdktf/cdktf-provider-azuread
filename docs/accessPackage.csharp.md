@@ -1,3 +1,7 @@
+# `azuread_access_package`
+
+Refer to the Terraform Registory for docs: [`azuread_access_package`](https://www.terraform.io/docs/providers/azuread/r/access_package).
+
 # `accessPackage` Submodule <a name="`accessPackage` Submodule" id="@cdktf/provider-azuread.accessPackage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

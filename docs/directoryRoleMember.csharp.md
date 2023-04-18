@@ -1,3 +1,7 @@
+# `azuread_directory_role_member`
+
+Refer to the Terraform Registory for docs: [`azuread_directory_role_member`](https://www.terraform.io/docs/providers/azuread/r/directory_role_member).
+
 # `directoryRoleMember` Submodule <a name="`directoryRoleMember` Submodule" id="@cdktf/provider-azuread.directoryRoleMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `azuread_claims_mapping_policy`
+
+Refer to the Terraform Registory for docs: [`azuread_claims_mapping_policy`](https://www.terraform.io/docs/providers/azuread/r/claims_mapping_policy).
+
 # `claimsMappingPolicy` Submodule <a name="`claimsMappingPolicy` Submodule" id="@cdktf/provider-azuread.claimsMappingPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

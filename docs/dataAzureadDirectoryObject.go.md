@@ -1,3 +1,7 @@
+# `data_azuread_directory_object`
+
+Refer to the Terraform Registory for docs: [`data_azuread_directory_object`](https://www.terraform.io/docs/providers/azuread/d/directory_object).
+
 # `dataAzureadDirectoryObject` Submodule <a name="`dataAzureadDirectoryObject` Submodule" id="@cdktf/provider-azuread.dataAzureadDirectoryObject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

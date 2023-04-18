@@ -1,3 +1,7 @@
+# `azuread_administrative_unit_role_member`
+
+Refer to the Terraform Registory for docs: [`azuread_administrative_unit_role_member`](https://www.terraform.io/docs/providers/azuread/r/administrative_unit_role_member).
+
 # `administrativeUnitRoleMember` Submodule <a name="`administrativeUnitRoleMember` Submodule" id="@cdktf/provider-azuread.administrativeUnitRoleMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

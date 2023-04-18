@@ -1,3 +1,7 @@
+# `azuread_service_principal_claims_mapping_policy_assignment`
+
+Refer to the Terraform Registory for docs: [`azuread_service_principal_claims_mapping_policy_assignment`](https://www.terraform.io/docs/providers/azuread/r/service_principal_claims_mapping_policy_assignment).
+
 # `servicePrincipalClaimsMappingPolicyAssignment` Submodule <a name="`servicePrincipalClaimsMappingPolicyAssignment` Submodule" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `azuread_service_principal`
+
+Refer to the Terraform Registory for docs: [`azuread_service_principal`](https://www.terraform.io/docs/providers/azuread/r/service_principal).
+
 # `servicePrincipal` Submodule <a name="`servicePrincipal` Submodule" id="@cdktf/provider-azuread.servicePrincipal"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
