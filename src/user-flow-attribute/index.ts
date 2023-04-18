@@ -222,7 +222,7 @@ export class UserFlowAttribute extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_user_flow_attribute',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.37.0',
+        providerVersion: '2.37.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
