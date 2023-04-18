@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/group_member
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GroupMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the group you want to add the member to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#group_object_id GroupMember#group_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#group_object_id GroupMember#group_object_id}
   */
   readonly groupObjectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#id GroupMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#id GroupMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,36 +23,36 @@ export interface GroupMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the principal you want to add as a member to the group. Supported object types are Users, Groups or Service Principals
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#member_object_id GroupMember#member_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#member_object_id GroupMember#member_object_id}
   */
   readonly memberObjectId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#timeouts GroupMember#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#timeouts GroupMember#timeouts}
   */
   readonly timeouts?: GroupMemberTimeouts;
 }
 export interface GroupMemberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#create GroupMember#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#create GroupMember#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#delete GroupMember#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#delete GroupMember#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#read GroupMember#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#read GroupMember#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/group_member#update GroupMember#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member#update GroupMember#update}
   */
   readonly update?: string;
 }
 
-export function groupMemberTimeoutsToTerraform(struct?: GroupMemberTimeoutsOutputReference | GroupMemberTimeouts | cdktf.IResolvable): any {
+export function groupMemberTimeoutsToTerraform(struct?: GroupMemberTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -74,7 +74,7 @@ export class GroupMemberTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GroupMemberTimeouts | cdktf.IResolvable | undefined {
@@ -191,7 +191,7 @@ export class GroupMemberTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/group_member azuread_group_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member azuread_group_member}
 */
 export class GroupMember extends cdktf.TerraformResource {
 
@@ -205,7 +205,7 @@ export class GroupMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/group_member azuread_group_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/group_member azuread_group_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

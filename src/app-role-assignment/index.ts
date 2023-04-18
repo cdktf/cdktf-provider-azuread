@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/app_role_assignment
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface AppRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the app role to be assigned
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
   */
   readonly appRoleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#id AppRoleAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#id AppRoleAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,38 +23,38 @@ export interface AppRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the user, group or service principal to be assigned this app role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
   */
   readonly principalObjectId: string;
   /**
   * The object ID of the service principal representing the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
   */
   readonly resourceObjectId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#timeouts AppRoleAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
   */
   readonly timeouts?: AppRoleAssignmentTimeouts;
 }
 export interface AppRoleAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#create AppRoleAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#create AppRoleAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#delete AppRoleAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment#read AppRoleAssignment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment#read AppRoleAssignment#read}
   */
   readonly read?: string;
 }
 
-export function appRoleAssignmentTimeoutsToTerraform(struct?: AppRoleAssignmentTimeoutsOutputReference | AppRoleAssignmentTimeouts | cdktf.IResolvable): any {
+export function appRoleAssignmentTimeoutsToTerraform(struct?: AppRoleAssignmentTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -75,7 +75,7 @@ export class AppRoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): AppRoleAssignmentTimeouts | cdktf.IResolvable | undefined {
@@ -170,7 +170,7 @@ export class AppRoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment azuread_app_role_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment azuread_app_role_assignment}
 */
 export class AppRoleAssignment extends cdktf.TerraformResource {
 
@@ -184,7 +184,7 @@ export class AppRoleAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/app_role_assignment azuread_app_role_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/app_role_assignment azuread_app_role_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

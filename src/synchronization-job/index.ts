@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/synchronization_job
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface SynchronizationJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether or not the synchronization job is enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#enabled SynchronizationJob#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#enabled SynchronizationJob#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#id SynchronizationJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#id SynchronizationJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface SynchronizationJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the service principal for which this synchronization job should be created
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#service_principal_id SynchronizationJob#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#service_principal_id SynchronizationJob#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * Identifier of the synchronization template this job is based on.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#template_id SynchronizationJob#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#template_id SynchronizationJob#template_id}
   */
   readonly templateId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#timeouts SynchronizationJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#timeouts SynchronizationJob#timeouts}
   */
   readonly timeouts?: SynchronizationJobTimeouts;
 }
@@ -115,24 +115,24 @@ export class SynchronizationJobScheduleList extends cdktf.ComplexList {
 }
 export interface SynchronizationJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#create SynchronizationJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#create SynchronizationJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#delete SynchronizationJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#delete SynchronizationJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#read SynchronizationJob#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#read SynchronizationJob#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job#update SynchronizationJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job#update SynchronizationJob#update}
   */
   readonly update?: string;
 }
 
-export function synchronizationJobTimeoutsToTerraform(struct?: SynchronizationJobTimeoutsOutputReference | SynchronizationJobTimeouts | cdktf.IResolvable): any {
+export function synchronizationJobTimeoutsToTerraform(struct?: SynchronizationJobTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -154,7 +154,7 @@ export class SynchronizationJobTimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): SynchronizationJobTimeouts | cdktf.IResolvable | undefined {
@@ -271,7 +271,7 @@ export class SynchronizationJobTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job azuread_synchronization_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job azuread_synchronization_job}
 */
 export class SynchronizationJob extends cdktf.TerraformResource {
 
@@ -285,7 +285,7 @@ export class SynchronizationJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/synchronization_job azuread_synchronization_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/synchronization_job azuread_synchronization_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

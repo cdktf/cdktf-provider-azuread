@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/r/access_package
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface AccessPackageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the Catalog this access package will be created in
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#catalog_id AccessPackage#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#catalog_id AccessPackage#catalog_id}
   */
   readonly catalogId: string;
   /**
   * The description of the access package
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#description AccessPackage#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#description AccessPackage#description}
   */
   readonly description: string;
   /**
   * The display name of the access package
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#display_name AccessPackage#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#display_name AccessPackage#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the access package is hidden from the requestor
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#hidden AccessPackage#hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#hidden AccessPackage#hidden}
   */
   readonly hidden?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#id AccessPackage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#id AccessPackage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,30 +41,30 @@ export interface AccessPackageConfig extends cdktf.TerraformMetaArguments {
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#timeouts AccessPackage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#timeouts AccessPackage#timeouts}
   */
   readonly timeouts?: AccessPackageTimeouts;
 }
 export interface AccessPackageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#create AccessPackage#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#create AccessPackage#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#delete AccessPackage#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#delete AccessPackage#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#read AccessPackage#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#read AccessPackage#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#update AccessPackage#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#update AccessPackage#update}
   */
   readonly update?: string;
 }
 
-export function accessPackageTimeoutsToTerraform(struct?: AccessPackageTimeoutsOutputReference | AccessPackageTimeouts | cdktf.IResolvable): any {
+export function accessPackageTimeoutsToTerraform(struct?: AccessPackageTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -86,7 +86,7 @@ export class AccessPackageTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): AccessPackageTimeouts | cdktf.IResolvable | undefined {
@@ -203,7 +203,7 @@ export class AccessPackageTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/r/access_package azuread_access_package}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package azuread_access_package}
 */
 export class AccessPackage extends cdktf.TerraformResource {
 
@@ -217,7 +217,7 @@ export class AccessPackage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/r/access_package azuread_access_package} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package azuread_access_package} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `azuread_access_package`
 
-Refer to the Terraform Registory for docs: [`azuread_access_package`](https://www.terraform.io/docs/providers/azuread/r/access_package).
+Refer to the Terraform Registory for docs: [`azuread_access_package`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package).
 
 # `accessPackage` Submodule <a name="`accessPackage` Submodule" id="@cdktf/provider-azuread.accessPackage"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_access_package`](https://ww
 
 ### AccessPackage <a name="AccessPackage" id="@cdktf/provider-azuread.accessPackage.AccessPackage"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/access_package azuread_access_package}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package azuread_access_package}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackage.AccessPackage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackage"
 
 accesspackage.NewAccessPackage(scope Construct, id *string, config AccessPackageConfig) AccessPackage
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.accessPackage.AccessPackage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackage"
 
 accesspackage.AccessPackage_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.accessPackage.AccessPackage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackage"
 
 accesspackage.AccessPackage_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ accesspackage.AccessPackage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.accessPackage.AccessPackage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackage"
 
 accesspackage.AccessPackage_IsTerraformResource(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ accesspackage.AccessPackage_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -479,10 +479,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.accessPackage.AccessPackage.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -681,11 +681,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackage.AccessPackageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackage"
 
 &accesspackage.AccessPackageConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -696,7 +696,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
 	DisplayName: *string,
 	Hidden: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackage.AccessPackageTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackage.AccessPackageTimeouts,
 }
 ```
 
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.description">Description</a></code> | <code>*string</code> | The description of the access package. |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the access package. |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.hidden">Hidden</a></code> | <code>interface{}</code> | Whether the access package is hidden from the requestor. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#id AccessPackage#id}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#id AccessPackage#id}. |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a></code> | timeouts block. |
 
 ---
@@ -733,10 +733,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -800,7 +800,7 @@ CatalogId *string
 
 The ID of the Catalog this access package will be created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#catalog_id AccessPackage#catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#catalog_id AccessPackage#catalog_id}
 
 ---
 
@@ -814,7 +814,7 @@ Description *string
 
 The description of the access package.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#description AccessPackage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#description AccessPackage#description}
 
 ---
 
@@ -828,7 +828,7 @@ DisplayName *string
 
 The display name of the access package.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#display_name AccessPackage#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#display_name AccessPackage#display_name}
 
 ---
 
@@ -842,7 +842,7 @@ Hidden interface{}
 
 Whether the access package is hidden from the requestor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#hidden AccessPackage#hidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#hidden AccessPackage#hidden}
 
 ---
 
@@ -854,7 +854,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#id AccessPackage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#id AccessPackage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +871,7 @@ Timeouts AccessPackageTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#timeouts AccessPackage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#timeouts AccessPackage#timeouts}
 
 ---
 
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackage"
 
 &accesspackage.AccessPackageTimeouts {
 	Create: *string,
@@ -894,10 +894,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#create AccessPackage#create}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#delete AccessPackage#delete}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#read AccessPackage#read}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#update AccessPackage#update}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#create AccessPackage#create}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#delete AccessPackage#delete}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#read AccessPackage#read}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#update AccessPackage#update}. |
 
 ---
 
@@ -909,7 +909,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#create AccessPackage#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#create AccessPackage#create}.
 
 ---
 
@@ -921,7 +921,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#delete AccessPackage#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#delete AccessPackage#delete}.
 
 ---
 
@@ -933,7 +933,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#read AccessPackage#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#read AccessPackage#read}.
 
 ---
 
@@ -945,7 +945,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package#update AccessPackage#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package#update AccessPackage#update}.
 
 ---
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackage.AccessPackageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackage"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackage"
 
 accesspackage.NewAccessPackageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageTimeoutsOutputReference
 ```

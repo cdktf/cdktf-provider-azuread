@@ -1,6 +1,6 @@
 # `azuread_access_package_assignment_policy`
 
-Refer to the Terraform Registory for docs: [`azuread_access_package_assignment_policy`](https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy).
+Refer to the Terraform Registory for docs: [`azuread_access_package_assignment_policy`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy).
 
 # `accessPackageAssignmentPolicy` Submodule <a name="`accessPackageAssignmentPolicy` Submodule" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_access_package_assignment_p
 
 ### AccessPackageAssignmentPolicy <a name="AccessPackageAssignmentPolicy" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy azuread_access_package_assignment_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicy(scope Construct, id *string, config AccessPackageAssignmentPolicyConfig) AccessPackageAssignmentPolicy
 ```
@@ -398,7 +398,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.AccessPackageAssignmentPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.AccessPackageAssignmentPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ accesspackageassignmentpolicy.AccessPackageAssignmentPolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.AccessPackageAssignmentPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ accesspackageassignmentpolicy.AccessPackageAssignmentPolicy_IsTerraformResource(
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -585,10 +585,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyApprovalSettings {
 	ApprovalRequired: interface{},
@@ -938,7 +938,7 @@ ApprovalRequired interface{}
 
 Whether an approval is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#approval_required AccessPackageAssignmentPolicy#approval_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#approval_required AccessPackageAssignmentPolicy#approval_required}
 
 ---
 
@@ -952,7 +952,7 @@ ApprovalRequiredForExtension interface{}
 
 Whether an approval is required to grant extension. Same approval settings used to approve initial access will apply.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#approval_required_for_extension AccessPackageAssignmentPolicy#approval_required_for_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#approval_required_for_extension AccessPackageAssignmentPolicy#approval_required_for_extension}
 
 ---
 
@@ -966,7 +966,7 @@ ApprovalStage interface{}
 
 approval_stage block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#approval_stage AccessPackageAssignmentPolicy#approval_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#approval_stage AccessPackageAssignmentPolicy#approval_stage}
 
 ---
 
@@ -982,7 +982,7 @@ Whether requestor are required to provide a justification to request an access p
 
 Justification is visible to other approvers and the requestor
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#requestor_justification_required AccessPackageAssignmentPolicy#requestor_justification_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#requestor_justification_required AccessPackageAssignmentPolicy#requestor_justification_required}
 
 ---
 
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStage {
 	ApprovalTimeoutInDays: *f64,
@@ -1028,7 +1028,7 @@ Decision must be made in how many days?
 
 If a request is not approved within this time period after it is made, it will be automatically rejected
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#approval_timeout_in_days AccessPackageAssignmentPolicy#approval_timeout_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#approval_timeout_in_days AccessPackageAssignmentPolicy#approval_timeout_in_days}
 
 ---
 
@@ -1042,7 +1042,7 @@ AlternativeApprovalEnabled interface{}
 
 If no action taken, forward to alternate approvers?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#alternative_approval_enabled AccessPackageAssignmentPolicy#alternative_approval_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#alternative_approval_enabled AccessPackageAssignmentPolicy#alternative_approval_enabled}
 
 ---
 
@@ -1056,7 +1056,7 @@ AlternativeApprover interface{}
 
 alternative_approver block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#alternative_approver AccessPackageAssignmentPolicy#alternative_approver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#alternative_approver AccessPackageAssignmentPolicy#alternative_approver}
 
 ---
 
@@ -1070,7 +1070,7 @@ ApproverJustificationRequired interface{}
 
 Whether an approver must provide a justification for their decision. Justification is visible to other approvers and the requestor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
 
 ---
 
@@ -1084,7 +1084,7 @@ EnableAlternativeApprovalInDays *f64
 
 Forward to alternate approver(s) after how many days?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#enable_alternative_approval_in_days AccessPackageAssignmentPolicy#enable_alternative_approval_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#enable_alternative_approval_in_days AccessPackageAssignmentPolicy#enable_alternative_approval_in_days}
 
 ---
 
@@ -1098,7 +1098,7 @@ PrimaryApprover interface{}
 
 primary_approver block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#primary_approver AccessPackageAssignmentPolicy#primary_approver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#primary_approver AccessPackageAssignmentPolicy#primary_approver}
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover {
 	SubjectType: *string,
@@ -1136,7 +1136,7 @@ SubjectType *string
 
 Type of users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
 
 ---
 
@@ -1150,7 +1150,7 @@ Backup interface{}
 
 For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
 
 ---
 
@@ -1164,7 +1164,7 @@ ObjectId *string
 
 The object ID of the subject.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
 
 ---
 
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover {
 	SubjectType: *string,
@@ -1202,7 +1202,7 @@ SubjectType *string
 
 Type of users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
 
 ---
 
@@ -1216,7 +1216,7 @@ Backup interface{}
 
 For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
 
 ---
 
@@ -1230,7 +1230,7 @@ ObjectId *string
 
 The object ID of the subject.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
 
 ---
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyAssignmentReviewSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyAssignmentReviewSettings {
 	AccessRecommendationEnabled: interface{},
@@ -1282,7 +1282,7 @@ Whether to show Show reviewer decision helpers.
 
 If enabled, system recommendations based on users' access information will be shown to the reviewers. The reviewer will be recommended to approve the review if the user has signed-in at least once during the last 30 days. The reviewer will be recommended to deny the review if the user has not signed-in during the last 30 days
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#access_recommendation_enabled AccessPackageAssignmentPolicy#access_recommendation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#access_recommendation_enabled AccessPackageAssignmentPolicy#access_recommendation_enabled}
 
 ---
 
@@ -1296,7 +1296,7 @@ AccessReviewTimeoutBehavior *string
 
 What actions the system takes if reviewers don't respond in time.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#access_review_timeout_behavior AccessPackageAssignmentPolicy#access_review_timeout_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#access_review_timeout_behavior AccessPackageAssignmentPolicy#access_review_timeout_behavior}
 
 ---
 
@@ -1310,7 +1310,7 @@ ApproverJustificationRequired interface{}
 
 Whether a reviewer need provide a justification for their decision. Justification is visible to other reviewers and the requestor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
 
 ---
 
@@ -1324,7 +1324,7 @@ DurationInDays *f64
 
 How many days each occurrence of the access review series will run.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
 
 ---
 
@@ -1338,7 +1338,7 @@ Enabled interface{}
 
 Whether to enable assignment review.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#enabled AccessPackageAssignmentPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#enabled AccessPackageAssignmentPolicy#enabled}
 
 ---
 
@@ -1352,7 +1352,7 @@ Reviewer interface{}
 
 reviewer block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#reviewer AccessPackageAssignmentPolicy#reviewer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#reviewer AccessPackageAssignmentPolicy#reviewer}
 
 ---
 
@@ -1366,7 +1366,7 @@ ReviewFrequency *string
 
 This will determine how often the access review campaign runs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#review_frequency AccessPackageAssignmentPolicy#review_frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#review_frequency AccessPackageAssignmentPolicy#review_frequency}
 
 ---
 
@@ -1380,7 +1380,7 @@ ReviewType *string
 
 Self review or specific reviewers.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#review_type AccessPackageAssignmentPolicy#review_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#review_type AccessPackageAssignmentPolicy#review_type}
 
 ---
 
@@ -1394,7 +1394,7 @@ StartingOn *string
 
 This is the date the access review campaign will start on, formatted as an RFC3339 date string in UTC(e.g. 2018-01-01T01:02:03Z), default is now. Once an access review has been created, you cannot update its start date.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#starting_on AccessPackageAssignmentPolicy#starting_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#starting_on AccessPackageAssignmentPolicy#starting_on}
 
 ---
 
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer {
 	SubjectType: *string,
@@ -1432,7 +1432,7 @@ SubjectType *string
 
 Type of users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
 
 ---
 
@@ -1446,7 +1446,7 @@ Backup interface{}
 
 For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
 
 ---
 
@@ -1460,7 +1460,7 @@ ObjectId *string
 
 The object ID of the subject.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
 
 ---
 
@@ -1469,11 +1469,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1482,15 +1482,15 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassig
 	AccessPackageId: *string,
 	Description: *string,
 	DisplayName: *string,
-	ApprovalSettings: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettings,
-	AssignmentReviewSettings: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyAssignmentReviewSettings,
+	ApprovalSettings: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettings,
+	AssignmentReviewSettings: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyAssignmentReviewSettings,
 	DurationInDays: *f64,
 	ExpirationDate: *string,
 	ExtensionEnabled: interface{},
 	Id: *string,
 	Question: interface{},
-	RequestorSettings: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettings,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts,
+	RequestorSettings: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettings,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts,
 }
 ```
 
@@ -1499,7 +1499,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassig
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1513,7 +1513,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassig
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.durationInDays">DurationInDays</a></code> | <code>*f64</code> | How many days this assignment is valid for. |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.expirationDate">ExpirationDate</a></code> | <code>*string</code> | The date that this assignment expires, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z). |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.extensionEnabled">ExtensionEnabled</a></code> | <code>interface{}</code> | When enabled, users will be able to request extension of their access to this package before their access expires. |
-| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#id AccessPackageAssignmentPolicy#id}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#id AccessPackageAssignmentPolicy#id}. |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.question">Question</a></code> | <code>interface{}</code> | question block. |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.requestorSettings">RequestorSettings</a></code> | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettings">AccessPackageAssignmentPolicyRequestorSettings</a></code> | requestor_settings block. |
 | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts">AccessPackageAssignmentPolicyTimeouts</a></code> | timeouts block. |
@@ -1533,10 +1533,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1600,7 +1600,7 @@ AccessPackageId *string
 
 The ID of the access package that will contain the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#access_package_id AccessPackageAssignmentPolicy#access_package_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#access_package_id AccessPackageAssignmentPolicy#access_package_id}
 
 ---
 
@@ -1614,7 +1614,7 @@ Description *string
 
 The description of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#description AccessPackageAssignmentPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#description AccessPackageAssignmentPolicy#description}
 
 ---
 
@@ -1628,7 +1628,7 @@ DisplayName *string
 
 The display name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#display_name AccessPackageAssignmentPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#display_name AccessPackageAssignmentPolicy#display_name}
 
 ---
 
@@ -1642,7 +1642,7 @@ ApprovalSettings AccessPackageAssignmentPolicyApprovalSettings
 
 approval_settings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#approval_settings AccessPackageAssignmentPolicy#approval_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#approval_settings AccessPackageAssignmentPolicy#approval_settings}
 
 ---
 
@@ -1656,7 +1656,7 @@ AssignmentReviewSettings AccessPackageAssignmentPolicyAssignmentReviewSettings
 
 assignment_review_settings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#assignment_review_settings AccessPackageAssignmentPolicy#assignment_review_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#assignment_review_settings AccessPackageAssignmentPolicy#assignment_review_settings}
 
 ---
 
@@ -1670,7 +1670,7 @@ DurationInDays *f64
 
 How many days this assignment is valid for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
 
 ---
 
@@ -1684,7 +1684,7 @@ ExpirationDate *string
 
 The date that this assignment expires, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#expiration_date AccessPackageAssignmentPolicy#expiration_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#expiration_date AccessPackageAssignmentPolicy#expiration_date}
 
 ---
 
@@ -1698,7 +1698,7 @@ ExtensionEnabled interface{}
 
 When enabled, users will be able to request extension of their access to this package before their access expires.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#extension_enabled AccessPackageAssignmentPolicy#extension_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#extension_enabled AccessPackageAssignmentPolicy#extension_enabled}
 
 ---
 
@@ -1710,7 +1710,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#id AccessPackageAssignmentPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#id AccessPackageAssignmentPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1727,7 +1727,7 @@ Question interface{}
 
 question block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#question AccessPackageAssignmentPolicy#question}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#question AccessPackageAssignmentPolicy#question}
 
 ---
 
@@ -1741,7 +1741,7 @@ RequestorSettings AccessPackageAssignmentPolicyRequestorSettings
 
 requestor_settings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#requestor_settings AccessPackageAssignmentPolicy#requestor_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#requestor_settings AccessPackageAssignmentPolicy#requestor_settings}
 
 ---
 
@@ -1755,7 +1755,7 @@ Timeouts AccessPackageAssignmentPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#timeouts AccessPackageAssignmentPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#timeouts AccessPackageAssignmentPolicy#timeouts}
 
 ---
 
@@ -1764,10 +1764,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyQuestion {
-	Text: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionText,
+	Text: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionText,
 	Choice: interface{},
 	Required: interface{},
 	Sequence: *f64,
@@ -1795,7 +1795,7 @@ Text AccessPackageAssignmentPolicyQuestionText
 
 text block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#text AccessPackageAssignmentPolicy#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#text AccessPackageAssignmentPolicy#text}
 
 ---
 
@@ -1809,7 +1809,7 @@ Choice interface{}
 
 choice block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#choice AccessPackageAssignmentPolicy#choice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#choice AccessPackageAssignmentPolicy#choice}
 
 ---
 
@@ -1823,7 +1823,7 @@ Required interface{}
 
 Whether this question is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#required AccessPackageAssignmentPolicy#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#required AccessPackageAssignmentPolicy#required}
 
 ---
 
@@ -1837,7 +1837,7 @@ Sequence *f64
 
 The sequence number of this question.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#sequence AccessPackageAssignmentPolicy#sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#sequence AccessPackageAssignmentPolicy#sequence}
 
 ---
 
@@ -1846,11 +1846,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyQuestionChoice {
 	ActualValue: *string,
-	DisplayValue: github.com/cdktf/cdktf-provider-azuread-go/azuread/v6.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValue,
+	DisplayValue: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValue,
 }
 ```
 
@@ -1873,7 +1873,7 @@ ActualValue *string
 
 The actual value of this choice.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#actual_value AccessPackageAssignmentPolicy#actual_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#actual_value AccessPackageAssignmentPolicy#actual_value}
 
 ---
 
@@ -1887,7 +1887,7 @@ DisplayValue AccessPackageAssignmentPolicyQuestionChoiceDisplayValue
 
 display_value block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#display_value AccessPackageAssignmentPolicy#display_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#display_value AccessPackageAssignmentPolicy#display_value}
 
 ---
 
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValue {
 	DefaultText: *string,
@@ -1923,7 +1923,7 @@ DefaultText *string
 
 The default text of this question.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
 
 ---
 
@@ -1937,7 +1937,7 @@ LocalizedText interface{}
 
 localized_text block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
 
 ---
 
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText {
 	Content: *string,
@@ -1973,7 +1973,7 @@ Content *string
 
 The localized content of this question.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
 
 ---
 
@@ -1987,7 +1987,7 @@ LanguageCode *string
 
 The language code of this question content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
 
 ---
 
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyQuestionText {
 	DefaultText: *string,
@@ -2023,7 +2023,7 @@ DefaultText *string
 
 The default text of this question.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
 
 ---
 
@@ -2037,7 +2037,7 @@ LocalizedText interface{}
 
 localized_text block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
 
 ---
 
@@ -2046,7 +2046,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionTextLocalizedText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyQuestionTextLocalizedText {
 	Content: *string,
@@ -2073,7 +2073,7 @@ Content *string
 
 The localized content of this question.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
 
 ---
 
@@ -2087,7 +2087,7 @@ LanguageCode *string
 
 The language code of this question content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
 
 ---
 
@@ -2096,7 +2096,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyRequestorSettings {
 	Requestor: interface{},
@@ -2125,7 +2125,7 @@ Requestor interface{}
 
 requestor block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#requestor AccessPackageAssignmentPolicy#requestor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#requestor AccessPackageAssignmentPolicy#requestor}
 
 ---
 
@@ -2139,7 +2139,7 @@ RequestsAccepted interface{}
 
 Whether to accept requests now, when disabled, no new requests can be made using this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#requests_accepted AccessPackageAssignmentPolicy#requests_accepted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#requests_accepted AccessPackageAssignmentPolicy#requests_accepted}
 
 ---
 
@@ -2153,7 +2153,7 @@ ScopeType *string
 
 Specify the scopes of the requestors.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#scope_type AccessPackageAssignmentPolicy#scope_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#scope_type AccessPackageAssignmentPolicy#scope_type}
 
 ---
 
@@ -2162,7 +2162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettingsRequestor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyRequestorSettingsRequestor {
 	SubjectType: *string,
@@ -2191,7 +2191,7 @@ SubjectType *string
 
 Type of users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
 
 ---
 
@@ -2205,7 +2205,7 @@ Backup interface{}
 
 For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
 
 ---
 
@@ -2219,7 +2219,7 @@ ObjectId *string
 
 The object ID of the subject.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
 
 ---
 
@@ -2228,7 +2228,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 &accesspackageassignmentpolicy.AccessPackageAssignmentPolicyTimeouts {
 	Create: *string,
@@ -2242,10 +2242,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#create AccessPackageAssignmentPolicy#create}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#delete AccessPackageAssignmentPolicy#delete}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#read AccessPackageAssignmentPolicy#read}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#update AccessPackageAssignmentPolicy#update}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#create AccessPackageAssignmentPolicy#create}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#delete AccessPackageAssignmentPolicy#delete}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#read AccessPackageAssignmentPolicy#read}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#update AccessPackageAssignmentPolicy#update}. |
 
 ---
 
@@ -2257,7 +2257,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#create AccessPackageAssignmentPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#create AccessPackageAssignmentPolicy#create}.
 
 ---
 
@@ -2269,7 +2269,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#delete AccessPackageAssignmentPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#delete AccessPackageAssignmentPolicy#delete}.
 
 ---
 
@@ -2281,7 +2281,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#read AccessPackageAssignmentPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#read AccessPackageAssignmentPolicy#read}.
 
 ---
 
@@ -2293,7 +2293,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/r/access_package_assignment_policy#update AccessPackageAssignmentPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/access_package_assignment_policy#update AccessPackageAssignmentPolicy#update}.
 
 ---
 
@@ -2304,7 +2304,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverList
 ```
@@ -2447,7 +2447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference
 ```
@@ -2794,7 +2794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyApprovalSettingsApprovalStageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList
 ```
@@ -2937,7 +2937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputReference
 ```
@@ -3397,7 +3397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverList
 ```
@@ -3540,7 +3540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverOutputReference
 ```
@@ -3887,7 +3887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyApprovalSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyApprovalSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageAssignmentPolicyApprovalSettingsOutputReference
 ```
@@ -4265,7 +4265,7 @@ func InternalValue() AccessPackageAssignmentPolicyApprovalSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference
 ```
@@ -4788,7 +4788,7 @@ func InternalValue() AccessPackageAssignmentPolicyAssignmentReviewSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList
 ```
@@ -4931,7 +4931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutputReference
 ```
@@ -5278,7 +5278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList
 ```
@@ -5421,7 +5421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextOutputReference
 ```
@@ -5732,7 +5732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference
 ```
@@ -6045,7 +6045,7 @@ func InternalValue() AccessPackageAssignmentPolicyQuestionChoiceDisplayValue
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionChoiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyQuestionChoiceList
 ```
@@ -6188,7 +6188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionChoiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionChoiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyQuestionChoiceOutputReference
 ```
@@ -6512,7 +6512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyQuestionList
 ```
@@ -6655,7 +6655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyQuestionOutputReference
 ```
@@ -7057,7 +7057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionTextLocalizedTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionTextLocalizedTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyQuestionTextLocalizedTextList
 ```
@@ -7200,7 +7200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReference
 ```
@@ -7511,7 +7511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyQuestionTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyQuestionTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageAssignmentPolicyQuestionTextOutputReference
 ```
@@ -7824,7 +7824,7 @@ func InternalValue() AccessPackageAssignmentPolicyQuestionText
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyRequestorSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageAssignmentPolicyRequestorSettingsOutputReference
 ```
@@ -8173,7 +8173,7 @@ func InternalValue() AccessPackageAssignmentPolicyRequestorSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettingsRequestorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyRequestorSettingsRequestorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessPackageAssignmentPolicyRequestorSettingsRequestorList
 ```
@@ -8316,7 +8316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyRequestorSettingsRequestorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputReference
 ```
@@ -8663,7 +8663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageAssignmentPolicy.AccessPackageAssignmentPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v6/accesspackageassignmentpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageassignmentpolicy"
 
 accesspackageassignmentpolicy.NewAccessPackageAssignmentPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageAssignmentPolicyTimeoutsOutputReference
 ```

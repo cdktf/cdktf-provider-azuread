@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azuread/d/directory_object
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadDirectoryObjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#id DataAzureadDirectoryObject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_object#id DataAzureadDirectoryObject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,24 +17,24 @@ export interface DataAzureadDirectoryObjectConfig extends cdktf.TerraformMetaArg
   /**
   * The object ID of the principal
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#object_id DataAzureadDirectoryObject#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_object#object_id DataAzureadDirectoryObject#object_id}
   */
   readonly objectId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
   */
   readonly timeouts?: DataAzureadDirectoryObjectTimeouts;
 }
 export interface DataAzureadDirectoryObjectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azuread/d/directory_object#read DataAzureadDirectoryObject#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_object#read DataAzureadDirectoryObject#read}
   */
   readonly read?: string;
 }
 
-export function dataAzureadDirectoryObjectTimeoutsToTerraform(struct?: DataAzureadDirectoryObjectTimeoutsOutputReference | DataAzureadDirectoryObjectTimeouts | cdktf.IResolvable): any {
+export function dataAzureadDirectoryObjectTimeoutsToTerraform(struct?: DataAzureadDirectoryObjectTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -53,7 +53,7 @@ export class DataAzureadDirectoryObjectTimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzureadDirectoryObjectTimeouts | cdktf.IResolvable | undefined {
@@ -104,7 +104,7 @@ export class DataAzureadDirectoryObjectTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azuread/d/directory_object azuread_directory_object}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_object azuread_directory_object}
 */
 export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
 
@@ -118,7 +118,7 @@ export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azuread/d/directory_object azuread_directory_object} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_object azuread_directory_object} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
