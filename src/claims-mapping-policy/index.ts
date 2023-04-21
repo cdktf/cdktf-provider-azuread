@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/claims_mapping_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface ClaimsMappingPolicyConfig extends cdktf.TerraformMetaArguments 
   /**
   * A string collection containing a JSON string that defines the rules and settings for this policy
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
   */
   readonly definition: string[];
   /**
   * Display name for this policy
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,7 +29,7 @@ export interface ClaimsMappingPolicyConfig extends cdktf.TerraformMetaArguments 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}
 */
 export class ClaimsMappingPolicy extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ClaimsMappingPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/claims_mapping_policy azuread_claims_mapping_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class ClaimsMappingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_claims_mapping_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.37.1',
+        providerVersion: '2.37.2',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

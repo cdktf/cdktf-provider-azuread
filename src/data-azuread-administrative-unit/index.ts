@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit
+// https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataAzureadAdministrativeUnitConfig extends cdktf.TerraformMeta
   /**
   * The display name for the administrative unit
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#id DataAzureadAdministrativeUnit#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#id DataAzureadAdministrativeUnit#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,31 +23,31 @@ export interface DataAzureadAdministrativeUnitConfig extends cdktf.TerraformMeta
   /**
   * The object ID of the administrative unit
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#object_id DataAzureadAdministrativeUnit#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#object_id DataAzureadAdministrativeUnit#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#timeouts DataAzureadAdministrativeUnit#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#timeouts DataAzureadAdministrativeUnit#timeouts}
   */
   readonly timeouts?: DataAzureadAdministrativeUnitTimeouts;
 }
 export interface DataAzureadAdministrativeUnitTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#create DataAzureadAdministrativeUnit#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#create DataAzureadAdministrativeUnit#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#delete DataAzureadAdministrativeUnit#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#delete DataAzureadAdministrativeUnit#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#read DataAzureadAdministrativeUnit#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#read DataAzureadAdministrativeUnit#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit#update DataAzureadAdministrativeUnit#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit#update DataAzureadAdministrativeUnit#update}
   */
   readonly update?: string;
 }
@@ -191,7 +191,7 @@ export class DataAzureadAdministrativeUnitTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit azuread_administrative_unit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit azuread_administrative_unit}
 */
 export class DataAzureadAdministrativeUnit extends cdktf.TerraformDataSource {
 
@@ -205,7 +205,7 @@ export class DataAzureadAdministrativeUnit extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/administrative_unit azuread_administrative_unit} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/administrative_unit azuread_administrative_unit} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -216,7 +216,7 @@ export class DataAzureadAdministrativeUnit extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_administrative_unit',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.37.1',
+        providerVersion: '2.37.2',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
