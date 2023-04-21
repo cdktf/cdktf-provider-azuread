@@ -1,6 +1,6 @@
 # `data_azuread_directory_roles`
 
-Refer to the Terraform Registory for docs: [`data_azuread_directory_roles`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles).
+Refer to the Terraform Registory for docs: [`data_azuread_directory_roles`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles).
 
 # `dataAzureadDirectoryRoles` Submodule <a name="`dataAzureadDirectoryRoles` Submodule" id="@cdktf/provider-azuread.dataAzureadDirectoryRoles"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_directory_roles`](http
 
 ### DataAzureadDirectoryRoles <a name="DataAzureadDirectoryRoles" id="@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles azuread_directory_roles}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles azuread_directory_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles.Initializer"></a>
 
@@ -41,7 +41,7 @@ dataAzureadDirectoryRoles.DataAzureadDirectoryRoles(
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRoles.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesTimeouts">DataAzureadDirectoryRolesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +123,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#timeouts DataAzureadDirectoryRoles#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#timeouts DataAzureadDirectoryRoles#timeouts}
 
 ---
 
@@ -374,7 +374,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#read DataAzureadDirectoryRoles#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#read DataAzureadDirectoryRoles#read}.
 
 ---
 
@@ -735,7 +735,7 @@ dataAzureadDirectoryRoles.DataAzureadDirectoryRolesConfig(
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesTimeouts">DataAzureadDirectoryRolesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -818,7 +818,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#id DataAzureadDirectoryRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -835,7 +835,7 @@ timeouts: DataAzureadDirectoryRolesTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#timeouts DataAzureadDirectoryRoles#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#timeouts DataAzureadDirectoryRoles#timeouts}
 
 ---
 
@@ -866,7 +866,7 @@ dataAzureadDirectoryRoles.DataAzureadDirectoryRolesTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#read DataAzureadDirectoryRoles#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoles.DataAzureadDirectoryRolesTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#read DataAzureadDirectoryRoles#read}. |
 
 ---
 
@@ -878,7 +878,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.1/docs/data-sources/directory_roles#read DataAzureadDirectoryRoles#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/directory_roles#read DataAzureadDirectoryRoles#read}.
 
 ---
 
