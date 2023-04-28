@@ -2,6 +2,7 @@
 export * as accessPackage from './access-package';
 export * as accessPackageAssignmentPolicy from './access-package-assignment-policy';
 export * as accessPackageCatalog from './access-package-catalog';
+export * as accessPackageCatalogRoleAssignment from './access-package-catalog-role-assignment';
 export * as accessPackageResourceCatalogAssociation from './access-package-resource-catalog-association';
 export * as accessPackageResourcePackageAssociation from './access-package-resource-package-association';
 export * as administrativeUnit from './administrative-unit';
@@ -35,6 +36,7 @@ export * as user from './user';
 export * as userFlowAttribute from './user-flow-attribute';
 export * as dataAzureadAccessPackage from './data-azuread-access-package';
 export * as dataAzureadAccessPackageCatalog from './data-azuread-access-package-catalog';
+export * as dataAzureadAccessPackageCatalogRole from './data-azuread-access-package-catalog-role';
 export * as dataAzureadAdministrativeUnit from './data-azuread-administrative-unit';
 export * as dataAzureadApplication from './data-azuread-application';
 export * as dataAzureadApplicationPublishedAppIds from './data-azuread-application-published-app-ids';

@@ -1,6 +1,6 @@
 # `azuread_user_flow_attribute`
 
-Refer to the Terraform Registory for docs: [`azuread_user_flow_attribute`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute).
+Refer to the Terraform Registory for docs: [`azuread_user_flow_attribute`](https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute).
 
 # `userFlowAttribute` Submodule <a name="`userFlowAttribute` Submodule" id="@cdktf/provider-azuread.userFlowAttribute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_user_flow_attribute`](https
 
 ### UserFlowAttribute <a name="UserFlowAttribute" id="@cdktf/provider-azuread.userFlowAttribute.UserFlowAttribute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute azuread_user_flow_attribute}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute azuread_user_flow_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.userFlowAttribute.UserFlowAttribute.Initializer"></a>
 
@@ -695,7 +695,7 @@ new UserFlowAttributeConfig {
 | <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeConfig.property.dataType">DataType</a></code> | <code>string</code> | The data type of the user flow attribute. |
 | <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeConfig.property.description">Description</a></code> | <code>string</code> | The description of the user flow attribute that is shown to the user at the time of sign-up. |
 | <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The display name of the user flow attribute. |
-| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#id UserFlowAttribute#id}. |
+| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#id UserFlowAttribute#id}. |
 | <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts">UserFlowAttributeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -780,7 +780,7 @@ public string DataType { get; set; }
 
 The data type of the user flow attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#data_type UserFlowAttribute#data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#data_type UserFlowAttribute#data_type}
 
 ---
 
@@ -794,7 +794,7 @@ public string Description { get; set; }
 
 The description of the user flow attribute that is shown to the user at the time of sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#description UserFlowAttribute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#description UserFlowAttribute#description}
 
 ---
 
@@ -808,7 +808,7 @@ public string DisplayName { get; set; }
 
 The display name of the user flow attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#display_name UserFlowAttribute#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#display_name UserFlowAttribute#display_name}
 
 ---
 
@@ -820,7 +820,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#id UserFlowAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#id UserFlowAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +837,7 @@ public UserFlowAttributeTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#timeouts UserFlowAttribute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#timeouts UserFlowAttribute#timeouts}
 
 ---
 
@@ -860,10 +860,10 @@ new UserFlowAttributeTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#create UserFlowAttribute#create}. |
-| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#delete UserFlowAttribute#delete}. |
-| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#read UserFlowAttribute#read}. |
-| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#update UserFlowAttribute#update}. |
+| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#create UserFlowAttribute#create}. |
+| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#delete UserFlowAttribute#delete}. |
+| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#read UserFlowAttribute#read}. |
+| <code><a href="#@cdktf/provider-azuread.userFlowAttribute.UserFlowAttributeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#update UserFlowAttribute#update}. |
 
 ---
 
@@ -875,7 +875,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#create UserFlowAttribute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#create UserFlowAttribute#create}.
 
 ---
 
@@ -887,7 +887,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#delete UserFlowAttribute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#delete UserFlowAttribute#delete}.
 
 ---
 
@@ -899,7 +899,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#read UserFlowAttribute#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#read UserFlowAttribute#read}.
 
 ---
 
@@ -911,7 +911,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/resources/user_flow_attribute#update UserFlowAttribute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/user_flow_attribute#update UserFlowAttribute#update}.
 
 ---
 

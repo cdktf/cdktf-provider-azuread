@@ -1,6 +1,6 @@
 # `data_azuread_access_package_catalog`
 
-Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog).
+Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog`](https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog).
 
 # `dataAzureadAccessPackageCatalog` Submodule <a name="`dataAzureadAccessPackageCatalog` Submodule" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalog"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog
 
 ### DataAzureadAccessPackageCatalog <a name="DataAzureadAccessPackageCatalog" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog azuread_access_package_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog azuread_access_package_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalog.Initializer"></a>
 
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadaccessp
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the access package catalog. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog#id DataAzureadAccessPackageCatalog#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog#id DataAzureadAccessPackageCatalog#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogConfig.property.objectId">ObjectId</a></code> | <code>*string</code> | The ID of this access package catalog. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogTimeouts">DataAzureadAccessPackageCatalogTimeouts</a></code> | timeouts block. |
 
@@ -770,7 +770,7 @@ DisplayName *string
 
 The display name of the access package catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog#display_name DataAzureadAccessPackageCatalog#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog#display_name DataAzureadAccessPackageCatalog#display_name}
 
 ---
 
@@ -782,7 +782,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog#id DataAzureadAccessPackageCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog#id DataAzureadAccessPackageCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -799,7 +799,7 @@ ObjectId *string
 
 The ID of this access package catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog#object_id DataAzureadAccessPackageCatalog#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog#object_id DataAzureadAccessPackageCatalog#object_id}
 
 ---
 
@@ -813,7 +813,7 @@ Timeouts DataAzureadAccessPackageCatalogTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog#timeouts DataAzureadAccessPackageCatalog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog#timeouts DataAzureadAccessPackageCatalog#timeouts}
 
 ---
 
@@ -833,7 +833,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadaccessp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog#read DataAzureadAccessPackageCatalog#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalog.DataAzureadAccessPackageCatalogTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog#read DataAzureadAccessPackageCatalog#read}. |
 
 ---
 
@@ -845,7 +845,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/access_package_catalog#read DataAzureadAccessPackageCatalog#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/access_package_catalog#read DataAzureadAccessPackageCatalog#read}.
 
 ---
 
