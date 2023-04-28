@@ -1,6 +1,6 @@
 # `data_azuread_service_principal`
 
-Refer to the Terraform Registory for docs: [`data_azuread_service_principal`](https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal).
+Refer to the Terraform Registory for docs: [`data_azuread_service_principal`](https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal).
 
 # `dataAzureadServicePrincipal` Submodule <a name="`dataAzureadServicePrincipal` Submodule" id="@cdktf/provider-azuread.dataAzureadServicePrincipal"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_service_principal`](ht
 
 ### DataAzureadServicePrincipal <a name="DataAzureadServicePrincipal" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal azuread_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal azuread_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.Initializer"></a>
 
@@ -959,7 +959,7 @@ new DataAzureadServicePrincipalConfig {
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.property.applicationId">ApplicationId</a></code> | <code>string</code> | The application ID (client ID) of the application associated with this service principal. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The display name of the application associated with this service principal. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.property.objectId">ObjectId</a></code> | <code>string</code> | The object ID of the service principal. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalTimeouts">DataAzureadServicePrincipalTimeouts</a></code> | timeouts block. |
 
@@ -1045,7 +1045,7 @@ public string ApplicationId { get; set; }
 
 The application ID (client ID) of the application associated with this service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#application_id DataAzureadServicePrincipal#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#application_id DataAzureadServicePrincipal#application_id}
 
 ---
 
@@ -1059,7 +1059,7 @@ public string DisplayName { get; set; }
 
 The display name of the application associated with this service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
 
 ---
 
@@ -1071,7 +1071,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1088,7 @@ public string ObjectId { get; set; }
 
 The object ID of the service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
 
 ---
 
@@ -1102,7 +1102,7 @@ public DataAzureadServicePrincipalTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
 
 ---
 
@@ -1174,7 +1174,7 @@ new DataAzureadServicePrincipalTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}. |
 
 ---
 
@@ -1186,7 +1186,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.37.2/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}.
 
 ---
 
