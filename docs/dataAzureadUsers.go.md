@@ -1,6 +1,6 @@
 # `data_azuread_users`
 
-Refer to the Terraform Registory for docs: [`data_azuread_users`](https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users).
+Refer to the Terraform Registory for docs: [`data_azuread_users`](https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users).
 
 # `dataAzureadUsers` Submodule <a name="`dataAzureadUsers` Submodule" id="@cdktf/provider-azuread.dataAzureadUsers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_users`](https://regist
 
 ### DataAzureadUsers <a name="DataAzureadUsers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users azuread_users}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users azuread_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer"></a>
 
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadusers"
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#id DataAzureadUsers#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#id DataAzureadUsers#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.ignoreMissing">IgnoreMissing</a></code> | <code>interface{}</code> | Ignore missing users and return users that were found. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.mailNicknames">MailNicknames</a></code> | <code>*[]*string</code> | The email aliases of the users. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.objectIds">ObjectIds</a></code> | <code>*[]*string</code> | The object IDs of the users. |
@@ -839,7 +839,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#id DataAzureadUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#id DataAzureadUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -858,7 +858,7 @@ Ignore missing users and return users that were found.
 
 The data source will still fail if no users are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
 
 ---
 
@@ -872,7 +872,7 @@ MailNicknames *[]*string
 
 The email aliases of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
 
 ---
 
@@ -886,7 +886,7 @@ ObjectIds *[]*string
 
 The object IDs of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
 
 ---
 
@@ -902,7 +902,7 @@ Fetch all users with no filter and return all that were found.
 
 The data source will still fail if no users are found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
 
 ---
 
@@ -916,7 +916,7 @@ Timeouts DataAzureadUsersTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
 
 ---
 
@@ -930,7 +930,7 @@ UserPrincipalNames *[]*string
 
 The user principal names (UPNs) of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
 
 ---
 
@@ -950,7 +950,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadusers"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#read DataAzureadUsers#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#read DataAzureadUsers#read}. |
 
 ---
 
@@ -962,7 +962,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/data-sources/users#read DataAzureadUsers#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#read DataAzureadUsers#read}.
 
 ---
 

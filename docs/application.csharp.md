@@ -1,6 +1,6 @@
 # `azuread_application`
 
-Refer to the Terraform Registory for docs: [`azuread_application`](https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application).
+Refer to the Terraform Registory for docs: [`azuread_application`](https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application).
 
 # `application` Submodule <a name="`application` Submodule" id="@cdktf/provider-azuread.application"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_application`](https://regis
 
 ### Application <a name="Application" id="@cdktf/provider-azuread.application.Application"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application azuread_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application azuread_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.Application.Initializer"></a>
 
@@ -1574,7 +1574,7 @@ public string[] KnownClientApplications { get; set; }
 
 Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#known_client_applications Application#known_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#known_client_applications Application#known_client_applications}
 
 ---
 
@@ -1588,7 +1588,7 @@ public object MappedClaimsEnabled { get; set; }
 
 Allows an application to use claims mapping without specifying a custom signing key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#mapped_claims_enabled Application#mapped_claims_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#mapped_claims_enabled Application#mapped_claims_enabled}
 
 ---
 
@@ -1602,7 +1602,7 @@ public object Oauth2PermissionScope { get; set; }
 
 oauth2_permission_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#oauth2_permission_scope Application#oauth2_permission_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#oauth2_permission_scope Application#oauth2_permission_scope}
 
 ---
 
@@ -1616,7 +1616,7 @@ public double RequestedAccessTokenVersion { get; set; }
 
 The access token version expected by this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#requested_access_token_version Application#requested_access_token_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#requested_access_token_version Application#requested_access_token_version}
 
 ---
 
@@ -1664,7 +1664,7 @@ public string Id { get; set; }
 
 The unique identifier of the delegated permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id Application#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id Application#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1681,7 +1681,7 @@ public string AdminConsentDescription { get; set; }
 
 Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#admin_consent_description Application#admin_consent_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#admin_consent_description Application#admin_consent_description}
 
 ---
 
@@ -1695,7 +1695,7 @@ public string AdminConsentDisplayName { get; set; }
 
 Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#admin_consent_display_name Application#admin_consent_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#admin_consent_display_name Application#admin_consent_display_name}
 
 ---
 
@@ -1709,7 +1709,7 @@ public object Enabled { get; set; }
 
 Determines if the permission scope is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#enabled Application#enabled}
 
 ---
 
@@ -1723,7 +1723,7 @@ public string Type { get; set; }
 
 Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#type Application#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#type Application#type}
 
 ---
 
@@ -1737,7 +1737,7 @@ public string UserConsentDescription { get; set; }
 
 Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#user_consent_description Application#user_consent_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#user_consent_description Application#user_consent_description}
 
 ---
 
@@ -1751,7 +1751,7 @@ public string UserConsentDisplayName { get; set; }
 
 Display name for the delegated permission that appears in the end user consent experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#user_consent_display_name Application#user_consent_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#user_consent_display_name Application#user_consent_display_name}
 
 ---
 
@@ -1765,7 +1765,7 @@ public string Value { get; set; }
 
 The value that is used for the `scp` claim in OAuth 2.0 access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#value Application#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#value Application#value}
 
 ---
 
@@ -1809,7 +1809,7 @@ public string[] AllowedMemberTypes { get; set; }
 
 Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#allowed_member_types Application#allowed_member_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#allowed_member_types Application#allowed_member_types}
 
 ---
 
@@ -1823,7 +1823,7 @@ public string Description { get; set; }
 
 Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#description Application#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#description Application#description}
 
 ---
 
@@ -1837,7 +1837,7 @@ public string DisplayName { get; set; }
 
 Display name for the app role that appears during app role assignment and in consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#display_name Application#display_name}
 
 ---
 
@@ -1851,7 +1851,7 @@ public string Id { get; set; }
 
 The unique identifier of the app role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id Application#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id Application#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1868,7 +1868,7 @@ public object Enabled { get; set; }
 
 Determines if the app role is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#enabled Application#enabled}
 
 ---
 
@@ -1882,7 +1882,7 @@ public string Value { get; set; }
 
 The value that is used for the `roles` claim in ID tokens and OAuth 2.0 access tokens that are authenticating an assigned service or user principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#value Application#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#value Application#value}
 
 ---
 
@@ -1952,7 +1952,7 @@ new ApplicationConfig {
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.fallbackPublicClientEnabled">FallbackPublicClientEnabled</a></code> | <code>object</code> | Specifies whether the application is a public client. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.featureTags">FeatureTags</a></code> | <code>object</code> | feature_tags block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.groupMembershipClaims">GroupMembershipClaims</a></code> | <code>string[]</code> | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id Application#id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id Application#id}. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">IdentifierUris</a></code> | <code>string[]</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">LogoImage</a></code> | <code>string</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">MarketingUrl</a></code> | <code>string</code> | URL of the application's marketing page. |
@@ -2056,7 +2056,7 @@ public string DisplayName { get; set; }
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#display_name Application#display_name}
 
 ---
 
@@ -2070,7 +2070,7 @@ public ApplicationApi Api { get; set; }
 
 api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#api Application#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#api Application#api}
 
 ---
 
@@ -2084,7 +2084,7 @@ public object AppRole { get; set; }
 
 app_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#app_role Application#app_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#app_role Application#app_role}
 
 ---
 
@@ -2098,7 +2098,7 @@ public string Description { get; set; }
 
 Description of the application as shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#description Application#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#description Application#description}
 
 ---
 
@@ -2112,7 +2112,7 @@ public object DeviceOnlyAuthEnabled { get; set; }
 
 Specifies whether this application supports device authentication without a user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#device_only_auth_enabled Application#device_only_auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#device_only_auth_enabled Application#device_only_auth_enabled}
 
 ---
 
@@ -2128,7 +2128,7 @@ Specifies whether the application is a public client.
 
 Appropriate for apps using token grant flows that don't use a redirect URI
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
 
 ---
 
@@ -2142,7 +2142,7 @@ public object FeatureTags { get; set; }
 
 feature_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#feature_tags Application#feature_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#feature_tags Application#feature_tags}
 
 ---
 
@@ -2156,7 +2156,7 @@ public string[] GroupMembershipClaims { get; set; }
 
 Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#group_membership_claims Application#group_membership_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#group_membership_claims Application#group_membership_claims}
 
 ---
 
@@ -2168,7 +2168,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id Application#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id Application#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2185,7 +2185,7 @@ public string[] IdentifierUris { get; set; }
 
 The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#identifier_uris Application#identifier_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#identifier_uris Application#identifier_uris}
 
 ---
 
@@ -2199,7 +2199,7 @@ public string LogoImage { get; set; }
 
 Base64 encoded logo image in gif, png or jpeg format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#logo_image Application#logo_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#logo_image Application#logo_image}
 
 ---
 
@@ -2213,7 +2213,7 @@ public string MarketingUrl { get; set; }
 
 URL of the application's marketing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#marketing_url Application#marketing_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#marketing_url Application#marketing_url}
 
 ---
 
@@ -2227,7 +2227,7 @@ public string Notes { get; set; }
 
 User-specified notes relevant for the management of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#notes Application#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#notes Application#notes}
 
 ---
 
@@ -2241,7 +2241,7 @@ public object Oauth2PostResponseRequired { get; set; }
 
 Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#oauth2_post_response_required Application#oauth2_post_response_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#oauth2_post_response_required Application#oauth2_post_response_required}
 
 ---
 
@@ -2255,7 +2255,7 @@ public ApplicationOptionalClaims OptionalClaims { get; set; }
 
 optional_claims block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#optional_claims Application#optional_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#optional_claims Application#optional_claims}
 
 ---
 
@@ -2269,7 +2269,7 @@ public string[] Owners { get; set; }
 
 A list of object IDs of principals that will be granted ownership of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#owners Application#owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#owners Application#owners}
 
 ---
 
@@ -2283,7 +2283,7 @@ public object PreventDuplicateNames { get; set; }
 
 If `true`, will return an error if an existing application is found with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#prevent_duplicate_names Application#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#prevent_duplicate_names Application#prevent_duplicate_names}
 
 ---
 
@@ -2297,7 +2297,7 @@ public string PrivacyStatementUrl { get; set; }
 
 URL of the application's privacy statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#privacy_statement_url Application#privacy_statement_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#privacy_statement_url Application#privacy_statement_url}
 
 ---
 
@@ -2311,7 +2311,7 @@ public ApplicationPublicClient PublicClient { get; set; }
 
 public_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#public_client Application#public_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#public_client Application#public_client}
 
 ---
 
@@ -2325,7 +2325,7 @@ public object RequiredResourceAccess { get; set; }
 
 required_resource_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#required_resource_access Application#required_resource_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#required_resource_access Application#required_resource_access}
 
 ---
 
@@ -2339,7 +2339,7 @@ public string ServiceManagementReference { get; set; }
 
 References application or service contact information from a Service or Asset Management database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#service_management_reference Application#service_management_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#service_management_reference Application#service_management_reference}
 
 ---
 
@@ -2353,7 +2353,7 @@ public string SignInAudience { get; set; }
 
 The Microsoft account types that are supported for the current application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#sign_in_audience Application#sign_in_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#sign_in_audience Application#sign_in_audience}
 
 ---
 
@@ -2367,7 +2367,7 @@ public ApplicationSinglePageApplication SinglePageApplication { get; set; }
 
 single_page_application block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#single_page_application Application#single_page_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#single_page_application Application#single_page_application}
 
 ---
 
@@ -2381,7 +2381,7 @@ public string SupportUrl { get; set; }
 
 URL of the application's support page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#support_url Application#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#support_url Application#support_url}
 
 ---
 
@@ -2395,7 +2395,7 @@ public string[] Tags { get; set; }
 
 A set of tags to apply to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#tags Application#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#tags Application#tags}
 
 ---
 
@@ -2409,7 +2409,7 @@ public string TemplateId { get; set; }
 
 Unique ID of the application template from which this application is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#template_id Application#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#template_id Application#template_id}
 
 ---
 
@@ -2423,7 +2423,7 @@ public string TermsOfServiceUrl { get; set; }
 
 URL of the application's terms of service statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#terms_of_service_url Application#terms_of_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#terms_of_service_url Application#terms_of_service_url}
 
 ---
 
@@ -2437,7 +2437,7 @@ public ApplicationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#timeouts Application#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#timeouts Application#timeouts}
 
 ---
 
@@ -2451,7 +2451,7 @@ public ApplicationWeb Web { get; set; }
 
 web block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#web Application#web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#web Application#web}
 
 ---
 
@@ -2491,7 +2491,7 @@ public object CustomSingleSignOn { get; set; }
 
 Whether this application represents a custom SAML application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#custom_single_sign_on Application#custom_single_sign_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#custom_single_sign_on Application#custom_single_sign_on}
 
 ---
 
@@ -2505,7 +2505,7 @@ public object Enterprise { get; set; }
 
 Whether this application represents an Enterprise Application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#enterprise Application#enterprise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#enterprise Application#enterprise}
 
 ---
 
@@ -2519,7 +2519,7 @@ public object Gallery { get; set; }
 
 Whether this application represents a gallery application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#gallery Application#gallery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#gallery Application#gallery}
 
 ---
 
@@ -2533,7 +2533,7 @@ public object Hide { get; set; }
 
 Whether this application is invisible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#hide Application#hide}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#hide Application#hide}
 
 ---
 
@@ -2571,7 +2571,7 @@ public object AccessToken { get; set; }
 
 access_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#access_token Application#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#access_token Application#access_token}
 
 ---
 
@@ -2585,7 +2585,7 @@ public object IdToken { get; set; }
 
 id_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id_token Application#id_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id_token Application#id_token}
 
 ---
 
@@ -2599,7 +2599,7 @@ public object Saml2Token { get; set; }
 
 saml2_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#saml2_token Application#saml2_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#saml2_token Application#saml2_token}
 
 ---
 
@@ -2639,7 +2639,7 @@ public string Name { get; set; }
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2655,7 +2655,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2669,7 +2669,7 @@ public object Essential { get; set; }
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2685,7 +2685,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -2725,7 +2725,7 @@ public string Name { get; set; }
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2741,7 +2741,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2755,7 +2755,7 @@ public object Essential { get; set; }
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2771,7 +2771,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -2811,7 +2811,7 @@ public string Name { get; set; }
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2827,7 +2827,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2841,7 +2841,7 @@ public object Essential { get; set; }
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2857,7 +2857,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -2891,7 +2891,7 @@ public string[] RedirectUris { get; set; }
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -2913,7 +2913,7 @@ new ApplicationRequiredResourceAccess {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAccess">ResourceAccess</a></code> | <code>object</code> | resource_access block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAppId">ResourceAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#resource_app_id Application#resource_app_id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAppId">ResourceAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#resource_app_id Application#resource_app_id}. |
 
 ---
 
@@ -2927,7 +2927,7 @@ public object ResourceAccess { get; set; }
 
 resource_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#resource_access Application#resource_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#resource_access Application#resource_access}
 
 ---
 
@@ -2939,7 +2939,7 @@ public string ResourceAppId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#resource_app_id Application#resource_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#resource_app_id Application#resource_app_id}.
 
 ---
 
@@ -2960,8 +2960,8 @@ new ApplicationRequiredResourceAccessResourceAccess {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id Application#id}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#type Application#type}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id Application#id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#type Application#type}. |
 
 ---
 
@@ -2973,7 +2973,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id Application#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id Application#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2988,7 +2988,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#type Application#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#type Application#type}.
 
 ---
 
@@ -3022,7 +3022,7 @@ public string[] RedirectUris { get; set; }
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -3045,10 +3045,10 @@ new ApplicationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#create Application#create}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#delete Application#delete}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#read Application#read}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#update Application#update}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#create Application#create}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#delete Application#delete}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#read Application#read}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#update Application#update}. |
 
 ---
 
@@ -3060,7 +3060,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#create Application#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#create Application#create}.
 
 ---
 
@@ -3072,7 +3072,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#delete Application#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#delete Application#delete}.
 
 ---
 
@@ -3084,7 +3084,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#read Application#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#read Application#read}.
 
 ---
 
@@ -3096,7 +3096,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#update Application#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#update Application#update}.
 
 ---
 
@@ -3136,7 +3136,7 @@ public string HomepageUrl { get; set; }
 
 Home page or landing page of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#homepage_url Application#homepage_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#homepage_url Application#homepage_url}
 
 ---
 
@@ -3150,7 +3150,7 @@ public ApplicationWebImplicitGrant ImplicitGrant { get; set; }
 
 implicit_grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#implicit_grant Application#implicit_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#implicit_grant Application#implicit_grant}
 
 ---
 
@@ -3164,7 +3164,7 @@ public string LogoutUrl { get; set; }
 
 The URL that will be used by Microsoft's authorization service to sign out a user using front-channel, back-channel or SAML logout protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#logout_url Application#logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#logout_url Application#logout_url}
 
 ---
 
@@ -3178,7 +3178,7 @@ public string[] RedirectUris { get; set; }
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -3214,7 +3214,7 @@ public object AccessTokenIssuanceEnabled { get; set; }
 
 Whether this web application can request an access token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
 
 ---
 
@@ -3228,7 +3228,7 @@ public object IdTokenIssuanceEnabled { get; set; }
 
 Whether this web application can request an ID token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
 
 ---
 

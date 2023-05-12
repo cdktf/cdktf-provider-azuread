@@ -1,6 +1,6 @@
 # `azuread_invitation`
 
-Refer to the Terraform Registory for docs: [`azuread_invitation`](https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation).
+Refer to the Terraform Registory for docs: [`azuread_invitation`](https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation).
 
 # `invitation` Submodule <a name="`invitation` Submodule" id="@cdktf/provider-azuread.invitation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_invitation`](https://regist
 
 ### Invitation <a name="Invitation" id="@cdktf/provider-azuread.invitation.Invitation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation azuread_invitation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation azuread_invitation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.invitation.Invitation.Initializer"></a>
 
@@ -770,7 +770,7 @@ const invitationConfig: invitation.InvitationConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.redirectUrl">redirectUrl</a></code> | <code>string</code> | The URL that the user should be redirected to once the invitation is redeemed. |
 | <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.userEmailAddress">userEmailAddress</a></code> | <code>string</code> | The email address of the user being invited. |
-| <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#id Invitation#id}. |
+| <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#id Invitation#id}. |
 | <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.message">message</a></code> | <code><a href="#@cdktf/provider-azuread.invitation.InvitationMessage">InvitationMessage</a></code> | message block. |
 | <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts">InvitationTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.invitation.InvitationConfig.property.userDisplayName">userDisplayName</a></code> | <code>string</code> | The display name of the user being invited. |
@@ -858,7 +858,7 @@ public readonly redirectUrl: string;
 
 The URL that the user should be redirected to once the invitation is redeemed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#redirect_url Invitation#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#redirect_url Invitation#redirect_url}
 
 ---
 
@@ -872,7 +872,7 @@ public readonly userEmailAddress: string;
 
 The email address of the user being invited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#user_email_address Invitation#user_email_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#user_email_address Invitation#user_email_address}
 
 ---
 
@@ -884,7 +884,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#id Invitation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#id Invitation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -901,7 +901,7 @@ public readonly message: InvitationMessage;
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#message Invitation#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#message Invitation#message}
 
 ---
 
@@ -915,7 +915,7 @@ public readonly timeouts: InvitationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#timeouts Invitation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#timeouts Invitation#timeouts}
 
 ---
 
@@ -929,7 +929,7 @@ public readonly userDisplayName: string;
 
 The display name of the user being invited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#user_display_name Invitation#user_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#user_display_name Invitation#user_display_name}
 
 ---
 
@@ -943,7 +943,7 @@ public readonly userType: string;
 
 The user type of the user being invited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#user_type Invitation#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#user_type Invitation#user_type}
 
 ---
 
@@ -977,7 +977,7 @@ public readonly additionalRecipients: string[];
 
 Email addresses of additional recipients the invitation message should be sent to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#additional_recipients Invitation#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#additional_recipients Invitation#additional_recipients}
 
 ---
 
@@ -991,7 +991,7 @@ public readonly body: string;
 
 Customized message body you want to send if you don't want to send the default message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#body Invitation#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#body Invitation#body}
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly language: string;
 
 The language you want to send the default message in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#language Invitation#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#language Invitation#language}
 
 ---
 
@@ -1023,10 +1023,10 @@ const invitationTimeouts: invitation.InvitationTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#create Invitation#create}. |
-| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#delete Invitation#delete}. |
-| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#read Invitation#read}. |
-| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#update Invitation#update}. |
+| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#create Invitation#create}. |
+| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#delete Invitation#delete}. |
+| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#read Invitation#read}. |
+| <code><a href="#@cdktf/provider-azuread.invitation.InvitationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#update Invitation#update}. |
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#create Invitation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#create Invitation#create}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#delete Invitation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#delete Invitation#delete}.
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#read Invitation#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#read Invitation#read}.
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.38.0/docs/resources/invitation#update Invitation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/resources/invitation#update Invitation#update}.
 
 ---
 
