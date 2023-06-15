@@ -493,7 +493,7 @@ AdministrativeUnitMember.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.administrativeUnitObjectIdInput">administrativeUnitObjectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.memberObjectIdInput">memberObjectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.administrativeUnitObjectId">administrativeUnitObjectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.property.memberObjectId">memberObjectId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -688,7 +688,7 @@ public java.lang.String getMemberObjectIdInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a>
 
 ---
 
@@ -1235,7 +1235,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1349,7 +1349,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a>
 
 ---
 

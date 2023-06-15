@@ -390,7 +390,7 @@ dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.isTerraf
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.objectIdInput">objectIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.objectId">objectId</a></code> | <code>string</code> | *No description.* |
@@ -582,10 +582,10 @@ public readonly objectIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadAccessPackageCatalogRoleTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataAzureadAccessPackageCatalogRoleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a>
 
 ---
 
@@ -1045,7 +1045,7 @@ public resetRead(): void
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1096,10 +1096,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadAccessPackageCatalogRoleTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataAzureadAccessPackageCatalogRoleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a>
 
 ---
 

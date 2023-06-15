@@ -392,7 +392,7 @@ directoryRole.DirectoryRole.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.templateIdInput">templateIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.property.templateId">templateId</a></code> | <code>string</code> | *No description.* |
@@ -604,10 +604,10 @@ public readonly templateIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DirectoryRoleTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DirectoryRoleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a>
 
 ---
 
@@ -1133,7 +1133,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1244,10 +1244,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DirectoryRoleTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DirectoryRoleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a>
 
 ---
 

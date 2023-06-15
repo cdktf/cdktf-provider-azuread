@@ -1290,7 +1290,7 @@ application.Application.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.templateIdInput">template_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.termsOfServiceUrlInput">terms_of_service_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.webInput">web_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationWeb">ApplicationWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabled">device_only_auth_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1890,10 +1890,10 @@ terms_of_service_url_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.application.Application.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ApplicationTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ApplicationTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]
 
 ---
 
@@ -4294,7 +4294,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDescription">user_consent_description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDisplayName">user_consent_display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]</code> | *No description.* |
 
 ---
 
@@ -4485,10 +4485,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationApiOauth2PermissionScope, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationApiOauth2PermissionScope]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]
 
 ---
 
@@ -5330,7 +5330,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]</code> | *No description.* |
 
 ---
 
@@ -5481,10 +5481,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationAppRole, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationAppRole]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]
 
 ---
 
@@ -5931,7 +5931,7 @@ def reset_hide() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterprise">enterprise</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.gallery">gallery</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hide">hide</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]</code> | *No description.* |
 
 ---
 
@@ -6042,10 +6042,10 @@ hide: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationFeatureTags, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationFeatureTags]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]
 
 ---
 
@@ -6485,7 +6485,7 @@ def reset_source() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]</code> | *No description.* |
 
 ---
 
@@ -6596,10 +6596,10 @@ source: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationOptionalClaimsAccessToken, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationOptionalClaimsAccessToken]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]
 
 ---
 
@@ -7039,7 +7039,7 @@ def reset_source() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]</code> | *No description.* |
 
 ---
 
@@ -7150,10 +7150,10 @@ source: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationOptionalClaimsIdToken, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationOptionalClaimsIdToken]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]
 
 ---
 
@@ -7999,7 +7999,7 @@ def reset_source() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]</code> | *No description.* |
 
 ---
 
@@ -8110,10 +8110,10 @@ source: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationOptionalClaimsSaml2Token, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationOptionalClaimsSaml2Token]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]
 
 ---
 
@@ -8846,7 +8846,7 @@ def put_resource_access(
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAccessInput">resource_access_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAppIdInput">resource_app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAppId">resource_app_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]</code> | *No description.* |
 
 ---
 
@@ -8917,10 +8917,10 @@ resource_app_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationRequiredResourceAccess, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationRequiredResourceAccess]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]
 
 ---
 
@@ -9335,7 +9335,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]</code> | *No description.* |
 
 ---
 
@@ -9406,10 +9406,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationRequiredResourceAccessResourceAccess, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationRequiredResourceAccessResourceAccess]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]
 
 ---
 
@@ -9988,7 +9988,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -10099,10 +10099,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ApplicationTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ApplicationTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]
 
 ---
 

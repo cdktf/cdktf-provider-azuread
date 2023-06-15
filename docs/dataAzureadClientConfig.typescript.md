@@ -375,7 +375,7 @@ dataAzureadClientConfig.DataAzureadClientConfig.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference">DataAzureadClientConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -555,10 +555,10 @@ public readonly idInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzureadClientConfigTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataAzureadClientConfigTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a>
 
 ---
 
@@ -968,7 +968,7 @@ public resetRead(): void
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1019,10 +1019,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzureadClientConfigTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataAzureadClientConfigTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a>
 
 ---
 

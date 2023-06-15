@@ -619,7 +619,7 @@ directoryRoleAssignment.DirectoryRoleAssignment.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.principalObjectIdInput">principal_object_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.roleIdInput">role_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.appScopeId">app_scope_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.appScopeObjectId">app_scope_object_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.directoryScopeId">directory_scope_id</a></code> | <code>str</code> | *No description.* |
@@ -855,10 +855,10 @@ role_id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[DirectoryRoleAssignmentTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, DirectoryRoleAssignmentTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>]
 
 ---
 
@@ -1530,7 +1530,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1641,10 +1641,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DirectoryRoleAssignmentTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, DirectoryRoleAssignmentTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts">DirectoryRoleAssignmentTimeouts</a>]
 
 ---
 

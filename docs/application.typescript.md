@@ -701,7 +701,7 @@ application.Application.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.templateIdInput">templateIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.termsOfServiceUrlInput">termsOfServiceUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.webInput">webInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationWeb">ApplicationWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabled">deviceOnlyAuthEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1301,10 +1301,10 @@ public readonly termsOfServiceUrlInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.application.Application.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ApplicationTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | ApplicationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>
 
 ---
 
@@ -3565,7 +3565,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDescription">userConsentDescription</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDisplayName">userConsentDisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a></code> | *No description.* |
 
 ---
 
@@ -3756,10 +3756,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationApiOauth2PermissionScope | IResolvable;
+public readonly internalValue: IResolvable | ApplicationApiOauth2PermissionScope;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>
 
 ---
 
@@ -4539,7 +4539,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a></code> | *No description.* |
 
 ---
 
@@ -4690,10 +4690,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationAppRole | IResolvable;
+public readonly internalValue: IResolvable | ApplicationAppRole;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>
 
 ---
 
@@ -5105,7 +5105,7 @@ public resetHide(): void
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterprise">enterprise</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.gallery">gallery</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hide">hide</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a></code> | *No description.* |
 
 ---
 
@@ -5216,10 +5216,10 @@ public readonly hide: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationFeatureTags | IResolvable;
+public readonly internalValue: IResolvable | ApplicationFeatureTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>
 
 ---
 
@@ -5624,7 +5624,7 @@ public resetSource(): void
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essential">essential</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a></code> | *No description.* |
 
 ---
 
@@ -5735,10 +5735,10 @@ public readonly source: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationOptionalClaimsAccessToken | IResolvable;
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsAccessToken;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>
 
 ---
 
@@ -6143,7 +6143,7 @@ public resetSource(): void
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essential">essential</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a></code> | *No description.* |
 
 ---
 
@@ -6254,10 +6254,10 @@ public readonly source: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationOptionalClaimsIdToken | IResolvable;
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsIdToken;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>
 
 ---
 
@@ -7037,7 +7037,7 @@ public resetSource(): void
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essential">essential</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a></code> | *No description.* |
 
 ---
 
@@ -7148,10 +7148,10 @@ public readonly source: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationOptionalClaimsSaml2Token | IResolvable;
+public readonly internalValue: IResolvable | ApplicationOptionalClaimsSaml2Token;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>
 
 ---
 
@@ -7822,7 +7822,7 @@ public putResourceAccess(value: IResolvable | ApplicationRequiredResourceAccessR
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAccessInput">resourceAccessInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAppIdInput">resourceAppIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAppId">resourceAppId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a></code> | *No description.* |
 
 ---
 
@@ -7893,10 +7893,10 @@ public readonly resourceAppId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationRequiredResourceAccess | IResolvable;
+public readonly internalValue: IResolvable | ApplicationRequiredResourceAccess;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>
 
 ---
 
@@ -8276,7 +8276,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a></code> | *No description.* |
 
 ---
 
@@ -8347,10 +8347,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationRequiredResourceAccessResourceAccess | IResolvable;
+public readonly internalValue: IResolvable | ApplicationRequiredResourceAccessResourceAccess;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>
 
 ---
 
@@ -8879,7 +8879,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -8990,10 +8990,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ApplicationTimeouts | IResolvable;
+public readonly internalValue: IResolvable | ApplicationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>
 
 ---
 

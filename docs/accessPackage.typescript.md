@@ -385,7 +385,7 @@ accessPackage.AccessPackage.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.hiddenInput">hiddenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.catalogId">catalogId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackage.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
@@ -599,10 +599,10 @@ public readonly idInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.accessPackage.AccessPackage.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: AccessPackageTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | AccessPackageTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a>
 
 ---
 
@@ -1178,7 +1178,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1289,10 +1289,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.accessPackage.AccessPackageTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AccessPackageTimeouts | IResolvable;
+public readonly internalValue: IResolvable | AccessPackageTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a>
 
 ---
 

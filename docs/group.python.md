@@ -993,7 +993,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptionsInput">provisioning_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabledInput">security_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.themeInput">theme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">writeback_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1477,10 +1477,10 @@ theme_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.group.Group.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GroupTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GroupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]
 
 ---
 
@@ -2966,7 +2966,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -3077,10 +3077,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GroupTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GroupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]
 
 ---
 
