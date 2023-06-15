@@ -1224,7 +1224,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azuread.user.User.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddressInput">street_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.surnameInput">surname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocationInput">usage_location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalNameInput">user_principal_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">account_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1891,10 +1891,10 @@ surname_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.user.User.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[UserTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, UserTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]
 
 ---
 
@@ -3354,7 +3354,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -3465,10 +3465,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, UserTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]
 
 ---
 

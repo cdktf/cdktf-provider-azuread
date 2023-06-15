@@ -651,7 +651,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azuread.user.User.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddressInput">streetAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.surnameInput">surnameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocationInput">usageLocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalNameInput">userPrincipalNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">accountEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1318,10 +1318,10 @@ public readonly surnameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.user.User.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: UserTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | UserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
@@ -2706,7 +2706,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2817,10 +2817,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserTimeouts | IResolvable;
+public readonly internalValue: IResolvable | UserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
