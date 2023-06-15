@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplicationTemplate.DataAzureadApplicationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadapplicationtemplate"
 
 dataazureadapplicationtemplate.NewDataAzureadApplicationTemplate(scope Construct, id *string, config DataAzureadApplicationTemplateConfig) DataAzureadApplicationTemplate
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadApplicationTemplate.DataAzureadApplicationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadapplicationtemplate"
 
 dataazureadapplicationtemplate.DataAzureadApplicationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadApplicationTemplate.DataAzureadApplicationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadapplicationtemplate"
 
 dataazureadapplicationtemplate.DataAzureadApplicationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataazureadapplicationtemplate.DataAzureadApplicationTemplate_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadApplicationTemplate.DataAzureadApplicationTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadapplicationtemplate"
 
 dataazureadapplicationtemplate.DataAzureadApplicationTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -688,7 +688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplicationTemplate.DataAzureadApplicationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadapplicationtemplate"
 
 &dataazureadapplicationtemplate.DataAzureadApplicationTemplateConfig {
 	Connection: interface{},
@@ -701,7 +701,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplica
 	DisplayName: *string,
 	Id: *string,
 	TemplateId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v7.dataAzureadApplicationTemplate.DataAzureadApplicationTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v8.dataAzureadApplicationTemplate.DataAzureadApplicationTemplateTimeouts,
 }
 ```
 
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplicationTemplate.DataAzureadApplicationTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadapplicationtemplate"
 
 &dataazureadapplicationtemplate.DataAzureadApplicationTemplateTimeouts {
 	Read: *string,
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplicationTemplate.DataAzureadApplicationTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v7/dataazureadapplicationtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v8/dataazureadapplicationtemplate"
 
 dataazureadapplicationtemplate.NewDataAzureadApplicationTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadApplicationTemplateTimeoutsOutputReference
 ```
