@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user
+// https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user#id DataAzureadUser#id}
+  * The employee identifier assigned to the user by the organisation
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#employee_id DataAzureadUser#employee_id}
+  */
+  readonly employeeId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#id DataAzureadUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +28,37 @@ export interface DataAzureadUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The SMTP address for the user
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user#mail DataAzureadUser#mail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#mail DataAzureadUser#mail}
   */
   readonly mail?: string;
   /**
   * The email alias of the user
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user#mail_nickname DataAzureadUser#mail_nickname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#mail_nickname DataAzureadUser#mail_nickname}
   */
   readonly mailNickname?: string;
   /**
   * The object ID of the user
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user#object_id DataAzureadUser#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#object_id DataAzureadUser#object_id}
   */
   readonly objectId?: string;
   /**
   * The user principal name (UPN) of the user
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user#user_principal_name DataAzureadUser#user_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#user_principal_name DataAzureadUser#user_principal_name}
   */
   readonly userPrincipalName?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user#timeouts DataAzureadUser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#timeouts DataAzureadUser#timeouts}
   */
   readonly timeouts?: DataAzureadUserTimeouts;
 }
 export interface DataAzureadUserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user#read DataAzureadUser#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#read DataAzureadUser#read}
   */
   readonly read?: string;
 }
@@ -127,7 +133,7 @@ export class DataAzureadUserTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user azuread_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user azuread_user}
 */
 export class DataAzureadUser extends cdktf.TerraformDataSource {
 
@@ -141,7 +147,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/user azuread_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user azuread_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,7 +158,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_user',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.39.0',
+        providerVersion: '2.40.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -163,6 +169,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._employeeId = config.employeeId;
     this._id = config.id;
     this._mail = config.mail;
     this._mailNickname = config.mailNickname;
@@ -235,9 +242,20 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
     return this.getStringAttribute('division');
   }
 
-  // employee_id - computed: true, optional: false, required: false
+  // employee_id - computed: true, optional: true, required: false
+  private _employeeId?: string; 
   public get employeeId() {
     return this.getStringAttribute('employee_id');
+  }
+  public set employeeId(value: string) {
+    this._employeeId = value;
+  }
+  public resetEmployeeId() {
+    this._employeeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get employeeIdInput() {
+    return this._employeeId;
   }
 
   // employee_type - computed: true, optional: false, required: false
@@ -472,6 +490,7 @@ export class DataAzureadUser extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      employee_id: cdktf.stringToTerraform(this._employeeId),
       id: cdktf.stringToTerraform(this._id),
       mail: cdktf.stringToTerraform(this._mail),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
