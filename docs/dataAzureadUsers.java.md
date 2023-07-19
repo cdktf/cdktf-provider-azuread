@@ -1,6 +1,6 @@
 # `data_azuread_users`
 
-Refer to the Terraform Registory for docs: [`data_azuread_users`](https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users).
+Refer to the Terraform Registory for docs: [`data_azuread_users`](https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users).
 
 # `dataAzureadUsers` Submodule <a name="`dataAzureadUsers` Submodule" id="@cdktf/provider-azuread.dataAzureadUsers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_users`](https://regist
 
 ### DataAzureadUsers <a name="DataAzureadUsers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users azuread_users}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users azuread_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer"></a>
 
@@ -27,6 +27,7 @@ DataAzureadUsers.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .employeeIds(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .ignoreMissing(java.lang.Boolean)
 //  .ignoreMissing(IResolvable)
@@ -50,7 +51,8 @@ DataAzureadUsers.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#id DataAzureadUsers#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.employeeIds">employeeIds</a></code> | <code>java.util.List<java.lang.String></code> | The employee identifier assigned to the user by the organisation. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#id DataAzureadUsers#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.ignoreMissing">ignoreMissing</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore missing users and return users that were found. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.mailNicknames">mailNicknames</a></code> | <code>java.util.List<java.lang.String></code> | The email aliases of the users. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.objectIds">objectIds</a></code> | <code>java.util.List<java.lang.String></code> | The object IDs of the users. |
@@ -120,11 +122,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `employeeIds`<sup>Optional</sup> <a name="employeeIds" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.employeeIds"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+The employee identifier assigned to the user by the organisation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#employee_ids DataAzureadUsers#employee_ids}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#id DataAzureadUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#id DataAzureadUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +151,7 @@ Ignore missing users and return users that were found.
 
 The data source will still fail if no users are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
 
 ---
 
@@ -149,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The email aliases of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
 
 ---
 
@@ -159,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The object IDs of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
 
 ---
 
@@ -171,7 +183,7 @@ Fetch all users with no filter and return all that were found.
 
 The data source will still fail if no users are found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
 
 ---
 
@@ -181,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
 
 ---
 
@@ -191,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user principal names (UPNs) of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
 
 ---
 
@@ -216,6 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.resetEmployeeIds">resetEmployeeIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.resetIgnoreMissing">resetIgnoreMissing</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.resetMailNicknames">resetMailNicknames</a></code> | *No description.* |
@@ -422,6 +435,12 @@ public void putTimeouts(DataAzureadUsersTimeouts value)
 
 ---
 
+##### `resetEmployeeIds` <a name="resetEmployeeIds" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.resetEmployeeIds"></a>
+
+```java
+public void resetEmployeeIds()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.resetId"></a>
 
 ```java
@@ -552,6 +571,7 @@ DataAzureadUsers.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeoutsOutputReference">DataAzureadUsersTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.users">users</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersList">DataAzureadUsersUsersList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.employeeIdsInput">employeeIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.ignoreMissingInput">ignoreMissingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.mailNicknamesInput">mailNicknamesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -559,6 +579,7 @@ DataAzureadUsers.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.returnAllInput">returnAllInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts">DataAzureadUsersTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.userPrincipalNamesInput">userPrincipalNamesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.employeeIds">employeeIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.ignoreMissing">ignoreMissing</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.mailNicknames">mailNicknames</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -710,6 +731,16 @@ public DataAzureadUsersUsersList getUsers();
 
 ---
 
+##### `employeeIdsInput`<sup>Optional</sup> <a name="employeeIdsInput" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.employeeIdsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getEmployeeIdsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.idInput"></a>
 
 ```java
@@ -774,6 +805,16 @@ public java.lang.Object getTimeoutsInput();
 
 ```java
 public java.util.List<java.lang.String> getUserPrincipalNamesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `employeeIds`<sup>Required</sup> <a name="employeeIds" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.property.employeeIds"></a>
+
+```java
+public java.util.List<java.lang.String> getEmployeeIds();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -879,6 +920,7 @@ DataAzureadUsersConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .employeeIds(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
 //  .ignoreMissing(java.lang.Boolean)
 //  .ignoreMissing(IResolvable)
@@ -902,7 +944,8 @@ DataAzureadUsersConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#id DataAzureadUsers#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.employeeIds">employeeIds</a></code> | <code>java.util.List<java.lang.String></code> | The employee identifier assigned to the user by the organisation. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#id DataAzureadUsers#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.ignoreMissing">ignoreMissing</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore missing users and return users that were found. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.mailNicknames">mailNicknames</a></code> | <code>java.util.List<java.lang.String></code> | The email aliases of the users. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.objectIds">objectIds</a></code> | <code>java.util.List<java.lang.String></code> | The object IDs of the users. |
@@ -982,6 +1025,20 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `employeeIds`<sup>Optional</sup> <a name="employeeIds" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.employeeIds"></a>
+
+```java
+public java.util.List<java.lang.String> getEmployeeIds();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The employee identifier assigned to the user by the organisation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#employee_ids DataAzureadUsers#employee_ids}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.id"></a>
 
 ```java
@@ -990,7 +1047,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#id DataAzureadUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#id DataAzureadUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1066,7 @@ Ignore missing users and return users that were found.
 
 The data source will still fail if no users are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
 
 ---
 
@@ -1023,7 +1080,7 @@ public java.util.List<java.lang.String> getMailNicknames();
 
 The email aliases of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
 
 ---
 
@@ -1037,7 +1094,7 @@ public java.util.List<java.lang.String> getObjectIds();
 
 The object IDs of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
 
 ---
 
@@ -1053,7 +1110,7 @@ Fetch all users with no filter and return all that were found.
 
 The data source will still fail if no users are found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
 
 ---
 
@@ -1067,7 +1124,7 @@ public DataAzureadUsersTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
 
 ---
 
@@ -1081,7 +1138,7 @@ public java.util.List<java.lang.String> getUserPrincipalNames();
 
 The user principal names (UPNs) of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
 
 ---
 
@@ -1101,7 +1158,7 @@ DataAzureadUsersTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#read DataAzureadUsers#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#read DataAzureadUsers#read}. |
 
 ---
 
@@ -1113,7 +1170,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.39.0/docs/data-sources/users#read DataAzureadUsers#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#read DataAzureadUsers#read}.
 
 ---
 
@@ -1771,6 +1828,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.accountEnabled">accountEnabled</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.employeeId">employeeId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.mail">mail</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.mailNickname">mailNickname</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.objectId">objectId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1821,6 +1879,16 @@ public IResolvable getAccountEnabled();
 
 ```java
 public java.lang.String getDisplayName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `employeeId`<sup>Required</sup> <a name="employeeId" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.property.employeeId"></a>
+
+```java
+public java.lang.String getEmployeeId();
 ```
 
 - *Type:* java.lang.String
