@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadAccessPackageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the Catalog this access package is in
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package#catalog_id DataAzureadAccessPackage#catalog_id}
   */
   readonly catalogId?: string;
   /**
   * The display name of the access package
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package#display_name DataAzureadAccessPackage#display_name}
   */
   readonly displayName?: string;
@@ -33,13 +28,13 @@ export interface DataAzureadAccessPackageConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The ID of this access package
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package#object_id DataAzureadAccessPackage#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package#timeouts DataAzureadAccessPackage#timeouts}
   */
   readonly timeouts?: DataAzureadAccessPackageTimeouts;

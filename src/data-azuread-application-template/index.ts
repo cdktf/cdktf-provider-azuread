@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/application_template
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadApplicationTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name for the application template
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/application_template#display_name DataAzureadApplicationTemplate#display_name}
   */
   readonly displayName?: string;
@@ -27,13 +22,13 @@ export interface DataAzureadApplicationTemplateConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The application template's ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/application_template#template_id DataAzureadApplicationTemplate#template_id}
   */
   readonly templateId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/application_template#timeouts DataAzureadApplicationTemplate#timeouts}
   */
   readonly timeouts?: DataAzureadApplicationTemplateTimeouts;

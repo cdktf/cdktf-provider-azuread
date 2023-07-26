@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the custom directory role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
   */
   readonly description?: string;
   /**
   * The display name of the custom directory role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
   */
   readonly displayName: string;
   /**
   * Indicates whether the role is enabled for assignment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -39,25 +34,25 @@ export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Custom template identifier that is typically used if one needs an identifier to be the same across different directories.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
   */
   readonly templateId?: string;
   /**
   * The version of the role definition.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
   */
   readonly version: string;
   /**
   * permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
   */
   readonly permissions: CustomDirectoryRolePermissions[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
   */
   readonly timeouts?: CustomDirectoryRoleTimeouts;
@@ -65,7 +60,7 @@ export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments 
 export interface CustomDirectoryRolePermissions {
   /**
   * Set of tasks that can be performed on a resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
   */
   readonly allowedResourceActions: string[];

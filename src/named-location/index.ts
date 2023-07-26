@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location
 // generated from terraform resource schema
 
@@ -25,19 +20,19 @@ export interface NamedLocationConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * country block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#country NamedLocation#country}
   */
   readonly country?: NamedLocationCountry;
   /**
   * ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#ip NamedLocation#ip}
   */
   readonly ip?: NamedLocationIp;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#timeouts NamedLocation#timeouts}
   */
   readonly timeouts?: NamedLocationTimeouts;

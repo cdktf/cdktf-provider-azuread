@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs
 // generated from terraform resource schema
 
@@ -14,115 +9,115 @@ import * as cdktf from 'cdktf';
 export interface AzureadProviderConfig {
   /**
   * Base64 encoded PKCS#12 certificate bundle to use when authenticating as a Service Principal using a Client Certificate
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#client_certificate AzureadProvider#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * The password to decrypt the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#client_certificate_password AzureadProvider#client_certificate_password}
   */
   readonly clientCertificatePassword?: string;
   /**
   * The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#client_certificate_path AzureadProvider#client_certificate_path}
   */
   readonly clientCertificatePath?: string;
   /**
   * The Client ID which should be used for service principal authentication
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#client_id AzureadProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * The application password to use when authenticating as a Service Principal using a Client Secret
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#client_secret AzureadProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#disable_terraform_partner_id AzureadProvider#disable_terraform_partner_id}
   */
   readonly disableTerraformPartnerId?: boolean | cdktf.IResolvable;
   /**
   * The cloud environment which should be used. Possible values are: `global` (also `public`), `usgovernmentl4` (also `usgovernment`), `usgovernmentl5` (also `dod`), and `china`. Defaults to `global`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#environment AzureadProvider#environment}
   */
   readonly environment?: string;
   /**
   * The Hostname which should be used for the Azure Metadata Service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#metadata_host AzureadProvider#metadata_host}
   */
   readonly metadataHost?: string;
   /**
   * The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#msi_endpoint AzureadProvider#msi_endpoint}
   */
   readonly msiEndpoint?: string;
   /**
   * The bearer token for the request to the OIDC provider. For use when authenticating as a Service Principal using OpenID Connect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#oidc_request_token AzureadProvider#oidc_request_token}
   */
   readonly oidcRequestToken?: string;
   /**
   * The URL for the OIDC provider from which to request an ID token. For use when authenticating as a Service Principal using OpenID Connect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#oidc_request_url AzureadProvider#oidc_request_url}
   */
   readonly oidcRequestUrl?: string;
   /**
   * The ID token for use when authenticating as a Service Principal using OpenID Connect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#oidc_token AzureadProvider#oidc_token}
   */
   readonly oidcToken?: string;
   /**
   * The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#oidc_token_file_path AzureadProvider#oidc_token_file_path}
   */
   readonly oidcTokenFilePath?: string;
   /**
   * A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#partner_id AzureadProvider#partner_id}
   */
   readonly partnerId?: string;
   /**
   * The Tenant ID which should be used. Works with all authentication methods except Managed Identity
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#tenant_id AzureadProvider#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * Allow Azure CLI to be used for Authentication
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#use_cli AzureadProvider#use_cli}
   */
   readonly useCli?: boolean | cdktf.IResolvable;
   /**
   * Allow Managed Identity to be used for Authentication
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#use_msi AzureadProvider#use_msi}
   */
   readonly useMsi?: boolean | cdktf.IResolvable;
   /**
   * Allow OpenID Connect to be used for authentication
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#use_oidc AzureadProvider#use_oidc}
   */
   readonly useOidc?: boolean | cdktf.IResolvable;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs#alias AzureadProvider#alias}
   */
   readonly alias?: string;

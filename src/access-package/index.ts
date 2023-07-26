@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface AccessPackageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the Catalog this access package will be created in
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package#catalog_id AccessPackage#catalog_id}
   */
   readonly catalogId: string;
   /**
   * The description of the access package
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package#description AccessPackage#description}
   */
   readonly description: string;
   /**
   * The display name of the access package
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package#display_name AccessPackage#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the access package is hidden from the requestor
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package#hidden AccessPackage#hidden}
   */
   readonly hidden?: boolean | cdktf.IResolvable;
@@ -45,7 +40,7 @@ export interface AccessPackageConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package#timeouts AccessPackage#timeouts}
   */
   readonly timeouts?: AccessPackageTimeouts;

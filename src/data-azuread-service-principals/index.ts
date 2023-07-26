@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principals
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadServicePrincipalsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The application IDs (client IDs) of the applications associated with the service principals
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principals#application_ids DataAzureadServicePrincipals#application_ids}
   */
   readonly applicationIds?: string[];
   /**
   * The display names of the applications associated with the service principals
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principals#display_names DataAzureadServicePrincipals#display_names}
   */
   readonly displayNames?: string[];
@@ -33,25 +28,25 @@ export interface DataAzureadServicePrincipalsConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Ignore missing service principals and return the service principals that were found. The data source will still fail if no service principals are found
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * The object IDs of the service principals
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Fetch all service principals with no filter and return all that were found. The data source will still fail if no service principals are found.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principals#return_all DataAzureadServicePrincipals#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
   */
   readonly timeouts?: DataAzureadServicePrincipalsTimeouts;

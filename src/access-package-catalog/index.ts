@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface AccessPackageCatalogConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the access package catalog
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog#description AccessPackageCatalog#description}
   */
   readonly description: string;
   /**
   * The display name of the access package catalog
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog#display_name AccessPackageCatalog#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the access packages in this catalog can be requested by users outside the tenant
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog#externally_visible AccessPackageCatalog#externally_visible}
   */
   readonly externallyVisible?: boolean | cdktf.IResolvable;
@@ -39,13 +34,13 @@ export interface AccessPackageCatalogConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Whether the access packages in this catalog are available for management
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog#published AccessPackageCatalog#published}
   */
   readonly published?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog#timeouts AccessPackageCatalog#timeouts}
   */
   readonly timeouts?: AccessPackageCatalogTimeouts;

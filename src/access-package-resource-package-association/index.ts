@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_package_association
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface AccessPackageResourcePackageAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of access package this resource association is configured to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_package_association#access_package_id AccessPackageResourcePackageAssociation#access_package_id}
   */
   readonly accessPackageId: string;
   /**
   * The role of access type to the specified resource, valid values are `Member` and `Owner`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_package_association#access_type AccessPackageResourcePackageAssociation#access_type}
   */
   readonly accessType?: string;
   /**
   * The ID of the access package catalog association
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_package_association#catalog_resource_association_id AccessPackageResourcePackageAssociation#catalog_resource_association_id}
   */
   readonly catalogResourceAssociationId: string;
@@ -39,7 +34,7 @@ export interface AccessPackageResourcePackageAssociationConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_package_association#timeouts AccessPackageResourcePackageAssociation#timeouts}
   */
   readonly timeouts?: AccessPackageResourcePackageAssociationTimeouts;

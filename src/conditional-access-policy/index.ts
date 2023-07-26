@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy
 // generated from terraform resource schema
 
@@ -29,25 +24,25 @@ export interface ConditionalAccessPolicyConfig extends cdktf.TerraformMetaArgume
   readonly state: string;
   /**
   * conditions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#conditions ConditionalAccessPolicy#conditions}
   */
   readonly conditions: ConditionalAccessPolicyConditions;
   /**
   * grant_controls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#grant_controls ConditionalAccessPolicy#grant_controls}
   */
   readonly grantControls: ConditionalAccessPolicyGrantControls;
   /**
   * session_controls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#session_controls ConditionalAccessPolicy#session_controls}
   */
   readonly sessionControls?: ConditionalAccessPolicySessionControls;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#timeouts ConditionalAccessPolicy#timeouts}
   */
   readonly timeouts?: ConditionalAccessPolicyTimeouts;
@@ -352,7 +347,7 @@ export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference exten
 export interface ConditionalAccessPolicyConditionsDevices {
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#filter ConditionalAccessPolicy#filter}
   */
   readonly filter?: ConditionalAccessPolicyConditionsDevicesFilter;
@@ -809,37 +804,37 @@ export interface ConditionalAccessPolicyConditions {
   readonly userRiskLevels?: string[];
   /**
   * applications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#applications ConditionalAccessPolicy#applications}
   */
   readonly applications: ConditionalAccessPolicyConditionsApplications;
   /**
   * client_applications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#client_applications ConditionalAccessPolicy#client_applications}
   */
   readonly clientApplications?: ConditionalAccessPolicyConditionsClientApplications;
   /**
   * devices block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#devices ConditionalAccessPolicy#devices}
   */
   readonly devices?: ConditionalAccessPolicyConditionsDevices;
   /**
   * locations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#locations ConditionalAccessPolicy#locations}
   */
   readonly locations?: ConditionalAccessPolicyConditionsLocations;
   /**
   * platforms block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#platforms ConditionalAccessPolicy#platforms}
   */
   readonly platforms?: ConditionalAccessPolicyConditionsPlatforms;
   /**
   * users block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/conditional_access_policy#users ConditionalAccessPolicy#users}
   */
   readonly users: ConditionalAccessPolicyConditionsUsers;

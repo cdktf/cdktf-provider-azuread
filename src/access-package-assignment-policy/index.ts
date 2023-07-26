@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy
 // generated from terraform resource schema
 
@@ -14,37 +9,37 @@ import * as cdktf from 'cdktf';
 export interface AccessPackageAssignmentPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the access package that will contain the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#access_package_id AccessPackageAssignmentPolicy#access_package_id}
   */
   readonly accessPackageId: string;
   /**
   * The description of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#description AccessPackageAssignmentPolicy#description}
   */
   readonly description: string;
   /**
   * The display name of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#display_name AccessPackageAssignmentPolicy#display_name}
   */
   readonly displayName: string;
   /**
   * How many days this assignment is valid for
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
   */
   readonly durationInDays?: number;
   /**
   * The date that this assignment expires, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#expiration_date AccessPackageAssignmentPolicy#expiration_date}
   */
   readonly expirationDate?: string;
   /**
   * When enabled, users will be able to request extension of their access to this package before their access expires
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#extension_enabled AccessPackageAssignmentPolicy#extension_enabled}
   */
   readonly extensionEnabled?: boolean | cdktf.IResolvable;
@@ -57,31 +52,31 @@ export interface AccessPackageAssignmentPolicyConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * approval_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#approval_settings AccessPackageAssignmentPolicy#approval_settings}
   */
   readonly approvalSettings?: AccessPackageAssignmentPolicyApprovalSettings;
   /**
   * assignment_review_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#assignment_review_settings AccessPackageAssignmentPolicy#assignment_review_settings}
   */
   readonly assignmentReviewSettings?: AccessPackageAssignmentPolicyAssignmentReviewSettings;
   /**
   * question block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#question AccessPackageAssignmentPolicy#question}
   */
   readonly question?: AccessPackageAssignmentPolicyQuestion[] | cdktf.IResolvable;
   /**
   * requestor_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#requestor_settings AccessPackageAssignmentPolicy#requestor_settings}
   */
   readonly requestorSettings?: AccessPackageAssignmentPolicyRequestorSettings;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#timeouts AccessPackageAssignmentPolicy#timeouts}
   */
   readonly timeouts?: AccessPackageAssignmentPolicyTimeouts;
@@ -89,19 +84,19 @@ export interface AccessPackageAssignmentPolicyConfig extends cdktf.TerraformMeta
 export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover {
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktf.IResolvable;
   /**
   * The object ID of the subject
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
@@ -243,19 +238,19 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternati
 export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover {
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktf.IResolvable;
   /**
   * The object ID of the subject
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
@@ -397,37 +392,37 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryAp
 export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStage {
   /**
   * If no action taken, forward to alternate approvers?
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#alternative_approval_enabled AccessPackageAssignmentPolicy#alternative_approval_enabled}
   */
   readonly alternativeApprovalEnabled?: boolean | cdktf.IResolvable;
   /**
   * Decision must be made in how many days? If a request is not approved within this time period after it is made, it will be automatically rejected
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#approval_timeout_in_days AccessPackageAssignmentPolicy#approval_timeout_in_days}
   */
   readonly approvalTimeoutInDays: number;
   /**
   * Whether an approver must provide a justification for their decision. Justification is visible to other approvers and the requestor
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
   */
   readonly approverJustificationRequired?: boolean | cdktf.IResolvable;
   /**
   * Forward to alternate approver(s) after how many days?
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#enable_alternative_approval_in_days AccessPackageAssignmentPolicy#enable_alternative_approval_in_days}
   */
   readonly enableAlternativeApprovalInDays?: number;
   /**
   * alternative_approver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#alternative_approver AccessPackageAssignmentPolicy#alternative_approver}
   */
   readonly alternativeApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktf.IResolvable;
   /**
   * primary_approver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#primary_approver AccessPackageAssignmentPolicy#primary_approver}
   */
   readonly primaryApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktf.IResolvable;
@@ -638,25 +633,25 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList exte
 export interface AccessPackageAssignmentPolicyApprovalSettings {
   /**
   * Whether an approval is required
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#approval_required AccessPackageAssignmentPolicy#approval_required}
   */
   readonly approvalRequired?: boolean | cdktf.IResolvable;
   /**
   * Whether an approval is required to grant extension. Same approval settings used to approve initial access will apply
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#approval_required_for_extension AccessPackageAssignmentPolicy#approval_required_for_extension}
   */
   readonly approvalRequiredForExtension?: boolean | cdktf.IResolvable;
   /**
   * Whether requestor are required to provide a justification to request an access package. Justification is visible to other approvers and the requestor
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#requestor_justification_required AccessPackageAssignmentPolicy#requestor_justification_required}
   */
   readonly requestorJustificationRequired?: boolean | cdktf.IResolvable;
   /**
   * approval_stage block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#approval_stage AccessPackageAssignmentPolicy#approval_stage}
   */
   readonly approvalStage?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktf.IResolvable;
@@ -792,19 +787,19 @@ export class AccessPackageAssignmentPolicyApprovalSettingsOutputReference extend
 export interface AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer {
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktf.IResolvable;
   /**
   * The object ID of the subject
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
@@ -946,55 +941,55 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList e
 export interface AccessPackageAssignmentPolicyAssignmentReviewSettings {
   /**
   * Whether to show Show reviewer decision helpers. If enabled, system recommendations based on users' access information will be shown to the reviewers. The reviewer will be recommended to approve the review if the user has signed-in at least once during the last 30 days. The reviewer will be recommended to deny the review if the user has not signed-in during the last 30 days
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#access_recommendation_enabled AccessPackageAssignmentPolicy#access_recommendation_enabled}
   */
   readonly accessRecommendationEnabled?: boolean | cdktf.IResolvable;
   /**
   * What actions the system takes if reviewers don't respond in time
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#access_review_timeout_behavior AccessPackageAssignmentPolicy#access_review_timeout_behavior}
   */
   readonly accessReviewTimeoutBehavior?: string;
   /**
   * Whether a reviewer need provide a justification for their decision. Justification is visible to other reviewers and the requestor
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
   */
   readonly approverJustificationRequired?: boolean | cdktf.IResolvable;
   /**
   * How many days each occurrence of the access review series will run
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
   */
   readonly durationInDays?: number;
   /**
   * Whether to enable assignment review
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#enabled AccessPackageAssignmentPolicy#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * This will determine how often the access review campaign runs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#review_frequency AccessPackageAssignmentPolicy#review_frequency}
   */
   readonly reviewFrequency?: string;
   /**
   * Self review or specific reviewers
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#review_type AccessPackageAssignmentPolicy#review_type}
   */
   readonly reviewType?: string;
   /**
   * This is the date the access review campaign will start on, formatted as an RFC3339 date string in UTC(e.g. 2018-01-01T01:02:03Z), default is now. Once an access review has been created, you cannot update its start date
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#starting_on AccessPackageAssignmentPolicy#starting_on}
   */
   readonly startingOn?: string;
   /**
   * reviewer block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#reviewer AccessPackageAssignmentPolicy#reviewer}
   */
   readonly reviewer?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktf.IResolvable;
@@ -1245,13 +1240,13 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReferenc
 export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText {
   /**
   * The localized content of this question
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
   */
   readonly content: string;
   /**
   * The language code of this question content
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
   */
   readonly languageCode: string;
@@ -1367,13 +1362,13 @@ export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTex
 export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValue {
   /**
   * The default text of this question
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
   */
   readonly defaultText: string;
   /**
   * localized_text block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
   */
   readonly localizedText?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktf.IResolvable;
@@ -1460,13 +1455,13 @@ export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputRefere
 export interface AccessPackageAssignmentPolicyQuestionChoice {
   /**
   * The actual value of this choice
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#actual_value AccessPackageAssignmentPolicy#actual_value}
   */
   readonly actualValue: string;
   /**
   * display_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#display_value AccessPackageAssignmentPolicy#display_value}
   */
   readonly displayValue: AccessPackageAssignmentPolicyQuestionChoiceDisplayValue;
@@ -1582,13 +1577,13 @@ export class AccessPackageAssignmentPolicyQuestionChoiceList extends cdktf.Compl
 export interface AccessPackageAssignmentPolicyQuestionTextLocalizedText {
   /**
   * The localized content of this question
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
   */
   readonly content: string;
   /**
   * The language code of this question content
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
   */
   readonly languageCode: string;
@@ -1704,13 +1699,13 @@ export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextList extends 
 export interface AccessPackageAssignmentPolicyQuestionText {
   /**
   * The default text of this question
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
   */
   readonly defaultText: string;
   /**
   * localized_text block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
   */
   readonly localizedText?: AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktf.IResolvable;
@@ -1797,25 +1792,25 @@ export class AccessPackageAssignmentPolicyQuestionTextOutputReference extends cd
 export interface AccessPackageAssignmentPolicyQuestion {
   /**
   * Whether this question is required
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#required AccessPackageAssignmentPolicy#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
   * The sequence number of this question
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#sequence AccessPackageAssignmentPolicy#sequence}
   */
   readonly sequence?: number;
   /**
   * choice block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#choice AccessPackageAssignmentPolicy#choice}
   */
   readonly choice?: AccessPackageAssignmentPolicyQuestionChoice[] | cdktf.IResolvable;
   /**
   * text block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#text AccessPackageAssignmentPolicy#text}
   */
   readonly text: AccessPackageAssignmentPolicyQuestionText;
@@ -1980,19 +1975,19 @@ export class AccessPackageAssignmentPolicyQuestionList extends cdktf.ComplexList
 export interface AccessPackageAssignmentPolicyRequestorSettingsRequestor {
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktf.IResolvable;
   /**
   * The object ID of the subject
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
@@ -2134,19 +2129,19 @@ export class AccessPackageAssignmentPolicyRequestorSettingsRequestorList extends
 export interface AccessPackageAssignmentPolicyRequestorSettings {
   /**
   * Whether to accept requests now, when disabled, no new requests can be made using this policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#requests_accepted AccessPackageAssignmentPolicy#requests_accepted}
   */
   readonly requestsAccepted?: boolean | cdktf.IResolvable;
   /**
   * Specify the scopes of the requestors
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#scope_type AccessPackageAssignmentPolicy#scope_type}
   */
   readonly scopeType?: string;
   /**
   * requestor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_assignment_policy#requestor AccessPackageAssignmentPolicy#requestor}
   */
   readonly requestor?: AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktf.IResolvable;

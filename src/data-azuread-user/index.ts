@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The employee identifier assigned to the user by the organisation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#employee_id DataAzureadUser#employee_id}
   */
   readonly employeeId?: string;
@@ -27,31 +22,31 @@ export interface DataAzureadUserConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The SMTP address for the user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#mail DataAzureadUser#mail}
   */
   readonly mail?: string;
   /**
   * The email alias of the user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#mail_nickname DataAzureadUser#mail_nickname}
   */
   readonly mailNickname?: string;
   /**
   * The object ID of the user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#object_id DataAzureadUser#object_id}
   */
   readonly objectId?: string;
   /**
   * The user principal name (UPN) of the user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#user_principal_name DataAzureadUser#user_principal_name}
   */
   readonly userPrincipalName?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/user#timeouts DataAzureadUser#timeouts}
   */
   readonly timeouts?: DataAzureadUserTimeouts;

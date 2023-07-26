@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/group
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name for the group
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/group#display_name DataAzureadGroup#display_name}
   */
   readonly displayName?: string;
@@ -27,25 +22,25 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Whether the group is mail-enabled
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The object ID of the group
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/group#object_id DataAzureadGroup#object_id}
   */
   readonly objectId?: string;
   /**
   * Whether the group is a security group
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/group#timeouts DataAzureadGroup#timeouts}
   */
   readonly timeouts?: DataAzureadGroupTimeouts;

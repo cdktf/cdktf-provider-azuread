@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_pre_authorized
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface ApplicationPreAuthorizedConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the application to which this pre-authorized application should be added
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_pre_authorized#application_object_id ApplicationPreAuthorized#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * The application ID of the pre-authorized application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_pre_authorized#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
   */
   readonly authorizedAppId: string;
@@ -33,13 +28,13 @@ export interface ApplicationPreAuthorizedConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The IDs of the permission scopes required by the pre-authorized application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
   */
   readonly permissionIds: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
   */
   readonly timeouts?: ApplicationPreAuthorizedTimeouts;

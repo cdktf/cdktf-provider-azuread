@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_member
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AdministrativeUnitMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the administrative unit
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
   */
   readonly administrativeUnitObjectId?: string;
@@ -27,13 +22,13 @@ export interface AdministrativeUnitMemberConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The object ID of the member
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
   */
   readonly memberObjectId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
   */
   readonly timeouts?: AdministrativeUnitMemberTimeouts;

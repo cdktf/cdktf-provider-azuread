@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_claims_mapping_policy_assignment
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface ServicePrincipalClaimsMappingPolicyAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the claims mapping policy to assign
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_claims_mapping_policy_assignment#claims_mapping_policy_id ServicePrincipalClaimsMappingPolicyAssignment#claims_mapping_policy_id}
   */
   readonly claimsMappingPolicyId: string;
@@ -27,7 +22,7 @@ export interface ServicePrincipalClaimsMappingPolicyAssignmentConfig extends cdk
   readonly id?: string;
   /**
   * Object ID of the service principal for which to assign the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_claims_mapping_policy_assignment#service_principal_id ServicePrincipalClaimsMappingPolicyAssignment#service_principal_id}
   */
   readonly servicePrincipalId: string;

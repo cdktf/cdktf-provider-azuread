@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * The employee identifier assigned to the user by the organisation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#employee_ids DataAzureadUsers#employee_ids}
   */
   readonly employeeIds?: string[];
@@ -27,37 +22,37 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Ignore missing users and return users that were found. The data source will still fail if no users are found
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * The email aliases of the users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
   */
   readonly mailNicknames?: string[];
   /**
   * The object IDs of the users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Fetch all users with no filter and return all that were found. The data source will still fail if no users are found.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * The user principal names (UPNs) of the users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
   */
   readonly userPrincipalNames?: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
   */
   readonly timeouts?: DataAzureadUsersTimeouts;

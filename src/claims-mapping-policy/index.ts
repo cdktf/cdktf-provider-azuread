@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/claims_mapping_policy
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface ClaimsMappingPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A string collection containing a JSON string that defines the rules and settings for this policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
   */
   readonly definition: string[];
   /**
   * Display name for this policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
   */
   readonly displayName: string;

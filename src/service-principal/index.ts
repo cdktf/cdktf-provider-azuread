@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether or not the service principal account is enabled
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#account_enabled ServicePrincipal#account_enabled}
   */
   readonly accountEnabled?: boolean | cdktf.IResolvable;
   /**
   * A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#alternative_names ServicePrincipal#alternative_names}
   */
   readonly alternativeNames?: string[];
   /**
   * Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#app_role_assignment_required ServicePrincipal#app_role_assignment_required}
   */
   readonly appRoleAssignmentRequired?: boolean | cdktf.IResolvable;
   /**
   * The application ID (client ID) of the application for which to create a service principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#application_id ServicePrincipal#application_id}
   */
   readonly applicationId: string;
   /**
   * Description of the service principal provided for internal end-users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#description ServicePrincipal#description}
   */
   readonly description?: string;
@@ -51,67 +46,67 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The URL where the service provider redirects the user to Azure AD to authenticate. Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#login_url ServicePrincipal#login_url}
   */
   readonly loginUrl?: string;
   /**
   * Free text field to capture information about the service principal, typically used for operational purposes
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#notes ServicePrincipal#notes}
   */
   readonly notes?: string;
   /**
   * List of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#notification_email_addresses ServicePrincipal#notification_email_addresses}
   */
   readonly notificationEmailAddresses?: string[];
   /**
   * A list of object IDs of principals that will be granted ownership of the service principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#owners ServicePrincipal#owners}
   */
   readonly owners?: string[];
   /**
   * The single sign-on mode configured for this application. Azure AD uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Azure AD My Apps
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#preferred_single_sign_on_mode ServicePrincipal#preferred_single_sign_on_mode}
   */
   readonly preferredSingleSignOnMode?: string;
   /**
   * A set of tags to apply to the service principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#tags ServicePrincipal#tags}
   */
   readonly tags?: string[];
   /**
   * When true, the resource will return an existing service principal instead of failing with an error
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#use_existing ServicePrincipal#use_existing}
   */
   readonly useExisting?: boolean | cdktf.IResolvable;
   /**
   * feature_tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#feature_tags ServicePrincipal#feature_tags}
   */
   readonly featureTags?: ServicePrincipalFeatureTags[] | cdktf.IResolvable;
   /**
   * features block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#features ServicePrincipal#features}
   */
   readonly features?: ServicePrincipalFeatures[] | cdktf.IResolvable;
   /**
   * saml_single_sign_on block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#saml_single_sign_on ServicePrincipal#saml_single_sign_on}
   */
   readonly samlSingleSignOn?: ServicePrincipalSamlSingleSignOn;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#timeouts ServicePrincipal#timeouts}
   */
   readonly timeouts?: ServicePrincipalTimeouts;
@@ -307,25 +302,25 @@ export class ServicePrincipalOauth2PermissionScopesList extends cdktf.ComplexLis
 export interface ServicePrincipalFeatureTags {
   /**
   * Whether this service principal represents a custom SAML application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
   */
   readonly customSingleSignOn?: boolean | cdktf.IResolvable;
   /**
   * Whether this service principal represents an Enterprise Application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#enterprise ServicePrincipal#enterprise}
   */
   readonly enterprise?: boolean | cdktf.IResolvable;
   /**
   * Whether this service principal represents a gallery application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#gallery ServicePrincipal#gallery}
   */
   readonly gallery?: boolean | cdktf.IResolvable;
   /**
   * Whether this app is invisible to users in My Apps and Office 365 Launcher
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#hide ServicePrincipal#hide}
   */
   readonly hide?: boolean | cdktf.IResolvable;
@@ -493,25 +488,25 @@ export class ServicePrincipalFeatureTagsList extends cdktf.ComplexList {
 export interface ServicePrincipalFeatures {
   /**
   * Whether this service principal represents a custom SAML application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#custom_single_sign_on_app ServicePrincipal#custom_single_sign_on_app}
   */
   readonly customSingleSignOnApp?: boolean | cdktf.IResolvable;
   /**
   * Whether this service principal represents an Enterprise Application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#enterprise_application ServicePrincipal#enterprise_application}
   */
   readonly enterpriseApplication?: boolean | cdktf.IResolvable;
   /**
   * Whether this service principal represents a gallery application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#gallery_application ServicePrincipal#gallery_application}
   */
   readonly galleryApplication?: boolean | cdktf.IResolvable;
   /**
   * Whether this app is visible to users in My Apps and Office 365 Launcher
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#visible_to_users ServicePrincipal#visible_to_users}
   */
   readonly visibleToUsers?: boolean | cdktf.IResolvable;
@@ -679,7 +674,7 @@ export class ServicePrincipalFeaturesList extends cdktf.ComplexList {
 export interface ServicePrincipalSamlSingleSignOn {
   /**
   * The relative URI the service provider would redirect to after completion of the single sign-on flow
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal#relay_state ServicePrincipal#relay_state}
   */
   readonly relayState?: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/app_role_assignment
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AppRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the app role to be assigned
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
   */
   readonly appRoleId: string;
@@ -27,19 +22,19 @@ export interface AppRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The object ID of the user, group or service principal to be assigned this app role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
   */
   readonly principalObjectId: string;
   /**
   * The object ID of the service principal representing the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
   */
   readonly resourceObjectId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
   */
   readonly timeouts?: AppRoleAssignmentTimeouts;

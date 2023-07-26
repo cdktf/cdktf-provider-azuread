@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/client_config
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataAzureadClientConfigConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/client_config#timeouts DataAzureadClientConfig#timeouts}
   */
   readonly timeouts?: DataAzureadClientConfigTimeouts;
