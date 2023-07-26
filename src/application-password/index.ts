@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface ApplicationPasswordConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the application for which this password should be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password#application_object_id ApplicationPassword#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * A display name for the password
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password#display_name ApplicationPassword#display_name}
   */
   readonly displayName?: string;
   /**
   * The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password#end_date ApplicationPassword#end_date}
   */
   readonly endDate?: string;
   /**
   * A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password#end_date_relative ApplicationPassword#end_date_relative}
   */
   readonly endDateRelative?: string;
@@ -45,19 +45,19 @@ export interface ApplicationPasswordConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Arbitrary map of values that, when changed, will trigger rotation of the password
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password#rotate_when_changed ApplicationPassword#rotate_when_changed}
   */
   readonly rotateWhenChanged?: { [key: string]: string };
   /**
   * The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password#start_date ApplicationPassword#start_date}
   */
   readonly startDate?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_password#timeouts ApplicationPassword#timeouts}
   */
   readonly timeouts?: ApplicationPasswordTimeouts;

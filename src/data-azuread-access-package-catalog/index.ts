@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadAccessPackageCatalogConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the access package catalog
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package_catalog#display_name DataAzureadAccessPackageCatalog#display_name}
   */
   readonly displayName?: string;
@@ -27,13 +27,13 @@ export interface DataAzureadAccessPackageCatalogConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * The ID of this access package catalog
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package_catalog#object_id DataAzureadAccessPackageCatalog#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/access_package_catalog#timeouts DataAzureadAccessPackageCatalog#timeouts}
   */
   readonly timeouts?: DataAzureadAccessPackageCatalogTimeouts;

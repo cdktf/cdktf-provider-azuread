@@ -21,19 +21,19 @@ export interface DirectoryRoleMemberConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * The object ID of the member
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_member#member_object_id DirectoryRoleMember#member_object_id}
   */
   readonly memberObjectId?: string;
   /**
   * The object ID of the directory role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_member#role_object_id DirectoryRoleMember#role_object_id}
   */
   readonly roleObjectId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_member#timeouts DirectoryRoleMember#timeouts}
   */
   readonly timeouts?: DirectoryRoleMemberTimeouts;

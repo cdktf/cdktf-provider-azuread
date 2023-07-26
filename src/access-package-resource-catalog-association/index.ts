@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface AccessPackageResourceCatalogAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique ID of the access package catalog
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_catalog_association#catalog_id AccessPackageResourceCatalogAssociation#catalog_id}
   */
   readonly catalogId: string;
@@ -27,19 +27,19 @@ export interface AccessPackageResourceCatalogAssociationConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_catalog_association#resource_origin_id AccessPackageResourceCatalogAssociation#resource_origin_id}
   */
   readonly resourceOriginId: string;
   /**
   * The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_catalog_association#resource_origin_system AccessPackageResourceCatalogAssociation#resource_origin_system}
   */
   readonly resourceOriginSystem: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_resource_catalog_association#timeouts AccessPackageResourceCatalogAssociation#timeouts}
   */
   readonly timeouts?: AccessPackageResourceCatalogAssociationTimeouts;

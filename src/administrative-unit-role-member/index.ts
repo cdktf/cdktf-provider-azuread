@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface AdministrativeUnitRoleMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the administrative unit
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_role_member#administrative_unit_object_id AdministrativeUnitRoleMember#administrative_unit_object_id}
   */
   readonly administrativeUnitObjectId: string;
@@ -27,19 +27,19 @@ export interface AdministrativeUnitRoleMemberConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * The object ID of the member
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_role_member#member_object_id AdministrativeUnitRoleMember#member_object_id}
   */
   readonly memberObjectId: string;
   /**
   * The object ID of the directory role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_role_member#role_object_id AdministrativeUnitRoleMember#role_object_id}
   */
   readonly roleObjectId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit_role_member#timeouts AdministrativeUnitRoleMember#timeouts}
   */
   readonly timeouts?: AdministrativeUnitRoleMemberTimeouts;

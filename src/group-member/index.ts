@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GroupMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the group you want to add the member to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/group_member#group_object_id GroupMember#group_object_id}
   */
   readonly groupObjectId: string;
@@ -27,13 +27,13 @@ export interface GroupMemberConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The object ID of the principal you want to add as a member to the group. Supported object types are Users, Groups or Service Principals
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/group_member#member_object_id GroupMember#member_object_id}
   */
   readonly memberObjectId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/group_member#timeouts GroupMember#timeouts}
   */
   readonly timeouts?: GroupMemberTimeouts;

@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface ApplicationFederatedIdentityCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the application for which this federated identity credential should be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_federated_identity_credential#application_object_id ApplicationFederatedIdentityCredential#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * List of audiences that can appear in the external token. This specifies what should be accepted in the `aud` claim of incoming tokens.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_federated_identity_credential#audiences ApplicationFederatedIdentityCredential#audiences}
   */
   readonly audiences: string[];
   /**
   * A description for the federated identity credential
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_federated_identity_credential#description ApplicationFederatedIdentityCredential#description}
   */
   readonly description?: string;
   /**
   * A unique display name for the federated identity credential
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_federated_identity_credential#display_name ApplicationFederatedIdentityCredential#display_name}
   */
   readonly displayName: string;
@@ -45,19 +45,19 @@ export interface ApplicationFederatedIdentityCredentialConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * The URL of the external identity provider, which must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_federated_identity_credential#issuer ApplicationFederatedIdentityCredential#issuer}
   */
   readonly issuer: string;
   /**
   * The identifier of the external software workload within the external identity provider. The combination of issuer and subject must be unique on the app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_federated_identity_credential#subject ApplicationFederatedIdentityCredential#subject}
   */
   readonly subject: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_federated_identity_credential#timeouts ApplicationFederatedIdentityCredential#timeouts}
   */
   readonly timeouts?: ApplicationFederatedIdentityCredentialTimeouts;

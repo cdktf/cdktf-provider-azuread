@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface ServicePrincipalTokenSigningCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * A friendly name for the certificate
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_token_signing_certificate#display_name ServicePrincipalTokenSigningCertificate#display_name}
   */
   readonly displayName?: string;
   /**
   * The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). Default is 3 years from current date.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_token_signing_certificate#end_date ServicePrincipalTokenSigningCertificate#end_date}
   */
   readonly endDate?: string;
@@ -33,13 +33,13 @@ export interface ServicePrincipalTokenSigningCertificateConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * The object ID of the service principal for which this certificate should be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_token_signing_certificate#service_principal_id ServicePrincipalTokenSigningCertificate#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_token_signing_certificate#timeouts ServicePrincipalTokenSigningCertificate#timeouts}
   */
   readonly timeouts?: ServicePrincipalTokenSigningCertificateTimeouts;

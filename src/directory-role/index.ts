@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DirectoryRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the directory role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role#display_name DirectoryRole#display_name}
   */
   readonly displayName?: string;
@@ -27,13 +27,13 @@ export interface DirectoryRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The object ID of the template associated with the directory role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role#template_id DirectoryRole#template_id}
   */
   readonly templateId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role#timeouts DirectoryRole#timeouts}
   */
   readonly timeouts?: DirectoryRoleTimeouts;

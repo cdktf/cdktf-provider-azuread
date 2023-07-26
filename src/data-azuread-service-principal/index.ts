@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   /**
   * The application ID (client ID) of the application associated with this service principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principal#application_id DataAzureadServicePrincipal#application_id}
   */
   readonly applicationId?: string;
   /**
   * The display name of the application associated with this service principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
   */
   readonly displayName?: string;
@@ -33,13 +33,13 @@ export interface DataAzureadServicePrincipalConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * The object ID of the service principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
   */
   readonly timeouts?: DataAzureadServicePrincipalTimeouts;

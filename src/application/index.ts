@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the application as shown to end users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#description Application#description}
   */
   readonly description?: string;
   /**
   * Specifies whether this application supports device authentication without a user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#device_only_auth_enabled Application#device_only_auth_enabled}
   */
   readonly deviceOnlyAuthEnabled?: boolean | cdktf.IResolvable;
   /**
   * The display name for the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#display_name Application#display_name}
   */
   readonly displayName: string;
   /**
   * Specifies whether the application is a public client. Appropriate for apps using token grant flows that don't use a redirect URI
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
   */
   readonly fallbackPublicClientEnabled?: boolean | cdktf.IResolvable;
   /**
   * Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#group_membership_claims Application#group_membership_claims}
   */
   readonly groupMembershipClaims?: string[];
@@ -51,139 +51,139 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#identifier_uris Application#identifier_uris}
   */
   readonly identifierUris?: string[];
   /**
   * Base64 encoded logo image in gif, png or jpeg format
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#logo_image Application#logo_image}
   */
   readonly logoImage?: string;
   /**
   * URL of the application's marketing page
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#marketing_url Application#marketing_url}
   */
   readonly marketingUrl?: string;
   /**
   * User-specified notes relevant for the management of the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#notes Application#notes}
   */
   readonly notes?: string;
   /**
   * Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#oauth2_post_response_required Application#oauth2_post_response_required}
   */
   readonly oauth2PostResponseRequired?: boolean | cdktf.IResolvable;
   /**
   * A list of object IDs of principals that will be granted ownership of the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#owners Application#owners}
   */
   readonly owners?: string[];
   /**
   * If `true`, will return an error if an existing application is found with the same name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#prevent_duplicate_names Application#prevent_duplicate_names}
   */
   readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
   /**
   * URL of the application's privacy statement
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#privacy_statement_url Application#privacy_statement_url}
   */
   readonly privacyStatementUrl?: string;
   /**
   * References application or service contact information from a Service or Asset Management database
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#service_management_reference Application#service_management_reference}
   */
   readonly serviceManagementReference?: string;
   /**
   * The Microsoft account types that are supported for the current application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#sign_in_audience Application#sign_in_audience}
   */
   readonly signInAudience?: string;
   /**
   * URL of the application's support page
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#support_url Application#support_url}
   */
   readonly supportUrl?: string;
   /**
   * A set of tags to apply to the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#tags Application#tags}
   */
   readonly tags?: string[];
   /**
   * Unique ID of the application template from which this application is created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#template_id Application#template_id}
   */
   readonly templateId?: string;
   /**
   * URL of the application's terms of service statement
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#terms_of_service_url Application#terms_of_service_url}
   */
   readonly termsOfServiceUrl?: string;
   /**
   * api block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#api Application#api}
   */
   readonly api?: ApplicationApi;
   /**
   * app_role block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#app_role Application#app_role}
   */
   readonly appRole?: ApplicationAppRole[] | cdktf.IResolvable;
   /**
   * feature_tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#feature_tags Application#feature_tags}
   */
   readonly featureTags?: ApplicationFeatureTags[] | cdktf.IResolvable;
   /**
   * optional_claims block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#optional_claims Application#optional_claims}
   */
   readonly optionalClaims?: ApplicationOptionalClaims;
   /**
   * public_client block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#public_client Application#public_client}
   */
   readonly publicClient?: ApplicationPublicClient;
   /**
   * required_resource_access block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#required_resource_access Application#required_resource_access}
   */
   readonly requiredResourceAccess?: ApplicationRequiredResourceAccess[] | cdktf.IResolvable;
   /**
   * single_page_application block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#single_page_application Application#single_page_application}
   */
   readonly singlePageApplication?: ApplicationSinglePageApplication;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#timeouts Application#timeouts}
   */
   readonly timeouts?: ApplicationTimeouts;
   /**
   * web block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#web Application#web}
   */
   readonly web?: ApplicationWeb;
@@ -191,25 +191,25 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
 export interface ApplicationApiOauth2PermissionScope {
   /**
   * Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#admin_consent_description Application#admin_consent_description}
   */
   readonly adminConsentDescription?: string;
   /**
   * Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#admin_consent_display_name Application#admin_consent_display_name}
   */
   readonly adminConsentDisplayName?: string;
   /**
   * Determines if the permission scope is enabled
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#enabled Application#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The unique identifier of the delegated permission
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#id Application#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -218,25 +218,25 @@ export interface ApplicationApiOauth2PermissionScope {
   readonly id: string;
   /**
   * Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#type Application#type}
   */
   readonly type?: string;
   /**
   * Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#user_consent_description Application#user_consent_description}
   */
   readonly userConsentDescription?: string;
   /**
   * Display name for the delegated permission that appears in the end user consent experience
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#user_consent_display_name Application#user_consent_display_name}
   */
   readonly userConsentDisplayName?: string;
   /**
   * The value that is used for the `scp` claim in OAuth 2.0 access tokens
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#value Application#value}
   */
   readonly value?: string;
@@ -493,25 +493,25 @@ export class ApplicationApiOauth2PermissionScopeList extends cdktf.ComplexList {
 export interface ApplicationApi {
   /**
   * Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#known_client_applications Application#known_client_applications}
   */
   readonly knownClientApplications?: string[];
   /**
   * Allows an application to use claims mapping without specifying a custom signing key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#mapped_claims_enabled Application#mapped_claims_enabled}
   */
   readonly mappedClaimsEnabled?: boolean | cdktf.IResolvable;
   /**
   * The access token version expected by this resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#requested_access_token_version Application#requested_access_token_version}
   */
   readonly requestedAccessTokenVersion?: number;
   /**
   * oauth2_permission_scope block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#oauth2_permission_scope Application#oauth2_permission_scope}
   */
   readonly oauth2PermissionScope?: ApplicationApiOauth2PermissionScope[] | cdktf.IResolvable;
@@ -647,31 +647,31 @@ export class ApplicationApiOutputReference extends cdktf.ComplexObject {
 export interface ApplicationAppRole {
   /**
   * Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#allowed_member_types Application#allowed_member_types}
   */
   readonly allowedMemberTypes: string[];
   /**
   * Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#description Application#description}
   */
   readonly description: string;
   /**
   * Display name for the app role that appears during app role assignment and in consent experiences
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#display_name Application#display_name}
   */
   readonly displayName: string;
   /**
   * Determines if the app role is enabled
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#enabled Application#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The unique identifier of the app role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#id Application#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -680,7 +680,7 @@ export interface ApplicationAppRole {
   readonly id: string;
   /**
   * The value that is used for the `roles` claim in ID tokens and OAuth 2.0 access tokens that are authenticating an assigned service or user principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#value Application#value}
   */
   readonly value?: string;
@@ -882,25 +882,25 @@ export class ApplicationAppRoleList extends cdktf.ComplexList {
 export interface ApplicationFeatureTags {
   /**
   * Whether this application represents a custom SAML application for linked service principals
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#custom_single_sign_on Application#custom_single_sign_on}
   */
   readonly customSingleSignOn?: boolean | cdktf.IResolvable;
   /**
   * Whether this application represents an Enterprise Application for linked service principals
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#enterprise Application#enterprise}
   */
   readonly enterprise?: boolean | cdktf.IResolvable;
   /**
   * Whether this application represents a gallery application for linked service principals
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#gallery Application#gallery}
   */
   readonly gallery?: boolean | cdktf.IResolvable;
   /**
   * Whether this application is invisible to users in My Apps and Office 365 Launcher
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#hide Application#hide}
   */
   readonly hide?: boolean | cdktf.IResolvable;
@@ -1068,25 +1068,25 @@ export class ApplicationFeatureTagsList extends cdktf.ComplexList {
 export interface ApplicationOptionalClaimsAccessToken {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#additional_properties Application#additional_properties}
   */
   readonly additionalProperties?: string[];
   /**
   * Whether the claim specified by the client is necessary to ensure a smooth authorization experience
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#essential Application#essential}
   */
   readonly essential?: boolean | cdktf.IResolvable;
   /**
   * The name of the optional claim
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#name Application#name}
   */
   readonly name: string;
   /**
   * The source of the claim. If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#source Application#source}
   */
   readonly source?: string;
@@ -1251,25 +1251,25 @@ export class ApplicationOptionalClaimsAccessTokenList extends cdktf.ComplexList 
 export interface ApplicationOptionalClaimsIdToken {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#additional_properties Application#additional_properties}
   */
   readonly additionalProperties?: string[];
   /**
   * Whether the claim specified by the client is necessary to ensure a smooth authorization experience
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#essential Application#essential}
   */
   readonly essential?: boolean | cdktf.IResolvable;
   /**
   * The name of the optional claim
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#name Application#name}
   */
   readonly name: string;
   /**
   * The source of the claim. If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#source Application#source}
   */
   readonly source?: string;
@@ -1434,25 +1434,25 @@ export class ApplicationOptionalClaimsIdTokenList extends cdktf.ComplexList {
 export interface ApplicationOptionalClaimsSaml2Token {
   /**
   * List of additional properties of the claim. If a property exists in this list, it modifies the behaviour of the optional claim
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#additional_properties Application#additional_properties}
   */
   readonly additionalProperties?: string[];
   /**
   * Whether the claim specified by the client is necessary to ensure a smooth authorization experience
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#essential Application#essential}
   */
   readonly essential?: boolean | cdktf.IResolvable;
   /**
   * The name of the optional claim
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#name Application#name}
   */
   readonly name: string;
   /**
   * The source of the claim. If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#source Application#source}
   */
   readonly source?: string;
@@ -1617,19 +1617,19 @@ export class ApplicationOptionalClaimsSaml2TokenList extends cdktf.ComplexList {
 export interface ApplicationOptionalClaims {
   /**
   * access_token block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#access_token Application#access_token}
   */
   readonly accessToken?: ApplicationOptionalClaimsAccessToken[] | cdktf.IResolvable;
   /**
   * id_token block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#id_token Application#id_token}
   */
   readonly idToken?: ApplicationOptionalClaimsIdToken[] | cdktf.IResolvable;
   /**
   * saml2_token block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#saml2_token Application#saml2_token}
   */
   readonly saml2Token?: ApplicationOptionalClaimsSaml2Token[] | cdktf.IResolvable;
@@ -1742,7 +1742,7 @@ export class ApplicationOptionalClaimsOutputReference extends cdktf.ComplexObjec
 export interface ApplicationPublicClient {
   /**
   * The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#redirect_uris Application#redirect_uris}
   */
   readonly redirectUris?: string[];
@@ -1934,7 +1934,7 @@ export interface ApplicationRequiredResourceAccess {
   readonly resourceAppId: string;
   /**
   * resource_access block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#resource_access Application#resource_access}
   */
   readonly resourceAccess: ApplicationRequiredResourceAccessResourceAccess[] | cdktf.IResolvable;
@@ -2050,7 +2050,7 @@ export class ApplicationRequiredResourceAccessList extends cdktf.ComplexList {
 export interface ApplicationSinglePageApplication {
   /**
   * The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#redirect_uris Application#redirect_uris}
   */
   readonly redirectUris?: string[];
@@ -2273,13 +2273,13 @@ export class ApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
 export interface ApplicationWebImplicitGrant {
   /**
   * Whether this web application can request an access token using OAuth 2.0 implicit flow
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
   */
   readonly accessTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether this web application can request an ID token using OAuth 2.0 implicit flow
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
   */
   readonly idTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
@@ -2369,25 +2369,25 @@ export class ApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObj
 export interface ApplicationWeb {
   /**
   * Home page or landing page of the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#homepage_url Application#homepage_url}
   */
   readonly homepageUrl?: string;
   /**
   * The URL that will be used by Microsoft's authorization service to sign out a user using front-channel, back-channel or SAML logout protocols
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#logout_url Application#logout_url}
   */
   readonly logoutUrl?: string;
   /**
   * The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#redirect_uris Application#redirect_uris}
   */
   readonly redirectUris?: string[];
   /**
   * implicit_grant block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application#implicit_grant Application#implicit_grant}
   */
   readonly implicitGrant?: ApplicationWebImplicitGrant;

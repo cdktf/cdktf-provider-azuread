@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface ApplicationCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the application for which this certificate should be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#application_object_id ApplicationCertificate#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * Specifies the encoding used for the supplied certificate data
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#encoding ApplicationCertificate#encoding}
   */
   readonly encoding?: string;
   /**
   * The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If omitted, the API will decide a suitable expiry date, which is typically around 2 years from the start date
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#end_date ApplicationCertificate#end_date}
   */
   readonly endDate?: string;
   /**
   * A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#end_date_relative ApplicationCertificate#end_date_relative}
   */
   readonly endDateRelative?: string;
@@ -45,31 +45,31 @@ export interface ApplicationCertificateConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * A UUID used to uniquely identify this certificate. If omitted, a random UUID will be automatically generated
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#key_id ApplicationCertificate#key_id}
   */
   readonly keyId?: string;
   /**
   * The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date and time are use
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#start_date ApplicationCertificate#start_date}
   */
   readonly startDate?: string;
   /**
   * The type of key/certificate
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#type ApplicationCertificate#type}
   */
   readonly type?: string;
   /**
   * The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER. See also the `encoding` argumen
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#value ApplicationCertificate#value}
   */
   readonly value: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/application_certificate#timeouts ApplicationCertificate#timeouts}
   */
   readonly timeouts?: ApplicationCertificateTimeouts;

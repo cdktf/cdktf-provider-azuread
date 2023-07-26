@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ServicePrincipalDelegatedPermissionGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * A set of claim values for delegated permission scopes which should be included in access tokens for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_delegated_permission_grant#claim_values ServicePrincipalDelegatedPermissionGrant#claim_values}
   */
   readonly claimValues: string[];
@@ -27,25 +27,25 @@ export interface ServicePrincipalDelegatedPermissionGrantConfig extends cdktf.Te
   readonly id?: string;
   /**
   * The object ID of the service principal representing the resource to be accessed
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_delegated_permission_grant#resource_service_principal_object_id ServicePrincipalDelegatedPermissionGrant#resource_service_principal_object_id}
   */
   readonly resourceServicePrincipalObjectId: string;
   /**
   * The object ID of the service principal for which this delegated permission grant should be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_delegated_permission_grant#service_principal_object_id ServicePrincipalDelegatedPermissionGrant#service_principal_object_id}
   */
   readonly servicePrincipalObjectId: string;
   /**
   * The object ID of the user on behalf of whom the service principal is authorized to access the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_delegated_permission_grant#user_object_id ServicePrincipalDelegatedPermissionGrant#user_object_id}
   */
   readonly userObjectId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/service_principal_delegated_permission_grant#timeouts ServicePrincipalDelegatedPermissionGrant#timeouts}
   */
   readonly timeouts?: ServicePrincipalDelegatedPermissionGrantTimeouts;

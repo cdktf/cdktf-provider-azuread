@@ -21,13 +21,13 @@ export interface DataAzureadDirectoryObjectConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * The object ID of the principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/directory_object#object_id DataAzureadDirectoryObject#object_id}
   */
   readonly objectId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
   */
   readonly timeouts?: DataAzureadDirectoryObjectTimeouts;

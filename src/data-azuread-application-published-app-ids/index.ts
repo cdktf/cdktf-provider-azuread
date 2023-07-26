@@ -21,7 +21,7 @@ export interface DataAzureadApplicationPublishedAppIdsConfig extends cdktf.Terra
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/application_published_app_ids#timeouts DataAzureadApplicationPublishedAppIds#timeouts}
   */
   readonly timeouts?: DataAzureadApplicationPublishedAppIdsTimeouts;

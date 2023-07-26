@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface UserFlowAttributeConfig extends cdktf.TerraformMetaArguments {
   /**
   * The data type of the user flow attribute
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/user_flow_attribute#data_type UserFlowAttribute#data_type}
   */
   readonly dataType: string;
   /**
   * The description of the user flow attribute that is shown to the user at the time of sign-up
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/user_flow_attribute#description UserFlowAttribute#description}
   */
   readonly description: string;
   /**
   * The display name of the user flow attribute.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/user_flow_attribute#display_name UserFlowAttribute#display_name}
   */
   readonly displayName: string;
@@ -39,7 +39,7 @@ export interface UserFlowAttributeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/user_flow_attribute#timeouts UserFlowAttribute#timeouts}
   */
   readonly timeouts?: UserFlowAttributeTimeouts;

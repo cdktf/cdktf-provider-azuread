@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadAdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name for the administrative unit
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/administrative_unit#display_name DataAzureadAdministrativeUnit#display_name}
   */
   readonly displayName?: string;
@@ -27,13 +27,13 @@ export interface DataAzureadAdministrativeUnitConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * The object ID of the administrative unit
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/administrative_unit#object_id DataAzureadAdministrativeUnit#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/administrative_unit#timeouts DataAzureadAdministrativeUnit#timeouts}
   */
   readonly timeouts?: DataAzureadAdministrativeUnitTimeouts;

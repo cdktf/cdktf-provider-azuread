@@ -21,19 +21,19 @@ export interface SynchronizationSecretConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * The object ID of the service principal for which this synchronization secret should be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret#service_principal_id SynchronizationSecret#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * credential block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret#credential SynchronizationSecret#credential}
   */
   readonly credential?: SynchronizationSecretCredential[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret#timeouts SynchronizationSecret#timeouts}
   */
   readonly timeouts?: SynchronizationSecretTimeouts;
@@ -41,13 +41,13 @@ export interface SynchronizationSecretConfig extends cdktf.TerraformMetaArgument
 export interface SynchronizationSecretCredential {
   /**
   * Name for this key-value pair.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret#key SynchronizationSecret#key}
   */
   readonly key: string;
   /**
   * Value for this key-value pair.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_secret#value SynchronizationSecret#value}
   */
   readonly value: string;

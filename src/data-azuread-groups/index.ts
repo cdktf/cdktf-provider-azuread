@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Common display name prefix of the groups
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
   */
   readonly displayNamePrefix?: string;
   /**
   * The display names of the groups
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
   */
   readonly displayNames?: string[];
@@ -33,37 +33,37 @@ export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Ignore missing groups and return groups that were found. The data source will still fail if no groups are found
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * Whether the groups are mail-enabled
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The object IDs of the groups
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Retrieve all groups with no filter
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * Whether the groups are security-enabled
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
   */
   readonly timeouts?: DataAzureadGroupsTimeouts;

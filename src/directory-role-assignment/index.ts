@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier of the app-specific scope when the assignment scope is app-specific
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment#app_scope_id DirectoryRoleAssignment#app_scope_id}
   */
   readonly appScopeId?: string;
   /**
   * Identifier of the app-specific scope when the assignment scope is app-specific
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment#app_scope_object_id DirectoryRoleAssignment#app_scope_object_id}
   */
   readonly appScopeObjectId?: string;
   /**
   * Identifier of the directory object representing the scope of the assignment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment#directory_scope_id DirectoryRoleAssignment#directory_scope_id}
   */
   readonly directoryScopeId?: string;
   /**
   * Identifier of the directory object representing the scope of the assignment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment#directory_scope_object_id DirectoryRoleAssignment#directory_scope_object_id}
   */
   readonly directoryScopeObjectId?: string;
@@ -45,19 +45,19 @@ export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The object ID of the member principal
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
   */
   readonly principalObjectId: string;
   /**
   * The object ID of the directory role for this assignment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
   */
   readonly roleId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/directory_role_assignment#timeouts DirectoryRoleAssignment#timeouts}
   */
   readonly timeouts?: DirectoryRoleAssignmentTimeouts;

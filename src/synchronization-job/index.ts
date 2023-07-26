@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface SynchronizationJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether or not the synchronization job is enabled
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_job#enabled SynchronizationJob#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -27,19 +27,19 @@ export interface SynchronizationJobConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The object ID of the service principal for which this synchronization job should be created
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_job#service_principal_id SynchronizationJob#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * Identifier of the synchronization template this job is based on.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_job#template_id SynchronizationJob#template_id}
   */
   readonly templateId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/synchronization_job#timeouts SynchronizationJob#timeouts}
   */
   readonly timeouts?: SynchronizationJobTimeouts;

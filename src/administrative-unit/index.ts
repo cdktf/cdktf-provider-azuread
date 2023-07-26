@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface AdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description for the administrative unit
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit#description AdministrativeUnit#description}
   */
   readonly description?: string;
   /**
   * The display name for the administrative unit
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit#display_name AdministrativeUnit#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the administrative unit and its members are hidden or publicly viewable in the directory
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
   */
   readonly hiddenMembershipEnabled?: boolean | cdktf.IResolvable;
@@ -39,19 +39,19 @@ export interface AdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * A set of object IDs of members who should be present in this administrative unit. Supported object types are Users or Groups
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit#members AdministrativeUnit#members}
   */
   readonly members?: string[];
   /**
   * If `true`, will return an error if an existing administrative unit is found with the same name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
   */
   readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/administrative_unit#timeouts AdministrativeUnit#timeouts}
   */
   readonly timeouts?: AdministrativeUnitTimeouts;

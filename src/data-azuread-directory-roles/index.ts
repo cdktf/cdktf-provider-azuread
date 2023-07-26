@@ -21,7 +21,7 @@ export interface DataAzureadDirectoryRolesConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/directory_roles#timeouts DataAzureadDirectoryRoles#timeouts}
   */
   readonly timeouts?: DataAzureadDirectoryRolesTimeouts;

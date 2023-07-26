@@ -21,37 +21,37 @@ export interface InvitationConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The URL that the user should be redirected to once the invitation is redeemed
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#redirect_url Invitation#redirect_url}
   */
   readonly redirectUrl: string;
   /**
   * The display name of the user being invited
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#user_display_name Invitation#user_display_name}
   */
   readonly userDisplayName?: string;
   /**
   * The email address of the user being invited
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#user_email_address Invitation#user_email_address}
   */
   readonly userEmailAddress: string;
   /**
   * The user type of the user being invited
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#user_type Invitation#user_type}
   */
   readonly userType?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#message Invitation#message}
   */
   readonly message?: InvitationMessage;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#timeouts Invitation#timeouts}
   */
   readonly timeouts?: InvitationTimeouts;
@@ -59,19 +59,19 @@ export interface InvitationConfig extends cdktf.TerraformMetaArguments {
 export interface InvitationMessage {
   /**
   * Email addresses of additional recipients the invitation message should be sent to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#additional_recipients Invitation#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Customized message body you want to send if you don't want to send the default message
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#body Invitation#body}
   */
   readonly body?: string;
   /**
   * The language you want to send the default message in
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/invitation#language Invitation#language}
   */
   readonly language?: string;

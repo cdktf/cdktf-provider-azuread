@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataAzureadDomainsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Set to `true` to only return domains whose DNS is managed by Microsoft 365
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/domains#admin_managed DataAzureadDomains#admin_managed}
   */
   readonly adminManaged?: boolean | cdktf.IResolvable;
@@ -27,37 +27,37 @@ export interface DataAzureadDomainsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Set to `true` if unverified Azure AD domains should be included
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/domains#include_unverified DataAzureadDomains#include_unverified}
   */
   readonly includeUnverified?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to only return the default domain
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/domains#only_default DataAzureadDomains#only_default}
   */
   readonly onlyDefault?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/domains#only_initial DataAzureadDomains#only_initial}
   */
   readonly onlyInitial?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to only return verified root domains. Excludes subdomains and unverified domains
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/domains#only_root DataAzureadDomains#only_root}
   */
   readonly onlyRoot?: boolean | cdktf.IResolvable;
   /**
   * A list of supported services that must be supported by a domain
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/domains#supports_services DataAzureadDomains#supports_services}
   */
   readonly supportsServices?: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/data-sources/domains#timeouts DataAzureadDomains#timeouts}
   */
   readonly timeouts?: DataAzureadDomainsTimeouts;
