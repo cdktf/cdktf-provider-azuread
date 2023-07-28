@@ -1,6 +1,6 @@
 # `azuread_named_location`
 
-Refer to the Terraform Registory for docs: [`azuread_named_location`](https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location).
+Refer to the Terraform Registory for docs: [`azuread_named_location`](https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location).
 
 # `namedLocation` Submodule <a name="`namedLocation` Submodule" id="@cdktf/provider-azuread.namedLocation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_named_location`](https://re
 
 ### NamedLocation <a name="NamedLocation" id="@cdktf/provider-azuread.namedLocation.NamedLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location azuread_named_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location azuread_named_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.namedLocation.NamedLocation.Initializer"></a>
 
@@ -721,9 +721,9 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/namedlocation"
 | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#display_name NamedLocation#display_name}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#display_name NamedLocation#display_name}. |
 | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.country">Country</a></code> | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationCountry">NamedLocationCountry</a></code> | country block. |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#id NamedLocation#id}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#id NamedLocation#id}. |
 | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.ip">Ip</a></code> | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationIp">NamedLocationIp</a></code> | ip block. |
 | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts">NamedLocationTimeouts</a></code> | timeouts block. |
 
@@ -807,7 +807,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#display_name NamedLocation#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#display_name NamedLocation#display_name}.
 
 ---
 
@@ -821,7 +821,7 @@ Country NamedLocationCountry
 
 country block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#country NamedLocation#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#country NamedLocation#country}
 
 ---
 
@@ -833,7 +833,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#id NamedLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#id NamedLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -850,7 +850,7 @@ Ip NamedLocationIp
 
 ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#ip NamedLocation#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#ip NamedLocation#ip}
 
 ---
 
@@ -864,7 +864,7 @@ Timeouts NamedLocationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#timeouts NamedLocation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#timeouts NamedLocation#timeouts}
 
 ---
 
@@ -885,8 +885,8 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/namedlocation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationCountry.property.countriesAndRegions">CountriesAndRegions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#countries_and_regions NamedLocation#countries_and_regions}. |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationCountry.property.includeUnknownCountriesAndRegions">IncludeUnknownCountriesAndRegions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationCountry.property.countriesAndRegions">CountriesAndRegions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#countries_and_regions NamedLocation#countries_and_regions}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationCountry.property.includeUnknownCountriesAndRegions">IncludeUnknownCountriesAndRegions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}. |
 
 ---
 
@@ -898,7 +898,7 @@ CountriesAndRegions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#countries_and_regions NamedLocation#countries_and_regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#countries_and_regions NamedLocation#countries_and_regions}.
 
 ---
 
@@ -910,7 +910,7 @@ IncludeUnknownCountriesAndRegions interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}.
 
 ---
 
@@ -931,8 +931,8 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/namedlocation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationIp.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#ip_ranges NamedLocation#ip_ranges}. |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationIp.property.trusted">Trusted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#trusted NamedLocation#trusted}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationIp.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#ip_ranges NamedLocation#ip_ranges}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationIp.property.trusted">Trusted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#trusted NamedLocation#trusted}. |
 
 ---
 
@@ -944,7 +944,7 @@ IpRanges *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#ip_ranges NamedLocation#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#ip_ranges NamedLocation#ip_ranges}.
 
 ---
 
@@ -956,7 +956,7 @@ Trusted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#trusted NamedLocation#trusted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#trusted NamedLocation#trusted}.
 
 ---
 
@@ -979,10 +979,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v9/namedlocation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#create NamedLocation#create}. |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#delete NamedLocation#delete}. |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#read NamedLocation#read}. |
-| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#update NamedLocation#update}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#create NamedLocation#create}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#delete NamedLocation#delete}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#read NamedLocation#read}. |
+| <code><a href="#@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#update NamedLocation#update}. |
 
 ---
 
@@ -994,7 +994,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#create NamedLocation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#create NamedLocation#create}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#delete NamedLocation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#delete NamedLocation#delete}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#read NamedLocation#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#read NamedLocation#read}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/named_location#update NamedLocation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/named_location#update NamedLocation#update}.
 
 ---
 

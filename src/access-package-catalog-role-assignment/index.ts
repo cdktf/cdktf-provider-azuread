@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment
+// https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AccessPackageCatalogRoleAssignmentConfig extends cdktf.Terrafor
   /**
   * The unique ID of the access package catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#catalog_id AccessPackageCatalogRoleAssignment#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#catalog_id AccessPackageCatalogRoleAssignment#catalog_id}
   */
   readonly catalogId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#id AccessPackageCatalogRoleAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#id AccessPackageCatalogRoleAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface AccessPackageCatalogRoleAssignmentConfig extends cdktf.Terrafor
   /**
   * The object ID of the member principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#principal_object_id AccessPackageCatalogRoleAssignment#principal_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#principal_object_id AccessPackageCatalogRoleAssignment#principal_object_id}
   */
   readonly principalObjectId: string;
   /**
   * The object ID of the catalog role for this assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#role_id AccessPackageCatalogRoleAssignment#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#role_id AccessPackageCatalogRoleAssignment#role_id}
   */
   readonly roleId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#timeouts AccessPackageCatalogRoleAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#timeouts AccessPackageCatalogRoleAssignment#timeouts}
   */
   readonly timeouts?: AccessPackageCatalogRoleAssignmentTimeouts;
 }
 export interface AccessPackageCatalogRoleAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#create AccessPackageCatalogRoleAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#create AccessPackageCatalogRoleAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#delete AccessPackageCatalogRoleAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#delete AccessPackageCatalogRoleAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#read AccessPackageCatalogRoleAssignment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#read AccessPackageCatalogRoleAssignment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment#update AccessPackageCatalogRoleAssignment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment#update AccessPackageCatalogRoleAssignment#update}
   */
   readonly update?: string;
 }
@@ -202,7 +202,7 @@ export class AccessPackageCatalogRoleAssignmentTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment}
 */
 export class AccessPackageCatalogRoleAssignment extends cdktf.TerraformResource {
 
@@ -216,7 +216,7 @@ export class AccessPackageCatalogRoleAssignment extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.40.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/access_package_catalog_role_assignment azuread_access_package_catalog_role_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class AccessPackageCatalogRoleAssignment extends cdktf.TerraformResource 
       terraformResourceType: 'azuread_access_package_catalog_role_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.40.0',
+        providerVersion: '2.41.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

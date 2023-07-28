@@ -48,10 +48,12 @@ export * as dataAzureadApplicationPublishedAppIds from './data-azuread-applicati
 export * as dataAzureadApplicationTemplate from './data-azuread-application-template';
 export * as dataAzureadClientConfig from './data-azuread-client-config';
 export * as dataAzureadDirectoryObject from './data-azuread-directory-object';
+export * as dataAzureadDirectoryRoleTemplates from './data-azuread-directory-role-templates';
 export * as dataAzureadDirectoryRoles from './data-azuread-directory-roles';
 export * as dataAzureadDomains from './data-azuread-domains';
 export * as dataAzureadGroup from './data-azuread-group';
 export * as dataAzureadGroups from './data-azuread-groups';
+export * as dataAzureadNamedLocation from './data-azuread-named-location';
 export * as dataAzureadServicePrincipal from './data-azuread-service-principal';
 export * as dataAzureadServicePrincipals from './data-azuread-service-principals';
 export * as dataAzureadUser from './data-azuread-user';
