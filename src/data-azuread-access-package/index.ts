@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package
+// https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataAzureadAccessPackageConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of the Catalog this access package is in
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package#catalog_id DataAzureadAccessPackage#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package#catalog_id DataAzureadAccessPackage#catalog_id}
   */
   readonly catalogId?: string;
   /**
   * The display name of the access package
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package#display_name DataAzureadAccessPackage#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package#display_name DataAzureadAccessPackage#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package#id DataAzureadAccessPackage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package#id DataAzureadAccessPackage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface DataAzureadAccessPackageConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID of this access package
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package#object_id DataAzureadAccessPackage#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package#object_id DataAzureadAccessPackage#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package#timeouts DataAzureadAccessPackage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package#timeouts DataAzureadAccessPackage#timeouts}
   */
   readonly timeouts?: DataAzureadAccessPackageTimeouts;
 }
 export interface DataAzureadAccessPackageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package#read DataAzureadAccessPackage#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package#read DataAzureadAccessPackage#read}
   */
   readonly read?: string;
 }
@@ -121,7 +121,7 @@ export class DataAzureadAccessPackageTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package azuread_access_package}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package azuread_access_package}
 */
 export class DataAzureadAccessPackage extends cdktf.TerraformDataSource {
 
@@ -135,7 +135,7 @@ export class DataAzureadAccessPackage extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/access_package azuread_access_package} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/access_package azuread_access_package} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +146,7 @@ export class DataAzureadAccessPackage extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_access_package',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.41.0',
+        providerVersion: '2.42.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

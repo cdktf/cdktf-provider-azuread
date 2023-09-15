@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group
+// https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name for the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#display_name DataAzureadGroup#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#display_name DataAzureadGroup#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#id DataAzureadGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#id DataAzureadGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,31 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the group is mail-enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
+  * The mail alias for the group, unique in the organisation
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#mail_nickname DataAzureadGroup#mail_nickname}
+  */
+  readonly mailNickname?: string;
+  /**
   * The object ID of the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#object_id DataAzureadGroup#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#object_id DataAzureadGroup#object_id}
   */
   readonly objectId?: string;
   /**
   * Whether the group is a security group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#timeouts DataAzureadGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#timeouts DataAzureadGroup#timeouts}
   */
   readonly timeouts?: DataAzureadGroupTimeouts;
 }
@@ -121,7 +127,7 @@ export class DataAzureadGroupDynamicMembershipList extends cdktf.ComplexList {
 }
 export interface DataAzureadGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#read DataAzureadGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#read DataAzureadGroup#read}
   */
   readonly read?: string;
 }
@@ -196,7 +202,7 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group azuread_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group azuread_group}
 */
 export class DataAzureadGroup extends cdktf.TerraformDataSource {
 
@@ -210,7 +216,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group azuread_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group azuread_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +227,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_group',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.41.0',
+        providerVersion: '2.42.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -235,6 +241,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     this._displayName = config.displayName;
     this._id = config.id;
     this._mailEnabled = config.mailEnabled;
+    this._mailNickname = config.mailNickname;
     this._objectId = config.objectId;
     this._securityEnabled = config.securityEnabled;
     this._timeouts.internalValue = config.timeouts;
@@ -338,9 +345,20 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     return this._mailEnabled;
   }
 
-  // mail_nickname - computed: true, optional: false, required: false
+  // mail_nickname - computed: true, optional: true, required: false
+  private _mailNickname?: string; 
   public get mailNickname() {
     return this.getStringAttribute('mail_nickname');
+  }
+  public set mailNickname(value: string) {
+    this._mailNickname = value;
+  }
+  public resetMailNickname() {
+    this._mailNickname = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mailNicknameInput() {
+    return this._mailNickname;
   }
 
   // members - computed: true, optional: false, required: false
@@ -475,6 +493,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
+      mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       object_id: cdktf.stringToTerraform(this._objectId),
       security_enabled: cdktf.booleanToTerraform(this._securityEnabled),
       timeouts: dataAzureadGroupTimeoutsToTerraform(this._timeouts.internalValue),

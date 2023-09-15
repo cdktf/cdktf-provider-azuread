@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`azuread`](https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs).
+Refer to the Terraform Registory for docs: [`azuread`](https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-azuread.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread`](https://registry.terrafor
 
 ### AzureadProvider <a name="AzureadProvider" id="@cdktf/provider-azuread.provider.AzureadProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs azuread}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs azuread}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer"></a>
 
@@ -65,7 +65,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificatePassword">resetClientCertificatePassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificatePath">resetClientCertificatePath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientId">resetClientId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientIdFilePath">resetClientIdFilePath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecret">resetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecretFilePath">resetClientSecretFilePath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetDisableTerraformPartnerId">resetDisableTerraformPartnerId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetEnvironment">resetEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetMetadataHost">resetMetadataHost</a></code> | *No description.* |
@@ -176,10 +178,22 @@ public resetClientCertificatePath(): void
 public resetClientId(): void
 ```
 
+##### `resetClientIdFilePath` <a name="resetClientIdFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientIdFilePath"></a>
+
+```typescript
+public resetClientIdFilePath(): void
+```
+
 ##### `resetClientSecret` <a name="resetClientSecret" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecret"></a>
 
 ```typescript
 public resetClientSecret(): void
+```
+
+##### `resetClientSecretFilePath` <a name="resetClientSecretFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecretFilePath"></a>
+
+```typescript
+public resetClientSecretFilePath(): void
 ```
 
 ##### `resetDisableTerraformPartnerId` <a name="resetDisableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.resetDisableTerraformPartnerId"></a>
@@ -347,7 +361,9 @@ provider.AzureadProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificateInput">clientCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePasswordInput">clientCertificatePasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePathInput">clientCertificatePathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePathInput">clientIdFilePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput">clientSecretFilePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">disableTerraformPartnerIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
@@ -366,7 +382,9 @@ provider.AzureadProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword">clientCertificatePassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePath">clientCertificatePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePath">clientIdFilePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environment">environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost">metadataHost</a></code> | <code>string</code> | *No description.* |
@@ -515,10 +533,30 @@ public readonly clientCertificatePathInput: string;
 
 ---
 
+##### `clientIdFilePathInput`<sup>Optional</sup> <a name="clientIdFilePathInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePathInput"></a>
+
+```typescript
+public readonly clientIdFilePathInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `clientIdInput`<sup>Optional</sup> <a name="clientIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdInput"></a>
 
 ```typescript
 public readonly clientIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecretFilePathInput`<sup>Optional</sup> <a name="clientSecretFilePathInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput"></a>
+
+```typescript
+public readonly clientSecretFilePathInput: string;
 ```
 
 - *Type:* string
@@ -705,10 +743,30 @@ public readonly clientId: string;
 
 ---
 
+##### `clientIdFilePath`<sup>Optional</sup> <a name="clientIdFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePath"></a>
+
+```typescript
+public readonly clientIdFilePath: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret"></a>
 
 ```typescript
 public readonly clientSecret: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecretFilePath`<sup>Optional</sup> <a name="clientSecretFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath"></a>
+
+```typescript
+public readonly clientSecretFilePath: string;
 ```
 
 - *Type:* string
@@ -884,7 +942,9 @@ const azureadProviderConfig: provider.AzureadProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePassword">clientCertificatePassword</a></code> | <code>string</code> | The password to decrypt the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePath">clientCertificatePath</a></code> | <code>string</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientId">clientId</a></code> | <code>string</code> | The Client ID which should be used for service principal authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath">clientIdFilePath</a></code> | <code>string</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>string</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.environment">environment</a></code> | <code>string</code> | The cloud environment which should be used. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost">metadataHost</a></code> | <code>string</code> | The Hostname which should be used for the Azure Metadata Service. |
@@ -911,7 +971,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#alias AzureadProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#alias AzureadProvider#alias}
 
 ---
 
@@ -925,7 +985,7 @@ public readonly clientCertificate: string;
 
 Base64 encoded PKCS#12 certificate bundle to use when authenticating as a Service Principal using a Client Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#client_certificate AzureadProvider#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#client_certificate AzureadProvider#client_certificate}
 
 ---
 
@@ -939,7 +999,7 @@ public readonly clientCertificatePassword: string;
 
 The password to decrypt the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#client_certificate_password AzureadProvider#client_certificate_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#client_certificate_password AzureadProvider#client_certificate_password}
 
 ---
 
@@ -953,7 +1013,7 @@ public readonly clientCertificatePath: string;
 
 The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#client_certificate_path AzureadProvider#client_certificate_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#client_certificate_path AzureadProvider#client_certificate_path}
 
 ---
 
@@ -967,7 +1027,21 @@ public readonly clientId: string;
 
 The Client ID which should be used for service principal authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#client_id AzureadProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#client_id AzureadProvider#client_id}
+
+---
+
+##### `clientIdFilePath`<sup>Optional</sup> <a name="clientIdFilePath" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath"></a>
+
+```typescript
+public readonly clientIdFilePath: string;
+```
+
+- *Type:* string
+
+The path to a file containing the Client ID which should be used for service principal authentication.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#client_id_file_path AzureadProvider#client_id_file_path}
 
 ---
 
@@ -981,7 +1055,21 @@ public readonly clientSecret: string;
 
 The application password to use when authenticating as a Service Principal using a Client Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#client_secret AzureadProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#client_secret AzureadProvider#client_secret}
+
+---
+
+##### `clientSecretFilePath`<sup>Optional</sup> <a name="clientSecretFilePath" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath"></a>
+
+```typescript
+public readonly clientSecretFilePath: string;
+```
+
+- *Type:* string
+
+The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#client_secret_file_path AzureadProvider#client_secret_file_path}
 
 ---
 
@@ -995,7 +1083,7 @@ public readonly disableTerraformPartnerId: boolean | IResolvable;
 
 Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#disable_terraform_partner_id AzureadProvider#disable_terraform_partner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#disable_terraform_partner_id AzureadProvider#disable_terraform_partner_id}
 
 ---
 
@@ -1011,7 +1099,7 @@ The cloud environment which should be used.
 
 Possible values are: `global` (also `public`), `usgovernmentl4` (also `usgovernment`), `usgovernmentl5` (also `dod`), and `china`. Defaults to `global`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#environment AzureadProvider#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#environment AzureadProvider#environment}
 
 ---
 
@@ -1025,7 +1113,7 @@ public readonly metadataHost: string;
 
 The Hostname which should be used for the Azure Metadata Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#metadata_host AzureadProvider#metadata_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#metadata_host AzureadProvider#metadata_host}
 
 ---
 
@@ -1039,7 +1127,7 @@ public readonly msiEndpoint: string;
 
 The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#msi_endpoint AzureadProvider#msi_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#msi_endpoint AzureadProvider#msi_endpoint}
 
 ---
 
@@ -1055,7 +1143,7 @@ The bearer token for the request to the OIDC provider.
 
 For use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#oidc_request_token AzureadProvider#oidc_request_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#oidc_request_token AzureadProvider#oidc_request_token}
 
 ---
 
@@ -1071,7 +1159,7 @@ The URL for the OIDC provider from which to request an ID token.
 
 For use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#oidc_request_url AzureadProvider#oidc_request_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#oidc_request_url AzureadProvider#oidc_request_url}
 
 ---
 
@@ -1085,7 +1173,7 @@ public readonly oidcToken: string;
 
 The ID token for use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#oidc_token AzureadProvider#oidc_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#oidc_token AzureadProvider#oidc_token}
 
 ---
 
@@ -1099,7 +1187,7 @@ public readonly oidcTokenFilePath: string;
 
 The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#oidc_token_file_path AzureadProvider#oidc_token_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#oidc_token_file_path AzureadProvider#oidc_token_file_path}
 
 ---
 
@@ -1113,7 +1201,7 @@ public readonly partnerId: string;
 
 A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#partner_id AzureadProvider#partner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#partner_id AzureadProvider#partner_id}
 
 ---
 
@@ -1127,7 +1215,7 @@ public readonly tenantId: string;
 
 The Tenant ID which should be used. Works with all authentication methods except Managed Identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#tenant_id AzureadProvider#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#tenant_id AzureadProvider#tenant_id}
 
 ---
 
@@ -1141,7 +1229,7 @@ public readonly useCli: boolean | IResolvable;
 
 Allow Azure CLI to be used for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#use_cli AzureadProvider#use_cli}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#use_cli AzureadProvider#use_cli}
 
 ---
 
@@ -1155,7 +1243,7 @@ public readonly useMsi: boolean | IResolvable;
 
 Allow Managed Identity to be used for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#use_msi AzureadProvider#use_msi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#use_msi AzureadProvider#use_msi}
 
 ---
 
@@ -1169,7 +1257,7 @@ public readonly useOidc: boolean | IResolvable;
 
 Allow OpenID Connect to be used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs#use_oidc AzureadProvider#use_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs#use_oidc AzureadProvider#use_oidc}
 
 ---
 

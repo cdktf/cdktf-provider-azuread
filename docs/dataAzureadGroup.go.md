@@ -1,6 +1,6 @@
 # `data_azuread_group`
 
-Refer to the Terraform Registory for docs: [`data_azuread_group`](https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group).
+Refer to the Terraform Registory for docs: [`data_azuread_group`](https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group).
 
 # `dataAzureadGroup` Submodule <a name="`dataAzureadGroup` Submodule" id="@cdktf/provider-azuread.dataAzureadGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_group`](https://regist
 
 ### DataAzureadGroup <a name="DataAzureadGroup" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group azuread_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group azuread_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailEnabled">ResetMailEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailNickname">ResetMailNickname</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetObjectId">ResetObjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetSecurityEnabled">ResetSecurityEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -294,6 +295,12 @@ func ResetId()
 func ResetMailEnabled()
 ```
 
+##### `ResetMailNickname` <a name="ResetMailNickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailNickname"></a>
+
+```go
+func ResetMailNickname()
+```
+
 ##### `ResetObjectId` <a name="ResetObjectId" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetObjectId"></a>
 
 ```go
@@ -407,7 +414,6 @@ dataazureadgroup.DataAzureadGroup_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromAddressLists">HideFromAddressLists</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromOutlookClients">HideFromOutlookClients</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mail">Mail</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname">MailNickname</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.members">Members</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesDomainName">OnpremisesDomainName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesGroupType">OnpremisesGroupType</a></code> | <code>*string</code> | *No description.* |
@@ -427,12 +433,14 @@ dataazureadgroup.DataAzureadGroup_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabledInput">MailEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNicknameInput">MailNicknameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectIdInput">ObjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabledInput">SecurityEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabled">MailEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname">MailNickname</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabled">SecurityEnabled</a></code> | <code>interface{}</code> | *No description.* |
 
@@ -650,16 +658,6 @@ func Mail() *string
 
 ---
 
-##### `MailNickname`<sup>Required</sup> <a name="MailNickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname"></a>
-
-```go
-func MailNickname() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Members`<sup>Required</sup> <a name="Members" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.members"></a>
 
 ```go
@@ -850,6 +848,16 @@ func MailEnabledInput() interface{}
 
 ---
 
+##### `MailNicknameInput`<sup>Optional</sup> <a name="MailNicknameInput" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNicknameInput"></a>
+
+```go
+func MailNicknameInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ObjectIdInput`<sup>Optional</sup> <a name="ObjectIdInput" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectIdInput"></a>
 
 ```go
@@ -907,6 +915,16 @@ func MailEnabled() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `MailNickname`<sup>Required</sup> <a name="MailNickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname"></a>
+
+```go
+func MailNickname() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -968,6 +986,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/dataazureadgroup"
 	DisplayName: *string,
 	Id: *string,
 	MailEnabled: interface{},
+	MailNickname: *string,
 	ObjectId: *string,
 	SecurityEnabled: interface{},
 	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v10.dataAzureadGroup.DataAzureadGroupTimeouts,
@@ -986,8 +1005,9 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/dataazureadgroup"
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name for the group. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#id DataAzureadGroup#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#id DataAzureadGroup#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailEnabled">MailEnabled</a></code> | <code>interface{}</code> | Whether the group is mail-enabled. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.objectId">ObjectId</a></code> | <code>*string</code> | The object ID of the group. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.securityEnabled">SecurityEnabled</a></code> | <code>interface{}</code> | Whether the group is a security group. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | timeouts block. |
@@ -1074,7 +1094,7 @@ DisplayName *string
 
 The display name for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#display_name DataAzureadGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#display_name DataAzureadGroup#display_name}
 
 ---
 
@@ -1086,7 +1106,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#id DataAzureadGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#id DataAzureadGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1103,7 +1123,21 @@ MailEnabled interface{}
 
 Whether the group is mail-enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
+
+---
+
+##### `MailNickname`<sup>Optional</sup> <a name="MailNickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailNickname"></a>
+
+```go
+MailNickname *string
+```
+
+- *Type:* *string
+
+The mail alias for the group, unique in the organisation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#mail_nickname DataAzureadGroup#mail_nickname}
 
 ---
 
@@ -1117,7 +1151,7 @@ ObjectId *string
 
 The object ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#object_id DataAzureadGroup#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#object_id DataAzureadGroup#object_id}
 
 ---
 
@@ -1131,7 +1165,7 @@ SecurityEnabled interface{}
 
 Whether the group is a security group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
 
 ---
 
@@ -1145,7 +1179,7 @@ Timeouts DataAzureadGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#timeouts DataAzureadGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#timeouts DataAzureadGroup#timeouts}
 
 ---
 
@@ -1178,7 +1212,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/dataazureadgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#read DataAzureadGroup#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#read DataAzureadGroup#read}. |
 
 ---
 
@@ -1190,7 +1224,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/group#read DataAzureadGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/group#read DataAzureadGroup#read}.
 
 ---
 
