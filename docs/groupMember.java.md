@@ -1,6 +1,6 @@
 # `azuread_group_member`
 
-Refer to the Terraform Registory for docs: [`azuread_group_member`](https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member).
+Refer to the Terraform Registory for docs: [`azuread_group_member`](https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member).
 
 # `groupMember` Submodule <a name="`groupMember` Submodule" id="@cdktf/provider-azuread.groupMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_group_member`](https://regi
 
 ### GroupMember <a name="GroupMember" id="@cdktf/provider-azuread.groupMember.GroupMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member azuread_group_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member azuread_group_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupMember.GroupMember.Initializer"></a>
 
@@ -47,7 +47,7 @@ GroupMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.Initializer.parameter.groupObjectId">groupObjectId</a></code> | <code>java.lang.String</code> | The object ID of the group you want to add the member to. |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.Initializer.parameter.memberObjectId">memberObjectId</a></code> | <code>java.lang.String</code> | The object ID of the principal you want to add as a member to the group. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#id GroupMember#id}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#id GroupMember#id}. |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMember.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts">GroupMemberTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The object ID of the group you want to add the member to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#group_object_id GroupMember#group_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#group_object_id GroupMember#group_object_id}
 
 ---
 
@@ -130,7 +130,7 @@ The object ID of the principal you want to add as a member to the group.
 
 Supported object types are Users, Groups or Service Principals
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#member_object_id GroupMember#member_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#member_object_id GroupMember#member_object_id}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#id GroupMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#id GroupMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#timeouts GroupMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#timeouts GroupMember#timeouts}
 
 ---
 
@@ -769,7 +769,7 @@ GroupMemberConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.groupObjectId">groupObjectId</a></code> | <code>java.lang.String</code> | The object ID of the group you want to add the member to. |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.memberObjectId">memberObjectId</a></code> | <code>java.lang.String</code> | The object ID of the principal you want to add as a member to the group. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#id GroupMember#id}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#id GroupMember#id}. |
 | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts">GroupMemberTimeouts</a></code> | timeouts block. |
 
 ---
@@ -854,7 +854,7 @@ public java.lang.String getGroupObjectId();
 
 The object ID of the group you want to add the member to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#group_object_id GroupMember#group_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#group_object_id GroupMember#group_object_id}
 
 ---
 
@@ -870,7 +870,7 @@ The object ID of the principal you want to add as a member to the group.
 
 Supported object types are Users, Groups or Service Principals
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#member_object_id GroupMember#member_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#member_object_id GroupMember#member_object_id}
 
 ---
 
@@ -882,7 +882,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#id GroupMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#id GroupMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -899,7 +899,7 @@ public GroupMemberTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#timeouts GroupMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#timeouts GroupMember#timeouts}
 
 ---
 
@@ -922,10 +922,10 @@ GroupMemberTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#create GroupMember#create}. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#delete GroupMember#delete}. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#read GroupMember#read}. |
-| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#update GroupMember#update}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#create GroupMember#create}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#delete GroupMember#delete}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#read GroupMember#read}. |
+| <code><a href="#@cdktf/provider-azuread.groupMember.GroupMemberTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#update GroupMember#update}. |
 
 ---
 
@@ -937,7 +937,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#create GroupMember#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#create GroupMember#create}.
 
 ---
 
@@ -949,7 +949,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#delete GroupMember#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#delete GroupMember#delete}.
 
 ---
 
@@ -961,7 +961,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#read GroupMember#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#read GroupMember#read}.
 
 ---
 
@@ -973,7 +973,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/resources/group_member#update GroupMember#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group_member#update GroupMember#update}.
 
 ---
 

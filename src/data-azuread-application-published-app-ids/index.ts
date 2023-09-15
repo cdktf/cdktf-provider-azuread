@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_published_app_ids
+// https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_published_app_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadApplicationPublishedAppIdsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_published_app_ids#id DataAzureadApplicationPublishedAppIds#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_published_app_ids#id DataAzureadApplicationPublishedAppIds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataAzureadApplicationPublishedAppIdsConfig extends cdktf.Terra
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_published_app_ids#timeouts DataAzureadApplicationPublishedAppIds#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_published_app_ids#timeouts DataAzureadApplicationPublishedAppIds#timeouts}
   */
   readonly timeouts?: DataAzureadApplicationPublishedAppIdsTimeouts;
 }
 export interface DataAzureadApplicationPublishedAppIdsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_published_app_ids#read DataAzureadApplicationPublishedAppIds#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_published_app_ids#read DataAzureadApplicationPublishedAppIds#read}
   */
   readonly read?: string;
 }
@@ -103,7 +98,7 @@ export class DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_published_app_ids azuread_application_published_app_ids}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_published_app_ids azuread_application_published_app_ids}
 */
 export class DataAzureadApplicationPublishedAppIds extends cdktf.TerraformDataSource {
 
@@ -117,7 +112,7 @@ export class DataAzureadApplicationPublishedAppIds extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/application_published_app_ids azuread_application_published_app_ids} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/application_published_app_ids azuread_application_published_app_ids} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -128,7 +123,7 @@ export class DataAzureadApplicationPublishedAppIds extends cdktf.TerraformDataSo
       terraformResourceType: 'azuread_application_published_app_ids',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.41.0',
+        providerVersion: '2.42.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

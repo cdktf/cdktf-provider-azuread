@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/named_location
+// https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/named_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadNamedLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/named_location#display_name DataAzureadNamedLocation#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/named_location#display_name DataAzureadNamedLocation#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/named_location#id DataAzureadNamedLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/named_location#id DataAzureadNamedLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +21,7 @@ export interface DataAzureadNamedLocationConfig extends cdktf.TerraformMetaArgum
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/named_location#timeouts DataAzureadNamedLocation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/named_location#timeouts DataAzureadNamedLocation#timeouts}
   */
   readonly timeouts?: DataAzureadNamedLocationTimeouts;
 }
@@ -170,7 +165,7 @@ export class DataAzureadNamedLocationIpList extends cdktf.ComplexList {
 }
 export interface DataAzureadNamedLocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}
   */
   readonly read?: string;
 }
@@ -245,7 +240,7 @@ export class DataAzureadNamedLocationTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/named_location azuread_named_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/named_location azuread_named_location}
 */
 export class DataAzureadNamedLocation extends cdktf.TerraformDataSource {
 
@@ -259,7 +254,7 @@ export class DataAzureadNamedLocation extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.41.0/docs/data-sources/named_location azuread_named_location} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/named_location azuread_named_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -270,7 +265,7 @@ export class DataAzureadNamedLocation extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_named_location',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.41.0',
+        providerVersion: '2.42.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
