@@ -40,6 +40,7 @@ The following submodules are available:
 - [dataAzureadUsers](./dataAzureadUsers.csharp.md)
 - [directoryRole](./directoryRole.csharp.md)
 - [directoryRoleAssignment](./directoryRoleAssignment.csharp.md)
+- [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.csharp.md)
 - [directoryRoleMember](./directoryRoleMember.csharp.md)
 - [group](./group.csharp.md)
 - [groupMember](./groupMember.csharp.md)

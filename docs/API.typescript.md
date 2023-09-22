@@ -40,6 +40,7 @@ The following submodules are available:
 - [dataAzureadUsers](./dataAzureadUsers.typescript.md)
 - [directoryRole](./directoryRole.typescript.md)
 - [directoryRoleAssignment](./directoryRoleAssignment.typescript.md)
+- [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.typescript.md)
 - [directoryRoleMember](./directoryRoleMember.typescript.md)
 - [group](./group.typescript.md)
 - [groupMember](./groupMember.typescript.md)

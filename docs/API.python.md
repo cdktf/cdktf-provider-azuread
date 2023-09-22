@@ -40,6 +40,7 @@ The following submodules are available:
 - [dataAzureadUsers](./dataAzureadUsers.python.md)
 - [directoryRole](./directoryRole.python.md)
 - [directoryRoleAssignment](./directoryRoleAssignment.python.md)
+- [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.python.md)
 - [directoryRoleMember](./directoryRoleMember.python.md)
 - [group](./group.python.md)
 - [groupMember](./groupMember.python.md)

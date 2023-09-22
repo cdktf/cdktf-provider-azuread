@@ -24,6 +24,7 @@ export * as conditionalAccessPolicy from './conditional-access-policy';
 export * as customDirectoryRole from './custom-directory-role';
 export * as directoryRole from './directory-role';
 export * as directoryRoleAssignment from './directory-role-assignment';
+export * as directoryRoleEligibilityScheduleRequest from './directory-role-eligibility-schedule-request';
 export * as directoryRoleMember from './directory-role-member';
 export * as group from './group';
 export * as groupMember from './group-member';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal
+// https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataAzureadServicePrincipalConfig extends cdktf.TerraformMetaAr
   /**
   * The application ID (client ID) of the application associated with this service principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal#application_id DataAzureadServicePrincipal#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal#application_id DataAzureadServicePrincipal#application_id}
   */
   readonly applicationId?: string;
   /**
   * The display name of the application associated with this service principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface DataAzureadServicePrincipalConfig extends cdktf.TerraformMetaAr
   /**
   * The object ID of the service principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
   */
   readonly timeouts?: DataAzureadServicePrincipalTimeouts;
 }
@@ -456,7 +456,7 @@ export class DataAzureadServicePrincipalSamlSingleSignOnList extends cdktf.Compl
 }
 export interface DataAzureadServicePrincipalTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}
   */
   readonly read?: string;
 }
@@ -531,7 +531,7 @@ export class DataAzureadServicePrincipalTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal azuread_service_principal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal azuread_service_principal}
 */
 export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
 
@@ -545,7 +545,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/service_principal azuread_service_principal} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal azuread_service_principal} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -556,7 +556,7 @@ export class DataAzureadServicePrincipal extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.42.0',
+        providerVersion: '2.43.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

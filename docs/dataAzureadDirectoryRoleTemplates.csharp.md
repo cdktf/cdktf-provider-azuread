@@ -1,6 +1,6 @@
 # `data_azuread_directory_role_templates`
 
-Refer to the Terraform Registory for docs: [`data_azuread_directory_role_templates`](https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/directory_role_templates).
+Refer to the Terraform Registory for docs: [`data_azuread_directory_role_templates`](https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_role_templates).
 
 # `dataAzureadDirectoryRoleTemplates` Submodule <a name="`dataAzureadDirectoryRoleTemplates` Submodule" id="@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_directory_role_templat
 
 ### DataAzureadDirectoryRoleTemplates <a name="DataAzureadDirectoryRoleTemplates" id="@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/directory_role_templates azuread_directory_role_templates}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_role_templates azuread_directory_role_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplates.Initializer"></a>
 
@@ -612,7 +612,7 @@ new DataAzureadDirectoryRoleTemplatesConfig {
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/directory_role_templates#id DataAzureadDirectoryRoleTemplates#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_role_templates#id DataAzureadDirectoryRoleTemplates#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesTimeouts">DataAzureadDirectoryRoleTemplatesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -695,7 +695,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/directory_role_templates#id DataAzureadDirectoryRoleTemplates#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_role_templates#id DataAzureadDirectoryRoleTemplates#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -712,7 +712,7 @@ public DataAzureadDirectoryRoleTemplatesTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/directory_role_templates#timeouts DataAzureadDirectoryRoleTemplates#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_role_templates#timeouts DataAzureadDirectoryRoleTemplates#timeouts}
 
 ---
 
@@ -745,7 +745,7 @@ new DataAzureadDirectoryRoleTemplatesTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/directory_role_templates#read DataAzureadDirectoryRoleTemplates#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_role_templates#read DataAzureadDirectoryRoleTemplates#read}. |
 
 ---
 
@@ -757,7 +757,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/data-sources/directory_role_templates#read DataAzureadDirectoryRoleTemplates#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_role_templates#read DataAzureadDirectoryRoleTemplates#read}.
 
 ---
 

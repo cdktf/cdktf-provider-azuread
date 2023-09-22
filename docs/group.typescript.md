@@ -1,6 +1,6 @@
 # `azuread_group`
 
-Refer to the Terraform Registory for docs: [`azuread_group`](https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group).
+Refer to the Terraform Registory for docs: [`azuread_group`](https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-azuread.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_group`](https://registry.te
 
 ### Group <a name="Group" id="@cdktf/provider-azuread.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group azuread_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group azuread_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.group.Group.Initializer"></a>
 
@@ -1355,7 +1355,7 @@ const groupConfig: group.GroupConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed">externalSendersAllowed</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists">hideFromAddressLists</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients">hideFromOutlookClients</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">mailEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailNickname">mailNickname</a></code> | <code>string</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.members">members</a></code> | <code>string[]</code> | A set of members who should be present in this group. |
@@ -1452,7 +1452,7 @@ public readonly displayName: string;
 
 The display name for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#display_name Group#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#display_name Group#display_name}
 
 ---
 
@@ -1468,7 +1468,7 @@ The administrative unit IDs in which the group should be.
 
 If empty, the group will be created at the tenant level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#administrative_unit_ids Group#administrative_unit_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#administrative_unit_ids Group#administrative_unit_ids}
 
 ---
 
@@ -1484,7 +1484,7 @@ Indicates whether this group can be assigned to an Azure Active Directory role.
 
 This property can only be `true` for security-enabled groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#assignable_to_role Group#assignable_to_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#assignable_to_role Group#assignable_to_role}
 
 ---
 
@@ -1498,7 +1498,7 @@ public readonly autoSubscribeNewMembers: boolean | IResolvable;
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#auto_subscribe_new_members Group#auto_subscribe_new_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#auto_subscribe_new_members Group#auto_subscribe_new_members}
 
 ---
 
@@ -1512,7 +1512,7 @@ public readonly behaviors: string[];
 
 The group behaviours for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#behaviors Group#behaviors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#behaviors Group#behaviors}
 
 ---
 
@@ -1526,7 +1526,7 @@ public readonly description: string;
 
 The description for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -1540,7 +1540,7 @@ public readonly dynamicMembership: GroupDynamicMembership;
 
 dynamic_membership block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#dynamic_membership Group#dynamic_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#dynamic_membership Group#dynamic_membership}
 
 ---
 
@@ -1554,7 +1554,7 @@ public readonly externalSendersAllowed: boolean | IResolvable;
 
 Indicates whether people external to the organization can send messages to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#external_senders_allowed Group#external_senders_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#external_senders_allowed Group#external_senders_allowed}
 
 ---
 
@@ -1568,7 +1568,7 @@ public readonly hideFromAddressLists: boolean | IResolvable;
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#hide_from_address_lists Group#hide_from_address_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#hide_from_address_lists Group#hide_from_address_lists}
 
 ---
 
@@ -1582,7 +1582,7 @@ public readonly hideFromOutlookClients: boolean | IResolvable;
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#hide_from_outlook_clients Group#hide_from_outlook_clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#hide_from_outlook_clients Group#hide_from_outlook_clients}
 
 ---
 
@@ -1594,7 +1594,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1613,7 +1613,7 @@ Whether the group is a mail enabled, with a shared group mailbox.
 
 At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#mail_enabled Group#mail_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#mail_enabled Group#mail_enabled}
 
 ---
 
@@ -1627,7 +1627,7 @@ public readonly mailNickname: string;
 
 The mail alias for the group, unique in the organisation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#mail_nickname Group#mail_nickname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#mail_nickname Group#mail_nickname}
 
 ---
 
@@ -1643,7 +1643,7 @@ A set of members who should be present in this group.
 
 Supported object types are Users, Groups or Service Principals
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#members Group#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#members Group#members}
 
 ---
 
@@ -1657,7 +1657,7 @@ public readonly onpremisesGroupType: string;
 
 Indicates the target on-premise group type the group will be written back as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#onpremises_group_type Group#onpremises_group_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#onpremises_group_type Group#onpremises_group_type}
 
 ---
 
@@ -1671,7 +1671,7 @@ public readonly owners: string[];
 
 A set of owners who own this group. Supported object types are Users or Service Principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#owners Group#owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#owners Group#owners}
 
 ---
 
@@ -1685,7 +1685,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 If `true`, will return an error if an existing group is found with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#prevent_duplicate_names Group#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#prevent_duplicate_names Group#prevent_duplicate_names}
 
 ---
 
@@ -1699,7 +1699,7 @@ public readonly provisioningOptions: string[];
 
 The group provisioning options for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#provisioning_options Group#provisioning_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#provisioning_options Group#provisioning_options}
 
 ---
 
@@ -1715,7 +1715,7 @@ Whether the group is a security group for controlling access to in-app resources
 
 At least one of `security_enabled` or `mail_enabled` must be specified. A group can be security enabled _and_ mail enabled
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#security_enabled Group#security_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#security_enabled Group#security_enabled}
 
 ---
 
@@ -1729,7 +1729,7 @@ public readonly theme: string;
 
 The colour theme for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#theme Group#theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#theme Group#theme}
 
 ---
 
@@ -1743,7 +1743,7 @@ public readonly timeouts: GroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#timeouts Group#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#timeouts Group#timeouts}
 
 ---
 
@@ -1759,7 +1759,7 @@ A set of group types to configure for the group.
 
 `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#types Group#types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#types Group#types}
 
 ---
 
@@ -1773,7 +1773,7 @@ public readonly visibility: string;
 
 Specifies the group join policy and group content visibility.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#visibility Group#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#visibility Group#visibility}
 
 ---
 
@@ -1787,7 +1787,7 @@ public readonly writebackEnabled: boolean | IResolvable;
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#writeback_enabled Group#writeback_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#writeback_enabled Group#writeback_enabled}
 
 ---
 
@@ -1805,7 +1805,7 @@ const groupDynamicMembership: group.GroupDynamicMembership = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#enabled Group#enabled}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#enabled Group#enabled}. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.rule">rule</a></code> | <code>string</code> | Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'. |
 
 ---
@@ -1818,7 +1818,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#enabled Group#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#enabled Group#enabled}.
 
 ---
 
@@ -1832,7 +1832,7 @@ public readonly rule: string;
 
 Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#rule Group#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#rule Group#rule}
 
 ---
 
@@ -1850,10 +1850,10 @@ const groupTimeouts: group.GroupTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#create Group#create}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#delete Group#delete}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#read Group#read}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#update Group#update}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#create Group#create}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#delete Group#delete}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#read Group#read}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#update Group#update}. |
 
 ---
 
@@ -1865,7 +1865,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#create Group#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#create Group#create}.
 
 ---
 
@@ -1877,7 +1877,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#delete Group#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#delete Group#delete}.
 
 ---
 
@@ -1889,7 +1889,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#read Group#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#read Group#read}.
 
 ---
 
@@ -1901,7 +1901,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/group#update Group#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/group#update Group#update}.
 
 ---
 

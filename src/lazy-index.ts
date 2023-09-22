@@ -24,6 +24,7 @@ Object.defineProperty(exports, 'conditionalAccessPolicy', { get: function () { r
 Object.defineProperty(exports, 'customDirectoryRole', { get: function () { return require('./custom-directory-role'); } });
 Object.defineProperty(exports, 'directoryRole', { get: function () { return require('./directory-role'); } });
 Object.defineProperty(exports, 'directoryRoleAssignment', { get: function () { return require('./directory-role-assignment'); } });
+Object.defineProperty(exports, 'directoryRoleEligibilityScheduleRequest', { get: function () { return require('./directory-role-eligibility-schedule-request'); } });
 Object.defineProperty(exports, 'directoryRoleMember', { get: function () { return require('./directory-role-member'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'groupMember', { get: function () { return require('./group-member'); } });
