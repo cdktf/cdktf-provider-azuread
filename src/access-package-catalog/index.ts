@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog
+// https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface AccessPackageCatalogConfig extends cdktf.TerraformMetaArguments
   /**
   * The description of the access package catalog
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#description AccessPackageCatalog#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#description AccessPackageCatalog#description}
   */
   readonly description: string;
   /**
   * The display name of the access package catalog
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#display_name AccessPackageCatalog#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#display_name AccessPackageCatalog#display_name}
   */
   readonly displayName: string;
   /**
   * Whether the access packages in this catalog can be requested by users outside the tenant
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#externally_visible AccessPackageCatalog#externally_visible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#externally_visible AccessPackageCatalog#externally_visible}
   */
   readonly externallyVisible?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#id AccessPackageCatalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#id AccessPackageCatalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +35,31 @@ export interface AccessPackageCatalogConfig extends cdktf.TerraformMetaArguments
   /**
   * Whether the access packages in this catalog are available for management
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#published AccessPackageCatalog#published}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#published AccessPackageCatalog#published}
   */
   readonly published?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#timeouts AccessPackageCatalog#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#timeouts AccessPackageCatalog#timeouts}
   */
   readonly timeouts?: AccessPackageCatalogTimeouts;
 }
 export interface AccessPackageCatalogTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#create AccessPackageCatalog#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#create AccessPackageCatalog#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#delete AccessPackageCatalog#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#delete AccessPackageCatalog#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#read AccessPackageCatalog#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#read AccessPackageCatalog#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog#update AccessPackageCatalog#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog#update AccessPackageCatalog#update}
   */
   readonly update?: string;
 }
@@ -208,7 +203,7 @@ export class AccessPackageCatalogTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog azuread_access_package_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog azuread_access_package_catalog}
 */
 export class AccessPackageCatalog extends cdktf.TerraformResource {
 
@@ -222,7 +217,7 @@ export class AccessPackageCatalog extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/access_package_catalog azuread_access_package_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_catalog azuread_access_package_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -233,7 +228,7 @@ export class AccessPackageCatalog extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_access_package_catalog',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.42.0',
+        providerVersion: '2.43.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

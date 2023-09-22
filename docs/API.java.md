@@ -40,6 +40,7 @@ The following submodules are available:
 - [dataAzureadUsers](./dataAzureadUsers.java.md)
 - [directoryRole](./directoryRole.java.md)
 - [directoryRoleAssignment](./directoryRoleAssignment.java.md)
+- [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.java.md)
 - [directoryRoleMember](./directoryRoleMember.java.md)
 - [group](./group.java.md)
 - [groupMember](./groupMember.java.md)

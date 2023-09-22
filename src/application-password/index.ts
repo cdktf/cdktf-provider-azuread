@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password
+// https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface ApplicationPasswordConfig extends cdktf.TerraformMetaArguments 
   /**
   * The object ID of the application for which this password should be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#application_object_id ApplicationPassword#application_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#application_object_id ApplicationPassword#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * A display name for the password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#display_name ApplicationPassword#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#display_name ApplicationPassword#display_name}
   */
   readonly displayName?: string;
   /**
   * The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#end_date ApplicationPassword#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#end_date ApplicationPassword#end_date}
   */
   readonly endDate?: string;
   /**
   * A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#end_date_relative ApplicationPassword#end_date_relative}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#end_date_relative ApplicationPassword#end_date_relative}
   */
   readonly endDateRelative?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#id ApplicationPassword#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#id ApplicationPassword#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +41,37 @@ export interface ApplicationPasswordConfig extends cdktf.TerraformMetaArguments 
   /**
   * Arbitrary map of values that, when changed, will trigger rotation of the password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#rotate_when_changed ApplicationPassword#rotate_when_changed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#rotate_when_changed ApplicationPassword#rotate_when_changed}
   */
   readonly rotateWhenChanged?: { [key: string]: string };
   /**
   * The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#start_date ApplicationPassword#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#start_date ApplicationPassword#start_date}
   */
   readonly startDate?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#timeouts ApplicationPassword#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#timeouts ApplicationPassword#timeouts}
   */
   readonly timeouts?: ApplicationPasswordTimeouts;
 }
 export interface ApplicationPasswordTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#create ApplicationPassword#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#create ApplicationPassword#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#delete ApplicationPassword#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#delete ApplicationPassword#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#read ApplicationPassword#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#read ApplicationPassword#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password#update ApplicationPassword#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password#update ApplicationPassword#update}
   */
   readonly update?: string;
 }
@@ -220,7 +215,7 @@ export class ApplicationPasswordTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password azuread_application_password}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password azuread_application_password}
 */
 export class ApplicationPassword extends cdktf.TerraformResource {
 
@@ -234,7 +229,7 @@ export class ApplicationPassword extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.42.0/docs/resources/application_password azuread_application_password} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_password azuread_application_password} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +240,7 @@ export class ApplicationPassword extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_password',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.42.0',
+        providerVersion: '2.43.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
