@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
 
 provider.NewAzureadProvider(scope Construct, id *string, config AzureadProviderConfig) AzureadProvider
 ```
@@ -287,7 +287,7 @@ func ResetUseOidc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.provider.AzureadProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
 
 provider.AzureadProvider_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
 
 provider.AzureadProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ provider.AzureadProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
 
 provider.AzureadProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v10/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
 
 &provider.AzureadProviderConfig {
 	Alias: *string,
