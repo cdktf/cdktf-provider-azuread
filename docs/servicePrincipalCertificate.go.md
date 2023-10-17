@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalcertificate"
 
 serviceprincipalcertificate.NewServicePrincipalCertificate(scope Construct, id *string, config ServicePrincipalCertificateConfig) ServicePrincipalCertificate
 ```
@@ -339,7 +339,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalcertificate"
 
 serviceprincipalcertificate.ServicePrincipalCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalcertificate"
 
 serviceprincipalcertificate.ServicePrincipalCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ serviceprincipalcertificate.ServicePrincipalCertificate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalcertificate"
 
 serviceprincipalcertificate.ServicePrincipalCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalcertificate"
 
 &serviceprincipalcertificate.ServicePrincipalCertificateConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalc
 	Id: *string,
 	KeyId: *string,
 	StartDate: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.servicePrincipalCertificate.ServicePrincipalCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.servicePrincipalCertificate.ServicePrincipalCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalcertificate"
 
 &serviceprincipalcertificate.ServicePrincipalCertificateTimeouts {
 	Create: *string,
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalcertificate"
 
 serviceprincipalcertificate.NewServicePrincipalCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalCertificateTimeoutsOutputReference
 ```
