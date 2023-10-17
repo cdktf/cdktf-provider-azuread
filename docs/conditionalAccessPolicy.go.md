@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicy(scope Construct, id *string, config ConditionalAccessPolicyConfig) ConditionalAccessPolicy
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.putConditions">PutConditions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.putGrantControls">PutGrantControls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.putSessionControls">PutSessionControls</a></code> | *No description.* |
@@ -144,6 +147,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.getAnyMapAttribute"></a>
 
@@ -253,6 +272,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.interpolationForAttribute"></a>
 
 ```go
@@ -262,6 +299,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -344,13 +405,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ConditionalAccessPolicy resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.ConditionalAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -382,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.ConditionalAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -396,7 +458,7 @@ conditionalaccesspolicy.ConditionalAccessPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.ConditionalAccessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -404,6 +466,50 @@ conditionalaccesspolicy.ConditionalAccessPolicy_IsTerraformResource(x interface{
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
+
+conditionalaccesspolicy.ConditionalAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ConditionalAccessPolicy resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ConditionalAccessPolicy to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ConditionalAccessPolicy that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/conditional_access_policy#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicy.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ConditionalAccessPolicy to import is found.
 
 ---
 
@@ -749,16 +855,16 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditions {
-	Applications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditionsApplications,
+	Applications: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsApplications,
 	ClientAppTypes: *[]*string,
-	Users: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditionsUsers,
-	ClientApplications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditionsClientApplications,
-	Devices: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevices,
-	Locations: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditionsLocations,
-	Platforms: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditionsPlatforms,
+	Users: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsUsers,
+	ClientApplications: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsClientApplications,
+	Devices: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevices,
+	Locations: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsLocations,
+	Platforms: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsPlatforms,
 	ServicePrincipalRiskLevels: *[]*string,
 	SignInRiskLevels: *[]*string,
 	UserRiskLevels: *[]*string,
@@ -919,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditionsApplications {
 	ExcludedApplications: *[]*string,
@@ -979,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsClientApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditionsClientApplications {
 	ExcludedServicePrincipals: *[]*string,
@@ -1025,10 +1131,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditionsDevices {
-	Filter: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevicesFilter,
+	Filter: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevicesFilter,
 }
 ```
 
@@ -1059,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevicesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditionsDevicesFilter {
 	Mode: *string,
@@ -1105,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditionsLocations {
 	IncludedLocations: *[]*string,
@@ -1151,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsPlatforms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditionsPlatforms {
 	IncludedPlatforms: *[]*string,
@@ -1197,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConditionsUsers {
 	ExcludedGroups: *[]*string,
@@ -1299,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyConfig {
 	Connection: interface{},
@@ -1309,13 +1415,13 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccess
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Conditions: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyConditions,
+	Conditions: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditions,
 	DisplayName: *string,
 	State: *string,
-	GrantControls: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyGrantControls,
+	GrantControls: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyGrantControls,
 	Id: *string,
-	SessionControls: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicySessionControls,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.conditionalAccessPolicy.ConditionalAccessPolicyTimeouts,
+	SessionControls: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicySessionControls,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.conditionalAccessPolicy.ConditionalAccessPolicyTimeouts,
 }
 ```
 
@@ -1510,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyGrantControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyGrantControls {
 	Operator: *string,
@@ -1584,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicySessionControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicySessionControls {
 	ApplicationEnforcedRestrictionsEnabled: interface{},
@@ -1686,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 &conditionalaccesspolicy.ConditionalAccessPolicyTimeouts {
 	Create: *string,
@@ -1762,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsApplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsApplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsApplicationsOutputReference
 ```
@@ -2098,7 +2204,7 @@ func InternalValue() ConditionalAccessPolicyConditionsApplications
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsClientApplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsClientApplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsClientApplicationsOutputReference
 ```
@@ -2405,7 +2511,7 @@ func InternalValue() ConditionalAccessPolicyConditionsClientApplications
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevicesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsDevicesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsDevicesFilterOutputReference
 ```
@@ -2698,7 +2804,7 @@ func InternalValue() ConditionalAccessPolicyConditionsDevicesFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsDevicesOutputReference
 ```
@@ -2989,7 +3095,7 @@ func InternalValue() ConditionalAccessPolicyConditionsDevices
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsLocationsOutputReference
 ```
@@ -3289,7 +3395,7 @@ func InternalValue() ConditionalAccessPolicyConditionsLocations
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsOutputReference
 ```
@@ -3885,7 +3991,7 @@ func InternalValue() ConditionalAccessPolicyConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsPlatformsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsPlatformsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsPlatformsOutputReference
 ```
@@ -4185,7 +4291,7 @@ func InternalValue() ConditionalAccessPolicyConditionsPlatforms
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyConditionsUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyConditionsUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyConditionsUsersOutputReference
 ```
@@ -4608,7 +4714,7 @@ func InternalValue() ConditionalAccessPolicyConditionsUsers
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyGrantControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyGrantControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyGrantControlsOutputReference
 ```
@@ -4966,7 +5072,7 @@ func InternalValue() ConditionalAccessPolicyGrantControls
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicySessionControlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicySessionControlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicySessionControlsOutputReference
 ```
@@ -5389,7 +5495,7 @@ func InternalValue() ConditionalAccessPolicySessionControls
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.conditionalAccessPolicy.ConditionalAccessPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/conditionalaccesspolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/conditionalaccesspolicy"
 
 conditionalaccesspolicy.NewConditionalAccessPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConditionalAccessPolicyTimeoutsOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipal(scope Construct, id *string, config DataAzureadServicePrincipalConfig) DataAzureadServicePrincipal
 ```
@@ -312,13 +312,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzureadServicePrincipal resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.DataAzureadServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.DataAzureadServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +365,7 @@ dataazureadserviceprincipal.DataAzureadServicePrincipal_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.DataAzureadServicePrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,6 +373,50 @@ dataazureadserviceprincipal.DataAzureadServicePrincipal_IsTerraformDataSource(x 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
+
+dataazureadserviceprincipal.DataAzureadServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAzureadServicePrincipal resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAzureadServicePrincipal to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAzureadServicePrincipal that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipal.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAzureadServicePrincipal to import is found.
 
 ---
 
@@ -915,7 +960,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalAppRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 &dataazureadserviceprincipal.DataAzureadServicePrincipalAppRoles {
 
@@ -928,7 +973,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadservic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 &dataazureadserviceprincipal.DataAzureadServicePrincipalConfig {
 	Connection: interface{},
@@ -942,7 +987,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadservic
 	DisplayName: *string,
 	Id: *string,
 	ObjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.dataAzureadServicePrincipal.DataAzureadServicePrincipalTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalTimeouts,
 }
 ```
 
@@ -1111,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 &dataazureadserviceprincipal.DataAzureadServicePrincipalFeatures {
 
@@ -1124,7 +1169,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadservic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalFeatureTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 &dataazureadserviceprincipal.DataAzureadServicePrincipalFeatureTags {
 
@@ -1137,7 +1182,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadservic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalOauth2PermissionScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 &dataazureadserviceprincipal.DataAzureadServicePrincipalOauth2PermissionScopes {
 
@@ -1150,7 +1195,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadservic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalSamlSingleSignOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 &dataazureadserviceprincipal.DataAzureadServicePrincipalSamlSingleSignOn {
 
@@ -1163,7 +1208,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadservic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 &dataazureadserviceprincipal.DataAzureadServicePrincipalTimeouts {
 	Read: *string,
@@ -1197,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalAppRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalAppRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalAppRolesList
 ```
@@ -1329,7 +1374,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalAppRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalAppRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadServicePrincipalAppRolesOutputReference
 ```
@@ -1662,7 +1707,7 @@ func InternalValue() DataAzureadServicePrincipalAppRoles
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalFeaturesList
 ```
@@ -1794,7 +1839,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadServicePrincipalFeaturesOutputReference
 ```
@@ -2105,7 +2150,7 @@ func InternalValue() DataAzureadServicePrincipalFeatures
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalFeatureTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalFeatureTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalFeatureTagsList
 ```
@@ -2237,7 +2282,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalFeatureTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalFeatureTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadServicePrincipalFeatureTagsOutputReference
 ```
@@ -2548,7 +2593,7 @@ func InternalValue() DataAzureadServicePrincipalFeatureTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalOauth2PermissionScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalOauth2PermissionScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalOauth2PermissionScopesList
 ```
@@ -2680,7 +2725,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalOauth2PermissionScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalOauth2PermissionScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadServicePrincipalOauth2PermissionScopesOutputReference
 ```
@@ -3035,7 +3080,7 @@ func InternalValue() DataAzureadServicePrincipalOauth2PermissionScopes
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalSamlSingleSignOnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalSamlSingleSignOnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalSamlSingleSignOnList
 ```
@@ -3167,7 +3212,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalSamlSingleSignOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalSamlSingleSignOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadServicePrincipalSamlSingleSignOnOutputReference
 ```
@@ -3445,7 +3490,7 @@ func InternalValue() DataAzureadServicePrincipalSamlSingleSignOn
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipal.DataAzureadServicePrincipalTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadserviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipal"
 
 dataazureadserviceprincipal.NewDataAzureadServicePrincipalTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadServicePrincipalTimeoutsOutputReference
 ```

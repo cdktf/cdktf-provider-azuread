@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role_eligibility_schedule_request
 // generated from terraform resource schema
 
@@ -216,6 +211,20 @@ export class DirectoryRoleEligibilityScheduleRequest extends cdktf.TerraformReso
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "azuread_directory_role_eligibility_schedule_request";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DirectoryRoleEligibilityScheduleRequest resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DirectoryRoleEligibilityScheduleRequest to import
+  * @param importFromId The id of the existing DirectoryRoleEligibilityScheduleRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role_eligibility_schedule_request#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DirectoryRoleEligibilityScheduleRequest to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_directory_role_eligibility_schedule_request", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

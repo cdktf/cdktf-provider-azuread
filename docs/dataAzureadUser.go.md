@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
 
 dataazureaduser.NewDataAzureadUser(scope Construct, id *string, config DataAzureadUserConfig) DataAzureadUser
 ```
@@ -326,13 +326,14 @@ func ResetUserPrincipalName()
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzureadUser resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
 
 dataazureaduser.DataAzureadUser_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
 
 dataazureaduser.DataAzureadUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +379,7 @@ dataazureaduser.DataAzureadUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
 
 dataazureaduser.DataAzureadUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,6 +387,50 @@ dataazureaduser.DataAzureadUser_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
+
+dataazureaduser.DataAzureadUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAzureadUser resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAzureadUser to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAzureadUser that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUser.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAzureadUser to import is found.
 
 ---
 
@@ -1127,7 +1172,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
 
 &dataazureaduser.DataAzureadUserConfig {
 	Connection: interface{},
@@ -1142,7 +1187,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
 	Mail: *string,
 	MailNickname: *string,
 	ObjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.dataAzureadUser.DataAzureadUserTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadUser.DataAzureadUserTimeouts,
 	UserPrincipalName: *string,
 }
 ```
@@ -1342,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
 
 &dataazureaduser.DataAzureadUserTimeouts {
 	Read: *string,
@@ -1376,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUser.DataAzureadUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureaduser"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureaduser"
 
 dataazureaduser.NewDataAzureadUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadUserTimeoutsOutputReference
 ```
