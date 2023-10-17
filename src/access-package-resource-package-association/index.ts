@@ -184,6 +184,20 @@ export class AccessPackageResourcePackageAssociation extends cdktf.TerraformReso
   // =================
   public static readonly tfResourceType = "azuread_access_package_resource_package_association";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AccessPackageResourcePackageAssociation resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AccessPackageResourcePackageAssociation to import
+  * @param importFromId The id of the existing AccessPackageResourcePackageAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/access_package_resource_package_association#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AccessPackageResourcePackageAssociation to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_resource_package_association", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

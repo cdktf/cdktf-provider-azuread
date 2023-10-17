@@ -124,6 +124,20 @@ export class DataAzureadAccessPackageCatalog extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "azuread_access_package_catalog";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAzureadAccessPackageCatalog resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAzureadAccessPackageCatalog to import
+  * @param importFromId The id of the existing DataAzureadAccessPackageCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/access_package_catalog#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAzureadAccessPackageCatalog to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_catalog", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
