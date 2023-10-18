@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.namedLocation.NamedLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NewNamedLocation(scope Construct, id *string, config NamedLocationConfig) NamedLocation
 ```
@@ -399,7 +399,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.namedLocation.NamedLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NamedLocation_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.namedLocation.NamedLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NamedLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ namedlocation.NamedLocation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.namedLocation.NamedLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NamedLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ namedlocation.NamedLocation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.namedLocation.NamedLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NamedLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.namedLocation.NamedLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 &namedlocation.NamedLocationConfig {
 	Connection: interface{},
@@ -809,10 +809,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
-	Country: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.namedLocation.NamedLocationCountry,
+	Country: github.com/cdktf/cdktf-provider-azuread-go/azuread.namedLocation.NamedLocationCountry,
 	Id: *string,
-	Ip: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.namedLocation.NamedLocationIp,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.namedLocation.NamedLocationTimeouts,
+	Ip: github.com/cdktf/cdktf-provider-azuread-go/azuread.namedLocation.NamedLocationIp,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.namedLocation.NamedLocationTimeouts,
 }
 ```
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.namedLocation.NamedLocationCountry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 &namedlocation.NamedLocationCountry {
 	CountriesAndRegions: *[]*string,
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.namedLocation.NamedLocationIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 &namedlocation.NamedLocationIp {
 	IpRanges: *[]*string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.namedLocation.NamedLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 &namedlocation.NamedLocationTimeouts {
 	Create: *string,
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.namedLocation.NamedLocationCountryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NewNamedLocationCountryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NamedLocationCountryOutputReference
 ```
@@ -1447,7 +1447,7 @@ func InternalValue() NamedLocationCountry
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.namedLocation.NamedLocationIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NewNamedLocationIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NamedLocationIpOutputReference
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() NamedLocationIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.namedLocation.NamedLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/namedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/namedlocation"
 
 namedlocation.NewNamedLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NamedLocationTimeoutsOutputReference
 ```
