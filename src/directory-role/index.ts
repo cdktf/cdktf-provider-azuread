@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role
+// https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DirectoryRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the directory role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#display_name DirectoryRole#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#display_name DirectoryRole#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#id DirectoryRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#id DirectoryRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,33 +28,29 @@ export interface DirectoryRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The object ID of the template associated with the directory role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#template_id DirectoryRole#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#template_id DirectoryRole#template_id}
   */
   readonly templateId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#timeouts DirectoryRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#timeouts DirectoryRole#timeouts}
   */
   readonly timeouts?: DirectoryRoleTimeouts;
 }
 export interface DirectoryRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#create DirectoryRole#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#create DirectoryRole#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#delete DirectoryRole#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#delete DirectoryRole#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#read DirectoryRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#read DirectoryRole#read}
   */
   readonly read?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#update DirectoryRole#update}
-  */
-  readonly update?: string;
 }
 
 export function directoryRoleTimeoutsToTerraform(struct?: DirectoryRoleTimeouts | cdktf.IResolvable): any {
@@ -66,7 +62,6 @@ export function directoryRoleTimeoutsToTerraform(struct?: DirectoryRoleTimeouts 
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
     read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -100,10 +95,6 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.update = this._update;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -114,7 +105,6 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
-      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -126,7 +116,6 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
-      this._update = value.update;
     }
   }
 
@@ -177,26 +166,10 @@ export class DirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
   public get readInput() {
     return this._read;
   }
-
-  // update - computed: false, optional: true, required: false
-  private _update?: string; 
-  public get update() {
-    return this.getStringAttribute('update');
-  }
-  public set update(value: string) {
-    this._update = value;
-  }
-  public resetUpdate() {
-    this._update = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateInput() {
-    return this._update;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role azuread_directory_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role azuread_directory_role}
 */
 export class DirectoryRole extends cdktf.TerraformResource {
 
@@ -212,7 +185,7 @@ export class DirectoryRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DirectoryRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryRole to import
-  * @param importFromId The id of the existing DirectoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DirectoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +197,7 @@ export class DirectoryRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/directory_role azuread_directory_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role azuread_directory_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +208,7 @@ export class DirectoryRole extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_directory_role',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.43.0',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

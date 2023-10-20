@@ -1,6 +1,6 @@
 # `azuread_service_principal`
 
-Refer to the Terraform Registory for docs: [`azuread_service_principal`](https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal).
+Refer to the Terraform Registory for docs: [`azuread_service_principal`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal).
 
 # `servicePrincipal` Submodule <a name="`servicePrincipal` Submodule" id="@cdktf/provider-azuread.servicePrincipal"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_service_principal`](https:/
 
 ### ServicePrincipal <a name="ServicePrincipal" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal azuread_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal azuread_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer"></a>
 
@@ -44,7 +44,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig">ServicePrincipalConfig</a>
 
@@ -79,7 +79,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAccountEnabled">ResetAccountEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAlternativeNames">ResetAlternativeNames</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetApplicationId">ResetApplicationId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAppRoleAssignmentRequired">ResetAppRoleAssignmentRequired</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetClientId">ResetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatures">ResetFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatureTags">ResetFeatureTags</a></code> | *No description.* |
@@ -398,10 +400,22 @@ func ResetAccountEnabled()
 func ResetAlternativeNames()
 ```
 
+##### `ResetApplicationId` <a name="ResetApplicationId" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetApplicationId"></a>
+
+```go
+func ResetApplicationId()
+```
+
 ##### `ResetAppRoleAssignmentRequired` <a name="ResetAppRoleAssignmentRequired" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAppRoleAssignmentRequired"></a>
 
 ```go
 func ResetAppRoleAssignmentRequired()
+```
+
+##### `ResetClientId` <a name="ResetClientId" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetClientId"></a>
+
+```go
+func ResetClientId()
 ```
 
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetDescription"></a>
@@ -585,7 +599,7 @@ The construct id used in the generated config for the ServicePrincipal to import
 
 The id of the existing ServicePrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -637,6 +651,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNamesInput">AlternativeNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.applicationIdInput">ApplicationIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequiredInput">AppRoleAssignmentRequiredInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featuresInput">FeaturesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTagsInput">FeatureTagsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -654,6 +669,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNames">AlternativeNames</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.applicationId">ApplicationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequired">AppRoleAssignmentRequired</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrl">LoginUrl</a></code> | <code>*string</code> | *No description.* |
@@ -1028,6 +1044,16 @@ func AppRoleAssignmentRequiredInput() interface{}
 
 ---
 
+##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientIdInput"></a>
+
+```go
+func ClientIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.descriptionInput"></a>
 
 ```go
@@ -1198,6 +1224,16 @@ func AppRoleAssignmentRequired() interface{}
 
 ---
 
+##### `ClientId`<sup>Required</sup> <a name="ClientId" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientId"></a>
+
+```go
+func ClientId() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.description"></a>
 
 ```go
@@ -1336,10 +1372,11 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipal"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ApplicationId: *string,
 	AccountEnabled: interface{},
 	AlternativeNames: *[]*string,
+	ApplicationId: *string,
 	AppRoleAssignmentRequired: interface{},
+	ClientId: *string,
 	Description: *string,
 	Features: interface{},
 	FeatureTags: interface{},
@@ -1367,14 +1404,15 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipal"
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The application ID (client ID) of the application for which to create a service principal. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.accountEnabled">AccountEnabled</a></code> | <code>interface{}</code> | Whether or not the service principal account is enabled. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.alternativeNames">AlternativeNames</a></code> | <code>*[]*string</code> | A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The application ID (client ID) of the application for which to create a service principal. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.appRoleAssignmentRequired">AppRoleAssignmentRequired</a></code> | <code>interface{}</code> | Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.clientId">ClientId</a></code> | <code>*string</code> | The client ID of the application for which to create a service principal. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.description">Description</a></code> | <code>*string</code> | Description of the service principal provided for internal end-users. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.features">Features</a></code> | <code>interface{}</code> | features block. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.featureTags">FeatureTags</a></code> | <code>interface{}</code> | feature_tags block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#id ServicePrincipal#id}. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#id ServicePrincipal#id}. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.loginUrl">LoginUrl</a></code> | <code>*string</code> | The URL where the service provider redirects the user to Azure AD to authenticate. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notes">Notes</a></code> | <code>*string</code> | Free text field to capture information about the service principal, typically used for operational purposes. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notificationEmailAddresses">NotificationEmailAddresses</a></code> | <code>*[]*string</code> | List of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. |
@@ -1457,20 +1495,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `ApplicationId`<sup>Required</sup> <a name="ApplicationId" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.applicationId"></a>
-
-```go
-ApplicationId *string
-```
-
-- *Type:* *string
-
-The application ID (client ID) of the application for which to create a service principal.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#application_id ServicePrincipal#application_id}
-
----
-
 ##### `AccountEnabled`<sup>Optional</sup> <a name="AccountEnabled" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.accountEnabled"></a>
 
 ```go
@@ -1481,7 +1505,7 @@ AccountEnabled interface{}
 
 Whether or not the service principal account is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#account_enabled ServicePrincipal#account_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#account_enabled ServicePrincipal#account_enabled}
 
 ---
 
@@ -1495,7 +1519,21 @@ AlternativeNames *[]*string
 
 A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#alternative_names ServicePrincipal#alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#alternative_names ServicePrincipal#alternative_names}
+
+---
+
+##### `ApplicationId`<sup>Optional</sup> <a name="ApplicationId" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.applicationId"></a>
+
+```go
+ApplicationId *string
+```
+
+- *Type:* *string
+
+The application ID (client ID) of the application for which to create a service principal.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#application_id ServicePrincipal#application_id}
 
 ---
 
@@ -1509,7 +1547,21 @@ AppRoleAssignmentRequired interface{}
 
 Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#app_role_assignment_required ServicePrincipal#app_role_assignment_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#app_role_assignment_required ServicePrincipal#app_role_assignment_required}
+
+---
+
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.clientId"></a>
+
+```go
+ClientId *string
+```
+
+- *Type:* *string
+
+The client ID of the application for which to create a service principal.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#client_id ServicePrincipal#client_id}
 
 ---
 
@@ -1523,7 +1575,7 @@ Description *string
 
 Description of the service principal provided for internal end-users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#description ServicePrincipal#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#description ServicePrincipal#description}
 
 ---
 
@@ -1537,7 +1589,7 @@ Features interface{}
 
 features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#features ServicePrincipal#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#features ServicePrincipal#features}
 
 ---
 
@@ -1551,7 +1603,7 @@ FeatureTags interface{}
 
 feature_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#feature_tags ServicePrincipal#feature_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#feature_tags ServicePrincipal#feature_tags}
 
 ---
 
@@ -1563,7 +1615,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#id ServicePrincipal#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#id ServicePrincipal#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1582,7 +1634,7 @@ The URL where the service provider redirects the user to Azure AD to authenticat
 
 Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#login_url ServicePrincipal#login_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#login_url ServicePrincipal#login_url}
 
 ---
 
@@ -1596,7 +1648,7 @@ Notes *string
 
 Free text field to capture information about the service principal, typically used for operational purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#notes ServicePrincipal#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#notes ServicePrincipal#notes}
 
 ---
 
@@ -1612,7 +1664,7 @@ List of email addresses where Azure AD sends a notification when the active cert
 
 This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#notification_email_addresses ServicePrincipal#notification_email_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#notification_email_addresses ServicePrincipal#notification_email_addresses}
 
 ---
 
@@ -1626,7 +1678,7 @@ Owners *[]*string
 
 A list of object IDs of principals that will be granted ownership of the service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#owners ServicePrincipal#owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#owners ServicePrincipal#owners}
 
 ---
 
@@ -1642,7 +1694,7 @@ The single sign-on mode configured for this application.
 
 Azure AD uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Azure AD My Apps
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#preferred_single_sign_on_mode ServicePrincipal#preferred_single_sign_on_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#preferred_single_sign_on_mode ServicePrincipal#preferred_single_sign_on_mode}
 
 ---
 
@@ -1656,7 +1708,7 @@ SamlSingleSignOn ServicePrincipalSamlSingleSignOn
 
 saml_single_sign_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#saml_single_sign_on ServicePrincipal#saml_single_sign_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#saml_single_sign_on ServicePrincipal#saml_single_sign_on}
 
 ---
 
@@ -1670,7 +1722,7 @@ Tags *[]*string
 
 A set of tags to apply to the service principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#tags ServicePrincipal#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#tags ServicePrincipal#tags}
 
 ---
 
@@ -1684,7 +1736,7 @@ Timeouts ServicePrincipalTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#timeouts ServicePrincipal#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#timeouts ServicePrincipal#timeouts}
 
 ---
 
@@ -1698,7 +1750,7 @@ UseExisting interface{}
 
 When true, the resource will return an existing service principal instead of failing with an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#use_existing ServicePrincipal#use_existing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#use_existing ServicePrincipal#use_existing}
 
 ---
 
@@ -1738,7 +1790,7 @@ CustomSingleSignOnApp interface{}
 
 Whether this service principal represents a custom SAML application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#custom_single_sign_on_app ServicePrincipal#custom_single_sign_on_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#custom_single_sign_on_app ServicePrincipal#custom_single_sign_on_app}
 
 ---
 
@@ -1752,7 +1804,7 @@ EnterpriseApplication interface{}
 
 Whether this service principal represents an Enterprise Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#enterprise_application ServicePrincipal#enterprise_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#enterprise_application ServicePrincipal#enterprise_application}
 
 ---
 
@@ -1766,7 +1818,7 @@ GalleryApplication interface{}
 
 Whether this service principal represents a gallery application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#gallery_application ServicePrincipal#gallery_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#gallery_application ServicePrincipal#gallery_application}
 
 ---
 
@@ -1780,7 +1832,7 @@ VisibleToUsers interface{}
 
 Whether this app is visible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#visible_to_users ServicePrincipal#visible_to_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#visible_to_users ServicePrincipal#visible_to_users}
 
 ---
 
@@ -1820,7 +1872,7 @@ CustomSingleSignOn interface{}
 
 Whether this service principal represents a custom SAML application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
 
 ---
 
@@ -1834,7 +1886,7 @@ Enterprise interface{}
 
 Whether this service principal represents an Enterprise Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#enterprise ServicePrincipal#enterprise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#enterprise ServicePrincipal#enterprise}
 
 ---
 
@@ -1848,7 +1900,7 @@ Gallery interface{}
 
 Whether this service principal represents a gallery application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#gallery ServicePrincipal#gallery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#gallery ServicePrincipal#gallery}
 
 ---
 
@@ -1862,7 +1914,7 @@ Hide interface{}
 
 Whether this app is invisible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#hide ServicePrincipal#hide}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#hide ServicePrincipal#hide}
 
 ---
 
@@ -1909,7 +1961,7 @@ RelayState *string
 
 The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#relay_state ServicePrincipal#relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#relay_state ServicePrincipal#relay_state}
 
 ---
 
@@ -1932,10 +1984,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipal"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#create ServicePrincipal#create}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#delete ServicePrincipal#delete}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#read ServicePrincipal#read}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#update ServicePrincipal#update}. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#create ServicePrincipal#create}. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#delete ServicePrincipal#delete}. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#read ServicePrincipal#read}. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#update ServicePrincipal#update}. |
 
 ---
 
@@ -1947,7 +1999,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#create ServicePrincipal#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#create ServicePrincipal#create}.
 
 ---
 
@@ -1959,7 +2011,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#delete ServicePrincipal#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#delete ServicePrincipal#delete}.
 
 ---
 
@@ -1971,7 +2023,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#read ServicePrincipal#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#read ServicePrincipal#read}.
 
 ---
 
@@ -1983,7 +2035,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/service_principal#update ServicePrincipal#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/service_principal#update ServicePrincipal#update}.
 
 ---
 
