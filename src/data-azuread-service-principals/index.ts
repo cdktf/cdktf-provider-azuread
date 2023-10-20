@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals
+// https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,23 @@ export interface DataAzureadServicePrincipalsConfig extends cdktf.TerraformMetaA
   /**
   * The application IDs (client IDs) of the applications associated with the service principals
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#application_ids DataAzureadServicePrincipals#application_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#application_ids DataAzureadServicePrincipals#application_ids}
   */
   readonly applicationIds?: string[];
   /**
+  * The client IDs of the applications associated with the service principals
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#client_ids DataAzureadServicePrincipals#client_ids}
+  */
+  readonly clientIds?: string[];
+  /**
   * The display names of the applications associated with the service principals
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#display_names DataAzureadServicePrincipals#display_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#display_names DataAzureadServicePrincipals#display_names}
   */
   readonly displayNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +35,25 @@ export interface DataAzureadServicePrincipalsConfig extends cdktf.TerraformMetaA
   /**
   * Ignore missing service principals and return the service principals that were found. The data source will still fail if no service principals are found
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * The object IDs of the service principals
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Fetch all service principals with no filter and return all that were found. The data source will still fail if no service principals are found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#return_all DataAzureadServicePrincipals#return_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#return_all DataAzureadServicePrincipals#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
   */
   readonly timeouts?: DataAzureadServicePrincipalsTimeouts;
 }
@@ -116,6 +117,11 @@ export class DataAzureadServicePrincipalsServicePrincipalsOutputReference extend
     return this.getStringAttribute('application_tenant_id');
   }
 
+  // client_id - computed: true, optional: false, required: false
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+
   // display_name - computed: true, optional: false, required: false
   public get displayName() {
     return this.getStringAttribute('display_name');
@@ -177,7 +183,7 @@ export class DataAzureadServicePrincipalsServicePrincipalsList extends cdktf.Com
 }
 export interface DataAzureadServicePrincipalsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#read DataAzureadServicePrincipals#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#read DataAzureadServicePrincipals#read}
   */
   readonly read?: string;
 }
@@ -252,7 +258,7 @@ export class DataAzureadServicePrincipalsTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals azuread_service_principals}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals azuread_service_principals}
 */
 export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
 
@@ -268,7 +274,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAzureadServicePrincipals resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadServicePrincipals to import
-  * @param importFromId The id of the existing DataAzureadServicePrincipals that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadServicePrincipals that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadServicePrincipals to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -280,7 +286,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/service_principals azuread_service_principals} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/service_principals azuread_service_principals} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -291,7 +297,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_service_principals',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.43.0',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -303,6 +309,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._applicationIds = config.applicationIds;
+    this._clientIds = config.clientIds;
     this._displayNames = config.displayNames;
     this._id = config.id;
     this._ignoreMissing = config.ignoreMissing;
@@ -329,6 +336,22 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get applicationIdsInput() {
     return this._applicationIds;
+  }
+
+  // client_ids - computed: true, optional: true, required: false
+  private _clientIds?: string[]; 
+  public get clientIds() {
+    return this.getListAttribute('client_ids');
+  }
+  public set clientIds(value: string[]) {
+    this._clientIds = value;
+  }
+  public resetClientIds() {
+    this._clientIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdsInput() {
+    return this._clientIds;
   }
 
   // display_names - computed: true, optional: true, required: false
@@ -440,6 +463,7 @@ export class DataAzureadServicePrincipals extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applicationIds),
+      client_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clientIds),
       display_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._displayNames),
       id: cdktf.stringToTerraform(this._id),
       ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),

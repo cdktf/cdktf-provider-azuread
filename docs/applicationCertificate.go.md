@@ -1,6 +1,6 @@
 # `azuread_application_certificate`
 
-Refer to the Terraform Registory for docs: [`azuread_application_certificate`](https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate).
+Refer to the Terraform Registory for docs: [`azuread_application_certificate`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate).
 
 # `applicationCertificate` Submodule <a name="`applicationCertificate` Submodule" id="@cdktf/provider-azuread.applicationCertificate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_application_certificate`](h
 
 ### ApplicationCertificate <a name="ApplicationCertificate" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate azuread_application_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate azuread_application_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.NewApplicationCertificate(scope Construct, id *string, config ApplicationCertificateConfig) ApplicationCertificate
 ```
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetApplicationId">ResetApplicationId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetApplicationObjectId">ResetApplicationObjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetEncoding">ResetEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetEndDate">ResetEndDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetEndDateRelative">ResetEndDateRelative</a></code> | *No description.* |
@@ -339,6 +341,18 @@ func PutTimeouts(value ApplicationCertificateTimeouts)
 
 ---
 
+##### `ResetApplicationId` <a name="ResetApplicationId" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetApplicationId"></a>
+
+```go
+func ResetApplicationId()
+```
+
+##### `ResetApplicationObjectId` <a name="ResetApplicationObjectId" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetApplicationObjectId"></a>
+
+```go
+func ResetApplicationObjectId()
+```
+
 ##### `ResetEncoding` <a name="ResetEncoding" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.resetEncoding"></a>
 
 ```go
@@ -401,7 +415,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +447,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -447,7 +461,7 @@ applicationcertificate.ApplicationCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -461,7 +475,7 @@ applicationcertificate.ApplicationCertificate_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -490,7 +504,7 @@ The construct id used in the generated config for the ApplicationCertificate to 
 
 The id of the existing ApplicationCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,6 +535,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeoutsOutputReference">ApplicationCertificateTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.applicationIdInput">ApplicationIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.applicationObjectIdInput">ApplicationObjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.encodingInput">EncodingInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.endDateInput">EndDateInput</a></code> | <code>*string</code> | *No description.* |
@@ -531,6 +546,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.applicationId">ApplicationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.applicationObjectId">ApplicationObjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.encoding">Encoding</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.endDate">EndDate</a></code> | <code>*string</code> | *No description.* |
@@ -695,6 +711,16 @@ func Timeouts() ApplicationCertificateTimeoutsOutputReference
 
 ---
 
+##### `ApplicationIdInput`<sup>Optional</sup> <a name="ApplicationIdInput" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.applicationIdInput"></a>
+
+```go
+func ApplicationIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ApplicationObjectIdInput`<sup>Optional</sup> <a name="ApplicationObjectIdInput" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.applicationObjectIdInput"></a>
 
 ```go
@@ -789,6 +815,16 @@ func TypeInput() *string
 
 ```go
 func ValueInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ApplicationId`<sup>Required</sup> <a name="ApplicationId" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.property.applicationId"></a>
+
+```go
+func ApplicationId() *string
 ```
 
 - *Type:* *string
@@ -910,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 &applicationcertificate.ApplicationCertificateConfig {
 	Connection: interface{},
@@ -920,15 +956,16 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertif
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ApplicationObjectId: *string,
 	Value: *string,
+	ApplicationId: *string,
+	ApplicationObjectId: *string,
 	Encoding: *string,
 	EndDate: *string,
 	EndDateRelative: *string,
 	Id: *string,
 	KeyId: *string,
 	StartDate: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationCertificate.ApplicationCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationCertificate.ApplicationCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -944,12 +981,13 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertif
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.applicationObjectId">ApplicationObjectId</a></code> | <code>*string</code> | The object ID of the application for which this certificate should be created. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.value">Value</a></code> | <code>*string</code> | The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER. |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The resource ID of the application for which this certificate should be created. |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.applicationObjectId">ApplicationObjectId</a></code> | <code>*string</code> | The object ID of the application for which this certificate should be created. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.encoding">Encoding</a></code> | <code>*string</code> | Specifies the encoding used for the supplied certificate data. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.endDate">EndDate</a></code> | <code>*string</code> | The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If omitted, the API will decide a suitable expiry date, which is typically around 2 years from the start date. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.endDateRelative">EndDateRelative</a></code> | <code>*string</code> | A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m`. |
-| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#id ApplicationCertificate#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#id ApplicationCertificate#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.keyId">KeyId</a></code> | <code>*string</code> | A UUID used to uniquely identify this certificate. If omitted, a random UUID will be automatically generated. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.startDate">StartDate</a></code> | <code>*string</code> | The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date and time are use. |
 | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts">ApplicationCertificateTimeouts</a></code> | timeouts block. |
@@ -1027,20 +1065,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `ApplicationObjectId`<sup>Required</sup> <a name="ApplicationObjectId" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.applicationObjectId"></a>
-
-```go
-ApplicationObjectId *string
-```
-
-- *Type:* *string
-
-The object ID of the application for which this certificate should be created.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#application_object_id ApplicationCertificate#application_object_id}
-
----
-
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.value"></a>
 
 ```go
@@ -1051,9 +1075,37 @@ Value *string
 
 The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER.
 
-See also the `encoding` argumen
+See also the `encoding` argument
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#value ApplicationCertificate#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#value ApplicationCertificate#value}
+
+---
+
+##### `ApplicationId`<sup>Optional</sup> <a name="ApplicationId" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.applicationId"></a>
+
+```go
+ApplicationId *string
+```
+
+- *Type:* *string
+
+The resource ID of the application for which this certificate should be created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#application_id ApplicationCertificate#application_id}
+
+---
+
+##### `ApplicationObjectId`<sup>Optional</sup> <a name="ApplicationObjectId" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.property.applicationObjectId"></a>
+
+```go
+ApplicationObjectId *string
+```
+
+- *Type:* *string
+
+The object ID of the application for which this certificate should be created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#application_object_id ApplicationCertificate#application_object_id}
 
 ---
 
@@ -1067,7 +1119,7 @@ Encoding *string
 
 Specifies the encoding used for the supplied certificate data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#encoding ApplicationCertificate#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#encoding ApplicationCertificate#encoding}
 
 ---
 
@@ -1081,7 +1133,7 @@ EndDate *string
 
 The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If omitted, the API will decide a suitable expiry date, which is typically around 2 years from the start date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#end_date ApplicationCertificate#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#end_date ApplicationCertificate#end_date}
 
 ---
 
@@ -1095,7 +1147,7 @@ EndDateRelative *string
 
 A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#end_date_relative ApplicationCertificate#end_date_relative}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#end_date_relative ApplicationCertificate#end_date_relative}
 
 ---
 
@@ -1107,7 +1159,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#id ApplicationCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#id ApplicationCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1176,7 @@ KeyId *string
 
 A UUID used to uniquely identify this certificate. If omitted, a random UUID will be automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#key_id ApplicationCertificate#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#key_id ApplicationCertificate#key_id}
 
 ---
 
@@ -1138,7 +1190,7 @@ StartDate *string
 
 The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date and time are use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#start_date ApplicationCertificate#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#start_date ApplicationCertificate#start_date}
 
 ---
 
@@ -1152,7 +1204,7 @@ Timeouts ApplicationCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#timeouts ApplicationCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#timeouts ApplicationCertificate#timeouts}
 
 ---
 
@@ -1166,7 +1218,7 @@ Type *string
 
 The type of key/certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#type ApplicationCertificate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#type ApplicationCertificate#type}
 
 ---
 
@@ -1175,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 &applicationcertificate.ApplicationCertificateTimeouts {
 	Create: *string,
@@ -1189,10 +1241,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#create ApplicationCertificate#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#delete ApplicationCertificate#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#read ApplicationCertificate#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#update ApplicationCertificate#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#create ApplicationCertificate#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#delete ApplicationCertificate#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#read ApplicationCertificate#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#update ApplicationCertificate#update}. |
 
 ---
 
@@ -1204,7 +1256,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#create ApplicationCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#create ApplicationCertificate#create}.
 
 ---
 
@@ -1216,7 +1268,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#delete ApplicationCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#delete ApplicationCertificate#delete}.
 
 ---
 
@@ -1228,7 +1280,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#read ApplicationCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#read ApplicationCertificate#read}.
 
 ---
 
@@ -1240,7 +1292,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_certificate#update ApplicationCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_certificate#update ApplicationCertificate#update}.
 
 ---
 
@@ -1251,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.NewApplicationCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationCertificateTimeoutsOutputReference
 ```

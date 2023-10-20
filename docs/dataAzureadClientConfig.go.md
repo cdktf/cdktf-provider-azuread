@@ -1,6 +1,6 @@
 # `data_azuread_client_config`
 
-Refer to the Terraform Registory for docs: [`data_azuread_client_config`](https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config).
+Refer to the Terraform Registory for docs: [`data_azuread_client_config`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config).
 
 # `dataAzureadClientConfig` Submodule <a name="`dataAzureadClientConfig` Submodule" id="@cdktf/provider-azuread.dataAzureadClientConfig"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_azuread_client_config`](https:
 
 ### DataAzureadClientConfig <a name="DataAzureadClientConfig" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config azuread_client_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config azuread_client_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.NewDataAzureadClientConfig(scope Construct, id *string, config DataAzureadClientConfigConfig) DataAzureadClientConfig
 ```
@@ -298,7 +298,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataazureadclientconfig.DataAzureadClientConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataazureadclientconfig.DataAzureadClientConfig_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataAzureadClientConfig to
 
 The id of the existing DataAzureadClientConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 &dataazureadclientconfig.DataAzureadClientConfigConfig {
 	Connection: interface{},
@@ -653,7 +653,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclient
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.dataAzureadClientConfig.DataAzureadClientConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts,
 }
 ```
 
@@ -668,7 +668,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclient
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config#id DataAzureadClientConfig#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config#id DataAzureadClientConfig#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts">DataAzureadClientConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -751,7 +751,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config#id DataAzureadClientConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config#id DataAzureadClientConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -768,7 +768,7 @@ Timeouts DataAzureadClientConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config#timeouts DataAzureadClientConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config#timeouts DataAzureadClientConfig#timeouts}
 
 ---
 
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 &dataazureadclientconfig.DataAzureadClientConfigTimeouts {
 	Read: *string,
@@ -788,7 +788,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclient
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config#read DataAzureadClientConfig#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config#read DataAzureadClientConfig#read}. |
 
 ---
 
@@ -800,7 +800,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/client_config#read DataAzureadClientConfig#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/client_config#read DataAzureadClientConfig#read}.
 
 ---
 
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
 
 dataazureadclientconfig.NewDataAzureadClientConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadClientConfigTimeoutsOutputReference
 ```

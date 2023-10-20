@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation
+// https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface InvitationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#id Invitation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#id Invitation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +17,37 @@ export interface InvitationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The URL that the user should be redirected to once the invitation is redeemed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#redirect_url Invitation#redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#redirect_url Invitation#redirect_url}
   */
   readonly redirectUrl: string;
   /**
   * The display name of the user being invited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#user_display_name Invitation#user_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#user_display_name Invitation#user_display_name}
   */
   readonly userDisplayName?: string;
   /**
   * The email address of the user being invited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#user_email_address Invitation#user_email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#user_email_address Invitation#user_email_address}
   */
   readonly userEmailAddress: string;
   /**
   * The user type of the user being invited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#user_type Invitation#user_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#user_type Invitation#user_type}
   */
   readonly userType?: string;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#message Invitation#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#message Invitation#message}
   */
   readonly message?: InvitationMessage;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#timeouts Invitation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#timeouts Invitation#timeouts}
   */
   readonly timeouts?: InvitationTimeouts;
 }
@@ -60,19 +55,19 @@ export interface InvitationMessage {
   /**
   * Email addresses of additional recipients the invitation message should be sent to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#additional_recipients Invitation#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#additional_recipients Invitation#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Customized message body you want to send if you don't want to send the default message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#body Invitation#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#body Invitation#body}
   */
   readonly body?: string;
   /**
   * The language you want to send the default message in
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#language Invitation#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#language Invitation#language}
   */
   readonly language?: string;
 }
@@ -183,19 +178,19 @@ export class InvitationMessageOutputReference extends cdktf.ComplexObject {
 }
 export interface InvitationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#create Invitation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#create Invitation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#delete Invitation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#delete Invitation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#read Invitation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#read Invitation#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#update Invitation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#update Invitation#update}
   */
   readonly update?: string;
 }
@@ -339,7 +334,7 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation azuread_invitation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation azuread_invitation}
 */
 export class Invitation extends cdktf.TerraformResource {
 
@@ -355,7 +350,7 @@ export class Invitation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Invitation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Invitation to import
-  * @param importFromId The id of the existing Invitation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Invitation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Invitation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -367,7 +362,7 @@ export class Invitation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/invitation azuread_invitation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/invitation azuread_invitation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -378,7 +373,7 @@ export class Invitation extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_invitation',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.43.0',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

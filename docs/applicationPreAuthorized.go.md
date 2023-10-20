@@ -1,6 +1,6 @@
 # `azuread_application_pre_authorized`
 
-Refer to the Terraform Registory for docs: [`azuread_application_pre_authorized`](https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized).
+Refer to the Terraform Registory for docs: [`azuread_application_pre_authorized`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized).
 
 # `applicationPreAuthorized` Submodule <a name="`applicationPreAuthorized` Submodule" id="@cdktf/provider-azuread.applicationPreAuthorized"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_application_pre_authorized`
 
 ### ApplicationPreAuthorized <a name="ApplicationPreAuthorized" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 applicationpreauthorized.NewApplicationPreAuthorized(scope Construct, id *string, config ApplicationPreAuthorizedConfig) ApplicationPreAuthorized
 ```
@@ -74,6 +74,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetApplicationId">ResetApplicationId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetApplicationObjectId">ResetApplicationObjectId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetAuthorizedAppId">ResetAuthorizedAppId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetAuthorizedClientId">ResetAuthorizedClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -333,6 +337,30 @@ func PutTimeouts(value ApplicationPreAuthorizedTimeouts)
 
 ---
 
+##### `ResetApplicationId` <a name="ResetApplicationId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetApplicationId"></a>
+
+```go
+func ResetApplicationId()
+```
+
+##### `ResetApplicationObjectId` <a name="ResetApplicationObjectId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetApplicationObjectId"></a>
+
+```go
+func ResetApplicationObjectId()
+```
+
+##### `ResetAuthorizedAppId` <a name="ResetAuthorizedAppId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetAuthorizedAppId"></a>
+
+```go
+func ResetAuthorizedAppId()
+```
+
+##### `ResetAuthorizedClientId` <a name="ResetAuthorizedClientId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetAuthorizedClientId"></a>
+
+```go
+func ResetAuthorizedClientId()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.resetId"></a>
 
 ```go
@@ -359,7 +387,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +433,7 @@ applicationpreauthorized.ApplicationPreAuthorized_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +447,7 @@ applicationpreauthorized.ApplicationPreAuthorized_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -448,7 +476,7 @@ The construct id used in the generated config for the ApplicationPreAuthorized t
 
 The id of the existing ApplicationPreAuthorized that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -479,13 +507,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeoutsOutputReference">ApplicationPreAuthorizedTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationIdInput">ApplicationIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationObjectIdInput">ApplicationObjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.authorizedAppIdInput">AuthorizedAppIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.authorizedClientIdInput">AuthorizedClientIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.permissionIdsInput">PermissionIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationId">ApplicationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationObjectId">ApplicationObjectId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.authorizedAppId">AuthorizedAppId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.authorizedClientId">AuthorizedClientId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.permissionIds">PermissionIds</a></code> | <code>*[]*string</code> | *No description.* |
 
@@ -643,6 +675,16 @@ func Timeouts() ApplicationPreAuthorizedTimeoutsOutputReference
 
 ---
 
+##### `ApplicationIdInput`<sup>Optional</sup> <a name="ApplicationIdInput" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationIdInput"></a>
+
+```go
+func ApplicationIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ApplicationObjectIdInput`<sup>Optional</sup> <a name="ApplicationObjectIdInput" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationObjectIdInput"></a>
 
 ```go
@@ -657,6 +699,16 @@ func ApplicationObjectIdInput() *string
 
 ```go
 func AuthorizedAppIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AuthorizedClientIdInput`<sup>Optional</sup> <a name="AuthorizedClientIdInput" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.authorizedClientIdInput"></a>
+
+```go
+func AuthorizedClientIdInput() *string
 ```
 
 - *Type:* *string
@@ -693,6 +745,16 @@ func TimeoutsInput() interface{}
 
 ---
 
+##### `ApplicationId`<sup>Required</sup> <a name="ApplicationId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationId"></a>
+
+```go
+func ApplicationId() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ApplicationObjectId`<sup>Required</sup> <a name="ApplicationObjectId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.applicationObjectId"></a>
 
 ```go
@@ -707,6 +769,16 @@ func ApplicationObjectId() *string
 
 ```go
 func AuthorizedAppId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AuthorizedClientId`<sup>Required</sup> <a name="AuthorizedClientId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.property.authorizedClientId"></a>
+
+```go
+func AuthorizedClientId() *string
 ```
 
 - *Type:* *string
@@ -758,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 &applicationpreauthorized.ApplicationPreAuthorizedConfig {
 	Connection: interface{},
@@ -768,11 +840,13 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreaut
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	PermissionIds: *[]*string,
+	ApplicationId: *string,
 	ApplicationObjectId: *string,
 	AuthorizedAppId: *string,
-	PermissionIds: *[]*string,
+	AuthorizedClientId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts,
 }
 ```
 
@@ -787,10 +861,12 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreaut
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.permissionIds">PermissionIds</a></code> | <code>*[]*string</code> | The IDs of the permission scopes required by the pre-authorized application. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The resource ID of the application to which this pre-authorized application should be added. |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.applicationObjectId">ApplicationObjectId</a></code> | <code>*string</code> | The object ID of the application to which this pre-authorized application should be added. |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.authorizedAppId">AuthorizedAppId</a></code> | <code>*string</code> | The application ID of the pre-authorized application. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.permissionIds">PermissionIds</a></code> | <code>*[]*string</code> | The IDs of the permission scopes required by the pre-authorized application. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.authorizedClientId">AuthorizedClientId</a></code> | <code>*string</code> | The client ID of the pre-authorized application. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts">ApplicationPreAuthorizedTimeouts</a></code> | timeouts block. |
 
 ---
@@ -865,34 +941,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `ApplicationObjectId`<sup>Required</sup> <a name="ApplicationObjectId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.applicationObjectId"></a>
-
-```go
-ApplicationObjectId *string
-```
-
-- *Type:* *string
-
-The object ID of the application to which this pre-authorized application should be added.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#application_object_id ApplicationPreAuthorized#application_object_id}
-
----
-
-##### `AuthorizedAppId`<sup>Required</sup> <a name="AuthorizedAppId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.authorizedAppId"></a>
-
-```go
-AuthorizedAppId *string
-```
-
-- *Type:* *string
-
-The application ID of the pre-authorized application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
-
----
-
 ##### `PermissionIds`<sup>Required</sup> <a name="PermissionIds" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.permissionIds"></a>
 
 ```go
@@ -903,7 +951,63 @@ PermissionIds *[]*string
 
 The IDs of the permission scopes required by the pre-authorized application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
+
+---
+
+##### `ApplicationId`<sup>Optional</sup> <a name="ApplicationId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.applicationId"></a>
+
+```go
+ApplicationId *string
+```
+
+- *Type:* *string
+
+The resource ID of the application to which this pre-authorized application should be added.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#application_id ApplicationPreAuthorized#application_id}
+
+---
+
+##### `ApplicationObjectId`<sup>Optional</sup> <a name="ApplicationObjectId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.applicationObjectId"></a>
+
+```go
+ApplicationObjectId *string
+```
+
+- *Type:* *string
+
+The object ID of the application to which this pre-authorized application should be added.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#application_object_id ApplicationPreAuthorized#application_object_id}
+
+---
+
+##### `AuthorizedAppId`<sup>Optional</sup> <a name="AuthorizedAppId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.authorizedAppId"></a>
+
+```go
+AuthorizedAppId *string
+```
+
+- *Type:* *string
+
+The application ID of the pre-authorized application.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
+
+---
+
+##### `AuthorizedClientId`<sup>Optional</sup> <a name="AuthorizedClientId" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.authorizedClientId"></a>
+
+```go
+AuthorizedClientId *string
+```
+
+- *Type:* *string
+
+The client ID of the pre-authorized application.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#authorized_client_id ApplicationPreAuthorized#authorized_client_id}
 
 ---
 
@@ -915,7 +1019,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -932,7 +1036,7 @@ Timeouts ApplicationPreAuthorizedTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
 
 ---
 
@@ -941,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 &applicationpreauthorized.ApplicationPreAuthorizedTimeouts {
 	Create: *string,
@@ -955,10 +1059,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreaut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}. |
 
 ---
 
@@ -970,7 +1074,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}.
 
 ---
 
@@ -982,7 +1086,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}.
 
 ---
 
@@ -994,7 +1098,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}.
 
 ---
 
@@ -1006,7 +1110,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}.
 
 ---
 
@@ -1017,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpreauthorized"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpreauthorized"
 
 applicationpreauthorized.NewApplicationPreAuthorizedTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationPreAuthorizedTimeoutsOutputReference
 ```

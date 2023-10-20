@@ -1,6 +1,6 @@
 # `azuread_custom_directory_role`
 
-Refer to the Terraform Registory for docs: [`azuread_custom_directory_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role).
+Refer to the Terraform Registory for docs: [`azuread_custom_directory_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role).
 
 # `customDirectoryRole` Submodule <a name="`customDirectoryRole` Submodule" id="@cdktf/provider-azuread.customDirectoryRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_custom_directory_role`](htt
 
 ### CustomDirectoryRole <a name="CustomDirectoryRole" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role azuread_custom_directory_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role azuread_custom_directory_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRole(scope Construct, id *string, config CustomDirectoryRoleConfig) CustomDirectoryRole
 ```
@@ -386,7 +386,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ customdirectoryrole.CustomDirectoryRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ customdirectoryrole.CustomDirectoryRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -475,7 +475,7 @@ The construct id used in the generated config for the CustomDirectoryRole to imp
 
 The id of the existing CustomDirectoryRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRoleConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryro
 	Description: *string,
 	Id: *string,
 	TemplateId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.customDirectoryRole.CustomDirectoryRoleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.customDirectoryRole.CustomDirectoryRoleTimeouts,
 }
 ```
 
@@ -899,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryro
 | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
 | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.version">Version</a></code> | <code>*string</code> | The version of the role definition. |
 | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.description">Description</a></code> | <code>*string</code> | The description of the custom directory role. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
+| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
 | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Custom template identifier that is typically used if one needs an identifier to be the same across different directories. |
 | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a></code> | timeouts block. |
 
@@ -985,7 +985,7 @@ DisplayName *string
 
 The display name of the custom directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
 
 ---
 
@@ -999,7 +999,7 @@ Enabled interface{}
 
 Indicates whether the role is enabled for assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
 
 ---
 
@@ -1013,7 +1013,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
 
 ---
 
@@ -1027,7 +1027,7 @@ Version *string
 
 The version of the role definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
 
 ---
 
@@ -1041,7 +1041,7 @@ Description *string
 
 The description of the custom directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
 
 ---
 
@@ -1053,7 +1053,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ TemplateId *string
 
 Custom template identifier that is typically used if one needs an identifier to be the same across different directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
 
 ---
 
@@ -1084,7 +1084,7 @@ Timeouts CustomDirectoryRoleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
 
 ---
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRolePermissions {
 	AllowedResourceActions: *[]*string,
@@ -1118,7 +1118,7 @@ AllowedResourceActions *[]*string
 
 Set of tasks that can be performed on a resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
 
 ---
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRoleTimeouts {
 	Create: *string,
@@ -1141,10 +1141,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}. |
+| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}. |
+| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}. |
+| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}. |
+| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}.
 
 ---
 
@@ -1168,7 +1168,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}.
 
 ---
 
@@ -1192,7 +1192,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}.
 
 ---
 
@@ -1203,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRolePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDirectoryRolePermissionsList
 ```
@@ -1346,7 +1346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRolePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDirectoryRolePermissionsOutputReference
 ```
@@ -1635,7 +1635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomDirectoryRoleTimeoutsOutputReference
 ```

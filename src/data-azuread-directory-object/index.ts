@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object
+// https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzureadDirectoryObjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object#id DataAzureadDirectoryObject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object#id DataAzureadDirectoryObject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataAzureadDirectoryObjectConfig extends cdktf.TerraformMetaArg
   /**
   * The object ID of the principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object#object_id DataAzureadDirectoryObject#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object#object_id DataAzureadDirectoryObject#object_id}
   */
   readonly objectId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
   */
   readonly timeouts?: DataAzureadDirectoryObjectTimeouts;
 }
 export interface DataAzureadDirectoryObjectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object#read DataAzureadDirectoryObject#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object#read DataAzureadDirectoryObject#read}
   */
   readonly read?: string;
 }
@@ -109,7 +104,7 @@ export class DataAzureadDirectoryObjectTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object azuread_directory_object}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object azuread_directory_object}
 */
 export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
 
@@ -125,7 +120,7 @@ export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAzureadDirectoryObject resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadDirectoryObject to import
-  * @param importFromId The id of the existing DataAzureadDirectoryObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadDirectoryObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadDirectoryObject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -137,7 +132,7 @@ export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.43.0/docs/data-sources/directory_object azuread_directory_object} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/data-sources/directory_object azuread_directory_object} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -148,7 +143,7 @@ export class DataAzureadDirectoryObject extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_directory_object',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.43.0',
+        providerVersion: '2.44.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
