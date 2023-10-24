@@ -1,6 +1,6 @@
 # `azuread_application_api_access`
 
-Refer to the Terraform Registory for docs: [`azuread_application_api_access`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access).
+Refer to the Terraform Registory for docs: [`azuread_application_api_access`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access).
 
 # `applicationApiAccess` Submodule <a name="`applicationApiAccess` Submodule" id="@cdktf/provider-azuread.applicationApiAccess"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_application_api_access`](ht
 
 ### ApplicationApiAccess <a name="ApplicationApiAccess" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access azuread_application_api_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access azuread_application_api_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 applicationapiaccess.NewApplicationApiAccess(scope Construct, id *string, config ApplicationApiAccessConfig) ApplicationApiAccess
 ```
@@ -373,7 +373,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ applicationapiaccess.ApplicationApiAccess_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ applicationapiaccess.ApplicationApiAccess_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -462,7 +462,7 @@ The construct id used in the generated config for the ApplicationApiAccess to im
 
 The id of the existing ApplicationApiAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -794,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 &applicationapiaccess.ApplicationApiAccessConfig {
 	Connection: interface{},
@@ -809,7 +809,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiacc
 	Id: *string,
 	RoleIds: *[]*string,
 	ScopeIds: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationApiAccess.ApplicationApiAccessTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationApiAccess.ApplicationApiAccessTimeouts,
 }
 ```
 
@@ -826,7 +826,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiacc
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.apiClientId">ApiClientId</a></code> | <code>*string</code> | The client ID of the API to which access is being granted. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The resource ID of the application to which this API access is granted. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#id ApplicationApiAccess#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#id ApplicationApiAccess#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.roleIds">RoleIds</a></code> | <code>*[]*string</code> | A set of role IDs to be granted to the application, as published by the API. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.scopeIds">ScopeIds</a></code> | <code>*[]*string</code> | A set of scope IDs to be granted to the application, as published by the API. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts">ApplicationApiAccessTimeouts</a></code> | timeouts block. |
@@ -913,7 +913,7 @@ ApiClientId *string
 
 The client ID of the API to which access is being granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#api_client_id ApplicationApiAccess#api_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#api_client_id ApplicationApiAccess#api_client_id}
 
 ---
 
@@ -927,7 +927,7 @@ ApplicationId *string
 
 The resource ID of the application to which this API access is granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#application_id ApplicationApiAccess#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#application_id ApplicationApiAccess#application_id}
 
 ---
 
@@ -939,7 +939,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#id ApplicationApiAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#id ApplicationApiAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -956,7 +956,7 @@ RoleIds *[]*string
 
 A set of role IDs to be granted to the application, as published by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#role_ids ApplicationApiAccess#role_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#role_ids ApplicationApiAccess#role_ids}
 
 ---
 
@@ -970,7 +970,7 @@ ScopeIds *[]*string
 
 A set of scope IDs to be granted to the application, as published by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#scope_ids ApplicationApiAccess#scope_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#scope_ids ApplicationApiAccess#scope_ids}
 
 ---
 
@@ -984,7 +984,7 @@ Timeouts ApplicationApiAccessTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#timeouts ApplicationApiAccess#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#timeouts ApplicationApiAccess#timeouts}
 
 ---
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 &applicationapiaccess.ApplicationApiAccessTimeouts {
 	Create: *string,
@@ -1007,10 +1007,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiacc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#create ApplicationApiAccess#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#delete ApplicationApiAccess#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#read ApplicationApiAccess#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#update ApplicationApiAccess#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#create ApplicationApiAccess#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#delete ApplicationApiAccess#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#read ApplicationApiAccess#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#update ApplicationApiAccess#update}. |
 
 ---
 
@@ -1022,7 +1022,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#create ApplicationApiAccess#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#create ApplicationApiAccess#create}.
 
 ---
 
@@ -1034,7 +1034,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#delete ApplicationApiAccess#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#delete ApplicationApiAccess#delete}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#read ApplicationApiAccess#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#read ApplicationApiAccess#read}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_api_access#update ApplicationApiAccess#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_api_access#update ApplicationApiAccess#update}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapiaccess"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapiaccess"
 
 applicationapiaccess.NewApplicationApiAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationApiAccessTimeoutsOutputReference
 ```

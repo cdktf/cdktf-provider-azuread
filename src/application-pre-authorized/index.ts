@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized
+// https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface ApplicationPreAuthorizedConfig extends cdktf.TerraformMetaArgum
   /**
   * The resource ID of the application to which this pre-authorized application should be added
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#application_id ApplicationPreAuthorized#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#application_id ApplicationPreAuthorized#application_id}
   */
   readonly applicationId?: string;
   /**
   * The object ID of the application to which this pre-authorized application should be added
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#application_object_id ApplicationPreAuthorized#application_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#application_object_id ApplicationPreAuthorized#application_object_id}
   */
   readonly applicationObjectId?: string;
   /**
   * The application ID of the pre-authorized application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#authorized_app_id ApplicationPreAuthorized#authorized_app_id}
   */
   readonly authorizedAppId?: string;
   /**
   * The client ID of the pre-authorized application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#authorized_client_id ApplicationPreAuthorized#authorized_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#authorized_client_id ApplicationPreAuthorized#authorized_client_id}
   */
   readonly authorizedClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +41,31 @@ export interface ApplicationPreAuthorizedConfig extends cdktf.TerraformMetaArgum
   /**
   * The IDs of the permission scopes required by the pre-authorized application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
   */
   readonly permissionIds: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
   */
   readonly timeouts?: ApplicationPreAuthorizedTimeouts;
 }
 export interface ApplicationPreAuthorizedTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}
   */
   readonly update?: string;
 }
@@ -214,7 +209,7 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized azuread_application_pre_authorized}
 */
 export class ApplicationPreAuthorized extends cdktf.TerraformResource {
 
@@ -230,7 +225,7 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationPreAuthorized resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationPreAuthorized to import
-  * @param importFromId The id of the existing ApplicationPreAuthorized that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationPreAuthorized that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationPreAuthorized to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -242,7 +237,7 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/application_pre_authorized azuread_application_pre_authorized} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -253,7 +248,7 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_pre_authorized',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.44.0',
+        providerVersion: '2.44.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
