@@ -1,6 +1,6 @@
 # `azuread_directory_role`
 
-Refer to the Terraform Registory for docs: [`azuread_directory_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role).
+Refer to the Terraform Registory for docs: [`azuread_directory_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role).
 
 # `directoryRole` Submodule <a name="`directoryRole` Submodule" id="@cdktf/provider-azuread.directoryRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_directory_role`](https://re
 
 ### DirectoryRole <a name="DirectoryRole" id="@cdktf/provider-azuread.directoryRole.DirectoryRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role azuread_directory_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role azuread_directory_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.Initializer"></a>
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the DirectoryRole to import.
 
 The id of the existing DirectoryRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,7 +789,7 @@ const directoryRoleConfig: directoryRole.DirectoryRoleConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name of the directory role. |
-| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#id DirectoryRole#id}. |
+| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#id DirectoryRole#id}. |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.property.templateId">templateId</a></code> | <code>string</code> | The object ID of the template associated with the directory role. |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts">DirectoryRoleTimeouts</a></code> | timeouts block. |
 
@@ -875,7 +875,7 @@ public readonly displayName: string;
 
 The display name of the directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#display_name DirectoryRole#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#display_name DirectoryRole#display_name}
 
 ---
 
@@ -887,7 +887,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#id DirectoryRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#id DirectoryRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -904,7 +904,7 @@ public readonly templateId: string;
 
 The object ID of the template associated with the directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#template_id DirectoryRole#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#template_id DirectoryRole#template_id}
 
 ---
 
@@ -918,7 +918,7 @@ public readonly timeouts: DirectoryRoleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#timeouts DirectoryRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#timeouts DirectoryRole#timeouts}
 
 ---
 
@@ -936,9 +936,9 @@ const directoryRoleTimeouts: directoryRole.DirectoryRoleTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#create DirectoryRole#create}. |
-| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#delete DirectoryRole#delete}. |
-| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#read DirectoryRole#read}. |
+| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#create DirectoryRole#create}. |
+| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#delete DirectoryRole#delete}. |
+| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#read DirectoryRole#read}. |
 
 ---
 
@@ -950,7 +950,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#create DirectoryRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#create DirectoryRole#create}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#delete DirectoryRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#delete DirectoryRole#delete}.
 
 ---
 
@@ -974,7 +974,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.0/docs/resources/directory_role#read DirectoryRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/directory_role#read DirectoryRole#read}.
 
 ---
 
