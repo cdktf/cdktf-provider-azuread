@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationFromTemplate](./applicationFromTemplate.python.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.python.md)
 - [applicationKnownClients](./applicationKnownClients.python.md)
+- [applicationOptionalClaims](./applicationOptionalClaims.python.md)
 - [applicationOwner](./applicationOwner.python.md)
 - [applicationPassword](./applicationPassword.python.md)
 - [applicationPermissionScope](./applicationPermissionScope.python.md)

@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationFromTemplate](./applicationFromTemplate.typescript.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.typescript.md)
 - [applicationKnownClients](./applicationKnownClients.typescript.md)
+- [applicationOptionalClaims](./applicationOptionalClaims.typescript.md)
 - [applicationOwner](./applicationOwner.typescript.md)
 - [applicationPassword](./applicationPassword.typescript.md)
 - [applicationPermissionScope](./applicationPermissionScope.typescript.md)

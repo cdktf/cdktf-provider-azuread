@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationFromTemplate](./applicationFromTemplate.go.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.go.md)
 - [applicationKnownClients](./applicationKnownClients.go.md)
+- [applicationOptionalClaims](./applicationOptionalClaims.go.md)
 - [applicationOwner](./applicationOwner.go.md)
 - [applicationPassword](./applicationPassword.go.md)
 - [applicationPermissionScope](./applicationPermissionScope.go.md)

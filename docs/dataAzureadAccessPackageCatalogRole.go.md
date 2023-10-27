@@ -1,6 +1,6 @@
 # `data_azuread_access_package_catalog_role`
 
-Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role).
+Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role).
 
 # `dataAzureadAccessPackageCatalogRole` Submodule <a name="`dataAzureadAccessPackageCatalogRole` Submodule" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog
 
 ### DataAzureadAccessPackageCatalogRole <a name="DataAzureadAccessPackageCatalogRole" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 dataazureadaccesspackagecatalogrole.NewDataAzureadAccessPackageCatalogRole(scope Construct, id *string, config DataAzureadAccessPackageCatalogRoleConfig) DataAzureadAccessPackageCatalogRole
 ```
@@ -312,7 +312,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRole_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRole_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRole_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAzureadAccessPackageCa
 
 The id of the existing DataAzureadAccessPackageCatalogRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 &dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRoleConfig {
 	Connection: interface{},
@@ -702,7 +702,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccess
 	DisplayName: *string,
 	Id: *string,
 	ObjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts,
 }
 ```
 
@@ -718,7 +718,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccess
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the catalog role. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.objectId">ObjectId</a></code> | <code>*string</code> | The object ID of the catalog role. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a></code> | timeouts block. |
 
@@ -804,7 +804,7 @@ DisplayName *string
 
 The display name of the catalog role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#display_name DataAzureadAccessPackageCatalogRole#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#display_name DataAzureadAccessPackageCatalogRole#display_name}
 
 ---
 
@@ -816,7 +816,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -833,7 +833,7 @@ ObjectId *string
 
 The object ID of the catalog role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#object_id DataAzureadAccessPackageCatalogRole#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#object_id DataAzureadAccessPackageCatalogRole#object_id}
 
 ---
 
@@ -847,7 +847,7 @@ Timeouts DataAzureadAccessPackageCatalogRoleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#timeouts DataAzureadAccessPackageCatalogRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#timeouts DataAzureadAccessPackageCatalogRole#timeouts}
 
 ---
 
@@ -856,7 +856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 &dataazureadaccesspackagecatalogrole.DataAzureadAccessPackageCatalogRoleTimeouts {
 	Read: *string,
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccess
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}. |
 
 ---
 
@@ -879,7 +879,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}.
 
 ---
 
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadaccesspackagecatalogrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadaccesspackagecatalogrole"
 
 dataazureadaccesspackagecatalogrole.NewDataAzureadAccessPackageCatalogRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference
 ```
