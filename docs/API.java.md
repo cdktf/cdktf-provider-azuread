@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationFromTemplate](./applicationFromTemplate.java.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.java.md)
 - [applicationKnownClients](./applicationKnownClients.java.md)
+- [applicationOptionalClaims](./applicationOptionalClaims.java.md)
 - [applicationOwner](./applicationOwner.java.md)
 - [applicationPassword](./applicationPassword.java.md)
 - [applicationPermissionScope](./applicationPermissionScope.java.md)

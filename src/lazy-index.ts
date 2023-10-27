@@ -23,6 +23,7 @@ Object.defineProperty(exports, 'applicationFederatedIdentityCredential', { get: 
 Object.defineProperty(exports, 'applicationFromTemplate', { get: function () { return require('./application-from-template'); } });
 Object.defineProperty(exports, 'applicationIdentifierUri', { get: function () { return require('./application-identifier-uri'); } });
 Object.defineProperty(exports, 'applicationKnownClients', { get: function () { return require('./application-known-clients'); } });
+Object.defineProperty(exports, 'applicationOptionalClaims', { get: function () { return require('./application-optional-claims'); } });
 Object.defineProperty(exports, 'applicationOwner', { get: function () { return require('./application-owner'); } });
 Object.defineProperty(exports, 'applicationPassword', { get: function () { return require('./application-password'); } });
 Object.defineProperty(exports, 'applicationPermissionScope', { get: function () { return require('./application-permission-scope'); } });

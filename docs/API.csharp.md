@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationFromTemplate](./applicationFromTemplate.csharp.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.csharp.md)
 - [applicationKnownClients](./applicationKnownClients.csharp.md)
+- [applicationOptionalClaims](./applicationOptionalClaims.csharp.md)
 - [applicationOwner](./applicationOwner.csharp.md)
 - [applicationPassword](./applicationPassword.csharp.md)
 - [applicationPermissionScope](./applicationPermissionScope.csharp.md)

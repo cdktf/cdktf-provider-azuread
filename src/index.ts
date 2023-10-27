@@ -23,6 +23,7 @@ export * as applicationFederatedIdentityCredential from './application-federated
 export * as applicationFromTemplate from './application-from-template';
 export * as applicationIdentifierUri from './application-identifier-uri';
 export * as applicationKnownClients from './application-known-clients';
+export * as applicationOptionalClaims from './application-optional-claims';
 export * as applicationOwner from './application-owner';
 export * as applicationPassword from './application-password';
 export * as applicationPermissionScope from './application-permission-scope';

@@ -1,6 +1,6 @@
 # `azuread_synchronization_job`
 
-Refer to the Terraform Registory for docs: [`azuread_synchronization_job`](https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job).
+Refer to the Terraform Registory for docs: [`azuread_synchronization_job`](https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job).
 
 # `synchronizationJob` Submodule <a name="`synchronizationJob` Submodule" id="@cdktf/provider-azuread.synchronizationJob"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azuread_synchronization_job`](https
 
 ### SynchronizationJob <a name="SynchronizationJob" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job azuread_synchronization_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job azuread_synchronization_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.synchronizationJob.SynchronizationJob.Initializer"></a>
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the SynchronizationJob to impo
 
 The id of the existing SynchronizationJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/synchronizationjo
 | <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobConfig.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | The object ID of the service principal for which this synchronization job should be created. |
 | <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Identifier of the synchronization template this job is based on. |
 | <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether or not the synchronization job is enabled. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#id SynchronizationJob#id}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#id SynchronizationJob#id}. |
 | <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts">SynchronizationJobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -893,7 +893,7 @@ ServicePrincipalId *string
 
 The object ID of the service principal for which this synchronization job should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#service_principal_id SynchronizationJob#service_principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#service_principal_id SynchronizationJob#service_principal_id}
 
 ---
 
@@ -907,7 +907,7 @@ TemplateId *string
 
 Identifier of the synchronization template this job is based on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#template_id SynchronizationJob#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#template_id SynchronizationJob#template_id}
 
 ---
 
@@ -921,7 +921,7 @@ Enabled interface{}
 
 Whether or not the synchronization job is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#enabled SynchronizationJob#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#enabled SynchronizationJob#enabled}
 
 ---
 
@@ -933,7 +933,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#id SynchronizationJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#id SynchronizationJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ Timeouts SynchronizationJobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#timeouts SynchronizationJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#timeouts SynchronizationJob#timeouts}
 
 ---
 
@@ -986,10 +986,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/synchronizationjo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#create SynchronizationJob#create}. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#delete SynchronizationJob#delete}. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#read SynchronizationJob#read}. |
-| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#update SynchronizationJob#update}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#create SynchronizationJob#create}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#delete SynchronizationJob#delete}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#read SynchronizationJob#read}. |
+| <code><a href="#@cdktf/provider-azuread.synchronizationJob.SynchronizationJobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#update SynchronizationJob#update}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#create SynchronizationJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#create SynchronizationJob#create}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#delete SynchronizationJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#delete SynchronizationJob#delete}.
 
 ---
 
@@ -1025,7 +1025,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#read SynchronizationJob#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#read SynchronizationJob#read}.
 
 ---
 
@@ -1037,7 +1037,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.44.1/docs/resources/synchronization_job#update SynchronizationJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/synchronization_job#update SynchronizationJob#update}.
 
 ---
 
