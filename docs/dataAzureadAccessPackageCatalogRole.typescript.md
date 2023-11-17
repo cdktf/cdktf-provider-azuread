@@ -1,6 +1,6 @@
 # `data_azuread_access_package_catalog_role`
 
-Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role).
+Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role).
 
 # `dataAzureadAccessPackageCatalogRole` Submodule <a name="`dataAzureadAccessPackageCatalogRole` Submodule" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azuread_access_package_catalog
 
 ### DataAzureadAccessPackageCatalogRole <a name="DataAzureadAccessPackageCatalogRole" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRole.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAzureadAccessPackageCa
 
 The id of the existing DataAzureadAccessPackageCatalogRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,7 +706,7 @@ const dataAzureadAccessPackageCatalogRoleConfig: dataAzureadAccessPackageCatalog
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name of the catalog role. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.objectId">objectId</a></code> | <code>string</code> | The object ID of the catalog role. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts">DataAzureadAccessPackageCatalogRoleTimeouts</a></code> | timeouts block. |
 
@@ -792,7 +792,7 @@ public readonly displayName: string;
 
 The display name of the catalog role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#display_name DataAzureadAccessPackageCatalogRole#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#display_name DataAzureadAccessPackageCatalogRole#display_name}
 
 ---
 
@@ -804,7 +804,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -821,7 +821,7 @@ public readonly objectId: string;
 
 The object ID of the catalog role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#object_id DataAzureadAccessPackageCatalogRole#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#object_id DataAzureadAccessPackageCatalogRole#object_id}
 
 ---
 
@@ -835,7 +835,7 @@ public readonly timeouts: DataAzureadAccessPackageCatalogRoleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#timeouts DataAzureadAccessPackageCatalogRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#timeouts DataAzureadAccessPackageCatalogRole#timeouts}
 
 ---
 
@@ -853,7 +853,7 @@ const dataAzureadAccessPackageCatalogRoleTimeouts: dataAzureadAccessPackageCatal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadAccessPackageCatalogRole.DataAzureadAccessPackageCatalogRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}. |
 
 ---
 
@@ -865,7 +865,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}.
 
 ---
 

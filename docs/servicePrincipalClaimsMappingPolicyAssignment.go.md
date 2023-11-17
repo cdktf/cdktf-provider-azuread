@@ -1,6 +1,6 @@
 # `azuread_service_principal_claims_mapping_policy_assignment`
 
-Refer to the Terraform Registory for docs: [`azuread_service_principal_claims_mapping_policy_assignment`](https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_claims_mapping_policy_assignment).
+Refer to the Terraform Registory for docs: [`azuread_service_principal_claims_mapping_policy_assignment`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_claims_mapping_policy_assignment).
 
 # `servicePrincipalClaimsMappingPolicyAssignment` Submodule <a name="`servicePrincipalClaimsMappingPolicyAssignment` Submodule" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azuread_service_principal_claims_ma
 
 ### ServicePrincipalClaimsMappingPolicyAssignment <a name="ServicePrincipalClaimsMappingPolicyAssignment" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_claims_mapping_policy_assignment azuread_service_principal_claims_mapping_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.NewServicePrincipalClaimsMappingPolicyAssignment(scope Construct, id *string, config ServicePrincipalClaimsMappingPolicyAssignmentConfig) ServicePrincipalClaimsMappingPolicyAssignment
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the ServicePrincipalClaimsMapp
 
 The id of the existing ServicePrincipalClaimsMappingPolicyAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_claims_mapping_policy_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_claims_mapping_policy_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipalclaimsmappingpolicyassignment"
 
 &serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/serviceprincipalc
 | <code><a href="#@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.claimsMappingPolicyId">ClaimsMappingPolicyId</a></code> | <code>*string</code> | ID of the claims mapping policy to assign. |
 | <code><a href="#@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | Object ID of the service principal for which to assign the policy. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_claims_mapping_policy_assignment#id ServicePrincipalClaimsMappingPolicyAssignment#id}. |
+| <code><a href="#@cdktf/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_claims_mapping_policy_assignment#id ServicePrincipalClaimsMappingPolicyAssignment#id}. |
 
 ---
 
@@ -807,7 +807,7 @@ ClaimsMappingPolicyId *string
 
 ID of the claims mapping policy to assign.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_claims_mapping_policy_assignment#claims_mapping_policy_id ServicePrincipalClaimsMappingPolicyAssignment#claims_mapping_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_claims_mapping_policy_assignment#claims_mapping_policy_id ServicePrincipalClaimsMappingPolicyAssignment#claims_mapping_policy_id}
 
 ---
 
@@ -821,7 +821,7 @@ ServicePrincipalId *string
 
 Object ID of the service principal for which to assign the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_claims_mapping_policy_assignment#service_principal_id ServicePrincipalClaimsMappingPolicyAssignment#service_principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_claims_mapping_policy_assignment#service_principal_id ServicePrincipalClaimsMappingPolicyAssignment#service_principal_id}
 
 ---
 
@@ -833,7 +833,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/resources/service_principal_claims_mapping_policy_assignment#id ServicePrincipalClaimsMappingPolicyAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_claims_mapping_policy_assignment#id ServicePrincipalClaimsMappingPolicyAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

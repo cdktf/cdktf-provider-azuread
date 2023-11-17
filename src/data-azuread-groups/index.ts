@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups
+// https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Common display name prefix of the groups
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
   */
   readonly displayNamePrefix?: string;
   /**
   * The display names of the groups
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
   */
   readonly displayNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#id DataAzureadGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#id DataAzureadGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +29,43 @@ export interface DataAzureadGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Ignore missing groups and return groups that were found. The data source will still fail if no groups are found
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * Whether the groups are mail-enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The object IDs of the groups
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Retrieve all groups with no filter
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * Whether the groups are security-enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
   */
   readonly timeouts?: DataAzureadGroupsTimeouts;
 }
 export interface DataAzureadGroupsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#read DataAzureadGroups#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#read DataAzureadGroups#read}
   */
   readonly read?: string;
 }
@@ -145,7 +140,7 @@ export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups azuread_groups}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups azuread_groups}
 */
 export class DataAzureadGroups extends cdktf.TerraformDataSource {
 
@@ -161,7 +156,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAzureadGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadGroups to import
-  * @param importFromId The id of the existing DataAzureadGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -173,7 +168,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.45.0/docs/data-sources/groups azuread_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/groups azuread_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -184,7 +179,7 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_groups',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.45.0',
+        providerVersion: '2.46.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
