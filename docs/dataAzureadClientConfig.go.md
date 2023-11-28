@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 dataazureadclientconfig.NewDataAzureadClientConfig(scope Construct, id *string, config DataAzureadClientConfigConfig) DataAzureadClientConfig
 ```
@@ -294,7 +294,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataazureadclientconfig.DataAzureadClientConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ dataazureadclientconfig.DataAzureadClientConfig_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 dataazureadclientconfig.DataAzureadClientConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 &dataazureadclientconfig.DataAzureadClientConfigConfig {
 	Connection: interface{},
@@ -649,7 +649,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconf
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.dataAzureadClientConfig.DataAzureadClientConfigTimeouts,
 }
 ```
 
@@ -773,7 +773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 &dataazureadclientconfig.DataAzureadClientConfigTimeouts {
 	Read: *string,
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadClientConfig.DataAzureadClientConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadclientconfig"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadclientconfig"
 
 dataazureadclientconfig.NewDataAzureadClientConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadClientConfigTimeoutsOutputReference
 ```

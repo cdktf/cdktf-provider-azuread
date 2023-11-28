@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.NewApplicationFederatedIdentityCredential(scope Construct, id *string, config ApplicationFederatedIdentityCredentialConfig) ApplicationFederatedIdentityCredential
 ```
@@ -376,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_IsConstruct(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 &applicationfederatedidentitycredential.ApplicationFederatedIdentityCredentialConfig {
 	Connection: interface{},
@@ -892,7 +892,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedi
 	ApplicationObjectId: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeouts,
 }
 ```
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 &applicationfederatedidentitycredential.ApplicationFederatedIdentityCredentialTimeouts {
 	Create: *string,
@@ -1203,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.NewApplicationFederatedIdentityCredentialTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationFederatedIdentityCredentialTimeoutsOutputReference
 ```
