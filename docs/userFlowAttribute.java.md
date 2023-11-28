@@ -1,7 +1,3 @@
-# `azuread_user_flow_attribute`
-
-Refer to the Terraform Registory for docs: [`azuread_user_flow_attribute`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/user_flow_attribute).
-
 # `userFlowAttribute` Submodule <a name="`userFlowAttribute` Submodule" id="@cdktf/provider-azuread.userFlowAttribute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `azuread_application_identifier_uri`
-
-Refer to the Terraform Registory for docs: [`azuread_application_identifier_uri`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_identifier_uri).
-
 # `applicationIdentifierUri` Submodule <a name="`applicationIdentifierUri` Submodule" id="@cdktf/provider-azuread.applicationIdentifierUri"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.NewApplicationIdentifierUri(scope Construct, id *string, config ApplicationIdentifierUriConfig) ApplicationIdentifierUri
 ```
@@ -359,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ applicationidentifieruri.ApplicationIdentifierUri_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ applicationidentifieruri.ApplicationIdentifierUri_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 &applicationidentifieruri.ApplicationIdentifierUriConfig {
 	Connection: interface{},
@@ -749,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidenti
 	ApplicationId: *string,
 	IdentifierUri: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationIdentifierUri.ApplicationIdentifierUriTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts,
 }
 ```
 
@@ -903,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 &applicationidentifieruri.ApplicationIdentifierUriTimeouts {
 	Create: *string,
@@ -965,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.NewApplicationIdentifierUriTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationIdentifierUriTimeoutsOutputReference
 ```

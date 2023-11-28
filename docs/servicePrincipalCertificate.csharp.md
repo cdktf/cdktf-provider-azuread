@@ -1,7 +1,3 @@
-# `azuread_service_principal_certificate`
-
-Refer to the Terraform Registory for docs: [`azuread_service_principal_certificate`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_certificate).
-
 # `servicePrincipalCertificate` Submodule <a name="`servicePrincipalCertificate` Submodule" id="@cdktf/provider-azuread.servicePrincipalCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

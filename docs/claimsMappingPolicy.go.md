@@ -1,7 +1,3 @@
-# `azuread_claims_mapping_policy`
-
-Refer to the Terraform Registory for docs: [`azuread_claims_mapping_policy`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/claims_mapping_policy).
-
 # `claimsMappingPolicy` Submodule <a name="`claimsMappingPolicy` Submodule" id="@cdktf/provider-azuread.claimsMappingPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/claimsmappingpolicy"
 
 claimsmappingpolicy.NewClaimsMappingPolicy(scope Construct, id *string, config ClaimsMappingPolicyConfig) ClaimsMappingPolicy
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/claimsmappingpolicy"
 
 &claimsmappingpolicy.ClaimsMappingPolicyConfig {
 	Connection: interface{},

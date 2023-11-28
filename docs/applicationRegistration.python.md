@@ -1,7 +1,3 @@
-# `azuread_application_registration`
-
-Refer to the Terraform Registory for docs: [`azuread_application_registration`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_registration).
-
 # `applicationRegistration` Submodule <a name="`applicationRegistration` Submodule" id="@cdktf/provider-azuread.applicationRegistration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

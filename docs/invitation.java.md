@@ -1,7 +1,3 @@
-# `azuread_invitation`
-
-Refer to the Terraform Registory for docs: [`azuread_invitation`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/invitation).
-
 # `invitation` Submodule <a name="`invitation` Submodule" id="@cdktf/provider-azuread.invitation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

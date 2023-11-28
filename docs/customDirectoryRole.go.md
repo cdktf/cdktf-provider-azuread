@@ -1,7 +1,3 @@
-# `azuread_custom_directory_role`
-
-Refer to the Terraform Registory for docs: [`azuread_custom_directory_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/custom_directory_role).
-
 # `customDirectoryRole` Submodule <a name="`customDirectoryRole` Submodule" id="@cdktf/provider-azuread.customDirectoryRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRole(scope Construct, id *string, config CustomDirectoryRoleConfig) CustomDirectoryRole
 ```
@@ -386,7 +382,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +414,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +428,7 @@ customdirectoryrole.CustomDirectoryRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,7 +442,7 @@ customdirectoryrole.CustomDirectoryRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +858,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRoleConfig {
 	Connection: interface{},
@@ -879,7 +875,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryro
 	Description: *string,
 	Id: *string,
 	TemplateId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.customDirectoryRole.CustomDirectoryRoleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.customDirectoryRole.CustomDirectoryRoleTimeouts,
 }
 ```
 
@@ -1093,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRolePermissions {
 	AllowedResourceActions: *[]*string,
@@ -1127,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRoleTimeouts {
 	Create: *string,
@@ -1203,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRolePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDirectoryRolePermissionsList
 ```
@@ -1346,7 +1342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRolePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDirectoryRolePermissionsOutputReference
 ```
@@ -1635,7 +1631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/customdirectoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomDirectoryRoleTimeoutsOutputReference
 ```

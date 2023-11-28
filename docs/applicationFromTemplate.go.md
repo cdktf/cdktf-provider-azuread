@@ -1,7 +1,3 @@
-# `azuread_application_from_template`
-
-Refer to the Terraform Registory for docs: [`azuread_application_from_template`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template).
-
 # `applicationFromTemplate` Submodule <a name="`applicationFromTemplate` Submodule" id="@cdktf/provider-azuread.applicationFromTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.NewApplicationFromTemplate(scope Construct, id *string, config ApplicationFromTemplateConfig) ApplicationFromTemplate
 ```
@@ -359,7 +355,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ applicationfromtemplate.ApplicationFromTemplate_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ applicationfromtemplate.ApplicationFromTemplate_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 &applicationfromtemplate.ApplicationFromTemplateConfig {
 	Connection: interface{},
@@ -793,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromte
 	DisplayName: *string,
 	TemplateId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationFromTemplate.ApplicationFromTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts,
 }
 ```
 
@@ -947,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 &applicationfromtemplate.ApplicationFromTemplateTimeouts {
 	Create: *string,
@@ -1023,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.NewApplicationFromTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationFromTemplateTimeoutsOutputReference
 ```

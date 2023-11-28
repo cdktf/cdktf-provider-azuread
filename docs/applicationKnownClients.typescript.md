@@ -1,7 +1,3 @@
-# `azuread_application_known_clients`
-
-Refer to the Terraform Registory for docs: [`azuread_application_known_clients`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_known_clients).
-
 # `applicationKnownClients` Submodule <a name="`applicationKnownClients` Submodule" id="@cdktf/provider-azuread.applicationKnownClients"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

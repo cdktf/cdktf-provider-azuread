@@ -1,7 +1,3 @@
-# `azuread_user`
-
-Refer to the Terraform Registory for docs: [`azuread_user`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/user).
-
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-azuread.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

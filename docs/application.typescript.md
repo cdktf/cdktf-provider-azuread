@@ -1,7 +1,3 @@
-# `azuread_application`
-
-Refer to the Terraform Registory for docs: [`azuread_application`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application).
-
 # `application` Submodule <a name="`application` Submodule" id="@cdktf/provider-azuread.application"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

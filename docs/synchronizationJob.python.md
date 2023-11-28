@@ -1,7 +1,3 @@
-# `azuread_synchronization_job`
-
-Refer to the Terraform Registory for docs: [`azuread_synchronization_job`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/synchronization_job).
-
 # `synchronizationJob` Submodule <a name="`synchronizationJob` Submodule" id="@cdktf/provider-azuread.synchronizationJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

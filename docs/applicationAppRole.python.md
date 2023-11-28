@@ -1,7 +1,3 @@
-# `azuread_application_app_role`
-
-Refer to the Terraform Registory for docs: [`azuread_application_app_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_app_role).
-
 # `applicationAppRole` Submodule <a name="`applicationAppRole` Submodule" id="@cdktf/provider-azuread.applicationAppRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

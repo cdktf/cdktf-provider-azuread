@@ -1,7 +1,3 @@
-# `data_azuread_client_config`
-
-Refer to the Terraform Registory for docs: [`data_azuread_client_config`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/client_config).
-
 # `dataAzureadClientConfig` Submodule <a name="`dataAzureadClientConfig` Submodule" id="@cdktf/provider-azuread.dataAzureadClientConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
