@@ -1,7 +1,3 @@
-# `azuread_access_package_catalog`
-
-Refer to the Terraform Registory for docs: [`azuread_access_package_catalog`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package_catalog).
-
 # `accessPackageCatalog` Submodule <a name="`accessPackageCatalog` Submodule" id="@cdktf/provider-azuread.accessPackageCatalog"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

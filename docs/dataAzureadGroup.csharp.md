@@ -1,7 +1,3 @@
-# `data_azuread_group`
-
-Refer to the Terraform Registory for docs: [`data_azuread_group`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/data-sources/group).
-
 # `dataAzureadGroup` Submodule <a name="`dataAzureadGroup` Submodule" id="@cdktf/provider-azuread.dataAzureadGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `azuread_custom_directory_role`
-
-Refer to the Terraform Registory for docs: [`azuread_custom_directory_role`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/custom_directory_role).
-
 # `customDirectoryRole` Submodule <a name="`customDirectoryRole` Submodule" id="@cdktf/provider-azuread.customDirectoryRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

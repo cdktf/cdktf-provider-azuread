@@ -1,7 +1,3 @@
-# `azuread_directory_role_assignment`
-
-Refer to the Terraform Registory for docs: [`azuread_directory_role_assignment`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/directory_role_assignment).
-
 # `directoryRoleAssignment` Submodule <a name="`directoryRoleAssignment` Submodule" id="@cdktf/provider-azuread.directoryRoleAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

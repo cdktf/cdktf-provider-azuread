@@ -1,7 +1,3 @@
-# `azuread_application_federated_identity_credential`
-
-Refer to the Terraform Registory for docs: [`azuread_application_federated_identity_credential`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_federated_identity_credential).
-
 # `applicationFederatedIdentityCredential` Submodule <a name="`applicationFederatedIdentityCredential` Submodule" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

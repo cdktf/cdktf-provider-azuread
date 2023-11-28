@@ -1,7 +1,3 @@
-# `azuread_service_principal_token_signing_certificate`
-
-Refer to the Terraform Registory for docs: [`azuread_service_principal_token_signing_certificate`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/service_principal_token_signing_certificate).
-
 # `servicePrincipalTokenSigningCertificate` Submodule <a name="`servicePrincipalTokenSigningCertificate` Submodule" id="@cdktf/provider-azuread.servicePrincipalTokenSigningCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

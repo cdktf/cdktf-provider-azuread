@@ -1,7 +1,3 @@
-# `azuread_application_optional_claims`
-
-Refer to the Terraform Registory for docs: [`azuread_application_optional_claims`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_optional_claims).
-
 # `applicationOptionalClaims` Submodule <a name="`applicationOptionalClaims` Submodule" id="@cdktf/provider-azuread.applicationOptionalClaims"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

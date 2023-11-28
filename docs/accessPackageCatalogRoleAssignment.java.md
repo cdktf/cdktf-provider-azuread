@@ -1,7 +1,3 @@
-# `azuread_access_package_catalog_role_assignment`
-
-Refer to the Terraform Registory for docs: [`azuread_access_package_catalog_role_assignment`](https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package_catalog_role_assignment).
-
 # `accessPackageCatalogRoleAssignment` Submodule <a name="`accessPackageCatalogRoleAssignment` Submodule" id="@cdktf/provider-azuread.accessPackageCatalogRoleAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
