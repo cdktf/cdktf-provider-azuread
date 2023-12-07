@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplication(scope Construct, id *string, config DataAzureadApplicationConfig) DataAzureadApplication
 ```
@@ -322,7 +322,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.DataAzureadApplication_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.DataAzureadApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ dataazureadapplication.DataAzureadApplication_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.DataAzureadApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ dataazureadapplication.DataAzureadApplication_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.DataAzureadApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationApi {
 
@@ -1042,7 +1042,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationApiOauth2PermissionScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationApiOauth2PermissionScopes {
 
@@ -1055,7 +1055,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationAppRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationAppRoles {
 
@@ -1068,7 +1068,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 	DisplayName: *string,
 	Id: *string,
 	ObjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.dataAzureadApplication.DataAzureadApplicationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadApplication.DataAzureadApplicationTimeouts,
 }
 ```
 
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationFeatureTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationFeatureTags {
 
@@ -1280,7 +1280,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationOptionalClaims {
 
@@ -1293,7 +1293,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationOptionalClaimsAccessToken {
 
@@ -1306,7 +1306,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsIdToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationOptionalClaimsIdToken {
 
@@ -1319,7 +1319,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsSaml2Token.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationOptionalClaimsSaml2Token {
 
@@ -1332,7 +1332,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationPublicClient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationPublicClient {
 
@@ -1345,7 +1345,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationRequiredResourceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationRequiredResourceAccess {
 
@@ -1358,7 +1358,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationRequiredResourceAccessResourceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationRequiredResourceAccessResourceAccess {
 
@@ -1371,7 +1371,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationSinglePageApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationSinglePageApplication {
 
@@ -1384,7 +1384,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationTimeouts {
 	Read: *string,
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationWeb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationWeb {
 
@@ -1429,7 +1429,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationWebImplicitGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 &dataazureadapplication.DataAzureadApplicationWebImplicitGrant {
 
@@ -1444,7 +1444,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplic
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationApiList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationApiList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationApiList
 ```
@@ -1576,7 +1576,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationApiOauth2PermissionScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationApiOauth2PermissionScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationApiOauth2PermissionScopesList
 ```
@@ -1708,7 +1708,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationApiOauth2PermissionScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationApiOauth2PermissionScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationApiOauth2PermissionScopesOutputReference
 ```
@@ -2063,7 +2063,7 @@ func InternalValue() DataAzureadApplicationApiOauth2PermissionScopes
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationApiOutputReference
 ```
@@ -2374,7 +2374,7 @@ func InternalValue() DataAzureadApplicationApi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationAppRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationAppRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationAppRolesList
 ```
@@ -2506,7 +2506,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationAppRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationAppRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationAppRolesOutputReference
 ```
@@ -2839,7 +2839,7 @@ func InternalValue() DataAzureadApplicationAppRoles
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationFeatureTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationFeatureTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationFeatureTagsList
 ```
@@ -2971,7 +2971,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationFeatureTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationFeatureTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationFeatureTagsOutputReference
 ```
@@ -3282,7 +3282,7 @@ func InternalValue() DataAzureadApplicationFeatureTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsAccessTokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsAccessTokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationOptionalClaimsAccessTokenList
 ```
@@ -3414,7 +3414,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsAccessTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsAccessTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationOptionalClaimsAccessTokenOutputReference
 ```
@@ -3725,7 +3725,7 @@ func InternalValue() DataAzureadApplicationOptionalClaimsAccessToken
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsIdTokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsIdTokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationOptionalClaimsIdTokenList
 ```
@@ -3857,7 +3857,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsIdTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsIdTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationOptionalClaimsIdTokenOutputReference
 ```
@@ -4168,7 +4168,7 @@ func InternalValue() DataAzureadApplicationOptionalClaimsIdToken
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationOptionalClaimsList
 ```
@@ -4300,7 +4300,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationOptionalClaimsOutputReference
 ```
@@ -4600,7 +4600,7 @@ func InternalValue() DataAzureadApplicationOptionalClaims
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsSaml2TokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsSaml2TokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationOptionalClaimsSaml2TokenList
 ```
@@ -4732,7 +4732,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationOptionalClaimsSaml2TokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference
 ```
@@ -5043,7 +5043,7 @@ func InternalValue() DataAzureadApplicationOptionalClaimsSaml2Token
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationPublicClientList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationPublicClientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationPublicClientList
 ```
@@ -5175,7 +5175,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationPublicClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationPublicClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationPublicClientOutputReference
 ```
@@ -5453,7 +5453,7 @@ func InternalValue() DataAzureadApplicationPublicClient
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationRequiredResourceAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationRequiredResourceAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationRequiredResourceAccessList
 ```
@@ -5585,7 +5585,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationRequiredResourceAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationRequiredResourceAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationRequiredResourceAccessOutputReference
 ```
@@ -5874,7 +5874,7 @@ func InternalValue() DataAzureadApplicationRequiredResourceAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationRequiredResourceAccessResourceAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationRequiredResourceAccessResourceAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationRequiredResourceAccessResourceAccessList
 ```
@@ -6006,7 +6006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference
 ```
@@ -6295,7 +6295,7 @@ func InternalValue() DataAzureadApplicationRequiredResourceAccessResourceAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationSinglePageApplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationSinglePageApplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationSinglePageApplicationList
 ```
@@ -6427,7 +6427,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationSinglePageApplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationSinglePageApplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationSinglePageApplicationOutputReference
 ```
@@ -6705,7 +6705,7 @@ func InternalValue() DataAzureadApplicationSinglePageApplication
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadApplicationTimeoutsOutputReference
 ```
@@ -6983,7 +6983,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationWebImplicitGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationWebImplicitGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationWebImplicitGrantList
 ```
@@ -7115,7 +7115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationWebImplicitGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationWebImplicitGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationWebImplicitGrantOutputReference
 ```
@@ -7404,7 +7404,7 @@ func InternalValue() DataAzureadApplicationWebImplicitGrant
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationWebList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationWebList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadApplicationWebList
 ```
@@ -7536,7 +7536,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationWebOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/dataazureadapplication"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadapplication"
 
 dataazureadapplication.NewDataAzureadApplicationWebOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadApplicationWebOutputReference
 ```
