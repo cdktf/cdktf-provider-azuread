@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 applicationpermissionscope.NewApplicationPermissionScope(scope Construct, id *string, config ApplicationPermissionScopeConfig) ApplicationPermissionScope
 ```
@@ -419,7 +419,7 @@ func ResetUserConsentDisplayName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 applicationpermissionscope.ApplicationPermissionScope_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 applicationpermissionscope.ApplicationPermissionScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ applicationpermissionscope.ApplicationPermissionScope_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 applicationpermissionscope.ApplicationPermissionScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ applicationpermissionscope.ApplicationPermissionScope_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 applicationpermissionscope.ApplicationPermissionScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 &applicationpermissionscope.ApplicationPermissionScopeConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermission
 	ScopeId: *string,
 	Value: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationPermissionScope.ApplicationPermissionScopeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationPermissionScope.ApplicationPermissionScopeTimeouts,
 	Type: *string,
 	UserConsentDescription: *string,
 	UserConsentDisplayName: *string,
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScopeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 &applicationpermissionscope.ApplicationPermissionScopeTimeouts {
 	Create: *string,
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPermissionScope.ApplicationPermissionScopeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpermissionscope"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationpermissionscope"
 
 applicationpermissionscope.NewApplicationPermissionScopeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationPermissionScopeTimeoutsOutputReference
 ```
