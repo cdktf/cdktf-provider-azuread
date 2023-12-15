@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template
+// https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ApplicationFromTemplateConfig extends cdktf.TerraformMetaArgume
   /**
   * The display name for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#display_name ApplicationFromTemplate#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#display_name ApplicationFromTemplate#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface ApplicationFromTemplateConfig extends cdktf.TerraformMetaArgume
   /**
   * The UUID of the template to instantiate for this application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#template_id ApplicationFromTemplate#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#template_id ApplicationFromTemplate#template_id}
   */
   readonly templateId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#timeouts ApplicationFromTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#timeouts ApplicationFromTemplate#timeouts}
   */
   readonly timeouts?: ApplicationFromTemplateTimeouts;
 }
 export interface ApplicationFromTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#create ApplicationFromTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#create ApplicationFromTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#read ApplicationFromTemplate#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#read ApplicationFromTemplate#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#update ApplicationFromTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#update ApplicationFromTemplate#update}
   */
   readonly update?: string;
 }
@@ -196,7 +191,7 @@ export class ApplicationFromTemplateTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template azuread_application_from_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template azuread_application_from_template}
 */
 export class ApplicationFromTemplate extends cdktf.TerraformResource {
 
@@ -212,7 +207,7 @@ export class ApplicationFromTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationFromTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationFromTemplate to import
-  * @param importFromId The id of the existing ApplicationFromTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationFromTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationFromTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +219,7 @@ export class ApplicationFromTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application_from_template azuread_application_from_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application_from_template azuread_application_from_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +230,7 @@ export class ApplicationFromTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_from_template',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.46.0',
+        providerVersion: '2.47.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

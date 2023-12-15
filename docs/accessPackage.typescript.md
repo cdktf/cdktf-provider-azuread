@@ -4,7 +4,7 @@
 
 ### AccessPackage <a name="AccessPackage" id="@cdktf/provider-azuread.accessPackage.AccessPackage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package azuread_access_package}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package azuread_access_package}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackage.AccessPackage.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the AccessPackage to import.
 
 The id of the existing AccessPackage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ const accessPackageConfig: accessPackage.AccessPackageConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.description">description</a></code> | <code>string</code> | The description of the access package. |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name of the access package. |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.hidden">hidden</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the access package is hidden from the requestor. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#id AccessPackage#id}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#id AccessPackage#id}. |
 | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts">AccessPackageTimeouts</a></code> | timeouts block. |
 
 ---
@@ -931,7 +931,7 @@ public readonly catalogId: string;
 
 The ID of the Catalog this access package will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#catalog_id AccessPackage#catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#catalog_id AccessPackage#catalog_id}
 
 ---
 
@@ -945,7 +945,7 @@ public readonly description: string;
 
 The description of the access package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#description AccessPackage#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#description AccessPackage#description}
 
 ---
 
@@ -959,7 +959,7 @@ public readonly displayName: string;
 
 The display name of the access package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#display_name AccessPackage#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#display_name AccessPackage#display_name}
 
 ---
 
@@ -973,7 +973,7 @@ public readonly hidden: boolean | IResolvable;
 
 Whether the access package is hidden from the requestor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#hidden AccessPackage#hidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#hidden AccessPackage#hidden}
 
 ---
 
@@ -985,7 +985,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#id AccessPackage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#id AccessPackage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1002,7 +1002,7 @@ public readonly timeouts: AccessPackageTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#timeouts AccessPackage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#timeouts AccessPackage#timeouts}
 
 ---
 
@@ -1020,10 +1020,10 @@ const accessPackageTimeouts: accessPackage.AccessPackageTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#create AccessPackage#create}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#delete AccessPackage#delete}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#read AccessPackage#read}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#update AccessPackage#update}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#create AccessPackage#create}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#delete AccessPackage#delete}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#read AccessPackage#read}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackage.AccessPackageTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#update AccessPackage#update}. |
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#create AccessPackage#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#create AccessPackage#create}.
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#delete AccessPackage#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#delete AccessPackage#delete}.
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#read AccessPackage#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#read AccessPackage#read}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/access_package#update AccessPackage#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/access_package#update AccessPackage#update}.
 
 ---
 

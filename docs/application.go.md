@@ -4,12 +4,12 @@
 
 ### Application <a name="Application" id="@cdktf/provider-azuread.application.Application"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application azuread_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application azuread_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.Application.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplication(scope Construct, id *string, config ApplicationConfig) Application
 ```
@@ -684,7 +684,7 @@ func ResetWeb()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.application.Application.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.Application_IsConstruct(x interface{}) *bool
 ```
@@ -716,7 +716,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.application.Application.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.Application_IsTerraformElement(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ application.Application_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.application.Application.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.Application_IsTerraformResource(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ application.Application_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.application.Application.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.Application_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ The construct id used in the generated config for the Application to import.
 
 The id of the existing Application that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1699,7 +1699,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationApi {
 	KnownClientApplications: *[]*string,
@@ -1730,7 +1730,7 @@ KnownClientApplications *[]*string
 
 Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#known_client_applications Application#known_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#known_client_applications Application#known_client_applications}
 
 ---
 
@@ -1744,7 +1744,7 @@ MappedClaimsEnabled interface{}
 
 Allows an application to use claims mapping without specifying a custom signing key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#mapped_claims_enabled Application#mapped_claims_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#mapped_claims_enabled Application#mapped_claims_enabled}
 
 ---
 
@@ -1758,7 +1758,7 @@ Oauth2PermissionScope interface{}
 
 oauth2_permission_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#oauth2_permission_scope Application#oauth2_permission_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#oauth2_permission_scope Application#oauth2_permission_scope}
 
 ---
 
@@ -1772,7 +1772,7 @@ RequestedAccessTokenVersion *f64
 
 The access token version expected by this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#requested_access_token_version Application#requested_access_token_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#requested_access_token_version Application#requested_access_token_version}
 
 ---
 
@@ -1781,7 +1781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationApiOauth2PermissionScope {
 	Id: *string,
@@ -1820,7 +1820,7 @@ Id *string
 
 The unique identifier of the delegated permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id Application#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id Application#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1837,7 +1837,7 @@ AdminConsentDescription *string
 
 Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#admin_consent_description Application#admin_consent_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#admin_consent_description Application#admin_consent_description}
 
 ---
 
@@ -1851,7 +1851,7 @@ AdminConsentDisplayName *string
 
 Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#admin_consent_display_name Application#admin_consent_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#admin_consent_display_name Application#admin_consent_display_name}
 
 ---
 
@@ -1865,7 +1865,7 @@ Enabled interface{}
 
 Determines if the permission scope is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#enabled Application#enabled}
 
 ---
 
@@ -1879,7 +1879,7 @@ Type *string
 
 Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#type Application#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#type Application#type}
 
 ---
 
@@ -1893,7 +1893,7 @@ UserConsentDescription *string
 
 Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#user_consent_description Application#user_consent_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#user_consent_description Application#user_consent_description}
 
 ---
 
@@ -1907,7 +1907,7 @@ UserConsentDisplayName *string
 
 Display name for the delegated permission that appears in the end user consent experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#user_consent_display_name Application#user_consent_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#user_consent_display_name Application#user_consent_display_name}
 
 ---
 
@@ -1921,7 +1921,7 @@ Value *string
 
 The value that is used for the `scp` claim in OAuth 2.0 access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#value Application#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#value Application#value}
 
 ---
 
@@ -1930,7 +1930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationAppRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationAppRole {
 	AllowedMemberTypes: *[]*string,
@@ -1965,7 +1965,7 @@ AllowedMemberTypes *[]*string
 
 Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#allowed_member_types Application#allowed_member_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#allowed_member_types Application#allowed_member_types}
 
 ---
 
@@ -1979,7 +1979,7 @@ Description *string
 
 Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#description Application#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#description Application#description}
 
 ---
 
@@ -1993,7 +1993,7 @@ DisplayName *string
 
 Display name for the app role that appears during app role assignment and in consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#display_name Application#display_name}
 
 ---
 
@@ -2007,7 +2007,7 @@ Id *string
 
 The unique identifier of the app role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id Application#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id Application#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2024,7 +2024,7 @@ Enabled interface{}
 
 Determines if the app role is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#enabled Application#enabled}
 
 ---
 
@@ -2038,7 +2038,7 @@ Value *string
 
 The value that is used for the `roles` claim in ID tokens and OAuth 2.0 access tokens that are authenticating an assigned service or user principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#value Application#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#value Application#value}
 
 ---
 
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationConfig {
 	Connection: interface{},
@@ -2058,7 +2058,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
-	Api: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.application.ApplicationApi,
+	Api: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationApi,
 	AppRole: interface{},
 	Description: *string,
 	DeviceOnlyAuthEnabled: interface{},
@@ -2071,21 +2071,21 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
 	MarketingUrl: *string,
 	Notes: *string,
 	Oauth2PostResponseRequired: interface{},
-	OptionalClaims: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.application.ApplicationOptionalClaims,
+	OptionalClaims: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationOptionalClaims,
 	Owners: *[]*string,
 	PreventDuplicateNames: interface{},
 	PrivacyStatementUrl: *string,
-	PublicClient: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.application.ApplicationPublicClient,
+	PublicClient: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationPublicClient,
 	RequiredResourceAccess: interface{},
 	ServiceManagementReference: *string,
 	SignInAudience: *string,
-	SinglePageApplication: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.application.ApplicationSinglePageApplication,
+	SinglePageApplication: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationSinglePageApplication,
 	SupportUrl: *string,
 	Tags: *[]*string,
 	TemplateId: *string,
 	TermsOfServiceUrl: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.application.ApplicationTimeouts,
-	Web: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.application.ApplicationWeb,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationTimeouts,
+	Web: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationWeb,
 }
 ```
 
@@ -2108,7 +2108,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.fallbackPublicClientEnabled">FallbackPublicClientEnabled</a></code> | <code>interface{}</code> | Specifies whether the application is a public client. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.featureTags">FeatureTags</a></code> | <code>interface{}</code> | feature_tags block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.groupMembershipClaims">GroupMembershipClaims</a></code> | <code>*[]*string</code> | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id Application#id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id Application#id}. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">IdentifierUris</a></code> | <code>*[]*string</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">LogoImage</a></code> | <code>*string</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">MarketingUrl</a></code> | <code>*string</code> | URL of the application's marketing page. |
@@ -2212,7 +2212,7 @@ DisplayName *string
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#display_name Application#display_name}
 
 ---
 
@@ -2226,7 +2226,7 @@ Api ApplicationApi
 
 api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#api Application#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#api Application#api}
 
 ---
 
@@ -2240,7 +2240,7 @@ AppRole interface{}
 
 app_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#app_role Application#app_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#app_role Application#app_role}
 
 ---
 
@@ -2254,7 +2254,7 @@ Description *string
 
 Description of the application as shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#description Application#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#description Application#description}
 
 ---
 
@@ -2268,7 +2268,7 @@ DeviceOnlyAuthEnabled interface{}
 
 Specifies whether this application supports device authentication without a user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#device_only_auth_enabled Application#device_only_auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#device_only_auth_enabled Application#device_only_auth_enabled}
 
 ---
 
@@ -2284,7 +2284,7 @@ Specifies whether the application is a public client.
 
 Appropriate for apps using token grant flows that don't use a redirect URI
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
 
 ---
 
@@ -2298,7 +2298,7 @@ FeatureTags interface{}
 
 feature_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#feature_tags Application#feature_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#feature_tags Application#feature_tags}
 
 ---
 
@@ -2312,7 +2312,7 @@ GroupMembershipClaims *[]*string
 
 Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#group_membership_claims Application#group_membership_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#group_membership_claims Application#group_membership_claims}
 
 ---
 
@@ -2324,7 +2324,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id Application#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id Application#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2341,7 +2341,7 @@ IdentifierUris *[]*string
 
 The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#identifier_uris Application#identifier_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#identifier_uris Application#identifier_uris}
 
 ---
 
@@ -2355,7 +2355,7 @@ LogoImage *string
 
 Base64 encoded logo image in gif, png or jpeg format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#logo_image Application#logo_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#logo_image Application#logo_image}
 
 ---
 
@@ -2369,7 +2369,7 @@ MarketingUrl *string
 
 URL of the application's marketing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#marketing_url Application#marketing_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#marketing_url Application#marketing_url}
 
 ---
 
@@ -2383,7 +2383,7 @@ Notes *string
 
 User-specified notes relevant for the management of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#notes Application#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#notes Application#notes}
 
 ---
 
@@ -2397,7 +2397,7 @@ Oauth2PostResponseRequired interface{}
 
 Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#oauth2_post_response_required Application#oauth2_post_response_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#oauth2_post_response_required Application#oauth2_post_response_required}
 
 ---
 
@@ -2411,7 +2411,7 @@ OptionalClaims ApplicationOptionalClaims
 
 optional_claims block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#optional_claims Application#optional_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#optional_claims Application#optional_claims}
 
 ---
 
@@ -2425,7 +2425,7 @@ Owners *[]*string
 
 A list of object IDs of principals that will be granted ownership of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#owners Application#owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#owners Application#owners}
 
 ---
 
@@ -2439,7 +2439,7 @@ PreventDuplicateNames interface{}
 
 If `true`, will return an error if an existing application is found with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#prevent_duplicate_names Application#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#prevent_duplicate_names Application#prevent_duplicate_names}
 
 ---
 
@@ -2453,7 +2453,7 @@ PrivacyStatementUrl *string
 
 URL of the application's privacy statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#privacy_statement_url Application#privacy_statement_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#privacy_statement_url Application#privacy_statement_url}
 
 ---
 
@@ -2467,7 +2467,7 @@ PublicClient ApplicationPublicClient
 
 public_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#public_client Application#public_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#public_client Application#public_client}
 
 ---
 
@@ -2481,7 +2481,7 @@ RequiredResourceAccess interface{}
 
 required_resource_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#required_resource_access Application#required_resource_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#required_resource_access Application#required_resource_access}
 
 ---
 
@@ -2495,7 +2495,7 @@ ServiceManagementReference *string
 
 References application or service contact information from a Service or Asset Management database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#service_management_reference Application#service_management_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#service_management_reference Application#service_management_reference}
 
 ---
 
@@ -2509,7 +2509,7 @@ SignInAudience *string
 
 The Microsoft account types that are supported for the current application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#sign_in_audience Application#sign_in_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#sign_in_audience Application#sign_in_audience}
 
 ---
 
@@ -2523,7 +2523,7 @@ SinglePageApplication ApplicationSinglePageApplication
 
 single_page_application block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#single_page_application Application#single_page_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#single_page_application Application#single_page_application}
 
 ---
 
@@ -2537,7 +2537,7 @@ SupportUrl *string
 
 URL of the application's support page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#support_url Application#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#support_url Application#support_url}
 
 ---
 
@@ -2551,7 +2551,7 @@ Tags *[]*string
 
 A set of tags to apply to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#tags Application#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#tags Application#tags}
 
 ---
 
@@ -2565,7 +2565,7 @@ TemplateId *string
 
 Unique ID of the application template from which this application is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#template_id Application#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#template_id Application#template_id}
 
 ---
 
@@ -2579,7 +2579,7 @@ TermsOfServiceUrl *string
 
 URL of the application's terms of service statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#terms_of_service_url Application#terms_of_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#terms_of_service_url Application#terms_of_service_url}
 
 ---
 
@@ -2593,7 +2593,7 @@ Timeouts ApplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#timeouts Application#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#timeouts Application#timeouts}
 
 ---
 
@@ -2607,7 +2607,7 @@ Web ApplicationWeb
 
 web block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#web Application#web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#web Application#web}
 
 ---
 
@@ -2616,7 +2616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationFeatureTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationFeatureTags {
 	CustomSingleSignOn: interface{},
@@ -2647,7 +2647,7 @@ CustomSingleSignOn interface{}
 
 Whether this application represents a custom SAML application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#custom_single_sign_on Application#custom_single_sign_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#custom_single_sign_on Application#custom_single_sign_on}
 
 ---
 
@@ -2661,7 +2661,7 @@ Enterprise interface{}
 
 Whether this application represents an Enterprise Application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#enterprise Application#enterprise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#enterprise Application#enterprise}
 
 ---
 
@@ -2675,7 +2675,7 @@ Gallery interface{}
 
 Whether this application represents a gallery application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#gallery Application#gallery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#gallery Application#gallery}
 
 ---
 
@@ -2689,7 +2689,7 @@ Hide interface{}
 
 Whether this application is invisible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#hide Application#hide}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#hide Application#hide}
 
 ---
 
@@ -2698,7 +2698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationOptionalClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationOptionalClaims {
 	AccessToken: interface{},
@@ -2727,7 +2727,7 @@ AccessToken interface{}
 
 access_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#access_token Application#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#access_token Application#access_token}
 
 ---
 
@@ -2741,7 +2741,7 @@ IdToken interface{}
 
 id_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id_token Application#id_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id_token Application#id_token}
 
 ---
 
@@ -2755,7 +2755,7 @@ Saml2Token interface{}
 
 saml2_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#saml2_token Application#saml2_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#saml2_token Application#saml2_token}
 
 ---
 
@@ -2764,7 +2764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationOptionalClaimsAccessToken {
 	Name: *string,
@@ -2795,7 +2795,7 @@ Name *string
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2811,7 +2811,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2825,7 +2825,7 @@ Essential interface{}
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2841,7 +2841,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -2850,7 +2850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationOptionalClaimsIdToken {
 	Name: *string,
@@ -2881,7 +2881,7 @@ Name *string
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2897,7 +2897,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2911,7 +2911,7 @@ Essential interface{}
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2927,7 +2927,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -2936,7 +2936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationOptionalClaimsSaml2Token {
 	Name: *string,
@@ -2967,7 +2967,7 @@ Name *string
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2983,7 +2983,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2997,7 +2997,7 @@ Essential interface{}
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -3013,7 +3013,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -3022,7 +3022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationPublicClient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationPublicClient {
 	RedirectUris: *[]*string,
@@ -3047,7 +3047,7 @@ RedirectUris *[]*string
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -3056,7 +3056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationRequiredResourceAccess {
 	ResourceAccess: interface{},
@@ -3069,7 +3069,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAccess">ResourceAccess</a></code> | <code>interface{}</code> | resource_access block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAppId">ResourceAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#resource_app_id Application#resource_app_id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAppId">ResourceAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#resource_app_id Application#resource_app_id}. |
 
 ---
 
@@ -3083,7 +3083,7 @@ ResourceAccess interface{}
 
 resource_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#resource_access Application#resource_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#resource_access Application#resource_access}
 
 ---
 
@@ -3095,7 +3095,7 @@ ResourceAppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#resource_app_id Application#resource_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#resource_app_id Application#resource_app_id}.
 
 ---
 
@@ -3104,7 +3104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationRequiredResourceAccessResourceAccess {
 	Id: *string,
@@ -3116,8 +3116,8 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id Application#id}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#type Application#type}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id Application#id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#type Application#type}. |
 
 ---
 
@@ -3129,7 +3129,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id Application#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id Application#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3144,7 +3144,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#type Application#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#type Application#type}.
 
 ---
 
@@ -3153,7 +3153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationSinglePageApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationSinglePageApplication {
 	RedirectUris: *[]*string,
@@ -3178,7 +3178,7 @@ RedirectUris *[]*string
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -3187,7 +3187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationTimeouts {
 	Create: *string,
@@ -3201,10 +3201,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#create Application#create}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#delete Application#delete}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#read Application#read}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#update Application#update}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#create Application#create}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#delete Application#delete}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#read Application#read}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#update Application#update}. |
 
 ---
 
@@ -3216,7 +3216,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#create Application#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#create Application#create}.
 
 ---
 
@@ -3228,7 +3228,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#delete Application#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#delete Application#delete}.
 
 ---
 
@@ -3240,7 +3240,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#read Application#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#read Application#read}.
 
 ---
 
@@ -3252,7 +3252,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#update Application#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#update Application#update}.
 
 ---
 
@@ -3261,11 +3261,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationWeb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationWeb {
 	HomepageUrl: *string,
-	ImplicitGrant: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.application.ApplicationWebImplicitGrant,
+	ImplicitGrant: github.com/cdktf/cdktf-provider-azuread-go/azuread.application.ApplicationWebImplicitGrant,
 	LogoutUrl: *string,
 	RedirectUris: *[]*string,
 }
@@ -3292,7 +3292,7 @@ HomepageUrl *string
 
 Home page or landing page of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#homepage_url Application#homepage_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#homepage_url Application#homepage_url}
 
 ---
 
@@ -3306,7 +3306,7 @@ ImplicitGrant ApplicationWebImplicitGrant
 
 implicit_grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#implicit_grant Application#implicit_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#implicit_grant Application#implicit_grant}
 
 ---
 
@@ -3320,7 +3320,7 @@ LogoutUrl *string
 
 The URL that will be used by Microsoft's authorization service to sign out a user using front-channel, back-channel or SAML logout protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#logout_url Application#logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#logout_url Application#logout_url}
 
 ---
 
@@ -3334,7 +3334,7 @@ RedirectUris *[]*string
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -3343,7 +3343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 &application.ApplicationWebImplicitGrant {
 	AccessTokenIssuanceEnabled: interface{},
@@ -3370,7 +3370,7 @@ AccessTokenIssuanceEnabled interface{}
 
 Whether this web application can request an access token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
 
 ---
 
@@ -3384,7 +3384,7 @@ IdTokenIssuanceEnabled interface{}
 
 Whether this web application can request an ID token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.46.0/docs/resources/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
 
 ---
 
@@ -3395,7 +3395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationApiOauth2PermissionScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationApiOauth2PermissionScopeList
 ```
@@ -3538,7 +3538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationApiOauth2PermissionScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationApiOauth2PermissionScopeOutputReference
 ```
@@ -4030,7 +4030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationApiOutputReference
 ```
@@ -4408,7 +4408,7 @@ func InternalValue() ApplicationApi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationAppRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationAppRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationAppRoleList
 ```
@@ -4551,7 +4551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationAppRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationAppRoleOutputReference
 ```
@@ -4964,7 +4964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationFeatureTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationFeatureTagsList
 ```
@@ -5107,7 +5107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationFeatureTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationFeatureTagsOutputReference
 ```
@@ -5490,7 +5490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationOptionalClaimsAccessTokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationOptionalClaimsAccessTokenList
 ```
@@ -5633,7 +5633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationOptionalClaimsAccessTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationOptionalClaimsAccessTokenOutputReference
 ```
@@ -6009,7 +6009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationOptionalClaimsIdTokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationOptionalClaimsIdTokenList
 ```
@@ -6152,7 +6152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationOptionalClaimsIdTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationOptionalClaimsIdTokenOutputReference
 ```
@@ -6528,7 +6528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationOptionalClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationOptionalClaimsOutputReference
 ```
@@ -6903,7 +6903,7 @@ func InternalValue() ApplicationOptionalClaims
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationOptionalClaimsSaml2TokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationOptionalClaimsSaml2TokenList
 ```
@@ -7046,7 +7046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationOptionalClaimsSaml2TokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationOptionalClaimsSaml2TokenOutputReference
 ```
@@ -7422,7 +7422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationPublicClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationPublicClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationPublicClientOutputReference
 ```
@@ -7700,7 +7700,7 @@ func InternalValue() ApplicationPublicClient
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationRequiredResourceAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationRequiredResourceAccessList
 ```
@@ -7843,7 +7843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationRequiredResourceAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationRequiredResourceAccessOutputReference
 ```
@@ -8167,7 +8167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationRequiredResourceAccessResourceAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationRequiredResourceAccessResourceAccessList
 ```
@@ -8310,7 +8310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationRequiredResourceAccessResourceAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationRequiredResourceAccessResourceAccessOutputReference
 ```
@@ -8621,7 +8621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationSinglePageApplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationSinglePageApplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationSinglePageApplicationOutputReference
 ```
@@ -8899,7 +8899,7 @@ func InternalValue() ApplicationSinglePageApplication
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationTimeoutsOutputReference
 ```
@@ -9264,7 +9264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationWebImplicitGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationWebImplicitGrantOutputReference
 ```
@@ -9571,7 +9571,7 @@ func InternalValue() ApplicationWebImplicitGrant
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationWebOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/application"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/application"
 
 application.NewApplicationWebOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationWebOutputReference
 ```
