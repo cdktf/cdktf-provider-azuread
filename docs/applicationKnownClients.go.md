@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 applicationknownclients.NewApplicationKnownClients(scope Construct, id *string, config ApplicationKnownClientsConfig) ApplicationKnownClients
 ```
@@ -398,7 +398,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 applicationknownclients.ApplicationKnownClients_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 applicationknownclients.ApplicationKnownClients_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ applicationknownclients.ApplicationKnownClients_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 applicationknownclients.ApplicationKnownClients_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ applicationknownclients.ApplicationKnownClients_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 applicationknownclients.ApplicationKnownClients_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 &applicationknownclients.ApplicationKnownClientsConfig {
 	Connection: interface{},
@@ -788,7 +788,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclien
 	ApplicationId: *string,
 	KnownClientIds: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationKnownClients.ApplicationKnownClientsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationKnownClients.ApplicationKnownClientsTimeouts,
 }
 ```
 
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 &applicationknownclients.ApplicationKnownClientsTimeouts {
 	Create: *string,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationknownclients"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationknownclients"
 
 applicationknownclients.NewApplicationKnownClientsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationKnownClientsTimeoutsOutputReference
 ```
