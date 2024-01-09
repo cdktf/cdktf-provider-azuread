@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 applicationapprole.NewApplicationAppRoleA(scope Construct, id *string, config ApplicationAppRoleAConfig) ApplicationAppRoleA
 ```
@@ -405,7 +405,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 applicationapprole.ApplicationAppRoleA_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 applicationapprole.ApplicationAppRoleA_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ applicationapprole.ApplicationAppRoleA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 applicationapprole.ApplicationAppRoleA_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ applicationapprole.ApplicationAppRoleA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 applicationapprole.ApplicationAppRoleA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 &applicationapprole.ApplicationAppRoleAConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
 	DisplayName: *string,
 	RoleId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationAppRole.ApplicationAppRoleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationAppRole.ApplicationAppRoleTimeouts,
 	Value: *string,
 }
 ```
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 &applicationapprole.ApplicationAppRoleTimeouts {
 	Create: *string,
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationapprole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationapprole"
 
 applicationapprole.NewApplicationAppRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationAppRoleTimeoutsOutputReference
 ```
