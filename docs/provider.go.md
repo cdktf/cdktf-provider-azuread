@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/provider"
 
 provider.NewAzureadProvider(scope Construct, id *string, config AzureadProviderConfig) AzureadProvider
 ```
@@ -284,7 +284,7 @@ func ResetUseOidc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.provider.AzureadProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/provider"
 
 provider.AzureadProvider_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/provider"
 
 provider.AzureadProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ provider.AzureadProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/provider"
 
 provider.AzureadProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ provider.AzureadProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.provider.AzureadProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/provider"
 
 provider.AzureadProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/provider"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/provider"
 
 &provider.AzureadProviderConfig {
 	Alias: *string,
