@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/service_principal_claims_mapping_policy_assignment
 // generated from terraform resource schema
 
@@ -145,5 +140,31 @@ export class ServicePrincipalClaimsMappingPolicyAssignment extends cdktf.Terrafo
       id: cdktf.stringToTerraform(this._id),
       service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      claims_mapping_policy_id: {
+        value: cdktf.stringToHclTerraform(this._claimsMappingPolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_principal_id: {
+        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

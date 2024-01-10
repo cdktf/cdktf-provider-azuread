@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/data-sources/groups
 // generated from terraform resource schema
 
@@ -83,6 +78,25 @@ export function dataAzureadGroupsTimeoutsToTerraform(struct?: DataAzureadGroupsT
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAzureadGroupsTimeoutsToHclTerraform(struct?: DataAzureadGroupsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAzureadGroupsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -370,5 +384,67 @@ export class DataAzureadGroups extends cdktf.TerraformDataSource {
       security_enabled: cdktf.booleanToTerraform(this._securityEnabled),
       timeouts: dataAzureadGroupsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name_prefix: {
+        value: cdktf.stringToHclTerraform(this._displayNamePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._displayNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_missing: {
+        value: cdktf.booleanToHclTerraform(this._ignoreMissing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mail_enabled: {
+        value: cdktf.booleanToHclTerraform(this._mailEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      object_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._objectIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      return_all: {
+        value: cdktf.booleanToHclTerraform(this._returnAll),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      security_enabled: {
+        value: cdktf.booleanToHclTerraform(this._securityEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: dataAzureadGroupsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAzureadGroupsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.NewApplicationFederatedIdentityCredential(scope Construct, id *string, config ApplicationFederatedIdentityCredentialConfig) ApplicationFederatedIdentityCredential
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.ApplicationFederatedIdentityCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 &applicationfederatedidentitycredential.ApplicationFederatedIdentityCredentialConfig {
 	Connection: interface{},
@@ -935,7 +942,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfedera
 	ApplicationObjectId: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeouts,
 }
 ```
 
@@ -1170,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 &applicationfederatedidentitycredential.ApplicationFederatedIdentityCredentialTimeouts {
 	Create: *string,
@@ -1246,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFederatedIdentityCredential.ApplicationFederatedIdentityCredentialTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/applicationfederatedidentitycredential"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfederatedidentitycredential"
 
 applicationfederatedidentitycredential.NewApplicationFederatedIdentityCredentialTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationFederatedIdentityCredentialTimeoutsOutputReference
 ```

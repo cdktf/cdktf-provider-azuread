@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/data-sources/application
 // generated from terraform resource schema
 
@@ -60,6 +55,17 @@ export function dataAzureadApplicationApiOauth2PermissionScopesToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationApiOauth2PermissionScopesToHclTerraform(struct?: DataAzureadApplicationApiOauth2PermissionScopes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationApiOauth2PermissionScopesOutputReference extends cdktf.ComplexObject {
@@ -161,6 +167,17 @@ export function dataAzureadApplicationApiToTerraform(struct?: DataAzureadApplica
   }
 }
 
+
+export function dataAzureadApplicationApiToHclTerraform(struct?: DataAzureadApplicationApi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAzureadApplicationApiOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -239,6 +256,17 @@ export function dataAzureadApplicationAppRolesToTerraform(struct?: DataAzureadAp
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationAppRolesToHclTerraform(struct?: DataAzureadApplicationAppRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationAppRolesOutputReference extends cdktf.ComplexObject {
@@ -330,6 +358,17 @@ export function dataAzureadApplicationFeatureTagsToTerraform(struct?: DataAzurea
   }
 }
 
+
+export function dataAzureadApplicationFeatureTagsToHclTerraform(struct?: DataAzureadApplicationFeatureTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAzureadApplicationFeatureTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -407,6 +446,17 @@ export function dataAzureadApplicationOptionalClaimsAccessTokenToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationOptionalClaimsAccessTokenToHclTerraform(struct?: DataAzureadApplicationOptionalClaimsAccessToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationOptionalClaimsAccessTokenOutputReference extends cdktf.ComplexObject {
@@ -488,6 +538,17 @@ export function dataAzureadApplicationOptionalClaimsIdTokenToTerraform(struct?: 
   }
 }
 
+
+export function dataAzureadApplicationOptionalClaimsIdTokenToHclTerraform(struct?: DataAzureadApplicationOptionalClaimsIdToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAzureadApplicationOptionalClaimsIdTokenOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -565,6 +626,17 @@ export function dataAzureadApplicationOptionalClaimsSaml2TokenToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationOptionalClaimsSaml2TokenToHclTerraform(struct?: DataAzureadApplicationOptionalClaimsSaml2Token): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationOptionalClaimsSaml2TokenOutputReference extends cdktf.ComplexObject {
@@ -646,6 +718,17 @@ export function dataAzureadApplicationOptionalClaimsToTerraform(struct?: DataAzu
   }
 }
 
+
+export function dataAzureadApplicationOptionalClaimsToHclTerraform(struct?: DataAzureadApplicationOptionalClaims): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAzureadApplicationOptionalClaimsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -723,6 +806,17 @@ export function dataAzureadApplicationPublicClientToTerraform(struct?: DataAzure
   }
 }
 
+
+export function dataAzureadApplicationPublicClientToHclTerraform(struct?: DataAzureadApplicationPublicClient): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAzureadApplicationPublicClientOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -785,6 +879,17 @@ export function dataAzureadApplicationRequiredResourceAccessResourceAccessToTerr
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationRequiredResourceAccessResourceAccessToHclTerraform(struct?: DataAzureadApplicationRequiredResourceAccessResourceAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationRequiredResourceAccessResourceAccessOutputReference extends cdktf.ComplexObject {
@@ -854,6 +959,17 @@ export function dataAzureadApplicationRequiredResourceAccessToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationRequiredResourceAccessToHclTerraform(struct?: DataAzureadApplicationRequiredResourceAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationRequiredResourceAccessOutputReference extends cdktf.ComplexObject {
@@ -926,6 +1042,17 @@ export function dataAzureadApplicationSinglePageApplicationToTerraform(struct?: 
   }
 }
 
+
+export function dataAzureadApplicationSinglePageApplicationToHclTerraform(struct?: DataAzureadApplicationSinglePageApplication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAzureadApplicationSinglePageApplicationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -988,6 +1115,17 @@ export function dataAzureadApplicationWebImplicitGrantToTerraform(struct?: DataA
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationWebImplicitGrantToHclTerraform(struct?: DataAzureadApplicationWebImplicitGrant): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationWebImplicitGrantOutputReference extends cdktf.ComplexObject {
@@ -1057,6 +1195,17 @@ export function dataAzureadApplicationWebToTerraform(struct?: DataAzureadApplica
   }
   return {
   }
+}
+
+
+export function dataAzureadApplicationWebToHclTerraform(struct?: DataAzureadApplicationWeb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzureadApplicationWebOutputReference extends cdktf.ComplexObject {
@@ -1142,6 +1291,25 @@ export function dataAzureadApplicationTimeoutsToTerraform(struct?: DataAzureadAp
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAzureadApplicationTimeoutsToHclTerraform(struct?: DataAzureadApplicationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAzureadApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1525,5 +1693,49 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
       object_id: cdktf.stringToTerraform(this._objectId),
       timeouts: dataAzureadApplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_id: {
+        value: cdktf.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_id: {
+        value: cdktf.stringToHclTerraform(this._objectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dataAzureadApplicationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAzureadApplicationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

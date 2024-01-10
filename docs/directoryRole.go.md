@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 directoryrole.NewDirectoryRole(scope Construct, id *string, config DirectoryRoleConfig) DirectoryRole
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azuread.directoryRole.DirectoryRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 directoryrole.DirectoryRole_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 directoryrole.DirectoryRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ directoryrole.DirectoryRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 directoryrole.DirectoryRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ directoryrole.DirectoryRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.directoryRole.DirectoryRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 directoryrole.DirectoryRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.directoryRole.DirectoryRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 &directoryrole.DirectoryRoleConfig {
 	Connection: interface{},
@@ -824,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
 	DisplayName: *string,
 	Id: *string,
 	TemplateId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.directoryRole.DirectoryRoleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.directoryRole.DirectoryRoleTimeouts,
 }
 ```
 
@@ -978,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 &directoryrole.DirectoryRoleTimeouts {
 	Create: *string,
@@ -1040,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/directoryrole"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/directoryrole"
 
 directoryrole.NewDirectoryRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryRoleTimeoutsOutputReference
 ```
