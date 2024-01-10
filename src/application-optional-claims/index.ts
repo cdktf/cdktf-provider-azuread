@@ -90,6 +90,43 @@ export function applicationOptionalClaimsAccessTokenAToTerraform(struct?: Applic
   }
 }
 
+
+export function applicationOptionalClaimsAccessTokenAToHclTerraform(struct?: ApplicationOptionalClaimsAccessTokenA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_properties: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalProperties),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    essential: {
+      value: cdktf.booleanToHclTerraform(struct!.essential),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -271,6 +308,43 @@ export function applicationOptionalClaimsIdTokenAToTerraform(struct?: Applicatio
     name: cdktf.stringToTerraform(struct!.name),
     source: cdktf.stringToTerraform(struct!.source),
   }
+}
+
+
+export function applicationOptionalClaimsIdTokenAToHclTerraform(struct?: ApplicationOptionalClaimsIdTokenA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_properties: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalProperties),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    essential: {
+      value: cdktf.booleanToHclTerraform(struct!.essential),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktf.ComplexObject {
@@ -456,6 +530,43 @@ export function applicationOptionalClaimsSaml2TokenAToTerraform(struct?: Applica
   }
 }
 
+
+export function applicationOptionalClaimsSaml2TokenAToHclTerraform(struct?: ApplicationOptionalClaimsSaml2TokenA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_properties: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalProperties),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    essential: {
+      value: cdktf.booleanToHclTerraform(struct!.essential),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -629,6 +740,43 @@ export function applicationOptionalClaimsTimeoutsToTerraform(struct?: Applicatio
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function applicationOptionalClaimsTimeoutsToHclTerraform(struct?: ApplicationOptionalClaimsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApplicationOptionalClaimsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -925,5 +1073,49 @@ export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
       saml2_token: cdktf.listMapper(applicationOptionalClaimsSaml2TokenAToTerraform, true)(this._saml2Token.internalValue),
       timeouts: applicationOptionalClaimsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_id: {
+        value: cdktf.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      access_token: {
+        value: cdktf.listMapperHcl(applicationOptionalClaimsAccessTokenAToHclTerraform, true)(this._accessToken.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApplicationOptionalClaimsAccessTokenAList",
+      },
+      id_token: {
+        value: cdktf.listMapperHcl(applicationOptionalClaimsIdTokenAToHclTerraform, true)(this._idToken.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApplicationOptionalClaimsIdTokenAList",
+      },
+      saml2_token: {
+        value: cdktf.listMapperHcl(applicationOptionalClaimsSaml2TokenAToHclTerraform, true)(this._saml2Token.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApplicationOptionalClaimsSaml2TokenAList",
+      },
+      timeouts: {
+        value: applicationOptionalClaimsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ApplicationOptionalClaimsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

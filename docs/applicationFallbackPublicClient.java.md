@@ -160,6 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.toHclTerraform">toHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -234,6 +235,12 @@ public void resetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.toHclTerraform"></a>
+
+```java
+public java.lang.Object toHclTerraform()
+```
 
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.toMetadata"></a>
 

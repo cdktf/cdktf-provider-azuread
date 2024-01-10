@@ -182,6 +182,31 @@ export function groupDynamicMembershipToTerraform(struct?: GroupDynamicMembershi
   }
 }
 
+
+export function groupDynamicMembershipToHclTerraform(struct?: GroupDynamicMembershipOutputReference | GroupDynamicMembership): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    rule: {
+      value: cdktf.stringToHclTerraform(struct!.rule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -276,6 +301,43 @@ export function groupTimeoutsToTerraform(struct?: GroupTimeouts | cdktf.IResolva
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function groupTimeoutsToHclTerraform(struct?: GroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -941,5 +1003,157 @@ export class Group extends cdktf.TerraformResource {
       dynamic_membership: groupDynamicMembershipToTerraform(this._dynamicMembership.internalValue),
       timeouts: groupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      administrative_unit_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._administrativeUnitIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      assignable_to_role: {
+        value: cdktf.booleanToHclTerraform(this._assignableToRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_subscribe_new_members: {
+        value: cdktf.booleanToHclTerraform(this._autoSubscribeNewMembers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      behaviors: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._behaviors),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_senders_allowed: {
+        value: cdktf.booleanToHclTerraform(this._externalSendersAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hide_from_address_lists: {
+        value: cdktf.booleanToHclTerraform(this._hideFromAddressLists),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hide_from_outlook_clients: {
+        value: cdktf.booleanToHclTerraform(this._hideFromOutlookClients),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mail_enabled: {
+        value: cdktf.booleanToHclTerraform(this._mailEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mail_nickname: {
+        value: cdktf.stringToHclTerraform(this._mailNickname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      members: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      onpremises_group_type: {
+        value: cdktf.stringToHclTerraform(this._onpremisesGroupType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owners: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      prevent_duplicate_names: {
+        value: cdktf.booleanToHclTerraform(this._preventDuplicateNames),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      provisioning_options: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._provisioningOptions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      security_enabled: {
+        value: cdktf.booleanToHclTerraform(this._securityEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      theme: {
+        value: cdktf.stringToHclTerraform(this._theme),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._types),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      writeback_enabled: {
+        value: cdktf.booleanToHclTerraform(this._writebackEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dynamic_membership: {
+        value: groupDynamicMembershipToHclTerraform(this._dynamicMembership.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GroupDynamicMembershipList",
+      },
+      timeouts: {
+        value: groupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 administrativeunitmember.NewAdministrativeUnitMember(scope Construct, id *string, config AdministrativeUnitMemberConfig) AdministrativeUnitMember
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 administrativeunitmember.AdministrativeUnitMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 administrativeunitmember.AdministrativeUnitMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ administrativeunitmember.AdministrativeUnitMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 administrativeunitmember.AdministrativeUnitMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ administrativeunitmember.AdministrativeUnitMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 administrativeunitmember.AdministrativeUnitMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 &administrativeunitmember.AdministrativeUnitMemberConfig {
 	Connection: interface{},
@@ -802,7 +809,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeuni
 	AdministrativeUnitObjectId: *string,
 	Id: *string,
 	MemberObjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v11.administrativeUnitMember.AdministrativeUnitMemberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.administrativeUnitMember.AdministrativeUnitMemberTimeouts,
 }
 ```
 
@@ -956,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 &administrativeunitmember.AdministrativeUnitMemberTimeouts {
 	Create: *string,
@@ -1032,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v11/administrativeunitmember"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/administrativeunitmember"
 
 administrativeunitmember.NewAdministrativeUnitMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdministrativeUnitMemberTimeoutsOutputReference
 ```

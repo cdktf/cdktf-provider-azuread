@@ -134,6 +134,17 @@ export function servicePrincipalAppRolesToTerraform(struct?: ServicePrincipalApp
   }
 }
 
+
+export function servicePrincipalAppRolesToHclTerraform(struct?: ServicePrincipalAppRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ServicePrincipalAppRolesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -221,6 +232,17 @@ export function servicePrincipalOauth2PermissionScopesToTerraform(struct?: Servi
   }
   return {
   }
+}
+
+
+export function servicePrincipalOauth2PermissionScopesToHclTerraform(struct?: ServicePrincipalOauth2PermissionScopes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ServicePrincipalOauth2PermissionScopesOutputReference extends cdktf.ComplexObject {
@@ -348,6 +370,43 @@ export function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipal
     gallery: cdktf.booleanToTerraform(struct!.gallery),
     hide: cdktf.booleanToTerraform(struct!.hide),
   }
+}
+
+
+export function servicePrincipalFeatureTagsToHclTerraform(struct?: ServicePrincipalFeatureTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_single_sign_on: {
+      value: cdktf.booleanToHclTerraform(struct!.customSingleSignOn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enterprise: {
+      value: cdktf.booleanToHclTerraform(struct!.enterprise),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    gallery: {
+      value: cdktf.booleanToHclTerraform(struct!.gallery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    hide: {
+      value: cdktf.booleanToHclTerraform(struct!.hide),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObject {
@@ -536,6 +595,43 @@ export function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFea
   }
 }
 
+
+export function servicePrincipalFeaturesToHclTerraform(struct?: ServicePrincipalFeatures | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_single_sign_on_app: {
+      value: cdktf.booleanToHclTerraform(struct!.customSingleSignOnApp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enterprise_application: {
+      value: cdktf.booleanToHclTerraform(struct!.enterpriseApplication),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    gallery_application: {
+      value: cdktf.booleanToHclTerraform(struct!.galleryApplication),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    visible_to_users: {
+      value: cdktf.booleanToHclTerraform(struct!.visibleToUsers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -701,6 +797,25 @@ export function servicePrincipalSamlSingleSignOnToTerraform(struct?: ServicePrin
   }
 }
 
+
+export function servicePrincipalSamlSingleSignOnToHclTerraform(struct?: ServicePrincipalSamlSingleSignOnOutputReference | ServicePrincipalSamlSingleSignOn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    relay_state: {
+      value: cdktf.stringToHclTerraform(struct!.relayState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServicePrincipalSamlSingleSignOnOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -779,6 +894,43 @@ export function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTim
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function servicePrincipalTimeoutsToHclTerraform(struct?: ServicePrincipalTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1368,5 +1520,121 @@ export class ServicePrincipal extends cdktf.TerraformResource {
       saml_single_sign_on: servicePrincipalSamlSingleSignOnToTerraform(this._samlSingleSignOn.internalValue),
       timeouts: servicePrincipalTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_enabled: {
+        value: cdktf.booleanToHclTerraform(this._accountEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      alternative_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._alternativeNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      app_role_assignment_required: {
+        value: cdktf.booleanToHclTerraform(this._appRoleAssignmentRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      application_id: {
+        value: cdktf.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      login_url: {
+        value: cdktf.stringToHclTerraform(this._loginUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notes: {
+        value: cdktf.stringToHclTerraform(this._notes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_email_addresses: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notificationEmailAddresses),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      owners: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      preferred_single_sign_on_mode: {
+        value: cdktf.stringToHclTerraform(this._preferredSingleSignOnMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      use_existing: {
+        value: cdktf.booleanToHclTerraform(this._useExisting),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      feature_tags: {
+        value: cdktf.listMapperHcl(servicePrincipalFeatureTagsToHclTerraform, true)(this._featureTags.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServicePrincipalFeatureTagsList",
+      },
+      features: {
+        value: cdktf.listMapperHcl(servicePrincipalFeaturesToHclTerraform, true)(this._features.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServicePrincipalFeaturesList",
+      },
+      saml_single_sign_on: {
+        value: servicePrincipalSamlSingleSignOnToHclTerraform(this._samlSingleSignOn.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServicePrincipalSamlSingleSignOnList",
+      },
+      timeouts: {
+        value: servicePrincipalTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ServicePrincipalTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

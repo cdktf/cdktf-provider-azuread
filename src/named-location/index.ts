@@ -64,6 +64,31 @@ export function namedLocationCountryToTerraform(struct?: NamedLocationCountryOut
   }
 }
 
+
+export function namedLocationCountryToHclTerraform(struct?: NamedLocationCountryOutputReference | NamedLocationCountry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    countries_and_regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.countriesAndRegions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    include_unknown_countries_and_regions: {
+      value: cdktf.booleanToHclTerraform(struct!.includeUnknownCountriesAndRegions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +176,31 @@ export function namedLocationIpToTerraform(struct?: NamedLocationIpOutputReferen
     ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipRanges),
     trusted: cdktf.booleanToTerraform(struct!.trusted),
   }
+}
+
+
+export function namedLocationIpToHclTerraform(struct?: NamedLocationIpOutputReference | NamedLocationIp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_ranges: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipRanges),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    trusted: {
+      value: cdktf.booleanToHclTerraform(struct!.trusted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
@@ -250,6 +300,43 @@ export function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeouts 
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function namedLocationTimeoutsToHclTerraform(struct?: NamedLocationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -528,5 +615,43 @@ export class NamedLocation extends cdktf.TerraformResource {
       ip: namedLocationIpToTerraform(this._ip.internalValue),
       timeouts: namedLocationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      country: {
+        value: namedLocationCountryToHclTerraform(this._country.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NamedLocationCountryList",
+      },
+      ip: {
+        value: namedLocationIpToHclTerraform(this._ip.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NamedLocationIpList",
+      },
+      timeouts: {
+        value: namedLocationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NamedLocationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
