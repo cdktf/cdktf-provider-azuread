@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role
+// https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments 
   /**
   * The description of the custom directory role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
   */
   readonly description?: string;
   /**
   * The display name of the custom directory role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
   */
   readonly displayName: string;
   /**
   * Indicates whether the role is enabled for assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +40,25 @@ export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments 
   /**
   * Custom template identifier that is typically used if one needs an identifier to be the same across different directories.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
   */
   readonly templateId?: string;
   /**
   * The version of the role definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
   */
   readonly version: string;
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
   */
   readonly permissions: CustomDirectoryRolePermissions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
   */
   readonly timeouts?: CustomDirectoryRoleTimeouts;
 }
@@ -66,7 +66,7 @@ export interface CustomDirectoryRolePermissions {
   /**
   * Set of tasks that can be performed on a resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
   */
   readonly allowedResourceActions: string[];
 }
@@ -179,19 +179,19 @@ export class CustomDirectoryRolePermissionsList extends cdktf.ComplexList {
 }
 export interface CustomDirectoryRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}
   */
   readonly update?: string;
 }
@@ -372,7 +372,7 @@ export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role azuread_custom_directory_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role azuread_custom_directory_role}
 */
 export class CustomDirectoryRole extends cdktf.TerraformResource {
 
@@ -388,7 +388,7 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomDirectoryRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomDirectoryRole to import
-  * @param importFromId The id of the existing CustomDirectoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomDirectoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomDirectoryRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -400,7 +400,7 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/custom_directory_role azuread_custom_directory_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/custom_directory_role azuread_custom_directory_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -411,7 +411,7 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_custom_directory_role',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.47.0',
+        providerVersion: '2.48.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
