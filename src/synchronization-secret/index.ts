@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret
+// https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SynchronizationSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#id SynchronizationSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#id SynchronizationSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface SynchronizationSecretConfig extends cdktf.TerraformMetaArgument
   /**
   * The object ID of the service principal for which this synchronization secret should be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#service_principal_id SynchronizationSecret#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#service_principal_id SynchronizationSecret#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#credential SynchronizationSecret#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#credential SynchronizationSecret#credential}
   */
   readonly credential?: SynchronizationSecretCredential[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#timeouts SynchronizationSecret#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#timeouts SynchronizationSecret#timeouts}
   */
   readonly timeouts?: SynchronizationSecretTimeouts;
 }
@@ -42,13 +37,13 @@ export interface SynchronizationSecretCredential {
   /**
   * Name for this key-value pair.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#key SynchronizationSecret#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#key SynchronizationSecret#key}
   */
   readonly key: string;
   /**
   * Value for this key-value pair.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#value SynchronizationSecret#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#value SynchronizationSecret#value}
   */
   readonly value: string;
 }
@@ -187,19 +182,19 @@ export class SynchronizationSecretCredentialList extends cdktf.ComplexList {
 }
 export interface SynchronizationSecretTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#create SynchronizationSecret#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#create SynchronizationSecret#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#delete SynchronizationSecret#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#delete SynchronizationSecret#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#read SynchronizationSecret#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#read SynchronizationSecret#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#update SynchronizationSecret#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#update SynchronizationSecret#update}
   */
   readonly update?: string;
 }
@@ -380,7 +375,7 @@ export class SynchronizationSecretTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret azuread_synchronization_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret azuread_synchronization_secret}
 */
 export class SynchronizationSecret extends cdktf.TerraformResource {
 
@@ -396,7 +391,7 @@ export class SynchronizationSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SynchronizationSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynchronizationSecret to import
-  * @param importFromId The id of the existing SynchronizationSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SynchronizationSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynchronizationSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -408,7 +403,7 @@ export class SynchronizationSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.47.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/synchronization_secret azuread_synchronization_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -419,7 +414,7 @@ export class SynchronizationSecret extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_synchronization_secret',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.47.0',
+        providerVersion: '2.48.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
