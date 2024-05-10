@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri
+// https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,40 +15,40 @@ export interface ApplicationIdentifierUriConfig extends cdktf.TerraformMetaArgum
   /**
   * The resource ID of the application to which the identifier URI should be added
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#application_id ApplicationIdentifierUri#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#application_id ApplicationIdentifierUri#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The user-defined URI that uniquely identifies an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant
+  * The user-defined URI or URI-like string that uniquely identifies an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#identifier_uri ApplicationIdentifierUri#identifier_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#identifier_uri ApplicationIdentifierUri#identifier_uri}
   */
   readonly identifierUri: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#timeouts ApplicationIdentifierUri#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#timeouts ApplicationIdentifierUri#timeouts}
   */
   readonly timeouts?: ApplicationIdentifierUriTimeouts;
 }
 export interface ApplicationIdentifierUriTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#create ApplicationIdentifierUri#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#create ApplicationIdentifierUri#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#delete ApplicationIdentifierUri#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#delete ApplicationIdentifierUri#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#read ApplicationIdentifierUri#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#read ApplicationIdentifierUri#read}
   */
   readonly read?: string;
 }
@@ -200,7 +200,7 @@ export class ApplicationIdentifierUriTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri azuread_application_identifier_uri}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri azuread_application_identifier_uri}
 */
 export class ApplicationIdentifierUri extends cdktf.TerraformResource {
 
@@ -216,7 +216,7 @@ export class ApplicationIdentifierUri extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationIdentifierUri resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationIdentifierUri to import
-  * @param importFromId The id of the existing ApplicationIdentifierUri that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationIdentifierUri that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationIdentifierUri to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -228,7 +228,7 @@ export class ApplicationIdentifierUri extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_identifier_uri azuread_application_identifier_uri} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_identifier_uri azuread_application_identifier_uri} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +239,7 @@ export class ApplicationIdentifierUri extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_identifier_uri',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.48.0',
+        providerVersion: '2.49.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

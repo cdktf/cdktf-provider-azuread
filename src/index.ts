@@ -40,8 +40,11 @@ export * as directoryRoleEligibilityScheduleRequest from './directory-role-eligi
 export * as directoryRoleMember from './directory-role-member';
 export * as group from './group';
 export * as groupMember from './group-member';
+export * as groupRoleManagementPolicy from './group-role-management-policy';
 export * as invitation from './invitation';
 export * as namedLocation from './named-location';
+export * as privilegedAccessGroupAssignmentSchedule from './privileged-access-group-assignment-schedule';
+export * as privilegedAccessGroupEligibilitySchedule from './privileged-access-group-eligibility-schedule';
 export * as servicePrincipal from './service-principal';
 export * as servicePrincipalCertificate from './service-principal-certificate';
 export * as servicePrincipalClaimsMappingPolicyAssignment from './service-principal-claims-mapping-policy-assignment';
@@ -49,6 +52,7 @@ export * as servicePrincipalDelegatedPermissionGrant from './service-principal-d
 export * as servicePrincipalPassword from './service-principal-password';
 export * as servicePrincipalTokenSigningCertificate from './service-principal-token-signing-certificate';
 export * as synchronizationJob from './synchronization-job';
+export * as synchronizationJobProvisionOnDemand from './synchronization-job-provision-on-demand';
 export * as synchronizationSecret from './synchronization-secret';
 export * as user from './user';
 export * as userFlowAttribute from './user-flow-attribute';
@@ -65,6 +69,7 @@ export * as dataAzureadDirectoryRoleTemplates from './data-azuread-directory-rol
 export * as dataAzureadDirectoryRoles from './data-azuread-directory-roles';
 export * as dataAzureadDomains from './data-azuread-domains';
 export * as dataAzureadGroup from './data-azuread-group';
+export * as dataAzureadGroupRoleManagementPolicy from './data-azuread-group-role-management-policy';
 export * as dataAzureadGroups from './data-azuread-groups';
 export * as dataAzureadNamedLocation from './data-azuread-named-location';
 export * as dataAzureadServicePrincipal from './data-azuread-service-principal';

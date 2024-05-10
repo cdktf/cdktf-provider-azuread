@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group
+// https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,44 +15,50 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name for the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#display_name DataAzureadGroup#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#display_name DataAzureadGroup#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#id DataAzureadGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#id DataAzureadGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Specifies whether to include transitive members (a flat list of all nested members).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#include_transitive_members DataAzureadGroup#include_transitive_members}
+  */
+  readonly includeTransitiveMembers?: boolean | cdktf.IResolvable;
+  /**
   * Whether the group is mail-enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The mail alias for the group, unique in the organisation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#mail_nickname DataAzureadGroup#mail_nickname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#mail_nickname DataAzureadGroup#mail_nickname}
   */
   readonly mailNickname?: string;
   /**
   * The object ID of the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#object_id DataAzureadGroup#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#object_id DataAzureadGroup#object_id}
   */
   readonly objectId?: string;
   /**
   * Whether the group is a security group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#timeouts DataAzureadGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#timeouts DataAzureadGroup#timeouts}
   */
   readonly timeouts?: DataAzureadGroupTimeouts;
 }
@@ -138,7 +144,7 @@ export class DataAzureadGroupDynamicMembershipList extends cdktf.ComplexList {
 }
 export interface DataAzureadGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#read DataAzureadGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#read DataAzureadGroup#read}
   */
   readonly read?: string;
 }
@@ -232,7 +238,7 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group azuread_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group azuread_group}
 */
 export class DataAzureadGroup extends cdktf.TerraformDataSource {
 
@@ -248,7 +254,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAzureadGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadGroup to import
-  * @param importFromId The id of the existing DataAzureadGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -260,7 +266,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/data-sources/group azuread_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/data-sources/group azuread_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -271,7 +277,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_group',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.48.0',
+        providerVersion: '2.49.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -284,6 +290,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     });
     this._displayName = config.displayName;
     this._id = config.id;
+    this._includeTransitiveMembers = config.includeTransitiveMembers;
     this._mailEnabled = config.mailEnabled;
     this._mailNickname = config.mailNickname;
     this._objectId = config.objectId;
@@ -366,6 +373,22 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // include_transitive_members - computed: false, optional: true, required: false
+  private _includeTransitiveMembers?: boolean | cdktf.IResolvable; 
+  public get includeTransitiveMembers() {
+    return this.getBooleanAttribute('include_transitive_members');
+  }
+  public set includeTransitiveMembers(value: boolean | cdktf.IResolvable) {
+    this._includeTransitiveMembers = value;
+  }
+  public resetIncludeTransitiveMembers() {
+    this._includeTransitiveMembers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeTransitiveMembersInput() {
+    return this._includeTransitiveMembers;
   }
 
   // mail - computed: true, optional: false, required: false
@@ -536,6 +559,7 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
     return {
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
+      include_transitive_members: cdktf.booleanToTerraform(this._includeTransitiveMembers),
       mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
       mail_nickname: cdktf.stringToTerraform(this._mailNickname),
       object_id: cdktf.stringToTerraform(this._objectId),
@@ -557,6 +581,12 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      include_transitive_members: {
+        value: cdktf.booleanToHclTerraform(this._includeTransitiveMembers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       mail_enabled: {
         value: cdktf.booleanToHclTerraform(this._mailEnabled),
