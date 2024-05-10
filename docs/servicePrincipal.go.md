@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipal(scope Construct, id *string, config ServicePrincipalConfig) ServicePrincipal
 ```
@@ -556,7 +556,7 @@ func ResetUseExisting()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ serviceprincipal.ServicePrincipal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_IsTerraformResource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ serviceprincipal.ServicePrincipal_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.ServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1395,7 +1395,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalAppRoles {
 
@@ -1408,7 +1408,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalConfig {
 	Connection: interface{},
@@ -1432,9 +1432,9 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
 	NotificationEmailAddresses: *[]*string,
 	Owners: *[]*string,
 	PreferredSingleSignOnMode: *string,
-	SamlSingleSignOn: github.com/cdktf/cdktf-provider-azuread-go/azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn,
+	SamlSingleSignOn: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.servicePrincipal.ServicePrincipalSamlSingleSignOn,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.servicePrincipal.ServicePrincipalTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.servicePrincipal.ServicePrincipalTimeouts,
 	UseExisting: interface{},
 }
 ```
@@ -1805,7 +1805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalFeatures {
 	CustomSingleSignOnApp: interface{},
@@ -1887,7 +1887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalFeatureTags {
 	CustomSingleSignOn: interface{},
@@ -1969,7 +1969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalOauth2PermissionScopes {
 
@@ -1982,7 +1982,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalSamlSingleSignOn {
 	RelayState: *string,
@@ -2016,7 +2016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 &serviceprincipal.ServicePrincipalTimeouts {
 	Create: *string,
@@ -2092,7 +2092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalAppRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicePrincipalAppRolesList
 ```
@@ -2241,7 +2241,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalAppRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicePrincipalAppRolesOutputReference
 ```
@@ -2574,7 +2574,7 @@ func InternalValue() ServicePrincipalAppRoles
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicePrincipalFeaturesList
 ```
@@ -2734,7 +2734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicePrincipalFeaturesOutputReference
 ```
@@ -3117,7 +3117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalFeatureTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicePrincipalFeatureTagsList
 ```
@@ -3277,7 +3277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalFeatureTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicePrincipalFeatureTagsOutputReference
 ```
@@ -3660,7 +3660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalOauth2PermissionScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicePrincipalOauth2PermissionScopesList
 ```
@@ -3809,7 +3809,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalOauth2PermissionScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicePrincipalOauth2PermissionScopesOutputReference
 ```
@@ -4164,7 +4164,7 @@ func InternalValue() ServicePrincipalOauth2PermissionScopes
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalSamlSingleSignOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalSamlSingleSignOnOutputReference
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() ServicePrincipalSamlSingleSignOn
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/serviceprincipal"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/serviceprincipal"
 
 serviceprincipal.NewServicePrincipalTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalTimeoutsOutputReference
 ```
