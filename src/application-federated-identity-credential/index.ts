@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential
+// https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +10,35 @@ export interface ApplicationFederatedIdentityCredentialConfig extends cdktf.Terr
   /**
   * The resource ID of the application for which this federated identity credential should be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#application_id ApplicationFederatedIdentityCredential#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#application_id ApplicationFederatedIdentityCredential#application_id}
   */
   readonly applicationId?: string;
   /**
   * The object ID of the application for which this federated identity credential should be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#application_object_id ApplicationFederatedIdentityCredential#application_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#application_object_id ApplicationFederatedIdentityCredential#application_object_id}
   */
   readonly applicationObjectId?: string;
   /**
   * List of audiences that can appear in the external token. This specifies what should be accepted in the `aud` claim of incoming tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#audiences ApplicationFederatedIdentityCredential#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#audiences ApplicationFederatedIdentityCredential#audiences}
   */
   readonly audiences: string[];
   /**
   * A description for the federated identity credential
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#description ApplicationFederatedIdentityCredential#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#description ApplicationFederatedIdentityCredential#description}
   */
   readonly description?: string;
   /**
   * A unique display name for the federated identity credential
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#display_name ApplicationFederatedIdentityCredential#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#display_name ApplicationFederatedIdentityCredential#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#id ApplicationFederatedIdentityCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#id ApplicationFederatedIdentityCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,37 +47,37 @@ export interface ApplicationFederatedIdentityCredentialConfig extends cdktf.Terr
   /**
   * The URL of the external identity provider, which must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#issuer ApplicationFederatedIdentityCredential#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#issuer ApplicationFederatedIdentityCredential#issuer}
   */
   readonly issuer: string;
   /**
   * The identifier of the external software workload within the external identity provider. The combination of issuer and subject must be unique on the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#subject ApplicationFederatedIdentityCredential#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#subject ApplicationFederatedIdentityCredential#subject}
   */
   readonly subject: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#timeouts ApplicationFederatedIdentityCredential#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#timeouts ApplicationFederatedIdentityCredential#timeouts}
   */
   readonly timeouts?: ApplicationFederatedIdentityCredentialTimeouts;
 }
 export interface ApplicationFederatedIdentityCredentialTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#create ApplicationFederatedIdentityCredential#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#create ApplicationFederatedIdentityCredential#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#delete ApplicationFederatedIdentityCredential#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#delete ApplicationFederatedIdentityCredential#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#read ApplicationFederatedIdentityCredential#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#read ApplicationFederatedIdentityCredential#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#update ApplicationFederatedIdentityCredential#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#update ApplicationFederatedIdentityCredential#update}
   */
   readonly update?: string;
 }
@@ -263,7 +258,7 @@ export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}
 */
 export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResource {
 
@@ -279,7 +274,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   * Generates CDKTF code for importing a ApplicationFederatedIdentityCredential resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationFederatedIdentityCredential to import
-  * @param importFromId The id of the existing ApplicationFederatedIdentityCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationFederatedIdentityCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationFederatedIdentityCredential to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -291,7 +286,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.48.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -302,7 +297,7 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
       terraformResourceType: 'azuread_application_federated_identity_credential',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.48.0',
+        providerVersion: '2.49.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
