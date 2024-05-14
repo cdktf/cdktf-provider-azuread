@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password
+// https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface ServicePrincipalPasswordConfig extends cdktf.TerraformMetaArgum
   /**
   * A display name for the password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#display_name ServicePrincipalPassword#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#display_name ServicePrincipalPassword#display_name}
   */
   readonly displayName?: string;
   /**
   * The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#end_date ServicePrincipalPassword#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#end_date ServicePrincipalPassword#end_date}
   */
   readonly endDate?: string;
   /**
   * A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. Changing this field forces a new resource to be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#end_date_relative ServicePrincipalPassword#end_date_relative}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#end_date_relative ServicePrincipalPassword#end_date_relative}
   */
   readonly endDateRelative?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#id ServicePrincipalPassword#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#id ServicePrincipalPassword#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +35,43 @@ export interface ServicePrincipalPasswordConfig extends cdktf.TerraformMetaArgum
   /**
   * Arbitrary map of values that, when changed, will trigger rotation of the password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#rotate_when_changed ServicePrincipalPassword#rotate_when_changed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#rotate_when_changed ServicePrincipalPassword#rotate_when_changed}
   */
   readonly rotateWhenChanged?: { [key: string]: string };
   /**
   * The object ID of the service principal for which this password should be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#service_principal_id ServicePrincipalPassword#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#service_principal_id ServicePrincipalPassword#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#start_date ServicePrincipalPassword#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#start_date ServicePrincipalPassword#start_date}
   */
   readonly startDate?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#timeouts ServicePrincipalPassword#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#timeouts ServicePrincipalPassword#timeouts}
   */
   readonly timeouts?: ServicePrincipalPasswordTimeouts;
 }
 export interface ServicePrincipalPasswordTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#create ServicePrincipalPassword#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#create ServicePrincipalPassword#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#delete ServicePrincipalPassword#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#delete ServicePrincipalPassword#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#read ServicePrincipalPassword#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#read ServicePrincipalPassword#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#update ServicePrincipalPassword#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#update ServicePrincipalPassword#update}
   */
   readonly update?: string;
 }
@@ -257,7 +252,7 @@ export class ServicePrincipalPasswordTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password azuread_service_principal_password}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password azuread_service_principal_password}
 */
 export class ServicePrincipalPassword extends cdktf.TerraformResource {
 
@@ -273,7 +268,7 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicePrincipalPassword resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalPassword to import
-  * @param importFromId The id of the existing ServicePrincipalPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipalPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalPassword to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -285,7 +280,7 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/service_principal_password azuread_service_principal_password} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_password azuread_service_principal_password} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,7 +291,7 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_service_principal_password',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.49.0',
+        providerVersion: '2.49.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

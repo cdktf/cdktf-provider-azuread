@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration
+// https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface ApplicationRegistrationConfig extends cdktf.TerraformMetaArgume
   /**
   * Description of the application as shown to end users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#description ApplicationRegistration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#description ApplicationRegistration#description}
   */
   readonly description?: string;
   /**
   * The display name for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#display_name ApplicationRegistration#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#display_name ApplicationRegistration#display_name}
   */
   readonly displayName: string;
   /**
   * Configures the `groups` claim that the app expects issued in a user or OAuth access token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#group_membership_claims ApplicationRegistration#group_membership_claims}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#group_membership_claims ApplicationRegistration#group_membership_claims}
   */
   readonly groupMembershipClaims?: string[];
   /**
   * URL of the home page for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#homepage_url ApplicationRegistration#homepage_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#homepage_url ApplicationRegistration#homepage_url}
   */
   readonly homepageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#id ApplicationRegistration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#id ApplicationRegistration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,91 +41,91 @@ export interface ApplicationRegistrationConfig extends cdktf.TerraformMetaArgume
   /**
   * Whether this application can request an access token using OAuth implicit flow
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#implicit_access_token_issuance_enabled ApplicationRegistration#implicit_access_token_issuance_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#implicit_access_token_issuance_enabled ApplicationRegistration#implicit_access_token_issuance_enabled}
   */
   readonly implicitAccessTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
   /**
   * Whether this application can request an ID token using OAuth implicit flow
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#implicit_id_token_issuance_enabled ApplicationRegistration#implicit_id_token_issuance_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#implicit_id_token_issuance_enabled ApplicationRegistration#implicit_id_token_issuance_enabled}
   */
   readonly implicitIdTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
   /**
   * URL of the logout page for the application, where the session is cleared for single sign-out
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#logout_url ApplicationRegistration#logout_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#logout_url ApplicationRegistration#logout_url}
   */
   readonly logoutUrl?: string;
   /**
   * URL of the marketing page for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#marketing_url ApplicationRegistration#marketing_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#marketing_url ApplicationRegistration#marketing_url}
   */
   readonly marketingUrl?: string;
   /**
   * User-specified notes relevant for the management of the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#notes ApplicationRegistration#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#notes ApplicationRegistration#notes}
   */
   readonly notes?: string;
   /**
   * URL of the privacy statement for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#privacy_statement_url ApplicationRegistration#privacy_statement_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#privacy_statement_url ApplicationRegistration#privacy_statement_url}
   */
   readonly privacyStatementUrl?: string;
   /**
   * The access token version expected by this resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#requested_access_token_version ApplicationRegistration#requested_access_token_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#requested_access_token_version ApplicationRegistration#requested_access_token_version}
   */
   readonly requestedAccessTokenVersion?: number;
   /**
   * References application or contact information from a service or asset management database
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#service_management_reference ApplicationRegistration#service_management_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#service_management_reference ApplicationRegistration#service_management_reference}
   */
   readonly serviceManagementReference?: string;
   /**
   * The Microsoft account types that are supported for the current application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#sign_in_audience ApplicationRegistration#sign_in_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#sign_in_audience ApplicationRegistration#sign_in_audience}
   */
   readonly signInAudience?: string;
   /**
   * URL of the support page for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#support_url ApplicationRegistration#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#support_url ApplicationRegistration#support_url}
   */
   readonly supportUrl?: string;
   /**
   * URL of the terms of service statement for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#terms_of_service_url ApplicationRegistration#terms_of_service_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#terms_of_service_url ApplicationRegistration#terms_of_service_url}
   */
   readonly termsOfServiceUrl?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#timeouts ApplicationRegistration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#timeouts ApplicationRegistration#timeouts}
   */
   readonly timeouts?: ApplicationRegistrationTimeouts;
 }
 export interface ApplicationRegistrationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#create ApplicationRegistration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#create ApplicationRegistration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#delete ApplicationRegistration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#delete ApplicationRegistration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#read ApplicationRegistration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#read ApplicationRegistration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#update ApplicationRegistration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#update ApplicationRegistration#update}
   */
   readonly update?: string;
 }
@@ -311,7 +306,7 @@ export class ApplicationRegistrationTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration azuread_application_registration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration azuread_application_registration}
 */
 export class ApplicationRegistration extends cdktf.TerraformResource {
 
@@ -327,7 +322,7 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationRegistration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationRegistration to import
-  * @param importFromId The id of the existing ApplicationRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationRegistration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -339,7 +334,7 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.0/docs/resources/application_registration azuread_application_registration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_registration azuread_application_registration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -350,7 +345,7 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_registration',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.49.0',
+        providerVersion: '2.49.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
