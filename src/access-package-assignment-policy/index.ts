@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_assignment_policy
 // generated from terraform resource schema
 
