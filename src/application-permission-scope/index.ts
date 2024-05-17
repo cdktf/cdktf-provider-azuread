@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope
+// https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface ApplicationPermissionScopeConfig extends cdktf.TerraformMetaArg
   /**
   * Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#admin_consent_description ApplicationPermissionScope#admin_consent_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#admin_consent_description ApplicationPermissionScope#admin_consent_description}
   */
   readonly adminConsentDescription: string;
   /**
   * Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#admin_consent_display_name ApplicationPermissionScope#admin_consent_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#admin_consent_display_name ApplicationPermissionScope#admin_consent_display_name}
   */
   readonly adminConsentDisplayName: string;
   /**
   * The resource ID of the application to which this permission scope should be applied
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#application_id ApplicationPermissionScope#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#application_id ApplicationPermissionScope#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#id ApplicationPermissionScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#id ApplicationPermissionScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,55 +35,55 @@ export interface ApplicationPermissionScopeConfig extends cdktf.TerraformMetaArg
   /**
   * The unique identifier of the permission scope
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#scope_id ApplicationPermissionScope#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#scope_id ApplicationPermissionScope#scope_id}
   */
   readonly scopeId: string;
   /**
   * Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#type ApplicationPermissionScope#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#type ApplicationPermissionScope#type}
   */
   readonly type?: string;
   /**
   * Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#user_consent_description ApplicationPermissionScope#user_consent_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#user_consent_description ApplicationPermissionScope#user_consent_description}
   */
   readonly userConsentDescription?: string;
   /**
   * Display name for the delegated permission that appears in the end user consent experience
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#user_consent_display_name ApplicationPermissionScope#user_consent_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#user_consent_display_name ApplicationPermissionScope#user_consent_display_name}
   */
   readonly userConsentDisplayName?: string;
   /**
   * The value that is used for the `scp` claim in OAuth access tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#value ApplicationPermissionScope#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#value ApplicationPermissionScope#value}
   */
   readonly value: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#timeouts ApplicationPermissionScope#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#timeouts ApplicationPermissionScope#timeouts}
   */
   readonly timeouts?: ApplicationPermissionScopeTimeouts;
 }
 export interface ApplicationPermissionScopeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#create ApplicationPermissionScope#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#create ApplicationPermissionScope#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#delete ApplicationPermissionScope#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#delete ApplicationPermissionScope#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#read ApplicationPermissionScope#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#read ApplicationPermissionScope#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#update ApplicationPermissionScope#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#update ApplicationPermissionScope#update}
   */
   readonly update?: string;
 }
@@ -269,7 +264,7 @@ export class ApplicationPermissionScopeTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope azuread_application_permission_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope azuread_application_permission_scope}
 */
 export class ApplicationPermissionScope extends cdktf.TerraformResource {
 
@@ -285,7 +280,7 @@ export class ApplicationPermissionScope extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationPermissionScope resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationPermissionScope to import
-  * @param importFromId The id of the existing ApplicationPermissionScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationPermissionScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationPermissionScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -297,7 +292,7 @@ export class ApplicationPermissionScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_permission_scope azuread_application_permission_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_permission_scope azuread_application_permission_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -308,7 +303,7 @@ export class ApplicationPermissionScope extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_permission_scope',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.49.1',
+        providerVersion: '2.50.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

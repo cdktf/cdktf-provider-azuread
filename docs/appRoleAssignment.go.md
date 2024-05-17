@@ -4,12 +4,12 @@
 
 ### AppRoleAssignment <a name="AppRoleAssignment" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment azuread_app_role_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment azuread_app_role_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 approleassignment.NewAppRoleAssignment(scope Construct, id *string, config AppRoleAssignmentConfig) AppRoleAssignment
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 approleassignment.AppRoleAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 approleassignment.AppRoleAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ approleassignment.AppRoleAssignment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 approleassignment.AppRoleAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ approleassignment.AppRoleAssignment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 approleassignment.AppRoleAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the AppRoleAssignment to impor
 
 The id of the existing AppRoleAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 &approleassignment.AppRoleAssignmentConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment
 	PrincipalObjectId: *string,
 	ResourceObjectId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.appRoleAssignment.AppRoleAssignmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.appRoleAssignment.AppRoleAssignmentTimeouts,
 }
 ```
 
@@ -869,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment
 | <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.appRoleId">AppRoleId</a></code> | <code>*string</code> | The ID of the app role to be assigned. |
 | <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.principalObjectId">PrincipalObjectId</a></code> | <code>*string</code> | The object ID of the user, group or service principal to be assigned this app role. |
 | <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.resourceObjectId">ResourceObjectId</a></code> | <code>*string</code> | The object ID of the service principal representing the resource. |
-| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#id AppRoleAssignment#id}. |
+| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}. |
 | <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts">AppRoleAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -954,7 +954,7 @@ AppRoleId *string
 
 The ID of the app role to be assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
 
 ---
 
@@ -968,7 +968,7 @@ PrincipalObjectId *string
 
 The object ID of the user, group or service principal to be assigned this app role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
 
 ---
 
@@ -982,7 +982,7 @@ ResourceObjectId *string
 
 The object ID of the service principal representing the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
 
 ---
 
@@ -994,7 +994,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1011,7 @@ Timeouts AppRoleAssignmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
 
 ---
 
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 &approleassignment.AppRoleAssignmentTimeouts {
 	Create: *string,
@@ -1033,9 +1033,9 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#create AppRoleAssignment#create}. |
-| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}. |
-| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#read AppRoleAssignment#read}. |
+| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}. |
+| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}. |
+| <code><a href="#@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}. |
 
 ---
 
@@ -1047,7 +1047,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#create AppRoleAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}.
 
 ---
 
@@ -1071,7 +1071,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/app_role_assignment#read AppRoleAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}.
 
 ---
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/approleassignment"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/approleassignment"
 
 approleassignment.NewAppRoleAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppRoleAssignmentTimeoutsOutputReference
 ```

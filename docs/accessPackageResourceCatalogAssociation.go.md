@@ -4,12 +4,12 @@
 
 ### AccessPackageResourceCatalogAssociation <a name="AccessPackageResourceCatalogAssociation" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.NewAccessPackageResourceCatalogAssociation(scope Construct, id *string, config AccessPackageResourceCatalogAssociationConfig) AccessPackageResourceCatalogAssociation
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the AccessPackageResourceCatal
 
 The id of the existing AccessPackageResourceCatalogAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 &accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociationConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackagereso
 	ResourceOriginId: *string,
 	ResourceOriginSystem: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts,
 }
 ```
 
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackagereso
 | <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.property.catalogId">CatalogId</a></code> | <code>*string</code> | The unique ID of the access package catalog. |
 | <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.property.resourceOriginId">ResourceOriginId</a></code> | <code>*string</code> | The unique identifier of the resource in the origin system. |
 | <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.property.resourceOriginSystem">ResourceOriginSystem</a></code> | <code>*string</code> | The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup. |
-| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#id AccessPackageResourceCatalogAssociation#id}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#id AccessPackageResourceCatalogAssociation#id}. |
 | <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts">AccessPackageResourceCatalogAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -921,7 +921,7 @@ CatalogId *string
 
 The unique ID of the access package catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#catalog_id AccessPackageResourceCatalogAssociation#catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#catalog_id AccessPackageResourceCatalogAssociation#catalog_id}
 
 ---
 
@@ -937,7 +937,7 @@ The unique identifier of the resource in the origin system.
 
 In the case of an Azure AD group, this is the identifier of the group
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#resource_origin_id AccessPackageResourceCatalogAssociation#resource_origin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#resource_origin_id AccessPackageResourceCatalogAssociation#resource_origin_id}
 
 ---
 
@@ -951,7 +951,7 @@ ResourceOriginSystem *string
 
 The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#resource_origin_system AccessPackageResourceCatalogAssociation#resource_origin_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#resource_origin_system AccessPackageResourceCatalogAssociation#resource_origin_system}
 
 ---
 
@@ -963,7 +963,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#id AccessPackageResourceCatalogAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#id AccessPackageResourceCatalogAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -980,7 +980,7 @@ Timeouts AccessPackageResourceCatalogAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#timeouts AccessPackageResourceCatalogAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#timeouts AccessPackageResourceCatalogAssociation#timeouts}
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 &accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociationTimeouts {
 	Create: *string,
@@ -1002,9 +1002,9 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackagereso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#create AccessPackageResourceCatalogAssociation#create}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#delete AccessPackageResourceCatalogAssociation#delete}. |
-| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#read AccessPackageResourceCatalogAssociation#read}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#create AccessPackageResourceCatalogAssociation#create}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#delete AccessPackageResourceCatalogAssociation#delete}. |
+| <code><a href="#@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#read AccessPackageResourceCatalogAssociation#read}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#create AccessPackageResourceCatalogAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#create AccessPackageResourceCatalogAssociation#create}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#delete AccessPackageResourceCatalogAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#delete AccessPackageResourceCatalogAssociation#delete}.
 
 ---
 
@@ -1040,7 +1040,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/access_package_resource_catalog_association#read AccessPackageResourceCatalogAssociation#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/access_package_resource_catalog_association#read AccessPackageResourceCatalogAssociation#read}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/accesspackageresourcecatalogassociation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.NewAccessPackageResourceCatalogAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageResourceCatalogAssociationTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAzureadUsers <a name="DataAzureadUsers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users azuread_users}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users azuread_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.NewDataAzureadUsers(scope Construct, id *string, config DataAzureadUsersConfig) DataAzureadUsers
 ```
@@ -345,7 +345,7 @@ func ResetUserPrincipalNames()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.DataAzureadUsers_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.DataAzureadUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataazureadusers.DataAzureadUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.DataAzureadUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataazureadusers.DataAzureadUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.DataAzureadUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataAzureadUsers to import
 
 The id of the existing DataAzureadUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 &dataazureadusers.DataAzureadUsersConfig {
 	Connection: interface{},
@@ -815,7 +815,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
 	MailNicknames: *[]*string,
 	ObjectIds: *[]*string,
 	ReturnAll: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.dataAzureadUsers.DataAzureadUsersTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadUsers.DataAzureadUsersTimeouts,
 	UserPrincipalNames: *[]*string,
 }
 ```
@@ -832,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.employeeIds">EmployeeIds</a></code> | <code>*[]*string</code> | The employee identifier assigned to the user by the organisation. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#id DataAzureadUsers#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#id DataAzureadUsers#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.ignoreMissing">IgnoreMissing</a></code> | <code>interface{}</code> | Ignore missing users and return users that were found. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.mailNicknames">MailNicknames</a></code> | <code>*[]*string</code> | The email aliases of the users. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersConfig.property.objectIds">ObjectIds</a></code> | <code>*[]*string</code> | The object IDs of the users. |
@@ -922,7 +922,7 @@ EmployeeIds *[]*string
 
 The employee identifier assigned to the user by the organisation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#employee_ids DataAzureadUsers#employee_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#employee_ids DataAzureadUsers#employee_ids}
 
 ---
 
@@ -934,7 +934,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#id DataAzureadUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#id DataAzureadUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -953,7 +953,7 @@ Ignore missing users and return users that were found.
 
 The data source will still fail if no users are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
 
 ---
 
@@ -967,7 +967,7 @@ MailNicknames *[]*string
 
 The email aliases of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
 
 ---
 
@@ -981,7 +981,7 @@ ObjectIds *[]*string
 
 The object IDs of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
 
 ---
 
@@ -997,7 +997,7 @@ Fetch all users with no filter and return all that were found.
 
 The data source will still fail if no users are found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#return_all DataAzureadUsers#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
 
 ---
 
@@ -1011,7 +1011,7 @@ Timeouts DataAzureadUsersTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
 
 ---
 
@@ -1025,7 +1025,7 @@ UserPrincipalNames *[]*string
 
 The user principal names (UPNs) of the users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
 
 ---
 
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 &dataazureadusers.DataAzureadUsersTimeouts {
 	Read: *string,
@@ -1045,7 +1045,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#read DataAzureadUsers#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#read DataAzureadUsers#read}. |
 
 ---
 
@@ -1057,7 +1057,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/users#read DataAzureadUsers#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#read DataAzureadUsers#read}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 &dataazureadusers.DataAzureadUsersUsers {
 
@@ -1081,7 +1081,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.NewDataAzureadUsersTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadUsersTimeoutsOutputReference
 ```
@@ -1359,7 +1359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.NewDataAzureadUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadUsersUsersList
 ```
@@ -1508,7 +1508,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadUsers.DataAzureadUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadusers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadusers"
 
 dataazureadusers.NewDataAzureadUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadUsersUsersOutputReference
 ```

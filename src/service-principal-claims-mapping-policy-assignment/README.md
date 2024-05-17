@@ -1,3 +1,3 @@
 # `azuread_service_principal_claims_mapping_policy_assignment`
 
-Refer to the Terraform Registry for docs: [`azuread_service_principal_claims_mapping_policy_assignment`](https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/service_principal_claims_mapping_policy_assignment).
+Refer to the Terraform Registry for docs: [`azuread_service_principal_claims_mapping_policy_assignment`](https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/service_principal_claims_mapping_policy_assignment).
