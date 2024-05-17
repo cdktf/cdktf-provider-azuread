@@ -4,7 +4,7 @@
 
 ### DataAzureadApplication <a name="DataAzureadApplication" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application azuread_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application azuread_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetClientId">resetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetIdentifierUri">resetIdentifierUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetObjectId">resetObjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -305,6 +306,12 @@ public resetDisplayName(): void
 public resetId(): void
 ```
 
+##### `resetIdentifierUri` <a name="resetIdentifierUri" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetIdentifierUri"></a>
+
+```typescript
+public resetIdentifierUri(): void
+```
+
 ##### `resetObjectId` <a name="resetObjectId" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.resetObjectId"></a>
 
 ```typescript
@@ -420,7 +427,7 @@ The construct id used in the generated config for the DataAzureadApplication to 
 
 The id of the existing DataAzureadApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -480,6 +487,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.applicationIdInput">applicationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.identifierUriInput">identifierUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.objectIdInput">objectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts">DataAzureadApplicationTimeouts</a></code> | *No description.* |
@@ -487,6 +495,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.identifierUri">identifierUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.objectId">objectId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -933,6 +942,16 @@ public readonly displayNameInput: string;
 
 ---
 
+##### `identifierUriInput`<sup>Optional</sup> <a name="identifierUriInput" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.identifierUriInput"></a>
+
+```typescript
+public readonly identifierUriInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.idInput"></a>
 
 ```typescript
@@ -997,6 +1016,16 @@ public readonly displayName: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `identifierUri`<sup>Required</sup> <a name="identifierUri" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.property.identifierUri"></a>
+
+```typescript
+public readonly identifierUri: string;
 ```
 
 - *Type:* string
@@ -1090,7 +1119,8 @@ const dataAzureadApplicationConfig: dataAzureadApplication.DataAzureadApplicatio
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.applicationId">applicationId</a></code> | <code>string</code> | The Application ID (also called Client ID). |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.clientId">clientId</a></code> | <code>string</code> | The Client ID (also called Application ID). |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name for the application. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#id DataAzureadApplication#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#id DataAzureadApplication#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.identifierUri">identifierUri</a></code> | <code>string</code> | One of the application's identifier URIs. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.objectId">objectId</a></code> | <code>string</code> | The application's object ID. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts">DataAzureadApplicationTimeouts</a></code> | timeouts block. |
 
@@ -1176,7 +1206,7 @@ public readonly applicationId: string;
 
 The Application ID (also called Client ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#application_id DataAzureadApplication#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#application_id DataAzureadApplication#application_id}
 
 ---
 
@@ -1190,7 +1220,7 @@ public readonly clientId: string;
 
 The Client ID (also called Application ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#client_id DataAzureadApplication#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#client_id DataAzureadApplication#client_id}
 
 ---
 
@@ -1204,7 +1234,7 @@ public readonly displayName: string;
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#display_name DataAzureadApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#display_name DataAzureadApplication#display_name}
 
 ---
 
@@ -1216,10 +1246,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#id DataAzureadApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#id DataAzureadApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identifierUri`<sup>Optional</sup> <a name="identifierUri" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.identifierUri"></a>
+
+```typescript
+public readonly identifierUri: string;
+```
+
+- *Type:* string
+
+One of the application's identifier URIs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#identifier_uri DataAzureadApplication#identifier_uri}
 
 ---
 
@@ -1233,7 +1277,7 @@ public readonly objectId: string;
 
 The application's object ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#object_id DataAzureadApplication#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#object_id DataAzureadApplication#object_id}
 
 ---
 
@@ -1247,7 +1291,7 @@ public readonly timeouts: DataAzureadApplicationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
 
 ---
 
@@ -1364,7 +1408,7 @@ const dataAzureadApplicationTimeouts: dataAzureadApplication.DataAzureadApplicat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#read DataAzureadApplication#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#read DataAzureadApplication#read}. |
 
 ---
 
@@ -1376,7 +1420,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#read DataAzureadApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#read DataAzureadApplication#read}.
 
 ---
 

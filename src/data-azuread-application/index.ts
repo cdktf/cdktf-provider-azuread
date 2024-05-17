@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application
+// https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,44 @@ export interface DataAzureadApplicationConfig extends cdktf.TerraformMetaArgumen
   /**
   * The Application ID (also called Client ID)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#application_id DataAzureadApplication#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#application_id DataAzureadApplication#application_id}
   */
   readonly applicationId?: string;
   /**
   * The Client ID (also called Application ID)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#client_id DataAzureadApplication#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#client_id DataAzureadApplication#client_id}
   */
   readonly clientId?: string;
   /**
   * The display name for the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#display_name DataAzureadApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#display_name DataAzureadApplication#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#id DataAzureadApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#id DataAzureadApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * One of the application's identifier URIs
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#identifier_uri DataAzureadApplication#identifier_uri}
+  */
+  readonly identifierUri?: string;
+  /**
   * The application's object ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#object_id DataAzureadApplication#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#object_id DataAzureadApplication#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
   */
   readonly timeouts?: DataAzureadApplicationTimeouts;
 }
@@ -1283,7 +1289,7 @@ export class DataAzureadApplicationWebList extends cdktf.ComplexList {
 }
 export interface DataAzureadApplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#read DataAzureadApplication#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#read DataAzureadApplication#read}
   */
   readonly read?: string;
 }
@@ -1377,7 +1383,7 @@ export class DataAzureadApplicationTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application azuread_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application azuread_application}
 */
 export class DataAzureadApplication extends cdktf.TerraformDataSource {
 
@@ -1393,7 +1399,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAzureadApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadApplication to import
-  * @param importFromId The id of the existing DataAzureadApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1405,7 +1411,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/data-sources/application azuread_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/application azuread_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1416,7 +1422,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_application',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.49.1',
+        providerVersion: '2.50.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -1431,6 +1437,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
     this._clientId = config.clientId;
     this._displayName = config.displayName;
     this._id = config.id;
+    this._identifierUri = config.identifierUri;
     this._objectId = config.objectId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1550,6 +1557,22 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // identifier_uri - computed: true, optional: true, required: false
+  private _identifierUri?: string; 
+  public get identifierUri() {
+    return this.getStringAttribute('identifier_uri');
+  }
+  public set identifierUri(value: string) {
+    this._identifierUri = value;
+  }
+  public resetIdentifierUri() {
+    this._identifierUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierUriInput() {
+    return this._identifierUri;
   }
 
   // identifier_uris - computed: true, optional: false, required: false
@@ -1695,6 +1718,7 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
       client_id: cdktf.stringToTerraform(this._clientId),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
+      identifier_uri: cdktf.stringToTerraform(this._identifierUri),
       object_id: cdktf.stringToTerraform(this._objectId),
       timeouts: dataAzureadApplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1722,6 +1746,12 @@ export class DataAzureadApplication extends cdktf.TerraformDataSource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identifier_uri: {
+        value: cdktf.stringToHclTerraform(this._identifierUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

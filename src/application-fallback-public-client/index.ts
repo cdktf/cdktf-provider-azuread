@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client
+// https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ApplicationFallbackPublicClientConfig extends cdktf.TerraformMe
   /**
   * The resource ID of the application to which the fallback public client setting should be applied
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#application_id ApplicationFallbackPublicClient#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#application_id ApplicationFallbackPublicClient#application_id}
   */
   readonly applicationId: string;
   /**
   * Specifies explicitly whether the application is a public client. Appropriate for apps using token grant flows that don't use a redirect URI
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#enabled ApplicationFallbackPublicClient#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#enabled ApplicationFallbackPublicClient#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#id ApplicationFallbackPublicClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#id ApplicationFallbackPublicClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,21 +34,21 @@ export interface ApplicationFallbackPublicClientConfig extends cdktf.TerraformMe
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#timeouts ApplicationFallbackPublicClient#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#timeouts ApplicationFallbackPublicClient#timeouts}
   */
   readonly timeouts?: ApplicationFallbackPublicClientTimeouts;
 }
 export interface ApplicationFallbackPublicClientTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}
   */
   readonly read?: string;
 }
@@ -200,7 +200,7 @@ export class ApplicationFallbackPublicClientTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client azuread_application_fallback_public_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client azuread_application_fallback_public_client}
 */
 export class ApplicationFallbackPublicClient extends cdktf.TerraformResource {
 
@@ -216,7 +216,7 @@ export class ApplicationFallbackPublicClient extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationFallbackPublicClient resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationFallbackPublicClient to import
-  * @param importFromId The id of the existing ApplicationFallbackPublicClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationFallbackPublicClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationFallbackPublicClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -228,7 +228,7 @@ export class ApplicationFallbackPublicClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.49.1/docs/resources/application_fallback_public_client azuread_application_fallback_public_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/resources/application_fallback_public_client azuread_application_fallback_public_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +239,7 @@ export class ApplicationFallbackPublicClient extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_fallback_public_client',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.49.1',
+        providerVersion: '2.50.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
