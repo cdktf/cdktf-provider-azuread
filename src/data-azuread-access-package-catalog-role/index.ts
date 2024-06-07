@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role
+// https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAzureadAccessPackageCatalogRoleConfig extends cdktf.Terrafo
   /**
   * The display name of the catalog role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role#display_name DataAzureadAccessPackageCatalogRole#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role#display_name DataAzureadAccessPackageCatalogRole#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role#id DataAzureadAccessPackageCatalogRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface DataAzureadAccessPackageCatalogRoleConfig extends cdktf.Terrafo
   /**
   * The object ID of the catalog role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role#object_id DataAzureadAccessPackageCatalogRole#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role#object_id DataAzureadAccessPackageCatalogRole#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role#timeouts DataAzureadAccessPackageCatalogRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role#timeouts DataAzureadAccessPackageCatalogRole#timeouts}
   */
   readonly timeouts?: DataAzureadAccessPackageCatalogRoleTimeouts;
 }
 export interface DataAzureadAccessPackageCatalogRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role#read DataAzureadAccessPackageCatalogRole#read}
   */
   readonly read?: string;
 }
@@ -134,7 +134,7 @@ export class DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}
 */
 export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataAzureadAccessPackageCatalogRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadAccessPackageCatalogRole to import
-  * @param importFromId The id of the existing DataAzureadAccessPackageCatalogRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadAccessPackageCatalogRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadAccessPackageCatalogRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSour
       terraformResourceType: 'azuread_access_package_catalog_role',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.50.0',
+        providerVersion: '2.51.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

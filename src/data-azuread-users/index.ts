@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users
+// https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * The employee identifier assigned to the user by the organisation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#employee_ids DataAzureadUsers#employee_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#employee_ids DataAzureadUsers#employee_ids}
   */
   readonly employeeIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#id DataAzureadUsers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#id DataAzureadUsers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,43 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Ignore missing users and return users that were found. The data source will still fail if no users are found
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
   */
   readonly ignoreMissing?: boolean | cdktf.IResolvable;
   /**
   * The email aliases of the users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#mail_nicknames DataAzureadUsers#mail_nicknames}
   */
   readonly mailNicknames?: string[];
   /**
+  * The SMTP address of the users
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#mails DataAzureadUsers#mails}
+  */
+  readonly mails?: string[];
+  /**
   * The object IDs of the users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#object_ids DataAzureadUsers#object_ids}
   */
   readonly objectIds?: string[];
   /**
   * Fetch all users with no filter and return all that were found. The data source will still fail if no users are found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
   */
   readonly returnAll?: boolean | cdktf.IResolvable;
   /**
   * The user principal names (UPNs) of the users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#user_principal_names DataAzureadUsers#user_principal_names}
   */
   readonly userPrincipalNames?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#timeouts DataAzureadUsers#timeouts}
   */
   readonly timeouts?: DataAzureadUsersTimeouts;
 }
@@ -189,7 +195,7 @@ export class DataAzureadUsersUsersList extends cdktf.ComplexList {
 }
 export interface DataAzureadUsersTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#read DataAzureadUsers#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#read DataAzureadUsers#read}
   */
   readonly read?: string;
 }
@@ -283,7 +289,7 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users azuread_users}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users azuread_users}
 */
 export class DataAzureadUsers extends cdktf.TerraformDataSource {
 
@@ -299,7 +305,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAzureadUsers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadUsers to import
-  * @param importFromId The id of the existing DataAzureadUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadUsers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -311,7 +317,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.50.0/docs/data-sources/users azuread_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/users azuread_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -322,7 +328,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'azuread_users',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.50.0',
+        providerVersion: '2.51.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -337,6 +343,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._ignoreMissing = config.ignoreMissing;
     this._mailNicknames = config.mailNicknames;
+    this._mails = config.mails;
     this._objectIds = config.objectIds;
     this._returnAll = config.returnAll;
     this._userPrincipalNames = config.userPrincipalNames;
@@ -409,6 +416,22 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get mailNicknamesInput() {
     return this._mailNicknames;
+  }
+
+  // mails - computed: true, optional: true, required: false
+  private _mails?: string[]; 
+  public get mails() {
+    return this.getListAttribute('mails');
+  }
+  public set mails(value: string[]) {
+    this._mails = value;
+  }
+  public resetMails() {
+    this._mails = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mailsInput() {
+    return this._mails;
   }
 
   // object_ids - computed: true, optional: true, required: false
@@ -491,6 +514,7 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),
       mail_nicknames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._mailNicknames),
+      mails: cdktf.listMapper(cdktf.stringToTerraform, false)(this._mails),
       object_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._objectIds),
       return_all: cdktf.booleanToTerraform(this._returnAll),
       user_principal_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userPrincipalNames),
@@ -520,6 +544,12 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
       },
       mail_nicknames: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._mailNicknames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      mails: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._mails),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
