@@ -4,12 +4,12 @@
 
 ### Group <a name="Group" id="@cdktf/provider-azuread.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group azuread_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group azuread_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -565,7 +565,7 @@ func ResetWritebackEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -611,7 +611,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -625,7 +625,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.group.Group.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 group.Group_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +654,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1481,7 +1481,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -1497,7 +1497,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
 	AutoSubscribeNewMembers: interface{},
 	Behaviors: *[]*string,
 	Description: *string,
-	DynamicMembership: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.group.GroupDynamicMembership,
+	DynamicMembership: github.com/cdktf/cdktf-provider-azuread-go/azuread.group.GroupDynamicMembership,
 	ExternalSendersAllowed: interface{},
 	HideFromAddressLists: interface{},
 	HideFromOutlookClients: interface{},
@@ -1511,7 +1511,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
 	ProvisioningOptions: *[]*string,
 	SecurityEnabled: interface{},
 	Theme: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.group.GroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.group.GroupTimeouts,
 	Types: *[]*string,
 	Visibility: *string,
 	WritebackEnabled: interface{},
@@ -1539,7 +1539,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed">ExternalSendersAllowed</a></code> | <code>interface{}</code> | Indicates whether people external to the organization can send messages to the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists">HideFromAddressLists</a></code> | <code>interface{}</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients">HideFromOutlookClients</a></code> | <code>interface{}</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">MailEnabled</a></code> | <code>interface{}</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.members">Members</a></code> | <code>*[]*string</code> | A set of members who should be present in this group. |
@@ -1636,7 +1636,7 @@ DisplayName *string
 
 The display name for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#display_name Group#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#display_name Group#display_name}
 
 ---
 
@@ -1652,7 +1652,7 @@ The administrative unit IDs in which the group should be.
 
 If empty, the group will be created at the tenant level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#administrative_unit_ids Group#administrative_unit_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#administrative_unit_ids Group#administrative_unit_ids}
 
 ---
 
@@ -1668,7 +1668,7 @@ Indicates whether this group can be assigned to an Azure Active Directory role.
 
 This property can only be `true` for security-enabled groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#assignable_to_role Group#assignable_to_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#assignable_to_role Group#assignable_to_role}
 
 ---
 
@@ -1682,7 +1682,7 @@ AutoSubscribeNewMembers interface{}
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#auto_subscribe_new_members Group#auto_subscribe_new_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#auto_subscribe_new_members Group#auto_subscribe_new_members}
 
 ---
 
@@ -1696,7 +1696,7 @@ Behaviors *[]*string
 
 The group behaviours for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#behaviors Group#behaviors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#behaviors Group#behaviors}
 
 ---
 
@@ -1710,7 +1710,7 @@ Description *string
 
 The description for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -1724,7 +1724,7 @@ DynamicMembership GroupDynamicMembership
 
 dynamic_membership block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#dynamic_membership Group#dynamic_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#dynamic_membership Group#dynamic_membership}
 
 ---
 
@@ -1738,7 +1738,7 @@ ExternalSendersAllowed interface{}
 
 Indicates whether people external to the organization can send messages to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#external_senders_allowed Group#external_senders_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#external_senders_allowed Group#external_senders_allowed}
 
 ---
 
@@ -1752,7 +1752,7 @@ HideFromAddressLists interface{}
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#hide_from_address_lists Group#hide_from_address_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#hide_from_address_lists Group#hide_from_address_lists}
 
 ---
 
@@ -1766,7 +1766,7 @@ HideFromOutlookClients interface{}
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#hide_from_outlook_clients Group#hide_from_outlook_clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#hide_from_outlook_clients Group#hide_from_outlook_clients}
 
 ---
 
@@ -1778,7 +1778,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1797,7 +1797,7 @@ Whether the group is a mail enabled, with a shared group mailbox.
 
 At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled *and* security enabled
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#mail_enabled Group#mail_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#mail_enabled Group#mail_enabled}
 
 ---
 
@@ -1811,7 +1811,7 @@ MailNickname *string
 
 The mail alias for the group, unique in the organisation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#mail_nickname Group#mail_nickname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#mail_nickname Group#mail_nickname}
 
 ---
 
@@ -1827,7 +1827,7 @@ A set of members who should be present in this group.
 
 Supported object types are Users, Groups or Service Principals
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#members Group#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#members Group#members}
 
 ---
 
@@ -1841,7 +1841,7 @@ OnpremisesGroupType *string
 
 Indicates the target on-premise group type the group will be written back as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#onpremises_group_type Group#onpremises_group_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#onpremises_group_type Group#onpremises_group_type}
 
 ---
 
@@ -1855,7 +1855,7 @@ Owners *[]*string
 
 A set of owners who own this group. Supported object types are Users or Service Principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#owners Group#owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#owners Group#owners}
 
 ---
 
@@ -1869,7 +1869,7 @@ PreventDuplicateNames interface{}
 
 If `true`, will return an error if an existing group is found with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#prevent_duplicate_names Group#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#prevent_duplicate_names Group#prevent_duplicate_names}
 
 ---
 
@@ -1883,7 +1883,7 @@ ProvisioningOptions *[]*string
 
 The group provisioning options for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#provisioning_options Group#provisioning_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#provisioning_options Group#provisioning_options}
 
 ---
 
@@ -1899,7 +1899,7 @@ Whether the group is a security group for controlling access to in-app resources
 
 At least one of `security_enabled` or `mail_enabled` must be specified. A group can be security enabled *and* mail enabled
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#security_enabled Group#security_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#security_enabled Group#security_enabled}
 
 ---
 
@@ -1913,7 +1913,7 @@ Theme *string
 
 The colour theme for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#theme Group#theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#theme Group#theme}
 
 ---
 
@@ -1927,7 +1927,7 @@ Timeouts GroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#timeouts Group#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#timeouts Group#timeouts}
 
 ---
 
@@ -1943,7 +1943,7 @@ A set of group types to configure for the group.
 
 `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#types Group#types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#types Group#types}
 
 ---
 
@@ -1957,7 +1957,7 @@ Visibility *string
 
 Specifies the group join policy and group content visibility.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#visibility Group#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#visibility Group#visibility}
 
 ---
 
@@ -1971,7 +1971,7 @@ WritebackEnabled interface{}
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#writeback_enabled Group#writeback_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#writeback_enabled Group#writeback_enabled}
 
 ---
 
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.group.GroupDynamicMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 &group.GroupDynamicMembership {
 	Enabled: interface{},
@@ -1992,7 +1992,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#enabled Group#enabled}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#enabled Group#enabled}. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.rule">Rule</a></code> | <code>*string</code> | Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'. |
 
 ---
@@ -2005,7 +2005,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#enabled Group#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#enabled Group#enabled}.
 
 ---
 
@@ -2019,7 +2019,7 @@ Rule *string
 
 Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#rule Group#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#rule Group#rule}
 
 ---
 
@@ -2028,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.group.GroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 &group.GroupTimeouts {
 	Create: *string,
@@ -2042,10 +2042,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#create Group#create}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#delete Group#delete}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#read Group#read}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#update Group#update}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#create Group#create}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#delete Group#delete}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#read Group#read}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#update Group#update}. |
 
 ---
 
@@ -2057,7 +2057,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#create Group#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#create Group#create}.
 
 ---
 
@@ -2069,7 +2069,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#delete Group#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#delete Group#delete}.
 
 ---
 
@@ -2081,7 +2081,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#read Group#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#read Group#read}.
 
 ---
 
@@ -2093,7 +2093,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/resources/group#update Group#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/group#update Group#update}.
 
 ---
 
@@ -2104,7 +2104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 group.NewGroupDynamicMembershipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupDynamicMembershipOutputReference
 ```
@@ -2397,7 +2397,7 @@ func InternalValue() GroupDynamicMembership
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/group"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/group"
 
 group.NewGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupTimeoutsOutputReference
 ```
