@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy
+// https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAzureadGroupRoleManagementPolicyConfig extends cdktf.Terraf
   /**
   * ID of the group to which this policy is assigned
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy#group_id DataAzureadGroupRoleManagementPolicy#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy#group_id DataAzureadGroupRoleManagementPolicy#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy#id DataAzureadGroupRoleManagementPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy#id DataAzureadGroupRoleManagementPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface DataAzureadGroupRoleManagementPolicyConfig extends cdktf.Terraf
   /**
   * The ID of the role of this policy to the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy#role_id DataAzureadGroupRoleManagementPolicy#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy#role_id DataAzureadGroupRoleManagementPolicy#role_id}
   */
   readonly roleId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy#timeouts DataAzureadGroupRoleManagementPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy#timeouts DataAzureadGroupRoleManagementPolicy#timeouts}
   */
   readonly timeouts?: DataAzureadGroupRoleManagementPolicyTimeouts;
 }
 export interface DataAzureadGroupRoleManagementPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy#read DataAzureadGroupRoleManagementPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy#read DataAzureadGroupRoleManagementPolicy#read}
   */
   readonly read?: string;
 }
@@ -134,7 +134,7 @@ export class DataAzureadGroupRoleManagementPolicyTimeoutsOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy azuread_group_role_management_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy azuread_group_role_management_policy}
 */
 export class DataAzureadGroupRoleManagementPolicy extends cdktf.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataAzureadGroupRoleManagementPolicy extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataAzureadGroupRoleManagementPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadGroupRoleManagementPolicy to import
-  * @param importFromId The id of the existing DataAzureadGroupRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadGroupRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadGroupRoleManagementPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataAzureadGroupRoleManagementPolicy extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.51.0/docs/data-sources/group_role_management_policy azuread_group_role_management_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/group_role_management_policy azuread_group_role_management_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataAzureadGroupRoleManagementPolicy extends cdktf.TerraformDataSou
       terraformResourceType: 'azuread_group_role_management_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.51.0',
+        providerVersion: '2.52.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
