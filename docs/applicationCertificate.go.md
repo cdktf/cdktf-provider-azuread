@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.NewApplicationCertificate(scope Construct, id *string, config ApplicationCertificateConfig) ApplicationCertificate
 ```
@@ -461,7 +461,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ applicationcertificate.ApplicationCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ applicationcertificate.ApplicationCertificate_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.ApplicationCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -992,7 +992,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 &applicationcertificate.ApplicationCertificateConfig {
 	Connection: interface{},
@@ -1011,7 +1011,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertif
 	Id: *string,
 	KeyId: *string,
 	StartDate: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.applicationCertificate.ApplicationCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationCertificate.ApplicationCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 &applicationcertificate.ApplicationCertificateTimeouts {
 	Create: *string,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationCertificate.ApplicationCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationcertificate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationcertificate"
 
 applicationcertificate.NewApplicationCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationCertificateTimeoutsOutputReference
 ```
