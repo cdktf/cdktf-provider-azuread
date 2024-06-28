@@ -4,7 +4,7 @@
 
 ### DataAzureadApplication <a name="DataAzureadApplication" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application azuread_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application azuread_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer"></a>
 
@@ -47,7 +47,7 @@ DataAzureadApplication.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | The Application ID (also called Client ID). |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.clientId">clientId</a></code> | <code>java.lang.String</code> | The Client ID (also called Application ID). |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name for the application. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#id DataAzureadApplication#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#id DataAzureadApplication#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.identifierUri">identifierUri</a></code> | <code>java.lang.String</code> | One of the application's identifier URIs. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.objectId">objectId</a></code> | <code>java.lang.String</code> | The application's object ID. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplication.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts">DataAzureadApplicationTimeouts</a></code> | timeouts block. |
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The Application ID (also called Client ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#application_id DataAzureadApplication#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#application_id DataAzureadApplication#application_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Client ID (also called Application ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#client_id DataAzureadApplication#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#client_id DataAzureadApplication#client_id}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#display_name DataAzureadApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#display_name DataAzureadApplication#display_name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#id DataAzureadApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#id DataAzureadApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 One of the application's identifier URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#identifier_uri DataAzureadApplication#identifier_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#identifier_uri DataAzureadApplication#identifier_uri}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The application's object ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#object_id DataAzureadApplication#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#object_id DataAzureadApplication#object_id}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
 
 ---
 
@@ -566,7 +566,7 @@ The construct id used in the generated config for the DataAzureadApplication to 
 
 The id of the existing DataAzureadApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1280,7 +1280,7 @@ DataAzureadApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | The Application ID (also called Client ID). |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The Client ID (also called Application ID). |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name for the application. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#id DataAzureadApplication#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#id DataAzureadApplication#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.identifierUri">identifierUri</a></code> | <code>java.lang.String</code> | One of the application's identifier URIs. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.objectId">objectId</a></code> | <code>java.lang.String</code> | The application's object ID. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts">DataAzureadApplicationTimeouts</a></code> | timeouts block. |
@@ -1367,7 +1367,7 @@ public java.lang.String getApplicationId();
 
 The Application ID (also called Client ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#application_id DataAzureadApplication#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#application_id DataAzureadApplication#application_id}
 
 ---
 
@@ -1381,7 +1381,7 @@ public java.lang.String getClientId();
 
 The Client ID (also called Application ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#client_id DataAzureadApplication#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#client_id DataAzureadApplication#client_id}
 
 ---
 
@@ -1395,7 +1395,7 @@ public java.lang.String getDisplayName();
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#display_name DataAzureadApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#display_name DataAzureadApplication#display_name}
 
 ---
 
@@ -1407,7 +1407,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#id DataAzureadApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#id DataAzureadApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1424,7 +1424,7 @@ public java.lang.String getIdentifierUri();
 
 One of the application's identifier URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#identifier_uri DataAzureadApplication#identifier_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#identifier_uri DataAzureadApplication#identifier_uri}
 
 ---
 
@@ -1438,7 +1438,7 @@ public java.lang.String getObjectId();
 
 The application's object ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#object_id DataAzureadApplication#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#object_id DataAzureadApplication#object_id}
 
 ---
 
@@ -1452,7 +1452,7 @@ public DataAzureadApplicationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#timeouts DataAzureadApplication#timeouts}
 
 ---
 
@@ -1580,7 +1580,7 @@ DataAzureadApplicationTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#read DataAzureadApplication#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadApplication.DataAzureadApplicationTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#read DataAzureadApplication#read}. |
 
 ---
 
@@ -1592,7 +1592,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/application#read DataAzureadApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/application#read DataAzureadApplication#read}.
 
 ---
 

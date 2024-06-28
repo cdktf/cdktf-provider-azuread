@@ -4,7 +4,7 @@
 
 ### AdministrativeUnitMember <a name="AdministrativeUnitMember" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member azuread_administrative_unit_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member azuread_administrative_unit_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer"></a>
 
@@ -40,7 +40,7 @@ administrativeUnitMember.AdministrativeUnitMember(
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer.parameter.administrativeUnitObjectId">administrative_unit_object_id</a></code> | <code>str</code> | The object ID of the administrative unit. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer.parameter.memberObjectId">member_object_id</a></code> | <code>str</code> | The object ID of the member. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a></code> | timeouts block. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The object ID of the administrative unit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The object ID of the member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
 
 ---
 
@@ -513,8 +513,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def put_timeouts(
   create: str = None,
   delete: str = None,
-  read: str = None,
-  update: str = None
+  read: str = None
 ) -> None
 ```
 
@@ -522,7 +521,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}.
 
 ---
 
@@ -530,7 +529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}.
 
 ---
 
@@ -538,15 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}.
-
----
-
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMember.putTimeouts.parameter.update"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#update AdministrativeUnitMember#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}.
 
 ---
 
@@ -688,7 +679,7 @@ The construct id used in the generated config for the AdministrativeUnitMember t
 
 The id of the existing AdministrativeUnitMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,7 +996,7 @@ administrativeUnitMember.AdministrativeUnitMemberConfig(
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.property.administrativeUnitObjectId">administrative_unit_object_id</a></code> | <code>str</code> | The object ID of the administrative unit. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.property.memberObjectId">member_object_id</a></code> | <code>str</code> | The object ID of the member. |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a></code> | timeouts block. |
 
@@ -1091,7 +1082,7 @@ administrative_unit_object_id: str
 
 The object ID of the administrative unit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
 
 ---
 
@@ -1103,7 +1094,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1111,7 @@ member_object_id: str
 
 The object ID of the member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
 
 ---
 
@@ -1134,7 +1125,7 @@ timeouts: AdministrativeUnitMemberTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
 
 ---
 
@@ -1148,8 +1139,7 @@ from cdktf_cdktf_provider_azuread import administrative_unit_member
 administrativeUnitMember.AdministrativeUnitMemberTimeouts(
   create: str = None,
   delete: str = None,
-  read: str = None,
-  update: str = None
+  read: str = None
 )
 ```
 
@@ -1157,10 +1147,9 @@ administrativeUnitMember.AdministrativeUnitMemberTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}. |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#update AdministrativeUnitMember#update}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}. |
+| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}. |
 
 ---
 
@@ -1172,7 +1161,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}.
 
 ---
 
@@ -1184,7 +1173,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}.
 
 ---
 
@@ -1196,19 +1185,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}.
-
----
-
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts.property.update"></a>
-
-```python
-update: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#update AdministrativeUnitMember#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}.
 
 ---
 
@@ -1270,7 +1247,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
@@ -1464,12 +1440,6 @@ def reset_delete() -> None
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.resetUpdate"></a>
-
-```python
-def reset_update() -> None
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1480,11 +1450,9 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeouts">AdministrativeUnitMemberTimeouts</a>]</code> | *No description.* |
 
 ---
@@ -1543,16 +1511,6 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.updateInput"></a>
-
-```python
-update_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.create"></a>
 
 ```python
@@ -1577,16 +1535,6 @@ delete: str
 
 ```python
 read: str
-```
-
-- *Type:* str
-
----
-
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.administrativeUnitMember.AdministrativeUnitMemberTimeoutsOutputReference.property.update"></a>
-
-```python
-update: str
 ```
 
 - *Type:* str

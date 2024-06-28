@@ -4,12 +4,12 @@
 
 ### ApplicationIdentifierUri <a name="ApplicationIdentifierUri" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri azuread_application_identifier_uri}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri azuread_application_identifier_uri}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.NewApplicationIdentifierUri(scope Construct, id *string, config ApplicationIdentifierUriConfig) ApplicationIdentifierUri
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ applicationidentifieruri.ApplicationIdentifierUri_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ applicationidentifieruri.ApplicationIdentifierUri_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUri.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.ApplicationIdentifierUri_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ApplicationIdentifierUri t
 
 The id of the existing ApplicationIdentifierUri that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 &applicationidentifieruri.ApplicationIdentifierUriConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidenti
 	ApplicationId: *string,
 	IdentifierUri: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.applicationIdentifierUri.ApplicationIdentifierUriTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts,
 }
 ```
 
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidenti
 | <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The resource ID of the application to which the identifier URI should be added. |
 | <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.property.identifierUri">IdentifierUri</a></code> | <code>*string</code> | The user-defined URI or URI-like string that uniquely identifies an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
-| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts">ApplicationIdentifierUriTimeouts</a></code> | timeouts block. |
 
 ---
@@ -897,7 +897,7 @@ ApplicationId *string
 
 The resource ID of the application to which the identifier URI should be added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#application_id ApplicationIdentifierUri#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#application_id ApplicationIdentifierUri#application_id}
 
 ---
 
@@ -911,7 +911,7 @@ IdentifierUri *string
 
 The user-defined URI or URI-like string that uniquely identifies an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#identifier_uri ApplicationIdentifierUri#identifier_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#identifier_uri ApplicationIdentifierUri#identifier_uri}
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#id ApplicationIdentifierUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ Timeouts ApplicationIdentifierUriTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#timeouts ApplicationIdentifierUri#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#timeouts ApplicationIdentifierUri#timeouts}
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 &applicationidentifieruri.ApplicationIdentifierUriTimeouts {
 	Create: *string,
@@ -962,9 +962,9 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidenti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#create ApplicationIdentifierUri#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#delete ApplicationIdentifierUri#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#read ApplicationIdentifierUri#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#create ApplicationIdentifierUri#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#delete ApplicationIdentifierUri#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#read ApplicationIdentifierUri#read}. |
 
 ---
 
@@ -976,7 +976,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#create ApplicationIdentifierUri#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#create ApplicationIdentifierUri#create}.
 
 ---
 
@@ -988,7 +988,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#delete ApplicationIdentifierUri#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#delete ApplicationIdentifierUri#delete}.
 
 ---
 
@@ -1000,7 +1000,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_identifier_uri#read ApplicationIdentifierUri#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_identifier_uri#read ApplicationIdentifierUri#read}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationIdentifierUri.ApplicationIdentifierUriTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationidentifieruri"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationidentifieruri"
 
 applicationidentifieruri.NewApplicationIdentifierUriTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationIdentifierUriTimeoutsOutputReference
 ```

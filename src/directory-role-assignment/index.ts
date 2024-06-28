@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment
+// https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Identifier of the app-specific scope when the assignment scope is app-specific
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#app_scope_id DirectoryRoleAssignment#app_scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#app_scope_id DirectoryRoleAssignment#app_scope_id}
   */
   readonly appScopeId?: string;
   /**
   * Identifier of the app-specific scope when the assignment scope is app-specific
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#app_scope_object_id DirectoryRoleAssignment#app_scope_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#app_scope_object_id DirectoryRoleAssignment#app_scope_object_id}
   */
   readonly appScopeObjectId?: string;
   /**
   * Identifier of the directory object representing the scope of the assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#directory_scope_id DirectoryRoleAssignment#directory_scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#directory_scope_id DirectoryRoleAssignment#directory_scope_id}
   */
   readonly directoryScopeId?: string;
   /**
   * Identifier of the directory object representing the scope of the assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#directory_scope_object_id DirectoryRoleAssignment#directory_scope_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#directory_scope_object_id DirectoryRoleAssignment#directory_scope_object_id}
   */
   readonly directoryScopeObjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#id DirectoryRoleAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#id DirectoryRoleAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,39 +41,35 @@ export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArgume
   /**
   * The object ID of the member principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#principal_object_id DirectoryRoleAssignment#principal_object_id}
   */
   readonly principalObjectId: string;
   /**
   * The object ID of the directory role for this assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#role_id DirectoryRoleAssignment#role_id}
   */
   readonly roleId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#timeouts DirectoryRoleAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#timeouts DirectoryRoleAssignment#timeouts}
   */
   readonly timeouts?: DirectoryRoleAssignmentTimeouts;
 }
 export interface DirectoryRoleAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#create DirectoryRoleAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#create DirectoryRoleAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#delete DirectoryRoleAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#delete DirectoryRoleAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#read DirectoryRoleAssignment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#read DirectoryRoleAssignment#read}
   */
   readonly read?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#update DirectoryRoleAssignment#update}
-  */
-  readonly update?: string;
 }
 
 export function directoryRoleAssignmentTimeoutsToTerraform(struct?: DirectoryRoleAssignmentTimeouts | cdktf.IResolvable): any {
@@ -90,7 +81,6 @@ export function directoryRoleAssignmentTimeoutsToTerraform(struct?: DirectoryRol
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
     read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -115,12 +105,6 @@ export function directoryRoleAssignmentTimeoutsToHclTerraform(struct?: Directory
     },
     read: {
       value: cdktf.stringToHclTerraform(struct!.read),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -161,10 +145,6 @@ export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.update = this._update;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -175,7 +155,6 @@ export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
-      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -187,7 +166,6 @@ export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
-      this._update = value.update;
     }
   }
 
@@ -238,26 +216,10 @@ export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
   public get readInput() {
     return this._read;
   }
-
-  // update - computed: false, optional: true, required: false
-  private _update?: string; 
-  public get update() {
-    return this.getStringAttribute('update');
-  }
-  public set update(value: string) {
-    this._update = value;
-  }
-  public resetUpdate() {
-    this._update = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateInput() {
-    return this._update;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment azuread_directory_role_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment azuread_directory_role_assignment}
 */
 export class DirectoryRoleAssignment extends cdktf.TerraformResource {
 
@@ -273,7 +235,7 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DirectoryRoleAssignment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryRoleAssignment to import
-  * @param importFromId The id of the existing DirectoryRoleAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DirectoryRoleAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryRoleAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -285,7 +247,7 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/directory_role_assignment azuread_directory_role_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,7 +258,7 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_directory_role_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.52.0',
+        providerVersion: '2.53.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

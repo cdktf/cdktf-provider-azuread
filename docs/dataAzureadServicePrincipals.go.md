@@ -4,12 +4,12 @@
 
 ### DataAzureadServicePrincipals <a name="DataAzureadServicePrincipals" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipals"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals azuread_service_principals}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals azuread_service_principals}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.NewDataAzureadServicePrincipals(scope Construct, id *string, config DataAzureadServicePrincipalsConfig) DataAzureadServicePrincipals
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipals.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.DataAzureadServicePrincipals_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipals.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.DataAzureadServicePrincipals_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataazureadserviceprincipals.DataAzureadServicePrincipals_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipals.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.DataAzureadServicePrincipals_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataazureadserviceprincipals.DataAzureadServicePrincipals_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipals.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.DataAzureadServicePrincipals_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataAzureadServicePrincipa
 
 The id of the existing DataAzureadServicePrincipals that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 &dataazureadserviceprincipals.DataAzureadServicePrincipalsConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadservic
 	IgnoreMissing: interface{},
 	ObjectIds: *[]*string,
 	ReturnAll: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.dataAzureadServicePrincipals.DataAzureadServicePrincipalsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsTimeouts,
 }
 ```
 
@@ -834,7 +834,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadservic
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.applicationIds">ApplicationIds</a></code> | <code>*[]*string</code> | The application IDs (client IDs) of the applications associated with the service principals. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.clientIds">ClientIds</a></code> | <code>*[]*string</code> | The client IDs of the applications associated with the service principals. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.displayNames">DisplayNames</a></code> | <code>*[]*string</code> | The display names of the applications associated with the service principals. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.ignoreMissing">IgnoreMissing</a></code> | <code>interface{}</code> | Ignore missing service principals and return the service principals that were found. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.objectIds">ObjectIds</a></code> | <code>*[]*string</code> | The object IDs of the service principals. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsConfig.property.returnAll">ReturnAll</a></code> | <code>interface{}</code> | Fetch all service principals with no filter and return all that were found. |
@@ -922,7 +922,7 @@ ApplicationIds *[]*string
 
 The application IDs (client IDs) of the applications associated with the service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#application_ids DataAzureadServicePrincipals#application_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#application_ids DataAzureadServicePrincipals#application_ids}
 
 ---
 
@@ -936,7 +936,7 @@ ClientIds *[]*string
 
 The client IDs of the applications associated with the service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#client_ids DataAzureadServicePrincipals#client_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#client_ids DataAzureadServicePrincipals#client_ids}
 
 ---
 
@@ -950,7 +950,7 @@ DisplayNames *[]*string
 
 The display names of the applications associated with the service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#display_names DataAzureadServicePrincipals#display_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#display_names DataAzureadServicePrincipals#display_names}
 
 ---
 
@@ -962,7 +962,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#id DataAzureadServicePrincipals#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ Ignore missing service principals and return the service principals that were fo
 
 The data source will still fail if no service principals are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#ignore_missing DataAzureadServicePrincipals#ignore_missing}
 
 ---
 
@@ -995,7 +995,7 @@ ObjectIds *[]*string
 
 The object IDs of the service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#object_ids DataAzureadServicePrincipals#object_ids}
 
 ---
 
@@ -1011,7 +1011,7 @@ Fetch all service principals with no filter and return all that were found.
 
 The data source will still fail if no service principals are found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#return_all DataAzureadServicePrincipals#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#return_all DataAzureadServicePrincipals#return_all}
 
 ---
 
@@ -1025,7 +1025,7 @@ Timeouts DataAzureadServicePrincipalsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#timeouts DataAzureadServicePrincipals#timeouts}
 
 ---
 
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsServicePrincipals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 &dataazureadserviceprincipals.DataAzureadServicePrincipalsServicePrincipals {
 
@@ -1047,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadservic
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 &dataazureadserviceprincipals.DataAzureadServicePrincipalsTimeouts {
 	Read: *string,
@@ -1058,7 +1058,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadservic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#read DataAzureadServicePrincipals#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#read DataAzureadServicePrincipals#read}. |
 
 ---
 
@@ -1070,7 +1070,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/data-sources/service_principals#read DataAzureadServicePrincipals#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/data-sources/service_principals#read DataAzureadServicePrincipals#read}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsServicePrincipalsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.NewDataAzureadServicePrincipalsServicePrincipalsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadServicePrincipalsServicePrincipalsList
 ```
@@ -1230,7 +1230,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsServicePrincipalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.NewDataAzureadServicePrincipalsServicePrincipalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadServicePrincipalsServicePrincipalsOutputReference
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() DataAzureadServicePrincipalsServicePrincipals
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadServicePrincipals.DataAzureadServicePrincipalsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/dataazureadserviceprincipals"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadserviceprincipals"
 
 dataazureadserviceprincipals.NewDataAzureadServicePrincipalsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadServicePrincipalsTimeoutsOutputReference
 ```
