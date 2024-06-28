@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate
+// https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface ServicePrincipalCertificateConfig extends cdktf.TerraformMetaAr
   /**
   * Specifies the encoding used for the supplied certificate data
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#encoding ServicePrincipalCertificate#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#encoding ServicePrincipalCertificate#encoding}
   */
   readonly encoding?: string;
   /**
   * The end date until which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#end_date ServicePrincipalCertificate#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#end_date ServicePrincipalCertificate#end_date}
   */
   readonly endDate?: string;
   /**
   * A relative duration for which the certificate is valid until, for example `240h` (10 days) or `2400h30m`. Valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#end_date_relative ServicePrincipalCertificate#end_date_relative}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#end_date_relative ServicePrincipalCertificate#end_date_relative}
   */
   readonly endDateRelative?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#id ServicePrincipalCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#id ServicePrincipalCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,57 +40,53 @@ export interface ServicePrincipalCertificateConfig extends cdktf.TerraformMetaAr
   /**
   * A UUID used to uniquely identify this certificate. If not specified a UUID will be automatically generated
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#key_id ServicePrincipalCertificate#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#key_id ServicePrincipalCertificate#key_id}
   */
   readonly keyId?: string;
   /**
   * The object ID of the service principal for which this certificate should be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#service_principal_id ServicePrincipalCertificate#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#service_principal_id ServicePrincipalCertificate#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * The start date from which the certificate is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#start_date ServicePrincipalCertificate#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#start_date ServicePrincipalCertificate#start_date}
   */
   readonly startDate?: string;
   /**
   * The type of key/certificate
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#type ServicePrincipalCertificate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#type ServicePrincipalCertificate#type}
   */
   readonly type?: string;
   /**
   * The certificate data, which can be PEM encoded, base64 encoded DER or hexadecimal encoded DER
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#value ServicePrincipalCertificate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#value ServicePrincipalCertificate#value}
   */
   readonly value: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#timeouts ServicePrincipalCertificate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#timeouts ServicePrincipalCertificate#timeouts}
   */
   readonly timeouts?: ServicePrincipalCertificateTimeouts;
 }
 export interface ServicePrincipalCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#create ServicePrincipalCertificate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#create ServicePrincipalCertificate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#delete ServicePrincipalCertificate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#delete ServicePrincipalCertificate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#read ServicePrincipalCertificate#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#read ServicePrincipalCertificate#read}
   */
   readonly read?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#update ServicePrincipalCertificate#update}
-  */
-  readonly update?: string;
 }
 
 export function servicePrincipalCertificateTimeoutsToTerraform(struct?: ServicePrincipalCertificateTimeouts | cdktf.IResolvable): any {
@@ -102,7 +98,6 @@ export function servicePrincipalCertificateTimeoutsToTerraform(struct?: ServiceP
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
     read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -127,12 +122,6 @@ export function servicePrincipalCertificateTimeoutsToHclTerraform(struct?: Servi
     },
     read: {
       value: cdktf.stringToHclTerraform(struct!.read),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -173,10 +162,6 @@ export class ServicePrincipalCertificateTimeoutsOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.update = this._update;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -187,7 +172,6 @@ export class ServicePrincipalCertificateTimeoutsOutputReference extends cdktf.Co
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
-      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -199,7 +183,6 @@ export class ServicePrincipalCertificateTimeoutsOutputReference extends cdktf.Co
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
-      this._update = value.update;
     }
   }
 
@@ -250,26 +233,10 @@ export class ServicePrincipalCertificateTimeoutsOutputReference extends cdktf.Co
   public get readInput() {
     return this._read;
   }
-
-  // update - computed: false, optional: true, required: false
-  private _update?: string; 
-  public get update() {
-    return this.getStringAttribute('update');
-  }
-  public set update(value: string) {
-    this._update = value;
-  }
-  public resetUpdate() {
-    this._update = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateInput() {
-    return this._update;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate azuread_service_principal_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate azuread_service_principal_certificate}
 */
 export class ServicePrincipalCertificate extends cdktf.TerraformResource {
 
@@ -285,7 +252,7 @@ export class ServicePrincipalCertificate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicePrincipalCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalCertificate to import
-  * @param importFromId The id of the existing ServicePrincipalCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipalCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -297,7 +264,7 @@ export class ServicePrincipalCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/service_principal_certificate azuread_service_principal_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/service_principal_certificate azuread_service_principal_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -308,7 +275,7 @@ export class ServicePrincipalCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_service_principal_certificate',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.52.0',
+        providerVersion: '2.53.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

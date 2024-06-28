@@ -4,7 +4,7 @@
 
 ### Application <a name="Application" id="@cdktf/provider-azuread.application.Application"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application azuread_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application azuread_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.Application.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.application.Application.putAppRole">putAppRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.putFeatureTags">putFeatureTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.putOptionalClaims">putOptionalClaims</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.putPassword">putPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.putPublicClient">putPublicClient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.putRequiredResourceAccess">putRequiredResourceAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.putSinglePageApplication">putSinglePageApplication</a></code> | *No description.* |
@@ -97,6 +98,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOauth2PostResponseRequired">resetOauth2PostResponseRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOptionalClaims">resetOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetOwners">resetOwners</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.resetPassword">resetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPreventDuplicateNames">resetPreventDuplicateNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPrivacyStatementUrl">resetPrivacyStatementUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.resetPublicClient">resetPublicClient</a></code> | *No description.* |
@@ -449,6 +451,18 @@ public putOptionalClaims(value: ApplicationOptionalClaims): void
 
 ---
 
+##### `putPassword` <a name="putPassword" id="@cdktf/provider-azuread.application.Application.putPassword"></a>
+
+```typescript
+public putPassword(value: ApplicationPassword): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.Application.putPassword.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a>
+
+---
+
 ##### `putPublicClient` <a name="putPublicClient" id="@cdktf/provider-azuread.application.Application.putPublicClient"></a>
 
 ```typescript
@@ -597,6 +611,12 @@ public resetOptionalClaims(): void
 
 ```typescript
 public resetOwners(): void
+```
+
+##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-azuread.application.Application.resetPassword"></a>
+
+```typescript
+public resetPassword(): void
 ```
 
 ##### `resetPreventDuplicateNames` <a name="resetPreventDuplicateNames" id="@cdktf/provider-azuread.application.Application.resetPreventDuplicateNames"></a>
@@ -780,7 +800,7 @@ The construct id used in the generated config for the Application to import.
 
 The id of the existing Application that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,6 +841,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PermissionScopeIds">oauth2PermissionScopeIds</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.objectId">objectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.optionalClaims">optionalClaims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference">ApplicationOptionalClaimsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.password">password</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference">ApplicationPasswordOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publicClient">publicClient</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClientOutputReference">ApplicationPublicClientOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publisherDomain">publisherDomain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.requiredResourceAccess">requiredResourceAccess</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessList">ApplicationRequiredResourceAccessList</a></code> | *No description.* |
@@ -843,6 +864,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput">oauth2PostResponseRequiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.optionalClaimsInput">optionalClaimsInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.ownersInput">ownersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.passwordInput">passwordInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNamesInput">preventDuplicateNamesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrlInput">privacyStatementUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publicClientInput">publicClientInput</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | *No description.* |
@@ -1131,6 +1153,16 @@ public readonly optionalClaims: ApplicationOptionalClaimsOutputReference;
 
 ---
 
+##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-azuread.application.Application.property.password"></a>
+
+```typescript
+public readonly password: ApplicationPasswordOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference">ApplicationPasswordOutputReference</a>
+
+---
+
 ##### `publicClient`<sup>Required</sup> <a name="publicClient" id="@cdktf/provider-azuread.application.Application.property.publicClient"></a>
 
 ```typescript
@@ -1348,6 +1380,16 @@ public readonly ownersInput: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktf/provider-azuread.application.Application.property.passwordInput"></a>
+
+```typescript
+public readonly passwordInput: ApplicationPassword;
+```
+
+- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a>
 
 ---
 
@@ -1732,7 +1774,7 @@ public readonly knownClientApplications: string[];
 
 Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#known_client_applications Application#known_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#known_client_applications Application#known_client_applications}
 
 ---
 
@@ -1746,7 +1788,7 @@ public readonly mappedClaimsEnabled: boolean | IResolvable;
 
 Allows an application to use claims mapping without specifying a custom signing key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#mapped_claims_enabled Application#mapped_claims_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#mapped_claims_enabled Application#mapped_claims_enabled}
 
 ---
 
@@ -1760,7 +1802,7 @@ public readonly oauth2PermissionScope: IResolvable | ApplicationApiOauth2Permiss
 
 oauth2_permission_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#oauth2_permission_scope Application#oauth2_permission_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#oauth2_permission_scope Application#oauth2_permission_scope}
 
 ---
 
@@ -1774,7 +1816,7 @@ public readonly requestedAccessTokenVersion: number;
 
 The access token version expected by this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#requested_access_token_version Application#requested_access_token_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#requested_access_token_version Application#requested_access_token_version}
 
 ---
 
@@ -1813,7 +1855,7 @@ public readonly id: string;
 
 The unique identifier of the delegated permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id Application#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id Application#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1830,7 +1872,7 @@ public readonly adminConsentDescription: string;
 
 Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#admin_consent_description Application#admin_consent_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#admin_consent_description Application#admin_consent_description}
 
 ---
 
@@ -1844,7 +1886,7 @@ public readonly adminConsentDisplayName: string;
 
 Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#admin_consent_display_name Application#admin_consent_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#admin_consent_display_name Application#admin_consent_display_name}
 
 ---
 
@@ -1858,7 +1900,7 @@ public readonly enabled: boolean | IResolvable;
 
 Determines if the permission scope is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#enabled Application#enabled}
 
 ---
 
@@ -1872,7 +1914,7 @@ public readonly type: string;
 
 Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#type Application#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#type Application#type}
 
 ---
 
@@ -1886,7 +1928,7 @@ public readonly userConsentDescription: string;
 
 Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#user_consent_description Application#user_consent_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#user_consent_description Application#user_consent_description}
 
 ---
 
@@ -1900,7 +1942,7 @@ public readonly userConsentDisplayName: string;
 
 Display name for the delegated permission that appears in the end user consent experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#user_consent_display_name Application#user_consent_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#user_consent_display_name Application#user_consent_display_name}
 
 ---
 
@@ -1914,7 +1956,7 @@ public readonly value: string;
 
 The value that is used for the `scp` claim in OAuth 2.0 access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#value Application#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#value Application#value}
 
 ---
 
@@ -1951,7 +1993,7 @@ public readonly allowedMemberTypes: string[];
 
 Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#allowed_member_types Application#allowed_member_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#allowed_member_types Application#allowed_member_types}
 
 ---
 
@@ -1965,7 +2007,7 @@ public readonly description: string;
 
 Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#description Application#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#description Application#description}
 
 ---
 
@@ -1979,7 +2021,7 @@ public readonly displayName: string;
 
 Display name for the app role that appears during app role assignment and in consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#display_name Application#display_name}
 
 ---
 
@@ -1993,7 +2035,7 @@ public readonly id: string;
 
 The unique identifier of the app role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id Application#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id Application#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2010,7 +2052,7 @@ public readonly enabled: boolean | IResolvable;
 
 Determines if the app role is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#enabled Application#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#enabled Application#enabled}
 
 ---
 
@@ -2024,7 +2066,7 @@ public readonly value: string;
 
 The value that is used for the `roles` claim in ID tokens and OAuth 2.0 access tokens that are authenticating an assigned service or user principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#value Application#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#value Application#value}
 
 ---
 
@@ -2057,7 +2099,7 @@ const applicationConfig: application.ApplicationConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.fallbackPublicClientEnabled">fallbackPublicClientEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the application is a public client. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.featureTags">featureTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>[]</code> | feature_tags block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.groupMembershipClaims">groupMembershipClaims</a></code> | <code>string[]</code> | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id Application#id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id Application#id}. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">identifierUris</a></code> | <code>string[]</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">logoImage</a></code> | <code>string</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">marketingUrl</a></code> | <code>string</code> | URL of the application's marketing page. |
@@ -2065,6 +2107,7 @@ const applicationConfig: application.ApplicationConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired">oauth2PostResponseRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.optionalClaims">optionalClaims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.owners">owners</a></code> | <code>string[]</code> | A list of object IDs of principals that will be granted ownership of the application. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.password">password</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a></code> | password block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.preventDuplicateNames">preventDuplicateNames</a></code> | <code>boolean \| cdktf.IResolvable</code> | If `true`, will return an error if an existing application is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>string</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.publicClient">publicClient</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
@@ -2161,7 +2204,7 @@ public readonly displayName: string;
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#display_name Application#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#display_name Application#display_name}
 
 ---
 
@@ -2175,7 +2218,7 @@ public readonly api: ApplicationApi;
 
 api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#api Application#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#api Application#api}
 
 ---
 
@@ -2189,7 +2232,7 @@ public readonly appRole: IResolvable | ApplicationAppRole[];
 
 app_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#app_role Application#app_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#app_role Application#app_role}
 
 ---
 
@@ -2203,7 +2246,7 @@ public readonly description: string;
 
 Description of the application as shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#description Application#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#description Application#description}
 
 ---
 
@@ -2217,7 +2260,7 @@ public readonly deviceOnlyAuthEnabled: boolean | IResolvable;
 
 Specifies whether this application supports device authentication without a user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#device_only_auth_enabled Application#device_only_auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#device_only_auth_enabled Application#device_only_auth_enabled}
 
 ---
 
@@ -2233,7 +2276,7 @@ Specifies whether the application is a public client.
 
 Appropriate for apps using token grant flows that don't use a redirect URI
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#fallback_public_client_enabled Application#fallback_public_client_enabled}
 
 ---
 
@@ -2247,7 +2290,7 @@ public readonly featureTags: IResolvable | ApplicationFeatureTags[];
 
 feature_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#feature_tags Application#feature_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#feature_tags Application#feature_tags}
 
 ---
 
@@ -2261,7 +2304,7 @@ public readonly groupMembershipClaims: string[];
 
 Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#group_membership_claims Application#group_membership_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#group_membership_claims Application#group_membership_claims}
 
 ---
 
@@ -2273,7 +2316,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id Application#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id Application#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2290,7 +2333,7 @@ public readonly identifierUris: string[];
 
 The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#identifier_uris Application#identifier_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#identifier_uris Application#identifier_uris}
 
 ---
 
@@ -2304,7 +2347,7 @@ public readonly logoImage: string;
 
 Base64 encoded logo image in gif, png or jpeg format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#logo_image Application#logo_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#logo_image Application#logo_image}
 
 ---
 
@@ -2318,7 +2361,7 @@ public readonly marketingUrl: string;
 
 URL of the application's marketing page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#marketing_url Application#marketing_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#marketing_url Application#marketing_url}
 
 ---
 
@@ -2332,7 +2375,7 @@ public readonly notes: string;
 
 User-specified notes relevant for the management of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#notes Application#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#notes Application#notes}
 
 ---
 
@@ -2346,7 +2389,7 @@ public readonly oauth2PostResponseRequired: boolean | IResolvable;
 
 Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#oauth2_post_response_required Application#oauth2_post_response_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#oauth2_post_response_required Application#oauth2_post_response_required}
 
 ---
 
@@ -2360,7 +2403,7 @@ public readonly optionalClaims: ApplicationOptionalClaims;
 
 optional_claims block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#optional_claims Application#optional_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#optional_claims Application#optional_claims}
 
 ---
 
@@ -2374,7 +2417,21 @@ public readonly owners: string[];
 
 A list of object IDs of principals that will be granted ownership of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#owners Application#owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#owners Application#owners}
+
+---
+
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-azuread.application.ApplicationConfig.property.password"></a>
+
+```typescript
+public readonly password: ApplicationPassword;
+```
+
+- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a>
+
+password block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#password Application#password}
 
 ---
 
@@ -2388,7 +2445,7 @@ public readonly preventDuplicateNames: boolean | IResolvable;
 
 If `true`, will return an error if an existing application is found with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#prevent_duplicate_names Application#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#prevent_duplicate_names Application#prevent_duplicate_names}
 
 ---
 
@@ -2402,7 +2459,7 @@ public readonly privacyStatementUrl: string;
 
 URL of the application's privacy statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#privacy_statement_url Application#privacy_statement_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#privacy_statement_url Application#privacy_statement_url}
 
 ---
 
@@ -2416,7 +2473,7 @@ public readonly publicClient: ApplicationPublicClient;
 
 public_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#public_client Application#public_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#public_client Application#public_client}
 
 ---
 
@@ -2430,7 +2487,7 @@ public readonly requiredResourceAccess: IResolvable | ApplicationRequiredResourc
 
 required_resource_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#required_resource_access Application#required_resource_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#required_resource_access Application#required_resource_access}
 
 ---
 
@@ -2444,7 +2501,7 @@ public readonly serviceManagementReference: string;
 
 References application or service contact information from a Service or Asset Management database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#service_management_reference Application#service_management_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#service_management_reference Application#service_management_reference}
 
 ---
 
@@ -2458,7 +2515,7 @@ public readonly signInAudience: string;
 
 The Microsoft account types that are supported for the current application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#sign_in_audience Application#sign_in_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#sign_in_audience Application#sign_in_audience}
 
 ---
 
@@ -2472,7 +2529,7 @@ public readonly singlePageApplication: ApplicationSinglePageApplication;
 
 single_page_application block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#single_page_application Application#single_page_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#single_page_application Application#single_page_application}
 
 ---
 
@@ -2486,7 +2543,7 @@ public readonly supportUrl: string;
 
 URL of the application's support page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#support_url Application#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#support_url Application#support_url}
 
 ---
 
@@ -2500,7 +2557,7 @@ public readonly tags: string[];
 
 A set of tags to apply to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#tags Application#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#tags Application#tags}
 
 ---
 
@@ -2514,7 +2571,7 @@ public readonly templateId: string;
 
 Unique ID of the application template from which this application is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#template_id Application#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#template_id Application#template_id}
 
 ---
 
@@ -2528,7 +2585,7 @@ public readonly termsOfServiceUrl: string;
 
 URL of the application's terms of service statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#terms_of_service_url Application#terms_of_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#terms_of_service_url Application#terms_of_service_url}
 
 ---
 
@@ -2542,7 +2599,7 @@ public readonly timeouts: ApplicationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#timeouts Application#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#timeouts Application#timeouts}
 
 ---
 
@@ -2556,7 +2613,7 @@ public readonly web: ApplicationWeb;
 
 web block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#web Application#web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#web Application#web}
 
 ---
 
@@ -2591,7 +2648,7 @@ public readonly customSingleSignOn: boolean | IResolvable;
 
 Whether this application represents a custom SAML application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#custom_single_sign_on Application#custom_single_sign_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#custom_single_sign_on Application#custom_single_sign_on}
 
 ---
 
@@ -2605,7 +2662,7 @@ public readonly enterprise: boolean | IResolvable;
 
 Whether this application represents an Enterprise Application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#enterprise Application#enterprise}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#enterprise Application#enterprise}
 
 ---
 
@@ -2619,7 +2676,7 @@ public readonly gallery: boolean | IResolvable;
 
 Whether this application represents a gallery application for linked service principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#gallery Application#gallery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#gallery Application#gallery}
 
 ---
 
@@ -2633,7 +2690,7 @@ public readonly hide: boolean | IResolvable;
 
 Whether this application is invisible to users in My Apps and Office 365 Launcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#hide Application#hide}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#hide Application#hide}
 
 ---
 
@@ -2667,7 +2724,7 @@ public readonly accessToken: IResolvable | ApplicationOptionalClaimsAccessToken[
 
 access_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#access_token Application#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#access_token Application#access_token}
 
 ---
 
@@ -2681,7 +2738,7 @@ public readonly idToken: IResolvable | ApplicationOptionalClaimsIdToken[];
 
 id_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id_token Application#id_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id_token Application#id_token}
 
 ---
 
@@ -2695,7 +2752,7 @@ public readonly saml2Token: IResolvable | ApplicationOptionalClaimsSaml2Token[];
 
 saml2_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#saml2_token Application#saml2_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#saml2_token Application#saml2_token}
 
 ---
 
@@ -2730,7 +2787,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2746,7 +2803,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2760,7 +2817,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2776,7 +2833,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -2811,7 +2868,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2827,7 +2884,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2841,7 +2898,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2857,7 +2914,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#source Application#source}
 
 ---
 
@@ -2892,7 +2949,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -2908,7 +2965,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#additional_properties Application#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#additional_properties Application#additional_properties}
 
 ---
 
@@ -2922,7 +2979,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#essential Application#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#essential Application#essential}
 
 ---
 
@@ -2938,7 +2995,69 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#source Application#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#source Application#source}
+
+---
+
+### ApplicationPassword <a name="ApplicationPassword" id="@cdktf/provider-azuread.application.ApplicationPassword"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.application.ApplicationPassword.Initializer"></a>
+
+```typescript
+import { application } from '@cdktf/provider-azuread'
+
+const applicationPassword: application.ApplicationPassword = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword.property.displayName">displayName</a></code> | <code>string</code> | A display name for the password. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword.property.endDate">endDate</a></code> | <code>string</code> | The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword.property.startDate">startDate</a></code> | <code>string</code> | The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used. |
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktf/provider-azuread.application.ApplicationPassword.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* string
+
+A display name for the password.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#display_name Application#display_name}
+
+---
+
+##### `endDate`<sup>Optional</sup> <a name="endDate" id="@cdktf/provider-azuread.application.ApplicationPassword.property.endDate"></a>
+
+```typescript
+public readonly endDate: string;
+```
+
+- *Type:* string
+
+The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#end_date Application#end_date}
+
+---
+
+##### `startDate`<sup>Optional</sup> <a name="startDate" id="@cdktf/provider-azuread.application.ApplicationPassword.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
+```
+
+- *Type:* string
+
+The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#start_date Application#start_date}
 
 ---
 
@@ -2970,7 +3089,7 @@ public readonly redirectUris: string[];
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -2989,7 +3108,7 @@ const applicationRequiredResourceAccess: application.ApplicationRequiredResource
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAccess">resourceAccess</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>[]</code> | resource_access block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAppId">resourceAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#resource_app_id Application#resource_app_id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAppId">resourceAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#resource_app_id Application#resource_app_id}. |
 
 ---
 
@@ -3003,7 +3122,7 @@ public readonly resourceAccess: IResolvable | ApplicationRequiredResourceAccessR
 
 resource_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#resource_access Application#resource_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#resource_access Application#resource_access}
 
 ---
 
@@ -3015,7 +3134,7 @@ public readonly resourceAppId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#resource_app_id Application#resource_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#resource_app_id Application#resource_app_id}.
 
 ---
 
@@ -3033,8 +3152,8 @@ const applicationRequiredResourceAccessResourceAccess: application.ApplicationRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id Application#id}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#type Application#type}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id Application#id}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#type Application#type}. |
 
 ---
 
@@ -3046,7 +3165,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id Application#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id Application#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3061,7 +3180,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#type Application#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#type Application#type}.
 
 ---
 
@@ -3093,7 +3212,7 @@ public readonly redirectUris: string[];
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -3111,10 +3230,10 @@ const applicationTimeouts: application.ApplicationTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#create Application#create}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#delete Application#delete}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#read Application#read}. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#update Application#update}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#create Application#create}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#delete Application#delete}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#read Application#read}. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#update Application#update}. |
 
 ---
 
@@ -3126,7 +3245,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#create Application#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#create Application#create}.
 
 ---
 
@@ -3138,7 +3257,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#delete Application#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#delete Application#delete}.
 
 ---
 
@@ -3150,7 +3269,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#read Application#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#read Application#read}.
 
 ---
 
@@ -3162,7 +3281,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#update Application#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#update Application#update}.
 
 ---
 
@@ -3197,7 +3316,7 @@ public readonly homepageUrl: string;
 
 Home page or landing page of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#homepage_url Application#homepage_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#homepage_url Application#homepage_url}
 
 ---
 
@@ -3211,7 +3330,7 @@ public readonly implicitGrant: ApplicationWebImplicitGrant;
 
 implicit_grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#implicit_grant Application#implicit_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#implicit_grant Application#implicit_grant}
 
 ---
 
@@ -3225,7 +3344,7 @@ public readonly logoutUrl: string;
 
 The URL that will be used by Microsoft's authorization service to sign out a user using front-channel, back-channel or SAML logout protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#logout_url Application#logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#logout_url Application#logout_url}
 
 ---
 
@@ -3239,7 +3358,7 @@ public readonly redirectUris: string[];
 
 The URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#redirect_uris Application#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#redirect_uris Application#redirect_uris}
 
 ---
 
@@ -3272,7 +3391,7 @@ public readonly accessTokenIssuanceEnabled: boolean | IResolvable;
 
 Whether this web application can request an access token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#access_token_issuance_enabled Application#access_token_issuance_enabled}
 
 ---
 
@@ -3286,7 +3405,7 @@ public readonly idTokenIssuanceEnabled: boolean | IResolvable;
 
 Whether this web application can request an ID token using OAuth 2.0 implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application#id_token_issuance_enabled Application#id_token_issuance_enabled}
 
 ---
 
@@ -7417,6 +7536,357 @@ public readonly internalValue: IResolvable | ApplicationOptionalClaimsSaml2Token
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>
+
+---
+
+
+### ApplicationPasswordOutputReference <a name="ApplicationPasswordOutputReference" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.Initializer"></a>
+
+```typescript
+import { application } from '@cdktf/provider-azuread'
+
+new application.ApplicationPasswordOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.resetEndDate">resetEndDate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.resetStartDate">resetStartDate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEndDate` <a name="resetEndDate" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.resetEndDate"></a>
+
+```typescript
+public resetEndDate(): void
+```
+
+##### `resetStartDate` <a name="resetStartDate" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.resetStartDate"></a>
+
+```typescript
+public resetStartDate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.keyId">keyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.endDateInput">endDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.startDateInput">startDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.endDate">endDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.startDate">startDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyId`<sup>Required</sup> <a name="keyId" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.keyId"></a>
+
+```typescript
+public readonly keyId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.displayNameInput"></a>
+
+```typescript
+public readonly displayNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `endDateInput`<sup>Optional</sup> <a name="endDateInput" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.endDateInput"></a>
+
+```typescript
+public readonly endDateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `startDateInput`<sup>Optional</sup> <a name="startDateInput" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.startDateInput"></a>
+
+```typescript
+public readonly startDateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `endDate`<sup>Required</sup> <a name="endDate" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.endDate"></a>
+
+```typescript
+public readonly endDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `startDate`<sup>Required</sup> <a name="startDate" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.application.ApplicationPasswordOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ApplicationPassword;
+```
+
+- *Type:* <a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a>
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member
+// https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AdministrativeUnitMemberConfig extends cdktf.TerraformMetaArgum
   /**
   * The object ID of the administrative unit
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#administrative_unit_object_id AdministrativeUnitMember#administrative_unit_object_id}
   */
   readonly administrativeUnitObjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#id AdministrativeUnitMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,33 +28,29 @@ export interface AdministrativeUnitMemberConfig extends cdktf.TerraformMetaArgum
   /**
   * The object ID of the member
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#member_object_id AdministrativeUnitMember#member_object_id}
   */
   readonly memberObjectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#timeouts AdministrativeUnitMember#timeouts}
   */
   readonly timeouts?: AdministrativeUnitMemberTimeouts;
 }
 export interface AdministrativeUnitMemberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#create AdministrativeUnitMember#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#delete AdministrativeUnitMember#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#read AdministrativeUnitMember#read}
   */
   readonly read?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#update AdministrativeUnitMember#update}
-  */
-  readonly update?: string;
 }
 
 export function administrativeUnitMemberTimeoutsToTerraform(struct?: AdministrativeUnitMemberTimeouts | cdktf.IResolvable): any {
@@ -66,7 +62,6 @@ export function administrativeUnitMemberTimeoutsToTerraform(struct?: Administrat
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
     read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -91,12 +86,6 @@ export function administrativeUnitMemberTimeoutsToHclTerraform(struct?: Administ
     },
     read: {
       value: cdktf.stringToHclTerraform(struct!.read),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,10 +126,6 @@ export class AdministrativeUnitMemberTimeoutsOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
-    if (this._update !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.update = this._update;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -151,7 +136,6 @@ export class AdministrativeUnitMemberTimeoutsOutputReference extends cdktf.Compl
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
-      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -163,7 +147,6 @@ export class AdministrativeUnitMemberTimeoutsOutputReference extends cdktf.Compl
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
-      this._update = value.update;
     }
   }
 
@@ -214,26 +197,10 @@ export class AdministrativeUnitMemberTimeoutsOutputReference extends cdktf.Compl
   public get readInput() {
     return this._read;
   }
-
-  // update - computed: false, optional: true, required: false
-  private _update?: string; 
-  public get update() {
-    return this.getStringAttribute('update');
-  }
-  public set update(value: string) {
-    this._update = value;
-  }
-  public resetUpdate() {
-    this._update = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateInput() {
-    return this._update;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member azuread_administrative_unit_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member azuread_administrative_unit_member}
 */
 export class AdministrativeUnitMember extends cdktf.TerraformResource {
 
@@ -249,7 +216,7 @@ export class AdministrativeUnitMember extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AdministrativeUnitMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AdministrativeUnitMember to import
-  * @param importFromId The id of the existing AdministrativeUnitMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AdministrativeUnitMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AdministrativeUnitMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -261,7 +228,7 @@ export class AdministrativeUnitMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/administrative_unit_member azuread_administrative_unit_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -272,7 +239,7 @@ export class AdministrativeUnitMember extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_administrative_unit_member',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '2.52.0',
+        providerVersion: '2.53.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

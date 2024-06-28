@@ -4,7 +4,7 @@
 
 ### ApplicationRegistration <a name="ApplicationRegistration" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration azuread_application_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration azuread_application_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer"></a>
 
@@ -592,7 +592,7 @@ The construct id used in the generated config for the ApplicationRegistration to
 
 The id of the existing ApplicationRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1255,7 +1255,7 @@ new ApplicationRegistrationConfig {
 | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description">Description</a></code> | <code>string</code> | Description of the application as shown to end users. |
 | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims">GroupMembershipClaims</a></code> | <code>string[]</code> | Configures the `groups` claim that the app expects issued in a user or OAuth access token. |
 | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl">HomepageUrl</a></code> | <code>string</code> | URL of the home page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled">ImplicitAccessTokenIssuanceEnabled</a></code> | <code>object</code> | Whether this application can request an access token using OAuth implicit flow. |
 | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled">ImplicitIdTokenIssuanceEnabled</a></code> | <code>object</code> | Whether this application can request an ID token using OAuth implicit flow. |
 | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl">LogoutUrl</a></code> | <code>string</code> | URL of the logout page for the application, where the session is cleared for single sign-out. |
@@ -1351,7 +1351,7 @@ public string DisplayName { get; set; }
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#display_name ApplicationRegistration#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#display_name ApplicationRegistration#display_name}
 
 ---
 
@@ -1365,7 +1365,7 @@ public string Description { get; set; }
 
 Description of the application as shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#description ApplicationRegistration#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#description ApplicationRegistration#description}
 
 ---
 
@@ -1379,7 +1379,7 @@ public string[] GroupMembershipClaims { get; set; }
 
 Configures the `groups` claim that the app expects issued in a user or OAuth access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#group_membership_claims ApplicationRegistration#group_membership_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#group_membership_claims ApplicationRegistration#group_membership_claims}
 
 ---
 
@@ -1393,7 +1393,7 @@ public string HomepageUrl { get; set; }
 
 URL of the home page for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#homepage_url ApplicationRegistration#homepage_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#homepage_url ApplicationRegistration#homepage_url}
 
 ---
 
@@ -1405,7 +1405,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#id ApplicationRegistration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#id ApplicationRegistration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1422,7 +1422,7 @@ public object ImplicitAccessTokenIssuanceEnabled { get; set; }
 
 Whether this application can request an access token using OAuth implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#implicit_access_token_issuance_enabled ApplicationRegistration#implicit_access_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#implicit_access_token_issuance_enabled ApplicationRegistration#implicit_access_token_issuance_enabled}
 
 ---
 
@@ -1436,7 +1436,7 @@ public object ImplicitIdTokenIssuanceEnabled { get; set; }
 
 Whether this application can request an ID token using OAuth implicit flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#implicit_id_token_issuance_enabled ApplicationRegistration#implicit_id_token_issuance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#implicit_id_token_issuance_enabled ApplicationRegistration#implicit_id_token_issuance_enabled}
 
 ---
 
@@ -1450,7 +1450,7 @@ public string LogoutUrl { get; set; }
 
 URL of the logout page for the application, where the session is cleared for single sign-out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#logout_url ApplicationRegistration#logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#logout_url ApplicationRegistration#logout_url}
 
 ---
 
@@ -1464,7 +1464,7 @@ public string MarketingUrl { get; set; }
 
 URL of the marketing page for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#marketing_url ApplicationRegistration#marketing_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#marketing_url ApplicationRegistration#marketing_url}
 
 ---
 
@@ -1478,7 +1478,7 @@ public string Notes { get; set; }
 
 User-specified notes relevant for the management of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#notes ApplicationRegistration#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#notes ApplicationRegistration#notes}
 
 ---
 
@@ -1492,7 +1492,7 @@ public string PrivacyStatementUrl { get; set; }
 
 URL of the privacy statement for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#privacy_statement_url ApplicationRegistration#privacy_statement_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#privacy_statement_url ApplicationRegistration#privacy_statement_url}
 
 ---
 
@@ -1506,7 +1506,7 @@ public double RequestedAccessTokenVersion { get; set; }
 
 The access token version expected by this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#requested_access_token_version ApplicationRegistration#requested_access_token_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#requested_access_token_version ApplicationRegistration#requested_access_token_version}
 
 ---
 
@@ -1520,7 +1520,7 @@ public string ServiceManagementReference { get; set; }
 
 References application or contact information from a service or asset management database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#service_management_reference ApplicationRegistration#service_management_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#service_management_reference ApplicationRegistration#service_management_reference}
 
 ---
 
@@ -1534,7 +1534,7 @@ public string SignInAudience { get; set; }
 
 The Microsoft account types that are supported for the current application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#sign_in_audience ApplicationRegistration#sign_in_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#sign_in_audience ApplicationRegistration#sign_in_audience}
 
 ---
 
@@ -1548,7 +1548,7 @@ public string SupportUrl { get; set; }
 
 URL of the support page for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#support_url ApplicationRegistration#support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#support_url ApplicationRegistration#support_url}
 
 ---
 
@@ -1562,7 +1562,7 @@ public string TermsOfServiceUrl { get; set; }
 
 URL of the terms of service statement for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#terms_of_service_url ApplicationRegistration#terms_of_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#terms_of_service_url ApplicationRegistration#terms_of_service_url}
 
 ---
 
@@ -1576,7 +1576,7 @@ public ApplicationRegistrationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#timeouts ApplicationRegistration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#timeouts ApplicationRegistration#timeouts}
 
 ---
 
@@ -1599,10 +1599,10 @@ new ApplicationRegistrationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#create ApplicationRegistration#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#delete ApplicationRegistration#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#read ApplicationRegistration#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#update ApplicationRegistration#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#create ApplicationRegistration#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#delete ApplicationRegistration#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#read ApplicationRegistration#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#update ApplicationRegistration#update}. |
 
 ---
 
@@ -1614,7 +1614,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#create ApplicationRegistration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#create ApplicationRegistration#create}.
 
 ---
 
@@ -1626,7 +1626,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#delete ApplicationRegistration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#delete ApplicationRegistration#delete}.
 
 ---
 
@@ -1638,7 +1638,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#read ApplicationRegistration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#read ApplicationRegistration#read}.
 
 ---
 
@@ -1650,7 +1650,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.52.0/docs/resources/application_registration#update ApplicationRegistration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_registration#update ApplicationRegistration#update}.
 
 ---
 
