@@ -4,7 +4,7 @@
 
 ### ApplicationFallbackPublicClient <a name="ApplicationFallbackPublicClient" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client azuread_application_fallback_public_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client azuread_application_fallback_public_client}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the ApplicationFallbackPublicC
 
 The id of the existing ApplicationFallbackPublicClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfallba
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | The resource ID of the application to which the fallback public client setting should be applied. |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Specifies explicitly whether the application is a public client. |
-| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#id ApplicationFallbackPublicClient#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#id ApplicationFallbackPublicClient#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts">ApplicationFallbackPublicClientTimeouts</a></code> | timeouts block. |
 
 ---
@@ -904,7 +904,7 @@ ApplicationId *string
 
 The resource ID of the application to which the fallback public client setting should be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#application_id ApplicationFallbackPublicClient#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#application_id ApplicationFallbackPublicClient#application_id}
 
 ---
 
@@ -920,7 +920,7 @@ Specifies explicitly whether the application is a public client.
 
 Appropriate for apps using token grant flows that don't use a redirect URI
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#enabled ApplicationFallbackPublicClient#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#enabled ApplicationFallbackPublicClient#enabled}
 
 ---
 
@@ -932,7 +932,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#id ApplicationFallbackPublicClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#id ApplicationFallbackPublicClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ Timeouts ApplicationFallbackPublicClientTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#timeouts ApplicationFallbackPublicClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#timeouts ApplicationFallbackPublicClient#timeouts}
 
 ---
 
@@ -971,9 +971,9 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfallba
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}. |
 
 ---
 
@@ -985,7 +985,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#create ApplicationFallbackPublicClient#create}.
 
 ---
 
@@ -997,7 +997,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#delete ApplicationFallbackPublicClient#delete}.
 
 ---
 
@@ -1009,7 +1009,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_fallback_public_client#read ApplicationFallbackPublicClient#read}.
 
 ---
 
