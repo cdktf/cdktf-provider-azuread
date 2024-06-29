@@ -4,12 +4,12 @@
 
 ### GroupRoleManagementPolicy <a name="GroupRoleManagementPolicy" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy azuread_group_role_management_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy azuread_group_role_management_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicy(scope Construct, id *string, config GroupRoleManagementPolicyConfig) GroupRoleManagementPolicy
 ```
@@ -485,7 +485,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.GroupRoleManagementPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -517,7 +517,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.GroupRoleManagementPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ grouprolemanagementpolicy.GroupRoleManagementPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.GroupRoleManagementPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ grouprolemanagementpolicy.GroupRoleManagementPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.GroupRoleManagementPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +574,7 @@ The construct id used in the generated config for the GroupRoleManagementPolicy 
 
 The id of the existing GroupRoleManagementPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -972,10 +972,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyActivationRules {
-	ApprovalStage: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesApprovalStage,
+	ApprovalStage: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesApprovalStage,
 	MaximumDuration: *string,
 	RequireApproval: interface{},
 	RequiredConditionalAccessAuthenticationContext: *string,
@@ -1009,7 +1009,7 @@ ApprovalStage GroupRoleManagementPolicyActivationRulesApprovalStage
 
 approval_stage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#approval_stage GroupRoleManagementPolicy#approval_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#approval_stage GroupRoleManagementPolicy#approval_stage}
 
 ---
 
@@ -1023,7 +1023,7 @@ MaximumDuration *string
 
 The time after which the an activation can be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#maximum_duration GroupRoleManagementPolicy#maximum_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#maximum_duration GroupRoleManagementPolicy#maximum_duration}
 
 ---
 
@@ -1037,7 +1037,7 @@ RequireApproval interface{}
 
 Whether an approval is required for activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#require_approval GroupRoleManagementPolicy#require_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#require_approval GroupRoleManagementPolicy#require_approval}
 
 ---
 
@@ -1051,7 +1051,7 @@ RequiredConditionalAccessAuthenticationContext *string
 
 Whether a conditional access context is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#required_conditional_access_authentication_context GroupRoleManagementPolicy#required_conditional_access_authentication_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#required_conditional_access_authentication_context GroupRoleManagementPolicy#required_conditional_access_authentication_context}
 
 ---
 
@@ -1065,7 +1065,7 @@ RequireJustification interface{}
 
 Whether a justification is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
 
 ---
 
@@ -1079,7 +1079,7 @@ RequireMultifactorAuthentication interface{}
 
 Whether multi-factor authentication is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
 
 ---
 
@@ -1093,7 +1093,7 @@ RequireTicketInfo interface{}
 
 Whether ticket information is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
 
 ---
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesApprovalStage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyActivationRulesApprovalStage {
 	PrimaryApprover: interface{},
@@ -1127,7 +1127,7 @@ PrimaryApprover interface{}
 
 primary_approver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#primary_approver GroupRoleManagementPolicy#primary_approver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#primary_approver GroupRoleManagementPolicy#primary_approver}
 
 ---
 
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover {
 	ObjectId: *string,
@@ -1163,7 +1163,7 @@ ObjectId *string
 
 The ID of the object to act as an approver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#object_id GroupRoleManagementPolicy#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#object_id GroupRoleManagementPolicy#object_id}
 
 ---
 
@@ -1177,7 +1177,7 @@ Type *string
 
 The type of object acting as an approver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#type GroupRoleManagementPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#type GroupRoleManagementPolicy#type}
 
 ---
 
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActiveAssignmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyActiveAssignmentRules {
 	ExpirationRequired: interface{},
@@ -1219,7 +1219,7 @@ ExpirationRequired interface{}
 
 Must the assignment have an expiry date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
 
 ---
 
@@ -1233,7 +1233,7 @@ ExpireAfter *string
 
 The duration after which assignments expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
 
 ---
 
@@ -1247,7 +1247,7 @@ RequireJustification interface{}
 
 Whether a justification is required to make an assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
 
 ---
 
@@ -1261,7 +1261,7 @@ RequireMultifactorAuthentication interface{}
 
 Whether multi-factor authentication is required to make an assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
 
 ---
 
@@ -1275,7 +1275,7 @@ RequireTicketInfo interface{}
 
 Whether ticket information is required to make an assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
 
 ---
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyConfig {
 	Connection: interface{},
@@ -1296,12 +1296,12 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanageme
 	Provisioners: *[]interface{},
 	GroupId: *string,
 	RoleId: *string,
-	ActivationRules: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRules,
-	ActiveAssignmentRules: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyActiveAssignmentRules,
-	EligibleAssignmentRules: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyEligibleAssignmentRules,
+	ActivationRules: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRules,
+	ActiveAssignmentRules: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActiveAssignmentRules,
+	EligibleAssignmentRules: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyEligibleAssignmentRules,
 	Id: *string,
-	NotificationRules: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRules,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts,
+	NotificationRules: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRules,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts,
 }
 ```
 
@@ -1321,7 +1321,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanageme
 | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.property.activationRules">ActivationRules</a></code> | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRules">GroupRoleManagementPolicyActivationRules</a></code> | activation_rules block. |
 | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.property.activeAssignmentRules">ActiveAssignmentRules</a></code> | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActiveAssignmentRules">GroupRoleManagementPolicyActiveAssignmentRules</a></code> | active_assignment_rules block. |
 | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.property.eligibleAssignmentRules">EligibleAssignmentRules</a></code> | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyEligibleAssignmentRules">GroupRoleManagementPolicyEligibleAssignmentRules</a></code> | eligible_assignment_rules block. |
-| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}. |
+| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}. |
 | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.property.notificationRules">NotificationRules</a></code> | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRules">GroupRoleManagementPolicyNotificationRules</a></code> | notification_rules block. |
 | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts">GroupRoleManagementPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1407,7 +1407,7 @@ GroupId *string
 
 ID of the group to which this policy is assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#group_id GroupRoleManagementPolicy#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#group_id GroupRoleManagementPolicy#group_id}
 
 ---
 
@@ -1421,7 +1421,7 @@ RoleId *string
 
 The ID of the role of this policy to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#role_id GroupRoleManagementPolicy#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#role_id GroupRoleManagementPolicy#role_id}
 
 ---
 
@@ -1435,7 +1435,7 @@ ActivationRules GroupRoleManagementPolicyActivationRules
 
 activation_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#activation_rules GroupRoleManagementPolicy#activation_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#activation_rules GroupRoleManagementPolicy#activation_rules}
 
 ---
 
@@ -1449,7 +1449,7 @@ ActiveAssignmentRules GroupRoleManagementPolicyActiveAssignmentRules
 
 active_assignment_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#active_assignment_rules GroupRoleManagementPolicy#active_assignment_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#active_assignment_rules GroupRoleManagementPolicy#active_assignment_rules}
 
 ---
 
@@ -1463,7 +1463,7 @@ EligibleAssignmentRules GroupRoleManagementPolicyEligibleAssignmentRules
 
 eligible_assignment_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#eligible_assignment_rules GroupRoleManagementPolicy#eligible_assignment_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#eligible_assignment_rules GroupRoleManagementPolicy#eligible_assignment_rules}
 
 ---
 
@@ -1475,7 +1475,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1492,7 +1492,7 @@ NotificationRules GroupRoleManagementPolicyNotificationRules
 
 notification_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_rules GroupRoleManagementPolicy#notification_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_rules GroupRoleManagementPolicy#notification_rules}
 
 ---
 
@@ -1506,7 +1506,7 @@ Timeouts GroupRoleManagementPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#timeouts GroupRoleManagementPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#timeouts GroupRoleManagementPolicy#timeouts}
 
 ---
 
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyEligibleAssignmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyEligibleAssignmentRules {
 	ExpirationRequired: interface{},
@@ -1542,7 +1542,7 @@ ExpirationRequired interface{}
 
 Must the assignment have an expiry date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
 
 ---
 
@@ -1556,7 +1556,7 @@ ExpireAfter *string
 
 The duration after which assignments expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
 
 ---
 
@@ -1565,12 +1565,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRules {
-	ActiveAssignments: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignments,
-	EligibleActivations: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivations,
-	EligibleAssignments: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignments,
+	ActiveAssignments: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignments,
+	EligibleActivations: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivations,
+	EligibleAssignments: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignments,
 }
 ```
 
@@ -1594,7 +1594,7 @@ ActiveAssignments GroupRoleManagementPolicyNotificationRulesActiveAssignments
 
 active_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#active_assignments GroupRoleManagementPolicy#active_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#active_assignments GroupRoleManagementPolicy#active_assignments}
 
 ---
 
@@ -1608,7 +1608,7 @@ EligibleActivations GroupRoleManagementPolicyNotificationRulesEligibleActivation
 
 eligible_activations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#eligible_activations GroupRoleManagementPolicy#eligible_activations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#eligible_activations GroupRoleManagementPolicy#eligible_activations}
 
 ---
 
@@ -1622,7 +1622,7 @@ EligibleAssignments GroupRoleManagementPolicyNotificationRulesEligibleAssignment
 
 eligible_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#eligible_assignments GroupRoleManagementPolicy#eligible_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#eligible_assignments GroupRoleManagementPolicy#eligible_assignments}
 
 ---
 
@@ -1631,12 +1631,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignments {
-	AdminNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications,
-	ApproverNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications,
-	AssigneeNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications,
+	AdminNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications,
+	ApproverNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications,
+	AssigneeNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications,
 }
 ```
 
@@ -1660,7 +1660,7 @@ AdminNotifications GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAd
 
 admin_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
 
 ---
 
@@ -1674,7 +1674,7 @@ ApproverNotifications GroupRoleManagementPolicyNotificationRulesActiveAssignment
 
 approver_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
 
 ---
 
@@ -1688,7 +1688,7 @@ AssigneeNotifications GroupRoleManagementPolicyNotificationRulesActiveAssignment
 
 assignee_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
 
 ---
 
@@ -1697,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -1726,7 +1726,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -1740,7 +1740,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -1754,7 +1754,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -1763,7 +1763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -1792,7 +1792,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -1806,7 +1806,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -1820,7 +1820,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -1858,7 +1858,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -1872,7 +1872,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -1886,7 +1886,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -1895,12 +1895,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivations {
-	AdminNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications,
-	ApproverNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications,
-	AssigneeNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications,
+	AdminNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications,
+	ApproverNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications,
+	AssigneeNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications,
 }
 ```
 
@@ -1924,7 +1924,7 @@ AdminNotifications GroupRoleManagementPolicyNotificationRulesEligibleActivations
 
 admin_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
 
 ---
 
@@ -1938,7 +1938,7 @@ ApproverNotifications GroupRoleManagementPolicyNotificationRulesEligibleActivati
 
 approver_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
 
 ---
 
@@ -1952,7 +1952,7 @@ AssigneeNotifications GroupRoleManagementPolicyNotificationRulesEligibleActivati
 
 assignee_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
 
 ---
 
@@ -1961,7 +1961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -1990,7 +1990,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2004,7 +2004,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -2018,7 +2018,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2027,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -2056,7 +2056,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2070,7 +2070,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -2084,7 +2084,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -2122,7 +2122,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2136,7 +2136,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -2150,7 +2150,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2159,12 +2159,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignments {
-	AdminNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications,
-	ApproverNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications,
-	AssigneeNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications,
+	AdminNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications,
+	ApproverNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications,
+	AssigneeNotifications: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications,
 }
 ```
 
@@ -2188,7 +2188,7 @@ AdminNotifications GroupRoleManagementPolicyNotificationRulesEligibleAssignments
 
 admin_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
 
 ---
 
@@ -2202,7 +2202,7 @@ ApproverNotifications GroupRoleManagementPolicyNotificationRulesEligibleAssignme
 
 approver_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
 
 ---
 
@@ -2216,7 +2216,7 @@ AssigneeNotifications GroupRoleManagementPolicyNotificationRulesEligibleAssignme
 
 assignee_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
 
 ---
 
@@ -2225,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -2254,7 +2254,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2268,7 +2268,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -2282,7 +2282,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2291,7 +2291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -2320,7 +2320,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2334,7 +2334,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -2348,7 +2348,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2357,7 +2357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -2386,7 +2386,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2400,7 +2400,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
 
 ---
 
@@ -2414,7 +2414,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2423,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 &grouprolemanagementpolicy.GroupRoleManagementPolicyTimeouts {
 	Create: *string,
@@ -2437,10 +2437,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanageme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#create GroupRoleManagementPolicy#create}. |
-| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#delete GroupRoleManagementPolicy#delete}. |
-| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#read GroupRoleManagementPolicy#read}. |
-| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#update GroupRoleManagementPolicy#update}. |
+| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#create GroupRoleManagementPolicy#create}. |
+| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#delete GroupRoleManagementPolicy#delete}. |
+| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#read GroupRoleManagementPolicy#read}. |
+| <code><a href="#@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#update GroupRoleManagementPolicy#update}. |
 
 ---
 
@@ -2452,7 +2452,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#create GroupRoleManagementPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#create GroupRoleManagementPolicy#create}.
 
 ---
 
@@ -2464,7 +2464,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#delete GroupRoleManagementPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#delete GroupRoleManagementPolicy#delete}.
 
 ---
 
@@ -2476,7 +2476,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#read GroupRoleManagementPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#read GroupRoleManagementPolicy#read}.
 
 ---
 
@@ -2488,7 +2488,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/group_role_management_policy#update GroupRoleManagementPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/group_role_management_policy#update GroupRoleManagementPolicy#update}.
 
 ---
 
@@ -2499,7 +2499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesApprovalStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyActivationRulesApprovalStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyActivationRulesApprovalStageOutputReference
 ```
@@ -2783,7 +2783,7 @@ func InternalValue() GroupRoleManagementPolicyActivationRulesApprovalStage
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList
 ```
@@ -2943,7 +2943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference
 ```
@@ -3261,7 +3261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActivationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyActivationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyActivationRulesOutputReference
 ```
@@ -3726,7 +3726,7 @@ func InternalValue() GroupRoleManagementPolicyActivationRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyActiveAssignmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyActiveAssignmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyActiveAssignmentRulesOutputReference
 ```
@@ -4120,7 +4120,7 @@ func InternalValue() GroupRoleManagementPolicyActiveAssignmentRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyEligibleAssignmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyEligibleAssignmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyEligibleAssignmentRulesOutputReference
 ```
@@ -4427,7 +4427,7 @@ func InternalValue() GroupRoleManagementPolicyEligibleAssignmentRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference
 ```
@@ -4749,7 +4749,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesActiveAssignments
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference
 ```
@@ -5071,7 +5071,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesActiveAssignments
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference
 ```
@@ -5393,7 +5393,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesActiveAssignments
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference
 ```
@@ -5768,7 +5768,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesActiveAssignments
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference
 ```
@@ -6090,7 +6090,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleActivatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference
 ```
@@ -6412,7 +6412,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleActivatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference
 ```
@@ -6734,7 +6734,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleActivatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference
 ```
@@ -7109,7 +7109,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleActivatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference
 ```
@@ -7431,7 +7431,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleAssignmen
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference
 ```
@@ -7753,7 +7753,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleAssignmen
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference
 ```
@@ -8075,7 +8075,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleAssignmen
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference
 ```
@@ -8450,7 +8450,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRulesEligibleAssignmen
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyNotificationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyNotificationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyNotificationRulesOutputReference
 ```
@@ -8825,7 +8825,7 @@ func InternalValue() GroupRoleManagementPolicyNotificationRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupRoleManagementPolicy.GroupRoleManagementPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/grouprolemanagementpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/grouprolemanagementpolicy"
 
 grouprolemanagementpolicy.NewGroupRoleManagementPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupRoleManagementPolicyTimeoutsOutputReference
 ```

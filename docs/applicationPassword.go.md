@@ -4,12 +4,12 @@
 
 ### ApplicationPasswordA <a name="ApplicationPasswordA" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password azuread_application_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password azuread_application_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 applicationpassword.NewApplicationPasswordA(scope Construct, id *string, config ApplicationPasswordAConfig) ApplicationPasswordA
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 applicationpassword.ApplicationPasswordA_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 applicationpassword.ApplicationPasswordA_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ applicationpassword.ApplicationPasswordA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 applicationpassword.ApplicationPasswordA_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ applicationpassword.ApplicationPasswordA_IsTerraformResource(x interface{}) *boo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 applicationpassword.ApplicationPasswordA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ApplicationPasswordA to im
 
 The id of the existing ApplicationPasswordA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -963,7 +963,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 &applicationpassword.ApplicationPasswordAConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpasswo
 	Id: *string,
 	RotateWhenChanged: *map[string]*string,
 	StartDate: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.applicationPassword.ApplicationPasswordTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationPassword.ApplicationPasswordTimeouts,
 }
 ```
 
@@ -1001,7 +1001,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpasswo
 | <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | A display name for the password. |
 | <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.endDate">EndDate</a></code> | <code>*string</code> | The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
 | <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.endDateRelative">EndDateRelative</a></code> | <code>*string</code> | A relative duration for which the password is valid until, for example `240h` (10 days) or `2400h30m`. |
-| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#id ApplicationPasswordA#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#id ApplicationPasswordA#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.rotateWhenChanged">RotateWhenChanged</a></code> | <code>*map[string]*string</code> | Arbitrary map of values that, when changed, will trigger rotation of the password. |
 | <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.startDate">StartDate</a></code> | <code>*string</code> | The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used. |
 | <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordAConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts">ApplicationPasswordTimeouts</a></code> | timeouts block. |
@@ -1088,7 +1088,7 @@ ApplicationId *string
 
 The resource ID of the application for which this password should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#application_id ApplicationPasswordA#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#application_id ApplicationPasswordA#application_id}
 
 ---
 
@@ -1102,7 +1102,7 @@ ApplicationObjectId *string
 
 The object ID of the application for which this password should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#application_object_id ApplicationPasswordA#application_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#application_object_id ApplicationPasswordA#application_object_id}
 
 ---
 
@@ -1116,7 +1116,7 @@ DisplayName *string
 
 A display name for the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#display_name ApplicationPasswordA#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#display_name ApplicationPasswordA#display_name}
 
 ---
 
@@ -1130,7 +1130,7 @@ EndDate *string
 
 The end date until which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#end_date ApplicationPasswordA#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#end_date ApplicationPasswordA#end_date}
 
 ---
 
@@ -1146,7 +1146,7 @@ A relative duration for which the password is valid until, for example `240h` (1
 
 Changing this field forces a new resource to be created
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#end_date_relative ApplicationPasswordA#end_date_relative}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#end_date_relative ApplicationPasswordA#end_date_relative}
 
 ---
 
@@ -1158,7 +1158,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#id ApplicationPasswordA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#id ApplicationPasswordA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1175,7 +1175,7 @@ RotateWhenChanged *map[string]*string
 
 Arbitrary map of values that, when changed, will trigger rotation of the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#rotate_when_changed ApplicationPasswordA#rotate_when_changed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#rotate_when_changed ApplicationPasswordA#rotate_when_changed}
 
 ---
 
@@ -1189,7 +1189,7 @@ StartDate *string
 
 The start date from which the password is valid, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). If this isn't specified, the current date is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#start_date ApplicationPasswordA#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#start_date ApplicationPasswordA#start_date}
 
 ---
 
@@ -1203,7 +1203,7 @@ Timeouts ApplicationPasswordTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#timeouts ApplicationPasswordA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#timeouts ApplicationPasswordA#timeouts}
 
 ---
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 &applicationpassword.ApplicationPasswordTimeouts {
 	Create: *string,
@@ -1226,10 +1226,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpasswo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#create ApplicationPasswordA#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#delete ApplicationPasswordA#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#read ApplicationPasswordA#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#update ApplicationPasswordA#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#create ApplicationPasswordA#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#delete ApplicationPasswordA#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#read ApplicationPasswordA#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#update ApplicationPasswordA#update}. |
 
 ---
 
@@ -1241,7 +1241,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#create ApplicationPasswordA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#create ApplicationPasswordA#create}.
 
 ---
 
@@ -1253,7 +1253,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#delete ApplicationPasswordA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#delete ApplicationPasswordA#delete}.
 
 ---
 
@@ -1265,7 +1265,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#read ApplicationPasswordA#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#read ApplicationPasswordA#read}.
 
 ---
 
@@ -1277,7 +1277,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_password#update ApplicationPasswordA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_password#update ApplicationPasswordA#update}.
 
 ---
 
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPassword.ApplicationPasswordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationpassword"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationpassword"
 
 applicationpassword.NewApplicationPasswordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationPasswordTimeoutsOutputReference
 ```

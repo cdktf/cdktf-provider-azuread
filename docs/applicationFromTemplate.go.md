@@ -4,12 +4,12 @@
 
 ### ApplicationFromTemplate <a name="ApplicationFromTemplate" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template azuread_application_from_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template azuread_application_from_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.NewApplicationFromTemplate(scope Construct, id *string, config ApplicationFromTemplateConfig) ApplicationFromTemplate
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ applicationfromtemplate.ApplicationFromTemplate_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ applicationfromtemplate.ApplicationFromTemplate_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ApplicationFromTemplate to
 
 The id of the existing ApplicationFromTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 &applicationfromtemplate.ApplicationFromTemplateConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromte
 	DisplayName: *string,
 	TemplateId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v12.applicationFromTemplate.ApplicationFromTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts,
 }
 ```
 
@@ -856,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromte
 | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name for the application. |
 | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | The UUID of the template to instantiate for this application. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#id ApplicationFromTemplate#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts">ApplicationFromTemplateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -941,7 +941,7 @@ DisplayName *string
 
 The display name for the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#display_name ApplicationFromTemplate#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#display_name ApplicationFromTemplate#display_name}
 
 ---
 
@@ -955,7 +955,7 @@ TemplateId *string
 
 The UUID of the template to instantiate for this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#template_id ApplicationFromTemplate#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#template_id ApplicationFromTemplate#template_id}
 
 ---
 
@@ -967,7 +967,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#id ApplicationFromTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -984,7 +984,7 @@ Timeouts ApplicationFromTemplateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#timeouts ApplicationFromTemplate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#timeouts ApplicationFromTemplate#timeouts}
 
 ---
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 &applicationfromtemplate.ApplicationFromTemplateTimeouts {
 	Create: *string,
@@ -1007,10 +1007,10 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#create ApplicationFromTemplate#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#read ApplicationFromTemplate#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#update ApplicationFromTemplate#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#create ApplicationFromTemplate#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#read ApplicationFromTemplate#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#update ApplicationFromTemplate#update}. |
 
 ---
 
@@ -1022,7 +1022,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#create ApplicationFromTemplate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#create ApplicationFromTemplate#create}.
 
 ---
 
@@ -1034,7 +1034,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#read ApplicationFromTemplate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#read ApplicationFromTemplate#read}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.0/docs/resources/application_from_template#update ApplicationFromTemplate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/application_from_template#update ApplicationFromTemplate#update}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v12/applicationfromtemplate"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/applicationfromtemplate"
 
 applicationfromtemplate.NewApplicationFromTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationFromTemplateTimeoutsOutputReference
 ```
