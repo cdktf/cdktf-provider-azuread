@@ -1,3 +1,3 @@
 # `azuread_administrative_unit`
 
-Refer to the Terraform Registry for docs: [`azuread_administrative_unit`](https://registry.terraform.io/providers/hashicorp/azuread/2.53.1/docs/resources/administrative_unit).
+Refer to the Terraform Registry for docs: [`azuread_administrative_unit`](https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/administrative_unit).
