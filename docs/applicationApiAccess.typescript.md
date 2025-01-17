@@ -4,7 +4,7 @@
 
 ### ApplicationApiAccess <a name="ApplicationApiAccess" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access azuread_application_api_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access azuread_application_api_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccess.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ApplicationApiAccess to im
 
 The id of the existing ApplicationApiAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,7 +858,7 @@ const applicationApiAccessConfig: applicationApiAccess.ApplicationApiAccessConfi
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.apiClientId">apiClientId</a></code> | <code>string</code> | The client ID of the API to which access is being granted. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.applicationId">applicationId</a></code> | <code>string</code> | The resource ID of the application to which this API access is granted. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#id ApplicationApiAccess#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#id ApplicationApiAccess#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.roleIds">roleIds</a></code> | <code>string[]</code> | A set of role IDs to be granted to the application, as published by the API. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.scopeIds">scopeIds</a></code> | <code>string[]</code> | A set of scope IDs to be granted to the application, as published by the API. |
 | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts">ApplicationApiAccessTimeouts</a></code> | timeouts block. |
@@ -945,7 +945,7 @@ public readonly apiClientId: string;
 
 The client ID of the API to which access is being granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#api_client_id ApplicationApiAccess#api_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#api_client_id ApplicationApiAccess#api_client_id}
 
 ---
 
@@ -959,7 +959,7 @@ public readonly applicationId: string;
 
 The resource ID of the application to which this API access is granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#application_id ApplicationApiAccess#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#application_id ApplicationApiAccess#application_id}
 
 ---
 
@@ -971,7 +971,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#id ApplicationApiAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#id ApplicationApiAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ public readonly roleIds: string[];
 
 A set of role IDs to be granted to the application, as published by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#role_ids ApplicationApiAccess#role_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#role_ids ApplicationApiAccess#role_ids}
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly scopeIds: string[];
 
 A set of scope IDs to be granted to the application, as published by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#scope_ids ApplicationApiAccess#scope_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#scope_ids ApplicationApiAccess#scope_ids}
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly timeouts: ApplicationApiAccessTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#timeouts ApplicationApiAccess#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#timeouts ApplicationApiAccess#timeouts}
 
 ---
 
@@ -1034,10 +1034,10 @@ const applicationApiAccessTimeouts: applicationApiAccess.ApplicationApiAccessTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#create ApplicationApiAccess#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#delete ApplicationApiAccess#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#read ApplicationApiAccess#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#update ApplicationApiAccess#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#create ApplicationApiAccess#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#delete ApplicationApiAccess#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#read ApplicationApiAccess#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#update ApplicationApiAccess#update}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#create ApplicationApiAccess#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#create ApplicationApiAccess#create}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#delete ApplicationApiAccess#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#delete ApplicationApiAccess#delete}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#read ApplicationApiAccess#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#read ApplicationApiAccess#read}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/application_api_access#update ApplicationApiAccess#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/application_api_access#update ApplicationApiAccess#update}.
 
 ---
 

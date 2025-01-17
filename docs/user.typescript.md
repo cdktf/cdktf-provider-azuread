@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-azuread.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user azuread_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user azuread_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.user.User.Initializer"></a>
 
@@ -86,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azuread.user.User.resetDisablePasswordExpiration">resetDisablePasswordExpiration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.resetDisableStrongPassword">resetDisableStrongPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.resetDivision">resetDivision</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeHireDate">resetEmployeeHireDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeId">resetEmployeeId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeType">resetEmployeeType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.resetFaxNumber">resetFaxNumber</a></code> | *No description.* |
@@ -484,6 +485,12 @@ public resetDisableStrongPassword(): void
 public resetDivision(): void
 ```
 
+##### `resetEmployeeHireDate` <a name="resetEmployeeHireDate" id="@cdktf/provider-azuread.user.User.resetEmployeeHireDate"></a>
+
+```typescript
+public resetEmployeeHireDate(): void
+```
+
 ##### `resetEmployeeId` <a name="resetEmployeeId" id="@cdktf/provider-azuread.user.User.resetEmployeeId"></a>
 
 ```typescript
@@ -725,7 +732,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,6 +789,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput">disableStrongPasswordInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.divisionInput">divisionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDateInput">employeeHireDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeIdInput">employeeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeTypeInput">employeeTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumberInput">faxNumberInput</a></code> | <code>string</code> | *No description.* |
@@ -819,6 +827,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPassword">disableStrongPassword</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.division">division</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDate">employeeHireDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeId">employeeId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeType">employeeType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumber">faxNumber</a></code> | <code>string</code> | *No description.* |
@@ -1257,6 +1266,16 @@ public readonly divisionInput: string;
 
 ---
 
+##### `employeeHireDateInput`<sup>Optional</sup> <a name="employeeHireDateInput" id="@cdktf/provider-azuread.user.User.property.employeeHireDateInput"></a>
+
+```typescript
+public readonly employeeHireDateInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `employeeIdInput`<sup>Optional</sup> <a name="employeeIdInput" id="@cdktf/provider-azuread.user.User.property.employeeIdInput"></a>
 
 ```typescript
@@ -1627,6 +1646,16 @@ public readonly division: string;
 
 ---
 
+##### `employeeHireDate`<sup>Required</sup> <a name="employeeHireDate" id="@cdktf/provider-azuread.user.User.property.employeeHireDate"></a>
+
+```typescript
+public readonly employeeHireDate: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `employeeId`<sup>Required</sup> <a name="employeeId" id="@cdktf/provider-azuread.user.User.property.employeeId"></a>
 
 ```typescript
@@ -1912,12 +1941,13 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration">disablePasswordExpiration</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the users password is exempt from expiring. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword">disableStrongPassword</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.division">division</a></code> | <code>string</code> | The name of the division in which the user works. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate">employeeHireDate</a></code> | <code>string</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeId">employeeId</a></code> | <code>string</code> | The employee identifier assigned to the user by the organisation. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeType">employeeType</a></code> | <code>string</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.faxNumber">faxNumber</a></code> | <code>string</code> | The fax number of the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange">forcePasswordChange</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.givenName">givenName</a></code> | <code>string</code> | The given name (first name) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.jobTitle">jobTitle</a></code> | <code>string</code> | The user’s job title. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mail">mail</a></code> | <code>string</code> | The SMTP address for the user. Cannot be unset. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mailNickname">mailNickname</a></code> | <code>string</code> | The mail alias for the user. Defaults to the user name part of the user principal name (UPN). |
@@ -2018,7 +2048,7 @@ public readonly displayName: string;
 
 The name to display in the address book for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#display_name User#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#display_name User#display_name}
 
 ---
 
@@ -2032,7 +2062,7 @@ public readonly userPrincipalName: string;
 
 The user principal name (UPN) of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#user_principal_name User#user_principal_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#user_principal_name User#user_principal_name}
 
 ---
 
@@ -2046,7 +2076,7 @@ public readonly accountEnabled: boolean | IResolvable;
 
 Whether or not the account should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#account_enabled User#account_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#account_enabled User#account_enabled}
 
 ---
 
@@ -2060,7 +2090,7 @@ public readonly ageGroup: string;
 
 The age group of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#age_group User#age_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#age_group User#age_group}
 
 ---
 
@@ -2076,7 +2106,7 @@ The telephone numbers for the user.
 
 Only one number can be set for this property. Read-only for users synced with Azure AD Connect
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#business_phones User#business_phones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#business_phones User#business_phones}
 
 ---
 
@@ -2090,7 +2120,7 @@ public readonly city: string;
 
 The city in which the user is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#city User#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#city User#city}
 
 ---
 
@@ -2106,7 +2136,7 @@ The company name which the user is associated.
 
 This property can be useful for describing the company that an external user comes from
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#company_name User#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#company_name User#company_name}
 
 ---
 
@@ -2120,7 +2150,7 @@ public readonly consentProvidedForMinor: string;
 
 Whether consent has been obtained for minors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#consent_provided_for_minor User#consent_provided_for_minor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#consent_provided_for_minor User#consent_provided_for_minor}
 
 ---
 
@@ -2134,7 +2164,7 @@ public readonly costCenter: string;
 
 The cost center associated with the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#cost_center User#cost_center}
 
 ---
 
@@ -2148,7 +2178,7 @@ public readonly country: string;
 
 The country/region in which the user is located, e.g. `US` or `UK`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#country User#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#country User#country}
 
 ---
 
@@ -2162,7 +2192,7 @@ public readonly department: string;
 
 The name for the department in which the user works.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#department User#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#department User#department}
 
 ---
 
@@ -2176,7 +2206,7 @@ public readonly disablePasswordExpiration: boolean | IResolvable;
 
 Whether the users password is exempt from expiring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#disable_password_expiration User#disable_password_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#disable_password_expiration User#disable_password_expiration}
 
 ---
 
@@ -2190,7 +2220,7 @@ public readonly disableStrongPassword: boolean | IResolvable;
 
 Whether the user is allowed weaker passwords than the default policy to be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#disable_strong_password User#disable_strong_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#disable_strong_password User#disable_strong_password}
 
 ---
 
@@ -2204,7 +2234,21 @@ public readonly division: string;
 
 The name of the division in which the user works.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#division User#division}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#division User#division}
+
+---
+
+##### `employeeHireDate`<sup>Optional</sup> <a name="employeeHireDate" id="@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate"></a>
+
+```typescript
+public readonly employeeHireDate: string;
+```
+
+- *Type:* string
+
+The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#employee_hire_date User#employee_hire_date}
 
 ---
 
@@ -2218,7 +2262,7 @@ public readonly employeeId: string;
 
 The employee identifier assigned to the user by the organisation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#employee_id User#employee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#employee_id User#employee_id}
 
 ---
 
@@ -2232,7 +2276,7 @@ public readonly employeeType: string;
 
 Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#employee_type User#employee_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#employee_type User#employee_type}
 
 ---
 
@@ -2246,7 +2290,7 @@ public readonly faxNumber: string;
 
 The fax number of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#fax_number User#fax_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#fax_number User#fax_number}
 
 ---
 
@@ -2262,7 +2306,7 @@ Whether the user is forced to change the password during the next sign-in.
 
 Only takes effect when also changing the password
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#force_password_change User#force_password_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#force_password_change User#force_password_change}
 
 ---
 
@@ -2276,7 +2320,7 @@ public readonly givenName: string;
 
 The given name (first name) of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#given_name User#given_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#given_name User#given_name}
 
 ---
 
@@ -2288,7 +2332,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2305,7 +2349,7 @@ public readonly jobTitle: string;
 
 The user’s job title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#job_title User#job_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#job_title User#job_title}
 
 ---
 
@@ -2319,7 +2363,7 @@ public readonly mail: string;
 
 The SMTP address for the user. Cannot be unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#mail User#mail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#mail User#mail}
 
 ---
 
@@ -2333,7 +2377,7 @@ public readonly mailNickname: string;
 
 The mail alias for the user. Defaults to the user name part of the user principal name (UPN).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#mail_nickname User#mail_nickname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#mail_nickname User#mail_nickname}
 
 ---
 
@@ -2347,7 +2391,7 @@ public readonly managerId: string;
 
 The object ID of the user's manager.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#manager_id User#manager_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#manager_id User#manager_id}
 
 ---
 
@@ -2361,7 +2405,7 @@ public readonly mobilePhone: string;
 
 The primary cellular telephone number for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#mobile_phone User#mobile_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#mobile_phone User#mobile_phone}
 
 ---
 
@@ -2375,7 +2419,7 @@ public readonly officeLocation: string;
 
 The office location in the user's place of business.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#office_location User#office_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#office_location User#office_location}
 
 ---
 
@@ -2391,7 +2435,7 @@ The value used to associate an on-premise Active Directory user account with the
 
 This must be specified if you are using a federated domain for the user's `user_principal_name` property when creating a new user account
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#onpremises_immutable_id User#onpremises_immutable_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#onpremises_immutable_id User#onpremises_immutable_id}
 
 ---
 
@@ -2405,7 +2449,7 @@ public readonly otherMails: string[];
 
 Additional email addresses for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#other_mails User#other_mails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#other_mails User#other_mails}
 
 ---
 
@@ -2421,7 +2465,7 @@ The password for the user.
 
 The password must satisfy minimum requirements as specified by the password policy. The maximum length is 256 characters. This property is required when creating a new user
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#password User#password}
 
 ---
 
@@ -2437,7 +2481,7 @@ The postal code for the user's postal address.
 
 The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#postal_code User#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#postal_code User#postal_code}
 
 ---
 
@@ -2451,7 +2495,7 @@ public readonly preferredLanguage: string;
 
 The user's preferred language, in ISO 639-1 notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#preferred_language User#preferred_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#preferred_language User#preferred_language}
 
 ---
 
@@ -2465,7 +2509,7 @@ public readonly showInAddressList: boolean | IResolvable;
 
 Whether or not the Outlook global address list should include this user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#show_in_address_list User#show_in_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#show_in_address_list User#show_in_address_list}
 
 ---
 
@@ -2479,7 +2523,7 @@ public readonly state: string;
 
 The state or province in the user's address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#state User#state}
 
 ---
 
@@ -2493,7 +2537,7 @@ public readonly streetAddress: string;
 
 The street address of the user's place of business.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#street_address User#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#street_address User#street_address}
 
 ---
 
@@ -2507,7 +2551,7 @@ public readonly surname: string;
 
 The user's surname (family name or last name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#surname User#surname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#surname User#surname}
 
 ---
 
@@ -2521,7 +2565,7 @@ public readonly timeouts: UserTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#timeouts User#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#timeouts User#timeouts}
 
 ---
 
@@ -2537,7 +2581,7 @@ The usage location of the user.
 
 Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries. The usage location is a two letter country code (ISO standard 3166). Examples include: `NO`, `JP`, and `GB`. Cannot be reset to null once set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#usage_location User#usage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#usage_location User#usage_location}
 
 ---
 
@@ -2555,10 +2599,10 @@ const userTimeouts: user.UserTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#create User#create}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#delete User#delete}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#read User#read}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#update User#update}. |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#create User#create}. |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#delete User#delete}. |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#read User#read}. |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#update User#update}. |
 
 ---
 
@@ -2570,7 +2614,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#create User#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#create User#create}.
 
 ---
 
@@ -2582,7 +2626,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#delete User#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#delete User#delete}.
 
 ---
 
@@ -2594,7 +2638,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#read User#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#read User#read}.
 
 ---
 
@@ -2606,7 +2650,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/user#update User#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/user#update User#update}.
 
 ---
 

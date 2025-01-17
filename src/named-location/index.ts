@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location
+// https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface NamedLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#display_name NamedLocation#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#display_name NamedLocation#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#id NamedLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#id NamedLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,29 +26,33 @@ export interface NamedLocationConfig extends cdktf.TerraformMetaArguments {
   /**
   * country block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#country NamedLocation#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#country NamedLocation#country}
   */
   readonly country?: NamedLocationCountry;
   /**
   * ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#ip NamedLocation#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#ip NamedLocation#ip}
   */
   readonly ip?: NamedLocationIp;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#timeouts NamedLocation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#timeouts NamedLocation#timeouts}
   */
   readonly timeouts?: NamedLocationTimeouts;
 }
 export interface NamedLocationCountry {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#countries_and_regions NamedLocation#countries_and_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#countries_and_regions NamedLocation#countries_and_regions}
   */
   readonly countriesAndRegions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#country_lookup_method NamedLocation#country_lookup_method}
+  */
+  readonly countryLookupMethod?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}
   */
   readonly includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable;
 }
@@ -60,6 +64,7 @@ export function namedLocationCountryToTerraform(struct?: NamedLocationCountryOut
   }
   return {
     countries_and_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.countriesAndRegions),
+    country_lookup_method: cdktf.stringToTerraform(struct!.countryLookupMethod),
     include_unknown_countries_and_regions: cdktf.booleanToTerraform(struct!.includeUnknownCountriesAndRegions),
   }
 }
@@ -76,6 +81,12 @@ export function namedLocationCountryToHclTerraform(struct?: NamedLocationCountry
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    country_lookup_method: {
+      value: cdktf.stringToHclTerraform(struct!.countryLookupMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     include_unknown_countries_and_regions: {
       value: cdktf.booleanToHclTerraform(struct!.includeUnknownCountriesAndRegions),
@@ -107,6 +118,10 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.countriesAndRegions = this._countriesAndRegions;
     }
+    if (this._countryLookupMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.countryLookupMethod = this._countryLookupMethod;
+    }
     if (this._includeUnknownCountriesAndRegions !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeUnknownCountriesAndRegions = this._includeUnknownCountriesAndRegions;
@@ -118,11 +133,13 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._countriesAndRegions = undefined;
+      this._countryLookupMethod = undefined;
       this._includeUnknownCountriesAndRegions = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._countriesAndRegions = value.countriesAndRegions;
+      this._countryLookupMethod = value.countryLookupMethod;
       this._includeUnknownCountriesAndRegions = value.includeUnknownCountriesAndRegions;
     }
   }
@@ -138,6 +155,22 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get countriesAndRegionsInput() {
     return this._countriesAndRegions;
+  }
+
+  // country_lookup_method - computed: false, optional: true, required: false
+  private _countryLookupMethod?: string; 
+  public get countryLookupMethod() {
+    return this.getStringAttribute('country_lookup_method');
+  }
+  public set countryLookupMethod(value: string) {
+    this._countryLookupMethod = value;
+  }
+  public resetCountryLookupMethod() {
+    this._countryLookupMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryLookupMethodInput() {
+    return this._countryLookupMethod;
   }
 
   // include_unknown_countries_and_regions - computed: false, optional: true, required: false
@@ -158,11 +191,11 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
 }
 export interface NamedLocationIp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#ip_ranges NamedLocation#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#ip_ranges NamedLocation#ip_ranges}
   */
   readonly ipRanges: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#trusted NamedLocation#trusted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#trusted NamedLocation#trusted}
   */
   readonly trusted?: boolean | cdktf.IResolvable;
 }
@@ -272,19 +305,19 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
 }
 export interface NamedLocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#create NamedLocation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#create NamedLocation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#delete NamedLocation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#delete NamedLocation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#read NamedLocation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#read NamedLocation#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#update NamedLocation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#update NamedLocation#update}
   */
   readonly update?: string;
 }
@@ -465,7 +498,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location azuread_named_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location azuread_named_location}
 */
 export class NamedLocation extends cdktf.TerraformResource {
 
@@ -481,7 +514,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NamedLocation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NamedLocation to import
-  * @param importFromId The id of the existing NamedLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NamedLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NamedLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -493,7 +526,7 @@ export class NamedLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.0.2/docs/resources/named_location azuread_named_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.1.0/docs/resources/named_location azuread_named_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -504,7 +537,7 @@ export class NamedLocation extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_named_location',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.0.2',
+        providerVersion: '3.1.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
