@@ -61,6 +61,7 @@ The following submodules are available:
 - [group](./group.java.md)
 - [groupMember](./groupMember.java.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.java.md)
+- [groupWithoutMembers](./groupWithoutMembers.java.md)
 - [invitation](./invitation.java.md)
 - [namedLocation](./namedLocation.java.md)
 - [privilegedAccessGroupAssignmentSchedule](./privilegedAccessGroupAssignmentSchedule.java.md)

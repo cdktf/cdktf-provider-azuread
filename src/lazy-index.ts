@@ -41,6 +41,7 @@ Object.defineProperty(exports, 'directoryRoleMember', { get: function () { retur
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'groupMember', { get: function () { return require('./group-member'); } });
 Object.defineProperty(exports, 'groupRoleManagementPolicy', { get: function () { return require('./group-role-management-policy'); } });
+Object.defineProperty(exports, 'groupWithoutMembers', { get: function () { return require('./group-without-members'); } });
 Object.defineProperty(exports, 'invitation', { get: function () { return require('./invitation'); } });
 Object.defineProperty(exports, 'namedLocation', { get: function () { return require('./named-location'); } });
 Object.defineProperty(exports, 'privilegedAccessGroupAssignmentSchedule', { get: function () { return require('./privileged-access-group-assignment-schedule'); } });

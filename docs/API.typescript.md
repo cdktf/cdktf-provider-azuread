@@ -61,6 +61,7 @@ The following submodules are available:
 - [group](./group.typescript.md)
 - [groupMember](./groupMember.typescript.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.typescript.md)
+- [groupWithoutMembers](./groupWithoutMembers.typescript.md)
 - [invitation](./invitation.typescript.md)
 - [namedLocation](./namedLocation.typescript.md)
 - [privilegedAccessGroupAssignmentSchedule](./privilegedAccessGroupAssignmentSchedule.typescript.md)

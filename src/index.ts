@@ -41,6 +41,7 @@ export * as directoryRoleMember from './directory-role-member';
 export * as group from './group';
 export * as groupMember from './group-member';
 export * as groupRoleManagementPolicy from './group-role-management-policy';
+export * as groupWithoutMembers from './group-without-members';
 export * as invitation from './invitation';
 export * as namedLocation from './named-location';
 export * as privilegedAccessGroupAssignmentSchedule from './privileged-access-group-assignment-schedule';

@@ -61,6 +61,7 @@ The following submodules are available:
 - [group](./group.go.md)
 - [groupMember](./groupMember.go.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.go.md)
+- [groupWithoutMembers](./groupWithoutMembers.go.md)
 - [invitation](./invitation.go.md)
 - [namedLocation](./namedLocation.go.md)
 - [privilegedAccessGroupAssignmentSchedule](./privilegedAccessGroupAssignmentSchedule.go.md)
