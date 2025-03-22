@@ -61,6 +61,7 @@ The following submodules are available:
 - [group](./group.csharp.md)
 - [groupMember](./groupMember.csharp.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.csharp.md)
+- [groupWithoutMembers](./groupWithoutMembers.csharp.md)
 - [invitation](./invitation.csharp.md)
 - [namedLocation](./namedLocation.csharp.md)
 - [privilegedAccessGroupAssignmentSchedule](./privilegedAccessGroupAssignmentSchedule.csharp.md)
