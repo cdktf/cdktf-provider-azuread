@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 groupwithoutmembers.NewGroupWithoutMembers(scope Construct, id *string, config GroupWithoutMembersConfig) GroupWithoutMembers
 ```
@@ -558,7 +558,7 @@ func ResetWritebackEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 groupwithoutmembers.GroupWithoutMembers_IsConstruct(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 groupwithoutmembers.GroupWithoutMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -604,7 +604,7 @@ groupwithoutmembers.GroupWithoutMembers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 groupwithoutmembers.GroupWithoutMembers_IsTerraformResource(x interface{}) *bool
 ```
@@ -618,7 +618,7 @@ groupwithoutmembers.GroupWithoutMembers_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 groupwithoutmembers.GroupWithoutMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1452,7 +1452,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 &groupwithoutmembers.GroupWithoutMembersConfig {
 	Connection: interface{},
@@ -1468,7 +1468,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
 	AutoSubscribeNewMembers: interface{},
 	Behaviors: *[]*string,
 	Description: *string,
-	DynamicMembership: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership,
+	DynamicMembership: github.com/cdktf/cdktf-provider-azuread-go/azuread/v13.groupWithoutMembers.GroupWithoutMembersDynamicMembership,
 	ExternalSendersAllowed: interface{},
 	HideFromAddressLists: interface{},
 	HideFromOutlookClients: interface{},
@@ -1481,7 +1481,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
 	ProvisioningOptions: *[]*string,
 	SecurityEnabled: interface{},
 	Theme: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.groupWithoutMembers.GroupWithoutMembersTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v13.groupWithoutMembers.GroupWithoutMembersTimeouts,
 	Types: *[]*string,
 	Visibility: *string,
 	WritebackEnabled: interface{},
@@ -1933,7 +1933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 &groupwithoutmembers.GroupWithoutMembersDynamicMembership {
 	Enabled: interface{},
@@ -1981,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 &groupwithoutmembers.GroupWithoutMembersTimeouts {
 	Create: *string,
@@ -2057,7 +2057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 groupwithoutmembers.NewGroupWithoutMembersDynamicMembershipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupWithoutMembersDynamicMembershipOutputReference
 ```
@@ -2350,7 +2350,7 @@ func InternalValue() GroupWithoutMembersDynamicMembership
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/groupwithoutmembers"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/groupwithoutmembers"
 
 groupwithoutmembers.NewGroupWithoutMembersTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupWithoutMembersTimeoutsOutputReference
 ```
