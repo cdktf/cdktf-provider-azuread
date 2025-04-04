@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members
+// https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,59 +15,59 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   /**
   * The administrative unit IDs in which the group should be. If empty, the group will be created at the tenant level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#administrative_unit_ids GroupWithoutMembers#administrative_unit_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#administrative_unit_ids GroupWithoutMembers#administrative_unit_ids}
   */
   readonly administrativeUnitIds?: string[];
   /**
   * Indicates whether this group can be assigned to an Azure Active Directory role. This property can only be `true` for security-enabled groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#assignable_to_role GroupWithoutMembers#assignable_to_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#assignable_to_role GroupWithoutMembers#assignable_to_role}
   */
   readonly assignableToRole?: boolean | cdktf.IResolvable;
   /**
   * Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#auto_subscribe_new_members GroupWithoutMembers#auto_subscribe_new_members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#auto_subscribe_new_members GroupWithoutMembers#auto_subscribe_new_members}
   */
   readonly autoSubscribeNewMembers?: boolean | cdktf.IResolvable;
   /**
   * The group behaviours for a Microsoft 365 group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#behaviors GroupWithoutMembers#behaviors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#behaviors GroupWithoutMembers#behaviors}
   */
   readonly behaviors?: string[];
   /**
   * The description for the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#description GroupWithoutMembers#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#description GroupWithoutMembers#description}
   */
   readonly description?: string;
   /**
   * The display name for the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#display_name GroupWithoutMembers#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#display_name GroupWithoutMembers#display_name}
   */
   readonly displayName: string;
   /**
   * Indicates whether people external to the organization can send messages to the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#external_senders_allowed GroupWithoutMembers#external_senders_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#external_senders_allowed GroupWithoutMembers#external_senders_allowed}
   */
   readonly externalSendersAllowed?: boolean | cdktf.IResolvable;
   /**
   * Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#hide_from_address_lists GroupWithoutMembers#hide_from_address_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#hide_from_address_lists GroupWithoutMembers#hide_from_address_lists}
   */
   readonly hideFromAddressLists?: boolean | cdktf.IResolvable;
   /**
   * Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#hide_from_outlook_clients GroupWithoutMembers#hide_from_outlook_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#hide_from_outlook_clients GroupWithoutMembers#hide_from_outlook_clients}
   */
   readonly hideFromOutlookClients?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#id GroupWithoutMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#id GroupWithoutMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -76,91 +76,91 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   /**
   * Whether the group is a mail enabled, with a shared group mailbox. At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled _and_ security enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#mail_enabled GroupWithoutMembers#mail_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#mail_enabled GroupWithoutMembers#mail_enabled}
   */
   readonly mailEnabled?: boolean | cdktf.IResolvable;
   /**
   * The mail alias for the group, unique in the organisation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#mail_nickname GroupWithoutMembers#mail_nickname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#mail_nickname GroupWithoutMembers#mail_nickname}
   */
   readonly mailNickname?: string;
   /**
   * Indicates the target on-premise group type the group will be written back as
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#onpremises_group_type GroupWithoutMembers#onpremises_group_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#onpremises_group_type GroupWithoutMembers#onpremises_group_type}
   */
   readonly onpremisesGroupType?: string;
   /**
   * A set of owners who own this group. Supported object types are Users or Service Principals
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#owners GroupWithoutMembers#owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#owners GroupWithoutMembers#owners}
   */
   readonly owners?: string[];
   /**
   * If `true`, will return an error if an existing group is found with the same name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#prevent_duplicate_names GroupWithoutMembers#prevent_duplicate_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#prevent_duplicate_names GroupWithoutMembers#prevent_duplicate_names}
   */
   readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
   /**
   * The group provisioning options for a Microsoft 365 group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#provisioning_options GroupWithoutMembers#provisioning_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#provisioning_options GroupWithoutMembers#provisioning_options}
   */
   readonly provisioningOptions?: string[];
   /**
   * Whether the group is a security group for controlling access to in-app resources. At least one of `security_enabled` or `mail_enabled` must be specified. A group can be security enabled _and_ mail enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#security_enabled GroupWithoutMembers#security_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#security_enabled GroupWithoutMembers#security_enabled}
   */
   readonly securityEnabled?: boolean | cdktf.IResolvable;
   /**
   * The colour theme for a Microsoft 365 group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#theme GroupWithoutMembers#theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#theme GroupWithoutMembers#theme}
   */
   readonly theme?: string;
   /**
   * A set of group types to configure for the group. `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#types GroupWithoutMembers#types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#types GroupWithoutMembers#types}
   */
   readonly types?: string[];
   /**
   * Specifies the group join policy and group content visibility
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#visibility GroupWithoutMembers#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#visibility GroupWithoutMembers#visibility}
   */
   readonly visibility?: string;
   /**
   * Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#writeback_enabled GroupWithoutMembers#writeback_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#writeback_enabled GroupWithoutMembers#writeback_enabled}
   */
   readonly writebackEnabled?: boolean | cdktf.IResolvable;
   /**
   * dynamic_membership block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#dynamic_membership GroupWithoutMembers#dynamic_membership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#dynamic_membership GroupWithoutMembers#dynamic_membership}
   */
   readonly dynamicMembership?: GroupWithoutMembersDynamicMembership;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#timeouts GroupWithoutMembers#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#timeouts GroupWithoutMembers#timeouts}
   */
   readonly timeouts?: GroupWithoutMembersTimeouts;
 }
 export interface GroupWithoutMembersDynamicMembership {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#rule GroupWithoutMembers#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#rule GroupWithoutMembers#rule}
   */
   readonly rule: string;
 }
@@ -267,19 +267,19 @@ export class GroupWithoutMembersDynamicMembershipOutputReference extends cdktf.C
 }
 export interface GroupWithoutMembersTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#create GroupWithoutMembers#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#create GroupWithoutMembers#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#read GroupWithoutMembers#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#read GroupWithoutMembers#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#update GroupWithoutMembers#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#update GroupWithoutMembers#update}
   */
   readonly update?: string;
 }
@@ -460,7 +460,7 @@ export class GroupWithoutMembersTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members azuread_group_without_members}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members azuread_group_without_members}
 */
 export class GroupWithoutMembers extends cdktf.TerraformResource {
 
@@ -476,7 +476,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupWithoutMembers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupWithoutMembers to import
-  * @param importFromId The id of the existing GroupWithoutMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupWithoutMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupWithoutMembers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -488,7 +488,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_without_members azuread_group_without_members} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_without_members azuread_group_without_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -499,7 +499,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_group_without_members',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.2.0',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
