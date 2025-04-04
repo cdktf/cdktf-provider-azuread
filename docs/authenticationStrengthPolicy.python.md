@@ -4,7 +4,7 @@
 
 ### AuthenticationStrengthPolicy <a name="AuthenticationStrengthPolicy" id="@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy.Initializer"></a>
 
@@ -43,7 +43,7 @@ authenticationStrengthPolicy.AuthenticationStrengthPolicy(
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy.Initializer.parameter.allowedCombinations">allowed_combinations</a></code> | <code>typing.List[str]</code> | The allowed MFA methods for this policy. |
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the authentication strength policy. |
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | The description for the authentication strength policy. |
-| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}. |
+| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}. |
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts">AuthenticationStrengthPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The allowed MFA methods for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#allowed_combinations AuthenticationStrengthPolicy#allowed_combinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#allowed_combinations AuthenticationStrengthPolicy#allowed_combinations}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display name for the authentication strength policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#display_name AuthenticationStrengthPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#display_name AuthenticationStrengthPolicy#display_name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description for the authentication strength policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#description AuthenticationStrengthPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#description AuthenticationStrengthPolicy#description}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#timeouts AuthenticationStrengthPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#timeouts AuthenticationStrengthPolicy#timeouts}
 
 ---
 
@@ -533,7 +533,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#create AuthenticationStrengthPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#create AuthenticationStrengthPolicy#create}.
 
 ---
 
@@ -541,7 +541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#delete AuthenticationStrengthPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#delete AuthenticationStrengthPolicy#delete}.
 
 ---
 
@@ -549,7 +549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#read AuthenticationStrengthPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#read AuthenticationStrengthPolicy#read}.
 
 ---
 
@@ -557,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#update AuthenticationStrengthPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#update AuthenticationStrengthPolicy#update}.
 
 ---
 
@@ -693,7 +693,7 @@ The construct id used in the generated config for the AuthenticationStrengthPoli
 
 The id of the existing AuthenticationStrengthPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,7 +1035,7 @@ authenticationStrengthPolicy.AuthenticationStrengthPolicyConfig(
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyConfig.property.allowedCombinations">allowed_combinations</a></code> | <code>typing.List[str]</code> | The allowed MFA methods for this policy. |
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the authentication strength policy. |
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyConfig.property.description">description</a></code> | <code>str</code> | The description for the authentication strength policy. |
-| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}. |
+| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}. |
 | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts">AuthenticationStrengthPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1120,7 +1120,7 @@ allowed_combinations: typing.List[str]
 
 The allowed MFA methods for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#allowed_combinations AuthenticationStrengthPolicy#allowed_combinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#allowed_combinations AuthenticationStrengthPolicy#allowed_combinations}
 
 ---
 
@@ -1134,7 +1134,7 @@ display_name: str
 
 The display name for the authentication strength policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#display_name AuthenticationStrengthPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#display_name AuthenticationStrengthPolicy#display_name}
 
 ---
 
@@ -1148,7 +1148,7 @@ description: str
 
 The description for the authentication strength policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#description AuthenticationStrengthPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#description AuthenticationStrengthPolicy#description}
 
 ---
 
@@ -1160,7 +1160,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#id AuthenticationStrengthPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1177,7 @@ timeouts: AuthenticationStrengthPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#timeouts AuthenticationStrengthPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#timeouts AuthenticationStrengthPolicy#timeouts}
 
 ---
 
@@ -1200,10 +1200,10 @@ authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#create AuthenticationStrengthPolicy#create}. |
-| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#delete AuthenticationStrengthPolicy#delete}. |
-| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#read AuthenticationStrengthPolicy#read}. |
-| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#update AuthenticationStrengthPolicy#update}. |
+| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#create AuthenticationStrengthPolicy#create}. |
+| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#delete AuthenticationStrengthPolicy#delete}. |
+| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#read AuthenticationStrengthPolicy#read}. |
+| <code><a href="#@cdktf/provider-azuread.authenticationStrengthPolicy.AuthenticationStrengthPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#update AuthenticationStrengthPolicy#update}. |
 
 ---
 
@@ -1215,7 +1215,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#create AuthenticationStrengthPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#create AuthenticationStrengthPolicy#create}.
 
 ---
 
@@ -1227,7 +1227,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#delete AuthenticationStrengthPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#delete AuthenticationStrengthPolicy#delete}.
 
 ---
 
@@ -1239,7 +1239,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#read AuthenticationStrengthPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#read AuthenticationStrengthPolicy#read}.
 
 ---
 
@@ -1251,7 +1251,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/authentication_strength_policy#update AuthenticationStrengthPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/authentication_strength_policy#update AuthenticationStrengthPolicy#update}.
 
 ---
 
