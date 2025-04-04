@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner
+// https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ApplicationOwnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID of the application to which the owner should be added
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#application_id ApplicationOwner#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#application_id ApplicationOwner#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#id ApplicationOwner#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#id ApplicationOwner#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,27 +23,27 @@ export interface ApplicationOwnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Object ID of the principal that will be granted ownership of the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#owner_object_id ApplicationOwner#owner_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#owner_object_id ApplicationOwner#owner_object_id}
   */
   readonly ownerObjectId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#timeouts ApplicationOwner#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#timeouts ApplicationOwner#timeouts}
   */
   readonly timeouts?: ApplicationOwnerTimeouts;
 }
 export interface ApplicationOwnerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#create ApplicationOwner#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#create ApplicationOwner#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#delete ApplicationOwner#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#delete ApplicationOwner#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#read ApplicationOwner#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#read ApplicationOwner#read}
   */
   readonly read?: string;
 }
@@ -200,7 +195,7 @@ export class ApplicationOwnerTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner azuread_application_owner}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner azuread_application_owner}
 */
 export class ApplicationOwner extends cdktf.TerraformResource {
 
@@ -216,7 +211,7 @@ export class ApplicationOwner extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationOwner resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationOwner to import
-  * @param importFromId The id of the existing ApplicationOwner that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationOwner that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationOwner to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -228,7 +223,7 @@ export class ApplicationOwner extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_owner azuread_application_owner} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_owner azuread_application_owner} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +234,7 @@ export class ApplicationOwner extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_owner',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.2.0',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

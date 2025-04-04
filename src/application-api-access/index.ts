@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access
+// https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ApplicationApiAccessConfig extends cdktf.TerraformMetaArguments
   /**
   * The client ID of the API to which access is being granted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#api_client_id ApplicationApiAccess#api_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#api_client_id ApplicationApiAccess#api_client_id}
   */
   readonly apiClientId: string;
   /**
   * The resource ID of the application to which this API access is granted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#application_id ApplicationApiAccess#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#application_id ApplicationApiAccess#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#id ApplicationApiAccess#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#id ApplicationApiAccess#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +29,37 @@ export interface ApplicationApiAccessConfig extends cdktf.TerraformMetaArguments
   /**
   * A set of role IDs to be granted to the application, as published by the API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#role_ids ApplicationApiAccess#role_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#role_ids ApplicationApiAccess#role_ids}
   */
   readonly roleIds?: string[];
   /**
   * A set of scope IDs to be granted to the application, as published by the API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#scope_ids ApplicationApiAccess#scope_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#scope_ids ApplicationApiAccess#scope_ids}
   */
   readonly scopeIds?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#timeouts ApplicationApiAccess#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#timeouts ApplicationApiAccess#timeouts}
   */
   readonly timeouts?: ApplicationApiAccessTimeouts;
 }
 export interface ApplicationApiAccessTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#create ApplicationApiAccess#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#create ApplicationApiAccess#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#delete ApplicationApiAccess#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#delete ApplicationApiAccess#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#read ApplicationApiAccess#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#read ApplicationApiAccess#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#update ApplicationApiAccess#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#update ApplicationApiAccess#update}
   */
   readonly update?: string;
 }
@@ -245,7 +240,7 @@ export class ApplicationApiAccessTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access azuread_application_api_access}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access azuread_application_api_access}
 */
 export class ApplicationApiAccess extends cdktf.TerraformResource {
 
@@ -261,7 +256,7 @@ export class ApplicationApiAccess extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationApiAccess resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationApiAccess to import
-  * @param importFromId The id of the existing ApplicationApiAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationApiAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationApiAccess to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -273,7 +268,7 @@ export class ApplicationApiAccess extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/application_api_access azuread_application_api_access} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/application_api_access azuread_application_api_access} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -284,7 +279,7 @@ export class ApplicationApiAccess extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_application_api_access',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.2.0',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

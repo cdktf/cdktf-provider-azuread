@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy
+// https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GroupRoleManagementPolicyConfig extends cdktf.TerraformMetaArgu
   /**
   * ID of the group to which this policy is assigned
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#group_id GroupRoleManagementPolicy#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#group_id GroupRoleManagementPolicy#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#id GroupRoleManagementPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,37 @@ export interface GroupRoleManagementPolicyConfig extends cdktf.TerraformMetaArgu
   /**
   * The ID of the role of this policy to the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#role_id GroupRoleManagementPolicy#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#role_id GroupRoleManagementPolicy#role_id}
   */
   readonly roleId: string;
   /**
   * activation_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#activation_rules GroupRoleManagementPolicy#activation_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#activation_rules GroupRoleManagementPolicy#activation_rules}
   */
   readonly activationRules?: GroupRoleManagementPolicyActivationRules;
   /**
   * active_assignment_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#active_assignment_rules GroupRoleManagementPolicy#active_assignment_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#active_assignment_rules GroupRoleManagementPolicy#active_assignment_rules}
   */
   readonly activeAssignmentRules?: GroupRoleManagementPolicyActiveAssignmentRules;
   /**
   * eligible_assignment_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#eligible_assignment_rules GroupRoleManagementPolicy#eligible_assignment_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#eligible_assignment_rules GroupRoleManagementPolicy#eligible_assignment_rules}
   */
   readonly eligibleAssignmentRules?: GroupRoleManagementPolicyEligibleAssignmentRules;
   /**
   * notification_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_rules GroupRoleManagementPolicy#notification_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_rules GroupRoleManagementPolicy#notification_rules}
   */
   readonly notificationRules?: GroupRoleManagementPolicyNotificationRules;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#timeouts GroupRoleManagementPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#timeouts GroupRoleManagementPolicy#timeouts}
   */
   readonly timeouts?: GroupRoleManagementPolicyTimeouts;
 }
@@ -66,13 +61,13 @@ export interface GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApp
   /**
   * The ID of the object to act as an approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#object_id GroupRoleManagementPolicy#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#object_id GroupRoleManagementPolicy#object_id}
   */
   readonly objectId: string;
   /**
   * The type of object acting as an approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#type GroupRoleManagementPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#type GroupRoleManagementPolicy#type}
   */
   readonly type?: string;
 }
@@ -216,7 +211,7 @@ export interface GroupRoleManagementPolicyActivationRulesApprovalStage {
   /**
   * primary_approver block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#primary_approver GroupRoleManagementPolicy#primary_approver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#primary_approver GroupRoleManagementPolicy#primary_approver}
   */
   readonly primaryApprover: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktf.IResolvable;
 }
@@ -299,43 +294,43 @@ export interface GroupRoleManagementPolicyActivationRules {
   /**
   * The time after which the an activation can be valid for
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#maximum_duration GroupRoleManagementPolicy#maximum_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#maximum_duration GroupRoleManagementPolicy#maximum_duration}
   */
   readonly maximumDuration?: string;
   /**
   * Whether an approval is required for activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#require_approval GroupRoleManagementPolicy#require_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#require_approval GroupRoleManagementPolicy#require_approval}
   */
   readonly requireApproval?: boolean | cdktf.IResolvable;
   /**
   * Whether a justification is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
   */
   readonly requireJustification?: boolean | cdktf.IResolvable;
   /**
   * Whether multi-factor authentication is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
   */
   readonly requireMultifactorAuthentication?: boolean | cdktf.IResolvable;
   /**
   * Whether ticket information is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
   */
   readonly requireTicketInfo?: boolean | cdktf.IResolvable;
   /**
   * Whether a conditional access context is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#required_conditional_access_authentication_context GroupRoleManagementPolicy#required_conditional_access_authentication_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#required_conditional_access_authentication_context GroupRoleManagementPolicy#required_conditional_access_authentication_context}
   */
   readonly requiredConditionalAccessAuthenticationContext?: string;
   /**
   * approval_stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#approval_stage GroupRoleManagementPolicy#approval_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#approval_stage GroupRoleManagementPolicy#approval_stage}
   */
   readonly approvalStage?: GroupRoleManagementPolicyActivationRulesApprovalStage;
 }
@@ -595,31 +590,31 @@ export interface GroupRoleManagementPolicyActiveAssignmentRules {
   /**
   * Must the assignment have an expiry date
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
   */
   readonly expirationRequired?: boolean | cdktf.IResolvable;
   /**
   * The duration after which assignments expire
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
   */
   readonly expireAfter?: string;
   /**
   * Whether a justification is required to make an assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
   */
   readonly requireJustification?: boolean | cdktf.IResolvable;
   /**
   * Whether multi-factor authentication is required to make an assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
   */
   readonly requireMultifactorAuthentication?: boolean | cdktf.IResolvable;
   /**
   * Whether ticket information is required to make an assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
   */
   readonly requireTicketInfo?: boolean | cdktf.IResolvable;
 }
@@ -821,13 +816,13 @@ export interface GroupRoleManagementPolicyEligibleAssignmentRules {
   /**
   * Must the assignment have an expiry date
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
   */
   readonly expirationRequired?: boolean | cdktf.IResolvable;
   /**
   * The duration after which assignments expire
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#expire_after GroupRoleManagementPolicy#expire_after}
   */
   readonly expireAfter?: string;
 }
@@ -942,19 +937,19 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdmi
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1092,19 +1087,19 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAppr
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1242,19 +1237,19 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssi
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1392,19 +1387,19 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignments {
   /**
   * admin_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
   */
   readonly adminNotifications?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications;
   /**
   * approver_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
   */
   readonly approverNotifications?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications;
   /**
   * assignee_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
   */
   readonly assigneeNotifications?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications;
 }
@@ -1548,19 +1543,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAd
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1698,19 +1693,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAp
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1848,19 +1843,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAs
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1998,19 +1993,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivations {
   /**
   * admin_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
   */
   readonly adminNotifications?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications;
   /**
   * approver_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
   */
   readonly approverNotifications?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications;
   /**
   * assignee_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
   */
   readonly assigneeNotifications?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications;
 }
@@ -2154,19 +2149,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAd
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -2304,19 +2299,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAp
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -2454,19 +2449,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAs
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#additional_recipients GroupRoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktf.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#notification_level GroupRoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -2604,19 +2599,19 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignments {
   /**
   * admin_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#admin_notifications GroupRoleManagementPolicy#admin_notifications}
   */
   readonly adminNotifications?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications;
   /**
   * approver_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#approver_notifications GroupRoleManagementPolicy#approver_notifications}
   */
   readonly approverNotifications?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications;
   /**
   * assignee_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#assignee_notifications GroupRoleManagementPolicy#assignee_notifications}
   */
   readonly assigneeNotifications?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications;
 }
@@ -2760,19 +2755,19 @@ export interface GroupRoleManagementPolicyNotificationRules {
   /**
   * active_assignments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#active_assignments GroupRoleManagementPolicy#active_assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#active_assignments GroupRoleManagementPolicy#active_assignments}
   */
   readonly activeAssignments?: GroupRoleManagementPolicyNotificationRulesActiveAssignments;
   /**
   * eligible_activations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#eligible_activations GroupRoleManagementPolicy#eligible_activations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#eligible_activations GroupRoleManagementPolicy#eligible_activations}
   */
   readonly eligibleActivations?: GroupRoleManagementPolicyNotificationRulesEligibleActivations;
   /**
   * eligible_assignments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#eligible_assignments GroupRoleManagementPolicy#eligible_assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#eligible_assignments GroupRoleManagementPolicy#eligible_assignments}
   */
   readonly eligibleAssignments?: GroupRoleManagementPolicyNotificationRulesEligibleAssignments;
 }
@@ -2914,19 +2909,19 @@ export class GroupRoleManagementPolicyNotificationRulesOutputReference extends c
 }
 export interface GroupRoleManagementPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#create GroupRoleManagementPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#create GroupRoleManagementPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#delete GroupRoleManagementPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#delete GroupRoleManagementPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#read GroupRoleManagementPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#read GroupRoleManagementPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#update GroupRoleManagementPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#update GroupRoleManagementPolicy#update}
   */
   readonly update?: string;
 }
@@ -3107,7 +3102,7 @@ export class GroupRoleManagementPolicyTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy azuread_group_role_management_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy azuread_group_role_management_policy}
 */
 export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
 
@@ -3123,7 +3118,7 @@ export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupRoleManagementPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupRoleManagementPolicy to import
-  * @param importFromId The id of the existing GroupRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupRoleManagementPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3135,7 +3130,7 @@ export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.2.0/docs/resources/group_role_management_policy azuread_group_role_management_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.3.0/docs/resources/group_role_management_policy azuread_group_role_management_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3146,7 +3141,7 @@ export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'azuread_group_role_management_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.2.0',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
