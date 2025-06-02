@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 claimsmappingpolicy.NewClaimsMappingPolicy(scope Construct, id *string, config ClaimsMappingPolicyConfig) ClaimsMappingPolicy
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ claimsmappingpolicy.ClaimsMappingPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 claimsmappingpolicy.ClaimsMappingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 &claimsmappingpolicy.ClaimsMappingPolicyConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpoli
 	Definition: *[]*string,
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v13.claimsMappingPolicy.ClaimsMappingPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.claimsMappingPolicy.ClaimsMappingPolicyTimeouts,
 }
 ```
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 &claimsmappingpolicy.ClaimsMappingPolicyTimeouts {
 	Create: *string,
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/claimsmappingpolicy"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/claimsmappingpolicy"
 
 claimsmappingpolicy.NewClaimsMappingPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClaimsMappingPolicyTimeoutsOutputReference
 ```
