@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 dataazureadadministrativeunit.NewDataAzureadAdministrativeUnit(scope Construct, id *string, config DataAzureadAdministrativeUnitConfig) DataAzureadAdministrativeUnit
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 dataazureadadministrativeunit.DataAzureadAdministrativeUnit_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 dataazureadadministrativeunit.DataAzureadAdministrativeUnit_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazureadadministrativeunit.DataAzureadAdministrativeUnit_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnit.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 dataazureadadministrativeunit.DataAzureadAdministrativeUnit_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataazureadadministrativeunit.DataAzureadAdministrativeUnit_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 dataazureadadministrativeunit.DataAzureadAdministrativeUnit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 &dataazureadadministrativeunit.DataAzureadAdministrativeUnitConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadmini
 	DisplayName: *string,
 	Id: *string,
 	ObjectId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v13.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnitTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnitTimeouts,
 }
 ```
 
@@ -872,7 +872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnitTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 &dataazureadadministrativeunit.DataAzureadAdministrativeUnitTimeouts {
 	Create: *string,
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadAdministrativeUnit.DataAzureadAdministrativeUnitTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/dataazureadadministrativeunit"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadadministrativeunit"
 
 dataazureadadministrativeunit.NewDataAzureadAdministrativeUnitTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadAdministrativeUnitTimeoutsOutputReference
 ```

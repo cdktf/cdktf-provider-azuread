@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 applicationfallbackpublicclient.NewApplicationFallbackPublicClient(scope Construct, id *string, config ApplicationFallbackPublicClientConfig) ApplicationFallbackPublicClient
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 applicationfallbackpublicclient.ApplicationFallbackPublicClient_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 applicationfallbackpublicclient.ApplicationFallbackPublicClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ applicationfallbackpublicclient.ApplicationFallbackPublicClient_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 applicationfallbackpublicclient.ApplicationFallbackPublicClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ applicationfallbackpublicclient.ApplicationFallbackPublicClient_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 applicationfallbackpublicclient.ApplicationFallbackPublicClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 &applicationfallbackpublicclient.ApplicationFallbackPublicClientConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallba
 	ApplicationId: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v13.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts,
 }
 ```
 
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 &applicationfallbackpublicclient.ApplicationFallbackPublicClientTimeouts {
 	Create: *string,
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFallbackPublicClient.ApplicationFallbackPublicClientTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v13/applicationfallbackpublicclient"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfallbackpublicclient"
 
 applicationfallbackpublicclient.NewApplicationFallbackPublicClientTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationFallbackPublicClientTimeoutsOutputReference
 ```
