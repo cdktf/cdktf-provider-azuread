@@ -4,7 +4,7 @@
 
 ### ApplicationPreAuthorized <a name="ApplicationPreAuthorized" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ApplicationPreAuthorized t
 
 The id of the existing ApplicationPreAuthorized that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,7 +823,7 @@ const applicationPreAuthorizedConfig: applicationPreAuthorized.ApplicationPreAut
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.applicationId">applicationId</a></code> | <code>string</code> | The resource ID of the application to which this pre-authorized application should be added. |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.authorizedClientId">authorizedClientId</a></code> | <code>string</code> | The client ID of the pre-authorized application. |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.permissionIds">permissionIds</a></code> | <code>string[]</code> | The IDs of the permission scopes required by the pre-authorized application. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts">ApplicationPreAuthorizedTimeouts</a></code> | timeouts block. |
 
 ---
@@ -908,7 +908,7 @@ public readonly applicationId: string;
 
 The resource ID of the application to which this pre-authorized application should be added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#application_id ApplicationPreAuthorized#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#application_id ApplicationPreAuthorized#application_id}
 
 ---
 
@@ -922,7 +922,7 @@ public readonly authorizedClientId: string;
 
 The client ID of the pre-authorized application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#authorized_client_id ApplicationPreAuthorized#authorized_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#authorized_client_id ApplicationPreAuthorized#authorized_client_id}
 
 ---
 
@@ -936,7 +936,7 @@ public readonly permissionIds: string[];
 
 The IDs of the permission scopes required by the pre-authorized application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#permission_ids ApplicationPreAuthorized#permission_ids}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#id ApplicationPreAuthorized#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ public readonly timeouts: ApplicationPreAuthorizedTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#timeouts ApplicationPreAuthorized#timeouts}
 
 ---
 
@@ -983,10 +983,10 @@ const applicationPreAuthorizedTimeouts: applicationPreAuthorized.ApplicationPreA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}. |
 
 ---
 
@@ -998,7 +998,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#create ApplicationPreAuthorized#create}.
 
 ---
 
@@ -1010,7 +1010,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#delete ApplicationPreAuthorized#delete}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#read ApplicationPreAuthorized#read}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/application_pre_authorized#update ApplicationPreAuthorized#update}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association
+// https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AccessPackageResourceCatalogAssociationConfig extends cdktf.Ter
   /**
   * The unique ID of the access package catalog
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#catalog_id AccessPackageResourceCatalogAssociation#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#catalog_id AccessPackageResourceCatalogAssociation#catalog_id}
   */
   readonly catalogId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#id AccessPackageResourceCatalogAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#id AccessPackageResourceCatalogAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,33 +28,33 @@ export interface AccessPackageResourceCatalogAssociationConfig extends cdktf.Ter
   /**
   * The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#resource_origin_id AccessPackageResourceCatalogAssociation#resource_origin_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#resource_origin_id AccessPackageResourceCatalogAssociation#resource_origin_id}
   */
   readonly resourceOriginId: string;
   /**
   * The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#resource_origin_system AccessPackageResourceCatalogAssociation#resource_origin_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#resource_origin_system AccessPackageResourceCatalogAssociation#resource_origin_system}
   */
   readonly resourceOriginSystem: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#timeouts AccessPackageResourceCatalogAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#timeouts AccessPackageResourceCatalogAssociation#timeouts}
   */
   readonly timeouts?: AccessPackageResourceCatalogAssociationTimeouts;
 }
 export interface AccessPackageResourceCatalogAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#create AccessPackageResourceCatalogAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#create AccessPackageResourceCatalogAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#delete AccessPackageResourceCatalogAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#delete AccessPackageResourceCatalogAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#read AccessPackageResourceCatalogAssociation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#read AccessPackageResourceCatalogAssociation#read}
   */
   readonly read?: string;
 }
@@ -206,7 +206,7 @@ export class AccessPackageResourceCatalogAssociationTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association}
 */
 export class AccessPackageResourceCatalogAssociation extends cdktf.TerraformResource {
 
@@ -222,7 +222,7 @@ export class AccessPackageResourceCatalogAssociation extends cdktf.TerraformReso
   * Generates CDKTF code for importing a AccessPackageResourceCatalogAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessPackageResourceCatalogAssociation to import
-  * @param importFromId The id of the existing AccessPackageResourceCatalogAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessPackageResourceCatalogAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessPackageResourceCatalogAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -234,7 +234,7 @@ export class AccessPackageResourceCatalogAssociation extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/resources/access_package_resource_catalog_association azuread_access_package_resource_catalog_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +245,7 @@ export class AccessPackageResourceCatalogAssociation extends cdktf.TerraformReso
       terraformResourceType: 'azuread_access_package_resource_catalog_association',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.4.0',
+        providerVersion: '3.5.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

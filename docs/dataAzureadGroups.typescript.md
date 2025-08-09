@@ -4,7 +4,7 @@
 
 ### DataAzureadGroups <a name="DataAzureadGroups" id="@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups azuread_groups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups azuread_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer"></a>
 
@@ -441,7 +441,7 @@ The construct id used in the generated config for the DataAzureadGroups to impor
 
 The id of the existing DataAzureadGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ const dataAzureadGroupsConfig: dataAzureadGroups.DataAzureadGroupsConfig = { ...
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.displayNamePrefix">displayNamePrefix</a></code> | <code>string</code> | Common display name prefix of the groups. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.displayNames">displayNames</a></code> | <code>string[]</code> | The display names of the groups. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#id DataAzureadGroups#id}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#id DataAzureadGroups#id}. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.ignoreMissing">ignoreMissing</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignore missing groups and return groups that were found. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.mailEnabled">mailEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the groups are mail-enabled. |
 | <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.objectIds">objectIds</a></code> | <code>string[]</code> | The object IDs of the groups. |
@@ -925,7 +925,7 @@ public readonly displayNamePrefix: string;
 
 Common display name prefix of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
 
 ---
 
@@ -939,7 +939,7 @@ public readonly displayNames: string[];
 
 The display names of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
 
 ---
 
@@ -951,7 +951,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#id DataAzureadGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#id DataAzureadGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -970,7 +970,7 @@ Ignore missing groups and return groups that were found.
 
 The data source will still fail if no groups are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
 
 ---
 
@@ -984,7 +984,7 @@ public readonly mailEnabled: boolean | IResolvable;
 
 Whether the groups are mail-enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
 
 ---
 
@@ -998,7 +998,7 @@ public readonly objectIds: string[];
 
 The object IDs of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly returnAll: boolean | IResolvable;
 
 Retrieve all groups with no filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly securityEnabled: boolean | IResolvable;
 
 Whether the groups are security-enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly timeouts: DataAzureadGroupsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
 
 ---
 
@@ -1058,7 +1058,7 @@ const dataAzureadGroupsTimeouts: dataAzureadGroups.DataAzureadGroupsTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#read DataAzureadGroups#read}. |
+| <code><a href="#@cdktf/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#read DataAzureadGroups#read}. |
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.4.0/docs/data-sources/groups#read DataAzureadGroups#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.5.0/docs/data-sources/groups#read DataAzureadGroups#read}.
 
 ---
 
