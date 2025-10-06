@@ -14,37 +14,37 @@ from cdktf_cdktf_provider_azuread import group
 group.Group(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   administrative_unit_ids: typing.List[str] = None,
-  assignable_to_role: typing.Union[bool, IResolvable] = None,
-  auto_subscribe_new_members: typing.Union[bool, IResolvable] = None,
+  assignable_to_role: bool | IResolvable = None,
+  auto_subscribe_new_members: bool | IResolvable = None,
   behaviors: typing.List[str] = None,
   description: str = None,
   dynamic_membership: GroupDynamicMembership = None,
-  external_senders_allowed: typing.Union[bool, IResolvable] = None,
-  hide_from_address_lists: typing.Union[bool, IResolvable] = None,
-  hide_from_outlook_clients: typing.Union[bool, IResolvable] = None,
+  external_senders_allowed: bool | IResolvable = None,
+  hide_from_address_lists: bool | IResolvable = None,
+  hide_from_outlook_clients: bool | IResolvable = None,
   id: str = None,
-  mail_enabled: typing.Union[bool, IResolvable] = None,
+  mail_enabled: bool | IResolvable = None,
   mail_nickname: str = None,
   members: typing.List[str] = None,
   onpremises_group_type: str = None,
   owners: typing.List[str] = None,
-  prevent_duplicate_names: typing.Union[bool, IResolvable] = None,
+  prevent_duplicate_names: bool | IResolvable = None,
   provisioning_options: typing.List[str] = None,
-  security_enabled: typing.Union[bool, IResolvable] = None,
+  security_enabled: bool | IResolvable = None,
   theme: str = None,
   timeouts: GroupTimeouts = None,
   types: typing.List[str] = None,
   visibility: str = None,
-  writeback_enabled: typing.Union[bool, IResolvable] = None
+  writeback_enabled: bool | IResolvable = None
 )
 ```
 
@@ -52,37 +52,37 @@ group.Group(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.assignableToRole">assignable_to_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.description">description</a></code> | <code>str</code> | The description for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership">GroupDynamicMembership</a></code> | dynamic_membership block. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.externalSendersAllowed">external_senders_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether people external to the organization can send messages to the group. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.hideFromAddressLists">hide_from_address_lists</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group is a mail enabled, with a shared group mailbox. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | A set of members who should be present in this group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, will return an error if an existing group is found with the same name. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.securityEnabled">security_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group is a security group for controlling access to in-app resources. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a security group for controlling access to in-app resources. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.theme">theme</a></code> | <code>str</code> | The colour theme for a Microsoft 365 group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
-| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.writebackEnabled">writeback_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
+| <code><a href="#@cdktf/provider-azuread.group.Group.Initializer.parameter.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
@@ -106,13 +106,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -142,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `assignable_to_role`<sup>Optional</sup> <a name="assignable_to_role" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.assignableToRole"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether this group can be assigned to an Azure Active Directory role.
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `auto_subscribe_new_members`<sup>Optional</sup> <a name="auto_subscribe_new_members" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.autoSubscribeNewMembers"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `external_senders_allowed`<sup>Optional</sup> <a name="external_senders_allowed" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.externalSendersAllowed"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether people external to the organization can send messages to the group.
 
@@ -232,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `hide_from_address_lists`<sup>Optional</sup> <a name="hide_from_address_lists" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.hideFromAddressLists"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `hide_from_outlook_clients`<sup>Optional</sup> <a name="hide_from_outlook_clients" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.hideFromOutlookClients"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
@@ -263,7 +263,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.mailEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the group is a mail enabled, with a shared group mailbox.
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.preventDuplicateNames"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If `true`, will return an error if an existing group is found with the same name.
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.securityEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the group is a security group for controlling access to in-app resources.
 
@@ -391,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.group.Group.Initializer.parameter.writebackEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
@@ -676,7 +676,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.group.Group.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.group.Group.importFrom"></a>
@@ -739,7 +739,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -755,7 +755,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.group.Group.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -783,14 +783,14 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_dynamic_membership(
-  enabled: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
   rule: str
 ) -> None
 ```
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.group.Group.putDynamicMembership.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#enabled Group#enabled}.
 
@@ -1124,13 +1124,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference">GroupDynamicMembershipOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mail">mail</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
@@ -1143,51 +1143,51 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput">administrative_unit_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRoleInput">assignable_to_role_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput">auto_subscribe_new_members_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRoleInput">assignable_to_role_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput">auto_subscribe_new_members_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviorsInput">behaviors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.dynamicMembershipInput">dynamic_membership_input</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership">GroupDynamicMembership</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowedInput">external_senders_allowed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressListsInput">hide_from_address_lists_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClientsInput">hide_from_outlook_clients_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowedInput">external_senders_allowed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressListsInput">hide_from_address_lists_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClientsInput">hide_from_outlook_clients_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabledInput">mail_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabledInput">mail_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.membersInput">members_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput">onpremises_group_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput">prevent_duplicate_names_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput">prevent_duplicate_names_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptionsInput">provisioning_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabledInput">security_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabledInput">security_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.themeInput">theme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">writeback_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">writeback_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">assignable_to_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabled">mail_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.members">members</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabled">security_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.theme">theme</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.types">types</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabled">writeback_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1266,20 +1266,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.group.Group.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.group.Group.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1326,10 +1326,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.group.Group.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1456,20 +1456,20 @@ administrative_unit_ids_input: typing.List[str]
 ##### `assignable_to_role_input`<sup>Optional</sup> <a name="assignable_to_role_input" id="@cdktf/provider-azuread.group.Group.property.assignableToRoleInput"></a>
 
 ```python
-assignable_to_role_input: typing.Union[bool, IResolvable]
+assignable_to_role_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_subscribe_new_members_input`<sup>Optional</sup> <a name="auto_subscribe_new_members_input" id="@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput"></a>
 
 ```python
-auto_subscribe_new_members_input: typing.Union[bool, IResolvable]
+auto_subscribe_new_members_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1516,30 +1516,30 @@ dynamic_membership_input: GroupDynamicMembership
 ##### `external_senders_allowed_input`<sup>Optional</sup> <a name="external_senders_allowed_input" id="@cdktf/provider-azuread.group.Group.property.externalSendersAllowedInput"></a>
 
 ```python
-external_senders_allowed_input: typing.Union[bool, IResolvable]
+external_senders_allowed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_from_address_lists_input`<sup>Optional</sup> <a name="hide_from_address_lists_input" id="@cdktf/provider-azuread.group.Group.property.hideFromAddressListsInput"></a>
 
 ```python
-hide_from_address_lists_input: typing.Union[bool, IResolvable]
+hide_from_address_lists_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_from_outlook_clients_input`<sup>Optional</sup> <a name="hide_from_outlook_clients_input" id="@cdktf/provider-azuread.group.Group.property.hideFromOutlookClientsInput"></a>
 
 ```python
-hide_from_outlook_clients_input: typing.Union[bool, IResolvable]
+hide_from_outlook_clients_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1556,10 +1556,10 @@ id_input: str
 ##### `mail_enabled_input`<sup>Optional</sup> <a name="mail_enabled_input" id="@cdktf/provider-azuread.group.Group.property.mailEnabledInput"></a>
 
 ```python
-mail_enabled_input: typing.Union[bool, IResolvable]
+mail_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1606,10 +1606,10 @@ owners_input: typing.List[str]
 ##### `prevent_duplicate_names_input`<sup>Optional</sup> <a name="prevent_duplicate_names_input" id="@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput"></a>
 
 ```python
-prevent_duplicate_names_input: typing.Union[bool, IResolvable]
+prevent_duplicate_names_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1626,10 +1626,10 @@ provisioning_options_input: typing.List[str]
 ##### `security_enabled_input`<sup>Optional</sup> <a name="security_enabled_input" id="@cdktf/provider-azuread.group.Group.property.securityEnabledInput"></a>
 
 ```python
-security_enabled_input: typing.Union[bool, IResolvable]
+security_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1646,10 +1646,10 @@ theme_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.group.Group.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, GroupTimeouts]
+timeouts_input: IResolvable | GroupTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>
 
 ---
 
@@ -1676,10 +1676,10 @@ visibility_input: str
 ##### `writeback_enabled_input`<sup>Optional</sup> <a name="writeback_enabled_input" id="@cdktf/provider-azuread.group.Group.property.writebackEnabledInput"></a>
 
 ```python
-writeback_enabled_input: typing.Union[bool, IResolvable]
+writeback_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1696,20 +1696,20 @@ administrative_unit_ids: typing.List[str]
 ##### `assignable_to_role`<sup>Required</sup> <a name="assignable_to_role" id="@cdktf/provider-azuread.group.Group.property.assignableToRole"></a>
 
 ```python
-assignable_to_role: typing.Union[bool, IResolvable]
+assignable_to_role: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_subscribe_new_members`<sup>Required</sup> <a name="auto_subscribe_new_members" id="@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers"></a>
 
 ```python
-auto_subscribe_new_members: typing.Union[bool, IResolvable]
+auto_subscribe_new_members: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1746,30 +1746,30 @@ display_name: str
 ##### `external_senders_allowed`<sup>Required</sup> <a name="external_senders_allowed" id="@cdktf/provider-azuread.group.Group.property.externalSendersAllowed"></a>
 
 ```python
-external_senders_allowed: typing.Union[bool, IResolvable]
+external_senders_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_from_address_lists`<sup>Required</sup> <a name="hide_from_address_lists" id="@cdktf/provider-azuread.group.Group.property.hideFromAddressLists"></a>
 
 ```python
-hide_from_address_lists: typing.Union[bool, IResolvable]
+hide_from_address_lists: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_from_outlook_clients`<sup>Required</sup> <a name="hide_from_outlook_clients" id="@cdktf/provider-azuread.group.Group.property.hideFromOutlookClients"></a>
 
 ```python
-hide_from_outlook_clients: typing.Union[bool, IResolvable]
+hide_from_outlook_clients: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1786,10 +1786,10 @@ id: str
 ##### `mail_enabled`<sup>Required</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.group.Group.property.mailEnabled"></a>
 
 ```python
-mail_enabled: typing.Union[bool, IResolvable]
+mail_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1836,10 +1836,10 @@ owners: typing.List[str]
 ##### `prevent_duplicate_names`<sup>Required</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.group.Group.property.preventDuplicateNames"></a>
 
 ```python
-prevent_duplicate_names: typing.Union[bool, IResolvable]
+prevent_duplicate_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1856,10 +1856,10 @@ provisioning_options: typing.List[str]
 ##### `security_enabled`<sup>Required</sup> <a name="security_enabled" id="@cdktf/provider-azuread.group.Group.property.securityEnabled"></a>
 
 ```python
-security_enabled: typing.Union[bool, IResolvable]
+security_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1896,10 +1896,10 @@ visibility: str
 ##### `writeback_enabled`<sup>Required</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.group.Group.property.writebackEnabled"></a>
 
 ```python
-writeback_enabled: typing.Union[bool, IResolvable]
+writeback_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1931,37 +1931,37 @@ tfResourceType: str
 from cdktf_cdktf_provider_azuread import group
 
 group.GroupConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   administrative_unit_ids: typing.List[str] = None,
-  assignable_to_role: typing.Union[bool, IResolvable] = None,
-  auto_subscribe_new_members: typing.Union[bool, IResolvable] = None,
+  assignable_to_role: bool | IResolvable = None,
+  auto_subscribe_new_members: bool | IResolvable = None,
   behaviors: typing.List[str] = None,
   description: str = None,
   dynamic_membership: GroupDynamicMembership = None,
-  external_senders_allowed: typing.Union[bool, IResolvable] = None,
-  hide_from_address_lists: typing.Union[bool, IResolvable] = None,
-  hide_from_outlook_clients: typing.Union[bool, IResolvable] = None,
+  external_senders_allowed: bool | IResolvable = None,
+  hide_from_address_lists: bool | IResolvable = None,
+  hide_from_outlook_clients: bool | IResolvable = None,
   id: str = None,
-  mail_enabled: typing.Union[bool, IResolvable] = None,
+  mail_enabled: bool | IResolvable = None,
   mail_nickname: str = None,
   members: typing.List[str] = None,
   onpremises_group_type: str = None,
   owners: typing.List[str] = None,
-  prevent_duplicate_names: typing.Union[bool, IResolvable] = None,
+  prevent_duplicate_names: bool | IResolvable = None,
   provisioning_options: typing.List[str] = None,
-  security_enabled: typing.Union[bool, IResolvable] = None,
+  security_enabled: bool | IResolvable = None,
   theme: str = None,
   timeouts: GroupTimeouts = None,
   types: typing.List[str] = None,
   visibility: str = None,
-  writeback_enabled: typing.Union[bool, IResolvable] = None
+  writeback_enabled: bool | IResolvable = None
 )
 ```
 
@@ -1969,57 +1969,57 @@ group.GroupConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole">assignable_to_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.description">description</a></code> | <code>str</code> | The description for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership">GroupDynamicMembership</a></code> | dynamic_membership block. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether people external to the organization can send messages to the group. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">mail_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group is a mail enabled, with a shared group mailbox. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.members">members</a></code> | <code>typing.List[str]</code> | A set of members who should be present in this group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, will return an error if an existing group is found with the same name. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.securityEnabled">security_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group is a security group for controlling access to in-app resources. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a security group for controlling access to in-app resources. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.theme">theme</a></code> | <code>str</code> | The colour theme for a Microsoft 365 group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled">writeback_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.group.GroupConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.group.GroupConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2066,10 +2066,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.group.GroupConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2106,10 +2106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `assignable_to_role`<sup>Optional</sup> <a name="assignable_to_role" id="@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole"></a>
 
 ```python
-assignable_to_role: typing.Union[bool, IResolvable]
+assignable_to_role: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether this group can be assigned to an Azure Active Directory role.
 
@@ -2122,10 +2122,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `auto_subscribe_new_members`<sup>Optional</sup> <a name="auto_subscribe_new_members" id="@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers"></a>
 
 ```python
-auto_subscribe_new_members: typing.Union[bool, IResolvable]
+auto_subscribe_new_members: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
@@ -2178,10 +2178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `external_senders_allowed`<sup>Optional</sup> <a name="external_senders_allowed" id="@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed"></a>
 
 ```python
-external_senders_allowed: typing.Union[bool, IResolvable]
+external_senders_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether people external to the organization can send messages to the group.
 
@@ -2192,10 +2192,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `hide_from_address_lists`<sup>Optional</sup> <a name="hide_from_address_lists" id="@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists"></a>
 
 ```python
-hide_from_address_lists: typing.Union[bool, IResolvable]
+hide_from_address_lists: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
@@ -2206,10 +2206,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `hide_from_outlook_clients`<sup>Optional</sup> <a name="hide_from_outlook_clients" id="@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients"></a>
 
 ```python
-hide_from_outlook_clients: typing.Union[bool, IResolvable]
+hide_from_outlook_clients: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
@@ -2235,10 +2235,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled"></a>
 
 ```python
-mail_enabled: typing.Union[bool, IResolvable]
+mail_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the group is a mail enabled, with a shared group mailbox.
 
@@ -2309,10 +2309,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames"></a>
 
 ```python
-prevent_duplicate_names: typing.Union[bool, IResolvable]
+prevent_duplicate_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If `true`, will return an error if an existing group is found with the same name.
 
@@ -2337,10 +2337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktf/provider-azuread.group.GroupConfig.property.securityEnabled"></a>
 
 ```python
-security_enabled: typing.Union[bool, IResolvable]
+security_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the group is a security group for controlling access to in-app resources.
 
@@ -2411,10 +2411,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled"></a>
 
 ```python
-writeback_enabled: typing.Union[bool, IResolvable]
+writeback_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
@@ -2430,7 +2430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azuread import group
 
 group.GroupDynamicMembership(
-  enabled: typing.Union[bool, IResolvable],
+  enabled: bool | IResolvable,
   rule: str
 )
 ```
@@ -2439,7 +2439,7 @@ group.GroupDynamicMembership(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#enabled Group#enabled}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#enabled Group#enabled}. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.rule">rule</a></code> | <code>str</code> | Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'. |
 
 ---
@@ -2447,10 +2447,10 @@ group.GroupDynamicMembership(
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#enabled Group#enabled}.
 
@@ -2781,9 +2781,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership">GroupDynamicMembership</a></code> | *No description.* |
 
@@ -2816,10 +2816,10 @@ fqn: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2836,10 +2836,10 @@ rule_input: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3135,7 +3135,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3246,10 +3246,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GroupTimeouts]
+internal_value: IResolvable | GroupTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>
 
 ---
 

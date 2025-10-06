@@ -298,7 +298,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azuread.group.Group.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azuread.group.Group.importFrom"></a>
@@ -352,7 +352,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azuread.group.Group.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -367,7 +367,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-azuread.group.Group.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -677,13 +677,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.dynamicMembership">DynamicMembership</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference">GroupDynamicMembershipOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mail">Mail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.objectId">ObjectId</a></code> | <code>string</code> | *No description.* |
@@ -696,51 +696,51 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.proxyAddresses">ProxyAddresses</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIdsInput">AdministrativeUnitIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRoleInput">AssignableToRoleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput">AutoSubscribeNewMembersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRoleInput">AssignableToRoleInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput">AutoSubscribeNewMembersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviorsInput">BehaviorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.dynamicMembershipInput">DynamicMembershipInput</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership">GroupDynamicMembership</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowedInput">ExternalSendersAllowedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressListsInput">HideFromAddressListsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClientsInput">HideFromOutlookClientsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowedInput">ExternalSendersAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressListsInput">HideFromAddressListsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClientsInput">HideFromOutlookClientsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabledInput">MailEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabledInput">MailEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNicknameInput">MailNicknameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.membersInput">MembersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupTypeInput">OnpremisesGroupTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.ownersInput">OwnersInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput">PreventDuplicateNamesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput">PreventDuplicateNamesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptionsInput">ProvisioningOptionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabledInput">SecurityEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabledInput">SecurityEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.themeInput">ThemeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.typesInput">TypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibilityInput">VisibilityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">WritebackEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabledInput">WritebackEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.administrativeUnitIds">AdministrativeUnitIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">AssignableToRole</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">AutoSubscribeNewMembers</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.assignableToRole">AssignableToRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers">AutoSubscribeNewMembers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.behaviors">Behaviors</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowed">ExternalSendersAllowed</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressLists">HideFromAddressLists</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClients">HideFromOutlookClients</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.externalSendersAllowed">ExternalSendersAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromAddressLists">HideFromAddressLists</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.hideFromOutlookClients">HideFromOutlookClients</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabled">MailEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.mailEnabled">MailEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.mailNickname">MailNickname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.members">Members</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.onpremisesGroupType">OnpremisesGroupType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.owners">Owners</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.provisioningOptions">ProvisioningOptions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabled">SecurityEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.securityEnabled">SecurityEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.theme">Theme</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.types">Types</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.Group.property.visibility">Visibility</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabled">WritebackEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.Group.property.writebackEnabled">WritebackEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -819,20 +819,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.group.Group.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.group.Group.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -879,10 +879,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.group.Group.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1009,20 +1009,20 @@ public string[] AdministrativeUnitIdsInput { get; }
 ##### `AssignableToRoleInput`<sup>Optional</sup> <a name="AssignableToRoleInput" id="@cdktf/provider-azuread.group.Group.property.assignableToRoleInput"></a>
 
 ```csharp
-public object AssignableToRoleInput { get; }
+public bool|IResolvable AssignableToRoleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoSubscribeNewMembersInput`<sup>Optional</sup> <a name="AutoSubscribeNewMembersInput" id="@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembersInput"></a>
 
 ```csharp
-public object AutoSubscribeNewMembersInput { get; }
+public bool|IResolvable AutoSubscribeNewMembersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1069,30 +1069,30 @@ public GroupDynamicMembership DynamicMembershipInput { get; }
 ##### `ExternalSendersAllowedInput`<sup>Optional</sup> <a name="ExternalSendersAllowedInput" id="@cdktf/provider-azuread.group.Group.property.externalSendersAllowedInput"></a>
 
 ```csharp
-public object ExternalSendersAllowedInput { get; }
+public bool|IResolvable ExternalSendersAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideFromAddressListsInput`<sup>Optional</sup> <a name="HideFromAddressListsInput" id="@cdktf/provider-azuread.group.Group.property.hideFromAddressListsInput"></a>
 
 ```csharp
-public object HideFromAddressListsInput { get; }
+public bool|IResolvable HideFromAddressListsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideFromOutlookClientsInput`<sup>Optional</sup> <a name="HideFromOutlookClientsInput" id="@cdktf/provider-azuread.group.Group.property.hideFromOutlookClientsInput"></a>
 
 ```csharp
-public object HideFromOutlookClientsInput { get; }
+public bool|IResolvable HideFromOutlookClientsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1109,10 +1109,10 @@ public string IdInput { get; }
 ##### `MailEnabledInput`<sup>Optional</sup> <a name="MailEnabledInput" id="@cdktf/provider-azuread.group.Group.property.mailEnabledInput"></a>
 
 ```csharp
-public object MailEnabledInput { get; }
+public bool|IResolvable MailEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1159,10 +1159,10 @@ public string[] OwnersInput { get; }
 ##### `PreventDuplicateNamesInput`<sup>Optional</sup> <a name="PreventDuplicateNamesInput" id="@cdktf/provider-azuread.group.Group.property.preventDuplicateNamesInput"></a>
 
 ```csharp
-public object PreventDuplicateNamesInput { get; }
+public bool|IResolvable PreventDuplicateNamesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1179,10 +1179,10 @@ public string[] ProvisioningOptionsInput { get; }
 ##### `SecurityEnabledInput`<sup>Optional</sup> <a name="SecurityEnabledInput" id="@cdktf/provider-azuread.group.Group.property.securityEnabledInput"></a>
 
 ```csharp
-public object SecurityEnabledInput { get; }
+public bool|IResolvable SecurityEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1199,10 +1199,10 @@ public string ThemeInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azuread.group.Group.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|GroupTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>
 
 ---
 
@@ -1229,10 +1229,10 @@ public string VisibilityInput { get; }
 ##### `WritebackEnabledInput`<sup>Optional</sup> <a name="WritebackEnabledInput" id="@cdktf/provider-azuread.group.Group.property.writebackEnabledInput"></a>
 
 ```csharp
-public object WritebackEnabledInput { get; }
+public bool|IResolvable WritebackEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1249,20 +1249,20 @@ public string[] AdministrativeUnitIds { get; }
 ##### `AssignableToRole`<sup>Required</sup> <a name="AssignableToRole" id="@cdktf/provider-azuread.group.Group.property.assignableToRole"></a>
 
 ```csharp
-public object AssignableToRole { get; }
+public bool|IResolvable AssignableToRole { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoSubscribeNewMembers`<sup>Required</sup> <a name="AutoSubscribeNewMembers" id="@cdktf/provider-azuread.group.Group.property.autoSubscribeNewMembers"></a>
 
 ```csharp
-public object AutoSubscribeNewMembers { get; }
+public bool|IResolvable AutoSubscribeNewMembers { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1299,30 +1299,30 @@ public string DisplayName { get; }
 ##### `ExternalSendersAllowed`<sup>Required</sup> <a name="ExternalSendersAllowed" id="@cdktf/provider-azuread.group.Group.property.externalSendersAllowed"></a>
 
 ```csharp
-public object ExternalSendersAllowed { get; }
+public bool|IResolvable ExternalSendersAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideFromAddressLists`<sup>Required</sup> <a name="HideFromAddressLists" id="@cdktf/provider-azuread.group.Group.property.hideFromAddressLists"></a>
 
 ```csharp
-public object HideFromAddressLists { get; }
+public bool|IResolvable HideFromAddressLists { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideFromOutlookClients`<sup>Required</sup> <a name="HideFromOutlookClients" id="@cdktf/provider-azuread.group.Group.property.hideFromOutlookClients"></a>
 
 ```csharp
-public object HideFromOutlookClients { get; }
+public bool|IResolvable HideFromOutlookClients { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1339,10 +1339,10 @@ public string Id { get; }
 ##### `MailEnabled`<sup>Required</sup> <a name="MailEnabled" id="@cdktf/provider-azuread.group.Group.property.mailEnabled"></a>
 
 ```csharp
-public object MailEnabled { get; }
+public bool|IResolvable MailEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1389,10 +1389,10 @@ public string[] Owners { get; }
 ##### `PreventDuplicateNames`<sup>Required</sup> <a name="PreventDuplicateNames" id="@cdktf/provider-azuread.group.Group.property.preventDuplicateNames"></a>
 
 ```csharp
-public object PreventDuplicateNames { get; }
+public bool|IResolvable PreventDuplicateNames { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1409,10 +1409,10 @@ public string[] ProvisioningOptions { get; }
 ##### `SecurityEnabled`<sup>Required</sup> <a name="SecurityEnabled" id="@cdktf/provider-azuread.group.Group.property.securityEnabled"></a>
 
 ```csharp
-public object SecurityEnabled { get; }
+public bool|IResolvable SecurityEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1449,10 +1449,10 @@ public string Visibility { get; }
 ##### `WritebackEnabled`<sup>Required</sup> <a name="WritebackEnabled" id="@cdktf/provider-azuread.group.Group.property.writebackEnabled"></a>
 
 ```csharp
-public object WritebackEnabled { get; }
+public bool|IResolvable WritebackEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1484,37 +1484,37 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Azuread;
 
 new GroupConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string DisplayName,
     string[] AdministrativeUnitIds = null,
-    object AssignableToRole = null,
-    object AutoSubscribeNewMembers = null,
+    bool|IResolvable AssignableToRole = null,
+    bool|IResolvable AutoSubscribeNewMembers = null,
     string[] Behaviors = null,
     string Description = null,
     GroupDynamicMembership DynamicMembership = null,
-    object ExternalSendersAllowed = null,
-    object HideFromAddressLists = null,
-    object HideFromOutlookClients = null,
+    bool|IResolvable ExternalSendersAllowed = null,
+    bool|IResolvable HideFromAddressLists = null,
+    bool|IResolvable HideFromOutlookClients = null,
     string Id = null,
-    object MailEnabled = null,
+    bool|IResolvable MailEnabled = null,
     string MailNickname = null,
     string[] Members = null,
     string OnpremisesGroupType = null,
     string[] Owners = null,
-    object PreventDuplicateNames = null,
+    bool|IResolvable PreventDuplicateNames = null,
     string[] ProvisioningOptions = null,
-    object SecurityEnabled = null,
+    bool|IResolvable SecurityEnabled = null,
     string Theme = null,
     GroupTimeouts Timeouts = null,
     string[] Types = null,
     string Visibility = null,
-    object WritebackEnabled = null
+    bool|IResolvable WritebackEnabled = null
 };
 ```
 
@@ -1522,57 +1522,57 @@ new GroupConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The display name for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.administrativeUnitIds">AdministrativeUnitIds</a></code> | <code>string[]</code> | The administrative unit IDs in which the group should be. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole">AssignableToRole</a></code> | <code>object</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers">AutoSubscribeNewMembers</a></code> | <code>object</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole">AssignableToRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers">AutoSubscribeNewMembers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.behaviors">Behaviors</a></code> | <code>string[]</code> | The group behaviours for a Microsoft 365 group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.description">Description</a></code> | <code>string</code> | The description for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.dynamicMembership">DynamicMembership</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership">GroupDynamicMembership</a></code> | dynamic_membership block. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed">ExternalSendersAllowed</a></code> | <code>object</code> | Indicates whether people external to the organization can send messages to the group. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists">HideFromAddressLists</a></code> | <code>object</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients">HideFromOutlookClients</a></code> | <code>object</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed">ExternalSendersAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists">HideFromAddressLists</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients">HideFromOutlookClients</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">MailEnabled</a></code> | <code>object</code> | Whether the group is a mail enabled, with a shared group mailbox. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled">MailEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.mailNickname">MailNickname</a></code> | <code>string</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.members">Members</a></code> | <code>string[]</code> | A set of members who should be present in this group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.onpremisesGroupType">OnpremisesGroupType</a></code> | <code>string</code> | Indicates the target on-premise group type the group will be written back as. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.owners">Owners</a></code> | <code>string[]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>object</code> | If `true`, will return an error if an existing group is found with the same name. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames">PreventDuplicateNames</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.provisioningOptions">ProvisioningOptions</a></code> | <code>string[]</code> | The group provisioning options for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.securityEnabled">SecurityEnabled</a></code> | <code>object</code> | Whether the group is a security group for controlling access to in-app resources. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.securityEnabled">SecurityEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the group is a security group for controlling access to in-app resources. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.theme">Theme</a></code> | <code>string</code> | The colour theme for a Microsoft 365 group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.types">Types</a></code> | <code>string[]</code> | A set of group types to configure for the group. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.visibility">Visibility</a></code> | <code>string</code> | Specifies the group join policy and group content visibility. |
-| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled">WritebackEnabled</a></code> | <code>object</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled">WritebackEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.group.GroupConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.group.GroupConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1619,10 +1619,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.group.GroupConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1659,10 +1659,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AssignableToRole`<sup>Optional</sup> <a name="AssignableToRole" id="@cdktf/provider-azuread.group.GroupConfig.property.assignableToRole"></a>
 
 ```csharp
-public object AssignableToRole { get; set; }
+public bool|IResolvable AssignableToRole { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether this group can be assigned to an Azure Active Directory role.
 
@@ -1675,10 +1675,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AutoSubscribeNewMembers`<sup>Optional</sup> <a name="AutoSubscribeNewMembers" id="@cdktf/provider-azuread.group.GroupConfig.property.autoSubscribeNewMembers"></a>
 
 ```csharp
-public object AutoSubscribeNewMembers { get; set; }
+public bool|IResolvable AutoSubscribeNewMembers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
@@ -1731,10 +1731,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ExternalSendersAllowed`<sup>Optional</sup> <a name="ExternalSendersAllowed" id="@cdktf/provider-azuread.group.GroupConfig.property.externalSendersAllowed"></a>
 
 ```csharp
-public object ExternalSendersAllowed { get; set; }
+public bool|IResolvable ExternalSendersAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether people external to the organization can send messages to the group.
 
@@ -1745,10 +1745,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HideFromAddressLists`<sup>Optional</sup> <a name="HideFromAddressLists" id="@cdktf/provider-azuread.group.GroupConfig.property.hideFromAddressLists"></a>
 
 ```csharp
-public object HideFromAddressLists { get; set; }
+public bool|IResolvable HideFromAddressLists { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
@@ -1759,10 +1759,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `HideFromOutlookClients`<sup>Optional</sup> <a name="HideFromOutlookClients" id="@cdktf/provider-azuread.group.GroupConfig.property.hideFromOutlookClients"></a>
 
 ```csharp
-public object HideFromOutlookClients { get; set; }
+public bool|IResolvable HideFromOutlookClients { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
@@ -1788,10 +1788,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `MailEnabled`<sup>Optional</sup> <a name="MailEnabled" id="@cdktf/provider-azuread.group.GroupConfig.property.mailEnabled"></a>
 
 ```csharp
-public object MailEnabled { get; set; }
+public bool|IResolvable MailEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the group is a mail enabled, with a shared group mailbox.
 
@@ -1862,10 +1862,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PreventDuplicateNames`<sup>Optional</sup> <a name="PreventDuplicateNames" id="@cdktf/provider-azuread.group.GroupConfig.property.preventDuplicateNames"></a>
 
 ```csharp
-public object PreventDuplicateNames { get; set; }
+public bool|IResolvable PreventDuplicateNames { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If `true`, will return an error if an existing group is found with the same name.
 
@@ -1890,10 +1890,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SecurityEnabled`<sup>Optional</sup> <a name="SecurityEnabled" id="@cdktf/provider-azuread.group.GroupConfig.property.securityEnabled"></a>
 
 ```csharp
-public object SecurityEnabled { get; set; }
+public bool|IResolvable SecurityEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the group is a security group for controlling access to in-app resources.
 
@@ -1964,10 +1964,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `WritebackEnabled`<sup>Optional</sup> <a name="WritebackEnabled" id="@cdktf/provider-azuread.group.GroupConfig.property.writebackEnabled"></a>
 
 ```csharp
-public object WritebackEnabled { get; set; }
+public bool|IResolvable WritebackEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Azuread;
 
 new GroupDynamicMembership {
-    object Enabled,
+    bool|IResolvable Enabled,
     string Rule
 };
 ```
@@ -1992,7 +1992,7 @@ new GroupDynamicMembership {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#enabled Group#enabled}. |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#enabled Group#enabled}. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership.property.rule">Rule</a></code> | <code>string</code> | Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'. |
 
 ---
@@ -2000,10 +2000,10 @@ new GroupDynamicMembership {
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-azuread.group.GroupDynamicMembership.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/group#enabled Group#enabled}.
 
@@ -2309,9 +2309,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.ruleInput">RuleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.rule">Rule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-azuread.group.GroupDynamicMembership">GroupDynamicMembership</a></code> | *No description.* |
 
@@ -2344,10 +2344,10 @@ public string Fqn { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2364,10 +2364,10 @@ public string RuleInput { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-azuread.group.GroupDynamicMembershipOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2638,7 +2638,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2749,10 +2749,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.group.GroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|GroupTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-azuread.group.GroupTimeouts">GroupTimeouts</a>
 
 ---
 

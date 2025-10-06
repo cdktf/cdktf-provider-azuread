@@ -14,34 +14,34 @@ from cdktf_cdktf_provider_azuread import application
 application.Application(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   api: ApplicationApi = None,
-  app_role: typing.Union[IResolvable, typing.List[ApplicationAppRole]] = None,
+  app_role: IResolvable | typing.List[ApplicationAppRole] = None,
   description: str = None,
-  device_only_auth_enabled: typing.Union[bool, IResolvable] = None,
-  fallback_public_client_enabled: typing.Union[bool, IResolvable] = None,
-  feature_tags: typing.Union[IResolvable, typing.List[ApplicationFeatureTags]] = None,
+  device_only_auth_enabled: bool | IResolvable = None,
+  fallback_public_client_enabled: bool | IResolvable = None,
+  feature_tags: IResolvable | typing.List[ApplicationFeatureTags] = None,
   group_membership_claims: typing.List[str] = None,
   id: str = None,
   identifier_uris: typing.List[str] = None,
   logo_image: str = None,
   marketing_url: str = None,
   notes: str = None,
-  oauth2_post_response_required: typing.Union[bool, IResolvable] = None,
+  oauth2_post_response_required: bool | IResolvable = None,
   optional_claims: ApplicationOptionalClaims = None,
   owners: typing.List[str] = None,
   password: ApplicationPassword = None,
-  prevent_duplicate_names: typing.Union[bool, IResolvable] = None,
+  prevent_duplicate_names: bool | IResolvable = None,
   privacy_statement_url: str = None,
   public_client: ApplicationPublicClient = None,
-  required_resource_access: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]] = None,
+  required_resource_access: IResolvable | typing.List[ApplicationRequiredResourceAccess] = None,
   service_management_reference: str = None,
   sign_in_audience: str = None,
   single_page_application: ApplicationSinglePageApplication = None,
@@ -58,34 +58,34 @@ application.Application(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the application. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.api">api</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationApi">ApplicationApi</a></code> | api block. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.appRole">app_role</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]</code> | app_role block. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.appRole">app_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]</code> | app_role block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the application as shown to end users. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.deviceOnlyAuthEnabled">device_only_auth_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this application supports device authentication without a user. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.fallbackPublicClientEnabled">fallback_public_client_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the application is a public client. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.featureTags">feature_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]</code> | feature_tags block. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.deviceOnlyAuthEnabled">device_only_auth_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether this application supports device authentication without a user. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.fallbackPublicClientEnabled">fallback_public_client_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the application is a public client. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.featureTags">feature_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]</code> | feature_tags block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application#id Application#id}. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.identifierUris">identifier_uris</a></code> | <code>typing.List[str]</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.logoImage">logo_image</a></code> | <code>str</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the application's marketing page. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.optionalClaims">optional_claims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.password">password</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a></code> | password block. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, will return an error if an existing application is found with the same name. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, will return an error if an existing application is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.publicClient">public_client</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
-| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.requiredResourceAccess">required_resource_access</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]</code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.requiredResourceAccess">required_resource_access</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]</code> | required_resource_access block. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.Application.Initializer.parameter.singlePageApplication">single_page_application</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
@@ -118,13 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -154,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `app_role`<sup>Optional</sup> <a name="app_role" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.appRole"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]
 
 app_role block.
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `device_only_auth_enabled`<sup>Optional</sup> <a name="device_only_auth_enabled" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.deviceOnlyAuthEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether this application supports device authentication without a user.
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `fallback_public_client_enabled`<sup>Optional</sup> <a name="fallback_public_client_enabled" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.fallbackPublicClientEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the application is a public client.
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `feature_tags`<sup>Optional</sup> <a name="feature_tags" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.featureTags"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]
 
 feature_tags block.
 
@@ -293,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `oauth2_post_response_required`<sup>Optional</sup> <a name="oauth2_post_response_required" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.oauth2PostResponseRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.preventDuplicateNames"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If `true`, will return an error if an existing application is found with the same name.
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `required_resource_access`<sup>Optional</sup> <a name="required_resource_access" id="@cdktf/provider-azuread.application.Application.Initializer.parameter.requiredResourceAccess"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]
 
 required_resource_access block.
 
@@ -752,7 +752,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.application.Application.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.application.Application.importFrom"></a>
@@ -815,7 +815,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -831,7 +831,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.application.Application.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -860,8 +860,8 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_api(
   known_client_applications: typing.List[str] = None,
-  mapped_claims_enabled: typing.Union[bool, IResolvable] = None,
-  oauth2_permission_scope: typing.Union[IResolvable, typing.List[ApplicationApiOauth2PermissionScope]] = None,
+  mapped_claims_enabled: bool | IResolvable = None,
+  oauth2_permission_scope: IResolvable | typing.List[ApplicationApiOauth2PermissionScope] = None,
   requested_access_token_version: typing.Union[int, float] = None
 ) -> None
 ```
@@ -878,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `mapped_claims_enabled`<sup>Optional</sup> <a name="mapped_claims_enabled" id="@cdktf/provider-azuread.application.Application.putApi.parameter.mappedClaimsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows an application to use claims mapping without specifying a custom signing key.
 
@@ -888,7 +888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `oauth2_permission_scope`<sup>Optional</sup> <a name="oauth2_permission_scope" id="@cdktf/provider-azuread.application.Application.putApi.parameter.oauth2PermissionScope"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]
 
 oauth2_permission_scope block.
 
@@ -910,13 +910,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_app_role(
-  value: typing.Union[IResolvable, typing.List[ApplicationAppRole]]
+  value: IResolvable | typing.List[ApplicationAppRole]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.Application.putAppRole.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]
 
 ---
 
@@ -924,13 +924,13 @@ def put_app_role(
 
 ```python
 def put_feature_tags(
-  value: typing.Union[IResolvable, typing.List[ApplicationFeatureTags]]
+  value: IResolvable | typing.List[ApplicationFeatureTags]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.Application.putFeatureTags.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]
 
 ---
 
@@ -938,15 +938,15 @@ def put_feature_tags(
 
 ```python
 def put_optional_claims(
-  access_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsAccessToken]] = None,
-  id_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsIdToken]] = None,
-  saml2_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsSaml2Token]] = None
+  access_token: IResolvable | typing.List[ApplicationOptionalClaimsAccessToken] = None,
+  id_token: IResolvable | typing.List[ApplicationOptionalClaimsIdToken] = None,
+  saml2_token: IResolvable | typing.List[ApplicationOptionalClaimsSaml2Token] = None
 ) -> None
 ```
 
 ###### `access_token`<sup>Optional</sup> <a name="access_token" id="@cdktf/provider-azuread.application.Application.putOptionalClaims.parameter.accessToken"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]
 
 access_token block.
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `id_token`<sup>Optional</sup> <a name="id_token" id="@cdktf/provider-azuread.application.Application.putOptionalClaims.parameter.idToken"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]
 
 id_token block.
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `saml2_token`<sup>Optional</sup> <a name="saml2_token" id="@cdktf/provider-azuread.application.Application.putOptionalClaims.parameter.saml2Token"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]
 
 saml2_token block.
 
@@ -1036,13 +1036,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_required_resource_access(
-  value: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]]
+  value: IResolvable | typing.List[ApplicationRequiredResourceAccess]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.Application.putRequiredResourceAccess.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]
 
 ---
 
@@ -1469,13 +1469,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.api">api</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference">ApplicationApiOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.appRole">app_role</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleList">ApplicationAppRoleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.appRoleIds">app_role_ids</a></code> | <code>cdktf.StringMap</code> | *No description.* |
@@ -1494,26 +1494,26 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference">ApplicationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.web">web</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationWebOutputReference">ApplicationWebOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.apiInput">api_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationApi">ApplicationApi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.appRoleInput">app_role_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.appRoleInput">app_role_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabledInput">device_only_auth_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabledInput">device_only_auth_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.fallbackPublicClientEnabledInput">fallback_public_client_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.featureTagsInput">feature_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.fallbackPublicClientEnabledInput">fallback_public_client_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.featureTagsInput">feature_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.groupMembershipClaimsInput">group_membership_claims_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.identifierUrisInput">identifier_uris_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImageInput">logo_image_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrlInput">marketing_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.notesInput">notes_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput">oauth2_post_response_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput">oauth2_post_response_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.optionalClaimsInput">optional_claims_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.passwordInput">password_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNamesInput">prevent_duplicate_names_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNamesInput">prevent_duplicate_names_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrlInput">privacy_statement_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.publicClientInput">public_client_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.requiredResourceAccessInput">required_resource_access_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.requiredResourceAccessInput">required_resource_access_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReferenceInput">service_management_reference_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudienceInput">sign_in_audience_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.singlePageApplicationInput">single_page_application_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | *No description.* |
@@ -1521,21 +1521,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.templateIdInput">template_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.termsOfServiceUrlInput">terms_of_service_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.webInput">web_input</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationWeb">ApplicationWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabled">device_only_auth_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabled">device_only_auth_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.fallbackPublicClientEnabled">fallback_public_client_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.fallbackPublicClientEnabled">fallback_public_client_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.identifierUris">identifier_uris</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.logoImage">logo_image</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.marketingUrl">marketing_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.notes">notes</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.Application.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.Application.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | *No description.* |
@@ -1621,20 +1621,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.application.Application.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.application.Application.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1681,10 +1681,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.application.Application.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1871,10 +1871,10 @@ api_input: ApplicationApi
 ##### `app_role_input`<sup>Optional</sup> <a name="app_role_input" id="@cdktf/provider-azuread.application.Application.property.appRoleInput"></a>
 
 ```python
-app_role_input: typing.Union[IResolvable, typing.List[ApplicationAppRole]]
+app_role_input: IResolvable | typing.List[ApplicationAppRole]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]
 
 ---
 
@@ -1891,10 +1891,10 @@ description_input: str
 ##### `device_only_auth_enabled_input`<sup>Optional</sup> <a name="device_only_auth_enabled_input" id="@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabledInput"></a>
 
 ```python
-device_only_auth_enabled_input: typing.Union[bool, IResolvable]
+device_only_auth_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1911,20 +1911,20 @@ display_name_input: str
 ##### `fallback_public_client_enabled_input`<sup>Optional</sup> <a name="fallback_public_client_enabled_input" id="@cdktf/provider-azuread.application.Application.property.fallbackPublicClientEnabledInput"></a>
 
 ```python
-fallback_public_client_enabled_input: typing.Union[bool, IResolvable]
+fallback_public_client_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `feature_tags_input`<sup>Optional</sup> <a name="feature_tags_input" id="@cdktf/provider-azuread.application.Application.property.featureTagsInput"></a>
 
 ```python
-feature_tags_input: typing.Union[IResolvable, typing.List[ApplicationFeatureTags]]
+feature_tags_input: IResolvable | typing.List[ApplicationFeatureTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]
 
 ---
 
@@ -1991,10 +1991,10 @@ notes_input: str
 ##### `oauth2_post_response_required_input`<sup>Optional</sup> <a name="oauth2_post_response_required_input" id="@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequiredInput"></a>
 
 ```python
-oauth2_post_response_required_input: typing.Union[bool, IResolvable]
+oauth2_post_response_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2031,10 +2031,10 @@ password_input: ApplicationPassword
 ##### `prevent_duplicate_names_input`<sup>Optional</sup> <a name="prevent_duplicate_names_input" id="@cdktf/provider-azuread.application.Application.property.preventDuplicateNamesInput"></a>
 
 ```python
-prevent_duplicate_names_input: typing.Union[bool, IResolvable]
+prevent_duplicate_names_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2061,10 +2061,10 @@ public_client_input: ApplicationPublicClient
 ##### `required_resource_access_input`<sup>Optional</sup> <a name="required_resource_access_input" id="@cdktf/provider-azuread.application.Application.property.requiredResourceAccessInput"></a>
 
 ```python
-required_resource_access_input: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]]
+required_resource_access_input: IResolvable | typing.List[ApplicationRequiredResourceAccess]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]
 
 ---
 
@@ -2141,10 +2141,10 @@ terms_of_service_url_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.application.Application.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, ApplicationTimeouts]
+timeouts_input: IResolvable | ApplicationTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>
 
 ---
 
@@ -2171,10 +2171,10 @@ description: str
 ##### `device_only_auth_enabled`<sup>Required</sup> <a name="device_only_auth_enabled" id="@cdktf/provider-azuread.application.Application.property.deviceOnlyAuthEnabled"></a>
 
 ```python
-device_only_auth_enabled: typing.Union[bool, IResolvable]
+device_only_auth_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2191,10 +2191,10 @@ display_name: str
 ##### `fallback_public_client_enabled`<sup>Required</sup> <a name="fallback_public_client_enabled" id="@cdktf/provider-azuread.application.Application.property.fallbackPublicClientEnabled"></a>
 
 ```python
-fallback_public_client_enabled: typing.Union[bool, IResolvable]
+fallback_public_client_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2261,10 +2261,10 @@ notes: str
 ##### `oauth2_post_response_required`<sup>Required</sup> <a name="oauth2_post_response_required" id="@cdktf/provider-azuread.application.Application.property.oauth2PostResponseRequired"></a>
 
 ```python
-oauth2_post_response_required: typing.Union[bool, IResolvable]
+oauth2_post_response_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2281,10 +2281,10 @@ owners: typing.List[str]
 ##### `prevent_duplicate_names`<sup>Required</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.application.Application.property.preventDuplicateNames"></a>
 
 ```python
-prevent_duplicate_names: typing.Union[bool, IResolvable]
+prevent_duplicate_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2387,8 +2387,8 @@ from cdktf_cdktf_provider_azuread import application
 
 application.ApplicationApi(
   known_client_applications: typing.List[str] = None,
-  mapped_claims_enabled: typing.Union[bool, IResolvable] = None,
-  oauth2_permission_scope: typing.Union[IResolvable, typing.List[ApplicationApiOauth2PermissionScope]] = None,
+  mapped_claims_enabled: bool | IResolvable = None,
+  oauth2_permission_scope: IResolvable | typing.List[ApplicationApiOauth2PermissionScope] = None,
   requested_access_token_version: typing.Union[int, float] = None
 )
 ```
@@ -2398,8 +2398,8 @@ application.ApplicationApi(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApi.property.knownClientApplications">known_client_applications</a></code> | <code>typing.List[str]</code> | Used for bundling consent if you have a solution that contains two parts: a client app and a custom web API app. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApi.property.mappedClaimsEnabled">mapped_claims_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allows an application to use claims mapping without specifying a custom signing key. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApi.property.oauth2PermissionScope">oauth2_permission_scope</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]</code> | oauth2_permission_scope block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApi.property.mappedClaimsEnabled">mapped_claims_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allows an application to use claims mapping without specifying a custom signing key. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApi.property.oauth2PermissionScope">oauth2_permission_scope</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]</code> | oauth2_permission_scope block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApi.property.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | The access token version expected by this resource. |
 
 ---
@@ -2421,10 +2421,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `mapped_claims_enabled`<sup>Optional</sup> <a name="mapped_claims_enabled" id="@cdktf/provider-azuread.application.ApplicationApi.property.mappedClaimsEnabled"></a>
 
 ```python
-mapped_claims_enabled: typing.Union[bool, IResolvable]
+mapped_claims_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows an application to use claims mapping without specifying a custom signing key.
 
@@ -2435,10 +2435,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `oauth2_permission_scope`<sup>Optional</sup> <a name="oauth2_permission_scope" id="@cdktf/provider-azuread.application.ApplicationApi.property.oauth2PermissionScope"></a>
 
 ```python
-oauth2_permission_scope: typing.Union[IResolvable, typing.List[ApplicationApiOauth2PermissionScope]]
+oauth2_permission_scope: IResolvable | typing.List[ApplicationApiOauth2PermissionScope]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]
 
 oauth2_permission_scope block.
 
@@ -2471,7 +2471,7 @@ application.ApplicationApiOauth2PermissionScope(
   id: str,
   admin_consent_description: str = None,
   admin_consent_display_name: str = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   type: str = None,
   user_consent_description: str = None,
   user_consent_display_name: str = None,
@@ -2486,7 +2486,7 @@ application.ApplicationApiOauth2PermissionScope(
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.id">id</a></code> | <code>str</code> | The unique identifier of the delegated permission. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.adminConsentDescription">admin_consent_description</a></code> | <code>str</code> | Delegated permission description that appears in all tenant-wide admin consent experiences, intended to be read by an administrator granting the permission on behalf of all users. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.adminConsentDisplayName">admin_consent_display_name</a></code> | <code>str</code> | Display name for the delegated permission, intended to be read by an administrator granting the permission on behalf of all users. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines if the permission scope is enabled. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines if the permission scope is enabled. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.type">type</a></code> | <code>str</code> | Whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.userConsentDescription">user_consent_description</a></code> | <code>str</code> | Delegated permission description that appears in the end user consent experience, intended to be read by a user consenting on their own behalf. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.userConsentDisplayName">user_consent_display_name</a></code> | <code>str</code> | Display name for the delegated permission that appears in the end user consent experience. |
@@ -2542,10 +2542,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines if the permission scope is enabled.
 
@@ -2621,7 +2621,7 @@ application.ApplicationAppRole(
   description: str,
   display_name: str,
   id: str,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   value: str = None
 )
 ```
@@ -2634,7 +2634,7 @@ application.ApplicationAppRole(
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRole.property.description">description</a></code> | <code>str</code> | Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRole.property.displayName">display_name</a></code> | <code>str</code> | Display name for the app role that appears during app role assignment and in consent experiences. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRole.property.id">id</a></code> | <code>str</code> | The unique identifier of the app role. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRole.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines if the app role is enabled. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRole.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines if the app role is enabled. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRole.property.value">value</a></code> | <code>str</code> | The value that is used for the `roles` claim in ID tokens and OAuth 2.0 access tokens that are authenticating an assigned service or user principal. |
 
 ---
@@ -2701,10 +2701,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-azuread.application.ApplicationAppRole.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines if the app role is enabled.
 
@@ -2734,34 +2734,34 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azuread import application
 
 application.ApplicationConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   api: ApplicationApi = None,
-  app_role: typing.Union[IResolvable, typing.List[ApplicationAppRole]] = None,
+  app_role: IResolvable | typing.List[ApplicationAppRole] = None,
   description: str = None,
-  device_only_auth_enabled: typing.Union[bool, IResolvable] = None,
-  fallback_public_client_enabled: typing.Union[bool, IResolvable] = None,
-  feature_tags: typing.Union[IResolvable, typing.List[ApplicationFeatureTags]] = None,
+  device_only_auth_enabled: bool | IResolvable = None,
+  fallback_public_client_enabled: bool | IResolvable = None,
+  feature_tags: IResolvable | typing.List[ApplicationFeatureTags] = None,
   group_membership_claims: typing.List[str] = None,
   id: str = None,
   identifier_uris: typing.List[str] = None,
   logo_image: str = None,
   marketing_url: str = None,
   notes: str = None,
-  oauth2_post_response_required: typing.Union[bool, IResolvable] = None,
+  oauth2_post_response_required: bool | IResolvable = None,
   optional_claims: ApplicationOptionalClaims = None,
   owners: typing.List[str] = None,
   password: ApplicationPassword = None,
-  prevent_duplicate_names: typing.Union[bool, IResolvable] = None,
+  prevent_duplicate_names: bool | IResolvable = None,
   privacy_statement_url: str = None,
   public_client: ApplicationPublicClient = None,
-  required_resource_access: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]] = None,
+  required_resource_access: IResolvable | typing.List[ApplicationRequiredResourceAccess] = None,
   service_management_reference: str = None,
   sign_in_audience: str = None,
   single_page_application: ApplicationSinglePageApplication = None,
@@ -2778,34 +2778,34 @@ application.ApplicationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.api">api</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationApi">ApplicationApi</a></code> | api block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.appRole">app_role</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]</code> | app_role block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.appRole">app_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]</code> | app_role block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.description">description</a></code> | <code>str</code> | Description of the application as shown to end users. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.deviceOnlyAuthEnabled">device_only_auth_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this application supports device authentication without a user. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.fallbackPublicClientEnabled">fallback_public_client_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the application is a public client. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.featureTags">feature_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]</code> | feature_tags block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.deviceOnlyAuthEnabled">device_only_auth_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether this application supports device authentication without a user. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.fallbackPublicClientEnabled">fallback_public_client_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the application is a public client. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.featureTags">feature_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]</code> | feature_tags block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the app expects. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application#id Application#id}. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.identifierUris">identifier_uris</a></code> | <code>typing.List[str]</code> | The user-defined URI(s) that uniquely identify an application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.logoImage">logo_image</a></code> | <code>str</code> | Base64 encoded logo image in gif, png or jpeg format. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the application's marketing page. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired">oauth2_post_response_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.optionalClaims">optional_claims</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | optional_claims block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.password">password</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPassword">ApplicationPassword</a></code> | password block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, will return an error if an existing application is found with the same name. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, will return an error if an existing application is found with the same name. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the application's privacy statement. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.publicClient">public_client</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationPublicClient">ApplicationPublicClient</a></code> | public_client block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.requiredResourceAccess">required_resource_access</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]</code> | required_resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.requiredResourceAccess">required_resource_access</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]</code> | required_resource_access block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or service contact information from a Service or Asset Management database. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationConfig.property.singlePageApplication">single_page_application</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationSinglePageApplication">ApplicationSinglePageApplication</a></code> | single_page_application block. |
@@ -2821,20 +2821,20 @@ application.ApplicationConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.application.ApplicationConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.application.ApplicationConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2881,10 +2881,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.application.ApplicationConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2919,10 +2919,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `app_role`<sup>Optional</sup> <a name="app_role" id="@cdktf/provider-azuread.application.ApplicationConfig.property.appRole"></a>
 
 ```python
-app_role: typing.Union[IResolvable, typing.List[ApplicationAppRole]]
+app_role: IResolvable | typing.List[ApplicationAppRole]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]
 
 app_role block.
 
@@ -2947,10 +2947,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `device_only_auth_enabled`<sup>Optional</sup> <a name="device_only_auth_enabled" id="@cdktf/provider-azuread.application.ApplicationConfig.property.deviceOnlyAuthEnabled"></a>
 
 ```python
-device_only_auth_enabled: typing.Union[bool, IResolvable]
+device_only_auth_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether this application supports device authentication without a user.
 
@@ -2961,10 +2961,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `fallback_public_client_enabled`<sup>Optional</sup> <a name="fallback_public_client_enabled" id="@cdktf/provider-azuread.application.ApplicationConfig.property.fallbackPublicClientEnabled"></a>
 
 ```python
-fallback_public_client_enabled: typing.Union[bool, IResolvable]
+fallback_public_client_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the application is a public client.
 
@@ -2977,10 +2977,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `feature_tags`<sup>Optional</sup> <a name="feature_tags" id="@cdktf/provider-azuread.application.ApplicationConfig.property.featureTags"></a>
 
 ```python
-feature_tags: typing.Union[IResolvable, typing.List[ApplicationFeatureTags]]
+feature_tags: IResolvable | typing.List[ApplicationFeatureTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]
 
 feature_tags block.
 
@@ -3076,10 +3076,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `oauth2_post_response_required`<sup>Optional</sup> <a name="oauth2_post_response_required" id="@cdktf/provider-azuread.application.ApplicationConfig.property.oauth2PostResponseRequired"></a>
 
 ```python
-oauth2_post_response_required: typing.Union[bool, IResolvable]
+oauth2_post_response_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests.
 
@@ -3132,10 +3132,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.application.ApplicationConfig.property.preventDuplicateNames"></a>
 
 ```python
-prevent_duplicate_names: typing.Union[bool, IResolvable]
+prevent_duplicate_names: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If `true`, will return an error if an existing application is found with the same name.
 
@@ -3174,10 +3174,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `required_resource_access`<sup>Optional</sup> <a name="required_resource_access" id="@cdktf/provider-azuread.application.ApplicationConfig.property.requiredResourceAccess"></a>
 
 ```python
-required_resource_access: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]]
+required_resource_access: IResolvable | typing.List[ApplicationRequiredResourceAccess]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]
 
 required_resource_access block.
 
@@ -3319,10 +3319,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azuread import application
 
 application.ApplicationFeatureTags(
-  custom_single_sign_on: typing.Union[bool, IResolvable] = None,
-  enterprise: typing.Union[bool, IResolvable] = None,
-  gallery: typing.Union[bool, IResolvable] = None,
-  hide: typing.Union[bool, IResolvable] = None
+  custom_single_sign_on: bool | IResolvable = None,
+  enterprise: bool | IResolvable = None,
+  gallery: bool | IResolvable = None,
+  hide: bool | IResolvable = None
 )
 ```
 
@@ -3330,20 +3330,20 @@ application.ApplicationFeatureTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this application represents a custom SAML application for linked service principals. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.enterprise">enterprise</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this application represents an Enterprise Application for linked service principals. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.gallery">gallery</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this application represents a gallery application for linked service principals. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.hide">hide</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this application is invisible to users in My Apps and Office 365 Launcher. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application represents a custom SAML application for linked service principals. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.enterprise">enterprise</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application represents an Enterprise Application for linked service principals. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.gallery">gallery</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application represents a gallery application for linked service principals. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags.property.hide">hide</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application is invisible to users in My Apps and Office 365 Launcher. |
 
 ---
 
 ##### `custom_single_sign_on`<sup>Optional</sup> <a name="custom_single_sign_on" id="@cdktf/provider-azuread.application.ApplicationFeatureTags.property.customSingleSignOn"></a>
 
 ```python
-custom_single_sign_on: typing.Union[bool, IResolvable]
+custom_single_sign_on: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this application represents a custom SAML application for linked service principals.
 
@@ -3354,10 +3354,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enterprise`<sup>Optional</sup> <a name="enterprise" id="@cdktf/provider-azuread.application.ApplicationFeatureTags.property.enterprise"></a>
 
 ```python
-enterprise: typing.Union[bool, IResolvable]
+enterprise: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this application represents an Enterprise Application for linked service principals.
 
@@ -3368,10 +3368,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `gallery`<sup>Optional</sup> <a name="gallery" id="@cdktf/provider-azuread.application.ApplicationFeatureTags.property.gallery"></a>
 
 ```python
-gallery: typing.Union[bool, IResolvable]
+gallery: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this application represents a gallery application for linked service principals.
 
@@ -3382,10 +3382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `hide`<sup>Optional</sup> <a name="hide" id="@cdktf/provider-azuread.application.ApplicationFeatureTags.property.hide"></a>
 
 ```python
-hide: typing.Union[bool, IResolvable]
+hide: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this application is invisible to users in My Apps and Office 365 Launcher.
 
@@ -3401,9 +3401,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azuread import application
 
 application.ApplicationOptionalClaims(
-  access_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsAccessToken]] = None,
-  id_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsIdToken]] = None,
-  saml2_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsSaml2Token]] = None
+  access_token: IResolvable | typing.List[ApplicationOptionalClaimsAccessToken] = None,
+  id_token: IResolvable | typing.List[ApplicationOptionalClaimsIdToken] = None,
+  saml2_token: IResolvable | typing.List[ApplicationOptionalClaimsSaml2Token] = None
 )
 ```
 
@@ -3411,19 +3411,19 @@ application.ApplicationOptionalClaims(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.accessToken">access_token</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]</code> | access_token block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.idToken">id_token</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]</code> | id_token block. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.saml2Token">saml2_token</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]</code> | saml2_token block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.accessToken">access_token</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]</code> | access_token block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.idToken">id_token</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]</code> | id_token block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.saml2Token">saml2_token</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]</code> | saml2_token block. |
 
 ---
 
 ##### `access_token`<sup>Optional</sup> <a name="access_token" id="@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.accessToken"></a>
 
 ```python
-access_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsAccessToken]]
+access_token: IResolvable | typing.List[ApplicationOptionalClaimsAccessToken]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]
 
 access_token block.
 
@@ -3434,10 +3434,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `id_token`<sup>Optional</sup> <a name="id_token" id="@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.idToken"></a>
 
 ```python
-id_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsIdToken]]
+id_token: IResolvable | typing.List[ApplicationOptionalClaimsIdToken]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]
 
 id_token block.
 
@@ -3448,10 +3448,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `saml2_token`<sup>Optional</sup> <a name="saml2_token" id="@cdktf/provider-azuread.application.ApplicationOptionalClaims.property.saml2Token"></a>
 
 ```python
-saml2_token: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsSaml2Token]]
+saml2_token: IResolvable | typing.List[ApplicationOptionalClaimsSaml2Token]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]
 
 saml2_token block.
 
@@ -3469,7 +3469,7 @@ from cdktf_cdktf_provider_azuread import application
 application.ApplicationOptionalClaimsAccessToken(
   name: str,
   additional_properties: typing.List[str] = None,
-  essential: typing.Union[bool, IResolvable] = None,
+  essential: bool | IResolvable = None,
   source: str = None
 )
 ```
@@ -3480,7 +3480,7 @@ application.ApplicationOptionalClaimsAccessToken(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken.property.name">name</a></code> | <code>str</code> | The name of the optional claim. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken.property.additionalProperties">additional_properties</a></code> | <code>typing.List[str]</code> | List of additional properties of the claim. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the claim specified by the client is necessary to ensure a smooth authorization experience. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken.property.essential">essential</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the claim specified by the client is necessary to ensure a smooth authorization experience. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken.property.source">source</a></code> | <code>str</code> | The source of the claim. |
 
 ---
@@ -3518,10 +3518,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `essential`<sup>Optional</sup> <a name="essential" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken.property.essential"></a>
 
 ```python
-essential: typing.Union[bool, IResolvable]
+essential: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
@@ -3555,7 +3555,7 @@ from cdktf_cdktf_provider_azuread import application
 application.ApplicationOptionalClaimsIdToken(
   name: str,
   additional_properties: typing.List[str] = None,
-  essential: typing.Union[bool, IResolvable] = None,
+  essential: bool | IResolvable = None,
   source: str = None
 )
 ```
@@ -3566,7 +3566,7 @@ application.ApplicationOptionalClaimsIdToken(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken.property.name">name</a></code> | <code>str</code> | The name of the optional claim. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken.property.additionalProperties">additional_properties</a></code> | <code>typing.List[str]</code> | List of additional properties of the claim. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the claim specified by the client is necessary to ensure a smooth authorization experience. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken.property.essential">essential</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the claim specified by the client is necessary to ensure a smooth authorization experience. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken.property.source">source</a></code> | <code>str</code> | The source of the claim. |
 
 ---
@@ -3604,10 +3604,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `essential`<sup>Optional</sup> <a name="essential" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken.property.essential"></a>
 
 ```python
-essential: typing.Union[bool, IResolvable]
+essential: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
@@ -3641,7 +3641,7 @@ from cdktf_cdktf_provider_azuread import application
 application.ApplicationOptionalClaimsSaml2Token(
   name: str,
   additional_properties: typing.List[str] = None,
-  essential: typing.Union[bool, IResolvable] = None,
+  essential: bool | IResolvable = None,
   source: str = None
 )
 ```
@@ -3652,7 +3652,7 @@ application.ApplicationOptionalClaimsSaml2Token(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token.property.name">name</a></code> | <code>str</code> | The name of the optional claim. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token.property.additionalProperties">additional_properties</a></code> | <code>typing.List[str]</code> | List of additional properties of the claim. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the claim specified by the client is necessary to ensure a smooth authorization experience. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token.property.essential">essential</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the claim specified by the client is necessary to ensure a smooth authorization experience. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token.property.source">source</a></code> | <code>str</code> | The source of the claim. |
 
 ---
@@ -3690,10 +3690,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `essential`<sup>Optional</sup> <a name="essential" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token.property.essential"></a>
 
 ```python
-essential: typing.Union[bool, IResolvable]
+essential: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
@@ -3825,7 +3825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azuread import application
 
 application.ApplicationRequiredResourceAccess(
-  resource_access: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccessResourceAccess]],
+  resource_access: IResolvable | typing.List[ApplicationRequiredResourceAccessResourceAccess],
   resource_app_id: str
 )
 ```
@@ -3834,7 +3834,7 @@ application.ApplicationRequiredResourceAccess(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAccess">resource_access</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]</code> | resource_access block. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAccess">resource_access</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]</code> | resource_access block. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAppId">resource_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application#resource_app_id Application#resource_app_id}. |
 
 ---
@@ -3842,10 +3842,10 @@ application.ApplicationRequiredResourceAccess(
 ##### `resource_access`<sup>Required</sup> <a name="resource_access" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess.property.resourceAccess"></a>
 
 ```python
-resource_access: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccessResourceAccess]]
+resource_access: IResolvable | typing.List[ApplicationRequiredResourceAccessResourceAccess]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]
 
 resource_access block.
 
@@ -4112,8 +4112,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azuread import application
 
 application.ApplicationWebImplicitGrant(
-  access_token_issuance_enabled: typing.Union[bool, IResolvable] = None,
-  id_token_issuance_enabled: typing.Union[bool, IResolvable] = None
+  access_token_issuance_enabled: bool | IResolvable = None,
+  id_token_issuance_enabled: bool | IResolvable = None
 )
 ```
 
@@ -4121,18 +4121,18 @@ application.ApplicationWebImplicitGrant(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrant.property.accessTokenIssuanceEnabled">access_token_issuance_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this web application can request an access token using OAuth 2.0 implicit flow. |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrant.property.idTokenIssuanceEnabled">id_token_issuance_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether this web application can request an ID token using OAuth 2.0 implicit flow. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrant.property.accessTokenIssuanceEnabled">access_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this web application can request an access token using OAuth 2.0 implicit flow. |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrant.property.idTokenIssuanceEnabled">id_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this web application can request an ID token using OAuth 2.0 implicit flow. |
 
 ---
 
 ##### `access_token_issuance_enabled`<sup>Optional</sup> <a name="access_token_issuance_enabled" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrant.property.accessTokenIssuanceEnabled"></a>
 
 ```python
-access_token_issuance_enabled: typing.Union[bool, IResolvable]
+access_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this web application can request an access token using OAuth 2.0 implicit flow.
 
@@ -4143,10 +4143,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `id_token_issuance_enabled`<sup>Optional</sup> <a name="id_token_issuance_enabled" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrant.property.idTokenIssuanceEnabled"></a>
 
 ```python
-id_token_issuance_enabled: typing.Union[bool, IResolvable]
+id_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this web application can request an ID token using OAuth 2.0 implicit flow.
 
@@ -4287,7 +4287,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]</code> | *No description.* |
 
 ---
 
@@ -4318,10 +4318,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationApiOauth2PermissionScope]]
+internal_value: IResolvable | typing.List[ApplicationApiOauth2PermissionScope]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]
 
 ---
 
@@ -4632,7 +4632,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDescriptionInput">admin_consent_description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDisplayNameInput">admin_consent_display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDescriptionInput">user_consent_description_input</a></code> | <code>str</code> | *No description.* |
@@ -4640,13 +4640,13 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDescription">admin_consent_description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.adminConsentDisplayName">admin_consent_display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDescription">user_consent_description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.userConsentDisplayName">user_consent_display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a></code> | *No description.* |
 
 ---
 
@@ -4697,10 +4697,10 @@ admin_consent_display_name_input: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4777,10 +4777,10 @@ admin_consent_display_name: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4837,10 +4837,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationApiOauth2PermissionScope]
+internal_value: IResolvable | ApplicationApiOauth2PermissionScope
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>
 
 ---
 
@@ -5082,13 +5082,13 @@ Returns a reversible string representation.
 
 ```python
 def put_oauth2_permission_scope(
-  value: typing.Union[IResolvable, typing.List[ApplicationApiOauth2PermissionScope]]
+  value: IResolvable | typing.List[ApplicationApiOauth2PermissionScope]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.ApplicationApiOutputReference.putOauth2PermissionScope.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]
 
 ---
 
@@ -5125,11 +5125,11 @@ def reset_requested_access_token_version() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.oauth2PermissionScope">oauth2_permission_scope</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScopeList">ApplicationApiOauth2PermissionScopeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.knownClientApplicationsInput">known_client_applications_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.mappedClaimsEnabledInput">mapped_claims_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.oauth2PermissionScopeInput">oauth2_permission_scope_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.mappedClaimsEnabledInput">mapped_claims_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.oauth2PermissionScopeInput">oauth2_permission_scope_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.requestedAccessTokenVersionInput">requested_access_token_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.knownClientApplications">known_client_applications</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.mappedClaimsEnabled">mapped_claims_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.mappedClaimsEnabled">mapped_claims_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationApi">ApplicationApi</a></code> | *No description.* |
 
@@ -5182,20 +5182,20 @@ known_client_applications_input: typing.List[str]
 ##### `mapped_claims_enabled_input`<sup>Optional</sup> <a name="mapped_claims_enabled_input" id="@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.mappedClaimsEnabledInput"></a>
 
 ```python
-mapped_claims_enabled_input: typing.Union[bool, IResolvable]
+mapped_claims_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `oauth2_permission_scope_input`<sup>Optional</sup> <a name="oauth2_permission_scope_input" id="@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.oauth2PermissionScopeInput"></a>
 
 ```python
-oauth2_permission_scope_input: typing.Union[IResolvable, typing.List[ApplicationApiOauth2PermissionScope]]
+oauth2_permission_scope_input: IResolvable | typing.List[ApplicationApiOauth2PermissionScope]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationApiOauth2PermissionScope">ApplicationApiOauth2PermissionScope</a>]
 
 ---
 
@@ -5222,10 +5222,10 @@ known_client_applications: typing.List[str]
 ##### `mapped_claims_enabled`<sup>Required</sup> <a name="mapped_claims_enabled" id="@cdktf/provider-azuread.application.ApplicationApiOutputReference.property.mappedClaimsEnabled"></a>
 
 ```python
-mapped_claims_enabled: typing.Union[bool, IResolvable]
+mapped_claims_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5381,7 +5381,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]</code> | *No description.* |
 
 ---
 
@@ -5412,10 +5412,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationAppRoleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationAppRole]]
+internal_value: IResolvable | typing.List[ApplicationAppRole]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]
 
 ---
 
@@ -5692,16 +5692,16 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.allowedMemberTypesInput">allowed_member_types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.allowedMemberTypes">allowed_member_types</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a></code> | *No description.* |
 
 ---
 
@@ -5762,10 +5762,10 @@ display_name_input: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5822,10 +5822,10 @@ display_name: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5852,10 +5852,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationAppRoleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationAppRole]
+internal_value: IResolvable | ApplicationAppRole
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationAppRole">ApplicationAppRole</a>
 
 ---
 
@@ -5991,7 +5991,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]</code> | *No description.* |
 
 ---
 
@@ -6022,10 +6022,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationFeatureTags]]
+internal_value: IResolvable | typing.List[ApplicationFeatureTags]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]
 
 ---
 
@@ -6313,15 +6313,15 @@ def reset_hide() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.customSingleSignOnInput">custom_single_sign_on_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterpriseInput">enterprise_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.galleryInput">gallery_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hideInput">hide_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterprise">enterprise</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.gallery">gallery</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hide">hide</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.customSingleSignOnInput">custom_single_sign_on_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterpriseInput">enterprise_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.galleryInput">gallery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hideInput">hide_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterprise">enterprise</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.gallery">gallery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hide">hide</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a></code> | *No description.* |
 
 ---
 
@@ -6352,90 +6352,90 @@ fqn: str
 ##### `custom_single_sign_on_input`<sup>Optional</sup> <a name="custom_single_sign_on_input" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.customSingleSignOnInput"></a>
 
 ```python
-custom_single_sign_on_input: typing.Union[bool, IResolvable]
+custom_single_sign_on_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enterprise_input`<sup>Optional</sup> <a name="enterprise_input" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterpriseInput"></a>
 
 ```python
-enterprise_input: typing.Union[bool, IResolvable]
+enterprise_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `gallery_input`<sup>Optional</sup> <a name="gallery_input" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.galleryInput"></a>
 
 ```python
-gallery_input: typing.Union[bool, IResolvable]
+gallery_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_input`<sup>Optional</sup> <a name="hide_input" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hideInput"></a>
 
 ```python
-hide_input: typing.Union[bool, IResolvable]
+hide_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `custom_single_sign_on`<sup>Required</sup> <a name="custom_single_sign_on" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.customSingleSignOn"></a>
 
 ```python
-custom_single_sign_on: typing.Union[bool, IResolvable]
+custom_single_sign_on: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enterprise`<sup>Required</sup> <a name="enterprise" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.enterprise"></a>
 
 ```python
-enterprise: typing.Union[bool, IResolvable]
+enterprise: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `gallery`<sup>Required</sup> <a name="gallery" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.gallery"></a>
 
 ```python
-gallery: typing.Union[bool, IResolvable]
+gallery: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide`<sup>Required</sup> <a name="hide" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.hide"></a>
 
 ```python
-hide: typing.Union[bool, IResolvable]
+hide: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationFeatureTagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationFeatureTags]
+internal_value: IResolvable | ApplicationFeatureTags
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationFeatureTags">ApplicationFeatureTags</a>
 
 ---
 
@@ -6571,7 +6571,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]</code> | *No description.* |
 
 ---
 
@@ -6602,10 +6602,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsAccessToken]]
+internal_value: IResolvable | typing.List[ApplicationOptionalClaimsAccessToken]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]
 
 ---
 
@@ -6887,14 +6887,14 @@ def reset_source() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.additionalPropertiesInput">additional_properties_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essentialInput">essential_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essentialInput">essential_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.additionalProperties">additional_properties</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essential">essential</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a></code> | *No description.* |
 
 ---
 
@@ -6935,10 +6935,10 @@ additional_properties_input: typing.List[str]
 ##### `essential_input`<sup>Optional</sup> <a name="essential_input" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essentialInput"></a>
 
 ```python
-essential_input: typing.Union[bool, IResolvable]
+essential_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6975,10 +6975,10 @@ additional_properties: typing.List[str]
 ##### `essential`<sup>Required</sup> <a name="essential" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.essential"></a>
 
 ```python
-essential: typing.Union[bool, IResolvable]
+essential: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7005,10 +7005,10 @@ source: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationOptionalClaimsAccessToken]
+internal_value: IResolvable | ApplicationOptionalClaimsAccessToken
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>
 
 ---
 
@@ -7144,7 +7144,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]</code> | *No description.* |
 
 ---
 
@@ -7175,10 +7175,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsIdToken]]
+internal_value: IResolvable | typing.List[ApplicationOptionalClaimsIdToken]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]
 
 ---
 
@@ -7460,14 +7460,14 @@ def reset_source() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.additionalPropertiesInput">additional_properties_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essentialInput">essential_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essentialInput">essential_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.additionalProperties">additional_properties</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essential">essential</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a></code> | *No description.* |
 
 ---
 
@@ -7508,10 +7508,10 @@ additional_properties_input: typing.List[str]
 ##### `essential_input`<sup>Optional</sup> <a name="essential_input" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essentialInput"></a>
 
 ```python
-essential_input: typing.Union[bool, IResolvable]
+essential_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7548,10 +7548,10 @@ additional_properties: typing.List[str]
 ##### `essential`<sup>Required</sup> <a name="essential" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.essential"></a>
 
 ```python
-essential: typing.Union[bool, IResolvable]
+essential: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7578,10 +7578,10 @@ source: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationOptionalClaimsIdToken]
+internal_value: IResolvable | ApplicationOptionalClaimsIdToken
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>
 
 ---
 
@@ -7824,13 +7824,13 @@ Returns a reversible string representation.
 
 ```python
 def put_access_token(
-  value: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsAccessToken]]
+  value: IResolvable | typing.List[ApplicationOptionalClaimsAccessToken]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.putAccessToken.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]
 
 ---
 
@@ -7838,13 +7838,13 @@ def put_access_token(
 
 ```python
 def put_id_token(
-  value: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsIdToken]]
+  value: IResolvable | typing.List[ApplicationOptionalClaimsIdToken]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.putIdToken.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]
 
 ---
 
@@ -7852,13 +7852,13 @@ def put_id_token(
 
 ```python
 def put_saml2_token(
-  value: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsSaml2Token]]
+  value: IResolvable | typing.List[ApplicationOptionalClaimsSaml2Token]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.putSaml2Token.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]
 
 ---
 
@@ -7890,9 +7890,9 @@ def reset_saml2_token() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.accessToken">access_token</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessTokenList">ApplicationOptionalClaimsAccessTokenList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.idToken">id_token</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdTokenList">ApplicationOptionalClaimsIdTokenList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.saml2Token">saml2_token</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenList">ApplicationOptionalClaimsSaml2TokenList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.accessTokenInput">access_token_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.idTokenInput">id_token_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.saml2TokenInput">saml2_token_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.accessTokenInput">access_token_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.idTokenInput">id_token_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.saml2TokenInput">saml2_token_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaims">ApplicationOptionalClaims</a></code> | *No description.* |
 
 ---
@@ -7954,30 +7954,30 @@ saml2_token: ApplicationOptionalClaimsSaml2TokenList
 ##### `access_token_input`<sup>Optional</sup> <a name="access_token_input" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.accessTokenInput"></a>
 
 ```python
-access_token_input: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsAccessToken]]
+access_token_input: IResolvable | typing.List[ApplicationOptionalClaimsAccessToken]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsAccessToken">ApplicationOptionalClaimsAccessToken</a>]
 
 ---
 
 ##### `id_token_input`<sup>Optional</sup> <a name="id_token_input" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.idTokenInput"></a>
 
 ```python
-id_token_input: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsIdToken]]
+id_token_input: IResolvable | typing.List[ApplicationOptionalClaimsIdToken]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsIdToken">ApplicationOptionalClaimsIdToken</a>]
 
 ---
 
 ##### `saml2_token_input`<sup>Optional</sup> <a name="saml2_token_input" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsOutputReference.property.saml2TokenInput"></a>
 
 ```python
-saml2_token_input: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsSaml2Token]]
+saml2_token_input: IResolvable | typing.List[ApplicationOptionalClaimsSaml2Token]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]
 
 ---
 
@@ -8123,7 +8123,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]</code> | *No description.* |
 
 ---
 
@@ -8154,10 +8154,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationOptionalClaimsSaml2Token]]
+internal_value: IResolvable | typing.List[ApplicationOptionalClaimsSaml2Token]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]
 
 ---
 
@@ -8439,14 +8439,14 @@ def reset_source() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.additionalPropertiesInput">additional_properties_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essentialInput">essential_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essentialInput">essential_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.additionalProperties">additional_properties</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essential">essential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essential">essential</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a></code> | *No description.* |
 
 ---
 
@@ -8487,10 +8487,10 @@ additional_properties_input: typing.List[str]
 ##### `essential_input`<sup>Optional</sup> <a name="essential_input" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essentialInput"></a>
 
 ```python
-essential_input: typing.Union[bool, IResolvable]
+essential_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8527,10 +8527,10 @@ additional_properties: typing.List[str]
 ##### `essential`<sup>Required</sup> <a name="essential" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.essential"></a>
 
 ```python
-essential: typing.Union[bool, IResolvable]
+essential: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8557,10 +8557,10 @@ source: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2TokenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationOptionalClaimsSaml2Token]
+internal_value: IResolvable | ApplicationOptionalClaimsSaml2Token
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationOptionalClaimsSaml2Token">ApplicationOptionalClaimsSaml2Token</a>
 
 ---
 
@@ -9375,7 +9375,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]</code> | *No description.* |
 
 ---
 
@@ -9406,10 +9406,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccess]]
+internal_value: IResolvable | typing.List[ApplicationRequiredResourceAccess]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]
 
 ---
 
@@ -9667,13 +9667,13 @@ Returns a reversible string representation.
 
 ```python
 def put_resource_access(
-  value: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccessResourceAccess]]
+  value: IResolvable | typing.List[ApplicationRequiredResourceAccessResourceAccess]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.putResourceAccess.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]
 
 ---
 
@@ -9685,10 +9685,10 @@ def put_resource_access(
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAccess">resource_access</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessList">ApplicationRequiredResourceAccessResourceAccessList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAccessInput">resource_access_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAccessInput">resource_access_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAppIdInput">resource_app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAppId">resource_app_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a></code> | *No description.* |
 
 ---
 
@@ -9729,10 +9729,10 @@ resource_access: ApplicationRequiredResourceAccessResourceAccessList
 ##### `resource_access_input`<sup>Optional</sup> <a name="resource_access_input" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.resourceAccessInput"></a>
 
 ```python
-resource_access_input: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccessResourceAccess]]
+resource_access_input: IResolvable | typing.List[ApplicationRequiredResourceAccessResourceAccess]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]
 
 ---
 
@@ -9759,10 +9759,10 @@ resource_app_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationRequiredResourceAccess]
+internal_value: IResolvable | ApplicationRequiredResourceAccess
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccess">ApplicationRequiredResourceAccess</a>
 
 ---
 
@@ -9898,7 +9898,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]</code> | *No description.* |
 
 ---
 
@@ -9929,10 +9929,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ApplicationRequiredResourceAccessResourceAccess]]
+internal_value: IResolvable | typing.List[ApplicationRequiredResourceAccessResourceAccess]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]
 
 ---
 
@@ -10196,7 +10196,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a></code> | *No description.* |
 
 ---
 
@@ -10267,10 +10267,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccessOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationRequiredResourceAccessResourceAccess]
+internal_value: IResolvable | ApplicationRequiredResourceAccessResourceAccess
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationRequiredResourceAccessResourceAccess">ApplicationRequiredResourceAccessResourceAccess</a>
 
 ---
 
@@ -10849,7 +10849,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -10960,10 +10960,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.application.ApplicationTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ApplicationTimeouts]
+internal_value: IResolvable | ApplicationTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.application.ApplicationTimeouts">ApplicationTimeouts</a>
 
 ---
 
@@ -11217,10 +11217,10 @@ def reset_id_token_issuance_enabled() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabledInput">access_token_issuance_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabledInput">id_token_issuance_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabled">access_token_issuance_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabled">id_token_issuance_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabledInput">access_token_issuance_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabledInput">id_token_issuance_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabled">access_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabled">id_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.application.ApplicationWebImplicitGrant">ApplicationWebImplicitGrant</a></code> | *No description.* |
 
 ---
@@ -11252,40 +11252,40 @@ fqn: str
 ##### `access_token_issuance_enabled_input`<sup>Optional</sup> <a name="access_token_issuance_enabled_input" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabledInput"></a>
 
 ```python
-access_token_issuance_enabled_input: typing.Union[bool, IResolvable]
+access_token_issuance_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `id_token_issuance_enabled_input`<sup>Optional</sup> <a name="id_token_issuance_enabled_input" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabledInput"></a>
 
 ```python
-id_token_issuance_enabled_input: typing.Union[bool, IResolvable]
+id_token_issuance_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_token_issuance_enabled`<sup>Required</sup> <a name="access_token_issuance_enabled" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.accessTokenIssuanceEnabled"></a>
 
 ```python
-access_token_issuance_enabled: typing.Union[bool, IResolvable]
+access_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `id_token_issuance_enabled`<sup>Required</sup> <a name="id_token_issuance_enabled" id="@cdktf/provider-azuread.application.ApplicationWebImplicitGrantOutputReference.property.idTokenIssuanceEnabled"></a>
 
 ```python
-id_token_issuance_enabled: typing.Union[bool, IResolvable]
+id_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11537,14 +11537,14 @@ Returns a reversible string representation.
 
 ```python
 def put_implicit_grant(
-  access_token_issuance_enabled: typing.Union[bool, IResolvable] = None,
-  id_token_issuance_enabled: typing.Union[bool, IResolvable] = None
+  access_token_issuance_enabled: bool | IResolvable = None,
+  id_token_issuance_enabled: bool | IResolvable = None
 ) -> None
 ```
 
 ###### `access_token_issuance_enabled`<sup>Optional</sup> <a name="access_token_issuance_enabled" id="@cdktf/provider-azuread.application.ApplicationWebOutputReference.putImplicitGrant.parameter.accessTokenIssuanceEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this web application can request an access token using OAuth 2.0 implicit flow.
 
@@ -11554,7 +11554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `id_token_issuance_enabled`<sup>Optional</sup> <a name="id_token_issuance_enabled" id="@cdktf/provider-azuread.application.ApplicationWebOutputReference.putImplicitGrant.parameter.idTokenIssuanceEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether this web application can request an ID token using OAuth 2.0 implicit flow.
 

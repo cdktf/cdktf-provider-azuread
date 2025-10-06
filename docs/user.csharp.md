@@ -310,7 +310,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azuread.user.User.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azuread.user.User.importFrom"></a>
@@ -364,7 +364,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azuread.user.User.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -379,7 +379,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-azuread.user.User.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -755,13 +755,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.aboutMe">AboutMe</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.creationType">CreationType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.externalUserState">ExternalUserState</a></code> | <code>string</code> | *No description.* |
@@ -776,7 +776,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.proxyAddresses">ProxyAddresses</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.userType">UserType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabledInput">AccountEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabledInput">AccountEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroupInput">AgeGroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhonesInput">BusinessPhonesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.cityInput">CityInput</a></code> | <code>string</code> | *No description.* |
@@ -785,15 +785,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.costCenterInput">CostCenterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.countryInput">CountryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.departmentInput">DepartmentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput">DisablePasswordExpirationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput">DisableStrongPasswordInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput">DisablePasswordExpirationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput">DisableStrongPasswordInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.divisionInput">DivisionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDateInput">EmployeeHireDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeIdInput">EmployeeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeTypeInput">EmployeeTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumberInput">FaxNumberInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput">ForcePasswordChangeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput">ForcePasswordChangeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.givenNameInput">GivenNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitleInput">JobTitleInput</a></code> | <code>string</code> | *No description.* |
@@ -807,14 +807,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.postalCodeInput">PostalCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguageInput">PreferredLanguageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressListInput">ShowInAddressListInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressListInput">ShowInAddressListInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.stateInput">StateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddressInput">StreetAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.surnameInput">SurnameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocationInput">UsageLocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalNameInput">UserPrincipalNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">AccountEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">AccountEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroup">AgeGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhones">BusinessPhones</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.city">City</a></code> | <code>string</code> | *No description.* |
@@ -823,15 +823,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.costCenter">CostCenter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.country">Country</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.department">Department</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.division">Division</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDate">EmployeeHireDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeId">EmployeeId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeType">EmployeeType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumber">FaxNumber</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.givenName">GivenName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitle">JobTitle</a></code> | <code>string</code> | *No description.* |
@@ -845,7 +845,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.postalCode">PostalCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguage">PreferredLanguage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressList">ShowInAddressList</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressList">ShowInAddressList</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddress">StreetAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.surname">Surname</a></code> | <code>string</code> | *No description.* |
@@ -929,20 +929,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.user.User.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.user.User.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -989,10 +989,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.user.User.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1139,10 +1139,10 @@ public string UserType { get; }
 ##### `AccountEnabledInput`<sup>Optional</sup> <a name="AccountEnabledInput" id="@cdktf/provider-azuread.user.User.property.accountEnabledInput"></a>
 
 ```csharp
-public object AccountEnabledInput { get; }
+public bool|IResolvable AccountEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1229,20 +1229,20 @@ public string DepartmentInput { get; }
 ##### `DisablePasswordExpirationInput`<sup>Optional</sup> <a name="DisablePasswordExpirationInput" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput"></a>
 
 ```csharp
-public object DisablePasswordExpirationInput { get; }
+public bool|IResolvable DisablePasswordExpirationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableStrongPasswordInput`<sup>Optional</sup> <a name="DisableStrongPasswordInput" id="@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput"></a>
 
 ```csharp
-public object DisableStrongPasswordInput { get; }
+public bool|IResolvable DisableStrongPasswordInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1309,10 +1309,10 @@ public string FaxNumberInput { get; }
 ##### `ForcePasswordChangeInput`<sup>Optional</sup> <a name="ForcePasswordChangeInput" id="@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput"></a>
 
 ```csharp
-public object ForcePasswordChangeInput { get; }
+public bool|IResolvable ForcePasswordChangeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1449,10 +1449,10 @@ public string PreferredLanguageInput { get; }
 ##### `ShowInAddressListInput`<sup>Optional</sup> <a name="ShowInAddressListInput" id="@cdktf/provider-azuread.user.User.property.showInAddressListInput"></a>
 
 ```csharp
-public object ShowInAddressListInput { get; }
+public bool|IResolvable ShowInAddressListInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1489,10 +1489,10 @@ public string SurnameInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azuread.user.User.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|UserTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
@@ -1519,10 +1519,10 @@ public string UserPrincipalNameInput { get; }
 ##### `AccountEnabled`<sup>Required</sup> <a name="AccountEnabled" id="@cdktf/provider-azuread.user.User.property.accountEnabled"></a>
 
 ```csharp
-public object AccountEnabled { get; }
+public bool|IResolvable AccountEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1609,20 +1609,20 @@ public string Department { get; }
 ##### `DisablePasswordExpiration`<sup>Required</sup> <a name="DisablePasswordExpiration" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpiration"></a>
 
 ```csharp
-public object DisablePasswordExpiration { get; }
+public bool|IResolvable DisablePasswordExpiration { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableStrongPassword`<sup>Required</sup> <a name="DisableStrongPassword" id="@cdktf/provider-azuread.user.User.property.disableStrongPassword"></a>
 
 ```csharp
-public object DisableStrongPassword { get; }
+public bool|IResolvable DisableStrongPassword { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1689,10 +1689,10 @@ public string FaxNumber { get; }
 ##### `ForcePasswordChange`<sup>Required</sup> <a name="ForcePasswordChange" id="@cdktf/provider-azuread.user.User.property.forcePasswordChange"></a>
 
 ```csharp
-public object ForcePasswordChange { get; }
+public bool|IResolvable ForcePasswordChange { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1829,10 +1829,10 @@ public string PreferredLanguage { get; }
 ##### `ShowInAddressList`<sup>Required</sup> <a name="ShowInAddressList" id="@cdktf/provider-azuread.user.User.property.showInAddressList"></a>
 
 ```csharp
-public object ShowInAddressList { get; }
+public bool|IResolvable ShowInAddressList { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1914,16 +1914,16 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Azuread;
 
 new UserConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string DisplayName,
     string UserPrincipalName,
-    object AccountEnabled = null,
+    bool|IResolvable AccountEnabled = null,
     string AgeGroup = null,
     string[] BusinessPhones = null,
     string City = null,
@@ -1932,14 +1932,14 @@ new UserConfig {
     string CostCenter = null,
     string Country = null,
     string Department = null,
-    object DisablePasswordExpiration = null,
-    object DisableStrongPassword = null,
+    bool|IResolvable DisablePasswordExpiration = null,
+    bool|IResolvable DisableStrongPassword = null,
     string Division = null,
     string EmployeeHireDate = null,
     string EmployeeId = null,
     string EmployeeType = null,
     string FaxNumber = null,
-    object ForcePasswordChange = null,
+    bool|IResolvable ForcePasswordChange = null,
     string GivenName = null,
     string Id = null,
     string JobTitle = null,
@@ -1953,7 +1953,7 @@ new UserConfig {
     string Password = null,
     string PostalCode = null,
     string PreferredLanguage = null,
-    object ShowInAddressList = null,
+    bool|IResolvable ShowInAddressList = null,
     string State = null,
     string StreetAddress = null,
     string Surname = null,
@@ -1966,16 +1966,16 @@ new UserConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The name to display in the address book for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.userPrincipalName">UserPrincipalName</a></code> | <code>string</code> | The user principal name (UPN) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.accountEnabled">AccountEnabled</a></code> | <code>object</code> | Whether or not the account should be enabled. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.accountEnabled">AccountEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether or not the account should be enabled. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.ageGroup">AgeGroup</a></code> | <code>string</code> | The age group of the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.businessPhones">BusinessPhones</a></code> | <code>string[]</code> | The telephone numbers for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.city">City</a></code> | <code>string</code> | The city in which the user is located. |
@@ -1984,14 +1984,14 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.costCenter">CostCenter</a></code> | <code>string</code> | The cost center associated with the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.country">Country</a></code> | <code>string</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.department">Department</a></code> | <code>string</code> | The name for the department in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>object</code> | Whether the users password is exempt from expiring. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>object</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the users password is exempt from expiring. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.division">Division</a></code> | <code>string</code> | The name of the division in which the user works. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate">EmployeeHireDate</a></code> | <code>string</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeId">EmployeeId</a></code> | <code>string</code> | The employee identifier assigned to the user by the organisation. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeType">EmployeeType</a></code> | <code>string</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.faxNumber">FaxNumber</a></code> | <code>string</code> | The fax number of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>object</code> | Whether the user is forced to change the password during the next sign-in. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.givenName">GivenName</a></code> | <code>string</code> | The given name (first name) of the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.jobTitle">JobTitle</a></code> | <code>string</code> | The user’s job title. |
@@ -2005,7 +2005,7 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.password">Password</a></code> | <code>string</code> | The password for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.postalCode">PostalCode</a></code> | <code>string</code> | The postal code for the user's postal address. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.preferredLanguage">PreferredLanguage</a></code> | <code>string</code> | The user's preferred language, in ISO 639-1 notation. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.showInAddressList">ShowInAddressList</a></code> | <code>object</code> | Whether or not the Outlook global address list should include this user. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.showInAddressList">ShowInAddressList</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether or not the Outlook global address list should include this user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.state">State</a></code> | <code>string</code> | The state or province in the user's address. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.streetAddress">StreetAddress</a></code> | <code>string</code> | The street address of the user's place of business. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.surname">Surname</a></code> | <code>string</code> | The user's surname (family name or last name). |
@@ -2017,20 +2017,20 @@ new UserConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.user.UserConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.user.UserConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2077,10 +2077,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.user.UserConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2115,10 +2115,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AccountEnabled`<sup>Optional</sup> <a name="AccountEnabled" id="@cdktf/provider-azuread.user.UserConfig.property.accountEnabled"></a>
 
 ```csharp
-public object AccountEnabled { get; set; }
+public bool|IResolvable AccountEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether or not the account should be enabled.
 
@@ -2245,10 +2245,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisablePasswordExpiration`<sup>Optional</sup> <a name="DisablePasswordExpiration" id="@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration"></a>
 
 ```csharp
-public object DisablePasswordExpiration { get; set; }
+public bool|IResolvable DisablePasswordExpiration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the users password is exempt from expiring.
 
@@ -2259,10 +2259,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableStrongPassword`<sup>Optional</sup> <a name="DisableStrongPassword" id="@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword"></a>
 
 ```csharp
-public object DisableStrongPassword { get; set; }
+public bool|IResolvable DisableStrongPassword { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the user is allowed weaker passwords than the default policy to be specified.
 
@@ -2343,10 +2343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ForcePasswordChange`<sup>Optional</sup> <a name="ForcePasswordChange" id="@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange"></a>
 
 ```csharp
-public object ForcePasswordChange { get; set; }
+public bool|IResolvable ForcePasswordChange { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the user is forced to change the password during the next sign-in.
 
@@ -2548,10 +2548,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ShowInAddressList`<sup>Optional</sup> <a name="ShowInAddressList" id="@cdktf/provider-azuread.user.UserConfig.property.showInAddressList"></a>
 
 ```csharp
-public object ShowInAddressList { get; set; }
+public bool|IResolvable ShowInAddressList { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether or not the Outlook global address list should include this user.
 
@@ -2953,7 +2953,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3064,10 +3064,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|UserTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 

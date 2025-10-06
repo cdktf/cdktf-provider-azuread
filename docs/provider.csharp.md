@@ -428,7 +428,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput">ClientSecretFilePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">DisableTerraformPartnerIdInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">DisableTerraformPartnerIdInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environmentInput">EnvironmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHostInput">MetadataHostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpointInput">MsiEndpointInput</a></code> | <code>string</code> | *No description.* |
@@ -438,10 +438,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenInput">OidcTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerIdInput">PartnerIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantIdInput">TenantIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">UseAksWorkloadIdentityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput">UseCliInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput">UseMsiInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput">UseOidcInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">UseAksWorkloadIdentityInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput">UseCliInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput">UseMsiInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput">UseOidcInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionId">AdoPipelineServiceConnectionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificate">ClientCertificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword">ClientCertificatePassword</a></code> | <code>string</code> | *No description.* |
@@ -450,7 +450,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePath">ClientIdFilePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath">ClientSecretFilePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environment">Environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost">MetadataHost</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpoint">MsiEndpoint</a></code> | <code>string</code> | *No description.* |
@@ -460,10 +460,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePath">OidcTokenFilePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerId">PartnerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantId">TenantId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCli">UseCli</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi">UseMsi</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc">UseOidc</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCli">UseCli</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi">UseMsi</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc">UseOidc</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -652,10 +652,10 @@ public string ClientSecretInput { get; }
 ##### `DisableTerraformPartnerIdInput`<sup>Optional</sup> <a name="DisableTerraformPartnerIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput"></a>
 
 ```csharp
-public object DisableTerraformPartnerIdInput { get; }
+public bool|IResolvable DisableTerraformPartnerIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -752,40 +752,40 @@ public string TenantIdInput { get; }
 ##### `UseAksWorkloadIdentityInput`<sup>Optional</sup> <a name="UseAksWorkloadIdentityInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput"></a>
 
 ```csharp
-public object UseAksWorkloadIdentityInput { get; }
+public bool|IResolvable UseAksWorkloadIdentityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseCliInput`<sup>Optional</sup> <a name="UseCliInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput"></a>
 
 ```csharp
-public object UseCliInput { get; }
+public bool|IResolvable UseCliInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseMsiInput`<sup>Optional</sup> <a name="UseMsiInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput"></a>
 
 ```csharp
-public object UseMsiInput { get; }
+public bool|IResolvable UseMsiInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseOidcInput`<sup>Optional</sup> <a name="UseOidcInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput"></a>
 
 ```csharp
-public object UseOidcInput { get; }
+public bool|IResolvable UseOidcInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -872,10 +872,10 @@ public string ClientSecretFilePath { get; }
 ##### `DisableTerraformPartnerId`<sup>Optional</sup> <a name="DisableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId"></a>
 
 ```csharp
-public object DisableTerraformPartnerId { get; }
+public bool|IResolvable DisableTerraformPartnerId { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -972,40 +972,40 @@ public string TenantId { get; }
 ##### `UseAksWorkloadIdentity`<sup>Optional</sup> <a name="UseAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity"></a>
 
 ```csharp
-public object UseAksWorkloadIdentity { get; }
+public bool|IResolvable UseAksWorkloadIdentity { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseCli`<sup>Optional</sup> <a name="UseCli" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCli"></a>
 
 ```csharp
-public object UseCli { get; }
+public bool|IResolvable UseCli { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi"></a>
 
 ```csharp
-public object UseMsi { get; }
+public bool|IResolvable UseMsi { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseOidc`<sup>Optional</sup> <a name="UseOidc" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc"></a>
 
 ```csharp
-public object UseOidc { get; }
+public bool|IResolvable UseOidc { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1046,7 +1046,7 @@ new AzureadProviderConfig {
     string ClientIdFilePath = null,
     string ClientSecret = null,
     string ClientSecretFilePath = null,
-    object DisableTerraformPartnerId = null,
+    bool|IResolvable DisableTerraformPartnerId = null,
     string Environment = null,
     string MetadataHost = null,
     string MsiEndpoint = null,
@@ -1056,10 +1056,10 @@ new AzureadProviderConfig {
     string OidcTokenFilePath = null,
     string PartnerId = null,
     string TenantId = null,
-    object UseAksWorkloadIdentity = null,
-    object UseCli = null,
-    object UseMsi = null,
-    object UseOidc = null
+    bool|IResolvable UseAksWorkloadIdentity = null,
+    bool|IResolvable UseCli = null,
+    bool|IResolvable UseMsi = null,
+    bool|IResolvable UseOidc = null
 };
 ```
 
@@ -1076,7 +1076,7 @@ new AzureadProviderConfig {
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath">ClientIdFilePath</a></code> | <code>string</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath">ClientSecretFilePath</a></code> | <code>string</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>object</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.environment">Environment</a></code> | <code>string</code> | The cloud environment which should be used. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost">MetadataHost</a></code> | <code>string</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint">MsiEndpoint</a></code> | <code>string</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
@@ -1086,10 +1086,10 @@ new AzureadProviderConfig {
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcTokenFilePath">OidcTokenFilePath</a></code> | <code>string</code> | The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.partnerId">PartnerId</a></code> | <code>string</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.tenantId">TenantId</a></code> | <code>string</code> | The Tenant ID which should be used. Works with all authentication methods except Managed Identity. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>object</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli">UseCli</a></code> | <code>object</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi">UseMsi</a></code> | <code>object</code> | Allow Managed Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc">UseOidc</a></code> | <code>object</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli">UseCli</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi">UseMsi</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow Managed Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc">UseOidc</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
@@ -1222,10 +1222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableTerraformPartnerId`<sup>Optional</sup> <a name="DisableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId"></a>
 
 ```csharp
-public object DisableTerraformPartnerId { get; set; }
+public bool|IResolvable DisableTerraformPartnerId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified.
 
@@ -1368,10 +1368,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseAksWorkloadIdentity`<sup>Optional</sup> <a name="UseAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity"></a>
 
 ```csharp
-public object UseAksWorkloadIdentity { get; set; }
+public bool|IResolvable UseAksWorkloadIdentity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
@@ -1382,10 +1382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseCli`<sup>Optional</sup> <a name="UseCli" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli"></a>
 
 ```csharp
-public object UseCli { get; set; }
+public bool|IResolvable UseCli { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow Azure CLI to be used for Authentication.
 
@@ -1396,10 +1396,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi"></a>
 
 ```csharp
-public object UseMsi { get; set; }
+public bool|IResolvable UseMsi { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow Managed Identity to be used for Authentication.
 
@@ -1410,10 +1410,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseOidc`<sup>Optional</sup> <a name="UseOidc" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc"></a>
 
 ```csharp
-public object UseOidc { get; set; }
+public bool|IResolvable UseOidc { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow OpenID Connect to be used for authentication.
 
