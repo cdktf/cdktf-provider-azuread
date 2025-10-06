@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_azuread import user
 user.User(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   user_principal_name: str,
-  account_enabled: typing.Union[bool, IResolvable] = None,
+  account_enabled: bool | IResolvable = None,
   age_group: str = None,
   business_phones: typing.List[str] = None,
   city: str = None,
@@ -32,14 +32,14 @@ user.User(
   cost_center: str = None,
   country: str = None,
   department: str = None,
-  disable_password_expiration: typing.Union[bool, IResolvable] = None,
-  disable_strong_password: typing.Union[bool, IResolvable] = None,
+  disable_password_expiration: bool | IResolvable = None,
+  disable_strong_password: bool | IResolvable = None,
   division: str = None,
   employee_hire_date: str = None,
   employee_id: str = None,
   employee_type: str = None,
   fax_number: str = None,
-  force_password_change: typing.Union[bool, IResolvable] = None,
+  force_password_change: bool | IResolvable = None,
   given_name: str = None,
   id: str = None,
   job_title: str = None,
@@ -53,7 +53,7 @@ user.User(
   password: str = None,
   postal_code: str = None,
   preferred_language: str = None,
-  show_in_address_list: typing.Union[bool, IResolvable] = None,
+  show_in_address_list: bool | IResolvable = None,
   state: str = None,
   street_address: str = None,
   surname: str = None,
@@ -66,16 +66,16 @@ user.User(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The name to display in the address book for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.userPrincipalName">user_principal_name</a></code> | <code>str</code> | The user principal name (UPN) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.accountEnabled">account_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not the account should be enabled. |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the account should be enabled. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.ageGroup">age_group</a></code> | <code>str</code> | The age group of the user. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | The telephone numbers for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.city">city</a></code> | <code>str</code> | The city in which the user is located. |
@@ -84,14 +84,14 @@ user.User(
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.costCenter">cost_center</a></code> | <code>str</code> | The cost center associated with the user. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.country">country</a></code> | <code>str</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.department">department</a></code> | <code>str</code> | The name for the department in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.disablePasswordExpiration">disable_password_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the users password is exempt from expiring. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.disableStrongPassword">disable_strong_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the users password is exempt from expiring. |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.division">division</a></code> | <code>str</code> | The name of the division in which the user works. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.employeeId">employee_id</a></code> | <code>str</code> | The employee identifier assigned to the user by the organisation. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.employeeType">employee_type</a></code> | <code>str</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.faxNumber">fax_number</a></code> | <code>str</code> | The fax number of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.forcePasswordChange">force_password_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the user is forced to change the password during the next sign-in. |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.givenName">given_name</a></code> | <code>str</code> | The given name (first name) of the user. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.jobTitle">job_title</a></code> | <code>str</code> | The user’s job title. |
@@ -105,7 +105,7 @@ user.User(
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.password">password</a></code> | <code>str</code> | The password for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.postalCode">postal_code</a></code> | <code>str</code> | The postal code for the user's postal address. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.preferredLanguage">preferred_language</a></code> | <code>str</code> | The user's preferred language, in ISO 639-1 notation. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.showInAddressList">show_in_address_list</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not the Outlook global address list should include this user. |
+| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the Outlook global address list should include this user. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.state">state</a></code> | <code>str</code> | The state or province in the user's address. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.streetAddress">street_address</a></code> | <code>str</code> | The street address of the user's place of business. |
 | <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.surname">surname</a></code> | <code>str</code> | The user's surname (family name or last name). |
@@ -134,13 +134,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.user.User.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.user.User.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -170,7 +170,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.user.User.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktf/provider-azuread.user.User.Initializer.parameter.accountEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not the account should be enabled.
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_password_expiration`<sup>Optional</sup> <a name="disable_password_expiration" id="@cdktf/provider-azuread.user.User.Initializer.parameter.disablePasswordExpiration"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the users password is exempt from expiring.
 
@@ -300,7 +300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_strong_password`<sup>Optional</sup> <a name="disable_strong_password" id="@cdktf/provider-azuread.user.User.Initializer.parameter.disableStrongPassword"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the user is allowed weaker passwords than the default policy to be specified.
 
@@ -360,7 +360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `force_password_change`<sup>Optional</sup> <a name="force_password_change" id="@cdktf/provider-azuread.user.User.Initializer.parameter.forcePasswordChange"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the user is forced to change the password during the next sign-in.
 
@@ -509,7 +509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `show_in_address_list`<sup>Optional</sup> <a name="show_in_address_list" id="@cdktf/provider-azuread.user.User.Initializer.parameter.showInAddressList"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not the Outlook global address list should include this user.
 
@@ -858,7 +858,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.user.User.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.user.User.importFrom"></a>
@@ -921,7 +921,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -937,7 +937,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.user.User.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1357,13 +1357,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.aboutMe">about_me</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.creationType">creation_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.externalUserState">external_user_state</a></code> | <code>str</code> | *No description.* |
@@ -1378,7 +1378,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.userType">user_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabledInput">account_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabledInput">account_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroupInput">age_group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhonesInput">business_phones_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.cityInput">city_input</a></code> | <code>str</code> | *No description.* |
@@ -1387,15 +1387,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.costCenterInput">cost_center_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.countryInput">country_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.departmentInput">department_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput">disable_password_expiration_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput">disable_strong_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput">disable_password_expiration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput">disable_strong_password_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.divisionInput">division_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDateInput">employee_hire_date_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeIdInput">employee_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeTypeInput">employee_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumberInput">fax_number_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput">force_password_change_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput">force_password_change_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.givenNameInput">given_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitleInput">job_title_input</a></code> | <code>str</code> | *No description.* |
@@ -1409,14 +1409,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.postalCodeInput">postal_code_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguageInput">preferred_language_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressListInput">show_in_address_list_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressListInput">show_in_address_list_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddressInput">street_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.surnameInput">surname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocationInput">usage_location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalNameInput">user_principal_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">account_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroup">age_group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.city">city</a></code> | <code>str</code> | *No description.* |
@@ -1425,15 +1425,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.costCenter">cost_center</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.country">country</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.department">department</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPassword">disable_strong_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.division">division</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeId">employee_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.employeeType">employee_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumber">fax_number</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChange">force_password_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.givenName">given_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitle">job_title</a></code> | <code>str</code> | *No description.* |
@@ -1447,7 +1447,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.user.User.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.postalCode">postal_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressList">show_in_address_list</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddress">street_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.User.property.surname">surname</a></code> | <code>str</code> | *No description.* |
@@ -1531,20 +1531,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.user.User.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.user.User.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1591,10 +1591,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.user.User.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1741,10 +1741,10 @@ user_type: str
 ##### `account_enabled_input`<sup>Optional</sup> <a name="account_enabled_input" id="@cdktf/provider-azuread.user.User.property.accountEnabledInput"></a>
 
 ```python
-account_enabled_input: typing.Union[bool, IResolvable]
+account_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1831,20 +1831,20 @@ department_input: str
 ##### `disable_password_expiration_input`<sup>Optional</sup> <a name="disable_password_expiration_input" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput"></a>
 
 ```python
-disable_password_expiration_input: typing.Union[bool, IResolvable]
+disable_password_expiration_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_strong_password_input`<sup>Optional</sup> <a name="disable_strong_password_input" id="@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput"></a>
 
 ```python
-disable_strong_password_input: typing.Union[bool, IResolvable]
+disable_strong_password_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1911,10 +1911,10 @@ fax_number_input: str
 ##### `force_password_change_input`<sup>Optional</sup> <a name="force_password_change_input" id="@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput"></a>
 
 ```python
-force_password_change_input: typing.Union[bool, IResolvable]
+force_password_change_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2051,10 +2051,10 @@ preferred_language_input: str
 ##### `show_in_address_list_input`<sup>Optional</sup> <a name="show_in_address_list_input" id="@cdktf/provider-azuread.user.User.property.showInAddressListInput"></a>
 
 ```python
-show_in_address_list_input: typing.Union[bool, IResolvable]
+show_in_address_list_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2091,10 +2091,10 @@ surname_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.user.User.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, UserTimeouts]
+timeouts_input: IResolvable | UserTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
@@ -2121,10 +2121,10 @@ user_principal_name_input: str
 ##### `account_enabled`<sup>Required</sup> <a name="account_enabled" id="@cdktf/provider-azuread.user.User.property.accountEnabled"></a>
 
 ```python
-account_enabled: typing.Union[bool, IResolvable]
+account_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2211,20 +2211,20 @@ department: str
 ##### `disable_password_expiration`<sup>Required</sup> <a name="disable_password_expiration" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpiration"></a>
 
 ```python
-disable_password_expiration: typing.Union[bool, IResolvable]
+disable_password_expiration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_strong_password`<sup>Required</sup> <a name="disable_strong_password" id="@cdktf/provider-azuread.user.User.property.disableStrongPassword"></a>
 
 ```python
-disable_strong_password: typing.Union[bool, IResolvable]
+disable_strong_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2291,10 +2291,10 @@ fax_number: str
 ##### `force_password_change`<sup>Required</sup> <a name="force_password_change" id="@cdktf/provider-azuread.user.User.property.forcePasswordChange"></a>
 
 ```python
-force_password_change: typing.Union[bool, IResolvable]
+force_password_change: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2431,10 +2431,10 @@ preferred_language: str
 ##### `show_in_address_list`<sup>Required</sup> <a name="show_in_address_list" id="@cdktf/provider-azuread.user.User.property.showInAddressList"></a>
 
 ```python
-show_in_address_list: typing.Union[bool, IResolvable]
+show_in_address_list: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2516,16 +2516,16 @@ tfResourceType: str
 from cdktf_cdktf_provider_azuread import user
 
 user.UserConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   user_principal_name: str,
-  account_enabled: typing.Union[bool, IResolvable] = None,
+  account_enabled: bool | IResolvable = None,
   age_group: str = None,
   business_phones: typing.List[str] = None,
   city: str = None,
@@ -2534,14 +2534,14 @@ user.UserConfig(
   cost_center: str = None,
   country: str = None,
   department: str = None,
-  disable_password_expiration: typing.Union[bool, IResolvable] = None,
-  disable_strong_password: typing.Union[bool, IResolvable] = None,
+  disable_password_expiration: bool | IResolvable = None,
+  disable_strong_password: bool | IResolvable = None,
   division: str = None,
   employee_hire_date: str = None,
   employee_id: str = None,
   employee_type: str = None,
   fax_number: str = None,
-  force_password_change: typing.Union[bool, IResolvable] = None,
+  force_password_change: bool | IResolvable = None,
   given_name: str = None,
   id: str = None,
   job_title: str = None,
@@ -2555,7 +2555,7 @@ user.UserConfig(
   password: str = None,
   postal_code: str = None,
   preferred_language: str = None,
-  show_in_address_list: typing.Union[bool, IResolvable] = None,
+  show_in_address_list: bool | IResolvable = None,
   state: str = None,
   street_address: str = None,
   surname: str = None,
@@ -2568,16 +2568,16 @@ user.UserConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | The name to display in the address book for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.userPrincipalName">user_principal_name</a></code> | <code>str</code> | The user principal name (UPN) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.accountEnabled">account_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not the account should be enabled. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the account should be enabled. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.ageGroup">age_group</a></code> | <code>str</code> | The age group of the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | The telephone numbers for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.city">city</a></code> | <code>str</code> | The city in which the user is located. |
@@ -2586,14 +2586,14 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.costCenter">cost_center</a></code> | <code>str</code> | The cost center associated with the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.country">country</a></code> | <code>str</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.department">department</a></code> | <code>str</code> | The name for the department in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the users password is exempt from expiring. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword">disable_strong_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the users password is exempt from expiring. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.division">division</a></code> | <code>str</code> | The name of the division in which the user works. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeId">employee_id</a></code> | <code>str</code> | The employee identifier assigned to the user by the organisation. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeType">employee_type</a></code> | <code>str</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.faxNumber">fax_number</a></code> | <code>str</code> | The fax number of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange">force_password_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the user is forced to change the password during the next sign-in. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.givenName">given_name</a></code> | <code>str</code> | The given name (first name) of the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.jobTitle">job_title</a></code> | <code>str</code> | The user’s job title. |
@@ -2607,7 +2607,7 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.password">password</a></code> | <code>str</code> | The password for the user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.postalCode">postal_code</a></code> | <code>str</code> | The postal code for the user's postal address. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | The user's preferred language, in ISO 639-1 notation. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.showInAddressList">show_in_address_list</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not the Outlook global address list should include this user. |
+| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the Outlook global address list should include this user. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.state">state</a></code> | <code>str</code> | The state or province in the user's address. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.streetAddress">street_address</a></code> | <code>str</code> | The street address of the user's place of business. |
 | <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.surname">surname</a></code> | <code>str</code> | The user's surname (family name or last name). |
@@ -2619,20 +2619,20 @@ user.UserConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.user.UserConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.user.UserConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2679,10 +2679,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.user.UserConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2717,10 +2717,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktf/provider-azuread.user.UserConfig.property.accountEnabled"></a>
 
 ```python
-account_enabled: typing.Union[bool, IResolvable]
+account_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not the account should be enabled.
 
@@ -2847,10 +2847,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `disable_password_expiration`<sup>Optional</sup> <a name="disable_password_expiration" id="@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration"></a>
 
 ```python
-disable_password_expiration: typing.Union[bool, IResolvable]
+disable_password_expiration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the users password is exempt from expiring.
 
@@ -2861,10 +2861,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `disable_strong_password`<sup>Optional</sup> <a name="disable_strong_password" id="@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword"></a>
 
 ```python
-disable_strong_password: typing.Union[bool, IResolvable]
+disable_strong_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the user is allowed weaker passwords than the default policy to be specified.
 
@@ -2945,10 +2945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `force_password_change`<sup>Optional</sup> <a name="force_password_change" id="@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange"></a>
 
 ```python
-force_password_change: typing.Union[bool, IResolvable]
+force_password_change: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the user is forced to change the password during the next sign-in.
 
@@ -3150,10 +3150,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `show_in_address_list`<sup>Optional</sup> <a name="show_in_address_list" id="@cdktf/provider-azuread.user.UserConfig.property.showInAddressList"></a>
 
 ```python
-show_in_address_list: typing.Union[bool, IResolvable]
+show_in_address_list: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not the Outlook global address list should include this user.
 
@@ -3580,7 +3580,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3691,10 +3691,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, UserTimeouts]
+internal_value: IResolvable | UserTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 

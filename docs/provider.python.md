@@ -23,7 +23,7 @@ provider.AzureadProvider(
   client_id_file_path: str = None,
   client_secret: str = None,
   client_secret_file_path: str = None,
-  disable_terraform_partner_id: typing.Union[bool, IResolvable] = None,
+  disable_terraform_partner_id: bool | IResolvable = None,
   environment: str = None,
   metadata_host: str = None,
   msi_endpoint: str = None,
@@ -33,10 +33,10 @@ provider.AzureadProvider(
   oidc_token_file_path: str = None,
   partner_id: str = None,
   tenant_id: str = None,
-  use_aks_workload_identity: typing.Union[bool, IResolvable] = None,
-  use_cli: typing.Union[bool, IResolvable] = None,
-  use_msi: typing.Union[bool, IResolvable] = None,
-  use_oidc: typing.Union[bool, IResolvable] = None
+  use_aks_workload_identity: bool | IResolvable = None,
+  use_cli: bool | IResolvable = None,
+  use_msi: bool | IResolvable = None,
+  use_oidc: bool | IResolvable = None
 )
 ```
 
@@ -53,7 +53,7 @@ provider.AzureadProvider(
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.clientIdFilePath">client_id_file_path</a></code> | <code>str</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.clientSecretFilePath">client_secret_file_path</a></code> | <code>str</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.environment">environment</a></code> | <code>str</code> | The cloud environment which should be used. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.metadataHost">metadata_host</a></code> | <code>str</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
@@ -63,10 +63,10 @@ provider.AzureadProvider(
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.oidcTokenFilePath">oidc_token_file_path</a></code> | <code>str</code> | The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.partnerId">partner_id</a></code> | <code>str</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | The Tenant ID which should be used. Works with all authentication methods except Managed Identity. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useCli">use_cli</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useMsi">use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Managed Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useOidc">use_oidc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useCli">use_cli</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Managed Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useOidc">use_oidc</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_terraform_partner_id`<sup>Optional</sup> <a name="disable_terraform_partner_id" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.disableTerraformPartnerId"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified.
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_aks_workload_identity`<sup>Optional</sup> <a name="use_aks_workload_identity" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useAksWorkloadIdentity"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_cli`<sup>Optional</sup> <a name="use_cli" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useCli"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Azure CLI to be used for Authentication.
 
@@ -306,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_msi`<sup>Optional</sup> <a name="use_msi" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useMsi"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Managed Identity to be used for Authentication.
 
@@ -316,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_oidc`<sup>Optional</sup> <a name="use_oidc" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useOidc"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow OpenID Connect to be used for authentication.
 
@@ -722,7 +722,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput">client_secret_file_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">disable_terraform_partner_id_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">disable_terraform_partner_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHostInput">metadata_host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpointInput">msi_endpoint_input</a></code> | <code>str</code> | *No description.* |
@@ -732,10 +732,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenInput">oidc_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerIdInput">partner_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">use_aks_workload_identity_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput">use_cli_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput">use_msi_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput">use_oidc_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">use_aks_workload_identity_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput">use_cli_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput">use_msi_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput">use_oidc_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionId">ado_pipeline_service_connection_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificate">client_certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword">client_certificate_password</a></code> | <code>str</code> | *No description.* |
@@ -744,7 +744,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePath">client_id_file_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath">client_secret_file_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost">metadata_host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | *No description.* |
@@ -754,10 +754,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePath">oidc_token_file_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerId">partner_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCli">use_cli</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi">use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc">use_oidc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCli">use_cli</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc">use_oidc</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -946,10 +946,10 @@ client_secret_input: str
 ##### `disable_terraform_partner_id_input`<sup>Optional</sup> <a name="disable_terraform_partner_id_input" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput"></a>
 
 ```python
-disable_terraform_partner_id_input: typing.Union[bool, IResolvable]
+disable_terraform_partner_id_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1046,40 +1046,40 @@ tenant_id_input: str
 ##### `use_aks_workload_identity_input`<sup>Optional</sup> <a name="use_aks_workload_identity_input" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput"></a>
 
 ```python
-use_aks_workload_identity_input: typing.Union[bool, IResolvable]
+use_aks_workload_identity_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_cli_input`<sup>Optional</sup> <a name="use_cli_input" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput"></a>
 
 ```python
-use_cli_input: typing.Union[bool, IResolvable]
+use_cli_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_msi_input`<sup>Optional</sup> <a name="use_msi_input" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput"></a>
 
 ```python
-use_msi_input: typing.Union[bool, IResolvable]
+use_msi_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_oidc_input`<sup>Optional</sup> <a name="use_oidc_input" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput"></a>
 
 ```python
-use_oidc_input: typing.Union[bool, IResolvable]
+use_oidc_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1166,10 +1166,10 @@ client_secret_file_path: str
 ##### `disable_terraform_partner_id`<sup>Optional</sup> <a name="disable_terraform_partner_id" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId"></a>
 
 ```python
-disable_terraform_partner_id: typing.Union[bool, IResolvable]
+disable_terraform_partner_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1266,40 +1266,40 @@ tenant_id: str
 ##### `use_aks_workload_identity`<sup>Optional</sup> <a name="use_aks_workload_identity" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity"></a>
 
 ```python
-use_aks_workload_identity: typing.Union[bool, IResolvable]
+use_aks_workload_identity: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_cli`<sup>Optional</sup> <a name="use_cli" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCli"></a>
 
 ```python
-use_cli: typing.Union[bool, IResolvable]
+use_cli: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_msi`<sup>Optional</sup> <a name="use_msi" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi"></a>
 
 ```python
-use_msi: typing.Union[bool, IResolvable]
+use_msi: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_oidc`<sup>Optional</sup> <a name="use_oidc" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc"></a>
 
 ```python
-use_oidc: typing.Union[bool, IResolvable]
+use_oidc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1340,7 +1340,7 @@ provider.AzureadProviderConfig(
   client_id_file_path: str = None,
   client_secret: str = None,
   client_secret_file_path: str = None,
-  disable_terraform_partner_id: typing.Union[bool, IResolvable] = None,
+  disable_terraform_partner_id: bool | IResolvable = None,
   environment: str = None,
   metadata_host: str = None,
   msi_endpoint: str = None,
@@ -1350,10 +1350,10 @@ provider.AzureadProviderConfig(
   oidc_token_file_path: str = None,
   partner_id: str = None,
   tenant_id: str = None,
-  use_aks_workload_identity: typing.Union[bool, IResolvable] = None,
-  use_cli: typing.Union[bool, IResolvable] = None,
-  use_msi: typing.Union[bool, IResolvable] = None,
-  use_oidc: typing.Union[bool, IResolvable] = None
+  use_aks_workload_identity: bool | IResolvable = None,
+  use_cli: bool | IResolvable = None,
+  use_msi: bool | IResolvable = None,
+  use_oidc: bool | IResolvable = None
 )
 ```
 
@@ -1370,7 +1370,7 @@ provider.AzureadProviderConfig(
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath">client_id_file_path</a></code> | <code>str</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath">client_secret_file_path</a></code> | <code>str</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.environment">environment</a></code> | <code>str</code> | The cloud environment which should be used. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost">metadata_host</a></code> | <code>str</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
@@ -1380,10 +1380,10 @@ provider.AzureadProviderConfig(
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcTokenFilePath">oidc_token_file_path</a></code> | <code>str</code> | The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.partnerId">partner_id</a></code> | <code>str</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.tenantId">tenant_id</a></code> | <code>str</code> | The Tenant ID which should be used. Works with all authentication methods except Managed Identity. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli">use_cli</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi">use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Managed Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc">use_oidc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli">use_cli</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Managed Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc">use_oidc</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
@@ -1516,10 +1516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `disable_terraform_partner_id`<sup>Optional</sup> <a name="disable_terraform_partner_id" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId"></a>
 
 ```python
-disable_terraform_partner_id: typing.Union[bool, IResolvable]
+disable_terraform_partner_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified.
 
@@ -1662,10 +1662,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_aks_workload_identity`<sup>Optional</sup> <a name="use_aks_workload_identity" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity"></a>
 
 ```python
-use_aks_workload_identity: typing.Union[bool, IResolvable]
+use_aks_workload_identity: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
@@ -1676,10 +1676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_cli`<sup>Optional</sup> <a name="use_cli" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli"></a>
 
 ```python
-use_cli: typing.Union[bool, IResolvable]
+use_cli: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Azure CLI to be used for Authentication.
 
@@ -1690,10 +1690,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_msi`<sup>Optional</sup> <a name="use_msi" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi"></a>
 
 ```python
-use_msi: typing.Union[bool, IResolvable]
+use_msi: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Managed Identity to be used for Authentication.
 
@@ -1704,10 +1704,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_oidc`<sup>Optional</sup> <a name="use_oidc" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc"></a>
 
 ```python
-use_oidc: typing.Union[bool, IResolvable]
+use_oidc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow OpenID Connect to be used for authentication.
 

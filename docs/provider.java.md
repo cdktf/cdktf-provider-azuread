@@ -21,8 +21,7 @@ AzureadProvider.Builder.create(Construct scope, java.lang.String id)
 //  .clientIdFilePath(java.lang.String)
 //  .clientSecret(java.lang.String)
 //  .clientSecretFilePath(java.lang.String)
-//  .disableTerraformPartnerId(java.lang.Boolean)
-//  .disableTerraformPartnerId(IResolvable)
+//  .disableTerraformPartnerId(java.lang.Boolean|IResolvable)
 //  .environment(java.lang.String)
 //  .metadataHost(java.lang.String)
 //  .msiEndpoint(java.lang.String)
@@ -32,14 +31,10 @@ AzureadProvider.Builder.create(Construct scope, java.lang.String id)
 //  .oidcTokenFilePath(java.lang.String)
 //  .partnerId(java.lang.String)
 //  .tenantId(java.lang.String)
-//  .useAksWorkloadIdentity(java.lang.Boolean)
-//  .useAksWorkloadIdentity(IResolvable)
-//  .useCli(java.lang.Boolean)
-//  .useCli(IResolvable)
-//  .useMsi(java.lang.Boolean)
-//  .useMsi(IResolvable)
-//  .useOidc(java.lang.Boolean)
-//  .useOidc(IResolvable)
+//  .useAksWorkloadIdentity(java.lang.Boolean|IResolvable)
+//  .useCli(java.lang.Boolean|IResolvable)
+//  .useMsi(java.lang.Boolean|IResolvable)
+//  .useOidc(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -56,7 +51,7 @@ AzureadProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.clientIdFilePath">clientIdFilePath</a></code> | <code>java.lang.String</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.clientSecretFilePath">clientSecretFilePath</a></code> | <code>java.lang.String</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.environment">environment</a></code> | <code>java.lang.String</code> | The cloud environment which should be used. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.metadataHost">metadataHost</a></code> | <code>java.lang.String</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.msiEndpoint">msiEndpoint</a></code> | <code>java.lang.String</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
@@ -66,10 +61,10 @@ AzureadProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.oidcTokenFilePath">oidcTokenFilePath</a></code> | <code>java.lang.String</code> | The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.partnerId">partnerId</a></code> | <code>java.lang.String</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | The Tenant ID which should be used. Works with all authentication methods except Managed Identity. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useCli">useCli</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useMsi">useMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow Managed Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useOidc">useOidc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useCli">useCli</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useMsi">useMsi</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow Managed Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useOidc">useOidc</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
@@ -183,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disableTerraformPartnerId`<sup>Optional</sup> <a name="disableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.disableTerraformPartnerId"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified.
 
@@ -289,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `useAksWorkloadIdentity`<sup>Optional</sup> <a name="useAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useAksWorkloadIdentity"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
@@ -299,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `useCli`<sup>Optional</sup> <a name="useCli" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useCli"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow Azure CLI to be used for Authentication.
 
@@ -309,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `useMsi`<sup>Optional</sup> <a name="useMsi" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useMsi"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow Managed Identity to be used for Authentication.
 
@@ -319,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `useOidc`<sup>Optional</sup> <a name="useOidc" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.useOidc"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow OpenID Connect to be used for authentication.
 
@@ -709,7 +704,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdInput">clientIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput">clientSecretFilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretInput">clientSecretInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">disableTerraformPartnerIdInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">disableTerraformPartnerIdInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environmentInput">environmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHostInput">metadataHostInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpointInput">msiEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -719,10 +714,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenInput">oidcTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerIdInput">partnerIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantIdInput">tenantIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">useAksWorkloadIdentityInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput">useCliInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput">useMsiInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput">useOidcInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">useAksWorkloadIdentityInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput">useCliInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput">useMsiInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput">useOidcInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionId">adoPipelineServiceConnectionId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificate">clientCertificate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword">clientCertificatePassword</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -731,7 +726,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePath">clientIdFilePath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environment">environment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost">metadataHost</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpoint">msiEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -741,10 +736,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePath">oidcTokenFilePath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerId">partnerId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCli">useCli</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi">useMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc">useOidc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCli">useCli</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi">useMsi</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc">useOidc</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -933,10 +928,10 @@ public java.lang.String getClientSecretInput();
 ##### `disableTerraformPartnerIdInput`<sup>Optional</sup> <a name="disableTerraformPartnerIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput"></a>
 
 ```java
-public java.lang.Object getDisableTerraformPartnerIdInput();
+public java.lang.Boolean|IResolvable getDisableTerraformPartnerIdInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1033,40 +1028,40 @@ public java.lang.String getTenantIdInput();
 ##### `useAksWorkloadIdentityInput`<sup>Optional</sup> <a name="useAksWorkloadIdentityInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput"></a>
 
 ```java
-public java.lang.Object getUseAksWorkloadIdentityInput();
+public java.lang.Boolean|IResolvable getUseAksWorkloadIdentityInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useCliInput`<sup>Optional</sup> <a name="useCliInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput"></a>
 
 ```java
-public java.lang.Object getUseCliInput();
+public java.lang.Boolean|IResolvable getUseCliInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useMsiInput`<sup>Optional</sup> <a name="useMsiInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput"></a>
 
 ```java
-public java.lang.Object getUseMsiInput();
+public java.lang.Boolean|IResolvable getUseMsiInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useOidcInput`<sup>Optional</sup> <a name="useOidcInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput"></a>
 
 ```java
-public java.lang.Object getUseOidcInput();
+public java.lang.Boolean|IResolvable getUseOidcInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1153,10 +1148,10 @@ public java.lang.String getClientSecretFilePath();
 ##### `disableTerraformPartnerId`<sup>Optional</sup> <a name="disableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId"></a>
 
 ```java
-public java.lang.Object getDisableTerraformPartnerId();
+public java.lang.Boolean|IResolvable getDisableTerraformPartnerId();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1253,40 +1248,40 @@ public java.lang.String getTenantId();
 ##### `useAksWorkloadIdentity`<sup>Optional</sup> <a name="useAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity"></a>
 
 ```java
-public java.lang.Object getUseAksWorkloadIdentity();
+public java.lang.Boolean|IResolvable getUseAksWorkloadIdentity();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useCli`<sup>Optional</sup> <a name="useCli" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCli"></a>
 
 ```java
-public java.lang.Object getUseCli();
+public java.lang.Boolean|IResolvable getUseCli();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useMsi`<sup>Optional</sup> <a name="useMsi" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi"></a>
 
 ```java
-public java.lang.Object getUseMsi();
+public java.lang.Boolean|IResolvable getUseMsi();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `useOidc`<sup>Optional</sup> <a name="useOidc" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc"></a>
 
 ```java
-public java.lang.Object getUseOidc();
+public java.lang.Boolean|IResolvable getUseOidc();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1327,8 +1322,7 @@ AzureadProviderConfig.builder()
 //  .clientIdFilePath(java.lang.String)
 //  .clientSecret(java.lang.String)
 //  .clientSecretFilePath(java.lang.String)
-//  .disableTerraformPartnerId(java.lang.Boolean)
-//  .disableTerraformPartnerId(IResolvable)
+//  .disableTerraformPartnerId(java.lang.Boolean|IResolvable)
 //  .environment(java.lang.String)
 //  .metadataHost(java.lang.String)
 //  .msiEndpoint(java.lang.String)
@@ -1338,14 +1332,10 @@ AzureadProviderConfig.builder()
 //  .oidcTokenFilePath(java.lang.String)
 //  .partnerId(java.lang.String)
 //  .tenantId(java.lang.String)
-//  .useAksWorkloadIdentity(java.lang.Boolean)
-//  .useAksWorkloadIdentity(IResolvable)
-//  .useCli(java.lang.Boolean)
-//  .useCli(IResolvable)
-//  .useMsi(java.lang.Boolean)
-//  .useMsi(IResolvable)
-//  .useOidc(java.lang.Boolean)
-//  .useOidc(IResolvable)
+//  .useAksWorkloadIdentity(java.lang.Boolean|IResolvable)
+//  .useCli(java.lang.Boolean|IResolvable)
+//  .useMsi(java.lang.Boolean|IResolvable)
+//  .useOidc(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1362,7 +1352,7 @@ AzureadProviderConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath">clientIdFilePath</a></code> | <code>java.lang.String</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>java.lang.String</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.environment">environment</a></code> | <code>java.lang.String</code> | The cloud environment which should be used. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost">metadataHost</a></code> | <code>java.lang.String</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint">msiEndpoint</a></code> | <code>java.lang.String</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
@@ -1372,10 +1362,10 @@ AzureadProviderConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcTokenFilePath">oidcTokenFilePath</a></code> | <code>java.lang.String</code> | The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.partnerId">partnerId</a></code> | <code>java.lang.String</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
 | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | The Tenant ID which should be used. Works with all authentication methods except Managed Identity. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli">useCli</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi">useMsi</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow Managed Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc">useOidc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli">useCli</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi">useMsi</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow Managed Identity to be used for Authentication. |
+| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc">useOidc</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
@@ -1508,10 +1498,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `disableTerraformPartnerId`<sup>Optional</sup> <a name="disableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId"></a>
 
 ```java
-public java.lang.Object getDisableTerraformPartnerId();
+public java.lang.Boolean|IResolvable getDisableTerraformPartnerId();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified.
 
@@ -1654,10 +1644,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useAksWorkloadIdentity`<sup>Optional</sup> <a name="useAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity"></a>
 
 ```java
-public java.lang.Object getUseAksWorkloadIdentity();
+public java.lang.Boolean|IResolvable getUseAksWorkloadIdentity();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
@@ -1668,10 +1658,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useCli`<sup>Optional</sup> <a name="useCli" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli"></a>
 
 ```java
-public java.lang.Object getUseCli();
+public java.lang.Boolean|IResolvable getUseCli();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow Azure CLI to be used for Authentication.
 
@@ -1682,10 +1672,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useMsi`<sup>Optional</sup> <a name="useMsi" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi"></a>
 
 ```java
-public java.lang.Object getUseMsi();
+public java.lang.Boolean|IResolvable getUseMsi();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow Managed Identity to be used for Authentication.
 
@@ -1696,10 +1686,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useOidc`<sup>Optional</sup> <a name="useOidc" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc"></a>
 
 ```java
-public java.lang.Object getUseOidc();
+public java.lang.Boolean|IResolvable getUseOidc();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow OpenID Connect to be used for authentication.
 
