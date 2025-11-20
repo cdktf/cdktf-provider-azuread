@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role
+// https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,77 +11,77 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApplicationAppRoleAConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationFlexibleFederatedIdentityCredentialConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both
+  * The resource ID of the application for which this flexible federated identity credential should be created
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#allowed_member_types ApplicationAppRoleA#allowed_member_types}
-  */
-  readonly allowedMemberTypes: string[];
-  /**
-  * The resource ID of the application to which this app role should be applied
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#application_id ApplicationAppRoleA#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#application_id ApplicationFlexibleFederatedIdentityCredential#application_id}
   */
   readonly applicationId: string;
   /**
-  * Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences
+  * The audience that can appear in the external token. This specifies what should be accepted in the `aud` claim of incoming tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#description ApplicationAppRoleA#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#audience ApplicationFlexibleFederatedIdentityCredential#audience}
   */
-  readonly description: string;
+  readonly audience: string;
   /**
-  * Display name for the app role that appears during app role assignment and in consent experiences
+  * The expression to match for claims.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#display_name ApplicationAppRoleA#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#claims_matching_expression ApplicationFlexibleFederatedIdentityCredential#claims_matching_expression}
+  */
+  readonly claimsMatchingExpression: string;
+  /**
+  * A description for the flexible federated identity credential
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#description ApplicationFlexibleFederatedIdentityCredential#description}
+  */
+  readonly description?: string;
+  /**
+  * A unique display name for the flexible federated identity credential
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#display_name ApplicationFlexibleFederatedIdentityCredential#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#id ApplicationAppRoleA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#id ApplicationFlexibleFederatedIdentityCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The unique identifier of the app role
+  * The URL of the external identity provider, which must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#role_id ApplicationAppRoleA#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#issuer ApplicationFlexibleFederatedIdentityCredential#issuer}
   */
-  readonly roleId: string;
-  /**
-  * The value that is used for the `roles` claim in ID tokens and OAuth access tokens that are authenticating an assigned service or user principal
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#value ApplicationAppRoleA#value}
-  */
-  readonly value?: string;
+  readonly issuer: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#timeouts ApplicationAppRoleA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#timeouts ApplicationFlexibleFederatedIdentityCredential#timeouts}
   */
-  readonly timeouts?: ApplicationAppRoleTimeouts;
+  readonly timeouts?: ApplicationFlexibleFederatedIdentityCredentialTimeouts;
 }
-export interface ApplicationAppRoleTimeouts {
+export interface ApplicationFlexibleFederatedIdentityCredentialTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#create ApplicationAppRoleA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#create ApplicationFlexibleFederatedIdentityCredential#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#delete ApplicationAppRoleA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#delete ApplicationFlexibleFederatedIdentityCredential#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#read ApplicationAppRoleA#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#read ApplicationFlexibleFederatedIdentityCredential#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#update ApplicationAppRoleA#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#update ApplicationFlexibleFederatedIdentityCredential#update}
   */
   readonly update?: string;
 }
 
-export function applicationAppRoleTimeoutsToTerraform(struct?: ApplicationAppRoleTimeouts | cdktf.IResolvable): any {
+export function applicationFlexibleFederatedIdentityCredentialTimeoutsToTerraform(struct?: ApplicationFlexibleFederatedIdentityCredentialTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,7 +95,7 @@ export function applicationAppRoleTimeoutsToTerraform(struct?: ApplicationAppRol
 }
 
 
-export function applicationAppRoleTimeoutsToHclTerraform(struct?: ApplicationAppRoleTimeouts | cdktf.IResolvable): any {
+export function applicationFlexibleFederatedIdentityCredentialTimeoutsToHclTerraform(struct?: ApplicationFlexibleFederatedIdentityCredentialTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -131,7 +131,7 @@ export function applicationAppRoleTimeoutsToHclTerraform(struct?: ApplicationApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationAppRoleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationFlexibleFederatedIdentityCredentialTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -143,7 +143,7 @@ export class ApplicationAppRoleTimeoutsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationAppRoleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationFlexibleFederatedIdentityCredentialTimeouts | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class ApplicationAppRoleTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationAppRoleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationFlexibleFederatedIdentityCredentialTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -257,27 +257,27 @@ export class ApplicationAppRoleTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role azuread_application_app_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential azuread_application_flexible_federated_identity_credential}
 */
-export class ApplicationAppRoleA extends cdktf.TerraformResource {
+export class ApplicationFlexibleFederatedIdentityCredential extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "azuread_application_app_role";
+  public static readonly tfResourceType = "azuread_application_flexible_federated_identity_credential";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationAppRoleA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a ApplicationFlexibleFederatedIdentityCredential resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the ApplicationAppRoleA to import
-  * @param importFromId The id of the existing ApplicationAppRoleA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the ApplicationAppRoleA to import is found
+  * @param importToId The construct id used in the generated config for the ApplicationFlexibleFederatedIdentityCredential to import
+  * @param importFromId The id of the existing ApplicationFlexibleFederatedIdentityCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ApplicationFlexibleFederatedIdentityCredential to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_app_role", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_flexible_federated_identity_credential", importId: importFromId, provider });
       }
 
   // ===========
@@ -285,15 +285,15 @@ export class ApplicationAppRoleA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role azuread_application_app_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_flexible_federated_identity_credential azuread_application_flexible_federated_identity_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ApplicationAppRoleAConfig
+  * @param options ApplicationFlexibleFederatedIdentityCredentialConfig
   */
-  public constructor(scope: Construct, id: string, config: ApplicationAppRoleAConfig) {
+  public constructor(scope: Construct, id: string, config: ApplicationFlexibleFederatedIdentityCredentialConfig) {
     super(scope, id, {
-      terraformResourceType: 'azuread_application_app_role',
+      terraformResourceType: 'azuread_application_flexible_federated_identity_credential',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
         providerVersion: '3.7.0',
@@ -307,32 +307,19 @@ export class ApplicationAppRoleA extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._allowedMemberTypes = config.allowedMemberTypes;
     this._applicationId = config.applicationId;
+    this._audience = config.audience;
+    this._claimsMatchingExpression = config.claimsMatchingExpression;
     this._description = config.description;
     this._displayName = config.displayName;
     this._id = config.id;
-    this._roleId = config.roleId;
-    this._value = config.value;
+    this._issuer = config.issuer;
     this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // allowed_member_types - computed: false, optional: false, required: true
-  private _allowedMemberTypes?: string[]; 
-  public get allowedMemberTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_member_types'));
-  }
-  public set allowedMemberTypes(value: string[]) {
-    this._allowedMemberTypes = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedMemberTypesInput() {
-    return this._allowedMemberTypes;
-  }
 
   // application_id - computed: false, optional: false, required: true
   private _applicationId?: string; 
@@ -347,13 +334,47 @@ export class ApplicationAppRoleA extends cdktf.TerraformResource {
     return this._applicationId;
   }
 
-  // description - computed: false, optional: false, required: true
+  // audience - computed: false, optional: false, required: true
+  private _audience?: string; 
+  public get audience() {
+    return this.getStringAttribute('audience');
+  }
+  public set audience(value: string) {
+    this._audience = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get audienceInput() {
+    return this._audience;
+  }
+
+  // claims_matching_expression - computed: false, optional: false, required: true
+  private _claimsMatchingExpression?: string; 
+  public get claimsMatchingExpression() {
+    return this.getStringAttribute('claims_matching_expression');
+  }
+  public set claimsMatchingExpression(value: string) {
+    this._claimsMatchingExpression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get claimsMatchingExpressionInput() {
+    return this._claimsMatchingExpression;
+  }
+
+  // credential_id - computed: true, optional: false, required: false
+  public get credentialId() {
+    return this.getStringAttribute('credential_id');
+  }
+
+  // description - computed: false, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
   public set description(value: string) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
@@ -389,41 +410,25 @@ export class ApplicationAppRoleA extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // role_id - computed: false, optional: false, required: true
-  private _roleId?: string; 
-  public get roleId() {
-    return this.getStringAttribute('role_id');
+  // issuer - computed: false, optional: false, required: true
+  private _issuer?: string; 
+  public get issuer() {
+    return this.getStringAttribute('issuer');
   }
-  public set roleId(value: string) {
-    this._roleId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleIdInput() {
-    return this._roleId;
-  }
-
-  // value - computed: false, optional: true, required: false
-  private _value?: string; 
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-  public set value(value: string) {
-    this._value = value;
-  }
-  public resetValue() {
-    this._value = undefined;
+  public set issuer(value: string) {
+    this._issuer = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value;
+  public get issuerInput() {
+    return this._issuer;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ApplicationAppRoleTimeoutsOutputReference(this, "timeouts");
+  private _timeouts = new ApplicationFlexibleFederatedIdentityCredentialTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
-  public putTimeouts(value: ApplicationAppRoleTimeouts) {
+  public putTimeouts(value: ApplicationFlexibleFederatedIdentityCredentialTimeouts) {
     this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
@@ -440,27 +445,33 @@ export class ApplicationAppRoleA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_member_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedMemberTypes),
       application_id: cdktf.stringToTerraform(this._applicationId),
+      audience: cdktf.stringToTerraform(this._audience),
+      claims_matching_expression: cdktf.stringToTerraform(this._claimsMatchingExpression),
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
-      role_id: cdktf.stringToTerraform(this._roleId),
-      value: cdktf.stringToTerraform(this._value),
-      timeouts: applicationAppRoleTimeoutsToTerraform(this._timeouts.internalValue),
+      issuer: cdktf.stringToTerraform(this._issuer),
+      timeouts: applicationFlexibleFederatedIdentityCredentialTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      allowed_member_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedMemberTypes),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
-      },
       application_id: {
         value: cdktf.stringToHclTerraform(this._applicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      audience: {
+        value: cdktf.stringToHclTerraform(this._audience),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      claims_matching_expression: {
+        value: cdktf.stringToHclTerraform(this._claimsMatchingExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -483,23 +494,17 @@ export class ApplicationAppRoleA extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      role_id: {
-        value: cdktf.stringToHclTerraform(this._roleId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      value: {
-        value: cdktf.stringToHclTerraform(this._value),
+      issuer: {
+        value: cdktf.stringToHclTerraform(this._issuer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timeouts: {
-        value: applicationAppRoleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        value: applicationFlexibleFederatedIdentityCredentialTimeoutsToHclTerraform(this._timeouts.internalValue),
         isBlock: true,
         type: "struct",
-        storageClassType: "ApplicationAppRoleTimeouts",
+        storageClassType: "ApplicationFlexibleFederatedIdentityCredentialTimeouts",
       },
     };
 
