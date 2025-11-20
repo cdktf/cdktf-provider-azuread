@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationCertificate](./applicationCertificate.typescript.md)
 - [applicationFallbackPublicClient](./applicationFallbackPublicClient.typescript.md)
 - [applicationFederatedIdentityCredential](./applicationFederatedIdentityCredential.typescript.md)
+- [applicationFlexibleFederatedIdentityCredential](./applicationFlexibleFederatedIdentityCredential.typescript.md)
 - [applicationFromTemplate](./applicationFromTemplate.typescript.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.typescript.md)
 - [applicationKnownClients](./applicationKnownClients.typescript.md)

@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationCertificate](./applicationCertificate.go.md)
 - [applicationFallbackPublicClient](./applicationFallbackPublicClient.go.md)
 - [applicationFederatedIdentityCredential](./applicationFederatedIdentityCredential.go.md)
+- [applicationFlexibleFederatedIdentityCredential](./applicationFlexibleFederatedIdentityCredential.go.md)
 - [applicationFromTemplate](./applicationFromTemplate.go.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.go.md)
 - [applicationKnownClients](./applicationKnownClients.go.md)

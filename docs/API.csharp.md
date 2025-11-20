@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationCertificate](./applicationCertificate.csharp.md)
 - [applicationFallbackPublicClient](./applicationFallbackPublicClient.csharp.md)
 - [applicationFederatedIdentityCredential](./applicationFederatedIdentityCredential.csharp.md)
+- [applicationFlexibleFederatedIdentityCredential](./applicationFlexibleFederatedIdentityCredential.csharp.md)
 - [applicationFromTemplate](./applicationFromTemplate.csharp.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.csharp.md)
 - [applicationKnownClients](./applicationKnownClients.csharp.md)
