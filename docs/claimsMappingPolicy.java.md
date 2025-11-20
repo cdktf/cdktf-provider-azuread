@@ -4,7 +4,7 @@
 
 ### ClaimsMappingPolicy <a name="ClaimsMappingPolicy" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy azuread_claims_mapping_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer"></a>
 
@@ -39,7 +39,7 @@ ClaimsMappingPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer.parameter.definition">definition</a></code> | <code>java.util.List<java.lang.String></code> | A string collection containing a JSON string that defines the rules and settings for this policy. |
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Display name for this policy. |
-| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}. |
+| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}. |
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts">ClaimsMappingPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 A string collection containing a JSON string that defines the rules and settings for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#timeouts ClaimsMappingPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#timeouts ClaimsMappingPolicy#timeouts}
 
 ---
 
@@ -595,7 +595,7 @@ The construct id used in the generated config for the ClaimsMappingPolicy to imp
 
 The id of the existing ClaimsMappingPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ ClaimsMappingPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.property.definition">definition</a></code> | <code>java.util.List<java.lang.String></code> | A string collection containing a JSON string that defines the rules and settings for this policy. |
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Display name for this policy. |
-| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}. |
+| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}. |
 | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts">ClaimsMappingPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -998,7 +998,7 @@ public java.util.List<java.lang.String> getDefinition();
 
 A string collection containing a JSON string that defines the rules and settings for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#definition ClaimsMappingPolicy#definition}
 
 ---
 
@@ -1012,7 +1012,7 @@ public java.lang.String getDisplayName();
 
 Display name for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#display_name ClaimsMappingPolicy#display_name}
 
 ---
 
@@ -1024,7 +1024,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#id ClaimsMappingPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ public ClaimsMappingPolicyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#timeouts ClaimsMappingPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#timeouts ClaimsMappingPolicy#timeouts}
 
 ---
 
@@ -1064,10 +1064,10 @@ ClaimsMappingPolicyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#create ClaimsMappingPolicy#create}. |
-| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#delete ClaimsMappingPolicy#delete}. |
-| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#read ClaimsMappingPolicy#read}. |
-| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#update ClaimsMappingPolicy#update}. |
+| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#create ClaimsMappingPolicy#create}. |
+| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#delete ClaimsMappingPolicy#delete}. |
+| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#read ClaimsMappingPolicy#read}. |
+| <code><a href="#@cdktf/provider-azuread.claimsMappingPolicy.ClaimsMappingPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#update ClaimsMappingPolicy#update}. |
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#create ClaimsMappingPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#create ClaimsMappingPolicy#create}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#delete ClaimsMappingPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#delete ClaimsMappingPolicy#delete}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#read ClaimsMappingPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#read ClaimsMappingPolicy#read}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/claims_mapping_policy#update ClaimsMappingPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/claims_mapping_policy#update ClaimsMappingPolicy#update}.
 
 ---
 

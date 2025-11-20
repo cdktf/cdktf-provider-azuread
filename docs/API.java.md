@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationCertificate](./applicationCertificate.java.md)
 - [applicationFallbackPublicClient](./applicationFallbackPublicClient.java.md)
 - [applicationFederatedIdentityCredential](./applicationFederatedIdentityCredential.java.md)
+- [applicationFlexibleFederatedIdentityCredential](./applicationFlexibleFederatedIdentityCredential.java.md)
 - [applicationFromTemplate](./applicationFromTemplate.java.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.java.md)
 - [applicationKnownClients](./applicationKnownClients.java.md)

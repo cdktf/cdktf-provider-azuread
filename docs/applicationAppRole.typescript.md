@@ -4,7 +4,7 @@
 
 ### ApplicationAppRoleA <a name="ApplicationAppRoleA" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role azuread_application_app_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role azuread_application_app_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleA.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the ApplicationAppRoleA to imp
 
 The id of the existing ApplicationAppRoleA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -898,7 +898,7 @@ const applicationAppRoleAConfig: applicationAppRole.ApplicationAppRoleAConfig = 
 | <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.property.description">description</a></code> | <code>string</code> | Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences. |
 | <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.property.displayName">displayName</a></code> | <code>string</code> | Display name for the app role that appears during app role assignment and in consent experiences. |
 | <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.property.roleId">roleId</a></code> | <code>string</code> | The unique identifier of the app role. |
-| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#id ApplicationAppRoleA#id}. |
+| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#id ApplicationAppRoleA#id}. |
 | <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts">ApplicationAppRoleTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleAConfig.property.value">value</a></code> | <code>string</code> | The value that is used for the `roles` claim in ID tokens and OAuth access tokens that are authenticating an assigned service or user principal. |
 
@@ -984,7 +984,7 @@ public readonly allowedMemberTypes: string[];
 
 Specifies whether this app role definition can be assigned to users and groups by setting to `User`, or to other applications (that are accessing this application in a standalone scenario) by setting to `Application`, or to both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#allowed_member_types ApplicationAppRoleA#allowed_member_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#allowed_member_types ApplicationAppRoleA#allowed_member_types}
 
 ---
 
@@ -998,7 +998,7 @@ public readonly applicationId: string;
 
 The resource ID of the application to which this app role should be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#application_id ApplicationAppRoleA#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#application_id ApplicationAppRoleA#application_id}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly description: string;
 
 Description of the app role that appears when the role is being assigned and, if the role functions as an application permissions, during the consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#description ApplicationAppRoleA#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#description ApplicationAppRoleA#description}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly displayName: string;
 
 Display name for the app role that appears during app role assignment and in consent experiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#display_name ApplicationAppRoleA#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#display_name ApplicationAppRoleA#display_name}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly roleId: string;
 
 The unique identifier of the app role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#role_id ApplicationAppRoleA#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#role_id ApplicationAppRoleA#role_id}
 
 ---
 
@@ -1052,7 +1052,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#id ApplicationAppRoleA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#id ApplicationAppRoleA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ public readonly timeouts: ApplicationAppRoleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#timeouts ApplicationAppRoleA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#timeouts ApplicationAppRoleA#timeouts}
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly value: string;
 
 The value that is used for the `roles` claim in ID tokens and OAuth access tokens that are authenticating an assigned service or user principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#value ApplicationAppRoleA#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#value ApplicationAppRoleA#value}
 
 ---
 
@@ -1101,10 +1101,10 @@ const applicationAppRoleTimeouts: applicationAppRole.ApplicationAppRoleTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#create ApplicationAppRoleA#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#delete ApplicationAppRoleA#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#read ApplicationAppRoleA#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#update ApplicationAppRoleA#update}. |
+| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#create ApplicationAppRoleA#create}. |
+| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#delete ApplicationAppRoleA#delete}. |
+| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#read ApplicationAppRoleA#read}. |
+| <code><a href="#@cdktf/provider-azuread.applicationAppRole.ApplicationAppRoleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#update ApplicationAppRoleA#update}. |
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#create ApplicationAppRoleA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#create ApplicationAppRoleA#create}.
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#delete ApplicationAppRoleA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#delete ApplicationAppRoleA#delete}.
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#read ApplicationAppRoleA#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#read ApplicationAppRoleA#read}.
 
 ---
 
@@ -1152,7 +1152,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.6.0/docs/resources/application_app_role#update ApplicationAppRoleA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_app_role#update ApplicationAppRoleA#update}.
 
 ---
 

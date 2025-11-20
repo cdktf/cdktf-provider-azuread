@@ -20,6 +20,7 @@ export * as applicationAppRole from './application-app-role';
 export * as applicationCertificate from './application-certificate';
 export * as applicationFallbackPublicClient from './application-fallback-public-client';
 export * as applicationFederatedIdentityCredential from './application-federated-identity-credential';
+export * as applicationFlexibleFederatedIdentityCredential from './application-flexible-federated-identity-credential';
 export * as applicationFromTemplate from './application-from-template';
 export * as applicationIdentifierUri from './application-identifier-uri';
 export * as applicationKnownClients from './application-known-clients';

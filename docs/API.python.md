@@ -20,6 +20,7 @@ The following submodules are available:
 - [applicationCertificate](./applicationCertificate.python.md)
 - [applicationFallbackPublicClient](./applicationFallbackPublicClient.python.md)
 - [applicationFederatedIdentityCredential](./applicationFederatedIdentityCredential.python.md)
+- [applicationFlexibleFederatedIdentityCredential](./applicationFlexibleFederatedIdentityCredential.python.md)
 - [applicationFromTemplate](./applicationFromTemplate.python.md)
 - [applicationIdentifierUri](./applicationIdentifierUri.python.md)
 - [applicationKnownClients](./applicationKnownClients.python.md)

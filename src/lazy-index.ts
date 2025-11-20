@@ -20,6 +20,7 @@ Object.defineProperty(exports, 'applicationAppRole', { get: function () { return
 Object.defineProperty(exports, 'applicationCertificate', { get: function () { return require('./application-certificate'); } });
 Object.defineProperty(exports, 'applicationFallbackPublicClient', { get: function () { return require('./application-fallback-public-client'); } });
 Object.defineProperty(exports, 'applicationFederatedIdentityCredential', { get: function () { return require('./application-federated-identity-credential'); } });
+Object.defineProperty(exports, 'applicationFlexibleFederatedIdentityCredential', { get: function () { return require('./application-flexible-federated-identity-credential'); } });
 Object.defineProperty(exports, 'applicationFromTemplate', { get: function () { return require('./application-from-template'); } });
 Object.defineProperty(exports, 'applicationIdentifierUri', { get: function () { return require('./application-identifier-uri'); } });
 Object.defineProperty(exports, 'applicationKnownClients', { get: function () { return require('./application-known-clients'); } });
