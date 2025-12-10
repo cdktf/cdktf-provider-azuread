@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocation(scope Construct, id *string, config DataAzureadNamedLocationConfig) DataAzureadNamedLocation
 ```
@@ -303,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataazureadnamedlocation.DataAzureadNamedLocation_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazureadnamedlocation.DataAzureadNamedLocation_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocat
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts,
 }
 ```
 
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationCountry {
 
@@ -831,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocat
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationIp {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocat
 #### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationTimeouts {
 	Read: *string,
@@ -878,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationCountryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadNamedLocationCountryList
 ```
@@ -1027,7 +1027,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationCountryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadNamedLocationCountryOutputReference
 ```
@@ -1327,7 +1327,7 @@ func InternalValue() DataAzureadNamedLocationCountry
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadNamedLocationIpList
 ```
@@ -1476,7 +1476,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadNamedLocationIpOutputReference
 ```
@@ -1765,7 +1765,7 @@ func InternalValue() DataAzureadNamedLocationIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/dataazureadnamedlocation"
+import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadNamedLocationTimeoutsOutputReference
 ```
